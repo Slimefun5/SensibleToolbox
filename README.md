@@ -4,7 +4,7 @@ Looking for the download link? [**Click here**](#floppy_disk-download-sensible-t
 Sensible Toolbox is a Spigot/Paper plugin which adds a bunch of new items, tools and machines to your Minecraft Server.
 It's heavily inspired by certain Forge-based mods, but of course requires no client modifications at all.
 
-Also check out [Slimefun4](https://github.com/Slimefun/Slimefun4), they pair really well together!
+Also check out [Slimefun5](https://github.com/Slimefun5/Slimefun5), they pair really well together!
 
 ## :notebook_with_decorative_cover: About the project
 SensibleToolbox was created in early 2014 and originally developed by [@desht](https://github.com/desht), here is a link to the original GitHub Repository: https://github.com/desht/sensibletoolbox.<br>
@@ -12,23 +12,14 @@ I took over the project back in late 2014 and continued to update it for some ti
 In late 2020 STB was finally updated once more but it is currently very unstable, so please report any bugs you can find!
 
 ## :floppy_disk: Download Sensible Toolbox
-You can download SensibleToolbox for free right here: [Development Builds](https://thebusybiscuit.github.io/builds/Slimefun/SensibleToolbox/master/)<br>
+Download from [GitHub Releases](https://github.com/Slimefun5/SensibleToolbox/releases).<br>
 STB has no dependencies, so you can just drop it into your `/plugins/` folder and you are good to go!
-
-**WARNING: STB has only just been updated to newer versions of Minecraft, builds are extremely unstable and we don't recommend you to use them on any live server.**
-**For private testing and bug reporting only! Please report any bug you come across!**
-
-<p align="center">
-  <a href="https://thebusybiscuit.github.io/builds/Slimefun/SensibleToolbox/master/">
-    <img src="https://thebusybiscuit.github.io/builds/Slimefun/SensibleToolbox/master/badge.svg" alt="Build Server"/>
-  </a>
-</p>
 
 ## :headphones: Discord Support Server
 You can join the official Slimefun Discord Server to chat about Slimefun and some of our other projects, including SensibleToolbox.<br>
 Please head to the `#sensible-toolbox` channel for this.
 
-**Important**: We do **not** accept bug reports on discord, please use our [Issue Tracker](https://github.com/Slimefun/SensibleToolbox/issues) to submit bug reports!
+**Important**: We do **not** accept bug reports on discord, please use our [Issue Tracker](https://github.com/Slimefun5/SensibleToolbox/issues) to submit bug reports!
 
 <p align="center">
   <a href="https://discord.gg/slimefun">
@@ -38,10 +29,10 @@ Please head to the `#sensible-toolbox` channel for this.
 
 ## :wave: Contributing to this project
 Sensible Toolbox is an Open-Source project and licensed under
-[GNU GPLv3](https://github.com/Slimefun/SensibleToolbox/blob/master/LICENSE).<br>
+[GNU GPLv3](https://github.com/Slimefun5/SensibleToolbox/blob/master/LICENSE).<br>
 Please consider helping us maintain this project too, your engagement keeps the project alive <3.
 
-You can find more info on how to contribute to this project in our [CONTRIBUTING.md](https://github.com/Slimefun/SensibleToolbox/blob/master/CONTRIBUTING.md).
+You can find more info on how to contribute to this project in our [CONTRIBUTING.md](https://github.com/Slimefun5/SensibleToolbox/blob/master/CONTRIBUTING.md).
 
 ## :bulb: Credits
 This is a fork of [desht/sensibletoolbox](https://github.com/desht/sensibletoolbox).
