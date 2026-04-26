@@ -23,9 +23,6 @@ import org.bukkit.scheduler.BukkitTask;
 import com.comphenix.protocol.ProtocolLib;
 
 import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.ProtectionManager;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.PluginUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.versions.PrefixedVersion;
 import io.github.thebusybiscuit.sensibletoolbox.api.AccessControl;
 import io.github.thebusybiscuit.sensibletoolbox.api.FriendManager;
 import io.github.thebusybiscuit.sensibletoolbox.api.MinecraftVersion;
@@ -662,6 +659,8 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         return isProtocolLibEnabled() && getConfig().getBoolean("options.glowing_items");
     }
 }
+
+
 
 
 
