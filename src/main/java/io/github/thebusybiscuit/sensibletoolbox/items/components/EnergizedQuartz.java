@@ -43,3 +43,4 @@ public class EnergizedQuartz extends BaseSTBItem {
         return true;
     }
 }
+

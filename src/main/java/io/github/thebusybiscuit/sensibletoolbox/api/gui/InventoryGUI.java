@@ -223,3 +223,4 @@ public interface InventoryGUI {
      */
     void ejectItems(int... slots);
 }
+

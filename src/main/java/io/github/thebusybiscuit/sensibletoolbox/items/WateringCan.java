@@ -26,7 +26,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.PotionMeta;
 
-import io.github.bakedlibs.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
@@ -308,3 +308,4 @@ public class WateringCan extends BaseSTBItem {
         p.getWorld().spawnParticle(Particle.WATER_SPLASH, b.getX() + 0.5, b.getY() + 1.0, b.getZ() + 0.5, 14, 0.75, 0.15, 0.75);
     }
 }
+

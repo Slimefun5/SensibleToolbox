@@ -40,3 +40,4 @@ public final class HoloMessage {
         SensibleToolboxPlugin.getInstance().getServer().getScheduler().scheduleSyncDelayedTask(SensibleToolboxPlugin.getInstance(), h::delete, SensibleToolboxPlugin.getInstance().getConfig().getInt("holograms.duration-in-seconds"));
     }
 }
+

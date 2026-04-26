@@ -90,3 +90,4 @@ public class Elevator extends BaseSTBBlock implements Colorable {
         return (res != null && res.getColor() == getColor()) ? res : null;
     }
 }
+

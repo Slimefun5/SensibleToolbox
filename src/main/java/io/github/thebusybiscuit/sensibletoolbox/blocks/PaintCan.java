@@ -440,3 +440,4 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
         }
     }
 }
+

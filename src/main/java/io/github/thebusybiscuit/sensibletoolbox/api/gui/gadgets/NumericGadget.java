@@ -103,3 +103,4 @@ public class NumericGadget extends ClickableGadget {
         return icon;
     }
 }
+

@@ -37,3 +37,4 @@ class InstalledModule {
         return module.toItemStack(amount);
     }
 }
+

@@ -49,3 +49,4 @@ public class FiftyKBatteryBox extends BatteryBox {
         return isRedstoneActive() ? 500 : 0;
     }
 }
+

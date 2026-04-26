@@ -52,3 +52,4 @@ public abstract class ClickableGadget extends Gadget {
         getGUI().getInventory().setItem(getSlot(), getTexture());
     }
 }
+

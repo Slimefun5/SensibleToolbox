@@ -76,3 +76,4 @@ public class FriendCommand extends STBAbstractCommand {
         }
     }
 }
+

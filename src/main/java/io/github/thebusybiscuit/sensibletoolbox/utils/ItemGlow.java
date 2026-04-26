@@ -115,3 +115,4 @@ public final class ItemGlow {
         return item.getType() == Material.BOW ? GLOW_FLAG_2 : GLOW_FLAG;
     }
 }
+

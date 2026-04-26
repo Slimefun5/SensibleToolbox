@@ -36,3 +36,4 @@ public class CircuitBoard extends BaseSTBItem {
         return recipe;
     }
 }
+

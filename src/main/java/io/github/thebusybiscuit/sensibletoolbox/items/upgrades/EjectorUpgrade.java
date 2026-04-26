@@ -127,3 +127,4 @@ public class EjectorUpgrade extends AbstractMachineUpgrade implements Directiona
         player.setItemInHand(toItemStack(player.getItemInHand().getAmount()));
     }
 }
+

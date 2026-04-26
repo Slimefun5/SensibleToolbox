@@ -76,3 +76,4 @@ public class BlockPosition {
         return getX() + "," + getY() + "," + getZ();
     }
 }
+

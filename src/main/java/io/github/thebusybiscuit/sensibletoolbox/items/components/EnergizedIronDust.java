@@ -52,3 +52,4 @@ public class EnergizedIronDust extends BaseSTBItem {
         return new EnergizedIronIngot().toItemStack();
     }
 }
+

@@ -52,3 +52,4 @@ public class EnergyFlowGadget extends CyclerGadget<EnergyFlow> {
         ((BatteryBox) getGUI().getOwningItem()).setFlow(face, newValue);
     }
 }
+

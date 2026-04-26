@@ -44,3 +44,4 @@ public class FilterTypeGadget extends CyclerGadget<FilterType> {
         ((Filtering) getGUI().getOwningItem()).getFilter().setFilterType(newValue);
     }
 }
+

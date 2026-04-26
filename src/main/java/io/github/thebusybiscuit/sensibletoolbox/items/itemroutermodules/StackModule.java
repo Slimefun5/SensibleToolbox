@@ -38,3 +38,4 @@ public class StackModule extends ItemRouterModule {
         return Material.BRICK;
     }
 }
+

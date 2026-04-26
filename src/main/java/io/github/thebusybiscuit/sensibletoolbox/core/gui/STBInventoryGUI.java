@@ -397,3 +397,4 @@ public class STBInventoryGUI implements InventoryGUI {
     }
 
 }
+

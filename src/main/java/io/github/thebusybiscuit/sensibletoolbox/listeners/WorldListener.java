@@ -37,3 +37,4 @@ public class WorldListener extends STBBaseListener {
         LocationManager.getManager().unloadWorld(event.getWorld());
     }
 }
+

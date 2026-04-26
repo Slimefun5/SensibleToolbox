@@ -138,3 +138,4 @@ public class SoundMuffler extends BaseSTBBlock {
         return label;
     }
 }
+

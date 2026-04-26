@@ -151,3 +151,4 @@ public class Sawmill extends AbstractIOMachine {
         return 20;
     }
 }
+

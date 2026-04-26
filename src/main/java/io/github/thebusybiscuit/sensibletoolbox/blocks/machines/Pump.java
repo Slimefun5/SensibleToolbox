@@ -14,7 +14,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
-import io.github.bakedlibs.dough.blocks.Vein;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.Vein;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractProcessingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
@@ -263,3 +263,4 @@ public class Pump extends AbstractProcessingMachine {
         return stack.getType() == Material.BUCKET || stack.getType() == Material.GLASS_BOTTLE;
     }
 }
+

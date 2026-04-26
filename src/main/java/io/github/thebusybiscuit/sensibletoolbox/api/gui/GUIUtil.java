@@ -130,3 +130,4 @@ public final class GUIUtil {
         return new STBInventoryGUI(player, listener, size, title);
     }
 }
+

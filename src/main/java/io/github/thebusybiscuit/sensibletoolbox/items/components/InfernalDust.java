@@ -38,3 +38,4 @@ public class InfernalDust extends BaseSTBItem {
         return true;
     }
 }
+

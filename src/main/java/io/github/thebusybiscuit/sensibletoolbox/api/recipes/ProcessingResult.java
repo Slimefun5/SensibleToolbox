@@ -45,3 +45,4 @@ public class ProcessingResult {
         return "Custom recipe: " + result + " in " + processingTime + " ticks";
     }
 }
+

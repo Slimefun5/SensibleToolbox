@@ -60,3 +60,4 @@ public class AccessControlGadget extends CyclerGadget<AccessControl> {
         ((BaseSTBBlock) stbItem).setAccessControl(newValue);
     }
 }
+

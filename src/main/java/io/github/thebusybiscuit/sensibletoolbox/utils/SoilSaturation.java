@@ -95,3 +95,4 @@ public final class SoilSaturation {
         b.removeMetadata(SATURATION, SensibleToolboxPlugin.getInstance());
     }
 }
+

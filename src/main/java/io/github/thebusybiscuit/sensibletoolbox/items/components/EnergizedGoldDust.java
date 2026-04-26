@@ -50,3 +50,4 @@ public class EnergizedGoldDust extends BaseSTBItem {
         return new EnergizedGoldIngot().toItemStack();
     }
 }
+

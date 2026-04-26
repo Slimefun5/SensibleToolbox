@@ -84,3 +84,4 @@ public interface ChargeableBlock extends Chargeable {
      */
     int getChargeMeterSlot();
 }
+

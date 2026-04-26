@@ -131,3 +131,4 @@ public abstract class AutoFarmingMachine extends BaseSTBMachine {
     }
 
 }
+

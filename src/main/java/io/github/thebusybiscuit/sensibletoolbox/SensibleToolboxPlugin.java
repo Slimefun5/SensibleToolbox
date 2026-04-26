@@ -22,10 +22,10 @@ import org.bukkit.scheduler.BukkitTask;
 
 import com.comphenix.protocol.ProtocolLib;
 
-import io.github.bakedlibs.dough.protection.ProtectionManager;
-import io.github.bakedlibs.dough.updater.GitHubBuildsUpdater;
-import io.github.bakedlibs.dough.updater.PluginUpdater;
-import io.github.bakedlibs.dough.versions.PrefixedVersion;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.ProtectionManager;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.PluginUpdater;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.versions.PrefixedVersion;
 import io.github.thebusybiscuit.sensibletoolbox.api.AccessControl;
 import io.github.thebusybiscuit.sensibletoolbox.api.FriendManager;
 import io.github.thebusybiscuit.sensibletoolbox.api.MinecraftVersion;
@@ -155,7 +155,6 @@ import io.github.thebusybiscuit.sensibletoolbox.listeners.WorldListener;
 import io.github.thebusybiscuit.sensibletoolbox.slimefun.SlimefunBridge;
 import io.github.thebusybiscuit.sensibletoolbox.utils.ItemGlow;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
-import io.papermc.lib.PaperLib;
 
 import me.desht.dhutils.DHUtilsException;
 import me.desht.dhutils.Debugger;
@@ -279,7 +278,7 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
      * @return Whether the {@link MinecraftVersion} is unsupported
      */
     private boolean isVersionUnsupported() {
-        int majorVersion = PaperLib.getMinecraftVersion();
+        int majorVersion = getMinecraftMajorVersion();
 
         if (majorVersion > 0) {
             for (MinecraftVersion supportedVersion : MinecraftVersion.values()) {
@@ -315,6 +314,15 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         }
 
         return list;
+    }
+
+    private int getMinecraftMajorVersion() {
+        String version = getServer().getBukkitVersion();
+        java.util.regex.Matcher matcher = java.util.regex.Pattern.compile("1\\.(\\d+)").matcher(version);
+        if (matcher.find()) {
+            return Integer.parseInt(matcher.group(1));
+        }
+        return 0;
     }
 
     @Override
@@ -654,3 +662,7 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         return isProtocolLibEnabled() && getConfig().getBoolean("options.glowing_items");
     }
 }
+
+
+
+

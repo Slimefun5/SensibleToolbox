@@ -48,3 +48,4 @@ public class SpeedUpgrade extends AbstractMachineUpgrade {
         return recipe;
     }
 }
+

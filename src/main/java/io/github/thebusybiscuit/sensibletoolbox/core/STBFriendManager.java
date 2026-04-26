@@ -134,3 +134,4 @@ public class STBFriendManager implements FriendManager {
         }
     }
 }
+

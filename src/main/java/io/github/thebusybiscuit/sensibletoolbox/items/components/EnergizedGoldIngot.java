@@ -39,3 +39,4 @@ public class EnergizedGoldIngot extends BaseSTBItem {
         return true;
     }
 }
+

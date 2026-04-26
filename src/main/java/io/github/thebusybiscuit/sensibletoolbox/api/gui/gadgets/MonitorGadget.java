@@ -58,3 +58,4 @@ public abstract class MonitorGadget extends Gadget {
         }
     }
 }
+

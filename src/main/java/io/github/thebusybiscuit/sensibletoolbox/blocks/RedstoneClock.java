@@ -196,3 +196,4 @@ public class RedstoneClock extends BaseSTBBlock {
         return behaviour != RedstoneBehaviour.PULSED;
     }
 }
+

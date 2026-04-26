@@ -21,3 +21,4 @@ public class STBSlimefunItem extends SlimefunItem implements NotPlaceable, NotCo
     }
 
 }
+

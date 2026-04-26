@@ -47,3 +47,4 @@ public class IntegratedCircuit extends BaseSTBItem {
         return true;
     }
 }
+

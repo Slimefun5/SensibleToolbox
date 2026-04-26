@@ -1151,3 +1151,4 @@ public abstract class BaseSTBMachine extends BaseSTBBlock implements ChargeableB
     }
 
 }
+

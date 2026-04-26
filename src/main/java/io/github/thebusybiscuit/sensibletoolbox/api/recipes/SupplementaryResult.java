@@ -49,3 +49,4 @@ public class SupplementaryResult {
         return chance;
     }
 }
+

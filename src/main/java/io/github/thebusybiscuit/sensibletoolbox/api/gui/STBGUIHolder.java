@@ -40,3 +40,4 @@ public class STBGUIHolder implements InventoryHolder {
         return owner.getGUI();
     }
 }
+

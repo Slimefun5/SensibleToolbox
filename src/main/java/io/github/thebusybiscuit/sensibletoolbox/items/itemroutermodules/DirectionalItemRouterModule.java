@@ -19,7 +19,7 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.material.Directional;
 
-import io.github.bakedlibs.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.filters.Filter;
@@ -323,3 +323,4 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
         return loc.clone().add(face.getModX(), face.getModY(), face.getModZ());
     }
 }
+

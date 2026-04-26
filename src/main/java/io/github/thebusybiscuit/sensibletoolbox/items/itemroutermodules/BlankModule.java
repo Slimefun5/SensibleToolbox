@@ -40,3 +40,4 @@ public class BlankModule extends BaseSTBItem {
         return recipe;
     }
 }
+

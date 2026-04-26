@@ -100,3 +100,4 @@ public interface InventoryGUIListener {
      */
     void onGUIClosed(HumanEntity player);
 }
+

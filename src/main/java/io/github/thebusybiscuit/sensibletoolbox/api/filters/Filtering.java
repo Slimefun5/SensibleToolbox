@@ -18,3 +18,4 @@ public interface Filtering {
     @Nonnull
     Filter getFilter();
 }
+

@@ -41,3 +41,4 @@ public interface Chargeable {
      */
     int getChargeRate();
 }
+

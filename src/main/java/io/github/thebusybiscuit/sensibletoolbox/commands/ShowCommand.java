@@ -26,7 +26,7 @@ import org.bukkit.plugin.Plugin;
 
 import com.google.common.base.Joiner;
 
-import io.github.bakedlibs.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
@@ -207,3 +207,4 @@ public class ShowCommand extends AbstractCommand {
         }
     }
 }
+

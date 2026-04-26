@@ -267,3 +267,4 @@ public class STBEnergyNet implements EnergyNet {
         return totalSupply / enetManager.getTickRate();
     }
 }
+

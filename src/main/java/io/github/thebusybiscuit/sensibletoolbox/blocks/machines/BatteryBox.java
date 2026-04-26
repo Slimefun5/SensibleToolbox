@@ -152,3 +152,4 @@ public abstract class BatteryBox extends BaseSTBMachine {
         return behaviour != RedstoneBehaviour.PULSED;
     }
 }
+

@@ -354,3 +354,4 @@ public class MessagePager {
         pageCmd = string;
     }
 }
+

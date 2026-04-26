@@ -32,3 +32,4 @@ public class FishBait extends BaseSTBItem {
         return null;
     }
 }
+

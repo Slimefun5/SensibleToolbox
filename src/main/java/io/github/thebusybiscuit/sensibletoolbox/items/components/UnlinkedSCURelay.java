@@ -48,3 +48,4 @@ public class UnlinkedSCURelay extends BaseSTBItem {
         return recipe;
     }
 }
+

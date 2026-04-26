@@ -219,3 +219,4 @@ public abstract class CyclerGadget<T extends Enum<T>> extends ClickableGadget {
         }
     }
 }
+

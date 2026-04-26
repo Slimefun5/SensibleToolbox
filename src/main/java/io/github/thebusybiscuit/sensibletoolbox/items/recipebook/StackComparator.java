@@ -5,7 +5,7 @@ import java.util.Comparator;
 import org.bukkit.ChatColor;
 import org.bukkit.inventory.ItemStack;
 
-import io.github.bakedlibs.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 
 class StackComparator implements Comparator<ItemStack> {
 
@@ -17,3 +17,4 @@ class StackComparator implements Comparator<ItemStack> {
     }
 
 }
+

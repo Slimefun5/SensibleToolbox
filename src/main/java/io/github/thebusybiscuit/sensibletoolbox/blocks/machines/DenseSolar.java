@@ -61,3 +61,4 @@ public class DenseSolar extends BasicSolarCell {
         return 4.0;
     }
 }
+

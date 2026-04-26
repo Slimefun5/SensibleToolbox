@@ -207,3 +207,4 @@ public class FishingNet extends AbstractProcessingMachine {
         }
     }
 }
+

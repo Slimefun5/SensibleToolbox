@@ -163,3 +163,4 @@ public final class MiscUtil {
         return s.length() == 36 && s.charAt(8) == '-' && s.charAt(13) == '-' && s.charAt(18) == '-' && s.charAt(23) == '-';
     }
 }
+

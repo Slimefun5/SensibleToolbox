@@ -41,3 +41,4 @@ public class DiamondCombineHoe extends CombineHoe {
         return 2;
     }
 }
+

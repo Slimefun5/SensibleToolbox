@@ -50,3 +50,4 @@ public class ThoroughnessUpgrade extends AbstractMachineUpgrade {
         return true;
     }
 }
+

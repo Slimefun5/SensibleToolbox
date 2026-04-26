@@ -55,3 +55,4 @@ public class ChargeMeter extends MonitorGadget {
         return new int[] { chargeable.getChargeMeterSlot() };
     }
 }
+

@@ -53,3 +53,4 @@ public class FiftyKEnergyCell extends EnergyCell {
         return recipe;
     }
 }
+

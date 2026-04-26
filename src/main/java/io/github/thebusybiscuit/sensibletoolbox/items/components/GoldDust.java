@@ -48,3 +48,4 @@ public class GoldDust extends BaseSTBItem {
         return new ItemStack(Material.GOLD_INGOT);
     }
 }
+

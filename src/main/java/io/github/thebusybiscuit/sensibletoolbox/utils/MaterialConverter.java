@@ -71,3 +71,4 @@ public final class MaterialConverter {
         return log.name().endsWith("_LOG") || log.name().endsWith("_WOOD");
     }
 }
+

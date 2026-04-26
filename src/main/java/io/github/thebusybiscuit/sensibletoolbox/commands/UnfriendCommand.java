@@ -33,3 +33,4 @@ public class UnfriendCommand extends STBAbstractCommand {
         return true;
     }
 }
+

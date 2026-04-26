@@ -42,3 +42,4 @@ public interface ConfigurationListener {
      */
     <T> void onConfigurationChanged(ConfigurationManager configurationManager, String key, T oldVal, T newVal);
 }
+

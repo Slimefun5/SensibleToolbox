@@ -92,3 +92,4 @@ public class InfernalFarm extends AutoFarm {
         return 50.0;
     }
 }
+

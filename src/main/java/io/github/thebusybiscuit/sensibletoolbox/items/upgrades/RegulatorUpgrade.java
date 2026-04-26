@@ -48,3 +48,4 @@ public class RegulatorUpgrade extends AbstractMachineUpgrade {
         return true;
     }
 }
+

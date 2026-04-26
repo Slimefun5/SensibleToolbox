@@ -469,3 +469,4 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
         }
     }
 }
+

@@ -33,3 +33,4 @@ public class AdvancedMoistureChecker extends MoistureChecker {
         return 2;
     }
 }
+

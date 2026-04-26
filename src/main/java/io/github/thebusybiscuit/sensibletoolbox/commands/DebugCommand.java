@@ -46,3 +46,4 @@ public class DebugCommand extends AbstractCommand {
         }
     }
 }
+

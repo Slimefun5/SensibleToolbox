@@ -77,3 +77,4 @@ public class ToggleButton extends ClickableGadget {
         }
     }
 }
+

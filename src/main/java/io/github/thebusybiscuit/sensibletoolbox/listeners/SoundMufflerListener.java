@@ -86,3 +86,4 @@ public class SoundMufflerListener extends PacketAdapter implements Listener {
         ProtocolLibrary.getProtocolManager().addPacketListener(this);
     }
 }
+

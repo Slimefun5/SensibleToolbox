@@ -105,3 +105,4 @@ public class ProgressMeter extends MonitorGadget {
         maxProcessingTime = processingTime;
     }
 }
+

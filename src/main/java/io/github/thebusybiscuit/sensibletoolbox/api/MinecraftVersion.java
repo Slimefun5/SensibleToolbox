@@ -6,7 +6,6 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.Server;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
-import io.papermc.lib.PaperLib;
 
 /**
  * This enum holds all versions of Minecraft that we currently support.
@@ -125,7 +124,7 @@ public enum MinecraftVersion {
      * This tests if the given minecraft version number matches with this
      * {@link MinecraftVersion}.
      * <p>
-     * You can obtain the version number by doing {@link PaperLib#getMinecraftVersion()}.
+     * You can obtain the version number by doing parsing the Bukkit version string.
      * It is equivalent to the "major" version
      * <p>
      * Example: {@literal "1.13"} returns {@literal 13}
@@ -181,3 +180,5 @@ public enum MinecraftVersion {
     }
 
 }
+
+

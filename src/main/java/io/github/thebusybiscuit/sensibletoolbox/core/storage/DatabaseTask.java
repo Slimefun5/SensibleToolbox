@@ -83,3 +83,4 @@ class DatabaseTask implements Runnable {
         Debugger.getInstance().debug("database writer thread exiting");
     }
 }
+

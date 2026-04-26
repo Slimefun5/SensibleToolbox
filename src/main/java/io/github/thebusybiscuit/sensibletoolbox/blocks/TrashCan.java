@@ -121,3 +121,4 @@ public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
         }
     }
 }
+

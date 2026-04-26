@@ -42,3 +42,4 @@ public interface EnderTunable {
      */
     void setGlobal(boolean global);
 }
+

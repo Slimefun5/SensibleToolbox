@@ -90,3 +90,4 @@ public class ValidateCommand extends STBAbstractCommand {
         return false;
     }
 }
+

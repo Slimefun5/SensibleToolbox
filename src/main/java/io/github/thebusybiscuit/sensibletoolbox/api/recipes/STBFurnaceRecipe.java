@@ -28,3 +28,4 @@ public class STBFurnaceRecipe implements Recipe {
         return ingredient;
     }
 }
+

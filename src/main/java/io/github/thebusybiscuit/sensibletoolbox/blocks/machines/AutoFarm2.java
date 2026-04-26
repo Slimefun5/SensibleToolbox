@@ -119,3 +119,4 @@ public class AutoFarm2 extends AutoFarm {
         return 30.0;
     }
 }
+

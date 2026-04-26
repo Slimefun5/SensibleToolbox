@@ -130,3 +130,4 @@ class UpdateRecord {
         return new Location(Bukkit.getWorld(worldID), x, y, z);
     }
 }
+

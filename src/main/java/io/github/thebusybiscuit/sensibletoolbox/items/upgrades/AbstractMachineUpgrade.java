@@ -22,3 +22,4 @@ public abstract class AbstractMachineUpgrade extends BaseSTBItem {
         this.amount = amount;
     }
 }
+

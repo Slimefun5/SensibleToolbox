@@ -36,3 +36,4 @@ public class GoldCombineHoe extends CombineHoe {
         return recipe;
     }
 }
+

@@ -35,7 +35,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.permissions.Permissible;
 import org.bukkit.plugin.Plugin;
 
-import io.github.bakedlibs.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.data.persistent.PersistentDataAPI;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;

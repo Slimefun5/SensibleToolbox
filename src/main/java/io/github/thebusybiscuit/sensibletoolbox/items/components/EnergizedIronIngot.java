@@ -39,3 +39,4 @@ public class EnergizedIronIngot extends BaseSTBItem {
         return true;
     }
 }
+

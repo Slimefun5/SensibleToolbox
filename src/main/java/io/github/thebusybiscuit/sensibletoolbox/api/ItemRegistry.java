@@ -154,3 +154,4 @@ public interface ItemRegistry {
      */
     boolean isSTBItem(ItemStack stack, Class<? extends BaseSTBItem> c);
 }
+

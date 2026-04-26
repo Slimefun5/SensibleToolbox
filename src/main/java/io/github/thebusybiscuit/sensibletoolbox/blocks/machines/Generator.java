@@ -46,3 +46,4 @@ public abstract class Generator extends AbstractProcessingMachine {
         return list;
     }
 }
+

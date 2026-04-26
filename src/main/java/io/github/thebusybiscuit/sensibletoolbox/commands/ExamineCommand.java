@@ -31,3 +31,4 @@ public class ExamineCommand extends AbstractCommand {
         return true;
     }
 }
+

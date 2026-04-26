@@ -36,3 +36,4 @@ public class LightMeter extends MonitorGadget {
         return new int[] { ((LightMeterHolder) getOwner()).getLightMeterSlot() };
     }
 }
+

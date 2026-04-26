@@ -213,3 +213,4 @@ public class ConfigurationManager {
         return new ArrayList<>(current);
     }
 }
+

@@ -600,3 +600,4 @@ public final class LocationManager {
         return updateQueue.take();
     }
 }
+

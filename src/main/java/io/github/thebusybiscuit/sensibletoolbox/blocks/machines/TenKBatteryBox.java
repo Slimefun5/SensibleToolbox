@@ -49,3 +49,4 @@ public class TenKBatteryBox extends BatteryBox {
         return isRedstoneActive() ? 100 : 0;
     }
 }
+

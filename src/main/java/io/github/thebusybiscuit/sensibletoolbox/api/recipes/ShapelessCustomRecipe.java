@@ -122,3 +122,4 @@ public class ShapelessCustomRecipe implements CustomRecipe {
         return Joiner.on(";").join(MiscUtil.asSortedList(l));
     }
 }
+

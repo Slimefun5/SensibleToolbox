@@ -22,3 +22,4 @@ public class AdjacentMachine {
         return machine;
     }
 }
+

@@ -150,3 +150,4 @@ public abstract class STBEnderStorageHolder implements EnderStorageHolder {
         return frequency;
     }
 }
+

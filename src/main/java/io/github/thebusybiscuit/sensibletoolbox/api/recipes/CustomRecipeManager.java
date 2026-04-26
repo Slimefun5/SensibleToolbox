@@ -140,3 +140,4 @@ public class CustomRecipeManager {
         return stack2;
     }
 }
+

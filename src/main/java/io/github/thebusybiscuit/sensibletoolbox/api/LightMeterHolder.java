@@ -19,3 +19,4 @@ public interface LightMeterHolder {
      */
     ItemStack getLightMeterIndicator();
 }
+

@@ -42,3 +42,4 @@ public class ChargeDirectionGadget extends CyclerGadget<ChargeDirection> {
         ((BaseSTBMachine) stbItem).setChargeDirection(newValue);
     }
 }
+

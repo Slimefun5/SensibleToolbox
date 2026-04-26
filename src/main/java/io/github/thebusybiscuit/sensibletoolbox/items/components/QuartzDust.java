@@ -39,3 +39,4 @@ public class QuartzDust extends BaseSTBItem {
         return new SiliconWafer().toItemStack();
     }
 }
+

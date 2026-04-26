@@ -100,3 +100,4 @@ public class HolographicMonitor extends BaseSTBBlock {
         this.hologram.delete();
     }
 }
+

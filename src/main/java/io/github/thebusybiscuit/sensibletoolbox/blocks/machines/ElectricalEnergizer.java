@@ -137,3 +137,4 @@ public class ElectricalEnergizer extends AbstractIOMachine {
         return 50;
     }
 }
+

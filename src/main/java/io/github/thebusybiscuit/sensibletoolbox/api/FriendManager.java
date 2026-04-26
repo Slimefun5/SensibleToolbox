@@ -67,3 +67,4 @@ public interface FriendManager {
 
     void save();
 }
+

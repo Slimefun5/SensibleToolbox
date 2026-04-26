@@ -158,3 +158,4 @@ public class BlockUpdateDetector extends BaseSTBBlock {
         return behaviour != RedstoneBehaviour.PULSED;
     }
 }
+

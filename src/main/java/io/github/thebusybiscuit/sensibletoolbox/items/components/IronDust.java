@@ -48,3 +48,4 @@ public class IronDust extends BaseSTBItem {
         return new ItemStack(Material.IRON_INGOT);
     }
 }
+

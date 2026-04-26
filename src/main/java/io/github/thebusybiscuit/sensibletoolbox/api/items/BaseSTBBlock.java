@@ -1123,3 +1123,4 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
         return rotation == 1 ? ChatColor.DARK_BLUE + getItemName() + faceSymbols[rotation].toUnicode() : ChatColor.DARK_BLUE + faceSymbols[rotation].toUnicode() + getItemName();
     }
 }
+

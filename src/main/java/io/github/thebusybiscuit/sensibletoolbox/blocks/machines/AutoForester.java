@@ -17,8 +17,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
-import io.github.bakedlibs.dough.blocks.Vein;
-import io.github.bakedlibs.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.blocks.Vein;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AutoFarmingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialConverter;
@@ -149,3 +149,4 @@ public class AutoForester extends AutoFarmingMachine {
         return 250.0;
     }
 }
+

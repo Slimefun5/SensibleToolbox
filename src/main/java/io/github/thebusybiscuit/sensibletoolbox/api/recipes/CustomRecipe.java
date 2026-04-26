@@ -60,3 +60,4 @@ public interface CustomRecipe extends Recipe {
      */
     String makeKey(boolean ignoreData);
 }
+

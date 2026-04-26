@@ -46,3 +46,4 @@ public class SimpleCircuit extends BaseSTBItem {
         return true;
     }
 }
+

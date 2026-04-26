@@ -92,3 +92,4 @@ public class SimpleCustomRecipe implements CustomRecipe {
         return "Custom recipe: " + processorID + " : " + ingredient + " -> " + result + " in " + processingTime + " ticks";
     }
 }
+

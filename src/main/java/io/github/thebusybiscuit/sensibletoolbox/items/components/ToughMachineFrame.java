@@ -40,3 +40,4 @@ public class ToughMachineFrame extends BaseSTBItem {
         return recipe;
     }
 }
+

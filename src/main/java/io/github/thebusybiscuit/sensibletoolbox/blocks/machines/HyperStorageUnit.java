@@ -11,7 +11,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
-import io.github.bakedlibs.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
 
 public class HyperStorageUnit extends BigStorageUnit {
@@ -142,3 +142,4 @@ public class HyperStorageUnit extends BigStorageUnit {
         super.onBlockUnregistered(loc);
     }
 }
+

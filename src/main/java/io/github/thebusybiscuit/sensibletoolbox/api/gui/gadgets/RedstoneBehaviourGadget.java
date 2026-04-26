@@ -49,3 +49,4 @@ public class RedstoneBehaviourGadget extends CyclerGadget<RedstoneBehaviour> {
         ((BaseSTBBlock) stbItem).setRedstoneBehaviour(newValue);
     }
 }
+

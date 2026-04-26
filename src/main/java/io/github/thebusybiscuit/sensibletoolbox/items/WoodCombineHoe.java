@@ -36,3 +36,4 @@ public class WoodCombineHoe extends CombineHoe {
         return recipe;
     }
 }
+

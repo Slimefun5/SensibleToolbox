@@ -49,3 +49,4 @@ public interface EnderStorageHolder extends STBInventoryHolder {
      */
     void setChanged();
 }
+

@@ -206,3 +206,4 @@ public class PersistableLocation implements ConfigurationSerializable {
         }
     }
 }
+

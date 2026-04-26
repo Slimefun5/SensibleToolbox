@@ -79,3 +79,4 @@ public interface STBInventoryHolder extends InventoryHolder {
      */
     void updateOutputItems(UUID uuid, Inventory inventory);
 }
+

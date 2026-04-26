@@ -52,3 +52,4 @@ public interface EnergyNet {
      */
     double getSupply();
 }
+

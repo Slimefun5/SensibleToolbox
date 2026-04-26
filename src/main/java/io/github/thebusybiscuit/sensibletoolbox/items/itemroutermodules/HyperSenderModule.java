@@ -51,3 +51,4 @@ public class HyperSenderModule extends AdvancedSenderModule {
         return ourLoc != null;
     }
 }
+

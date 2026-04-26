@@ -84,3 +84,4 @@ class DatabaseManager {
         return tables.next();
     }
 }
+

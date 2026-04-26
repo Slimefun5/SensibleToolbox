@@ -48,3 +48,4 @@ public class LevelMonitor extends MonitorGadget {
         return new int[] { reporter.getLevelMonitorSlot() };
     }
 }
+

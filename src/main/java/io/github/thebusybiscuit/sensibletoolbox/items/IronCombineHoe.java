@@ -36,3 +36,4 @@ public class IronCombineHoe extends CombineHoe {
         return recipe;
     }
 }
+
