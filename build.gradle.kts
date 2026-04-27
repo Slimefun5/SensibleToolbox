@@ -1,7 +1,7 @@
 plugins {
     java
     id("com.gradleup.shadow") version "9.3.2"
-    id("io.github.intisy.github-gradle") version "1.3.8"
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
 }
 
 group = "com.github.slimefun"
@@ -10,10 +10,9 @@ description = "SensibleToolbox is a Spigot/Paper plugin which adds tons of items
 
 github {
     accessToken = System.getenv("GITHUB_TOKEN") ?: ""
-}
-
-publishGithub {
-    tag = System.getenv("GITHUB_REF_NAME")
+    publish {
+        tag = System.getenv("GITHUB_REF_NAME")
+    }
 }
 
 java {
@@ -33,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    githubCompileOnly("Slimefun5:Slimefun5:v5.0.3")
+    "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
     compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")
