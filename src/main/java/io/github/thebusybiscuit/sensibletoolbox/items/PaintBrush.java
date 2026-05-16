@@ -329,7 +329,7 @@ public class PaintBrush extends BaseSTBItem {
 
         int i = 0;
         for (Art art : other) {
-            menu.addGadget(new ButtonGadget(menu, i, new CustomItemStack(Material.PAINTING, art.name(), "", "&7Click to select this artwork"), new Runnable() {
+            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(Material.PAINTING, art.name(), "", "&7Click to select this artwork"), new Runnable() {
 
                 @Override
                 public void run() {

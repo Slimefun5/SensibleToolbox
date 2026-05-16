@@ -246,7 +246,7 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
             RecipeUtil.setupRecipes();
             RecipeBook.buildRecipes();
 
-            protectionManager = new ProtectionManager(getServer());
+            protectionManager = new ProtectionManager(this);
         });
 
         getServer().getScheduler().runTaskTimer(this, LocationManager.getManager()::tick, 1L, 1L);
@@ -261,8 +261,8 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         }
 
         if (getConfig().getBoolean("options.auto-update") && getDescription().getVersion().startsWith("DEV - ")) {
-            PluginUpdater<PrefixedVersion> updater = new GitHubBuildsUpdater(this, getFile(), "Slimefun/SensibleToolbox/master");
-            updater.start();
+            // PluginUpdater<PrefixedVersion> updater = new GitHubBuildsUpdater(this, getFile(), "Slimefun/SensibleToolbox/master");
+            // updater.start();
         }
 
         enabled = true;

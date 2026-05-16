@@ -40,7 +40,13 @@ public class SoundCommand extends AbstractCommand {
     @Override
     public List<String> onTabComplete(Plugin plugin, CommandSender sender, String[] args) {
         if (args.length == 1) {
-            return getEnumCompletions(sender, Sound.class, args[0]);
+            List<String> list = new java.util.ArrayList<>();
+            for (Sound s : org.bukkit.Registry.SOUNDS) {
+                if (s.getKey().getKey().toUpperCase(java.util.Locale.ROOT).startsWith(args[0].toUpperCase(java.util.Locale.ROOT))) {
+                    list.add(s.getKey().getKey().toUpperCase(java.util.Locale.ROOT));
+                }
+            }
+            return list;
         } else {
             return noCompletions(sender);
         }

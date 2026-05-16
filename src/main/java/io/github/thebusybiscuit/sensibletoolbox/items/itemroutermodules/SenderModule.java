@@ -105,7 +105,7 @@ public class SenderModule extends DirectionalItemRouterModule {
         double xOff = (d.getX() - s.getX()) / 2;
         double zOff = (d.getZ() - s.getZ()) / 2;
         Location mid = s.add(xOff + 0.5, 0.5, zOff + 0.5);
-        s.getWorld().spawnParticle(Particle.REDSTONE, mid.getX(), mid.getY(), mid.getZ(), 15, (float) xOff / 4, 0, (float) zOff / 4, 0, new DustOptions(Color.GREEN, 1.5F));
+        s.getWorld().spawnParticle(Particle.DUST, mid.getX(), mid.getY(), mid.getZ(), 15, (float) xOff / 4, 0, (float) zOff / 4, 0, new DustOptions(Color.GREEN, 1.5F));
     }
 
     private ReceiverModule findReceiver(Block b) {

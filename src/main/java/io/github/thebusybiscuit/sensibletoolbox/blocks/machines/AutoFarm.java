@@ -133,7 +133,7 @@ public class AutoFarm extends AutoFarmingMachine {
                     amount = (stack.getMaxStackSize() - stack.getAmount()) > 3 ? (ThreadLocalRandom.current().nextInt(2) + 1) : (stack.getMaxStackSize() - stack.getAmount());
                 }
 
-                setInventoryItem(slot, new CustomItemStack(stack, stack.getAmount() + amount));
+                setInventoryItem(slot, CustomItemStack.create(stack, stack.getAmount() + amount));
                 buffer = null;
                 return true;
             }

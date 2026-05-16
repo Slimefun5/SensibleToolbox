@@ -36,8 +36,8 @@ public final class SlimefunBridge implements SlimefunAddon {
     public SlimefunBridge(@Nonnull SensibleToolboxPlugin plugin) {
         this.plugin = plugin;
 
-        ItemGroup items = new ItemGroup(new NamespacedKey(plugin, "items"), new CustomItemStack(Material.SHEARS, "&7STB - Items"));
-        ItemGroup blocks = new ItemGroup(new NamespacedKey(plugin, "blocks"), new CustomItemStack(Material.PURPLE_STAINED_GLASS, "&7STB - Blocks and Machines"));
+        ItemGroup items = new ItemGroup(new NamespacedKey(plugin, "items"), CustomItemStack.create(Material.SHEARS, "&7STB - Items"));
+        ItemGroup blocks = new ItemGroup(new NamespacedKey(plugin, "blocks"), CustomItemStack.create(Material.PURPLE_STAINED_GLASS, "&7STB - Blocks and Machines"));
 
         for (String id : SensibleToolboxPlugin.getInstance().getItemRegistry().getItemIds()) {
             BaseSTBItem item = SensibleToolboxPlugin.getInstance().getItemRegistry().getItemById(id);
@@ -119,9 +119,9 @@ public final class SlimefunBridge implements SlimefunAddon {
 
         RecipeType masher = new RecipeType(new NamespacedKey(plugin, "masher"), SlimefunItem.getById("STB_MASHER").getItem());
         RecipeType fermenter = new RecipeType(new NamespacedKey(plugin, "fermenter"), SlimefunItem.getById("STB_FERMENTER").getItem());
-        RecipeType mobDrop = new RecipeType(new NamespacedKey(plugin, "mob_drop"), new CustomItemStack(Material.IRON_SWORD, "&bMob Drop", "&7Kill that Mob to", "&7obtain this Item"));
+        RecipeType mobDrop = new RecipeType(new NamespacedKey(plugin, "mob_drop"), CustomItemStack.create(Material.IRON_SWORD, "&bMob Drop", "&7Kill that Mob to", "&7obtain this Item"));
 
-        patch("STB_INFERNALDUST", mobDrop, new CustomItemStack(Material.BLAZE_SPAWN_EGG, "&a&oBlaze"));
+        patch("STB_INFERNALDUST", mobDrop, CustomItemStack.create(Material.BLAZE_SPAWN_EGG, "&a&oBlaze"));
         patch("STB_ENERGIZEDGOLDINGOT", new RecipeType(MinecraftRecipe.FURNACE), SlimefunItem.getById("STB_ENERGIZEDGOLDDUST").getItem());
         patch("STB_QUARTZDUST", masher, new ItemStack(Material.QUARTZ));
         patch("STB_ENERGIZEDIRONINGOT", new RecipeType(MinecraftRecipe.FURNACE), SlimefunItem.getById("STB_ENERGIZEDIRONDUST").getItem());

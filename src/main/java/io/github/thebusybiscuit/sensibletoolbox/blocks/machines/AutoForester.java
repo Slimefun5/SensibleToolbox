@@ -135,7 +135,7 @@ public class AutoForester extends AutoFarmingMachine {
                     stack = new ItemStack(m);
                 }
 
-                setInventoryItem(slot, new CustomItemStack(stack, stack.getAmount() + 1));
+                setInventoryItem(slot, CustomItemStack.create(stack, stack.getAmount() + 1));
                 buffer = null;
                 return true;
             }

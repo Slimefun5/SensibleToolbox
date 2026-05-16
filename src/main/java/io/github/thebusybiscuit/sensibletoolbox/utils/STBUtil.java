@@ -104,8 +104,8 @@ public final class STBUtil {
             return true;
         }
 
-        if (Tag.TALL_FLOWERS.isTagged(type)) {
-            return true;
+        if (Tag.FLOWERS.isTagged(type)) {
+            return type.name().contains("TALL") || type == Material.PEONY || type == Material.LILAC || type == Material.ROSE_BUSH || type == Material.SUNFLOWER;
         }
 
         switch (type) {
