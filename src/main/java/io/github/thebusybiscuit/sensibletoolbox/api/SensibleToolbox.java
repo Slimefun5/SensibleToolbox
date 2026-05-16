@@ -4,7 +4,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.block.Block;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.protection.ProtectionManager;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.ProtectionManager;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.EnergyNet;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
@@ -116,4 +116,5 @@ public final class SensibleToolbox {
         return getPluginInstance().getProtectionManager();
     }
 }
+
 

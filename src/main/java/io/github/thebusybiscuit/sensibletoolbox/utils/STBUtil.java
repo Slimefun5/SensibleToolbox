@@ -33,7 +33,7 @@ import org.bukkit.metadata.Metadatable;
 
 import com.google.common.base.Joiner;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.MinecraftVersion;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
@@ -938,4 +938,5 @@ public final class STBUtil {
     }
 
 }
+
 

@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
@@ -33,9 +33,10 @@ repositories {
 
 dependencies {
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
-    compileOnly("io.papermc.paper:paper-api:1.21.4-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:")}")
+    compileOnly("commons-lang:commons-lang:2.6")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    compileOnly("com.comphenix.protocol:ProtocolLib:5.1.0")
+    compileOnly("com.comphenix.protocol:ProtocolLib:5.3.0")
     compileOnly("com.gmail.filoghost.holographicdisplays:holographicdisplays-api:2.4.9")
     compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.8") {
         exclude(group = "de.schlichtherle", module = "truezip")
