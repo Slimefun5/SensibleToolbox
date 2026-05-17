@@ -12,14 +12,6 @@ A Slimefun addon that adds realistic machines, pipes, and automation tools.
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-# :toolbox: Sensible Toolbox
-Looking for the download link? [**Click here**](#floppy_disk-download-sensible-toolbox)
-
-Sensible Toolbox is a Spigot/Paper plugin which adds a bunch of new items, tools and machines to your Minecraft Server.
-It's heavily inspired by certain Forge-based mods, but of course requires no client modifications at all.
-
-Also check out [Slimefun5](https://github.com/Slimefun5/Slimefun5), they pair really well together!
-
 ## :notebook_with_decorative_cover: About the project
 SensibleToolbox was created in early 2014 and originally developed by [@desht](https://github.com/desht), here is a link to the original GitHub Repository: https://github.com/desht/sensibletoolbox.<br>
 I took over the project back in late 2014 and continued to update it for some time until I have quit plugin development altogether in late 2016.<br>
