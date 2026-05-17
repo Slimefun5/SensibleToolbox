@@ -12,22 +12,6 @@ A Slimefun addon that adds realistic machines, pipes, and automation tools.
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-## Developer API
-
-You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
-
-In your `build.gradle.kts`:
-
-```kotlin
-plugins {
-    id("io.github.intisy.github-gradle") version "1.8.2.1"
-}
-
-dependencies {
-    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.2")
-}
-```
-
 # :toolbox: Sensible Toolbox
 Looking for the download link? [**Click here**](#floppy_disk-download-sensible-toolbox)
 
@@ -84,3 +68,19 @@ All of the collected data is publicly accessible: https://bstats.org/plugin/bukk
 
 You can also disable this behaviour under `/plugins/bStats/config.yml`.<br>
 For more info see [bStats' Privacy Policy](https://bstats.org/privacy-policy)
+
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.2")
+}
+```
