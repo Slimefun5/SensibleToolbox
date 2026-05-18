@@ -8,9 +8,9 @@
 A Slimefun addon that adds realistic machines, pipes, and automation tools.
 
 ## Requirements
-- Java 17+
-- Paper 1.16.* - 1.20.*
-- Slimefun 5
+- Java 25
+- Paper 1.16.* - 26.1.*
+- [Slimefun 5](https://github.com/Slimefun5/Slimefun5)
 
 ## :notebook_with_decorative_cover: About the project
 SensibleToolbox was created in early 2014 and originally developed by [@desht](https://github.com/desht), here is a link to the original GitHub Repository: https://github.com/desht/sensibletoolbox.<br>
