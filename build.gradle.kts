@@ -32,7 +32,7 @@ repositories {
 }
 
 dependencies {
-    githubImplementation("Slimefun5:SlimefunMetrics:master")
+    implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("commons-lang:commons-lang:2.6")
