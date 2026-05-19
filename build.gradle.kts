@@ -32,6 +32,7 @@ repositories {
 }
 
 dependencies {
+    githubImplementation("Slimefun5:SlimefunMetrics:master")
     "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("commons-lang:commons-lang:2.6")
@@ -42,8 +43,7 @@ dependencies {
         exclude(group = "de.schlichtherle", module = "truezip")
     }
 
-    implementation("org.bstats:bstats-bukkit:3.0.2")
-
+    
     testImplementation(platform("org.junit:junit-bom:5.11.4"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
@@ -72,8 +72,7 @@ tasks {
     }
     shadowJar {
         archiveFileName.set("SensibleToolbox v${project.version}.jar")
-        relocate("org.bstats", "io.github.thebusybiscuit.sensibletoolbox.libraries.bstats")
-        exclude("META-INF/**")
+                exclude("META-INF/**")
     }
     build {
         dependsOn(shadowJar)

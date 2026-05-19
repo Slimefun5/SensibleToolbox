@@ -10,7 +10,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang.Validate;
-import org.bstats.bukkit.Metrics;
 import org.bukkit.Server;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -18,6 +17,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.scheduler.BukkitTask;
 
 import com.comphenix.protocol.ProtocolLib;
@@ -185,6 +185,8 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
 
     @Override
     public void onEnable() {
+        MetricsModule.setup(this, 31393);
+
         instance = this;
 
         // We wanna ensure that the Server uses a compatible version of Minecraft
@@ -194,8 +196,7 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         }
 
         LogUtils.init(this);
-        new Metrics(this, 6354);
-
+        
         configManager = new ConfigurationManager(this, this);
         configCache = new ConfigCache(this);
         configCache.processConfig();
