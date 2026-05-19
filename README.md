@@ -4,6 +4,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/SensibleToolbox/total)
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/SensibleToolbox?style=social)](https://github.com/Slimefun5/SensibleToolbox)
+[![bStats](https://bStats.org/signatures/bukkit/SensibleToolbox.svg)](https://bStats.org/plugin/bukkit/SensibleToolbox/31393)
 
 A Slimefun addon that adds realistic machines, pipes, and automation tools.
 
