@@ -8,7 +8,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.bukkit.Material;
-import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -37,8 +36,8 @@ public final class SlimefunBridge implements SlimefunAddon {
     public SlimefunBridge(@Nonnull SensibleToolboxPlugin plugin) {
         this.plugin = plugin;
 
-        ItemGroup items = new ItemGroup(new NamespacedKey(plugin, "items"), CustomItemStack.create(Material.SHEARS, "&7STB - Items"));
-        ItemGroup blocks = new ItemGroup(new NamespacedKey(plugin, "blocks"), CustomItemStack.create(Material.PURPLE_STAINED_GLASS, "&7STB - Blocks and Machines"));
+        ItemGroup items = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "items"), CustomItemStack.create(Material.SHEARS, "&7STB - Items"));
+        ItemGroup blocks = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "blocks"), CustomItemStack.create(Material.PURPLE_STAINED_GLASS, "&7STB - Blocks and Machines"));
 
         for (String id : SensibleToolboxPlugin.getInstance().getItemRegistry().getItemIds()) {
             BaseSTBItem item = SensibleToolboxPlugin.getInstance().getItemRegistry().getItemById(id);
@@ -118,9 +117,9 @@ public final class SlimefunBridge implements SlimefunAddon {
             sfItem.register(this);
         }
 
-        RecipeType masher = new RecipeType(new NamespacedKey(plugin, "masher"), SlimefunItem.getById("STB_MASHER").getItem());
-        RecipeType fermenter = new RecipeType(new NamespacedKey(plugin, "fermenter"), SlimefunItem.getById("STB_FERMENTER").getItem());
-        RecipeType mobDrop = new RecipeType(new NamespacedKey(plugin, "mob_drop"), CustomItemStack.create(Material.IRON_SWORD, "&bMob Drop", "&7Kill that Mob to", "&7obtain this Item"));
+        RecipeType masher = new RecipeType(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "masher"), SlimefunItem.getById("STB_MASHER").getItem());
+        RecipeType fermenter = new RecipeType(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "fermenter"), SlimefunItem.getById("STB_FERMENTER").getItem());
+        RecipeType mobDrop = new RecipeType(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "mob_drop"), CustomItemStack.create(Material.IRON_SWORD, "&bMob Drop", "&7Kill that Mob to", "&7obtain this Item"));
 
         patch("STB_INFERNALDUST", mobDrop, CustomItemStack.create(Material.BLAZE_SPAWN_EGG, "&a&oBlaze"));
         patch("STB_ENERGIZEDGOLDINGOT", new RecipeType(MinecraftRecipe.FURNACE), SlimefunItem.getById("STB_ENERGIZEDGOLDDUST").getItem());
