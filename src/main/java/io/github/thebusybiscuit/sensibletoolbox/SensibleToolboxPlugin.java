@@ -278,27 +278,16 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
     private boolean isVersionUnsupported() {
         int majorVersion = getMinecraftMajorVersion();
 
-        if (majorVersion > 0) {
-            for (MinecraftVersion supportedVersion : MinecraftVersion.values()) {
-                if (supportedVersion.isMinecraftVersion(majorVersion)) {
-                    minecraftVersion = supportedVersion;
-                    return false;
-                }
+        for (MinecraftVersion supportedVersion : MinecraftVersion.values()) {
+            if (supportedVersion.isMinecraftVersion(majorVersion)) {
+                minecraftVersion = supportedVersion;
+                return false;
             }
-
-            // Looks like you are using an unsupported Minecraft Version
-            getLogger().log(Level.SEVERE, "#############################################");
-            getLogger().log(Level.SEVERE, "### SensibleToolbox was not installed correctly!");
-            getLogger().log(Level.SEVERE, "### You are using the wrong version of Minecraft!");
-            getLogger().log(Level.SEVERE, "###");
-            getLogger().log(Level.SEVERE, "### You are using Minecraft v1.{0}", majorVersion);
-            getLogger().log(Level.SEVERE, "### but SensibleToolbox v{0} requires you to be using", getDescription().getVersion());
-            getLogger().log(Level.SEVERE, "### Minecraft {0}", String.join(" / ", getSupportedVersions()));
-            getLogger().log(Level.SEVERE, "#############################################");
-            return true;
         }
 
-        getLogger().log(Level.WARNING, "We could not determine the version of Minecraft you were using (1.{0})", majorVersion);
+        // Universal-jar port: API calls go through Slimefun's compat layer, so accept any server version
+        // and behave as the newest known one instead of refusing to load.
+        minecraftVersion = MinecraftVersion.MINECRAFT_1_18;
         return false;
     }
 
