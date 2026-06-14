@@ -1,7 +1,6 @@
 package io.github.thebusybiscuit.sensibletoolbox.blocks.machines;
 
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -20,6 +19,10 @@ import io.github.thebusybiscuit.sensibletoolbox.items.components.GoldDust;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IronDust;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class ElectricalEnergizer extends AbstractIOMachine {
 
@@ -31,9 +34,9 @@ public class ElectricalEnergizer extends AbstractIOMachine {
 
     @Override
     public void addCustomRecipes(CustomRecipeManager crm) {
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.IRON_INGOT), new EnergizedIronIngot().toItemStack(1), 60 * 20));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.GOLD_INGOT), new EnergizedGoldIngot().toItemStack(1), 60 * 20));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.QUARTZ), new EnergizedQuartz().toItemStack(1), 60 * 20));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new EnergizedIronIngot().toItemStack(1), 60 * 20));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT)), new EnergizedGoldIngot().toItemStack(1), 60 * 20));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.QUARTZ)), new EnergizedQuartz().toItemStack(1), 60 * 20));
         crm.addCustomRecipe(new SimpleCustomRecipe(this, new IronDust().toItemStack(1), new EnergizedIronDust().toItemStack(1), 60 * 20));
         crm.addCustomRecipe(new SimpleCustomRecipe(this, new GoldDust().toItemStack(1), new EnergizedGoldDust().toItemStack(1), 60 * 20));
     }
@@ -50,7 +53,7 @@ public class ElectricalEnergizer extends AbstractIOMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FLINT_AND_STEEL);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL));
     }
 
     @Override
@@ -76,13 +79,13 @@ public class ElectricalEnergizer extends AbstractIOMachine {
     @Override
     protected void onMachineStartup() {
         if (SensibleToolbox.getPluginInstance().getConfigCache().isNoisyMachines()) {
-            getLocation().getWorld().playSound(getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0F, 0.5F);
+            SoundCompat.play(getLocation().getWorld(), getLocation(), "ENTITY_PLAYER_LEVELUP", 1.0F, 0.5F);
         }
     }
 
     @Override
     public Material getMaterial() {
-        return Material.GRAY_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.GRAY_TERRACOTTA);
     }
 
     @Override
@@ -102,11 +105,11 @@ public class ElectricalEnergizer extends AbstractIOMachine {
         EnergizedGoldIngot gold = new EnergizedGoldIngot();
         EnergizedQuartz quartz = new EnergizedQuartz();
         registerCustomIngredients(sc, mf, gold, quartz);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("QQQ", "IFI", "RGR");
         recipe.setIngredient('I', sc.getMaterial());
         recipe.setIngredient('F', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
         recipe.setIngredient('G', gold.getMaterial());
         recipe.setIngredient('Q', quartz.getMaterial());
         return recipe;

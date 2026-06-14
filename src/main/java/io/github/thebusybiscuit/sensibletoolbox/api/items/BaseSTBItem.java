@@ -12,9 +12,9 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang.Validate;
 import org.bukkit.ChatColor;
-import org.bukkit.Keyed;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.Keyed;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
@@ -35,7 +35,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.permissions.Permissible;
 import org.bukkit.plugin.Plugin;
 
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.PdcCompat;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
@@ -334,7 +334,7 @@ public abstract class BaseSTBItem implements Comparable<BaseSTBItem>, InventoryG
             conf.set("*nostack", System.nanoTime() ^ ThreadLocalRandom.current().nextLong());
         }
         conf.set("*TYPE", getItemTypeID());
-        PersistentDataAPI.setString(im, SensibleToolboxPlugin.getInstance().getItemRegistry().getKey(), conf.saveToString());
+        PdcCompat.setString(im, SensibleToolboxPlugin.getInstance().getItemRegistry().getKey(), conf.saveToString());
 
         res.setItemMeta(im);
 

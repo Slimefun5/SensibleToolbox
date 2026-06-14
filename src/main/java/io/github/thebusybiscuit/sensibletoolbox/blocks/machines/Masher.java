@@ -1,8 +1,6 @@
 package io.github.thebusybiscuit.sensibletoolbox.blocks.machines;
 
 import org.bukkit.Material;
-import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -17,6 +15,11 @@ import io.github.thebusybiscuit.sensibletoolbox.items.components.IronDust;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.QuartzDust;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Masher extends AbstractIOMachine {
 
@@ -30,35 +33,35 @@ public class Masher extends AbstractIOMachine {
     public void addCustomRecipes(CustomRecipeManager crm) {
         QuartzDust qd = new QuartzDust();
 
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.COBBLESTONE), new ItemStack(Material.SAND), 120));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.GRAVEL), new ItemStack(Material.SAND), 80));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.BONE), new ItemStack(Material.BONE_MEAL, 5), 40));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.BLAZE_ROD), new ItemStack(Material.BLAZE_POWDER, 4), 80));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.COAL_ORE), new ItemStack(Material.COAL, 2), 100));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.REDSTONE_ORE), new ItemStack(Material.REDSTONE, 6), 100));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.DIAMOND_ORE), new ItemStack(Material.DIAMOND, 2), 160));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.IRON_ORE), new IronDust().toItemStack(2), 120));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.IRON_INGOT), new IronDust().toItemStack(), 120));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.GOLD_ORE), new GoldDust().toItemStack(2), 80));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.GOLD_INGOT), new GoldDust().toItemStack(), 80));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.COBBLESTONE)), new ItemStack(MaterialCompat.safe(XMaterial.SAND)), 120));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.GRAVEL)), new ItemStack(MaterialCompat.safe(XMaterial.SAND)), 80));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.BONE)), new ItemStack(MaterialCompat.safe(XMaterial.BONE_MEAL), 5), 40));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.BLAZE_ROD)), new ItemStack(MaterialCompat.safe(XMaterial.BLAZE_POWDER), 4), 80));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.COAL_ORE)), new ItemStack(MaterialCompat.safe(XMaterial.COAL), 2), 100));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE_ORE)), new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE), 6), 100));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_ORE)), new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND), 2), 160));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.IRON_ORE)), new IronDust().toItemStack(2), 120));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new IronDust().toItemStack(), 120));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.GOLD_ORE)), new GoldDust().toItemStack(2), 80));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT)), new GoldDust().toItemStack(), 80));
 
         for (Material wool : Tag.WOOL.getValues()) {
-            crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(wool), new ItemStack(Material.STRING, 4), 60));
+            crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(wool), new ItemStack(MaterialCompat.safe(XMaterial.STRING), 4), 60));
         }
 
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.GLOWSTONE), new ItemStack(Material.GLOWSTONE_DUST, 4), 60));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.LAPIS_ORE), new ItemStack(Material.LAPIS_LAZULI, 8), 80));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.GLOWSTONE)), new ItemStack(MaterialCompat.safe(XMaterial.GLOWSTONE_DUST), 4), 60));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.LAPIS_ORE)), new ItemStack(MaterialCompat.safe(XMaterial.LAPIS_LAZULI), 8), 80));
         //
         for (Material leaves : Tag.LEAVES.getValues()) {
-            crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(leaves), new ItemStack(Material.GREEN_DYE), 40), true);
+            crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(leaves), new ItemStack(MaterialCompat.safe(XMaterial.GREEN_DYE)), 40), true);
         }
 
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.QUARTZ), qd.toItemStack(), 120));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.QUARTZ)), qd.toItemStack(), 120));
     }
 
     @Override
     public Material getMaterial() {
-        return Material.GREEN_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.GREEN_TERRACOTTA);
     }
 
     @Override
@@ -76,13 +79,13 @@ public class Masher extends AbstractIOMachine {
         SimpleCircuit sc = new SimpleCircuit();
         MachineFrame mf = new MachineFrame();
         registerCustomIngredients(sc, mf);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("FFF", "SIS", "RGR");
-        recipe.setIngredient('F', Material.FLINT);
+        recipe.setIngredient('F', MaterialCompat.safe(XMaterial.FLINT));
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('I', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -143,13 +146,13 @@ public class Masher extends AbstractIOMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.GOLDEN_PICKAXE);
+        return new ItemStack(MaterialCompat.safe(XMaterial.GOLDEN_PICKAXE));
     }
 
     @Override
     protected void onMachineStartup() {
         if (SensibleToolbox.getPluginInstance().getConfigCache().isNoisyMachines()) {
-            getLocation().getWorld().playSound(getLocation(), Sound.ENTITY_SKELETON_HORSE_AMBIENT, 1.0F, 0.5F);
+            SoundCompat.play(getLocation().getWorld(), getLocation(), "ENTITY_SKELETON_HORSE_AMBIENT", 1.0F, 0.5F);
         }
     }
 

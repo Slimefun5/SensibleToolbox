@@ -15,12 +15,14 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 class QueueSwapper extends BukkitRunnable {
 
     // Ensure we can mine anything
-    private final ItemStack tool = new ItemStack(Material.DIAMOND_PICKAXE);
+    private final ItemStack tool = new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE));
     private final Queue<SwapRecord> queue;
 
     public QueueSwapper(@Nonnull Queue<SwapRecord> queue) {

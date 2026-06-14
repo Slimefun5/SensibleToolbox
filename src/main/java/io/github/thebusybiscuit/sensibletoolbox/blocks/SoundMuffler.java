@@ -12,12 +12,15 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.NumericGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.listeners.SoundMufflerListener;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 
 /**
  * The {@link SoundMuffler} muffles or mutes nearby sounds.
@@ -77,7 +80,7 @@ public class SoundMuffler extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return Material.WHITE_WOOL;
+        return MaterialCompat.safe(XMaterial.WHITE_WOOL);
     }
 
     @Override
@@ -92,10 +95,10 @@ public class SoundMuffler extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WWW", "WNW", "WWW");
-        recipe.setIngredient('W', Material.WHITE_WOOL);
-        recipe.setIngredient('N', Material.NOTE_BLOCK);
+        recipe.setIngredient('W', MaterialCompat.safe(XMaterial.WHITE_WOOL));
+        recipe.setIngredient('N', MaterialCompat.safe(XMaterial.NOTE_BLOCK));
         return recipe;
     }
 

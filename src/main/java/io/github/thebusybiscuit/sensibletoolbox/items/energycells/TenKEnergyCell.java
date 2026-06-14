@@ -1,12 +1,14 @@
 package io.github.thebusybiscuit.sensibletoolbox.items.energycells;
 
 import org.bukkit.Color;
-import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice.MaterialChoice;
 import org.bukkit.inventory.ShapedRecipe;
+
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class TenKEnergyCell extends EnergyCell {
 
@@ -40,12 +42,12 @@ public class TenKEnergyCell extends EnergyCell {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WWW", "WSW", "GRG");
-        recipe.setIngredient('W', new MaterialChoice(Tag.PLANKS.getValues().toArray(new Material[0])));
-        recipe.setIngredient('S', Material.SUGAR);
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        RecipeCompat.setIngredient(recipe, 'W', Tag.PLANKS.getValues());
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.SUGAR));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 

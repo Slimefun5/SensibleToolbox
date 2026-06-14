@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class IntegratedCircuit extends BaseSTBItem {
 
@@ -15,7 +18,7 @@ public class IntegratedCircuit extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.COMPARATOR;
+        return MaterialCompat.safe(XMaterial.COMPARATOR);
     }
 
     @Override
@@ -34,7 +37,7 @@ public class IntegratedCircuit extends BaseSTBItem {
         EnergizedGoldIngot eg = new EnergizedGoldIngot();
         SiliconWafer si = new SiliconWafer();
         registerCustomIngredients(sc, eg, si);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SCG");
         recipe.setIngredient('C', sc.getMaterial());
         recipe.setIngredient('G', eg.getMaterial());

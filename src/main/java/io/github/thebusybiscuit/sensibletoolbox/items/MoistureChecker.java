@@ -9,7 +9,6 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.BlockData;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
@@ -19,8 +18,12 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.SoilSaturation;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class MoistureChecker extends BaseSTBItem {
 
@@ -34,7 +37,7 @@ public class MoistureChecker extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GHAST_TEAR;
+        return MaterialCompat.safe(XMaterial.GHAST_TEAR);
     }
 
     @Override
@@ -52,11 +55,11 @@ public class MoistureChecker extends BaseSTBItem {
     public Recipe getMainRecipe() {
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("S", "C", "I");
-        recipe.setIngredient('S', Material.OAK_SIGN);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.OAK_SIGN));
         recipe.setIngredient('C', sc.getMaterial());
-        recipe.setIngredient('I', Material.GOLDEN_SWORD);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.GOLDEN_SWORD));
         return recipe;
     }
 
@@ -86,48 +89,51 @@ public class MoistureChecker extends BaseSTBItem {
                 for (int j = -getRadius(); j <= getRadius(); j++) {
                     Block b1 = b.getRelative(i, 0, j);
 
-                    if (b1.getType() == Material.FARMLAND) {
+                    if (b1.getType() == MaterialCompat.safe(XMaterial.FARMLAND)) {
                         l.add(b1.getLocation());
                     }
                 }
             }
 
             if (!l.isEmpty()) {
-                Bukkit.getScheduler().runTask(getProviderPlugin(), () -> {
-                    for (Location loc : l) {
-                        player.sendBlockChange(loc, getWoolFromSaturationlevel(loc.getBlock()));
-                    }
-                });
+                // visual moisture overlay relies on BlockData (1.13+); no-op on legacy MC
+                if (BlockDataCompat.isModern()) {
+                    Bukkit.getScheduler().runTask(getProviderPlugin(), () -> {
+                        for (Location loc : l) {
+                            BlockDataCompat.sendBlockChange(player, loc, getWoolFromSaturationlevel(loc.getBlock()));
+                        }
+                    });
 
-                Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
-                    for (Location loc : l) {
-                        player.sendBlockChange(loc, loc.getBlock().getBlockData());
-                    }
-                }, 30L);
+                    Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
+                        for (Location loc : l) {
+                            BlockDataCompat.restoreBlockChange(player, loc.getBlock());
+                        }
+                    }, 30L);
+                }
 
                 event.setCancelled(true);
             }
         }
     }
 
-    private BlockData getWoolFromSaturationlevel(Block b) {
+    private Material getWoolFromSaturationlevel(Block b) {
         long now = System.currentTimeMillis();
         long delta = (now - SoilSaturation.getLastWatered(b)) / 1000;
         int saturation = SoilSaturation.getSaturationLevel(b);
         saturation = Math.max(0, saturation - (int) delta);
 
         if (saturation < 10) {
-            return Material.YELLOW_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.YELLOW_WOOL);
         } else if (saturation < 30) {
-            return Material.BROWN_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.BROWN_WOOL);
         } else if (saturation < 50) {
-            return Material.GREEN_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.GREEN_WOOL);
         } else if (saturation < 70) {
-            return Material.LIGHT_BLUE_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.LIGHT_BLUE_WOOL);
         } else if (saturation < 90) {
-            return Material.CYAN_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.CYAN_WOOL);
         } else {
-            return Material.BLUE_WOOL.createBlockData();
+            return MaterialCompat.safe(XMaterial.BLUE_WOOL);
         }
     }
 }

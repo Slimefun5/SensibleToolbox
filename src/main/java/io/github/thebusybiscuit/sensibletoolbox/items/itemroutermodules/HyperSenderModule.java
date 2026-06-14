@@ -8,7 +8,10 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SubspaceTransponder;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class HyperSenderModule extends AdvancedSenderModule {
 
@@ -22,7 +25,7 @@ public class HyperSenderModule extends AdvancedSenderModule {
 
     @Override
     public Material getMaterial() {
-        return Material.CYAN_DYE;
+        return MaterialCompat.safe(XMaterial.CYAN_DYE);
     }
 
     @Override
@@ -40,7 +43,7 @@ public class HyperSenderModule extends AdvancedSenderModule {
         SenderModule sm = new SenderModule();
         SubspaceTransponder st = new SubspaceTransponder();
         registerCustomIngredients(sm, st);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(sm.getMaterial());
         recipe.addIngredient(st.getMaterial());
         return recipe;

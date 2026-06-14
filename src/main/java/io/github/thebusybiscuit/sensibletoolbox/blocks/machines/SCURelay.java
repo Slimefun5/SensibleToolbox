@@ -30,6 +30,9 @@ import io.github.thebusybiscuit.sensibletoolbox.core.IDTracker;
 import io.github.thebusybiscuit.sensibletoolbox.core.energy.SCURelayConnection;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SubspaceTransponder;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.UnlinkedSCURelay;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.text.LogUtils;
 
@@ -73,7 +76,7 @@ public class SCURelay extends BatteryBox {
 
     @Override
     public Material getMaterial() {
-        return Material.CYAN_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS);
     }
 
     @Override
@@ -104,7 +107,7 @@ public class SCURelay extends BatteryBox {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack(2));
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack(2));
         UnlinkedSCURelay usr = new UnlinkedSCURelay();
         registerCustomIngredients(usr);
         recipe.addIngredient(usr.getMaterial());

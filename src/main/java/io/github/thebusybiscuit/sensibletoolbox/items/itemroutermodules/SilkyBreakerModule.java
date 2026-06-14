@@ -9,9 +9,13 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.EnchantmentStorageMeta;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 public class SilkyBreakerModule extends BreakerModule {
 
-    private static final ItemStack pick = new ItemStack(Material.DIAMOND_PICKAXE, 1);
+    private static final ItemStack pick = new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE), 1);
 
     static {
         pick.addEnchantment(Enchantment.SILK_TOUCH, 1);
@@ -37,18 +41,18 @@ public class SilkyBreakerModule extends BreakerModule {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         BreakerModule b = new BreakerModule();
         registerCustomIngredients(b);
         recipe.addIngredient(b.getMaterial());
-        recipe.addIngredient(Material.ENCHANTED_BOOK);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ENCHANTED_BOOK));
         return recipe;
     }
 
     @Override
     public boolean validateCrafting(CraftingInventory inventory) {
         for (ItemStack stack : inventory.getMatrix()) {
-            if (stack != null && stack.getType() == Material.ENCHANTED_BOOK) {
+            if (stack != null && stack.getType() == MaterialCompat.safe(XMaterial.ENCHANTED_BOOK)) {
                 EnchantmentStorageMeta meta = (EnchantmentStorageMeta) stack.getItemMeta();
                 if (meta.getStoredEnchantLevel(Enchantment.SILK_TOUCH) < 1) {
                     return false;

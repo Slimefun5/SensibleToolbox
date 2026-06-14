@@ -7,6 +7,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EnergizedIronDust extends BaseSTBItem {
 
@@ -18,7 +21,7 @@ public class EnergizedIronDust extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GUNPOWDER;
+        return MaterialCompat.safe(XMaterial.GUNPOWDER);
     }
 
     @Override
@@ -33,7 +36,7 @@ public class EnergizedIronDust extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack(1));
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack(1));
         InfernalDust dust1 = new InfernalDust();
         IronDust dust2 = new IronDust();
         registerCustomIngredients(dust1, dust2);

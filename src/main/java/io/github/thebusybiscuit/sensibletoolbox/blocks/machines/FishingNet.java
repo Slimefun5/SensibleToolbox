@@ -15,13 +15,16 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractProcessingMach
 import io.github.thebusybiscuit.sensibletoolbox.items.components.FishBait;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class FishingNet extends AbstractProcessingMachine {
 
     // 600 ticks (30 Seconds) to catch a Fish
     private static final int FISHING_TIME = 600;
 
-    private static final ItemStack[] fish = { new ItemStack(Material.COD), new ItemStack(Material.SALMON), new ItemStack(Material.PUFFERFISH), new ItemStack(Material.TROPICAL_FISH) }; // Catchable
+    private static final ItemStack[] fish = { new ItemStack(MaterialCompat.safe(XMaterial.COD)), new ItemStack(MaterialCompat.safe(XMaterial.SALMON)), new ItemStack(MaterialCompat.safe(XMaterial.PUFFERFISH)), new ItemStack(MaterialCompat.safe(XMaterial.TROPICAL_FISH)) }; // Catchable
                                                                                                                                                                                         // Fish
 
     public FishingNet() {
@@ -54,7 +57,7 @@ public class FishingNet extends AbstractProcessingMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FISHING_ROD);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FISHING_ROD));
     }
 
     @Override
@@ -79,7 +82,7 @@ public class FishingNet extends AbstractProcessingMachine {
 
     @Override
     protected void playActiveParticleEffect() {
-        getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, Material.COBWEB);
+        getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, MaterialCompat.safe(XMaterial.COBWEB));
     }
 
     @Override
@@ -114,7 +117,7 @@ public class FishingNet extends AbstractProcessingMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.WHITE_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.WHITE_TERRACOTTA);
     }
 
     @Override
@@ -132,13 +135,13 @@ public class FishingNet extends AbstractProcessingMachine {
         SimpleCircuit sc = new SimpleCircuit();
         MachineFrame mf = new MachineFrame();
         registerCustomIngredients(sc, mf);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape(" F ", "SMS", "RGR");
-        recipe.setIngredient('F', Material.FISHING_ROD);
+        recipe.setIngredient('F', MaterialCompat.safe(XMaterial.FISHING_ROD));
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('M', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -152,7 +155,7 @@ public class FishingNet extends AbstractProcessingMachine {
         int inputSlot = getInputSlots()[0];
         ItemStack input = getInventoryItem(inputSlot);
 
-        if (getProcessing() == null && input != null && isRedstoneActive() && getRelativeLocation(BlockFace.DOWN).getBlock().getType() == Material.WATER) {
+        if (getProcessing() == null && input != null && isRedstoneActive() && getRelativeLocation(BlockFace.DOWN).getBlock().getType() == MaterialCompat.safe(XMaterial.WATER)) {
             // pull a bucket from the input stack into processing
             ItemStack toProcess = fish[ThreadLocalRandom.current().nextInt(fish.length)];
             setProcessing(toProcess);

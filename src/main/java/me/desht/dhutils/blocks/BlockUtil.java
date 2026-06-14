@@ -9,13 +9,13 @@ import javax.annotation.Nullable;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.BlockState;
-import org.bukkit.block.data.type.Sign;
 import org.bukkit.entity.Player;
 import org.bukkit.material.Attachable;
+import org.bukkit.material.Sign;
 import org.bukkit.util.Vector;
 
 public final class BlockUtil {
@@ -111,9 +111,7 @@ public final class BlockUtil {
         if (Tag.WALL_SIGNS.isTagged(block.getType())) {
             // of course signs are thin, and we don't have hitbox data available via Bukkit
             // so we'll have to cheat...
-            Sign s = (Sign) block.getState().getData();
-
-            switch (s.getRotation()) {
+            switch (io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat.getFacing(block)) {
                 case EAST:
                     plane.add(new Vector(0.125, 0.0, 0.0));
                     break;

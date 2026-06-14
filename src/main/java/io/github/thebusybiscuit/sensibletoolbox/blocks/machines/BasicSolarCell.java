@@ -9,8 +9,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.DyeColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
@@ -37,9 +35,14 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.PVCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.utils.ColoredMaterial;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.SunlightLevels;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.blocks.RelativePosition;
 
 public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
@@ -190,7 +193,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
 
     @Override
     public Material getMaterial() {
-        return Material.LIGHT_GRAY_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.LIGHT_GRAY_STAINED_GLASS);
     }
 
     @Override
@@ -221,13 +224,13 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
     public Recipe getMainRecipe() {
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("DDD", "IQI", "RGR");
-        recipe.setIngredient('D', Material.DAYLIGHT_DETECTOR);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DAYLIGHT_DETECTOR));
         recipe.setIngredient('I', sc.getMaterial());
-        recipe.setIngredient('Q', Material.QUARTZ_BLOCK);
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('Q', MaterialCompat.safe(XMaterial.QUARTZ_BLOCK));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -304,7 +307,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
             if (stack != null) {
                 Block block = event.getClickedBlock();
                 block.getWorld().dropItemNaturally(block.getLocation(), stack);
-                player.playSound(block.getLocation(), Sound.UI_BUTTON_CLICK, 1.0F, 0.6F);
+                SoundCompat.play(player, block.getLocation(), "UI_BUTTON_CLICK", 1.0F, 0.6F);
             }
         }
         super.onInteractBlock(event);
@@ -406,7 +409,7 @@ public class BasicSolarCell extends BaseSTBMachine implements LightMeterHolder {
     @Override
     public ItemStack getLightMeterIndicator() {
         if (pvCellLife == 0) {
-            return GUIUtil.makeTexture(Material.BLACK_WOOL, ChatColor.WHITE + "No PV Cell inserted!", ChatColor.GRAY + "Insert a PV Cell in the top left");
+            return GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.BLACK_WOOL), ChatColor.WHITE + "No PV Cell inserted!", ChatColor.GRAY + "Insert a PV Cell in the top left");
         } else {
             DyeColor dc = colors[effectiveLightLevel];
             ChatColor cc = STBUtil.dyeColorToChatColor(dc);

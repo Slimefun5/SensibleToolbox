@@ -8,6 +8,8 @@ import io.github.thebusybiscuit.sensibletoolbox.api.filters.FilterType;
 import io.github.thebusybiscuit.sensibletoolbox.api.filters.Filtering;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * A GUI gadget which can display and change a filter's filter type.
@@ -30,7 +32,7 @@ public class FilterTypeGadget extends CyclerGadget<FilterType> {
         Validate.isTrue(gui.getOwningItem() instanceof Filtering, "Filter Type gadget can only be added to filtering items!");
 
         add(FilterType.MATERIAL, ChatColor.GRAY, Material.STONE, "Match material only");
-        add(FilterType.ITEM_META, ChatColor.LIGHT_PURPLE, Material.ENCHANTED_BOOK, "Match material, block metadata", "and item metadata (NBT)");
+        add(FilterType.ITEM_META, ChatColor.LIGHT_PURPLE, MaterialCompat.safe(XMaterial.ENCHANTED_BOOK), "Match material, block metadata", "and item metadata (NBT)");
         setInitialValue(((Filtering) getGUI().getOwningItem()).getFilter().getFilterType());
     }
 

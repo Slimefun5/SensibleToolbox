@@ -9,6 +9,8 @@ import io.github.thebusybiscuit.sensibletoolbox.api.energy.EnergyFlow;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.BatteryBox;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * A GUI gadget which allows energy flow settings for a block to be displayed
@@ -36,9 +38,9 @@ public class EnergyFlowGadget extends CyclerGadget<EnergyFlow> {
         Validate.isTrue(gui.getOwningItem() instanceof BatteryBox, "Energy flow gadget can only be used on a battery box!");
 
         this.face = face;
-        add(EnergyFlow.IN, ChatColor.DARK_AQUA, Material.BLUE_WOOL, "Device accepts energy", "on this face");
-        add(EnergyFlow.OUT, ChatColor.GOLD, Material.ORANGE_WOOL, "Device emits energy", "on this face");
-        add(EnergyFlow.NONE, ChatColor.GRAY, Material.LIGHT_GRAY_WOOL, "This face does not", "accept or emit energy");
+        add(EnergyFlow.IN, ChatColor.DARK_AQUA, MaterialCompat.safe(XMaterial.BLUE_WOOL), "Device accepts energy", "on this face");
+        add(EnergyFlow.OUT, ChatColor.GOLD, MaterialCompat.safe(XMaterial.ORANGE_WOOL), "Device emits energy", "on this face");
+        add(EnergyFlow.NONE, ChatColor.GRAY, MaterialCompat.safe(XMaterial.LIGHT_GRAY_WOOL), "This face does not", "accept or emit energy");
         setInitialValue(((BatteryBox) gui.getOwningItem()).getEnergyFlow(face));
     }
 

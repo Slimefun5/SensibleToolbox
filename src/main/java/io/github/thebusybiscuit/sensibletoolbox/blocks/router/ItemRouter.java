@@ -44,8 +44,11 @@ import io.github.thebusybiscuit.sensibletoolbox.items.itemroutermodules.Receiver
 import io.github.thebusybiscuit.sensibletoolbox.items.itemroutermodules.SpeedModule;
 import io.github.thebusybiscuit.sensibletoolbox.items.itemroutermodules.StackModule;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.text.LogUtils;
 
@@ -126,7 +129,7 @@ public class ItemRouter extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public Material getMaterial() {
-        return Material.BLUE_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.BLUE_TERRACOTTA);
     }
 
     @Override
@@ -157,11 +160,11 @@ public class ItemRouter extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack(4));
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack(4));
         recipe.shape("RFR", "FLF", "RFR");
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('F', Material.IRON_BARS);
-        recipe.setIngredient('L', Material.LEVER);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('F', MaterialCompat.safe(XMaterial.IRON_BARS));
+        recipe.setIngredient('L', MaterialCompat.safe(XMaterial.LEVER));
         return recipe;
     }
 

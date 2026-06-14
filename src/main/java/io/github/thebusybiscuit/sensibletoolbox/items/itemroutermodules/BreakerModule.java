@@ -14,10 +14,13 @@ import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class BreakerModule extends DirectionalItemRouterModule {
 
-    private static final ItemStack pick = new ItemStack(Material.DIAMOND_PICKAXE, 1);
+    private static final ItemStack pick = new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE), 1);
 
     public BreakerModule() {}
 
@@ -72,7 +75,7 @@ public class BreakerModule extends DirectionalItemRouterModule {
 
     @Override
     public Material getMaterial() {
-        return Material.YELLOW_DYE;
+        return MaterialCompat.safe(XMaterial.YELLOW_DYE);
     }
 
     @Override
@@ -89,10 +92,10 @@ public class BreakerModule extends DirectionalItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.DIAMOND_PICKAXE);
-        recipe.addIngredient(Material.HOPPER);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.HOPPER));
         return recipe;
     }
 

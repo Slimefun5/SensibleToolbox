@@ -11,7 +11,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.EnergyNet;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class PowerMonitor extends BaseSTBBlock {
 
@@ -23,7 +26,7 @@ public class PowerMonitor extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return Material.ORANGE_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS);
     }
 
     @Override
@@ -38,14 +41,14 @@ public class PowerMonitor extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("GGG", "RCR", "GGG");
         TenKEnergyCell cell = new TenKEnergyCell();
         cell.setCharge(0.0);
         registerCustomIngredients(cell);
-        recipe.setIngredient('G', Material.GLASS);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GLASS));
         recipe.setIngredient('C', cell.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
         return recipe;
     }
 

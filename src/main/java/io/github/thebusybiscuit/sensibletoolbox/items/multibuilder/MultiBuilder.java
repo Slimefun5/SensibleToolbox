@@ -38,9 +38,13 @@ import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.blocks.BlockAndPosition;
@@ -129,15 +133,15 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         TenKEnergyCell cell = new TenKEnergyCell();
         cell.setCharge(0.0);
         IntegratedCircuit sc = new IntegratedCircuit();
         registerCustomIngredients(cell, sc);
         recipe.shape(" DP", "CED", "I  ");
-        recipe.setIngredient('D', Material.DIAMOND);
-        recipe.setIngredient('P', Material.DIAMOND_AXE);
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DIAMOND));
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.DIAMOND_AXE));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         recipe.setIngredient('E', cell.getMaterial());
         recipe.setIngredient('C', sc.getMaterial());
         return recipe;
@@ -145,7 +149,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLDEN_AXE;
+        return MaterialCompat.safe(XMaterial.GOLDEN_AXE);
     }
 
     @Override
@@ -294,15 +298,20 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
     }
 
     private void showBuildPreview(Player player, Set<Block> blocks) {
+        // build preview is a BlockData-based visual effect (1.13+); skip on legacy MC
+        if (!BlockDataCompat.isModern()) {
+            return;
+        }
+
         Bukkit.getScheduler().runTask(getProviderPlugin(), () -> {
             for (Block b : blocks) {
-                player.sendBlockChange(b.getLocation(), Material.WHITE_STAINED_GLASS.createBlockData());
+                BlockDataCompat.sendBlockChange(player, b.getLocation(), MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS));
             }
         });
 
         Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
             for (Block b : blocks) {
-                player.sendBlockChange(b.getLocation(), b.getBlockData());
+                BlockDataCompat.restoreBlockChange(player, b);
             }
         }, 20L);
     }
@@ -355,7 +364,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
                 break;
             }
 
-            if ((b0.isEmpty() || b0.isLiquid() || b0.getType() == Material.TALL_GRASS) && b1.getType() == b.getType() && !result.contains(b0) && canReplace(player, b0)) {
+            if ((b0.isEmpty() || b0.isLiquid() || b0.getType() == MaterialCompat.safe(XMaterial.TALL_GRASS)) && b1.getType() == b.getType() && !result.contains(b0) && canReplace(player, b0)) {
                 result.add(b0);
 
                 for (BlockFace f : buildFace.getFaces()) {

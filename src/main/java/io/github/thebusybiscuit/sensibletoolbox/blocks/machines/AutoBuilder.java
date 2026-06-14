@@ -33,8 +33,12 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.LandMarker;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.ToughMachineFrame;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.ColoredMaterial;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.cuboid.Cuboid;
@@ -114,7 +118,7 @@ public class AutoBuilder extends BaseSTBMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.YELLOW_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.YELLOW_TERRACOTTA);
     }
 
     @Override
@@ -129,18 +133,18 @@ public class AutoBuilder extends BaseSTBMachine {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         ToughMachineFrame mf = new ToughMachineFrame();
         IntegratedCircuit ic = new IntegratedCircuit();
         registerCustomIngredients(mf, ic);
         recipe.shape("OCO", "DFP", "RGR");
-        recipe.setIngredient('O', Material.OBSIDIAN);
+        recipe.setIngredient('O', MaterialCompat.safe(XMaterial.OBSIDIAN));
         recipe.setIngredient('C', ic.getMaterial());
-        recipe.setIngredient('D', Material.DISPENSER);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DISPENSER));
         recipe.setIngredient('F', mf.getMaterial());
-        recipe.setIngredient('P', Material.DIAMOND_PICKAXE);
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.DIAMOND_PICKAXE));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -276,14 +280,14 @@ public class AutoBuilder extends BaseSTBMachine {
 
                         if (scuNeeded > getCharge()) {
                             advanceBuildPos = false;
-                        } else if (b.getType() != Material.AIR) {
+                        } else if (b.getType() != MaterialCompat.safe(XMaterial.AIR)) {
                             b.getWorld().playEffect(b.getLocation(), Effect.STEP_SOUND, b.getType());
                             BaseSTBBlock stb = SensibleToolbox.getBlockAt(b.getLocation());
 
                             if (stb != null) {
                                 stb.breakBlock(false);
                             } else {
-                                b.setType(Material.AIR);
+                                b.setType(MaterialCompat.safe(XMaterial.AIR));
                             }
                         }
                     }
@@ -476,7 +480,7 @@ public class AutoBuilder extends BaseSTBMachine {
     public boolean onSlotClick(HumanEntity player, int slot, ClickType click, ItemStack inSlot, ItemStack onCursor) {
         if (slot == LANDMARKER_SLOT_1 || slot == LANDMARKER_SLOT_2) {
             if (getStatus() != BuilderStatus.RUNNING) {
-                if (onCursor.getType() != Material.AIR) {
+                if (onCursor.getType() != MaterialCompat.safe(XMaterial.AIR)) {
                     LandMarker item = SensibleToolbox.getItemRegistry().fromItemStack(onCursor, LandMarker.class);
                     if (item != null) {
                         ItemStack stack = onCursor.clone();
@@ -555,17 +559,18 @@ public class AutoBuilder extends BaseSTBMachine {
     }
 
     private void highlightWorkArea(@Nonnull Player p) {
-        if (workArea != null) {
+        // work-area highlight is a BlockData-based visual preview (1.13+); skip on legacy MC
+        if (workArea != null && BlockDataCompat.isModern()) {
             Block[] corners = workArea.getCorners();
 
             for (Block b : corners) {
-                p.sendBlockChange(b.getLocation(), Material.LIME_STAINED_GLASS.createBlockData());
+                BlockDataCompat.sendBlockChange(p, b.getLocation(), MaterialCompat.safe(XMaterial.LIME_STAINED_GLASS));
             }
 
             Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
                 if (p.isOnline()) {
                     for (Block b : corners) {
-                        p.sendBlockChange(b.getLocation(), Material.GREEN_STAINED_GLASS.createBlockData());
+                        BlockDataCompat.sendBlockChange(p, b.getLocation(), MaterialCompat.safe(XMaterial.GREEN_STAINED_GLASS));
                     }
                 }
             }, 25L);
@@ -573,7 +578,7 @@ public class AutoBuilder extends BaseSTBMachine {
             Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
                 if (p.isOnline()) {
                     for (Block b : corners) {
-                        p.sendBlockChange(b.getLocation(), b.getBlockData());
+                        BlockDataCompat.restoreBlockChange(p, b);
                     }
                 }
             }, 50L);
@@ -652,10 +657,10 @@ public class AutoBuilder extends BaseSTBMachine {
 
         protected AutoBuilderGadget(InventoryGUI gui, int slot) {
             super(gui, slot, "Build Mode");
-            add(AutoBuilderMode.CLEAR, ChatColor.YELLOW, Material.WHITE_STAINED_GLASS, "Clear all blocks", "in the work area");
-            add(AutoBuilderMode.FILL, ChatColor.YELLOW, Material.BRICK, "Use inventory to replace", "all empty blocks", "in the work area");
-            add(AutoBuilderMode.WALLS, ChatColor.YELLOW, Material.COBBLESTONE_WALL, "Use inventory to build", "walls around the", "the work area");
-            add(AutoBuilderMode.FRAME, ChatColor.YELLOW, Material.OAK_FENCE, "Use inventory to build", "a frame around the", "the work area");
+            add(AutoBuilderMode.CLEAR, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS), "Clear all blocks", "in the work area");
+            add(AutoBuilderMode.FILL, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.BRICK), "Use inventory to replace", "all empty blocks", "in the work area");
+            add(AutoBuilderMode.WALLS, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.COBBLESTONE_WALL), "Use inventory to build", "walls around the", "the work area");
+            add(AutoBuilderMode.FRAME, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.OAK_FENCE), "Use inventory to build", "a frame around the", "the work area");
             setInitialValue(((AutoBuilder) gui.getOwningBlock()).getBuildMode());
         }
 

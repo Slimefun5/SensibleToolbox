@@ -17,7 +17,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderStorage;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderTunable;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.EnderBox;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EnderBag extends BaseSTBItem implements EnderTunable {
 
@@ -49,7 +52,7 @@ public class EnderBag extends BaseSTBItem implements EnderTunable {
 
     @Override
     public Material getMaterial() {
-        return Material.END_PORTAL_FRAME;
+        return MaterialCompat.safe(XMaterial.END_PORTAL_FRAME);
     }
 
     @Override
@@ -69,12 +72,12 @@ public class EnderBag extends BaseSTBItem implements EnderTunable {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WDW", "GCG", "WGW");
-        recipe.setIngredient('W', Material.WHITE_WOOL);
-        recipe.setIngredient('D', Material.DIAMOND);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('C', Material.ENDER_CHEST);
+        recipe.setIngredient('W', MaterialCompat.safe(XMaterial.WHITE_WOOL));
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DIAMOND));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.ENDER_CHEST));
         return recipe;
     }
 

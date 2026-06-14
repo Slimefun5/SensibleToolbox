@@ -10,6 +10,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.util.Vector;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 
 public class DropperModule extends DirectionalItemRouterModule {
@@ -34,15 +37,15 @@ public class DropperModule extends DirectionalItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.DROPPER);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.DROPPER));
         return recipe;
     }
 
     @Override
     public Material getMaterial() {
-        return Material.GRAY_DYE;
+        return MaterialCompat.safe(XMaterial.GRAY_DYE);
     }
 
     @Override

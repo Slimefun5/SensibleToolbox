@@ -5,7 +5,6 @@ import java.util.UUID;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -21,7 +20,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderStorage;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderStorageHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderTunable;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
 
@@ -78,7 +81,7 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
 
     @Override
     public Material getMaterial() {
-        return Material.ENDER_CHEST;
+        return MaterialCompat.safe(XMaterial.ENDER_CHEST);
     }
 
     @Override
@@ -105,11 +108,11 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack(1));
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack(1));
         recipe.shape("GDG", "GEG", "GGG");
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('D', Material.DIAMOND);
-        recipe.setIngredient('E', Material.ENDER_CHEST);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DIAMOND));
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_CHEST));
         return recipe;
     }
 
@@ -125,7 +128,7 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
             } else {
                 Inventory inv = isGlobal() ? EnderStorage.getEnderInventory(getEnderFrequency()) : EnderStorage.getEnderInventory(player, getEnderFrequency());
                 player.openInventory(inv);
-                player.playSound(getLocation(), Sound.BLOCK_CHEST_OPEN, 0.5F, 1.0F);
+                SoundCompat.play(player, getLocation(), "BLOCK_CHEST_OPEN", 0.5F, 1.0F);
             }
             event.setCancelled(true);
         }

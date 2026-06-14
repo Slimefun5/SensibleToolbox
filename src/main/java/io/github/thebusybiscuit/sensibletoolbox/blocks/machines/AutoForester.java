@@ -10,7 +10,6 @@ import javax.annotation.Nonnull;
 import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
@@ -21,7 +20,11 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.Vein;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AutoFarmingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialConverter;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class AutoForester extends AutoFarmingMachine {
 
@@ -41,7 +44,7 @@ public class AutoForester extends AutoFarmingMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.BROWN_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.BROWN_TERRACOTTA);
     }
 
     @Override
@@ -58,12 +61,12 @@ public class AutoForester extends AutoFarmingMachine {
     public Recipe getMainRecipe() {
         MachineFrame frame = new MachineFrame();
         registerCustomIngredients(frame);
-        ShapedRecipe res = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe res = RecipeCompat.shaped(getKey(), toItemStack());
         res.shape("A A", "IFI", "RGR");
-        res.setIngredient('R', Material.REDSTONE);
-        res.setIngredient('G', Material.GOLD_INGOT);
-        res.setIngredient('I', Material.IRON_INGOT);
-        res.setIngredient('A', Material.IRON_AXE);
+        res.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        res.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        res.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
+        res.setIngredient('A', MaterialCompat.safe(XMaterial.IRON_AXE));
         res.setIngredient('F', frame.getMaterial());
         return res;
     }
@@ -110,10 +113,10 @@ public class AutoForester extends AutoFarmingMachine {
                             if (sapling.isPresent()) {
                                 b.setType(sapling.get());
                             } else {
-                                b.setType(Material.AIR);
+                                b.setType(MaterialCompat.safe(XMaterial.AIR));
                             }
                         } else {
-                            b.setType(Material.AIR);
+                            b.setType(MaterialCompat.safe(XMaterial.AIR));
                         }
                     }
 

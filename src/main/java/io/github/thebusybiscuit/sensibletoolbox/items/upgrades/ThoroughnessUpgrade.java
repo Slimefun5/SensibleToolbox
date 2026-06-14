@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class ThoroughnessUpgrade extends AbstractMachineUpgrade {
 
@@ -19,7 +22,7 @@ public class ThoroughnessUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Material getMaterial() {
-        return Material.SPIDER_EYE;
+        return MaterialCompat.safe(XMaterial.SPIDER_EYE);
     }
 
     @Override
@@ -34,14 +37,14 @@ public class ThoroughnessUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("ICI", "IEI", "IGI");
         IntegratedCircuit ic = new IntegratedCircuit();
         registerCustomIngredients(ic);
-        recipe.setIngredient('I', Material.IRON_BARS);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_BARS));
         recipe.setIngredient('C', ic.getMaterial());
-        recipe.setIngredient('E', Material.SPIDER_EYE);
-        recipe.setIngredient('G', Material.GLASS_PANE);
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.SPIDER_EYE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GLASS_PANE));
         return recipe;
     }
 

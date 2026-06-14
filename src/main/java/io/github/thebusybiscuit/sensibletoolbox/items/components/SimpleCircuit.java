@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class SimpleCircuit extends BaseSTBItem {
 
@@ -15,7 +18,7 @@ public class SimpleCircuit extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.REPEATER;
+        return MaterialCompat.safe(XMaterial.REPEATER);
     }
 
     @Override
@@ -32,12 +35,12 @@ public class SimpleCircuit extends BaseSTBItem {
     public Recipe getMainRecipe() {
         CircuitBoard cb = new CircuitBoard();
         registerCustomIngredients(cb);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack(2));
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack(2));
         recipe.shape("CDC", "GTG", "CGC");
         recipe.setIngredient('C', cb.getMaterial());
-        recipe.setIngredient('D', Material.REPEATER);
-        recipe.setIngredient('T', Material.REDSTONE_TORCH);
-        recipe.setIngredient('G', Material.GOLD_NUGGET);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.REPEATER));
+        recipe.setIngredient('T', MaterialCompat.safe(XMaterial.REDSTONE_TORCH));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_NUGGET));
         return recipe;
     }
 

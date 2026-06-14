@@ -5,6 +5,10 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 public class GoldCombineHoe extends CombineHoe {
 
     public GoldCombineHoe() {
@@ -17,7 +21,7 @@ public class GoldCombineHoe extends CombineHoe {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLDEN_HOE;
+        return MaterialCompat.safe(XMaterial.GOLDEN_HOE);
     }
 
     @Override
@@ -27,12 +31,12 @@ public class GoldCombineHoe extends CombineHoe {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SSS", "HCW", "SSS");
-        recipe.setIngredient('S', Material.STRING);
-        recipe.setIngredient('H', Material.GOLDEN_HOE);
-        recipe.setIngredient('C', Material.CHEST);
-        recipe.setIngredient('W', Material.GOLDEN_SWORD);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STRING));
+        recipe.setIngredient('H', MaterialCompat.safe(XMaterial.GOLDEN_HOE));
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.CHEST));
+        recipe.setIngredient('W', MaterialCompat.safe(XMaterial.GOLDEN_SWORD));
         return recipe;
     }
 }

@@ -7,11 +7,9 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.Directional;
-import org.bukkit.block.data.type.WallSign;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event.Result;
@@ -52,7 +50,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.ItemAction;
 import io.github.thebusybiscuit.sensibletoolbox.core.gui.STBInventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.LocationManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.text.LogUtils;
 
@@ -168,7 +169,7 @@ public class GeneralListener extends STBBaseListener {
             for (BlockFace face : STBUtil.getDirectBlockFaces()) {
                 Block b = event.getBlock().getRelative(face);
 
-                if (b.getType() == Material.FIRE && ThreadLocalRandom.current().nextInt(3) != 0) {
+                if (b.getType() == MaterialCompat.safe(XMaterial.FIRE) && ThreadLocalRandom.current().nextInt(3) != 0) {
                     b.setType(Material.AIR);
                 }
             }
@@ -222,11 +223,16 @@ public class GeneralListener extends STBBaseListener {
 
     @EventHandler(ignoreCancelled = true)
     public void onSignChange(SignChangeEvent event) {
-        if (Tag.WALL_SIGNS.isTagged(event.getBlock().getType())) {
+        // wall-sign attachment lookup needs WallSign BlockData (1.13+); skip on legacy MC
+        if (BlockDataCompat.isModern() && Tag.WALL_SIGNS.isTagged(event.getBlock().getType())) {
             Block b = event.getBlock();
-            WallSign sign = (WallSign) b.getBlockData();
+            BlockFace facing = BlockDataCompat.getFacing(b);
 
-            Block attachedTo = b.getRelative(sign.getFacing());
+            if (facing == null) {
+                return;
+            }
+
+            Block attachedTo = b.getRelative(facing);
             BaseSTBBlock item = LocationManager.getManager().get(attachedTo.getLocation());
 
             if (item != null) {
@@ -245,13 +251,19 @@ public class GeneralListener extends STBBaseListener {
 
     @EventHandler(ignoreCancelled = true, priority = EventPriority.MONITOR)
     public void onLabelSignBroken(BlockBreakEvent event) {
-        if (Tag.WALL_SIGNS.isTagged(event.getBlock().getType())) {
-            WallSign sign = (WallSign) event.getBlock().getBlockData();
-            Block b2 = event.getBlock().getRelative(sign.getFacing().getOppositeFace());
+        // label-sign detach needs WallSign BlockData (1.13+); skip on legacy MC
+        if (BlockDataCompat.isModern() && Tag.WALL_SIGNS.isTagged(event.getBlock().getType())) {
+            BlockFace facing = BlockDataCompat.getFacing(event.getBlock());
+
+            if (facing == null) {
+                return;
+            }
+
+            Block b2 = event.getBlock().getRelative(facing.getOppositeFace());
             BaseSTBBlock stb = LocationManager.getManager().get(b2.getLocation());
 
             if (stb != null) {
-                stb.detachLabelSign(sign.getFacing());
+                stb.detachLabelSign(facing);
             }
         }
     }
@@ -264,12 +276,16 @@ public class GeneralListener extends STBBaseListener {
         if (item != null) {
             item.handlePhysicsEvent(event);
         } else {
-            if (block.getType() == Material.LEVER) {
-                Directional l = (Directional) block.getBlockData();
-                item = LocationManager.getManager().get(block.getRelative(l.getFacing()).getLocation());
+            // lever-facing lookup needs Directional BlockData (1.13+); skip on legacy MC
+            if (BlockDataCompat.isModern() && block.getType() == MaterialCompat.safe(XMaterial.LEVER)) {
+                BlockFace facing = BlockDataCompat.getFacing(block);
 
-                if (item != null) {
-                    event.setCancelled(true);
+                if (facing != null) {
+                    item = LocationManager.getManager().get(block.getRelative(facing).getLocation());
+
+                    if (item != null) {
+                        event.setCancelled(true);
+                    }
                 }
             }
         }

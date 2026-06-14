@@ -5,6 +5,8 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EnergizedIronIngot extends BaseSTBItem {
 
@@ -16,7 +18,7 @@ public class EnergizedIronIngot extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.IRON_INGOT;
+        return MaterialCompat.safe(XMaterial.IRON_INGOT);
     }
 
     @Override

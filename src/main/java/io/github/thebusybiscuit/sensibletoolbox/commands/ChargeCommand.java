@@ -3,7 +3,7 @@ package io.github.thebusybiscuit.sensibletoolbox.commands;
 import java.util.Set;
 
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.command.CommandSender;

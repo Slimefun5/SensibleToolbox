@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class BlankModule extends BaseSTBItem {
 
@@ -17,7 +20,7 @@ public class BlankModule extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.PAPER;
+        return MaterialCompat.safe(XMaterial.PAPER);
     }
 
     @Override
@@ -32,11 +35,11 @@ public class BlankModule extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack(8));
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack(8));
         recipe.shape("PPP", "PRP", "PBP");
-        recipe.setIngredient('P', Material.PAPER);
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('B', Material.LAPIS_LAZULI);
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.PAPER));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('B', MaterialCompat.safe(XMaterial.LAPIS_LAZULI));
         return recipe;
     }
 }

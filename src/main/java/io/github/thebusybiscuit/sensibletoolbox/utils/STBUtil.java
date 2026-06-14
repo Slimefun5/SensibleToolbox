@@ -20,7 +20,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.enchantments.Enchantment;
@@ -34,6 +33,7 @@ import org.bukkit.metadata.Metadatable;
 import com.google.common.base.Joiner;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.MinecraftVersion;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
@@ -81,7 +81,7 @@ public final class STBUtil {
      * @return true if the material is a crop
      */
     public static boolean isCrop(@Nonnull Material m) {
-        return m == Material.WHEAT || m == Material.CARROTS || m == Material.POTATOES || m == Material.PUMPKIN_STEM || m == Material.MELON_STEM || m == Material.BEETROOTS || m == Material.SWEET_BERRY_BUSH;
+        return m == MaterialCompat.safe(XMaterial.WHEAT) || m == MaterialCompat.safe(XMaterial.CARROTS) || m == MaterialCompat.safe(XMaterial.POTATOES) || m == MaterialCompat.safe(XMaterial.PUMPKIN_STEM) || m == MaterialCompat.safe(XMaterial.MELON_STEM) || m == MaterialCompat.safe(XMaterial.BEETROOTS) || m == MaterialCompat.safe(XMaterial.SWEET_BERRY_BUSH);
     }
 
     /**
@@ -105,7 +105,7 @@ public final class STBUtil {
         }
 
         if (Tag.FLOWERS.isTagged(type)) {
-            return type.name().contains("TALL") || type == Material.PEONY || type == Material.LILAC || type == Material.ROSE_BUSH || type == Material.SUNFLOWER;
+            return type.name().contains("TALL") || type == MaterialCompat.safe(XMaterial.PEONY) || type == MaterialCompat.safe(XMaterial.LILAC) || type == MaterialCompat.safe(XMaterial.ROSE_BUSH) || type == MaterialCompat.safe(XMaterial.SUNFLOWER);
         }
 
         switch (type) {
@@ -177,17 +177,17 @@ public final class STBUtil {
     public static Material getCropType(@Nonnull Material seedType) {
         switch (seedType) {
             case WHEAT_SEEDS:
-                return Material.WHEAT;
+                return MaterialCompat.safe(XMaterial.WHEAT);
             case POTATO:
-                return Material.POTATOES;
+                return MaterialCompat.safe(XMaterial.POTATOES);
             case CARROT:
-                return Material.CARROTS;
+                return MaterialCompat.safe(XMaterial.CARROTS);
             case PUMPKIN_SEEDS:
-                return Material.PUMPKIN_STEM;
+                return MaterialCompat.safe(XMaterial.PUMPKIN_STEM);
             case MELON_SEEDS:
-                return Material.MELON_STEM;
+                return MaterialCompat.safe(XMaterial.MELON_STEM);
             case BEETROOT_SEEDS:
-                return Material.BEETROOTS;
+                return MaterialCompat.safe(XMaterial.BEETROOTS);
             default:
                 return null;
         }
@@ -512,7 +512,7 @@ public final class STBUtil {
      * @return true if the block is an infinite water source
      */
     public static boolean isInfiniteWaterSource(@Nonnull Block block) {
-        if (isLiquidSourceBlock(block) && block.getType() != Material.LAVA) {
+        if (isLiquidSourceBlock(block) && block.getType() != MaterialCompat.safe(XMaterial.LAVA)) {
             int n = 0;
 
             for (BlockFace face : MAIN_HORIZONTAL_BLOCK_FACES) {
@@ -539,7 +539,7 @@ public final class STBUtil {
      * @return true if the block can be used to fabricate with, false otherwise
      */
     public static boolean canFabricateWith(@Nullable Block block) {
-        return block != null && block.getType() == Material.CRAFTING_TABLE;
+        return block != null && block.getType() == MaterialCompat.safe(XMaterial.CRAFTING_TABLE);
     }
 
     /**
@@ -551,7 +551,7 @@ public final class STBUtil {
      * @return true if the item can be used to fabricate with, false otherwise
      */
     public static boolean canFabricateWith(@Nullable ItemStack stack) {
-        return stack != null && stack.getType() == Material.CRAFTING_TABLE;
+        return stack != null && stack.getType() == MaterialCompat.safe(XMaterial.CRAFTING_TABLE);
     }
 
     /**
@@ -654,7 +654,16 @@ public final class STBUtil {
         }
 
         String[] fields = spec.split(",");
+        // Config texture names may be modern (1.13+) and unresolvable on 1.8; resolve via XMaterial and
+        // never leave material null (a null Material crashes new ItemStack(...) on 1.8).
         Material material = Material.matchMaterial(fields[0]);
+        if (material == null) {
+            material = io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial.matchXMaterial(fields[0])
+                    .map(io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial::parseMaterial).orElse(null);
+        }
+        if (material == null) {
+            material = Material.STONE;
+        }
 
         int amount = 1;
         boolean glowing = false;
@@ -735,7 +744,7 @@ public final class STBUtil {
      * @return true if the block can be used as a cable; false otherwise
      */
     public static boolean isCable(Block block) {
-        return block.getType() == Material.IRON_BARS;
+        return block.getType() == MaterialCompat.safe(XMaterial.IRON_BARS);
     }
 
     /**
@@ -803,26 +812,26 @@ public final class STBUtil {
         Validate.notNull(signType, "The Sign Type cannot be null");
 
         if (SensibleToolboxPlugin.getMinecraftVersion().isAtLeast(MinecraftVersion.MINECRAFT_1_16)) {
-            if (signType == Material.CRIMSON_SIGN) {
-                return Material.CRIMSON_WALL_SIGN;
-            } else if (signType == Material.WARPED_SIGN) {
-                return Material.WARPED_WALL_SIGN;
+            if (signType == MaterialCompat.safe(XMaterial.CRIMSON_SIGN)) {
+                return MaterialCompat.safe(XMaterial.CRIMSON_WALL_SIGN);
+            } else if (signType == MaterialCompat.safe(XMaterial.WARPED_SIGN)) {
+                return MaterialCompat.safe(XMaterial.WARPED_WALL_SIGN);
             }
         }
 
         switch (signType) {
             case OAK_SIGN:
-                return Material.OAK_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.OAK_WALL_SIGN);
             case SPRUCE_SIGN:
-                return Material.SPRUCE_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.SPRUCE_WALL_SIGN);
             case BIRCH_SIGN:
-                return Material.BIRCH_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.BIRCH_WALL_SIGN);
             case JUNGLE_SIGN:
-                return Material.JUNGLE_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.JUNGLE_WALL_SIGN);
             case ACACIA_SIGN:
-                return Material.ACACIA_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.ACACIA_WALL_SIGN);
             case DARK_OAK_SIGN:
-                return Material.DARK_OAK_WALL_SIGN;
+                return MaterialCompat.safe(XMaterial.DARK_OAK_WALL_SIGN);
             default:
                 return null;
         }

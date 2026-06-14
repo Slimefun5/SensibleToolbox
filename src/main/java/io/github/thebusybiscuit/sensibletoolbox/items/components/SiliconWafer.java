@@ -5,6 +5,8 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class SiliconWafer extends BaseSTBItem {
 
@@ -14,7 +16,7 @@ public class SiliconWafer extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.FIREWORK_STAR;
+        return MaterialCompat.safe(XMaterial.FIREWORK_STAR);
     }
 
     @Override

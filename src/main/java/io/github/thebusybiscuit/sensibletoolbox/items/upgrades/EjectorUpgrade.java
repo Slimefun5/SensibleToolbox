@@ -21,6 +21,9 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.DirectionGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EjectorUpgrade extends AbstractMachineUpgrade implements Directional {
 
@@ -50,7 +53,7 @@ public class EjectorUpgrade extends AbstractMachineUpgrade implements Directiona
 
     @Override
     public Material getMaterial() {
-        return Material.QUARTZ;
+        return MaterialCompat.safe(XMaterial.QUARTZ);
     }
 
     @Override
@@ -70,14 +73,14 @@ public class EjectorUpgrade extends AbstractMachineUpgrade implements Directiona
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
         recipe.shape("ISI", "IBI", "IGI");
-        recipe.setIngredient('I', Material.IRON_BARS);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_BARS));
         recipe.setIngredient('S', sc.getMaterial());
-        recipe.setIngredient('B', Material.PISTON);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('B', MaterialCompat.safe(XMaterial.PISTON));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 

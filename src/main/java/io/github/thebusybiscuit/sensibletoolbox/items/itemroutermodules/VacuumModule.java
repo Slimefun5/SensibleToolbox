@@ -22,7 +22,10 @@ import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.metadata.FixedMetadataValue;
 import org.bukkit.util.Vector;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class VacuumModule extends DirectionalItemRouterModule {
 
@@ -40,7 +43,7 @@ public class VacuumModule extends DirectionalItemRouterModule {
 
     @Override
     public Material getMaterial() {
-        return Material.BLACK_DYE;
+        return MaterialCompat.safe(XMaterial.BLACK_DYE);
     }
 
     @Override
@@ -56,10 +59,10 @@ public class VacuumModule extends DirectionalItemRouterModule {
     @Override
     public Recipe getMainRecipe() {
         registerCustomIngredients(new BlankModule());
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
-        recipe.addIngredient(Material.PAPER);
-        recipe.addIngredient(Material.HOPPER);
-        recipe.addIngredient(Material.ENDER_EYE);
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.PAPER));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.HOPPER));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ENDER_EYE));
         return recipe;
     }
 

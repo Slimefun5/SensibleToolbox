@@ -9,7 +9,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
@@ -27,11 +27,13 @@ import org.bukkit.inventory.meta.Damageable;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.SlotType;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 
 import me.desht.dhutils.cuboid.Cuboid;
@@ -116,11 +118,11 @@ public abstract class CombineHoe extends BaseSTBItem {
         Block b = event.getClickedBlock();
 
         if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-            if (b.getType() == Material.FARMLAND) {
+            if (b.getType() == MaterialCompat.safe(XMaterial.FARMLAND)) {
                 plantSeeds(event.getPlayer(), b);
                 event.setCancelled(true);
                 return;
-            } else if (b.getType() == Material.DIRT || b.getType() == Material.GRASS_BLOCK) {
+            } else if (b.getType() == MaterialCompat.safe(XMaterial.DIRT) || b.getType() == MaterialCompat.safe(XMaterial.GRASS_BLOCK)) {
                 tillSoil(event.getPlayer(), event.getItem(), event.getHand(), b);
                 event.setCancelled(true);
                 return;
@@ -274,7 +276,7 @@ public abstract class CombineHoe extends BaseSTBItem {
                 continue;
             }
 
-            if (neighbour.getType() == Material.FARMLAND && above.isEmpty()) {
+            if (neighbour.getType() == MaterialCompat.safe(XMaterial.FARMLAND) && above.isEmpty()) {
                 // candidate for sowing
                 above.setType(STBUtil.getCropType(getSeedType()));
                 amountLeft--;
@@ -318,8 +320,8 @@ public abstract class CombineHoe extends BaseSTBItem {
 
             Block above = b1.getRelative(BlockFace.UP);
 
-            if ((b1.getType() == Material.DIRT || b1.getType() == Material.GRASS_BLOCK) && !above.getType().isSolid() && !above.isLiquid()) {
-                b1.setType(Material.FARMLAND);
+            if ((b1.getType() == MaterialCompat.safe(XMaterial.DIRT) || b1.getType() == MaterialCompat.safe(XMaterial.GRASS_BLOCK)) && !above.getType().isSolid() && !above.isLiquid()) {
+                b1.setType(MaterialCompat.safe(XMaterial.FARMLAND));
                 count++;
 
                 if (!above.isEmpty()) {

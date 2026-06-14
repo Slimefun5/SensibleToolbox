@@ -3,12 +3,9 @@ package io.github.thebusybiscuit.sensibletoolbox.blocks.machines;
 import java.util.Optional;
 
 import org.bukkit.Material;
-import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice.MaterialChoice;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
@@ -17,7 +14,12 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.CustomRecipeManager;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.SimpleCustomRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialConverter;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Sawmill extends AbstractIOMachine {
 
@@ -50,7 +52,7 @@ public class Sawmill extends AbstractIOMachine {
         // ItemStack(Material.WOOD, 4), 40));
         // crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.SIGN), new ItemStack(Material.WOOD,
         // 2), 40));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.CHEST), new ItemStack(Material.OAK_PLANKS, 8), 40));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.CHEST)), new ItemStack(MaterialCompat.safe(XMaterial.OAK_PLANKS), 8), 40));
     }
 
     @Override
@@ -65,7 +67,7 @@ public class Sawmill extends AbstractIOMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.GOLDEN_AXE);
+        return new ItemStack(MaterialCompat.safe(XMaterial.GOLDEN_AXE));
     }
 
     @Override
@@ -91,13 +93,13 @@ public class Sawmill extends AbstractIOMachine {
     @Override
     protected void onMachineStartup() {
         if (SensibleToolbox.getPluginInstance().getConfigCache().isNoisyMachines()) {
-            getLocation().getWorld().playSound(getLocation(), Sound.ENTITY_HORSE_STEP_WOOD, 1.0F, 0.5F);
+            SoundCompat.play(getLocation().getWorld(), getLocation(), "ENTITY_HORSE_STEP_WOOD", 1.0F, 0.5F);
         }
     }
 
     @Override
     public Material getMaterial() {
-        return Material.BROWN_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.BROWN_TERRACOTTA);
     }
 
     @Override
@@ -115,14 +117,14 @@ public class Sawmill extends AbstractIOMachine {
         SimpleCircuit sc = new SimpleCircuit();
         MachineFrame mf = new MachineFrame();
         registerCustomIngredients(sc, mf);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WAW", "IFI", "RGR");
-        recipe.setIngredient('W', new MaterialChoice(Tag.PLANKS));
-        recipe.setIngredient('A', Material.IRON_AXE);
+        RecipeCompat.setIngredient(recipe, 'W', Tag.PLANKS.getValues());
+        recipe.setIngredient('A', MaterialCompat.safe(XMaterial.IRON_AXE));
         recipe.setIngredient('I', sc.getMaterial());
         recipe.setIngredient('F', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 

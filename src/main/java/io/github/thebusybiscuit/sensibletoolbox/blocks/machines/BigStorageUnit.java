@@ -11,7 +11,6 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -22,24 +21,27 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice.MaterialChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.metadata.FixedMetadataValue;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ToggleButton;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractProcessingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 
 import me.desht.dhutils.Debugger;
 
 public class BigStorageUnit extends AbstractProcessingMachine {
 
-    private static final ItemStack LOCKED_BUTTON = GUIUtil.makeTexture(Material.ENDER_EYE, ChatColor.UNDERLINE + "Locked", "Unit will remember its", "stored item, even when", "emptied");
-    private static final ItemStack UNLOCKED_BUTTON = GUIUtil.makeTexture(Material.ENDER_PEARL, ChatColor.UNDERLINE + "Unlocked", "Unit will forget its stored", "item when emptied");
+    private static final ItemStack LOCKED_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.ENDER_EYE), ChatColor.UNDERLINE + "Locked", "Unit will remember its", "stored item, even when", "emptied");
+    private static final ItemStack UNLOCKED_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.ENDER_PEARL), ChatColor.UNDERLINE + "Unlocked", "Unit will forget its stored", "item when emptied");
     private static final String STB_LAST_BSU_INSERT = "STB_Last_BSU_Insert";
     private static final long DOUBLE_CLICK_TIME = 250L;
     private ItemStack stored;
@@ -191,7 +193,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.DARK_OAK_LOG;
+        return MaterialCompat.safe(XMaterial.DARK_OAK_LOG);
     }
 
     @Override
@@ -215,10 +217,10 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("LSL", "L L", "LLL");
-        recipe.setIngredient('L', new MaterialChoice(Tag.LOGS));
-        recipe.setIngredient('S', new MaterialChoice(Tag.WOODEN_SLABS));
+        RecipeCompat.setIngredient(recipe, 'L', Tag.LOGS.getValues());
+        RecipeCompat.setIngredient(recipe, 'S', Tag.WOODEN_SLABS.getValues());
         return recipe;
     }
 
@@ -399,7 +401,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
             Long lastInsert = (Long) STBUtil.getMetadataValue(player, STB_LAST_BSU_INSERT);
             long now = System.currentTimeMillis();
 
-            if ((inHand == null || inHand.getType() == Material.AIR) && lastInsert != null && now - lastInsert < DOUBLE_CLICK_TIME) {
+            if ((inHand == null || inHand.getType() == MaterialCompat.safe(XMaterial.AIR)) && lastInsert != null && now - lastInsert < DOUBLE_CLICK_TIME) {
                 rightClickFullInsert(player);
                 event.setCancelled(true);
             } else if (inHand != null && inHand.isSimilar(getStoredItemType())) {
@@ -486,7 +488,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.DIAMOND_CHESTPLATE);
+        return new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_CHESTPLATE));
     }
 
     public boolean isFull() {

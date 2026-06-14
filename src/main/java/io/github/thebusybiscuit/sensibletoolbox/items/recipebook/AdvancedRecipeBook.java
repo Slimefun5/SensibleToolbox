@@ -5,6 +5,10 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 public class AdvancedRecipeBook extends RecipeBook {
 
     public AdvancedRecipeBook() {
@@ -32,10 +36,10 @@ public class AdvancedRecipeBook extends RecipeBook {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         RecipeBook book = new RecipeBook();
         registerCustomIngredients(book);
-        recipe.addIngredient(Material.DIAMOND);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.DIAMOND));
         recipe.addIngredient(book.getMaterial());
         return recipe;
     }

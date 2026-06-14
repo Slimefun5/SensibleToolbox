@@ -3,7 +3,7 @@ package io.github.thebusybiscuit.sensibletoolbox.api.items;
 import javax.annotation.Nonnull;
 
 import org.bukkit.Location;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;

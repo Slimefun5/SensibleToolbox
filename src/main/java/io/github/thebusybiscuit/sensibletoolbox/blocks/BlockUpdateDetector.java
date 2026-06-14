@@ -14,6 +14,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.RedstoneBehaviour;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
@@ -21,6 +22,8 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.AccessControlGad
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.NumericGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.RedstoneBehaviourGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import me.desht.dhutils.Debugger;
 
 public class BlockUpdateDetector extends BaseSTBBlock {
@@ -69,7 +72,7 @@ public class BlockUpdateDetector extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return active ? Material.REDSTONE_BLOCK : Material.PURPLE_TERRACOTTA;
+        return active ? MaterialCompat.safe(XMaterial.REDSTONE_BLOCK) : MaterialCompat.safe(XMaterial.PURPLE_TERRACOTTA);
     }
 
     @Override
@@ -89,12 +92,12 @@ public class BlockUpdateDetector extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe res = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe res = RecipeCompat.shaped(getKey(), toItemStack());
         res.shape("SRS", "SPS", "STS");
-        res.setIngredient('S', Material.STONE);
-        res.setIngredient('P', Material.STICKY_PISTON);
-        res.setIngredient('R', Material.REDSTONE);
-        res.setIngredient('T', Material.REDSTONE_TORCH);
+        res.setIngredient('S', MaterialCompat.safe(XMaterial.STONE));
+        res.setIngredient('P', MaterialCompat.safe(XMaterial.STICKY_PISTON));
+        res.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        res.setIngredient('T', MaterialCompat.safe(XMaterial.REDSTONE_TORCH));
         return res;
     }
 

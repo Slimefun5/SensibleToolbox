@@ -23,16 +23,17 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.Bukkit;
 import org.bukkit.Chunk;
 import org.bukkit.Location;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.World;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.type.WallSign;
+import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
@@ -268,9 +269,13 @@ public final class LocationManager {
     public BaseSTBBlock get(Location loc, boolean checkSigns) {
         Block b = loc.getBlock();
 
-        if (checkSigns && Tag.WALL_SIGNS.isTagged(b.getType())) {
-            WallSign sign = (WallSign) b.getBlockData();
-            b = b.getRelative(sign.getFacing().getOppositeFace());
+        // sign-attachment redirection needs WallSign BlockData (1.13+); skip on legacy MC
+        if (BlockDataCompat.isModern() && checkSigns && Tag.WALL_SIGNS.isTagged(b.getType())) {
+            BlockFace facing = BlockDataCompat.getFacing(b);
+
+            if (facing != null) {
+                b = b.getRelative(facing.getOppositeFace());
+            }
         }
 
         BaseSTBBlock stb = (BaseSTBBlock) STBUtil.getMetadataValue(b, BaseSTBBlock.STB_BLOCK);

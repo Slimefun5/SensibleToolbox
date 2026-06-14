@@ -18,7 +18,10 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.blocks.Vein;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractProcessingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Pump extends AbstractProcessingMachine {
 
@@ -57,7 +60,7 @@ public class Pump extends AbstractProcessingMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.DIAMOND_BOOTS);
+        return new ItemStack(MaterialCompat.safe(XMaterial.DIAMOND_BOOTS));
     }
 
     @Override
@@ -117,7 +120,7 @@ public class Pump extends AbstractProcessingMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.CYAN_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.CYAN_TERRACOTTA);
     }
 
     @Override
@@ -135,14 +138,14 @@ public class Pump extends AbstractProcessingMachine {
         SimpleCircuit sc = new SimpleCircuit();
         MachineFrame mf = new MachineFrame();
         registerCustomIngredients(sc, mf);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("PB ", "SIS", "RGR");
-        recipe.setIngredient('P', Material.PISTON);
-        recipe.setIngredient('B', Material.BUCKET);
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.PISTON));
+        recipe.setIngredient('B', MaterialCompat.safe(XMaterial.BUCKET));
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('I', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -202,8 +205,8 @@ public class Pump extends AbstractProcessingMachine {
     private Block findNextBlockToPump() {
         Block target = getRelativeLocation(pumpFace).getBlock();
 
-        if (target.getType() == Material.LAVA) {
-            List<Block> list = Vein.find(target, 64, block -> block.getType() == Material.LAVA);
+        if (target.getType() == MaterialCompat.safe(XMaterial.LAVA)) {
+            List<Block> list = Vein.find(target, 64, block -> block.getType() == MaterialCompat.safe(XMaterial.LAVA));
             return list.get(list.size() - 1);
         } else {
             return target;
@@ -217,10 +220,10 @@ public class Pump extends AbstractProcessingMachine {
 
         switch (block.getType()) {
             case WATER:
-                block.setType(Material.AIR);
+                block.setType(MaterialCompat.safe(XMaterial.AIR));
                 break;
             case LAVA:
-                block.setType(Material.STONE);
+                block.setType(MaterialCompat.safe(XMaterial.STONE));
                 break;
             default:
                 break;
@@ -235,21 +238,21 @@ public class Pump extends AbstractProcessingMachine {
 
         Material type = fluid.getType();
 
-        if (container == Material.BUCKET) {
+        if (container == MaterialCompat.safe(XMaterial.BUCKET)) {
             switch (type) {
                 case LAVA:
-                    return new ItemStack(Material.LAVA_BUCKET);
+                    return new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET));
                 case BUBBLE_COLUMN:
                 case WATER:
-                    return new ItemStack(Material.WATER_BUCKET);
+                    return new ItemStack(MaterialCompat.safe(XMaterial.WATER_BUCKET));
                 default:
                     return null;
             }
-        } else if (container == Material.GLASS_BOTTLE) {
+        } else if (container == MaterialCompat.safe(XMaterial.GLASS_BOTTLE)) {
             switch (type) {
                 case BUBBLE_COLUMN:
                 case WATER:
-                    return new ItemStack(Material.POTION);
+                    return new ItemStack(MaterialCompat.safe(XMaterial.POTION));
                 default:
                     return null;
             }
@@ -260,7 +263,7 @@ public class Pump extends AbstractProcessingMachine {
 
     @Override
     public boolean acceptsItemType(ItemStack stack) {
-        return stack.getType() == Material.BUCKET || stack.getType() == Material.GLASS_BOTTLE;
+        return stack.getType() == MaterialCompat.safe(XMaterial.BUCKET) || stack.getType() == MaterialCompat.safe(XMaterial.GLASS_BOTTLE);
     }
 }
 

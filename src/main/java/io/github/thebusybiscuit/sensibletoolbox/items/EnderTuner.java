@@ -26,12 +26,15 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.NumericGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ToggleButton;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EnderTuner extends BaseSTBItem {
 
-    private static final ItemStack GLOBAL_TEXTURE = GUIUtil.makeTexture(Material.BLUE_STAINED_GLASS, "Global", "Common inventory for", "all players");
-    private static final ItemStack PERSONAL_TEXTURE = GUIUtil.makeTexture(Material.YELLOW_STAINED_GLASS, "Personal", "Separate inventory for", "each player");
+    private static final ItemStack GLOBAL_TEXTURE = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.BLUE_STAINED_GLASS), "Global", "Common inventory for", "all players");
+    private static final ItemStack PERSONAL_TEXTURE = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS), "Personal", "Separate inventory for", "each player");
     public static final int TUNING_GUI_SIZE = 27;
     public static final int TUNED_ITEM_SLOT = 11;
     public static final int FREQUENCY_BUTTON_SLOT = 13;
@@ -49,7 +52,7 @@ public class EnderTuner extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLD_NUGGET;
+        return MaterialCompat.safe(XMaterial.GOLD_NUGGET);
     }
 
     @Override
@@ -64,12 +67,12 @@ public class EnderTuner extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack(1));
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack(1));
         recipe.shape("SES", "III", " G ");
-        recipe.setIngredient('S', Material.GLOWSTONE_DUST);
-        recipe.setIngredient('I', Material.IRON_INGOT);
-        recipe.setIngredient('E', Material.ENDER_PEARL);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.GLOWSTONE_DUST));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_PEARL));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 

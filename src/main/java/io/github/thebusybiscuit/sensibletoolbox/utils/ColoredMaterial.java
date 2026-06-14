@@ -10,6 +10,8 @@ import org.apache.commons.lang.Validate;
 import org.bukkit.DyeColor;
 import org.bukkit.Material;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 /**
  * This class holds a few ordered {@link List Lists} that hold colored variants
  * of {@link Material}.
@@ -25,154 +27,154 @@ public enum ColoredMaterial {
      * This {@link List} contains all wool colors ordered by their appearance ingame.
      */
     WOOL(new Material[] {
-            Material.WHITE_WOOL,
-            Material.ORANGE_WOOL,
-            Material.MAGENTA_WOOL,
-            Material.LIGHT_BLUE_WOOL,
-            Material.YELLOW_WOOL,
-            Material.LIME_WOOL,
-            Material.PINK_WOOL,
-            Material.GRAY_WOOL,
-            Material.LIGHT_GRAY_WOOL,
-            Material.CYAN_WOOL,
-            Material.PURPLE_WOOL,
-            Material.BLUE_WOOL,
-            Material.BROWN_WOOL,
-            Material.GREEN_WOOL,
-            Material.RED_WOOL,
-            Material.BLACK_WOOL
+            MaterialCompat.safe(XMaterial.WHITE_WOOL),
+            MaterialCompat.safe(XMaterial.ORANGE_WOOL),
+            MaterialCompat.safe(XMaterial.MAGENTA_WOOL),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_WOOL),
+            MaterialCompat.safe(XMaterial.YELLOW_WOOL),
+            MaterialCompat.safe(XMaterial.LIME_WOOL),
+            MaterialCompat.safe(XMaterial.PINK_WOOL),
+            MaterialCompat.safe(XMaterial.GRAY_WOOL),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_WOOL),
+            MaterialCompat.safe(XMaterial.CYAN_WOOL),
+            MaterialCompat.safe(XMaterial.PURPLE_WOOL),
+            MaterialCompat.safe(XMaterial.BLUE_WOOL),
+            MaterialCompat.safe(XMaterial.BROWN_WOOL),
+            MaterialCompat.safe(XMaterial.GREEN_WOOL),
+            MaterialCompat.safe(XMaterial.RED_WOOL),
+            MaterialCompat.safe(XMaterial.BLACK_WOOL)
     }),
 
     /**
      * This {@link List} contains all carpet colors ordered by their appearance ingame.
      */
     CARPET(new Material[] {
-            Material.WHITE_CARPET,
-            Material.ORANGE_CARPET,
-            Material.MAGENTA_CARPET,
-            Material.LIGHT_BLUE_CARPET,
-            Material.YELLOW_CARPET,
-            Material.LIME_CARPET,
-            Material.PINK_CARPET,
-            Material.GRAY_CARPET,
-            Material.LIGHT_GRAY_CARPET,
-            Material.CYAN_CARPET,
-            Material.PURPLE_CARPET,
-            Material.BLUE_CARPET,
-            Material.BROWN_CARPET,
-            Material.GREEN_CARPET,
-            Material.RED_CARPET,
-            Material.BLACK_CARPET
+            MaterialCompat.safe(XMaterial.WHITE_CARPET),
+            MaterialCompat.safe(XMaterial.ORANGE_CARPET),
+            MaterialCompat.safe(XMaterial.MAGENTA_CARPET),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_CARPET),
+            MaterialCompat.safe(XMaterial.YELLOW_CARPET),
+            MaterialCompat.safe(XMaterial.LIME_CARPET),
+            MaterialCompat.safe(XMaterial.PINK_CARPET),
+            MaterialCompat.safe(XMaterial.GRAY_CARPET),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_CARPET),
+            MaterialCompat.safe(XMaterial.CYAN_CARPET),
+            MaterialCompat.safe(XMaterial.PURPLE_CARPET),
+            MaterialCompat.safe(XMaterial.BLUE_CARPET),
+            MaterialCompat.safe(XMaterial.BROWN_CARPET),
+            MaterialCompat.safe(XMaterial.GREEN_CARPET),
+            MaterialCompat.safe(XMaterial.RED_CARPET),
+            MaterialCompat.safe(XMaterial.BLACK_CARPET)
     }),
 
     /**
      * This {@link List} contains all stained glass colors ordered by their appearance ingame.
      */
     STAINED_GLASS(new Material[] {
-            Material.WHITE_STAINED_GLASS,
-            Material.ORANGE_STAINED_GLASS,
-            Material.MAGENTA_STAINED_GLASS,
-            Material.LIGHT_BLUE_STAINED_GLASS,
-            Material.YELLOW_STAINED_GLASS,
-            Material.LIME_STAINED_GLASS,
-            Material.PINK_STAINED_GLASS,
-            Material.GRAY_STAINED_GLASS,
-            Material.LIGHT_GRAY_STAINED_GLASS,
-            Material.CYAN_STAINED_GLASS,
-            Material.PURPLE_STAINED_GLASS,
-            Material.BLUE_STAINED_GLASS,
-            Material.BROWN_STAINED_GLASS,
-            Material.GREEN_STAINED_GLASS,
-            Material.RED_STAINED_GLASS,
-            Material.BLACK_STAINED_GLASS
+            MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.MAGENTA_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.LIME_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.PINK_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.PURPLE_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.BLUE_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.BROWN_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.GREEN_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.RED_STAINED_GLASS),
+            MaterialCompat.safe(XMaterial.BLACK_STAINED_GLASS)
     }),
 
     /**
      * This {@link List} contains all stained glass pane colors ordered by their appearance ingame.
      */
     STAINED_GLASS_PANE(new Material[] {
-            Material.WHITE_STAINED_GLASS_PANE,
-            Material.ORANGE_STAINED_GLASS_PANE,
-            Material.MAGENTA_STAINED_GLASS_PANE,
-            Material.LIGHT_BLUE_STAINED_GLASS_PANE,
-            Material.YELLOW_STAINED_GLASS_PANE,
-            Material.LIME_STAINED_GLASS_PANE,
-            Material.PINK_STAINED_GLASS_PANE,
-            Material.GRAY_STAINED_GLASS_PANE,
-            Material.LIGHT_GRAY_STAINED_GLASS_PANE,
-            Material.CYAN_STAINED_GLASS_PANE,
-            Material.PURPLE_STAINED_GLASS_PANE,
-            Material.BLUE_STAINED_GLASS_PANE,
-            Material.BROWN_STAINED_GLASS_PANE,
-            Material.GREEN_STAINED_GLASS_PANE,
-            Material.RED_STAINED_GLASS_PANE,
-            Material.BLACK_STAINED_GLASS_PANE
+            MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.ORANGE_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.MAGENTA_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.LIME_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.PINK_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.PURPLE_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.BLUE_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.BROWN_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.GREEN_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.RED_STAINED_GLASS_PANE),
+            MaterialCompat.safe(XMaterial.BLACK_STAINED_GLASS_PANE)
     }),
 
     /**
      * This {@link List} contains all terracotta colors ordered by their appearance ingame.
      */
     TERRACOTTA(new Material[] {
-            Material.WHITE_TERRACOTTA,
-            Material.ORANGE_TERRACOTTA,
-            Material.MAGENTA_TERRACOTTA,
-            Material.LIGHT_BLUE_TERRACOTTA,
-            Material.YELLOW_TERRACOTTA,
-            Material.LIME_TERRACOTTA,
-            Material.PINK_TERRACOTTA,
-            Material.GRAY_TERRACOTTA,
-            Material.LIGHT_GRAY_TERRACOTTA,
-            Material.CYAN_TERRACOTTA,
-            Material.PURPLE_TERRACOTTA,
-            Material.BLUE_TERRACOTTA,
-            Material.BROWN_TERRACOTTA,
-            Material.GREEN_TERRACOTTA,
-            Material.RED_TERRACOTTA,
-            Material.BLACK_TERRACOTTA
+            MaterialCompat.safe(XMaterial.WHITE_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.ORANGE_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.MAGENTA_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.YELLOW_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIME_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.PINK_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.GRAY_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.CYAN_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.PURPLE_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BLUE_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BROWN_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.GREEN_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.RED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BLACK_TERRACOTTA)
     }),
 
     /**
      * This {@link List} contains all glazed terracotta colors ordered by their appearance ingame.
      */
     GLAZED_TERRACOTTA(new Material[] {
-            Material.WHITE_GLAZED_TERRACOTTA,
-            Material.ORANGE_GLAZED_TERRACOTTA,
-            Material.MAGENTA_GLAZED_TERRACOTTA,
-            Material.LIGHT_BLUE_GLAZED_TERRACOTTA,
-            Material.YELLOW_GLAZED_TERRACOTTA,
-            Material.LIME_GLAZED_TERRACOTTA,
-            Material.PINK_GLAZED_TERRACOTTA,
-            Material.GRAY_GLAZED_TERRACOTTA,
-            Material.LIGHT_GRAY_GLAZED_TERRACOTTA,
-            Material.CYAN_GLAZED_TERRACOTTA,
-            Material.PURPLE_GLAZED_TERRACOTTA,
-            Material.BLUE_GLAZED_TERRACOTTA,
-            Material.BROWN_GLAZED_TERRACOTTA,
-            Material.GREEN_GLAZED_TERRACOTTA,
-            Material.RED_GLAZED_TERRACOTTA,
-            Material.BLACK_GLAZED_TERRACOTTA
+            MaterialCompat.safe(XMaterial.WHITE_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.ORANGE_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.MAGENTA_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.YELLOW_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIME_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.PINK_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.GRAY_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.CYAN_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.PURPLE_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BLUE_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BROWN_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.GREEN_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.RED_GLAZED_TERRACOTTA),
+            MaterialCompat.safe(XMaterial.BLACK_GLAZED_TERRACOTTA)
     }),
 
     /**
      * This {@link List} contains all concrete colors ordered by their appearance ingame.
      */
     CONCRETE(new Material[] {
-            Material.WHITE_CONCRETE,
-            Material.ORANGE_CONCRETE,
-            Material.MAGENTA_CONCRETE,
-            Material.LIGHT_BLUE_CONCRETE,
-            Material.YELLOW_CONCRETE,
-            Material.LIME_CONCRETE,
-            Material.PINK_CONCRETE,
-            Material.GRAY_CONCRETE,
-            Material.LIGHT_GRAY_CONCRETE,
-            Material.CYAN_CONCRETE,
-            Material.PURPLE_CONCRETE,
-            Material.BLUE_CONCRETE,
-            Material.BROWN_CONCRETE,
-            Material.GREEN_CONCRETE,
-            Material.RED_CONCRETE,
-            Material.BLACK_CONCRETE
+            MaterialCompat.safe(XMaterial.WHITE_CONCRETE),
+            MaterialCompat.safe(XMaterial.ORANGE_CONCRETE),
+            MaterialCompat.safe(XMaterial.MAGENTA_CONCRETE),
+            MaterialCompat.safe(XMaterial.LIGHT_BLUE_CONCRETE),
+            MaterialCompat.safe(XMaterial.YELLOW_CONCRETE),
+            MaterialCompat.safe(XMaterial.LIME_CONCRETE),
+            MaterialCompat.safe(XMaterial.PINK_CONCRETE),
+            MaterialCompat.safe(XMaterial.GRAY_CONCRETE),
+            MaterialCompat.safe(XMaterial.LIGHT_GRAY_CONCRETE),
+            MaterialCompat.safe(XMaterial.CYAN_CONCRETE),
+            MaterialCompat.safe(XMaterial.PURPLE_CONCRETE),
+            MaterialCompat.safe(XMaterial.BLUE_CONCRETE),
+            MaterialCompat.safe(XMaterial.BROWN_CONCRETE),
+            MaterialCompat.safe(XMaterial.GREEN_CONCRETE),
+            MaterialCompat.safe(XMaterial.RED_CONCRETE),
+            MaterialCompat.safe(XMaterial.BLACK_CONCRETE)
     });
     
     // @formatter:on

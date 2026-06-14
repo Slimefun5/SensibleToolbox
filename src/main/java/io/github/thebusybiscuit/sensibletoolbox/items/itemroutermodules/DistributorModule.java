@@ -14,6 +14,9 @@ import org.bukkit.inventory.ShapelessRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class DistributorModule extends DirectionalItemRouterModule {
 
@@ -27,7 +30,7 @@ public class DistributorModule extends DirectionalItemRouterModule {
 
     @Override
     public Material getMaterial() {
-        return Material.RED_DYE;
+        return MaterialCompat.safe(XMaterial.RED_DYE);
     }
 
     @Override
@@ -44,10 +47,10 @@ public class DistributorModule extends DirectionalItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.STICKY_PISTON);
-        recipe.addIngredient(Material.ARROW);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.STICKY_PISTON));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ARROW));
         return recipe;
     }
 

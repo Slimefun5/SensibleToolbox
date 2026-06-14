@@ -6,7 +6,6 @@ import javax.annotation.Nullable;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Dropper;
 import org.bukkit.configuration.ConfigurationSection;
@@ -17,8 +16,12 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
 import me.desht.dhutils.Debugger;
 
 public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
@@ -42,7 +45,7 @@ public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public Material getMaterial() {
-        return Material.DROPPER;
+        return MaterialCompat.safe(XMaterial.DROPPER);
     }
 
     @Override
@@ -57,11 +60,11 @@ public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SSS", "OCO", "OOO");
         recipe.setIngredient('S', Material.STONE);
-        recipe.setIngredient('C', Material.CHEST);
-        recipe.setIngredient('O', Material.COBBLESTONE);
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.CHEST));
+        recipe.setIngredient('O', MaterialCompat.safe(XMaterial.COBBLESTONE));
         return recipe;
     }
 
@@ -78,7 +81,7 @@ public class TrashCan extends BaseSTBBlock implements STBInventoryHolder {
             Dropper d = (Dropper) l.getBlock().getState();
 
             if (noisy && !d.getInventory().isEmpty()) {
-                l.getWorld().playSound(l, Sound.ENTITY_GENERIC_EAT, 1.0F, 1.0F);
+                SoundCompat.play(l.getWorld(), l, "ENTITY_GENERIC_EAT", 1.0F, 1.0F);
             }
 
             Debugger.getInstance().debug(this + ": trash emptied");

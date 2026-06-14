@@ -41,8 +41,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.PaintCan;
 import io.github.thebusybiscuit.sensibletoolbox.utils.HoloMessage;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.Debugger;
 
@@ -99,7 +102,7 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLDEN_SHOVEL;
+        return MaterialCompat.safe(XMaterial.GOLDEN_SHOVEL);
     }
 
     @Override
@@ -126,10 +129,10 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("R", "S", "S");
-        recipe.setIngredient('R', Material.STRING);
-        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.STRING));
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STICK));
         return recipe;
     }
 
@@ -185,7 +188,7 @@ public class PaintBrush extends BaseSTBItem {
             return false;
         }
 
-        return STBUtil.isColorable(b.getType()) || b.getType() == Material.GLASS || b.getType() == Material.GLASS_PANE;
+        return STBUtil.isColorable(b.getType()) || b.getType() == MaterialCompat.safe(XMaterial.GLASS) || b.getType() == MaterialCompat.safe(XMaterial.GLASS_PANE);
     }
 
     private void refillFromCan(@Nonnull PaintCan can) {
@@ -293,10 +296,10 @@ public class PaintBrush extends BaseSTBItem {
 
             Debugger.getInstance().debug(2, "painting! " + b + " " + getPaintLevel() + " " + getColor());
 
-            if (b.getType() == Material.GLASS) {
-                b.setType(Material.WHITE_STAINED_GLASS);
-            } else if (b.getType() == Material.GLASS_PANE) {
-                b.setType(Material.WHITE_STAINED_GLASS_PANE);
+            if (b.getType() == MaterialCompat.safe(XMaterial.GLASS)) {
+                b.setType(MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS));
+            } else if (b.getType() == MaterialCompat.safe(XMaterial.GLASS_PANE)) {
+                b.setType(MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS_PANE));
             } else {
                 if (!STBUtil.isColorable(b.getType())) {
                     continue;
@@ -329,7 +332,7 @@ public class PaintBrush extends BaseSTBItem {
 
         int i = 0;
         for (Art art : other) {
-            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(Material.PAINTING, art.name(), "", "&7Click to select this artwork"), new Runnable() {
+            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(MaterialCompat.safe(XMaterial.PAINTING), art.name(), "", "&7Click to select this artwork"), new Runnable() {
 
                 @Override
                 public void run() {
