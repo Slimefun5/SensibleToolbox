@@ -113,7 +113,7 @@ public class PVCell extends BaseSTBItem {
 
                     if (nInserted > 0) {
                         if (event.getHand() == EquipmentSlot.HAND) {
-                            player.getInventory().setItemInMainHand(null);
+                            player.getInventory().setItemInHand(null);
                         } else {
                             player.getInventory().setItemInOffHand(null);
                         }

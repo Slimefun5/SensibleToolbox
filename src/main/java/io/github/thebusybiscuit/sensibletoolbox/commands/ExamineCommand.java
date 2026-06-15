@@ -26,7 +26,7 @@ public class ExamineCommand extends AbstractCommand {
 
         Player player = (Player) sender;
         MessagePager pager = MessagePager.getPager(sender).clear();
-        pager.add(STBUtil.dumpItemStack(player.getInventory().getItemInMainHand()));
+        pager.add(STBUtil.dumpItemStack(player.getInventory().getItemInHand()));
         pager.showPage();
         return true;
     }

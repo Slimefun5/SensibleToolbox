@@ -85,7 +85,7 @@ public class GeneralListener extends STBBaseListener {
 
     @EventHandler(ignoreCancelled = true)
     public void onPlayerInteract(PlayerInteractEntityEvent event) {
-        ItemStack stack = event.getPlayer().getInventory().getItemInMainHand();
+        ItemStack stack = event.getPlayer().getInventory().getItemInHand();
         BaseSTBItem item = SensibleToolbox.getItemRegistry().fromItemStack(stack);
         if (item != null) {
             item.onInteractEntity(event);
@@ -105,7 +105,7 @@ public class GeneralListener extends STBBaseListener {
     @EventHandler(ignoreCancelled = true)
     public void onItemChanged(PlayerItemHeldEvent event) {
         if (event.getPlayer().isSneaking()) {
-            ItemStack stack = event.getPlayer().getInventory().getItemInMainHand();
+            ItemStack stack = event.getPlayer().getInventory().getItemInHand();
             BaseSTBItem item = SensibleToolbox.getItemRegistry().fromItemStack(stack);
 
             if (item != null) {
@@ -202,7 +202,7 @@ public class GeneralListener extends STBBaseListener {
         if (STBUtil.isCable(event.getBlock())) {
             plugin.getEnergyNetManager().onCableRemoved(event.getBlock());
         } else {
-            ItemStack stack = event.getPlayer().getInventory().getItemInMainHand();
+            ItemStack stack = event.getPlayer().getInventory().getItemInHand();
             BaseSTBItem item = SensibleToolbox.getItemRegistry().fromItemStack(stack);
 
             if (item != null) {

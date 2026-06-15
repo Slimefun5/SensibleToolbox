@@ -177,7 +177,7 @@ public class WateringCan extends BaseSTBItem {
 
         if (newStack != null) {
             if (event.getHand() == EquipmentSlot.HAND) {
-                player.getInventory().setItemInMainHand(newStack);
+                player.getInventory().setItemInHand(newStack);
             } else {
                 player.getInventory().setItemInOffHand(newStack);
             }
@@ -210,7 +210,7 @@ public class WateringCan extends BaseSTBItem {
             MiscUtil.alertMessage(player, "The fire is out!");
         }
 
-        player.getInventory().setItemInMainHand(toItemStack());
+        player.getInventory().setItemInHand(toItemStack());
         player.updateInventory();
         event.setCancelled(true);
     }

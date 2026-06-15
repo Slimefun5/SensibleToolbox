@@ -88,8 +88,8 @@ public abstract class BaseSTBItem implements Comparable<BaseSTBItem>, InventoryG
     protected void updateHeldItemStack(Player player, EquipmentSlot hand) {
         PlayerInventory inv = player.getInventory();
         if (hand == EquipmentSlot.HAND) {
-            ItemStack item = inv.getItemInMainHand();
-            inv.setItemInMainHand(toItemStack(item.getAmount()));
+            ItemStack item = inv.getItemInHand();
+            inv.setItemInHand(toItemStack(item.getAmount()));
         } else if (hand == EquipmentSlot.OFF_HAND) {
             ItemStack item = inv.getItemInOffHand();
             inv.setItemInOffHand(toItemStack(item.getAmount()));

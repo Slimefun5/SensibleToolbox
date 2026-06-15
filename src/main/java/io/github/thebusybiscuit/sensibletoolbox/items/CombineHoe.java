@@ -161,10 +161,10 @@ public abstract class CombineHoe extends BaseSTBItem {
                 harvestLayer(player, b.getRelative(BlockFace.DOWN));
             }
 
-            ItemUtils.damageItem(player.getInventory().getItemInMainHand(), false);
+            ItemUtils.damageItem(player.getInventory().getItemInHand(), false);
         } else if (STBUtil.isPlant(b.getType())) {
             harvestLayer(player, b);
-            ItemUtils.damageItem(player.getInventory().getItemInMainHand(), false);
+            ItemUtils.damageItem(player.getInventory().getItemInHand(), false);
         }
     }
 

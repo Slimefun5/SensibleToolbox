@@ -386,7 +386,7 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
      *            the interaction event
      */
     public void onInteractBlock(@Nonnull PlayerInteractEvent event) {
-        if (event.getAction() == Action.LEFT_CLICK_BLOCK && Tag.SIGNS.isTagged(event.getPlayer().getInventory().getItemInMainHand().getType()) && !Tag.STANDING_SIGNS.isTagged(event.getClickedBlock().getType()) && !Tag.WALL_SIGNS.isTagged(event.getClickedBlock().getType())) {
+        if (event.getAction() == Action.LEFT_CLICK_BLOCK && Tag.SIGNS.isTagged(event.getPlayer().getInventory().getItemInHand().getType()) && !Tag.STANDING_SIGNS.isTagged(event.getClickedBlock().getType()) && !Tag.WALL_SIGNS.isTagged(event.getClickedBlock().getType())) {
             // attach a label sign
             if (attachLabelSign(event)) {
                 labelSigns.set(STBUtil.getFaceRotation(getFacing(), event.getBlockFace()));
@@ -1026,16 +1026,16 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
             return false;
         }
 
-        Material signType = STBUtil.getWallSign(event.getPlayer().getInventory().getItemInMainHand().getType());
+        Material signType = STBUtil.getWallSign(event.getPlayer().getInventory().getItemInHand().getType());
         if (signType == null) {
-            Debugger.getInstance().debug("Unsupported sign type: " + event.getPlayer().getInventory().getItemInMainHand().getType().toString());
+            Debugger.getInstance().debug("Unsupported sign type: " + event.getPlayer().getInventory().getItemInHand().getType().toString());
             return false;
         }
         // ok, player is allowed to put a sign here
         placeLabelSign(signBlock, event.getBlockFace(), signType);
 
         if (player.getGameMode() != GameMode.CREATIVE) {
-            ItemStack stack = player.getInventory().getItemInMainHand();
+            ItemStack stack = player.getInventory().getItemInHand();
             stack.setAmount(stack.getAmount() - 1);
             player.setItemInHand(stack.getAmount() <= 0 ? null : stack);
         }
