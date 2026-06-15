@@ -88,7 +88,7 @@ public class EjectorUpgrade extends AbstractMachineUpgrade implements Directiona
     public void onInteractItem(PlayerInteractEvent event) {
         if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
             setFacingDirection(event.getBlockFace().getOppositeFace());
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             // open ejector configuration GUI

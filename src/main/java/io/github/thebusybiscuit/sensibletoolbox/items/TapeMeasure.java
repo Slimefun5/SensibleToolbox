@@ -92,14 +92,14 @@ public class TapeMeasure extends BaseSTBItem {
         if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             if (event.getPlayer().isSneaking()) {
                 setAnchor(event.getClickedBlock());
-                updateHeldItemStack(event.getPlayer(), event.getHand());
+                updateHeldItemStack(event.getPlayer());
                 MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point set.");
             } else {
                 makeMeasurement(event.getPlayer(), event.getClickedBlock());
             }
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR) {
             setAnchor(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point cleared.");
         }
 

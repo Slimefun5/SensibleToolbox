@@ -104,11 +104,11 @@ public class LandMarker extends BaseSTBItem {
 
         if ((event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.LEFT_CLICK_AIR) && getMarkedLocation() != null) {
             setMarkedLocation(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0F, 0.6F);
         } else if ((event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) && !event.getClickedBlock().getLocation().equals(loc)) {
             setMarkedLocation(event.getClickedBlock().getLocation());
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0F, 1.5F);
         }
 

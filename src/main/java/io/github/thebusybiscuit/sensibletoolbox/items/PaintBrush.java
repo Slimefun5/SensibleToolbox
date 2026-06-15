@@ -25,7 +25,6 @@ import org.bukkit.entity.Wolf;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -40,6 +39,7 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ButtonGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.PaintCan;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.HoloMessage;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
@@ -161,7 +161,7 @@ public class PaintBrush extends BaseSTBItem {
             setPaintLevel(0);
         }
 
-        updateHeldItemStack(event.getPlayer(), event.getHand());
+        updateHeldItemStack(event.getPlayer());
         event.setCancelled(true);
     }
 
@@ -214,7 +214,7 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public void onInteractEntity(PlayerInteractEntityEvent event) {
-        if (!event.getHand().equals(EquipmentSlot.HAND)) {
+        if (!HandCompat.isMainHand(event)) {
             return;
         }
         event.setCancelled(true);
@@ -233,7 +233,7 @@ public class PaintBrush extends BaseSTBItem {
             Art art = ((Painting) e).getArt();
 
             if (getPaintLevel() >= art.getBlockHeight() * art.getBlockWidth()) {
-                openArtworkMenu(event.getPlayer(), event.getHand(), (Painting) e);
+                openArtworkMenu(event.getPlayer(), (Painting) e);
             } else {
                 Location loc = e.getLocation().add(0, -art.getBlockHeight() / 2.0, 0);
                 HoloMessage.popup(event.getPlayer(), loc, ChatColor.RED + "Not enough paint!");
@@ -246,7 +246,7 @@ public class PaintBrush extends BaseSTBItem {
 
         if (paintUsed > 0) {
             setPaintLevel(getPaintLevel() - paintUsed);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.getPlayer().playSound(e.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1.0F, 1.5F);
         }
     }
@@ -324,7 +324,7 @@ public class PaintBrush extends BaseSTBItem {
         return painted;
     }
 
-    private void openArtworkMenu(@Nonnull Player p, @Nonnull EquipmentSlot hand, @Nonnull Painting painting) {
+    private void openArtworkMenu(@Nonnull Player p, @Nonnull Painting painting) {
         Painting editingPainting = painting;
 
         Art[] other = getOtherArt(painting.getArt());
@@ -338,7 +338,7 @@ public class PaintBrush extends BaseSTBItem {
                 public void run() {
                     editingPainting.setArt(art);
                     setPaintLevel(getPaintLevel() - art.getBlockWidth() * art.getBlockHeight());
-                    updateHeldItemStack(p, hand);
+                    updateHeldItemStack(p);
                     p.playSound(editingPainting.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1.0F, 1.5F);
                     p.closeInventory();
                 }

@@ -90,14 +90,14 @@ public class AdvancedSenderModule extends DirectionalItemRouterModule {
             ItemRouter rtr = SensibleToolbox.getBlockAt(event.getClickedBlock().getLocation(), ItemRouter.class, true);
             if (rtr != null && rtr.getReceiver() != null) {
                 linkToRouter(rtr);
-                updateHeldItemStack(event.getPlayer(), event.getHand());
+                updateHeldItemStack(event.getPlayer());
             } else {
                 STBUtil.complain(event.getPlayer());
             }
             event.setCancelled(true);
         } else if (event.getPlayer().isSneaking() && (event.getAction() == Action.LEFT_CLICK_AIR || event.getAction() == Action.LEFT_CLICK_BLOCK)) {
             linkToRouter(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         } else if (event.getItem().getAmount() == 1 && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
             super.onInteractItem(event);

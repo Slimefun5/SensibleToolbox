@@ -20,7 +20,6 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.inventory.ClickType;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
@@ -123,7 +122,7 @@ public abstract class CombineHoe extends BaseSTBItem {
                 event.setCancelled(true);
                 return;
             } else if (b.getType() == MaterialCompat.safe(XMaterial.DIRT) || b.getType() == MaterialCompat.safe(XMaterial.GRASS_BLOCK)) {
-                tillSoil(event.getPlayer(), event.getItem(), event.getHand(), b);
+                tillSoil(event.getPlayer(), event.getItem(), b);
                 event.setCancelled(true);
                 return;
             }
@@ -309,7 +308,7 @@ public abstract class CombineHoe extends BaseSTBItem {
     }
 
     @ParametersAreNonnullByDefault
-    private void tillSoil(Player player, ItemStack stack, EquipmentSlot hand, Block b) {
+    private void tillSoil(Player player, ItemStack stack, Block b) {
         int count = 0;
         int damage = ((Damageable) stack.getItemMeta()).getDamage();
 

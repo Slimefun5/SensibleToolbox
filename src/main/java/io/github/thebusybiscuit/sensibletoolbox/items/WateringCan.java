@@ -17,7 +17,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -27,6 +26,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
@@ -176,10 +176,10 @@ public class WateringCan extends BaseSTBItem {
         event.setCancelled(true);
 
         if (newStack != null) {
-            if (event.getHand() == EquipmentSlot.HAND) {
+            if (HandCompat.isMainHand(event)) {
                 player.getInventory().setItemInHand(newStack);
             } else {
-                player.getInventory().setItemInOffHand(newStack);
+                HandCompat.setOffHandItem(player.getInventory(), newStack);
             }
         }
 

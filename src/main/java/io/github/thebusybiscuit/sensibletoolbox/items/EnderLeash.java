@@ -34,7 +34,6 @@ import org.bukkit.entity.Wolf;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -42,6 +41,7 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
@@ -114,7 +114,7 @@ public class EnderLeash extends BaseSTBItem {
     public void onInteractEntity(PlayerInteractEntityEvent event) {
         Entity target = event.getRightClicked();
         Player player = event.getPlayer();
-        if (event.getHand() == EquipmentSlot.HAND && target instanceof Animals && isPassive(target) && player.getInventory().getItemInHand().getAmount() == 1) {
+        if (HandCompat.isMainHand(event) && target instanceof Animals && isPassive(target) && player.getInventory().getItemInHand().getAmount() == 1) {
             if (capturedConf == null || !capturedConf.contains("type")) {
                 Animals animal = (Animals) target;
                 if (!checkLeash(animal)) {
@@ -125,7 +125,7 @@ public class EnderLeash extends BaseSTBItem {
                     capturedConf = freezeEntity(animal);
                     target.getWorld().playEffect(target.getLocation(), Effect.ENDER_SIGNAL, 0);
                     target.remove();
-                    updateHeldItemStack(event.getPlayer(), event.getHand());
+                    updateHeldItemStack(event.getPlayer());
                 }
             } else {
                 // workaround CB bug to ensure client is updated properly
@@ -180,7 +180,7 @@ public class EnderLeash extends BaseSTBItem {
             Entity e = where.getWorld().spawnEntity(where.getLocation().add(0.5, 0.0, 0.5), type);
             thawEntity((Animals) e, capturedConf);
             capturedConf = null;
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         }
     }

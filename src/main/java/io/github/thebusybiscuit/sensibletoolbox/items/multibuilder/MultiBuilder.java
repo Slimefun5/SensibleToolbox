@@ -25,7 +25,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -201,7 +200,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
         }
 
         setMode(BuildingMode.values()[o]);
-        updateHeldItemStack(event.getPlayer(), EquipmentSlot.HAND);
+        updateHeldItemStack(event.getPlayer());
     }
 
     private void handleExchangeMode(PlayerInteractEvent event) {
@@ -212,7 +211,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
             if (player.isSneaking()) {
                 // set the target material
                 material = clicked.getType();
-                updateHeldItemStack(player, event.getHand());
+                updateHeldItemStack(player);
             } else if (material != null) {
                 // replace multiple blocks
                 int sharpness = event.getItem().getEnchantmentLevel(Enchantment.DAMAGE_ALL);
@@ -287,7 +286,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
             if (!blocks.isEmpty()) {
                 if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                    doBuild(player, event.getHand(), event.getItem(), event.getClickedBlock(), blocks);
+                    doBuild(player, event.getItem(), event.getClickedBlock(), blocks);
                 } else if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
                     showBuildPreview(player, blocks);
                 }
@@ -316,7 +315,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
         }, 20L);
     }
 
-    private void doBuild(Player player, EquipmentSlot hand, ItemStack item, Block source, Set<Block> actualBlocks) {
+    private void doBuild(Player player, ItemStack item, Block source, Set<Block> actualBlocks) {
         int chargePerOp = getItemConfig().getInt("scu_per_op", DEF_SCU_PER_OPERATION);
         double chargeNeeded = chargePerOp * actualBlocks.size() * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.DIG_SPEED));
         // we know at this point that the tool has sufficient charge and that the player has sufficient material
@@ -328,7 +327,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
             b.setType(source.getType(), true);
         }
 
-        updateHeldItemStack(player, hand);
+        updateHeldItemStack(player);
         player.playSound(player.getLocation(), Sound.BLOCK_STONE_BREAK, 1.0F, 1.0F);
     }
 

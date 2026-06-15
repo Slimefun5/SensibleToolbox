@@ -17,7 +17,6 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -31,6 +30,7 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ToggleButton;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractProcessingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
@@ -374,7 +374,7 @@ public class BigStorageUnit extends AbstractProcessingMachine {
     @Override
     public void onInteractBlock(PlayerInteractEvent event) {
         // Prevent this from triggering twice
-        if (event.getHand() != EquipmentSlot.HAND) {
+        if (!HandCompat.isMainHand(event)) {
             return;
         }
 

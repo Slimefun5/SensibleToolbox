@@ -27,7 +27,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.CraftingInventory;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.Recipe;
@@ -84,18 +83,10 @@ public abstract class BaseSTBItem implements Comparable<BaseSTBItem>, InventoryG
         enchants = stack.getEnchantments();
     }
 
-    @ParametersAreNonnullByDefault
-    protected void updateHeldItemStack(Player player, EquipmentSlot hand) {
+    protected void updateHeldItemStack(@Nonnull Player player) {
         PlayerInventory inv = player.getInventory();
-        if (hand == EquipmentSlot.HAND) {
-            ItemStack item = inv.getItemInHand();
-            inv.setItemInHand(toItemStack(item.getAmount()));
-        } else if (hand == EquipmentSlot.OFF_HAND) {
-            ItemStack item = inv.getItemInOffHand();
-            inv.setItemInOffHand(toItemStack(item.getAmount()));
-        } else {
-            throw new IllegalArgumentException(hand.name() + " is not a hand! (HAND, OFF_HAND)");
-        }
+        ItemStack item = inv.getItemInHand();
+        inv.setItemInHand(toItemStack(item.getAmount()));
     }
 
     /**

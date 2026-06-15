@@ -160,12 +160,12 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
         if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
             // set module direction based on clicked block face
             setFacingDirection(event.getBlockFace().getOppositeFace());
-            event.getPlayer().getInventory().setItem(event.getHand(), toItemStack(event.getItem().getAmount()));
+            event.getPlayer().getInventory().setItemInHand(toItemStack(event.getItem().getAmount()));
             event.setCancelled(true);
         } else if (event.getAction() == Action.LEFT_CLICK_AIR && event.getPlayer().isSneaking()) {
             // unset module direction
             setFacingDirection(BlockFace.SELF);
-            event.getPlayer().getInventory().setItem(event.getHand(), toItemStack(event.getItem().getAmount()));
+            event.getPlayer().getInventory().setItemInHand(toItemStack(event.getItem().getAmount()));
             event.setCancelled(true);
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             ItemRouter rtr = event.getClickedBlock() == null ? null : SensibleToolbox.getBlockAt(event.getClickedBlock().getLocation(), ItemRouter.class, true);

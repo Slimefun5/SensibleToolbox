@@ -48,6 +48,7 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.STBGUIHolder;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.BlockAccess;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.LocationManager;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
@@ -1019,7 +1020,7 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
             return false;
         }
 
-        BlockPlaceEvent placeEvent = new BlockPlaceEvent(signBlock, signBlock.getState(), event.getClickedBlock(), event.getItem(), player, true, event.getHand());
+        BlockPlaceEvent placeEvent = HandCompat.newBlockPlaceEvent(signBlock, signBlock.getState(), event.getClickedBlock(), event.getItem(), player, true, event);
         Bukkit.getPluginManager().callEvent(placeEvent);
         if (placeEvent.isCancelled()) {
             STBUtil.complain(player);

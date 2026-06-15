@@ -177,7 +177,7 @@ public class SCURelay extends BatteryBox {
     @Override
     public void onInteractItem(PlayerInteractEvent event) {
         if (event.getAction() == Action.LEFT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_AIR) {
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         } else {
             super.onInteractItem(event);
