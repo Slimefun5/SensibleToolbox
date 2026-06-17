@@ -136,7 +136,22 @@ public class FurnaceListener extends STBBaseListener {
     }
 
     private boolean vanillaRecipeCheck(@Nonnull FurnaceRecipe recipe, @Nonnull ItemStack stack) {
-        return recipe.getInputChoice().test(stack) && !recipe.getKey().getNamespace().equals("sensibletoolbox");
+        // FurnaceRecipe#getInputChoice() and Recipe#getKey() are both 1.13+. getInput() works on every
+        // version; pre-1.13 recipes have no namespace key, so none can be a SensibleToolbox recipe.
+        ItemStack input = recipe.getInput();
+        if (input == null || input.getType() != stack.getType()) {
+            return false;
+        }
+        try {
+            Object key = recipe.getClass().getMethod("getKey").invoke(recipe);
+            if (key != null) {
+                Object namespace = key.getClass().getMethod("getNamespace").invoke(key);
+                return !"sensibletoolbox".equals(namespace);
+            }
+        } catch (ReflectiveOperationException ignored) {
+            // pre-1.13: recipes aren't keyed, so this can't be a SensibleToolbox recipe
+        }
+        return true;
     }
 
     private int findNewSlot(InventoryClickEvent event) {
