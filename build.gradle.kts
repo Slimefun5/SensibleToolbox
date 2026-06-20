@@ -74,7 +74,7 @@ tasks {
     }
     shadowJar {
         relocate("org.bstats", "sensibletoolbox.libs.bstats")
-        archiveFileName.set("SensibleToolbox v${project.version}.jar")
+        archiveFileName.set("SensibleToolbox-1.0.0-UNOFFICIAL.jar")
                 exclude("META-INF/**")
     }
     build {
