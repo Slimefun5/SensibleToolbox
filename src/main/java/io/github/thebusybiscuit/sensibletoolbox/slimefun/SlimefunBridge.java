@@ -37,8 +37,8 @@ public final class SlimefunBridge implements SlimefunAddon {
     public SlimefunBridge(@Nonnull SensibleToolboxPlugin plugin) {
         this.plugin = plugin;
 
-        ItemGroup items = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "items"), CustomItemStack.create(MaterialCompat.safe(XMaterial.SHEARS), "&7STB - Items"));
-        ItemGroup blocks = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "blocks"), CustomItemStack.create(MaterialCompat.safe(XMaterial.PURPLE_STAINED_GLASS), "&7STB - Blocks and Machines"));
+        ItemGroup items = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "items"), CustomItemStack.create(MaterialCompat.safe(XMaterial.SHEARS), "&7STB - Items")).setTheme("tools");
+        ItemGroup blocks = new ItemGroup(new io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey("sensibletoolbox", "blocks"), CustomItemStack.create(MaterialCompat.safe(XMaterial.PURPLE_STAINED_GLASS), "&7STB - Blocks and Machines")).setTheme("machines");
 
         for (String id : SensibleToolboxPlugin.getInstance().getItemRegistry().getItemIds()) {
             BaseSTBItem item = SensibleToolboxPlugin.getInstance().getItemRegistry().getItemById(id);
