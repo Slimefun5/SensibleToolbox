@@ -1,0 +1,39 @@
+# Spanish item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+STB_MASHER:
+  name: "&fTrituradora"
+  lore:
+    - "&7Tritura minerales y otros"
+    - "&7recursos en polvos"
+
+STB_FERMENTER:
+  name: "&fFermentador"
+  lore:
+    - "&7Fermenta varios objetos y también"
+    - "&7se usa para crear cebo de pesca"
+
+STB_QUARTZDUST:
+  name: "&fPolvo de cuarzo"
+  lore:
+    - "&7Cocínalo en un fundidor"
+    - "&7para fabricar silicio"
+
+STB_IRONDUST:
+  name: "&fPolvo de hierro"
+  lore:
+    - "&7Fúndelo en un fundidor u horno"
+    - "&7para obtener lingotes de hierro"
+
+STB_GOLDDUST:
+  name: "&fPolvo de oro"
+  lore:
+    - "&7Fúndelo en un fundidor u horno"
+    - "&7para obtener lingotes de oro"
+
+STB_SILICONWAFER:
+  name: "&fOblea de silicio"
+  lore:
+    - "&7Se usa en la fabricación"
+    - "&7de circuitos electrónicos"
+    - "&7más avanzados"

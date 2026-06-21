@@ -1,0 +1,39 @@
+# German item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+STB_MASHER:
+  name: "&fHäcksler"
+  lore:
+    - "&7Zermahlt Erze und andere"
+    - "&7Rohstoffe zu Staub"
+
+STB_FERMENTER:
+  name: "&fFermenter"
+  lore:
+    - "&7Fermentiert verschiedene Gegenstände und wird"
+    - "&7auch zur Herstellung von Fischköder verwendet"
+
+STB_QUARTZDUST:
+  name: "&fQuarzstaub"
+  lore:
+    - "&7In einem Schmelzer kochen,"
+    - "&7um Silizium herzustellen"
+
+STB_IRONDUST:
+  name: "&fEisenstaub"
+  lore:
+    - "&7In einem Schmelzer oder Ofen schmelzen,"
+    - "&7um Eisenbarren zu erhalten"
+
+STB_GOLDDUST:
+  name: "&fGoldstaub"
+  lore:
+    - "&7In einem Schmelzer oder Ofen schmelzen,"
+    - "&7um Goldbarren zu erhalten"
+
+STB_SILICONWAFER:
+  name: "&fSiliziumwafer"
+  lore:
+    - "&7Wird bei der Herstellung"
+    - "&7fortgeschrittener elektronischer"
+    - "&7Schaltkreise verwendet"

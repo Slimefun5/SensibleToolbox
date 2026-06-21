@@ -1,0 +1,39 @@
+# French item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+
+STB_MASHER:
+  name: "&fBroyeur"
+  lore:
+    - "&7Broie les minerais et autres"
+    - "&7ressources en poudres"
+
+STB_FERMENTER:
+  name: "&fFermenteur"
+  lore:
+    - "&7Fermente divers objets et sert"
+    - "&7aussi à créer de l'appât à poisson"
+
+STB_QUARTZDUST:
+  name: "&fPoussière de quartz"
+  lore:
+    - "&7Cuire dans un fondoir"
+    - "&7pour fabriquer du silicium"
+
+STB_IRONDUST:
+  name: "&fPoussière de fer"
+  lore:
+    - "&7Fondre dans un fondoir ou un four"
+    - "&7pour obtenir des lingots de fer"
+
+STB_GOLDDUST:
+  name: "&fPoussière d'or"
+  lore:
+    - "&7Fondre dans un fondoir ou un four"
+    - "&7pour obtenir des lingots d'or"
+
+STB_SILICONWAFER:
+  name: "&fPlaquette de silicium"
+  lore:
+    - "&7Utilisée dans la fabrication"
+    - "&7de circuits électroniques"
+    - "&7plus avancés"

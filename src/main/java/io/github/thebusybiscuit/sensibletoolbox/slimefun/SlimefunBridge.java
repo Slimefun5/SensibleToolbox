@@ -27,6 +27,7 @@ import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.recipes.MinecraftRecipe;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
@@ -130,6 +131,8 @@ public final class SlimefunBridge implements SlimefunAddon {
         patch("STB_IRONDUST", masher, new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)));
         patch("STB_GOLDDUST", masher, new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT)));
         patch("STB_FISHBAIT", fermenter, new ItemStack(MaterialCompat.safe(XMaterial.ROTTEN_FLESH)));
+
+        Slimefun.getItemTranslationService().registerTranslations(plugin);
     }
 
     @ParametersAreNonnullByDefault
