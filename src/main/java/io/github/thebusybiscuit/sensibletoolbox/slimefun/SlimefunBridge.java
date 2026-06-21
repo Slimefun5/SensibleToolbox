@@ -133,6 +133,22 @@ public final class SlimefunBridge implements SlimefunAddon {
         patch("STB_FISHBAIT", fermenter, new ItemStack(MaterialCompat.safe(XMaterial.ROTTEN_FLESH)));
 
         Slimefun.getItemTranslationService().registerTranslations(plugin);
+        registerWiki(this);
+    }
+
+    private void registerWiki(SlimefunAddon plugin) {
+        io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText wiki = io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getWikiText();
+        String topicId = "addon_sensibletoolbox";
+        wiki.registerTopic(new io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic(topicId, "Sensible Toolbox", io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial.IRON_PICKAXE, "&7Ported STB machines & gadgets"));
+        wiki.setMechanic(topicId, java.util.Arrays.asList(
+            "&7Ported STB machines & gadgets.", "",
+            "&7Brings Sensible Toolbox's machines", "&7(mashers, smelters and more) and", "&7gadgets in through Slimefun.", "",
+            "&7Click an item below for its recipe."));
+        java.util.List<String> items = new java.util.ArrayList<>();
+        for (io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem item : io.github.thebusybiscuit.slimefun5.implementation.Slimefun.getRegistry().getEnabledSlimefunItems()) {
+            try { if (item.getAddon() == plugin) { items.add(item.getId()); } } catch (Exception | LinkageError ignored) { }
+        }
+        wiki.setTopicItems(topicId, items);
     }
 
     @ParametersAreNonnullByDefault
