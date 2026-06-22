@@ -1,39 +1,183 @@
 # Spanish item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
-# name = display name, lore = list of lines, '&' colour codes. Missing items fall back to English.
+# name = display name, '&' colour codes preserved. Missing items fall back to English.
 
-STB_MASHER:
-  name: "&fTrituradora"
-  lore:
-    - "&7Tritura minerales y otros"
-    - "&7recursos en polvos"
-
+STB_ADVANCEDMOISTURECHECKER:
+  name: "&fMedidor de humedad avanzado"
+STB_ADVANCEDRECIPEBOOK:
+  name: "&fLibro de recetas avanzado"
+STB_ADVANCEDSENDERMODULE:
+  name: "&fI.R. Mod: Emisor avanzado"
+STB_ANGELICBLOCK:
+  name: "&fBloque angelical"
+STB_AUTOBUILDER:
+  name: "&fConstructor automático"
+STB_AUTOFARM:
+  name: "&fGranja automática"
+STB_AUTOFARM2:
+  name: "&fGranja automática MkII"
+STB_AUTOFORESTER:
+  name: "&fForestador automático"
+STB_BASICSOLARCELL:
+  name: "&fSolar básica"
+STB_BIGSTORAGEUNIT:
+  name: "&fBSU"
+STB_BIOENGINE:
+  name: "&fBiomotor"
+STB_BLANKMODULE:
+  name: "&fMódulo de enrutador de objetos en blanco"
+STB_BLOCKUPDATEDETECTOR:
+  name: "&fDetector de actualización de bloques"
+STB_BREAKERMODULE:
+  name: "&fI.R. Mod: Rompedor"
+STB_CIRCUITBOARD:
+  name: "&fPlaca de circuito"
+STB_DENSESOLAR:
+  name: "&fSolar densa"
+STB_DIAMONDCOMBINEHOE:
+  name: "&fAzada combinada de diamante"
+STB_DISTRIBUTORMODULE:
+  name: "&fI.R. Mod: Distribuidor"
+STB_DROPPERMODULE:
+  name: "&fI.R. Mod: Soltador"
+STB_EJECTORUPGRADE:
+  name: "&fMejora de eyector"
+STB_ELECTRICALENERGIZER:
+  name: "&fEnergizador eléctrico"
+STB_ELEVATOR:
+  name: "&fAscensor"
+STB_ENDERBAG:
+  name: "&fBolsa del Ender"
+STB_ENDERBOX:
+  name: "&fCaja del Ender"
+STB_ENDERLEASH:
+  name: "&fCorrea del Ender"
+STB_ENDERTUNER:
+  name: "&fSintonizador del Ender"
+STB_ENERGIZEDGOLDDUST:
+  name: "&fPolvo de oro energizado"
+STB_ENERGIZEDGOLDINGOT:
+  name: "&fLingote de oro energizado"
+STB_ENERGIZEDIRONDUST:
+  name: "&fPolvo de hierro energizado"
+STB_ENERGIZEDIRONINGOT:
+  name: "&fLingote de hierro energizado"
+STB_ENERGIZEDQUARTZ:
+  name: "&fCuarzo energizado"
 STB_FERMENTER:
   name: "&fFermentador"
-  lore:
-    - "&7Fermenta varios objetos y también"
-    - "&7se usa para crear cebo de pesca"
-
-STB_QUARTZDUST:
-  name: "&fPolvo de cuarzo"
-  lore:
-    - "&7Cocínalo en un fundidor"
-    - "&7para fabricar silicio"
-
-STB_IRONDUST:
-  name: "&fPolvo de hierro"
-  lore:
-    - "&7Fúndelo en un fundidor u horno"
-    - "&7para obtener lingotes de hierro"
-
+STB_FIFTYKBATTERYBOX:
+  name: "&fCaja de baterías 50K"
+STB_FIFTYKENERGYCELL:
+  name: "&fCelda de energía 50K"
+STB_FISHBAIT:
+  name: "&fCebo de pesca"
+STB_FISHINGNET:
+  name: "&fRed de pesca"
+STB_GOLDCOMBINEHOE:
+  name: "&fAzada combinada de oro"
 STB_GOLDDUST:
   name: "&fPolvo de oro"
-  lore:
-    - "&7Fúndelo en un fundidor u horno"
-    - "&7para obtener lingotes de oro"
-
+STB_HEATENGINE:
+  name: "&fMotor térmico"
+STB_HOLOGRAPHICMONITOR:
+  name: "&fMonitor holográfico"
+STB_HYPERSENDERMODULE:
+  name: "&fI.R. Mod: Hiperemisor"
+STB_HYPERSTORAGEUNIT:
+  name: "&fHSU"
+STB_INFERNALDUST:
+  name: "&fPolvo infernal"
+STB_INFERNALFARM:
+  name: "&fGranja infernal"
+STB_INTEGRATEDCIRCUIT:
+  name: "&fCircuito integrado"
+STB_IRONCOMBINEHOE:
+  name: "&fAzada combinada de hierro"
+STB_IRONDUST:
+  name: "&fPolvo de hierro"
+STB_ITEMROUTER:
+  name: "&fEnrutador de objetos"
+STB_LANDMARKER:
+  name: "&fMarcador de terreno"
+STB_MACHINEFRAME:
+  name: "&fEstructura de máquina"
+STB_MAGMATICENGINE:
+  name: "&fMotor magmático"
+STB_MASHER:
+  name: "&fTrituradora"
+STB_MOISTURECHECKER:
+  name: "&fMedidor de humedad"
+STB_MULTIBUILDER:
+  name: "&fMulticonstructor"
+STB_MULTIMETER:
+  name: "&fMultímetro"
+STB_PAINTBRUSH:
+  name: "&fPincel"
+STB_PAINTCAN:
+  name: "&fLata de pintura"
+STB_PAINTROLLER:
+  name: "&fRodillo de pintura"
+STB_POWERMONITOR:
+  name: "&fMonitor de energía"
+STB_PULLERMODULE:
+  name: "&fI.R. Mod: Extractor"
+STB_PUMP:
+  name: "&fBomba"
+STB_PVCELL:
+  name: "&fCelda PV"
+STB_QUARTZDUST:
+  name: "&fPolvo de cuarzo"
+STB_RECEIVERMODULE:
+  name: "&fI.R. Mod: Receptor"
+STB_RECIPEBOOK:
+  name: "&fLibro de recetas"
+STB_REDSTONECLOCK:
+  name: "&fReloj de redstone"
+STB_REGULATORUPGRADE:
+  name: "&fMejora de regulador"
+STB_SAWMILL:
+  name: "&fAserradero"
+STB_SCURELAY:
+  name: "&fRelé SCU"
+STB_SENDERMODULE:
+  name: "&fI.R. Mod: Emisor"
 STB_SILICONWAFER:
-  name: "&fOblea de silicio"
-  lore:
-    - "&7Se usa en la fabricación"
-    - "&7de circuitos electrónicos"
-    - "&7más avanzados"
+  name: "&fWafer de silicio"
+STB_SILKYBREAKERMODULE:
+  name: "&fI.R. Mod: Rompedor sedoso"
+STB_SIMPLECIRCUIT:
+  name: "&fCircuito electrónico simple"
+STB_SMELTER:
+  name: "&fFundidora"
+STB_SORTERMODULE:
+  name: "&fI.R. Mod: Clasificador"
+STB_SOUNDMUFFLER:
+  name: "&fSilenciador"
+STB_SPEEDMODULE:
+  name: "&fI.R. Mod: Mejora de velocidad"
+STB_SPEEDUPGRADE:
+  name: "&fMejora de velocidad"
+STB_STACKMODULE:
+  name: "&fI.R. Mod: Mejora de pila"
+STB_SUBSPACETRANSPONDER:
+  name: "&fTranspondedor de subespacio"
+STB_TAPEMEASURE:
+  name: "&fCinta métrica"
+STB_TENKBATTERYBOX:
+  name: "&fCaja de baterías 10K"
+STB_TENKENERGYCELL:
+  name: "&fCelda de energía 10K"
+STB_THOROUGHNESSUPGRADE:
+  name: "&fMejora de minuciosidad"
+STB_TOUGHMACHINEFRAME:
+  name: "&fEstructura de máquina resistente"
+STB_TRASHCAN:
+  name: "&fPapelera"
+STB_UNLINKEDSCURELAY:
+  name: "&fRelé SCU sin vincular"
+STB_VACUUMMODULE:
+  name: "&fI.R. Mod: Aspirador"
+STB_WATERINGCAN:
+  name: "&fRegadera"
+STB_WOODCOMBINEHOE:
+  name: "&fAzada combinada de madera"

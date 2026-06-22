@@ -1,0 +1,183 @@
+# Dutch item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, '&' colour codes preserved. Missing items fall back to English.
+
+STB_ADVANCEDMOISTURECHECKER:
+  name: "&fGeavanceerde vochtmeter"
+STB_ADVANCEDRECIPEBOOK:
+  name: "&fGeavanceerd receptenboek"
+STB_ADVANCEDSENDERMODULE:
+  name: "&fI.R. Mod: Geav. zender"
+STB_ANGELICBLOCK:
+  name: "&fEngelachtig blok"
+STB_AUTOBUILDER:
+  name: "&fAutobouwer"
+STB_AUTOFARM:
+  name: "&fAutoboerderij"
+STB_AUTOFARM2:
+  name: "&fAutoboerderij MkII"
+STB_AUTOFORESTER:
+  name: "&fAutoboswachter"
+STB_BASICSOLARCELL:
+  name: "&fBasis zonnecel"
+STB_BIGSTORAGEUNIT:
+  name: "&fBSU"
+STB_BIOENGINE:
+  name: "&fBiomotor"
+STB_BLANKMODULE:
+  name: "&fLeeg item-Router-module"
+STB_BLOCKUPDATEDETECTOR:
+  name: "&fBlokupdate-detector"
+STB_BREAKERMODULE:
+  name: "&fI.R. Mod: Breker"
+STB_CIRCUITBOARD:
+  name: "&fPrintplaat"
+STB_DENSESOLAR:
+  name: "&fDichte zonnecel"
+STB_DIAMONDCOMBINEHOE:
+  name: "&fDiamanten combinatieschoffel"
+STB_DISTRIBUTORMODULE:
+  name: "&fI.R. Mod: Distributeur"
+STB_DROPPERMODULE:
+  name: "&fI.R. Mod: Dropper"
+STB_EJECTORUPGRADE:
+  name: "&fUitwerper-upgrade"
+STB_ELECTRICALENERGIZER:
+  name: "&fElektrische energizer"
+STB_ELEVATOR:
+  name: "&fLift"
+STB_ENDERBAG:
+  name: "&fEnder-tas"
+STB_ENDERBOX:
+  name: "&fEnder-doos"
+STB_ENDERLEASH:
+  name: "&fEnder-leiband"
+STB_ENDERTUNER:
+  name: "&fEnder-tuner"
+STB_ENERGIZEDGOLDDUST:
+  name: "&fGeënergiseerd goudstof"
+STB_ENERGIZEDGOLDINGOT:
+  name: "&fGeënergiseerde goudstaaf"
+STB_ENERGIZEDIRONDUST:
+  name: "&fGeënergiseerd ijzerstof"
+STB_ENERGIZEDIRONINGOT:
+  name: "&fGeënergiseerde ijzerstaaf"
+STB_ENERGIZEDQUARTZ:
+  name: "&fGeënergiseerd kwarts"
+STB_FERMENTER:
+  name: "&fFermenter"
+STB_FIFTYKBATTERYBOX:
+  name: "&f50K batterijbox"
+STB_FIFTYKENERGYCELL:
+  name: "&f50K energiecel"
+STB_FISHBAIT:
+  name: "&fVisaas"
+STB_FISHINGNET:
+  name: "&fVisnet"
+STB_GOLDCOMBINEHOE:
+  name: "&fGouden combinatieschoffel"
+STB_GOLDDUST:
+  name: "&fGoudstof"
+STB_HEATENGINE:
+  name: "&fWarmtemotor"
+STB_HOLOGRAPHICMONITOR:
+  name: "&fHolografische monitor"
+STB_HYPERSENDERMODULE:
+  name: "&fI.R. Mod: Hyperzender"
+STB_HYPERSTORAGEUNIT:
+  name: "&fHSU"
+STB_INFERNALDUST:
+  name: "&fHels stof"
+STB_INFERNALFARM:
+  name: "&fHelse boerderij"
+STB_INTEGRATEDCIRCUIT:
+  name: "&fGeïntegreerd circuit"
+STB_IRONCOMBINEHOE:
+  name: "&fIJzeren combinatieschoffel"
+STB_IRONDUST:
+  name: "&fIJzerstof"
+STB_ITEMROUTER:
+  name: "&fItem-Router"
+STB_LANDMARKER:
+  name: "&fLandmarkering"
+STB_MACHINEFRAME:
+  name: "&fMachineframe"
+STB_MAGMATICENGINE:
+  name: "&fMagmatische motor"
+STB_MASHER:
+  name: "&fVergruizer"
+STB_MOISTURECHECKER:
+  name: "&fVochtmeter"
+STB_MULTIBUILDER:
+  name: "&fMultibouwer"
+STB_MULTIMETER:
+  name: "&fMultimeter"
+STB_PAINTBRUSH:
+  name: "&fPenseel"
+STB_PAINTCAN:
+  name: "&fVerfblik"
+STB_PAINTROLLER:
+  name: "&fVerfroller"
+STB_POWERMONITOR:
+  name: "&fEnergiemonitor"
+STB_PULLERMODULE:
+  name: "&fI.R. Mod: Trekker"
+STB_PUMP:
+  name: "&fPomp"
+STB_PVCELL:
+  name: "&fPV-cel"
+STB_QUARTZDUST:
+  name: "&fKwartsstof"
+STB_RECEIVERMODULE:
+  name: "&fI.R. Mod: Ontvanger"
+STB_RECIPEBOOK:
+  name: "&fReceptenboek"
+STB_REDSTONECLOCK:
+  name: "&fRedstone-klok"
+STB_REGULATORUPGRADE:
+  name: "&fRegelaar-upgrade"
+STB_SAWMILL:
+  name: "&fZagerij"
+STB_SCURELAY:
+  name: "&fSCU-relais"
+STB_SENDERMODULE:
+  name: "&fI.R. Mod: Zender"
+STB_SILICONWAFER:
+  name: "&fSilicium-Wafer"
+STB_SILKYBREAKERMODULE:
+  name: "&fI.R. Mod: Zijdezachte breker"
+STB_SIMPLECIRCUIT:
+  name: "&fEenvoudig elektronisch circuit"
+STB_SMELTER:
+  name: "&fSmelter"
+STB_SORTERMODULE:
+  name: "&fI.R. Mod: Sorteerder"
+STB_SOUNDMUFFLER:
+  name: "&fGeluiddemper"
+STB_SPEEDMODULE:
+  name: "&fI.R. Mod: Snelheidsupgrade"
+STB_SPEEDUPGRADE:
+  name: "&fSnelheidsupgrade"
+STB_STACKMODULE:
+  name: "&fI.R. Mod: Stapelupgrade"
+STB_SUBSPACETRANSPONDER:
+  name: "&fSubruimte-transponder"
+STB_TAPEMEASURE:
+  name: "&fMeetlint"
+STB_TENKBATTERYBOX:
+  name: "&f10K batterijbox"
+STB_TENKENERGYCELL:
+  name: "&f10K energiecel"
+STB_THOROUGHNESSUPGRADE:
+  name: "&fGrondigheidsupgrade"
+STB_TOUGHMACHINEFRAME:
+  name: "&fStevig machineframe"
+STB_TRASHCAN:
+  name: "&fPrullenbak"
+STB_UNLINKEDSCURELAY:
+  name: "&fNiet-gekoppeld SCU-relais"
+STB_VACUUMMODULE:
+  name: "&fI.R. Mod: Stofzuiger"
+STB_WATERINGCAN:
+  name: "&fGieter"
+STB_WOODCOMBINEHOE:
+  name: "&fHouten combinatieschoffel"
