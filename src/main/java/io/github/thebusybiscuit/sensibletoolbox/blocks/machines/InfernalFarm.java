@@ -6,13 +6,16 @@ import java.util.Set;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.Ageable;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.items.GoldCombineHoe;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class InfernalFarm extends AutoFarm {
 
@@ -32,7 +35,7 @@ public class InfernalFarm extends AutoFarm {
 
     @Override
     public Material getMaterial() {
-        return Material.NETHER_BRICKS;
+        return MaterialCompat.safe(XMaterial.NETHER_BRICKS);
     }
 
     @Override
@@ -50,31 +53,30 @@ public class InfernalFarm extends AutoFarm {
         MachineFrame frame = new MachineFrame();
         GoldCombineHoe hoe = new GoldCombineHoe();
         registerCustomIngredients(frame, hoe);
-        ShapedRecipe res = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe res = RecipeCompat.shaped(getKey(), toItemStack());
         res.shape("NHN", "IFI", "RGR");
-        res.setIngredient('R', Material.REDSTONE);
-        res.setIngredient('G', Material.GOLD_INGOT);
-        res.setIngredient('I', Material.IRON_INGOT);
+        res.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        res.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        res.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         res.setIngredient('H', hoe.getMaterial());
         res.setIngredient('F', frame.getMaterial());
-        res.setIngredient('N', Material.NETHER_BRICK);
+        res.setIngredient('N', MaterialCompat.safe(XMaterial.NETHER_BRICK));
         return res;
     }
 
     @Override
     public void onServerTick() {
-        if (!isJammed()) {
+        // crop-maturity checks require BlockData (1.13+); this machine is inert on legacy MC
+        if (MODERN_BLOCK_DATA && !isJammed()) {
             if (getCharge() >= getScuPerCycle()) {
                 for (Block crop : blocks) {
-                    if (crop.getType() == Material.NETHER_WART) {
-                        Ageable ageable = (Ageable) crop.getBlockData();
-
-                        if (ageable.getAge() >= ageable.getMaximumAge()) {
+                    if (crop.getType() == MaterialCompat.safe(XMaterial.NETHER_WART)) {
+                        if (BlockDataCompat.isFullyGrown(crop)) {
                             setCharge(getCharge() - getScuPerCycle());
 
-                            ageable.setAge(0);
+                            BlockDataCompat.resetAge(crop);
                             crop.getWorld().playEffect(crop.getLocation(), Effect.STEP_SOUND, crop.getType());
-                            setJammed(!output(Material.NETHER_WART));
+                            setJammed(!output(MaterialCompat.safe(XMaterial.NETHER_WART)));
                             break;
                         }
                     }

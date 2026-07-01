@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class CircuitBoard extends BaseSTBItem {
 
@@ -15,7 +18,7 @@ public class CircuitBoard extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GREEN_CARPET;
+        return MaterialCompat.safe(XMaterial.GREEN_CARPET);
     }
 
     @Override
@@ -30,9 +33,9 @@ public class CircuitBoard extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack(2));
-        recipe.addIngredient(Material.STONE_PRESSURE_PLATE);
-        recipe.addIngredient(Material.GREEN_DYE);
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack(2));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.STONE_PRESSURE_PLATE));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.GREEN_DYE));
         return recipe;
     }
 }

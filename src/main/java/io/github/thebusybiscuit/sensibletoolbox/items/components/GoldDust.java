@@ -6,6 +6,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class GoldDust extends BaseSTBItem {
 
@@ -19,7 +21,7 @@ public class GoldDust extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GLOWSTONE_DUST;
+        return MaterialCompat.safe(XMaterial.GLOWSTONE_DUST);
     }
 
     @Override
@@ -45,7 +47,7 @@ public class GoldDust extends BaseSTBItem {
 
     @Override
     public ItemStack getSmeltingResult() {
-        return new ItemStack(Material.GOLD_INGOT);
+        return new ItemStack(MaterialCompat.safe(XMaterial.GOLD_INGOT));
     }
 }
 

@@ -33,17 +33,19 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.FilterTypeGadget
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ToggleButton;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.router.ItemRouter;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public abstract class DirectionalItemRouterModule extends ItemRouterModule implements Filtering, Directional {
 
     private static final String LIST_ITEM = ChatColor.LIGHT_PURPLE + UnicodeSymbol.CENTERED_POINT.toUnicode() + " " + ChatColor.AQUA;
 
-    private static final ItemStack WHITE_BUTTON = GUIUtil.makeTexture(Material.WHITE_WOOL, ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Whitelist", "Module will only process", "items which match the filter.");
-    private static final ItemStack BLACK_BUTTON = GUIUtil.makeTexture(Material.BLACK_WOOL, ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Blacklist", "Module will NOT process", "items which match the filter.");
-    private static final ItemStack OFF_BUTTON = GUIUtil.makeTexture(Material.LIGHT_BLUE_STAINED_GLASS, ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Termination OFF", "Subsequent modules in the", "Item Router will process items", "as normal.");
-    private static final ItemStack ON_BUTTON = GUIUtil.makeTexture(Material.ORANGE_WOOL, ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Termination ON", "If this module processes an", "item, the Item Router will", "not process any more items", "on this tick.");
+    private static final ItemStack WHITE_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.WHITE_WOOL), ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Whitelist", "Module will only process", "items which match the filter.");
+    private static final ItemStack BLACK_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.BLACK_WOOL), ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Blacklist", "Module will NOT process", "items which match the filter.");
+    private static final ItemStack OFF_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.LIGHT_BLUE_STAINED_GLASS), ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Termination OFF", "Subsequent modules in the", "Item Router will process items", "as normal.");
+    private static final ItemStack ON_BUTTON = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.ORANGE_WOOL), ChatColor.WHITE.toString() + ChatColor.UNDERLINE + "Termination ON", "If this module processes an", "item, the Item Router will", "not process any more items", "on this tick.");
 
     public static final int FILTER_LABEL_SLOT = 0;
     public static final int DIRECTION_LABEL_SLOT = 5;
@@ -158,12 +160,12 @@ public abstract class DirectionalItemRouterModule extends ItemRouterModule imple
         if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
             // set module direction based on clicked block face
             setFacingDirection(event.getBlockFace().getOppositeFace());
-            event.getPlayer().getInventory().setItem(event.getHand(), toItemStack(event.getItem().getAmount()));
+            event.getPlayer().getInventory().setItemInHand(toItemStack(event.getItem().getAmount()));
             event.setCancelled(true);
         } else if (event.getAction() == Action.LEFT_CLICK_AIR && event.getPlayer().isSneaking()) {
             // unset module direction
             setFacingDirection(BlockFace.SELF);
-            event.getPlayer().getInventory().setItem(event.getHand(), toItemStack(event.getItem().getAmount()));
+            event.getPlayer().getInventory().setItemInHand(toItemStack(event.getItem().getAmount()));
             event.setCancelled(true);
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             ItemRouter rtr = event.getClickedBlock() == null ? null : SensibleToolbox.getBlockAt(event.getClickedBlock().getLocation(), ItemRouter.class, true);

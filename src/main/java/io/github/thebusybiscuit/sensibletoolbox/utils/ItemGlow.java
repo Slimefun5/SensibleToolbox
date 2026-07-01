@@ -3,6 +3,8 @@ package io.github.thebusybiscuit.sensibletoolbox.utils;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
@@ -41,7 +43,12 @@ public final class ItemGlow {
         ItemMeta meta = stack.getItemMeta();
 
         if (meta != null) {
-            meta.setEnchantmentGlintOverride(glowing ? true : null);
+            if (glowing) {
+                meta.addEnchant(Enchantment.LUCK, 1, true);
+                meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
+            } else {
+                meta.removeEnchant(Enchantment.LUCK);
+            }
             stack.setItemMeta(meta);
         }
     }
@@ -58,7 +65,6 @@ public final class ItemGlow {
             return false;
         }
 
-        Boolean override = stack.getItemMeta().getEnchantmentGlintOverride();
-        return override != null && override;
+        return stack.getItemMeta().hasEnchant(Enchantment.LUCK);
     }
 }

@@ -11,7 +11,9 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * A GUI gadget which allows an integer value to be displayed
@@ -26,7 +28,7 @@ public class NumericGadget extends ClickableGadget {
     private final int incr;
     private final int altIncr;
     private final NumericListener callback;
-    private final ItemStack icon = new ItemStack(Material.PAPER);
+    private final ItemStack icon = new ItemStack(MaterialCompat.safe(XMaterial.PAPER));
     private int value;
 
     /**

@@ -7,6 +7,8 @@ import io.github.thebusybiscuit.sensibletoolbox.api.AccessControl;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * A gadget which can display and update the access control for an STB block.
@@ -32,9 +34,9 @@ public class AccessControlGadget extends CyclerGadget<AccessControl> {
      */
     public AccessControlGadget(InventoryGUI gui, int slot, BaseSTBBlock stb) {
         super(gui, slot, "Access", stb);
-        add(AccessControl.PUBLIC, ChatColor.GREEN, Material.GREEN_WOOL, "Owner: " + ChatColor.ITALIC + "<OWNER>", "All players may access");
-        add(AccessControl.PRIVATE, ChatColor.RED, Material.RED_WOOL, "Owner: " + ChatColor.ITALIC + "<OWNER>", "Only owner may access");
-        add(AccessControl.RESTRICTED, ChatColor.YELLOW, Material.YELLOW_WOOL, "Owner: " + ChatColor.ITALIC + "<OWNER>", "Only owner and owner's", "friends may access");
+        add(AccessControl.PUBLIC, ChatColor.GREEN, MaterialCompat.safe(XMaterial.GREEN_WOOL), "Owner: " + ChatColor.ITALIC + "<OWNER>", "All players may access");
+        add(AccessControl.PRIVATE, ChatColor.RED, MaterialCompat.safe(XMaterial.RED_WOOL), "Owner: " + ChatColor.ITALIC + "<OWNER>", "Only owner may access");
+        add(AccessControl.RESTRICTED, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.YELLOW_WOOL), "Owner: " + ChatColor.ITALIC + "<OWNER>", "Only owner and owner's", "friends may access");
         setInitialValue(stb == null ? gui.getOwningBlock().getAccessControl() : stb.getAccessControl());
     }
 

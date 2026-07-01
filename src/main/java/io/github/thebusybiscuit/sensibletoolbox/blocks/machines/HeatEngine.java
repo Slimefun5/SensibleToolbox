@@ -5,7 +5,6 @@ import java.util.Arrays;
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.inventory.ItemStack;
@@ -19,7 +18,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.FuelValues;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.RegulatorUpgrade;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class HeatEngine extends Generator {
 
@@ -30,13 +33,13 @@ public class HeatEngine extends Generator {
     private FuelValues currentFuel;
 
     static {
-        fuelItems.addFuel(new ItemStack(Material.CHARCOAL), false, 15, 80);
-        fuelItems.addFuel(new ItemStack(Material.COAL), false, 15, 120);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.CHARCOAL)), false, 15, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.COAL)), false, 15, 120);
 
         // 1 coal block is slightly more efficient than 9 coal
-        fuelItems.addFuel(new ItemStack(Material.COAL_BLOCK), true, 15, 1120);
-        fuelItems.addFuel(new ItemStack(Material.BLAZE_ROD), true, 15, 180);
-        fuelItems.addFuel(new ItemStack(Material.BLAZE_POWDER), true, 22.5, 30);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.COAL_BLOCK)), true, 15, 1120);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BLAZE_ROD)), true, 15, 180);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BLAZE_POWDER)), true, 22.5, 30);
 
         for (Material log : Tag.LOGS.getValues()) {
             fuelItems.addFuel(new ItemStack(log), true, 10, 40);
@@ -46,8 +49,8 @@ public class HeatEngine extends Generator {
             fuelItems.addFuel(new ItemStack(plank), true, 5, 20);
         }
 
-        fuelItems.addFuel(new ItemStack(Material.STICK), true, 2.5, 20);
-        fuelItems.addFuel(new ItemStack(Material.FIRE_CHARGE), true, 50, 20);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.STICK)), true, 2.5, 20);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.FIRE_CHARGE)), true, 50, 20);
     }
 
     public HeatEngine() {
@@ -114,7 +117,7 @@ public class HeatEngine extends Generator {
 
     @Override
     public Material getMaterial() {
-        return Material.ORANGE_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.ORANGE_TERRACOTTA);
     }
 
     @Override
@@ -146,14 +149,14 @@ public class HeatEngine extends Generator {
         SimpleCircuit sc = new SimpleCircuit();
         TenKEnergyCell cell = new TenKEnergyCell();
         registerCustomIngredients(sc, cell);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("III", "SCE", "RGR");
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('E', cell.getMaterial());
-        recipe.setIngredient('C', Material.CAULDRON);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('R', Material.REDSTONE);
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.CAULDRON));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
         return recipe;
     }
 
@@ -179,7 +182,7 @@ public class HeatEngine extends Generator {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FLINT_AND_STEEL);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL));
     }
 
     @Override

@@ -12,7 +12,6 @@ import org.bukkit.Effect;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
-import org.bukkit.block.data.Ageable;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -22,17 +21,24 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AutoFarmingMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.IronCombineHoe;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class AutoFarm extends AutoFarmingMachine {
+
+    // BlockData crop API is only available on MC 1.13+
+    protected static final boolean MODERN_BLOCK_DATA = BlockDataCompat.isModern();
 
     private static final Map<Material, Material> crops = new EnumMap<>(Material.class);
     private static final int RADIUS = 3;
 
     static {
-        crops.put(Material.WHEAT, Material.WHEAT);
-        crops.put(Material.POTATOES, Material.POTATO);
-        crops.put(Material.CARROTS, Material.CARROT);
-        crops.put(Material.BEETROOTS, Material.BEETROOT);
+        crops.put(MaterialCompat.safe(XMaterial.WHEAT), MaterialCompat.safe(XMaterial.WHEAT));
+        crops.put(MaterialCompat.safe(XMaterial.POTATOES), MaterialCompat.safe(XMaterial.POTATO));
+        crops.put(MaterialCompat.safe(XMaterial.CARROTS), MaterialCompat.safe(XMaterial.CARROT));
+        crops.put(MaterialCompat.safe(XMaterial.BEETROOTS), MaterialCompat.safe(XMaterial.BEETROOT));
     }
 
     private Set<Block> blocks;
@@ -50,7 +56,7 @@ public class AutoFarm extends AutoFarmingMachine {
 
     @Override
     public Material getMaterial() {
-        return Material.BROWN_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.BROWN_TERRACOTTA);
     }
 
     @Override
@@ -68,11 +74,11 @@ public class AutoFarm extends AutoFarmingMachine {
         MachineFrame frame = new MachineFrame();
         IronCombineHoe hoe = new IronCombineHoe();
         registerCustomIngredients(frame, hoe);
-        ShapedRecipe res = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe res = RecipeCompat.shaped(getKey(), toItemStack());
         res.shape(" H ", "IFI", "RGR");
-        res.setIngredient('R', Material.REDSTONE);
-        res.setIngredient('G', Material.GOLD_INGOT);
-        res.setIngredient('I', Material.IRON_INGOT);
+        res.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        res.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        res.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         res.setIngredient('H', hoe.getMaterial());
         res.setIngredient('F', frame.getMaterial());
         return res;
@@ -94,16 +100,15 @@ public class AutoFarm extends AutoFarmingMachine {
 
     @Override
     public void onServerTick() {
-        if (!isJammed()) {
+        // crop-maturity checks require BlockData (1.13+); this machine is inert on legacy MC
+        if (MODERN_BLOCK_DATA && !isJammed()) {
             if (getCharge() >= getScuPerCycle()) {
                 for (Block crop : blocks) {
                     if (crops.containsKey(crop.getType())) {
-                        Ageable ageable = (Ageable) crop.getBlockData();
-
-                        if (ageable.getAge() >= ageable.getMaximumAge()) {
+                        if (BlockDataCompat.isFullyGrown(crop)) {
                             setCharge(getCharge() - getScuPerCycle());
 
-                            ageable.setAge(0);
+                            BlockDataCompat.resetAge(crop);
                             crop.getWorld().playEffect(crop.getLocation(), Effect.STEP_SOUND, crop.getType());
                             setJammed(!output(crops.get(crop.getType())));
                             break;

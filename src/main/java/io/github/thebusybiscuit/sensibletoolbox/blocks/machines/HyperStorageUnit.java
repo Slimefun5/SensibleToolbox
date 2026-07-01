@@ -12,7 +12,10 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 
 public class HyperStorageUnit extends BigStorageUnit {
 
@@ -26,7 +29,7 @@ public class HyperStorageUnit extends BigStorageUnit {
 
     @Override
     public Material getMaterial() {
-        return Material.ACACIA_LOG;
+        return MaterialCompat.safe(XMaterial.ACACIA_LOG);
     }
 
     @Override
@@ -39,14 +42,14 @@ public class HyperStorageUnit extends BigStorageUnit {
         IntegratedCircuit ic = new IntegratedCircuit();
         BigStorageUnit bsu = new BigStorageUnit();
         registerCustomIngredients(ic, bsu);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("OIO", "EBE", "RGR");
-        recipe.setIngredient('O', Material.OBSIDIAN);
+        recipe.setIngredient('O', MaterialCompat.safe(XMaterial.OBSIDIAN));
         recipe.setIngredient('I', ic.getMaterial());
-        recipe.setIngredient('E', Material.ENDER_PEARL);
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_PEARL));
         recipe.setIngredient('B', bsu.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 

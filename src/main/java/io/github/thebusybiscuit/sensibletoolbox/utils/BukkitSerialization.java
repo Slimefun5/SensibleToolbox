@@ -12,7 +12,6 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
-import org.yaml.snakeyaml.external.biz.base64Coder.Base64Coder;
 
 /**
  * Serialize a Bukkit {@link Inventory} to or from a {@link String}.
@@ -49,14 +48,14 @@ public final class BukkitSerialization {
             }
 
             // Serialize that array
-            return Base64Coder.encodeLines(outputStream.toByteArray());
+            return java.util.Base64.getEncoder().encodeToString(outputStream.toByteArray());
         } catch (IOException e) {
             throw new IllegalStateException("Unable to save item stacks.", e);
         }
     }
 
     public static Inventory fromBase64(@Nonnull String data) throws IOException {
-        try (ByteArrayInputStream inputStream = new ByteArrayInputStream(Base64Coder.decodeLines(data)); BukkitObjectInputStream dataInput = new BukkitObjectInputStream(inputStream)) {
+        try (ByteArrayInputStream inputStream = new ByteArrayInputStream(java.util.Base64.getMimeDecoder().decode(data)); BukkitObjectInputStream dataInput = new BukkitObjectInputStream(inputStream)) {
 
             int maxItems = dataInput.readInt();
 

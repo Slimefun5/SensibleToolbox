@@ -14,6 +14,7 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.RedstoneBehaviour;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
@@ -22,6 +23,8 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.NumericGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.RedstoneBehaviourGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 
 public class RedstoneClock extends BaseSTBBlock {
 
@@ -97,7 +100,7 @@ public class RedstoneClock extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return active ? Material.REDSTONE_BLOCK : Material.RED_TERRACOTTA;
+        return active ? MaterialCompat.safe(XMaterial.REDSTONE_BLOCK) : MaterialCompat.safe(XMaterial.RED_TERRACOTTA);
     }
 
     @Override
@@ -112,11 +115,11 @@ public class RedstoneClock extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe res = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe res = RecipeCompat.shaped(getKey(), toItemStack());
         res.shape("RSR", "STS", "RSR");
-        res.setIngredient('R', Material.REDSTONE);
-        res.setIngredient('S', Material.STONE);
-        res.setIngredient('T', Material.REDSTONE_TORCH);
+        res.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        res.setIngredient('S', MaterialCompat.safe(XMaterial.STONE));
+        res.setIngredient('T', MaterialCompat.safe(XMaterial.REDSTONE_TORCH));
         return res;
     }
 

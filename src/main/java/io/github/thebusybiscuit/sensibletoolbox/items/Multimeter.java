@@ -17,7 +17,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBMachine;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.utils.HoloMessage;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Multimeter extends BaseSTBItem {
 
@@ -31,7 +34,7 @@ public class Multimeter extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.CLOCK;
+        return MaterialCompat.safe(XMaterial.CLOCK);
     }
 
     @Override
@@ -53,13 +56,13 @@ public class Multimeter extends BaseSTBItem {
     public Recipe getMainRecipe() {
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("IGI", "CSC", " T ");
-        recipe.setIngredient('I', Material.IRON_INGOT);
-        recipe.setIngredient('G', Material.GLOWSTONE_DUST);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GLOWSTONE_DUST));
         recipe.setIngredient('C', sc.getMaterial());
-        recipe.setIngredient('S', Material.OAK_SIGN);
-        recipe.setIngredient('T', Material.STICK);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.OAK_SIGN));
+        recipe.setIngredient('T', MaterialCompat.safe(XMaterial.STICK));
         return recipe;
     }
 

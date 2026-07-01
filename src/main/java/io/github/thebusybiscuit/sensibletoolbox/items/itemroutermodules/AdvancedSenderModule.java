@@ -13,8 +13,11 @@ import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.router.ItemRouter;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
 
@@ -51,7 +54,7 @@ public class AdvancedSenderModule extends DirectionalItemRouterModule {
 
     @Override
     public Material getMaterial() {
-        return Material.LIGHT_BLUE_DYE;
+        return MaterialCompat.safe(XMaterial.LIGHT_BLUE_DYE);
     }
 
     @Override
@@ -73,10 +76,10 @@ public class AdvancedSenderModule extends DirectionalItemRouterModule {
     public Recipe getMainRecipe() {
         SenderModule sm = new SenderModule();
         registerCustomIngredients(sm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(sm.getMaterial());
-        recipe.addIngredient(Material.ENDER_EYE);
-        recipe.addIngredient(Material.DIAMOND);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ENDER_EYE));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.DIAMOND));
         return recipe;
     }
 
@@ -87,14 +90,14 @@ public class AdvancedSenderModule extends DirectionalItemRouterModule {
             ItemRouter rtr = SensibleToolbox.getBlockAt(event.getClickedBlock().getLocation(), ItemRouter.class, true);
             if (rtr != null && rtr.getReceiver() != null) {
                 linkToRouter(rtr);
-                updateHeldItemStack(event.getPlayer(), event.getHand());
+                updateHeldItemStack(event.getPlayer());
             } else {
                 STBUtil.complain(event.getPlayer());
             }
             event.setCancelled(true);
         } else if (event.getPlayer().isSneaking() && (event.getAction() == Action.LEFT_CLICK_AIR || event.getAction() == Action.LEFT_CLICK_BLOCK)) {
             linkToRouter(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         } else if (event.getItem().getAmount() == 1 && (event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.RIGHT_CLICK_BLOCK)) {
             super.onInteractItem(event);

@@ -25,7 +25,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -38,9 +37,13 @@ import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.blocks.BlockAndPosition;
@@ -129,15 +132,15 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         TenKEnergyCell cell = new TenKEnergyCell();
         cell.setCharge(0.0);
         IntegratedCircuit sc = new IntegratedCircuit();
         registerCustomIngredients(cell, sc);
         recipe.shape(" DP", "CED", "I  ");
-        recipe.setIngredient('D', Material.DIAMOND);
-        recipe.setIngredient('P', Material.DIAMOND_AXE);
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DIAMOND));
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.DIAMOND_AXE));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         recipe.setIngredient('E', cell.getMaterial());
         recipe.setIngredient('C', sc.getMaterial());
         return recipe;
@@ -145,7 +148,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLDEN_AXE;
+        return MaterialCompat.safe(XMaterial.GOLDEN_AXE);
     }
 
     @Override
@@ -197,7 +200,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
         }
 
         setMode(BuildingMode.values()[o]);
-        updateHeldItemStack(event.getPlayer(), EquipmentSlot.HAND);
+        updateHeldItemStack(event.getPlayer());
     }
 
     private void handleExchangeMode(PlayerInteractEvent event) {
@@ -208,10 +211,10 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
             if (player.isSneaking()) {
                 // set the target material
                 material = clicked.getType();
-                updateHeldItemStack(player, event.getHand());
+                updateHeldItemStack(player);
             } else if (material != null) {
                 // replace multiple blocks
-                int sharpness = event.getItem().getEnchantmentLevel(Enchantment.SHARPNESS);
+                int sharpness = event.getItem().getEnchantmentLevel(Enchantment.DAMAGE_ALL);
                 int layers = 3 + sharpness;
                 startSwap(event.getPlayer(), event.getItem(), this, clicked, material, layers);
                 Debugger.getInstance().debug(this + ": replacing " + layers + " layers of blocks");
@@ -239,7 +242,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
         }
 
         int chargePerOp = getItemConfig().getInt("scu_per_op", DEF_SCU_PER_OPERATION);
-        double chargeNeeded = chargePerOp * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.EFFICIENCY));
+        double chargeNeeded = chargePerOp * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.DIG_SPEED));
         queue.add(new SwapRecord(player, origin, origin.getType(), target, maxBlocks, builder, -1, chargeNeeded));
     }
 
@@ -283,7 +286,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
 
             if (!blocks.isEmpty()) {
                 if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
-                    doBuild(player, event.getHand(), event.getItem(), event.getClickedBlock(), blocks);
+                    doBuild(player, event.getItem(), event.getClickedBlock(), blocks);
                 } else if (event.getAction() == Action.LEFT_CLICK_BLOCK) {
                     showBuildPreview(player, blocks);
                 }
@@ -294,22 +297,27 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
     }
 
     private void showBuildPreview(Player player, Set<Block> blocks) {
+        // build preview is a BlockData-based visual effect (1.13+); skip on legacy MC
+        if (!BlockDataCompat.isModern()) {
+            return;
+        }
+
         Bukkit.getScheduler().runTask(getProviderPlugin(), () -> {
             for (Block b : blocks) {
-                player.sendBlockChange(b.getLocation(), Material.WHITE_STAINED_GLASS.createBlockData());
+                BlockDataCompat.sendBlockChange(player, b.getLocation(), MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS));
             }
         });
 
         Bukkit.getScheduler().runTaskLater(getProviderPlugin(), () -> {
             for (Block b : blocks) {
-                player.sendBlockChange(b.getLocation(), b.getBlockData());
+                BlockDataCompat.restoreBlockChange(player, b);
             }
         }, 20L);
     }
 
-    private void doBuild(Player player, EquipmentSlot hand, ItemStack item, Block source, Set<Block> actualBlocks) {
+    private void doBuild(Player player, ItemStack item, Block source, Set<Block> actualBlocks) {
         int chargePerOp = getItemConfig().getInt("scu_per_op", DEF_SCU_PER_OPERATION);
-        double chargeNeeded = chargePerOp * actualBlocks.size() * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.EFFICIENCY));
+        double chargeNeeded = chargePerOp * actualBlocks.size() * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.DIG_SPEED));
         // we know at this point that the tool has sufficient charge and that the player has sufficient material
         setCharge(getCharge() - chargeNeeded);
         ItemCost cost = new ItemCost(source.getType(), actualBlocks.size());
@@ -319,14 +327,14 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
             b.setType(source.getType(), true);
         }
 
-        updateHeldItemStack(player, hand);
+        updateHeldItemStack(player);
         player.playSound(player.getLocation(), Sound.BLOCK_STONE_BREAK, 1.0F, 1.0F);
     }
 
     @Nonnull
     private Set<Block> getBuildCandidates(Player player, ItemStack item, Block clickedBlock, BlockFace blockFace) {
-        int sharpness = item.getEnchantmentLevel(Enchantment.SHARPNESS);
-        double chargePerOp = getItemConfig().getInt("scu_per_op", DEF_SCU_PER_OPERATION) * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.EFFICIENCY));
+        int sharpness = item.getEnchantmentLevel(Enchantment.DAMAGE_ALL);
+        double chargePerOp = getItemConfig().getInt("scu_per_op", DEF_SCU_PER_OPERATION) * Math.pow(0.8, item.getEnchantmentLevel(Enchantment.DIG_SPEED));
         int ch = (int) (getCharge() / chargePerOp);
 
         if (ch == 0) {
@@ -355,7 +363,7 @@ public class MultiBuilder extends BaseSTBItem implements Chargeable {
                 break;
             }
 
-            if ((b0.isEmpty() || b0.isLiquid() || b0.getType() == Material.TALL_GRASS) && b1.getType() == b.getType() && !result.contains(b0) && canReplace(player, b0)) {
+            if ((b0.isEmpty() || b0.isLiquid() || b0.getType() == MaterialCompat.safe(XMaterial.TALL_GRASS)) && b1.getType() == b.getType() && !result.contains(b0) && canReplace(player, b0)) {
                 result.add(b0);
 
                 for (BlockFace f : buildFace.getFaces()) {

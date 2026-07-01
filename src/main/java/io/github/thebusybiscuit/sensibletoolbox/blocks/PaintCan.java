@@ -10,8 +10,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.DyeColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
-import org.bukkit.Sound;
-import org.bukkit.Tag;
 import org.bukkit.block.BlockFace;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -23,10 +21,10 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice.MaterialChoice;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.LeatherArmorMeta;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
@@ -38,7 +36,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.LevelReporter;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.items.PaintBrush;
 import io.github.thebusybiscuit.sensibletoolbox.utils.ColoredMaterial;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import me.desht.dhutils.Debugger;
 
 public class PaintCan extends BaseSTBBlock implements LevelReporter {
@@ -46,8 +48,8 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
     private static final int MAX_PAINT_LEVEL = 200;
     private static final int PAINT_PER_DYE = 25;
     private static final int[] ITEM_SLOTS = { 9, 10 };
-    private static final ItemStack MIX_TEXTURE = new ItemStack(Material.GOLDEN_SHOVEL);
-    private static final ItemStack EMPTY_TEXTURE = new ItemStack(Material.WHITE_STAINED_GLASS);
+    private static final ItemStack MIX_TEXTURE = new ItemStack(MaterialCompat.safe(XMaterial.GOLDEN_SHOVEL));
+    private static final ItemStack EMPTY_TEXTURE = new ItemStack(MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS));
 
     private int paintLevel;
     private DyeColor color;
@@ -136,11 +138,11 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("GSG", "G G", "III");
-        recipe.setIngredient('S', new MaterialChoice(Tag.WOODEN_SLABS));
-        recipe.setIngredient('G', Material.GLASS);
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        RecipeCompat.setIngredient(recipe, 'S', Tag.WOODEN_SLABS.getValues());
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GLASS));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         return recipe;
     }
 
@@ -181,7 +183,7 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
         gui.addGadget(new ButtonGadget(gui, 12, "Mix or Dye", lore, MIX_TEXTURE, () -> {
             if (tryMix()) {
                 Location loc = getLocation();
-                loc.getWorld().playSound(loc, Sound.ENTITY_GENERIC_SPLASH, 1.0F, 1.0F);
+                SoundCompat.play(loc.getWorld(), loc, "ENTITY_GENERIC_SPLASH", 1.0F, 1.0F);
             }
         }));
 
@@ -205,7 +207,7 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
 
     @Override
     public ItemStack getLevelIcon() {
-        ItemStack stack = new ItemStack(Material.LEATHER_LEGGINGS);
+        ItemStack stack = new ItemStack(MaterialCompat.safe(XMaterial.LEATHER_LEGGINGS));
         LeatherArmorMeta meta = (LeatherArmorMeta) stack.getItemMeta();
         meta.setColor(getColor().getColor());
         stack.setItemMeta(meta);
@@ -226,7 +228,7 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
     private void emptyPaintCan() {
         setPaintLevel(0);
         Location loc = getLocation();
-        loc.getWorld().playSound(loc, Sound.ENTITY_PLAYER_SPLASH, 1.0F, 1.0F);
+        SoundCompat.play(loc.getWorld(), loc, "ENTITY_PLAYER_SPLASH", 1.0F, 1.0F);
     }
 
     @Nullable
@@ -235,12 +237,12 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
     }
 
     private boolean validItem(@Nonnull ItemStack item) {
-        return !item.hasItemMeta() && (STBUtil.isColorable(item.getType()) || item.getType() == Material.MILK_BUCKET || STBUtil.isDye(item.getType()));
+        return !item.hasItemMeta() && (STBUtil.isColorable(item.getType()) || item.getType() == MaterialCompat.safe(XMaterial.MILK_BUCKET) || STBUtil.isDye(item.getType()));
     }
 
     @Override
     public boolean onSlotClick(HumanEntity player, int slot, ClickType click, ItemStack inSlot, ItemStack onCursor) {
-        return onCursor.getType() == Material.AIR || validItem(onCursor);
+        return onCursor.getType() == MaterialCompat.safe(XMaterial.AIR) || validItem(onCursor);
     }
 
     @Override
@@ -324,7 +326,7 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
         for (int slot : ITEM_SLOTS) {
             ItemStack stack = inventory.getItem(slot);
             if (stack != null) {
-                if (stack.getType() == Material.MILK_BUCKET && !stack.hasItemMeta() && bucketSlot == -1) {
+                if (stack.getType() == MaterialCompat.safe(XMaterial.MILK_BUCKET) && !stack.hasItemMeta() && bucketSlot == -1) {
                     bucketSlot = slot;
                 } else if (STBUtil.isDye(stack.getType()) && !stack.hasItemMeta() && dyeSlot == -1) {
                     dyeSlot = slot;
@@ -376,9 +378,9 @@ public class PaintCan extends BaseSTBBlock implements LevelReporter {
             Debugger.getInstance().debug(this + ": paint mixed! now " + getPaintLevel() + " " + getColor());
 
             Location loc = getLocation();
-            loc.getWorld().playSound(loc, Sound.ENTITY_GENERIC_SPLASH, 1.0F, 1.0F);
+            SoundCompat.play(loc.getWorld(), loc, "ENTITY_GENERIC_SPLASH", 1.0F, 1.0F);
 
-            inventory.setItem(bucketSlot, new ItemStack(Material.BUCKET));
+            inventory.setItem(bucketSlot, new ItemStack(MaterialCompat.safe(XMaterial.BUCKET)));
             dyeStack.setAmount(dyeStack.getAmount() - toUse);
             inventory.setItem(dyeSlot, dyeStack.getAmount() > 0 ? dyeStack : null);
 

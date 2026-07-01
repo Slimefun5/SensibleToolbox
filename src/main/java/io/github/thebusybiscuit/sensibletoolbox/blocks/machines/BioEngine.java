@@ -5,7 +5,6 @@ import java.util.Arrays;
 import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.Tag;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.inventory.ItemStack;
@@ -19,7 +18,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.FuelValues;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.RegulatorUpgrade;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class BioEngine extends Generator {
 
@@ -29,12 +32,12 @@ public class BioEngine extends Generator {
     private FuelValues currentFuel;
 
     static {
-        fuelItems.addFuel(new ItemStack(Material.ROTTEN_FLESH), true, 2, 60);
-        fuelItems.addFuel(new ItemStack(Material.SPIDER_EYE), true, 2.5, 60);
-        fuelItems.addFuel(new ItemStack(Material.BONE), true, 2, 60);
-        fuelItems.addFuel(new ItemStack(Material.INK_SAC), true, 3, 60);
-        fuelItems.addFuel(new ItemStack(Material.COCOA_BEANS), true, 3, 60);
-        fuelItems.addFuel(new ItemStack(Material.SLIME_BALL), true, 6, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.ROTTEN_FLESH)), true, 2, 60);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SPIDER_EYE)), true, 2.5, 60);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BONE)), true, 2, 60);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.INK_SAC)), true, 3, 60);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.COCOA_BEANS)), true, 3, 60);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SLIME_BALL)), true, 6, 80);
 
         for (Material leaves : Tag.LEAVES.getValues()) {
             fuelItems.addFuel(new ItemStack(leaves), true, 6, 40);
@@ -44,36 +47,36 @@ public class BioEngine extends Generator {
             fuelItems.addFuel(new ItemStack(sapling), true, 6, 60);
         }
 
-        fuelItems.addFuel(new ItemStack(Material.SEAGRASS), true, 4, 80);
-        fuelItems.addFuel(new ItemStack(Material.TALL_GRASS), true, 4, 80);
-        fuelItems.addFuel(new ItemStack(Material.APPLE), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.SWEET_BERRIES), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.KELP), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.BEETROOT), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.BEETROOT_SEEDS), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.MELON_SLICE), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.MELON_SEEDS), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.MELON), true, 10, 900);
-        fuelItems.addFuel(new ItemStack(Material.PUMPKIN), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.PUMPKIN_SEEDS), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.WHEAT), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.WHEAT_SEEDS), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.CARROT), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.POTATO), true, 10, 100);
-        fuelItems.addFuel(new ItemStack(Material.SUGAR_CANE), true, 8, 100);
-        fuelItems.addFuel(new ItemStack(Material.NETHER_WART), true, 12, 140);
-        fuelItems.addFuel(new ItemStack(Material.DIRT), true, 0.5, 20);
-        fuelItems.addFuel(new ItemStack(Material.SHORT_GRASS), true, 0.5, 20);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SEAGRASS)), true, 4, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.TALL_GRASS)), true, 4, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.APPLE)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SWEET_BERRIES)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.KELP)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BEETROOT)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BEETROOT_SEEDS)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.MELON_SLICE)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.MELON_SEEDS)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.MELON)), true, 10, 900);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.PUMPKIN)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.PUMPKIN_SEEDS)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.WHEAT)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.WHEAT_SEEDS)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.CARROT)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.POTATO)), true, 10, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SUGAR_CANE)), true, 8, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.NETHER_WART)), true, 12, 140);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.DIRT)), true, 0.5, 20);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.SHORT_GRASS)), true, 0.5, 20);
 
         for (Material flower : Tag.SMALL_FLOWERS.getValues()) {
             fuelItems.addFuel(new ItemStack(flower), true, 11, 80);
         }
 
-        fuelItems.addFuel(new ItemStack(Material.RED_MUSHROOM), true, 11, 80);
-        fuelItems.addFuel(new ItemStack(Material.BROWN_MUSHROOM), true, 11, 80);
-        fuelItems.addFuel(new ItemStack(Material.VINE), true, 8, 80);
-        fuelItems.addFuel(new ItemStack(Material.CACTUS), true, 8, 100);
-        fuelItems.addFuel(new ItemStack(Material.LILY_PAD), true, 8, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.RED_MUSHROOM)), true, 11, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.BROWN_MUSHROOM)), true, 11, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.VINE)), true, 8, 80);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.CACTUS)), true, 8, 100);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.LILY_PAD)), true, 8, 80);
     }
 
     public BioEngine() {
@@ -118,7 +121,7 @@ public class BioEngine extends Generator {
     @Override
     protected void playActiveParticleEffect() {
         if (getTicksLived() % 20 == 0) {
-            getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, Material.JUNGLE_LEAVES);
+            getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, MaterialCompat.safe(XMaterial.JUNGLE_LEAVES));
         }
     }
 
@@ -139,7 +142,7 @@ public class BioEngine extends Generator {
 
     @Override
     public Material getMaterial() {
-        return Material.LIME_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.LIME_TERRACOTTA);
     }
 
     @Override
@@ -168,13 +171,13 @@ public class BioEngine extends Generator {
         SimpleCircuit sc = new SimpleCircuit();
         TenKEnergyCell cell = new TenKEnergyCell();
         registerCustomIngredients(sc, cell);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("CCC", "SES", "RGR");
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('E', cell.getMaterial());
-        recipe.setIngredient('C', Material.CAULDRON);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('R', Material.REDSTONE);
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.CAULDRON));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
         return recipe;
     }
 
@@ -200,7 +203,7 @@ public class BioEngine extends Generator {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FLINT_AND_STEEL);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL));
     }
 
     @Override

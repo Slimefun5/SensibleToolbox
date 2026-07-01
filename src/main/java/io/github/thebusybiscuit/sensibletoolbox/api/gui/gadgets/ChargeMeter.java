@@ -9,7 +9,9 @@ import org.bukkit.inventory.meta.LeatherArmorMeta;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.ChargeableBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * Shows the SCU level for an STB block. The GUI that this gadget is added to
@@ -34,7 +36,7 @@ public class ChargeMeter extends MonitorGadget {
         Validate.isTrue(getOwner() instanceof ChargeableBlock, "Attempt to add charge meter to non-chargeable block!");
 
         chargeable = (ChargeableBlock) getOwner();
-        this.indicator = new ItemStack(Material.LEATHER_HELMET);
+        this.indicator = new ItemStack(MaterialCompat.safe(XMaterial.LEATHER_HELMET));
         ItemMeta meta = indicator.getItemMeta();
         meta.setDisplayName(STBUtil.getChargeString(chargeable));
         ((LeatherArmorMeta) meta).setColor(Color.YELLOW);

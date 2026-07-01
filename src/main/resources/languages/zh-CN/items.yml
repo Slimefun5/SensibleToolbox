@@ -1,0 +1,183 @@
+# Simplified Chinese item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, '&' colour codes preserved. Missing items fall back to English.
+
+STB_ADVANCEDMOISTURECHECKER:
+  name: "&f高级湿度检测器"
+STB_ADVANCEDRECIPEBOOK:
+  name: "&f高级配方书"
+STB_ADVANCEDSENDERMODULE:
+  name: "&fI.R. 模块：高级发送器"
+STB_ANGELICBLOCK:
+  name: "&f天使方块"
+STB_AUTOBUILDER:
+  name: "&f自动建造机"
+STB_AUTOFARM:
+  name: "&f自动农场"
+STB_AUTOFARM2:
+  name: "&f自动农场 MkII"
+STB_AUTOFORESTER:
+  name: "&f自动伐木机"
+STB_BASICSOLARCELL:
+  name: "&f基础太阳能板"
+STB_BIGSTORAGEUNIT:
+  name: "&fBSU"
+STB_BIOENGINE:
+  name: "&f生物引擎"
+STB_BLANKMODULE:
+  name: "&f空白物品 Router 模块"
+STB_BLOCKUPDATEDETECTOR:
+  name: "&f方块更新探测器"
+STB_BREAKERMODULE:
+  name: "&fI.R. 模块：破坏器"
+STB_CIRCUITBOARD:
+  name: "&f电路板"
+STB_DENSESOLAR:
+  name: "&f密集太阳能板"
+STB_DIAMONDCOMBINEHOE:
+  name: "&f钻石组合锄"
+STB_DISTRIBUTORMODULE:
+  name: "&fI.R. 模块：分配器"
+STB_DROPPERMODULE:
+  name: "&fI.R. 模块：投放器"
+STB_EJECTORUPGRADE:
+  name: "&f弹出升级"
+STB_ELECTRICALENERGIZER:
+  name: "&f电力充能器"
+STB_ELEVATOR:
+  name: "&f电梯"
+STB_ENDERBAG:
+  name: "&fEnder 背包"
+STB_ENDERBOX:
+  name: "&fEnder 箱"
+STB_ENDERLEASH:
+  name: "&fEnder 拴绳"
+STB_ENDERTUNER:
+  name: "&fEnder 调谐器"
+STB_ENERGIZEDGOLDDUST:
+  name: "&f充能金粉"
+STB_ENERGIZEDGOLDINGOT:
+  name: "&f充能金锭"
+STB_ENERGIZEDIRONDUST:
+  name: "&f充能铁粉"
+STB_ENERGIZEDIRONINGOT:
+  name: "&f充能铁锭"
+STB_ENERGIZEDQUARTZ:
+  name: "&f充能石英"
+STB_FERMENTER:
+  name: "&f发酵机"
+STB_FIFTYKBATTERYBOX:
+  name: "&f50K 电池盒"
+STB_FIFTYKENERGYCELL:
+  name: "&f50K 能量电池"
+STB_FISHBAIT:
+  name: "&f鱼饵"
+STB_FISHINGNET:
+  name: "&f渔网"
+STB_GOLDCOMBINEHOE:
+  name: "&f金组合锄"
+STB_GOLDDUST:
+  name: "&f金粉"
+STB_HEATENGINE:
+  name: "&f热力引擎"
+STB_HOLOGRAPHICMONITOR:
+  name: "&f全息监视器"
+STB_HYPERSENDERMODULE:
+  name: "&fI.R. 模块：超级发送器"
+STB_HYPERSTORAGEUNIT:
+  name: "&fHSU"
+STB_INFERNALDUST:
+  name: "&f地狱之尘"
+STB_INFERNALFARM:
+  name: "&f地狱农场"
+STB_INTEGRATEDCIRCUIT:
+  name: "&f集成电路"
+STB_IRONCOMBINEHOE:
+  name: "&f铁组合锄"
+STB_IRONDUST:
+  name: "&f铁粉"
+STB_ITEMROUTER:
+  name: "&f物品 Router"
+STB_LANDMARKER:
+  name: "&f地标"
+STB_MACHINEFRAME:
+  name: "&f机器框架"
+STB_MAGMATICENGINE:
+  name: "&f岩浆引擎"
+STB_MASHER:
+  name: "&f粉碎机"
+STB_MOISTURECHECKER:
+  name: "&f湿度检测器"
+STB_MULTIBUILDER:
+  name: "&f多功能建造器"
+STB_MULTIMETER:
+  name: "&f万用表"
+STB_PAINTBRUSH:
+  name: "&f画笔"
+STB_PAINTCAN:
+  name: "&f油漆罐"
+STB_PAINTROLLER:
+  name: "&f油漆滚筒"
+STB_POWERMONITOR:
+  name: "&f能量监视器"
+STB_PULLERMODULE:
+  name: "&fI.R. 模块：拉取器"
+STB_PUMP:
+  name: "&f泵"
+STB_PVCELL:
+  name: "&fPV 电池"
+STB_QUARTZDUST:
+  name: "&f石英粉"
+STB_RECEIVERMODULE:
+  name: "&fI.R. 模块：接收器"
+STB_RECIPEBOOK:
+  name: "&f配方书"
+STB_REDSTONECLOCK:
+  name: "&f红石时钟"
+STB_REGULATORUPGRADE:
+  name: "&f调节器升级"
+STB_SAWMILL:
+  name: "&f锯木厂"
+STB_SCURELAY:
+  name: "&fSCU 中继器"
+STB_SENDERMODULE:
+  name: "&fI.R. 模块：发送器"
+STB_SILICONWAFER:
+  name: "&f硅 Wafer"
+STB_SILKYBREAKERMODULE:
+  name: "&fI.R. 模块：精准破坏器"
+STB_SIMPLECIRCUIT:
+  name: "&f简易电子电路"
+STB_SMELTER:
+  name: "&f熔炉"
+STB_SORTERMODULE:
+  name: "&fI.R. 模块：分拣器"
+STB_SOUNDMUFFLER:
+  name: "&f消音器"
+STB_SPEEDMODULE:
+  name: "&fI.R. 模块：速度升级"
+STB_SPEEDUPGRADE:
+  name: "&f速度升级"
+STB_STACKMODULE:
+  name: "&fI.R. 模块：堆叠升级"
+STB_SUBSPACETRANSPONDER:
+  name: "&f子空间应答器"
+STB_TAPEMEASURE:
+  name: "&f卷尺"
+STB_TENKBATTERYBOX:
+  name: "&f10K 电池盒"
+STB_TENKENERGYCELL:
+  name: "&f10K 能量电池"
+STB_THOROUGHNESSUPGRADE:
+  name: "&f精细度升级"
+STB_TOUGHMACHINEFRAME:
+  name: "&f坚固机器框架"
+STB_TRASHCAN:
+  name: "&f垃圾桶"
+STB_UNLINKEDSCURELAY:
+  name: "&f未连接的 SCU 中继器"
+STB_VACUUMMODULE:
+  name: "&fI.R. 模块：吸取器"
+STB_WATERINGCAN:
+  name: "&f洒水壶"
+STB_WOODCOMBINEHOE:
+  name: "&f木组合锄"

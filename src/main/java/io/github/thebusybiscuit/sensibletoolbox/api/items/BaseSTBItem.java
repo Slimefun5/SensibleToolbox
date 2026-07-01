@@ -12,9 +12,9 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 import org.apache.commons.lang.Validate;
 import org.bukkit.ChatColor;
-import org.bukkit.Keyed;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.Keyed;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.enchantments.Enchantment;
@@ -27,7 +27,6 @@ import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.CraftingInventory;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.Recipe;
@@ -35,7 +34,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.permissions.Permissible;
 import org.bukkit.plugin.Plugin;
 
-import io.github.thebusybiscuit.slimefun5.libraries.dough.data.persistent.PersistentDataAPI;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.PdcCompat;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.Chargeable;
@@ -84,18 +83,10 @@ public abstract class BaseSTBItem implements Comparable<BaseSTBItem>, InventoryG
         enchants = stack.getEnchantments();
     }
 
-    @ParametersAreNonnullByDefault
-    protected void updateHeldItemStack(Player player, EquipmentSlot hand) {
+    protected void updateHeldItemStack(@Nonnull Player player) {
         PlayerInventory inv = player.getInventory();
-        if (hand == EquipmentSlot.HAND) {
-            ItemStack item = inv.getItemInMainHand();
-            inv.setItemInMainHand(toItemStack(item.getAmount()));
-        } else if (hand == EquipmentSlot.OFF_HAND) {
-            ItemStack item = inv.getItemInOffHand();
-            inv.setItemInOffHand(toItemStack(item.getAmount()));
-        } else {
-            throw new IllegalArgumentException(hand.name() + " is not a hand! (HAND, OFF_HAND)");
-        }
+        ItemStack item = inv.getItemInHand();
+        inv.setItemInHand(toItemStack(item.getAmount()));
     }
 
     /**
@@ -334,7 +325,7 @@ public abstract class BaseSTBItem implements Comparable<BaseSTBItem>, InventoryG
             conf.set("*nostack", System.nanoTime() ^ ThreadLocalRandom.current().nextLong());
         }
         conf.set("*TYPE", getItemTypeID());
-        PersistentDataAPI.setString(im, SensibleToolboxPlugin.getInstance().getItemRegistry().getKey(), conf.saveToString());
+        PdcCompat.setString(im, SensibleToolboxPlugin.getInstance().getItemRegistry().getKey(), conf.saveToString());
 
         res.setItemMeta(im);
 

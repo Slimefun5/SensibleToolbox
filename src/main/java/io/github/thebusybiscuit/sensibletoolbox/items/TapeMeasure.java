@@ -16,7 +16,10 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
 
@@ -53,7 +56,7 @@ public class TapeMeasure extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.STRING;
+        return MaterialCompat.safe(XMaterial.STRING);
     }
 
     @Override
@@ -77,10 +80,10 @@ public class TapeMeasure extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SSS", "SIS", "SSS");
-        recipe.setIngredient('S', Material.STRING);
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STRING));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         return recipe;
     }
 
@@ -89,14 +92,14 @@ public class TapeMeasure extends BaseSTBItem {
         if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             if (event.getPlayer().isSneaking()) {
                 setAnchor(event.getClickedBlock());
-                updateHeldItemStack(event.getPlayer(), event.getHand());
+                updateHeldItemStack(event.getPlayer());
                 MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point set.");
             } else {
                 makeMeasurement(event.getPlayer(), event.getClickedBlock());
             }
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR) {
             setAnchor(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point cleared.");
         }
 

@@ -12,7 +12,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.DyeColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.attribute.Attribute;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.configuration.ConfigurationSection;
@@ -35,7 +34,6 @@ import org.bukkit.entity.Wolf;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
@@ -43,7 +41,11 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 
 public class EnderLeash extends BaseSTBItem {
@@ -80,7 +82,7 @@ public class EnderLeash extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.LEAD;
+        return MaterialCompat.safe(XMaterial.LEAD);
     }
 
     @Override
@@ -95,11 +97,11 @@ public class EnderLeash extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), this.toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), this.toItemStack());
         recipe.shape("GSG", "SPS", "GSG");
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('P', Material.ENDER_PEARL);
-        recipe.setIngredient('S', Material.STRING);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.ENDER_PEARL));
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STRING));
         return recipe;
     }
 
@@ -112,7 +114,7 @@ public class EnderLeash extends BaseSTBItem {
     public void onInteractEntity(PlayerInteractEntityEvent event) {
         Entity target = event.getRightClicked();
         Player player = event.getPlayer();
-        if (event.getHand() == EquipmentSlot.HAND && target instanceof Animals && isPassive(target) && player.getInventory().getItemInMainHand().getAmount() == 1) {
+        if (HandCompat.isMainHand(event) && target instanceof Animals && isPassive(target) && player.getInventory().getItemInHand().getAmount() == 1) {
             if (capturedConf == null || !capturedConf.contains("type")) {
                 Animals animal = (Animals) target;
                 if (!checkLeash(animal)) {
@@ -123,7 +125,7 @@ public class EnderLeash extends BaseSTBItem {
                     capturedConf = freezeEntity(animal);
                     target.getWorld().playEffect(target.getLocation(), Effect.ENDER_SIGNAL, 0);
                     target.remove();
-                    updateHeldItemStack(event.getPlayer(), event.getHand());
+                    updateHeldItemStack(event.getPlayer());
                 }
             } else {
                 // workaround CB bug to ensure client is updated properly
@@ -152,7 +154,7 @@ public class EnderLeash extends BaseSTBItem {
 
             if (leashHolder instanceof LeashHitch) {
                 leashHolder.remove();
-                animal.getWorld().dropItemNaturally(animal.getLocation(), new ItemStack(Material.LEAD));
+                animal.getWorld().dropItemNaturally(animal.getLocation(), new ItemStack(MaterialCompat.safe(XMaterial.LEAD)));
             } else {
                 return false;
             }
@@ -178,13 +180,55 @@ public class EnderLeash extends BaseSTBItem {
             Entity e = where.getWorld().spawnEntity(where.getLocation().add(0.5, 0.0, 0.5), type);
             thawEntity((Animals) e, capturedConf);
             capturedConf = null;
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.setCancelled(true);
         }
     }
 
     private boolean isPassive(@Nonnull Entity entity) {
         return !(entity instanceof Wolf) || !((Wolf) entity).isAngry();
+    }
+
+    /**
+     * Reads an entity's max health version-safely. The {@code Attribute} API is 1.9+; on 1.8 we fall
+     * back to the deprecated {@link org.bukkit.entity.LivingEntity#getMaxHealth()}.
+     */
+    private static double getMaxHealth(Animals entity) {
+        try {
+            Class<?> attributeClass = Class.forName("org.bukkit.attribute.Attribute");
+            @SuppressWarnings({ "unchecked", "rawtypes" })
+            Object attribute = Enum.valueOf((Class<? extends Enum>) attributeClass, "GENERIC_MAX_HEALTH");
+            Object instance = entity.getClass().getMethod("getAttribute", attributeClass).invoke(entity, attribute);
+
+            if (instance != null) {
+                return (double) instance.getClass().getMethod("getValue").invoke(instance);
+            }
+        } catch (Throwable ignored) {
+            // fall through to legacy API
+        }
+
+        return entity.getMaxHealth();
+    }
+
+    /**
+     * Sets an entity's max health version-safely (see {@link #getMaxHealth(Animals)}).
+     */
+    private static void setMaxHealth(Animals entity, double value) {
+        try {
+            Class<?> attributeClass = Class.forName("org.bukkit.attribute.Attribute");
+            @SuppressWarnings({ "unchecked", "rawtypes" })
+            Object attribute = Enum.valueOf((Class<? extends Enum>) attributeClass, "GENERIC_MAX_HEALTH");
+            Object instance = entity.getClass().getMethod("getAttribute", attributeClass).invoke(entity, attribute);
+
+            if (instance != null) {
+                instance.getClass().getMethod("setBaseValue", double.class).invoke(instance, value);
+                return;
+            }
+        } catch (Throwable ignored) {
+            // fall through to legacy API
+        }
+
+        entity.setMaxHealth(value);
     }
 
     private YamlConfiguration freezeEntity(Animals target) {
@@ -196,7 +240,7 @@ public class EnderLeash extends BaseSTBItem {
         conf.set("ageLock", target.getAgeLock());
         conf.set("name", target.getCustomName() == null ? "" : target.getCustomName());
         conf.set("nameVisible", target.isCustomNameVisible());
-        conf.set("maxHealth", target.getAttribute(Attribute.MAX_HEALTH).getValue());
+        conf.set("maxHealth", getMaxHealth(target));
         conf.set("health", target.getHealth());
         conf.set("captureTime", System.currentTimeMillis());
 
@@ -259,7 +303,7 @@ public class EnderLeash extends BaseSTBItem {
         entity.setAgeLock(conf.getBoolean("ageLock"));
         entity.setCustomName(conf.getString("name"));
         entity.setCustomNameVisible(conf.getBoolean("nameVisible"));
-        entity.getAttribute(Attribute.MAX_HEALTH).setBaseValue(conf.getDouble("maxHealth"));
+        setMaxHealth(entity, conf.getDouble("maxHealth"));
         entity.setHealth(conf.getDouble("health"));
 
         if (entity instanceof Tameable) {

@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class SpeedUpgrade extends AbstractMachineUpgrade {
 
@@ -17,7 +20,7 @@ public class SpeedUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Material getMaterial() {
-        return Material.SUGAR;
+        return MaterialCompat.safe(XMaterial.SUGAR);
     }
 
     @Override
@@ -37,14 +40,14 @@ public class SpeedUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
         recipe.shape("ISI", "IBI", "IGI");
-        recipe.setIngredient('I', Material.IRON_BARS);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_BARS));
         recipe.setIngredient('S', sc.getMaterial());
-        recipe.setIngredient('B', Material.BLAZE_ROD);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('B', MaterialCompat.safe(XMaterial.BLAZE_ROD));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 }

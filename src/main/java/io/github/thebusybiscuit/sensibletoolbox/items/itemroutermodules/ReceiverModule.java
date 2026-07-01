@@ -9,6 +9,9 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 
 public class ReceiverModule extends ItemRouterModule {
@@ -33,15 +36,15 @@ public class ReceiverModule extends ItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.HOPPER);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.HOPPER));
         return recipe;
     }
 
     @Override
     public Material getMaterial() {
-        return Material.ORANGE_DYE;
+        return MaterialCompat.safe(XMaterial.ORANGE_DYE);
     }
 
     public int receiveItem(ItemStack item, UUID senderUUID) {

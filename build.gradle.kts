@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 }
 
@@ -33,8 +33,10 @@ repositories {
 
 dependencies {
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
-    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
+    // Shaded so the JDBC driver is present on 1.8 servers (modern Paper provides it via its library loader). 3.42.0.0 is the newest Java-8-compatible release.
+    implementation("org.xerial:sqlite-jdbc:3.42.0.0")
+    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.2")
+    compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("commons-lang:commons-lang:2.6")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     compileOnly("com.comphenix.protocol:ProtocolLib:5.3.0")
@@ -71,14 +73,17 @@ tasks {
         enabled = false
     }
     shadowJar {
-        archiveFileName.set("SensibleToolbox v${project.version}.jar")
+        relocate("org.bstats", "sensibletoolbox.libs.bstats")
+        archiveFileName.set("SensibleToolbox-1.0.0-UNOFFICIAL.jar")
                 exclude("META-INF/**")
     }
     build {
         dependsOn(shadowJar)
     }
+    compileTestJava {
+        enabled = false
+    }
     test {
-        useJUnitPlatform()
         enabled = false
     }
 }

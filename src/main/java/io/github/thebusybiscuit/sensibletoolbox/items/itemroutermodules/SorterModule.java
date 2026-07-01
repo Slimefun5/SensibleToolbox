@@ -12,7 +12,10 @@ import org.bukkit.inventory.ShapelessRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 
 public class SorterModule extends DirectionalItemRouterModule {
@@ -25,7 +28,7 @@ public class SorterModule extends DirectionalItemRouterModule {
 
     @Override
     public Material getMaterial() {
-        return Material.PURPLE_DYE;
+        return MaterialCompat.safe(XMaterial.PURPLE_DYE);
     }
 
     @Override
@@ -41,10 +44,10 @@ public class SorterModule extends DirectionalItemRouterModule {
     @Override
     public Recipe getMainRecipe() {
         registerCustomIngredients(new BlankModule());
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
-        recipe.addIngredient(Material.PAPER);
-        recipe.addIngredient(Material.SPIDER_EYE);
-        recipe.addIngredient(Material.ARROW);
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.PAPER));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.SPIDER_EYE));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ARROW));
         return recipe;
     }
 

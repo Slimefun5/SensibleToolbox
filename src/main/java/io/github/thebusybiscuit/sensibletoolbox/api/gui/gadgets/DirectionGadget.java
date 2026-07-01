@@ -13,6 +13,8 @@ import org.bukkit.material.Directional;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 /**
  * A GUI gadget which allows the facing direction of a directional item to be
@@ -87,8 +89,8 @@ public class DirectionGadget extends ClickableGadget {
     }
 
     private ToggleButton makeDirectionButton(final InventoryGUI gui, final int slot, final BlockFace face) {
-        ItemStack trueStack = GUIUtil.makeTexture(Material.ORANGE_WOOL, ChatColor.YELLOW + face.toString());
-        ItemStack falseStack = GUIUtil.makeTexture(Material.LIGHT_GRAY_WOOL, ChatColor.YELLOW + face.toString());
+        ItemStack trueStack = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.ORANGE_WOOL), ChatColor.YELLOW + face.toString());
+        ItemStack falseStack = GUIUtil.makeTexture(MaterialCompat.safe(XMaterial.LIGHT_GRAY_WOOL), ChatColor.YELLOW + face.toString());
         Directional owner = (Directional) gui.getOwningItem();
 
         return new ToggleButton(gui, slot, owner.getFacing() == face, trueStack, falseStack, newValue -> {

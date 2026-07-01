@@ -31,8 +31,8 @@ public class MobListener extends STBBaseListener {
                 int amount = 1;
 
                 Random random = ThreadLocalRandom.current();
-                ItemStack item = killer.getInventory().getItemInMainHand();
-                switch (item.getEnchantmentLevel(Enchantment.LOOTING)) {
+                ItemStack item = killer.getInventory().getItemInHand();
+                switch (item.getEnchantmentLevel(Enchantment.LOOT_BONUS_MOBS)) {
                     case 1:
                         chance = 30;
                         amount = random.nextInt(2) + 1;

@@ -5,7 +5,6 @@ import java.util.Iterator;
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
 import org.bukkit.Material;
-import org.bukkit.Sound;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.FurnaceRecipe;
 import org.bukkit.inventory.ItemStack;
@@ -20,6 +19,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.RecipeUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.SimpleCustomRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.SoundCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Smelter extends AbstractIOMachine {
 
@@ -78,12 +81,12 @@ public class Smelter extends AbstractIOMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FLINT_AND_STEEL);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL));
     }
 
     @Override
     public Material getMaterial() {
-        return Material.LIGHT_BLUE_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.LIGHT_BLUE_TERRACOTTA);
     }
 
     @Override
@@ -101,14 +104,14 @@ public class Smelter extends AbstractIOMachine {
         SimpleCircuit sc = new SimpleCircuit();
         MachineFrame mf = new MachineFrame();
         registerCustomIngredients(sc, mf);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("CSC", "IFI", "RGR");
-        recipe.setIngredient('C', Material.BRICK);
-        recipe.setIngredient('S', Material.FURNACE);
+        recipe.setIngredient('C', MaterialCompat.safe(XMaterial.BRICK));
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.FURNACE));
         recipe.setIngredient('I', sc.getMaterial());
         recipe.setIngredient('F', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -160,7 +163,7 @@ public class Smelter extends AbstractIOMachine {
     @Override
     protected void onMachineStartup() {
         if (SensibleToolbox.getPluginInstance().getConfigCache().isNoisyMachines()) {
-            getLocation().getWorld().playSound(getLocation(), Sound.BLOCK_FIRE_AMBIENT, 1.0F, 1.0F);
+            SoundCompat.play(getLocation().getWorld(), getLocation(), "BLOCK_FIRE_AMBIENT", 1.0F, 1.0F);
         }
     }
 

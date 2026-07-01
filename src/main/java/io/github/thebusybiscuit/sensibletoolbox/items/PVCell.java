@@ -9,7 +9,6 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -21,7 +20,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.BasicSolarCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SiliconWafer;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class PVCell extends BaseSTBItem {
 
@@ -61,7 +64,7 @@ public class PVCell extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.LEATHER_HELMET;
+        return MaterialCompat.safe(XMaterial.LEATHER_HELMET);
     }
 
     @Override
@@ -81,13 +84,13 @@ public class PVCell extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         SiliconWafer sw = new SiliconWafer();
         registerCustomIngredients(sw);
         recipe.shape("LRL", "GSG");
-        recipe.setIngredient('L', Material.LAPIS_LAZULI); // lapis
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_NUGGET);
+        recipe.setIngredient('L', MaterialCompat.safe(XMaterial.LAPIS_LAZULI)); // lapis
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_NUGGET));
         recipe.setIngredient('S', sw.getMaterial());
         return recipe;
     }
@@ -109,10 +112,10 @@ public class PVCell extends BaseSTBItem {
                     int nInserted = ((BasicSolarCell) stb).insertItems(event.getItem(), event.getBlockFace(), false, player.getUniqueId());
 
                     if (nInserted > 0) {
-                        if (event.getHand() == EquipmentSlot.HAND) {
-                            player.getInventory().setItemInMainHand(null);
+                        if (HandCompat.isMainHand(event)) {
+                            player.getInventory().setItemInHand(null);
                         } else {
-                            player.getInventory().setItemInOffHand(null);
+                            HandCompat.setOffHandItem(player.getInventory(), null);
                         }
                         player.playSound(event.getClickedBlock().getLocation(), Sound.UI_BUTTON_CLICK, 1.0F, 0.6F);
                     }

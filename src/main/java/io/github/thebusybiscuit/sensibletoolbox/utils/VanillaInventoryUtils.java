@@ -21,6 +21,7 @@ import org.bukkit.inventory.InventoryHolder;
 import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.filters.Filter;
 
@@ -264,7 +265,7 @@ public final class VanillaInventoryUtils {
             }
         } else {
             // water/potion slots
-            if (stack.getType() != Material.GLASS_BOTTLE && stack.getType() != Material.POTION) {
+            if (stack.getType() != MaterialCompat.safe(XMaterial.GLASS_BOTTLE) && stack.getType() != MaterialCompat.safe(XMaterial.POTION)) {
                 excess = stack;
             } else {
                 for (int slot = 0; slot <= 2; slot++) {

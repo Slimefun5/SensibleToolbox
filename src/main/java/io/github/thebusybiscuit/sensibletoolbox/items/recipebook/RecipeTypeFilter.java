@@ -4,6 +4,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.Material;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.CyclerGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 
@@ -11,9 +13,9 @@ class RecipeTypeFilter extends CyclerGadget<RecipeType> {
 
     protected RecipeTypeFilter(InventoryGUI gui, int slot, String label) {
         super(gui, slot, label);
-        add(RecipeType.ALL, ChatColor.GRAY, Material.BLACK_STAINED_GLASS, "All Recipes");
-        add(RecipeType.VANILLA, ChatColor.WHITE, Material.WHITE_STAINED_GLASS, "Vanilla Recipes");
-        add(RecipeType.STB, ChatColor.YELLOW, Material.YELLOW_STAINED_GLASS, "STB Recipes");
+        add(RecipeType.ALL, ChatColor.GRAY, MaterialCompat.safe(XMaterial.BLACK_STAINED_GLASS), "All Recipes");
+        add(RecipeType.VANILLA, ChatColor.WHITE, MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS), "Vanilla Recipes");
+        add(RecipeType.STB, ChatColor.YELLOW, MaterialCompat.safe(XMaterial.YELLOW_STAINED_GLASS), "STB Recipes");
         setInitialValue(((RecipeBook) getGUI().getOwningItem()).getRecipeTypeFilter());
     }
 

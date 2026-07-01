@@ -5,6 +5,10 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 public class SpeedModule extends ItemRouterModule {
 
     public SpeedModule() {}
@@ -27,16 +31,16 @@ public class SpeedModule extends ItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.BLAZE_POWDER);
-        recipe.addIngredient(Material.EMERALD);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.BLAZE_POWDER));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.EMERALD));
         return recipe;
     }
 
     @Override
     public Material getMaterial() {
-        return Material.BLAZE_POWDER;
+        return MaterialCompat.safe(XMaterial.BLAZE_POWDER);
     }
 }
 

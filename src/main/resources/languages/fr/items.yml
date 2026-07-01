@@ -1,0 +1,183 @@
+# French item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
+# name = display name, '&' colour codes preserved. Missing items fall back to English.
+
+STB_ADVANCEDMOISTURECHECKER:
+  name: "&fHygromètre avancé"
+STB_ADVANCEDRECIPEBOOK:
+  name: "&fLivre de recettes avancé"
+STB_ADVANCEDSENDERMODULE:
+  name: "&fI.R. Mod: Émetteur avancé"
+STB_ANGELICBLOCK:
+  name: "&fBloc angélique"
+STB_AUTOBUILDER:
+  name: "&fConstructeur automatique"
+STB_AUTOFARM:
+  name: "&fFerme automatique"
+STB_AUTOFARM2:
+  name: "&fFerme automatique MkII"
+STB_AUTOFORESTER:
+  name: "&fForestier automatique"
+STB_BASICSOLARCELL:
+  name: "&fPanneau solaire basique"
+STB_BIGSTORAGEUNIT:
+  name: "&fBSU"
+STB_BIOENGINE:
+  name: "&fBio-moteur"
+STB_BLANKMODULE:
+  name: "&fModule de routeur d'objets vierge"
+STB_BLOCKUPDATEDETECTOR:
+  name: "&fDétecteur de mise à jour de bloc"
+STB_BREAKERMODULE:
+  name: "&fI.R. Mod: Briseur"
+STB_CIRCUITBOARD:
+  name: "&fCarte de circuit"
+STB_DENSESOLAR:
+  name: "&fPanneau solaire dense"
+STB_DIAMONDCOMBINEHOE:
+  name: "&fHoue combinée en diamant"
+STB_DISTRIBUTORMODULE:
+  name: "&fI.R. Mod: Distributeur"
+STB_DROPPERMODULE:
+  name: "&fI.R. Mod: Largueur"
+STB_EJECTORUPGRADE:
+  name: "&fAmélioration d'éjecteur"
+STB_ELECTRICALENERGIZER:
+  name: "&fÉnergiseur électrique"
+STB_ELEVATOR:
+  name: "&fAscenseur"
+STB_ENDERBAG:
+  name: "&fSac de l'Ender"
+STB_ENDERBOX:
+  name: "&fBoîte de l'Ender"
+STB_ENDERLEASH:
+  name: "&fLaisse de l'Ender"
+STB_ENDERTUNER:
+  name: "&fSyntoniseur de l'Ender"
+STB_ENERGIZEDGOLDDUST:
+  name: "&fPoudre d'or énergisée"
+STB_ENERGIZEDGOLDINGOT:
+  name: "&fLingot d'or énergisé"
+STB_ENERGIZEDIRONDUST:
+  name: "&fPoudre de fer énergisée"
+STB_ENERGIZEDIRONINGOT:
+  name: "&fLingot de fer énergisé"
+STB_ENERGIZEDQUARTZ:
+  name: "&fQuartz énergisé"
+STB_FERMENTER:
+  name: "&fFermenteur"
+STB_FIFTYKBATTERYBOX:
+  name: "&fBoîte à batteries 50K"
+STB_FIFTYKENERGYCELL:
+  name: "&fCellule d'énergie 50K"
+STB_FISHBAIT:
+  name: "&fAppât à poisson"
+STB_FISHINGNET:
+  name: "&fFilet de pêche"
+STB_GOLDCOMBINEHOE:
+  name: "&fHoue combinée en or"
+STB_GOLDDUST:
+  name: "&fPoudre d'or"
+STB_HEATENGINE:
+  name: "&fMoteur thermique"
+STB_HOLOGRAPHICMONITOR:
+  name: "&fMoniteur holographique"
+STB_HYPERSENDERMODULE:
+  name: "&fI.R. Mod: Hyperémetteur"
+STB_HYPERSTORAGEUNIT:
+  name: "&fHSU"
+STB_INFERNALDUST:
+  name: "&fPoudre infernale"
+STB_INFERNALFARM:
+  name: "&fFerme infernale"
+STB_INTEGRATEDCIRCUIT:
+  name: "&fCircuit intégré"
+STB_IRONCOMBINEHOE:
+  name: "&fHoue combinée en fer"
+STB_IRONDUST:
+  name: "&fPoudre de fer"
+STB_ITEMROUTER:
+  name: "&fRouteur d'objets"
+STB_LANDMARKER:
+  name: "&fBorne de terrain"
+STB_MACHINEFRAME:
+  name: "&fChâssis de machine"
+STB_MAGMATICENGINE:
+  name: "&fMoteur magmatique"
+STB_MASHER:
+  name: "&fBroyeur"
+STB_MOISTURECHECKER:
+  name: "&fHygromètre"
+STB_MULTIBUILDER:
+  name: "&fMulticonstructeur"
+STB_MULTIMETER:
+  name: "&fMultimètre"
+STB_PAINTBRUSH:
+  name: "&fPinceau"
+STB_PAINTCAN:
+  name: "&fPot de peinture"
+STB_PAINTROLLER:
+  name: "&fRouleau à peinture"
+STB_POWERMONITOR:
+  name: "&fMoniteur d'énergie"
+STB_PULLERMODULE:
+  name: "&fI.R. Mod: Aspirateur"
+STB_PUMP:
+  name: "&fPompe"
+STB_PVCELL:
+  name: "&fCellule PV"
+STB_QUARTZDUST:
+  name: "&fPoudre de quartz"
+STB_RECEIVERMODULE:
+  name: "&fI.R. Mod: Récepteur"
+STB_RECIPEBOOK:
+  name: "&fLivre de recettes"
+STB_REDSTONECLOCK:
+  name: "&fHorloge de redstone"
+STB_REGULATORUPGRADE:
+  name: "&fAmélioration de régulateur"
+STB_SAWMILL:
+  name: "&fScierie"
+STB_SCURELAY:
+  name: "&fRelais SCU"
+STB_SENDERMODULE:
+  name: "&fI.R. Mod: Émetteur"
+STB_SILICONWAFER:
+  name: "&fWafer de silicium"
+STB_SILKYBREAKERMODULE:
+  name: "&fI.R. Mod: Briseur soyeux"
+STB_SIMPLECIRCUIT:
+  name: "&fCircuit électronique simple"
+STB_SMELTER:
+  name: "&fFondoir"
+STB_SORTERMODULE:
+  name: "&fI.R. Mod: Trieur"
+STB_SOUNDMUFFLER:
+  name: "&fSilencieux"
+STB_SPEEDMODULE:
+  name: "&fI.R. Mod: Amélioration de vitesse"
+STB_SPEEDUPGRADE:
+  name: "&fAmélioration de vitesse"
+STB_STACKMODULE:
+  name: "&fI.R. Mod: Amélioration de pile"
+STB_SUBSPACETRANSPONDER:
+  name: "&fTranspondeur subspatial"
+STB_TAPEMEASURE:
+  name: "&fMètre ruban"
+STB_TENKBATTERYBOX:
+  name: "&fBoîte à batteries 10K"
+STB_TENKENERGYCELL:
+  name: "&fCellule d'énergie 10K"
+STB_THOROUGHNESSUPGRADE:
+  name: "&fAmélioration de minutie"
+STB_TOUGHMACHINEFRAME:
+  name: "&fChâssis de machine renforcé"
+STB_TRASHCAN:
+  name: "&fPoubelle"
+STB_UNLINKEDSCURELAY:
+  name: "&fRelais SCU non lié"
+STB_VACUUMMODULE:
+  name: "&fI.R. Mod: Aspirateur"
+STB_WATERINGCAN:
+  name: "&fArrosoir"
+STB_WOODCOMBINEHOE:
+  name: "&fHoue combinée en bois"

@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class RegulatorUpgrade extends AbstractMachineUpgrade {
 
@@ -17,7 +20,7 @@ public class RegulatorUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Material getMaterial() {
-        return Material.ENDER_EYE;
+        return MaterialCompat.safe(XMaterial.ENDER_EYE);
     }
 
     @Override
@@ -32,14 +35,14 @@ public class RegulatorUpgrade extends AbstractMachineUpgrade {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
         recipe.shape("ISI", "IEI", "IRI");
-        recipe.setIngredient('I', Material.IRON_BARS);
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_BARS));
         recipe.setIngredient('S', sc.getMaterial());
-        recipe.setIngredient('E', Material.ENDER_EYE);
-        recipe.setIngredient('R', Material.REDSTONE);
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_EYE));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
         return recipe;
     }
 

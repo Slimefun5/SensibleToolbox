@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapelessRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class EnergizedQuartz extends BaseSTBItem {
 
@@ -15,7 +18,7 @@ public class EnergizedQuartz extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.QUARTZ;
+        return MaterialCompat.safe(XMaterial.QUARTZ);
     }
 
     @Override
@@ -30,11 +33,11 @@ public class EnergizedQuartz extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack(1));
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack(1));
         InfernalDust dust = new InfernalDust();
         registerCustomIngredients(dust);
         recipe.addIngredient(dust.getMaterial());
-        recipe.addIngredient(Material.QUARTZ);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.QUARTZ));
         return recipe;
     }
 

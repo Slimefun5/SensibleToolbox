@@ -62,8 +62,11 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.RecipeUtil;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.STBFurnaceRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.SimpleCustomRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.core.STBItemRegistry;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.VanillaInventoryUtils;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
@@ -82,12 +85,12 @@ public class RecipeBook extends BaseSTBItem {
     private static final List<ItemStack> fullItemList = new ArrayList<>();
     private static final Map<ItemStack, Integer> itemListPos = new HashMap<>();
 
-    private static final ItemStack SHAPED_ICON = STBUtil.makeStack(Material.CRAFTING_TABLE, ChatColor.YELLOW + "Shaped Recipe");
-    private static final ItemStack SHAPELESS_ICON = STBUtil.makeStack(Material.CRAFTING_TABLE, ChatColor.YELLOW + "Shapeless Recipe");
-    private static final ItemStack FURNACE_ICON = STBUtil.makeStack(Material.FURNACE, ChatColor.YELLOW + "Furnace Recipe");
-    private static final ItemStack GO_BACK_TEXTURE = new ItemStack(Material.IRON_DOOR);
-    private static final ItemStack GO_BACK_TEXTURE_2 = new ItemStack(Material.OAK_DOOR);
-    private static final ItemStack WEB_TEXTURE = new ItemStack(Material.COBWEB);
+    private static final ItemStack SHAPED_ICON = STBUtil.makeStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE), ChatColor.YELLOW + "Shaped Recipe");
+    private static final ItemStack SHAPELESS_ICON = STBUtil.makeStack(MaterialCompat.safe(XMaterial.CRAFTING_TABLE), ChatColor.YELLOW + "Shapeless Recipe");
+    private static final ItemStack FURNACE_ICON = STBUtil.makeStack(MaterialCompat.safe(XMaterial.FURNACE), ChatColor.YELLOW + "Furnace Recipe");
+    private static final ItemStack GO_BACK_TEXTURE = new ItemStack(MaterialCompat.safe(XMaterial.IRON_DOOR));
+    private static final ItemStack GO_BACK_TEXTURE_2 = new ItemStack(MaterialCompat.safe(XMaterial.OAK_DOOR));
+    private static final ItemStack WEB_TEXTURE = new ItemStack(MaterialCompat.safe(XMaterial.COBWEB));
 
     // slots for the item list page...
     public static final int PAGE_LABEL_SLOT = 45;
@@ -270,7 +273,7 @@ public class RecipeBook extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.BOOK;
+        return MaterialCompat.safe(XMaterial.BOOK);
     }
 
     @Override
@@ -302,9 +305,9 @@ public class RecipeBook extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
-        recipe.addIngredient(Material.BOOK);
-        recipe.addIngredient(Material.CRAFTING_TABLE);
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.BOOK));
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.CRAFTING_TABLE));
         return recipe;
     }
 
@@ -799,7 +802,7 @@ public class RecipeBook extends BaseSTBItem {
             gui.addGadget(new ButtonGadget(gui, 46, fabLabel, new String[0], SHAPED_ICON, () -> tryFabrication(viewingRecipe)));
         }
 
-        ItemStack pageStack = new ItemStack(Material.PAPER, recipeNumber + 1);
+        ItemStack pageStack = new ItemStack(MaterialCompat.safe(XMaterial.PAPER), recipeNumber + 1);
         gui.addLabel("Recipe " + (recipeNumber + 1) + "/" + nRecipes, 45, pageStack);
     }
 
@@ -849,7 +852,7 @@ public class RecipeBook extends BaseSTBItem {
             gui.setSlotType(FILTER_STRING_BUTTON_SLOT, SlotType.BACKGROUND);
         }
 
-        ItemStack pageStack = new ItemStack(Material.PAPER, page + 1);
+        ItemStack pageStack = new ItemStack(MaterialCompat.safe(XMaterial.PAPER), page + 1);
         gui.addLabel("Page " + (page + 1) + "/" + totalPages, PAGE_LABEL_SLOT, pageStack);
     }
 

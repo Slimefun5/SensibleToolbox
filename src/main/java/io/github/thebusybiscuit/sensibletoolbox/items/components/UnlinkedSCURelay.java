@@ -7,6 +7,9 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.FiftyKBatteryBox;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class UnlinkedSCURelay extends BaseSTBItem {
 
@@ -20,7 +23,7 @@ public class UnlinkedSCURelay extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.CYAN_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.CYAN_STAINED_GLASS);
     }
 
     @Override
@@ -35,7 +38,7 @@ public class UnlinkedSCURelay extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         FiftyKBatteryBox bb = new FiftyKBatteryBox();
         IntegratedCircuit ic = new IntegratedCircuit();
         EnergizedGoldIngot eg = new EnergizedGoldIngot();
@@ -43,7 +46,7 @@ public class UnlinkedSCURelay extends BaseSTBItem {
         recipe.shape("GCG", " E ", " B ");
         recipe.setIngredient('B', bb.getMaterial());
         recipe.setIngredient('C', ic.getMaterial());
-        recipe.setIngredient('E', Material.ENDER_CHEST);
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_CHEST));
         recipe.setIngredient('G', eg.getMaterial());
         return recipe;
     }

@@ -14,9 +14,12 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.material.Colorable;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.utils.ColoredMaterial;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 
 public class Elevator extends BaseSTBBlock implements Colorable {
 
@@ -64,10 +67,10 @@ public class Elevator extends BaseSTBBlock implements Colorable {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WWW", "WPW", "WWW");
-        recipe.setIngredient('W', Material.WHITE_WOOL);
-        recipe.setIngredient('P', Material.ENDER_PEARL);
+        recipe.setIngredient('W', MaterialCompat.safe(XMaterial.WHITE_WOOL));
+        recipe.setIngredient('P', MaterialCompat.safe(XMaterial.ENDER_PEARL));
         return recipe;
     }
 

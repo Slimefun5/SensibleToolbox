@@ -18,7 +18,10 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.FuelValues;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.RegulatorUpgrade;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class MagmaticEngine extends Generator {
 
@@ -28,7 +31,7 @@ public class MagmaticEngine extends Generator {
     private static final FuelItems fuelItems = new FuelItems();
 
     static {
-        fuelItems.addFuel(new ItemStack(Material.LAVA_BUCKET), true, 16, 1000);
+        fuelItems.addFuel(new ItemStack(MaterialCompat.safe(XMaterial.LAVA_BUCKET)), true, 16, 1000);
     }
 
     public MagmaticEngine() {
@@ -94,7 +97,7 @@ public class MagmaticEngine extends Generator {
 
     @Override
     public Material getMaterial() {
-        return Material.RED_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.RED_TERRACOTTA);
     }
 
     @Override
@@ -124,13 +127,13 @@ public class MagmaticEngine extends Generator {
         SimpleCircuit sc = new SimpleCircuit();
         TenKEnergyCell cell = new TenKEnergyCell();
         registerCustomIngredients(sc, cell);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape(" L ", "SES", "RGR");
         recipe.setIngredient('S', sc.getMaterial());
         recipe.setIngredient('E', cell.getMaterial());
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('L', Material.LAVA_BUCKET);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('L', MaterialCompat.safe(XMaterial.LAVA_BUCKET));
         return recipe;
     }
 
@@ -156,7 +159,7 @@ public class MagmaticEngine extends Generator {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.FLINT_AND_STEEL);
+        return new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL));
     }
 
     @Override
@@ -186,7 +189,7 @@ public class MagmaticEngine extends Generator {
                     // fuel burnt
                     ItemStack bucket = getInventoryItem(getOutputSlots()[0]);
                     if (bucket == null) {
-                        bucket = new ItemStack(Material.BUCKET);
+                        bucket = new ItemStack(MaterialCompat.safe(XMaterial.BUCKET));
                     } else {
                         bucket.setAmount(bucket.getAmount() + 1);
                     }

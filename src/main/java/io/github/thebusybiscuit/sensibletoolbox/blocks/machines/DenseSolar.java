@@ -6,7 +6,10 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.IntegratedCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 
 import javax.annotation.Nonnull;
 
@@ -20,7 +23,7 @@ public class DenseSolar extends BasicSolarCell {
 
     @Override
     public Material getMaterial() {
-        return Material.GRAY_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.GRAY_STAINED_GLASS);
     }
 
     @Override
@@ -30,7 +33,7 @@ public class DenseSolar extends BasicSolarCell {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         BasicSolarCell bs = new BasicSolarCell();
         IntegratedCircuit ic = new IntegratedCircuit();
         registerCustomIngredients(bs, ic);

@@ -5,6 +5,10 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+
 public class PaintRoller extends PaintBrush {
 
     public PaintRoller() {
@@ -17,7 +21,7 @@ public class PaintRoller extends PaintBrush {
 
     @Override
     public Material getMaterial() {
-        return Material.IRON_SHOVEL;
+        return MaterialCompat.safe(XMaterial.IRON_SHOVEL);
     }
 
     @Override
@@ -37,11 +41,11 @@ public class PaintRoller extends PaintBrush {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("WWW", "III", " S ");
-        recipe.setIngredient('W', Material.WHITE_WOOL);
-        recipe.setIngredient('I', Material.IRON_INGOT);
-        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('W', MaterialCompat.safe(XMaterial.WHITE_WOOL));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STICK));
         return recipe;
     }
 

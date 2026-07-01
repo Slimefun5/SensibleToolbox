@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class SubspaceTransponder extends BaseSTBItem {
 
@@ -19,7 +22,7 @@ public class SubspaceTransponder extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.BREWING_STAND;
+        return MaterialCompat.safe(XMaterial.BREWING_STAND);
     }
 
     @Override
@@ -34,13 +37,13 @@ public class SubspaceTransponder extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         IntegratedCircuit ic = new IntegratedCircuit();
         EnergizedGoldIngot eg = new EnergizedGoldIngot();
         registerCustomIngredients(ic, eg);
         recipe.shape("DGE", " G ", " C ");
-        recipe.setIngredient('D', Material.DIAMOND);
-        recipe.setIngredient('E', Material.ENDER_EYE);
+        recipe.setIngredient('D', MaterialCompat.safe(XMaterial.DIAMOND));
+        recipe.setIngredient('E', MaterialCompat.safe(XMaterial.ENDER_EYE));
         recipe.setIngredient('G', eg.getMaterial());
         recipe.setIngredient('C', ic.getMaterial());
         return recipe;

@@ -20,10 +20,13 @@ import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.util.Vector;
 
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.MinecraftVersion;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 
 public class AngelicBlock extends BaseSTBBlock {
@@ -36,7 +39,7 @@ public class AngelicBlock extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return Material.OBSIDIAN;
+        return MaterialCompat.safe(XMaterial.OBSIDIAN);
     }
 
     @Override
@@ -51,11 +54,11 @@ public class AngelicBlock extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), this.toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), this.toItemStack());
         recipe.shape(" G ", "FOF");
-        recipe.setIngredient('G', Material.GOLD_INGOT);
-        recipe.setIngredient('F', Material.FEATHER);
-        recipe.setIngredient('O', Material.OBSIDIAN);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
+        recipe.setIngredient('F', MaterialCompat.safe(XMaterial.FEATHER));
+        recipe.setIngredient('O', MaterialCompat.safe(XMaterial.OBSIDIAN));
         return recipe;
     }
 

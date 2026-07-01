@@ -48,7 +48,9 @@ class DatabaseManager {
         File file = new File(SensibleToolboxPlugin.getInstance().getDataFolder(), "blocks.db");
 
         try {
-            // Class.forName(...) is no longer required as of JDBC 4.0+
+            // shadowJar strips META-INF/services, so JDBC 4.0 auto-registration won't find the bundled
+            // driver; load it explicitly (also needed on 1.8 servers that don't provide one).
+            Class.forName("org.sqlite.JDBC");
             return DriverManager.getConnection("jdbc:sqlite:" + file.getAbsolutePath());
         } catch (Exception | LinkageError x) {
             logger.log(Level.SEVERE, x, () -> "Could not connect to local database: \"jdbc:sqlite:" + file.getAbsolutePath() + "\"");

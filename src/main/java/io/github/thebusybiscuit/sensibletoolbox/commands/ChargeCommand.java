@@ -3,7 +3,7 @@ package io.github.thebusybiscuit.sensibletoolbox.commands;
 import java.util.Set;
 
 import org.bukkit.Material;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
 import org.bukkit.command.CommandSender;
@@ -37,7 +37,7 @@ public class ChargeCommand extends AbstractCommand {
         }
 
         Player player = (Player) sender;
-        ItemStack itemInHand = player.getInventory().getItemInMainHand();
+        ItemStack itemInHand = player.getInventory().getItemInHand();
         BaseSTBItem item = SensibleToolbox.getItemRegistry().fromItemStack(itemInHand);
         BaseSTBBlock block = null;
         Chargeable chargeable = null;
@@ -81,7 +81,7 @@ public class ChargeCommand extends AbstractCommand {
         chargeable.setCharge(amount);
 
         if (item != null) {
-            player.getInventory().setItemInMainHand(item.toItemStack());
+            player.getInventory().setItemInHand(item.toItemStack());
         } else if (block != null) {
             block.update(true);
             MiscUtil.statusMessage(player, "&6" + block.getItemName() + "&- charged to " + STBUtil.getChargeString(chargeable));

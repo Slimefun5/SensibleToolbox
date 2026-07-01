@@ -17,6 +17,9 @@ import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.MiscUtil;
 
 public class LandMarker extends BaseSTBItem {
@@ -57,7 +60,7 @@ public class LandMarker extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.FIREWORK_ROCKET;
+        return MaterialCompat.safe(XMaterial.FIREWORK_ROCKET);
     }
 
     @Override
@@ -72,13 +75,13 @@ public class LandMarker extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape(" T ", " C ", " S ");
         SimpleCircuit sc = new SimpleCircuit();
         registerCustomIngredients(sc);
-        recipe.setIngredient('T', Material.REDSTONE_TORCH);
+        recipe.setIngredient('T', MaterialCompat.safe(XMaterial.REDSTONE_TORCH));
         recipe.setIngredient('C', sc.getMaterial());
-        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STICK));
         return recipe;
     }
 
@@ -101,11 +104,11 @@ public class LandMarker extends BaseSTBItem {
 
         if ((event.getAction() == Action.RIGHT_CLICK_AIR || event.getAction() == Action.LEFT_CLICK_AIR) && getMarkedLocation() != null) {
             setMarkedLocation(null);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0F, 0.6F);
         } else if ((event.getAction() == Action.RIGHT_CLICK_BLOCK || event.getAction() == Action.LEFT_CLICK_BLOCK) && !event.getClickedBlock().getLocation().equals(loc)) {
             setMarkedLocation(event.getClickedBlock().getLocation());
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             player.playSound(player.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1.0F, 1.5F);
         }
 

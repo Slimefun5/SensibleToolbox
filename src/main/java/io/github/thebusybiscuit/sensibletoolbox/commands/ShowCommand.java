@@ -117,7 +117,7 @@ public class ShowCommand extends AbstractCommand {
 
             Player player = (Player) sender;
             // try to show either the held item or the targeted block
-            item = SensibleToolbox.getItemRegistry().fromItemStack(player.getInventory().getItemInMainHand());
+            item = SensibleToolbox.getItemRegistry().fromItemStack(player.getInventory().getItemInHand());
 
             if (item == null) {
                 Block b = player.getTargetBlock((Set<Material>) null, 10);

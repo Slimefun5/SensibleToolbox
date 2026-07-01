@@ -15,6 +15,9 @@ import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.router.ItemRouter;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 
 public class SenderModule extends DirectionalItemRouterModule {
@@ -41,15 +44,15 @@ public class SenderModule extends DirectionalItemRouterModule {
     public Recipe getMainRecipe() {
         BlankModule bm = new BlankModule();
         registerCustomIngredients(bm);
-        ShapelessRecipe recipe = new ShapelessRecipe(getKey(), toItemStack());
+        ShapelessRecipe recipe = RecipeCompat.shapeless(getKey(), toItemStack());
         recipe.addIngredient(bm.getMaterial());
-        recipe.addIngredient(Material.ARROW);
+        recipe.addIngredient(MaterialCompat.safe(XMaterial.ARROW));
         return recipe;
     }
 
     @Override
     public Material getMaterial() {
-        return Material.BLUE_DYE;
+        return MaterialCompat.safe(XMaterial.BLUE_DYE);
     }
 
     @Override
@@ -105,7 +108,7 @@ public class SenderModule extends DirectionalItemRouterModule {
         double xOff = (d.getX() - s.getX()) / 2;
         double zOff = (d.getZ() - s.getZ()) / 2;
         Location mid = s.add(xOff + 0.5, 0.5, zOff + 0.5);
-        s.getWorld().spawnParticle(Particle.DUST, mid.getX(), mid.getY(), mid.getZ(), 15, (float) xOff / 4, 0, (float) zOff / 4, 0, new DustOptions(Color.GREEN, 1.5F));
+        s.getWorld().spawnParticle(Particle.REDSTONE, mid.getX(), mid.getY(), mid.getZ(), 15, (float) xOff / 4, 0, (float) zOff / 4, 0, new DustOptions(Color.GREEN, 1.5F));
     }
 
     private ReceiverModule findReceiver(Block b) {

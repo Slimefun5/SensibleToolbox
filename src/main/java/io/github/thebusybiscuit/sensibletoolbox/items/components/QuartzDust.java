@@ -6,6 +6,8 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class QuartzDust extends BaseSTBItem {
 
@@ -15,7 +17,7 @@ public class QuartzDust extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.SUGAR;
+        return MaterialCompat.safe(XMaterial.SUGAR);
     }
 
     @Override

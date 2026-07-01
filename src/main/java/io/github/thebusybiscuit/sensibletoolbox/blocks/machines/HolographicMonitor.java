@@ -15,7 +15,10 @@ import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.energy.EnergyNet;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class HolographicMonitor extends BaseSTBBlock {
 
@@ -29,7 +32,7 @@ public class HolographicMonitor extends BaseSTBBlock {
 
     @Override
     public Material getMaterial() {
-        return Material.LIGHT_BLUE_STAINED_GLASS;
+        return MaterialCompat.safe(XMaterial.LIGHT_BLUE_STAINED_GLASS);
     }
 
     @Override
@@ -44,13 +47,13 @@ public class HolographicMonitor extends BaseSTBBlock {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("GGG", "LPL", "GGG");
         PowerMonitor monitor = new PowerMonitor();
         registerCustomIngredients(monitor);
-        recipe.setIngredient('G', Material.GLASS);
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GLASS));
         recipe.setIngredient('P', monitor.getMaterial());
-        recipe.setIngredient('L', Material.LAPIS_LAZULI);
+        recipe.setIngredient('L', MaterialCompat.safe(XMaterial.LAPIS_LAZULI));
         return recipe;
     }
 

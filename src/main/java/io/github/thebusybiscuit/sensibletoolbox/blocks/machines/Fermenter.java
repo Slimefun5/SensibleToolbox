@@ -5,7 +5,6 @@ import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
-import org.bukkit.inventory.RecipeChoice.MaterialChoice;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.AbstractIOMachine;
@@ -14,6 +13,9 @@ import io.github.thebusybiscuit.sensibletoolbox.api.recipes.SimpleCustomRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.EnergizedQuartz;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.FishBait;
 import io.github.thebusybiscuit.sensibletoolbox.items.components.MachineFrame;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class Fermenter extends AbstractIOMachine {
 
@@ -27,13 +29,13 @@ public class Fermenter extends AbstractIOMachine {
     public void addCustomRecipes(CustomRecipeManager crm) {
         FishBait bait = new FishBait();
 
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.SPIDER_EYE), new ItemStack(Material.FERMENTED_SPIDER_EYE), 220));
-        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(Material.ROTTEN_FLESH), bait.toItemStack(), 200));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.SPIDER_EYE)), new ItemStack(MaterialCompat.safe(XMaterial.FERMENTED_SPIDER_EYE)), 220));
+        crm.addCustomRecipe(new SimpleCustomRecipe(this, new ItemStack(MaterialCompat.safe(XMaterial.ROTTEN_FLESH)), bait.toItemStack(), 200));
     }
 
     @Override
     public Material getMaterial() {
-        return Material.LIME_TERRACOTTA;
+        return MaterialCompat.safe(XMaterial.LIME_TERRACOTTA);
     }
 
     @Override
@@ -51,15 +53,15 @@ public class Fermenter extends AbstractIOMachine {
         MachineFrame mf = new MachineFrame();
         EnergizedQuartz q = new EnergizedQuartz();
         registerCustomIngredients(mf, q);
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SQM", "IFI", "RGR");
-        recipe.setIngredient('S', Material.SUGAR);
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.SUGAR));
         recipe.setIngredient('Q', q.getMaterial());
-        recipe.setIngredient('M', new MaterialChoice(Material.RED_MUSHROOM, Material.BROWN_MUSHROOM));
-        recipe.setIngredient('I', Material.IRON_INGOT);
+        RecipeCompat.setIngredient(recipe, 'M', MaterialCompat.safe(XMaterial.RED_MUSHROOM), MaterialCompat.safe(XMaterial.BROWN_MUSHROOM));
+        recipe.setIngredient('I', MaterialCompat.safe(XMaterial.IRON_INGOT));
         recipe.setIngredient('F', mf.getMaterial());
-        recipe.setIngredient('R', Material.REDSTONE);
-        recipe.setIngredient('G', Material.GOLD_INGOT);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.REDSTONE));
+        recipe.setIngredient('G', MaterialCompat.safe(XMaterial.GOLD_INGOT));
         return recipe;
     }
 
@@ -120,13 +122,13 @@ public class Fermenter extends AbstractIOMachine {
 
     @Override
     public ItemStack getProgressIcon() {
-        return new ItemStack(Material.GOLDEN_HOE);
+        return new ItemStack(MaterialCompat.safe(XMaterial.GOLDEN_HOE));
     }
 
     @Override
     protected void playActiveParticleEffect() {
         if (getTicksLived() % 20 == 0) {
-            getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, Material.OAK_LEAVES);
+            getLocation().getWorld().playEffect(getLocation(), Effect.STEP_SOUND, MaterialCompat.safe(XMaterial.OAK_LEAVES));
         }
     }
 }

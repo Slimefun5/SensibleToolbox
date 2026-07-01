@@ -6,6 +6,9 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public class ToughMachineFrame extends BaseSTBItem {
 
@@ -15,7 +18,7 @@ public class ToughMachineFrame extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.IRON_BLOCK;
+        return MaterialCompat.safe(XMaterial.IRON_BLOCK);
     }
 
     @Override
@@ -30,7 +33,7 @@ public class ToughMachineFrame extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         EnergizedIronIngot ingot = new EnergizedIronIngot();
         MachineFrame frame = new MachineFrame();
         registerCustomIngredients(ingot, frame);

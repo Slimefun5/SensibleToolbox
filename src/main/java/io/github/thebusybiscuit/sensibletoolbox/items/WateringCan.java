@@ -11,16 +11,12 @@ import org.bukkit.Particle;
 import org.bukkit.Sound;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.Ageable;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.type.Farmland;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemConsumeEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -29,8 +25,13 @@ import org.bukkit.inventory.meta.PotionMeta;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.SoilSaturation;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.MiscUtil;
 
@@ -70,14 +71,14 @@ public class WateringCan extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return getWaterLevel() == 0 ? Material.GLASS_BOTTLE : Material.POTION;
+        return getWaterLevel() == 0 ? MaterialCompat.safe(XMaterial.GLASS_BOTTLE) : MaterialCompat.safe(XMaterial.POTION);
     }
 
     @Override
     public ItemStack toItemStack(int amount) {
         ItemStack item = super.toItemStack(amount);
 
-        if (item.getType() == Material.POTION) {
+        if (item.getType() == MaterialCompat.safe(XMaterial.POTION)) {
             PotionMeta meta = (PotionMeta) item.getItemMeta();
             meta.setColor(Color.BLUE);
             item.setItemMeta(meta);
@@ -103,11 +104,11 @@ public class WateringCan extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("SM ", "SBS", " S ");
         recipe.setIngredient('S', Material.STONE);
-        recipe.setIngredient('M', Material.BONE_MEAL);
-        recipe.setIngredient('B', Material.BOWL);
+        recipe.setIngredient('M', MaterialCompat.safe(XMaterial.BONE_MEAL));
+        recipe.setIngredient('B', MaterialCompat.safe(XMaterial.BOWL));
         return recipe;
     }
 
@@ -121,7 +122,7 @@ public class WateringCan extends BaseSTBItem {
             Block block = event.getClickedBlock();
             Block neighbour = block.getRelative(event.getBlockFace());
 
-            if (neighbour.getType() == Material.WATER) {
+            if (neighbour.getType() == MaterialCompat.safe(XMaterial.WATER)) {
                 // attempt to refill the watering can
                 player.playSound(player.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1, 0.8F);
                 neighbour.setType(Material.AIR);
@@ -132,7 +133,7 @@ public class WateringCan extends BaseSTBItem {
                 waterCrops(player, block);
                 waterSoil(player, block.getRelative(BlockFace.DOWN));
                 newStack = toItemStack();
-            } else if (block.getType() == Material.FARMLAND) {
+            } else if (block.getType() == MaterialCompat.safe(XMaterial.FARMLAND)) {
                 if (STBUtil.isCrop(block.getRelative(BlockFace.UP).getType())) {
                     waterCrops(player, block.getRelative(BlockFace.UP));
                     waterSoil(player, block);
@@ -142,28 +143,28 @@ public class WateringCan extends BaseSTBItem {
                     waterSoil(player, block);
                     newStack = toItemStack();
                 }
-            } else if (block.getType() == Material.COBBLESTONE && getWaterLevel() >= 10) {
+            } else if (block.getType() == MaterialCompat.safe(XMaterial.COBBLESTONE) && getWaterLevel() >= 10) {
                 if (ThreadLocalRandom.current().nextBoolean()) {
-                    block.setType(Material.MOSSY_COBBLESTONE);
+                    block.setType(MaterialCompat.safe(XMaterial.MOSSY_COBBLESTONE));
                 }
 
                 useSomeWater(player, block, 10);
                 newStack = toItemStack();
-            } else if (block.getType() == Material.STONE_BRICKS && getWaterLevel() >= 10) {
+            } else if (block.getType() == MaterialCompat.safe(XMaterial.STONE_BRICKS) && getWaterLevel() >= 10) {
                 if (ThreadLocalRandom.current().nextBoolean()) {
-                    block.setType(Material.MOSSY_STONE_BRICKS);
+                    block.setType(MaterialCompat.safe(XMaterial.MOSSY_STONE_BRICKS));
                 }
 
                 useSomeWater(player, block, 10);
                 newStack = toItemStack();
-            } else if (block.getType() == Material.DIRT && maybeGrowGrass(block)) {
+            } else if (block.getType() == MaterialCompat.safe(XMaterial.DIRT) && maybeGrowGrass(block)) {
                 useSomeWater(player, block, 1);
                 newStack = toItemStack();
             }
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR) {
             Block b = player.getEyeLocation().getBlock();
 
-            if (b.getType() == Material.WATER) {
+            if (b.getType() == MaterialCompat.safe(XMaterial.WATER)) {
                 // attempt to refill the watering can
                 b.setType(Material.AIR);
                 player.playSound(player.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1, 0.8F);
@@ -175,10 +176,10 @@ public class WateringCan extends BaseSTBItem {
         event.setCancelled(true);
 
         if (newStack != null) {
-            if (event.getHand() == EquipmentSlot.HAND) {
-                player.getInventory().setItemInMainHand(newStack);
+            if (HandCompat.isMainHand(event)) {
+                player.getInventory().setItemInHand(newStack);
             } else {
-                player.getInventory().setItemInOffHand(newStack);
+                HandCompat.setOffHandItem(player.getInventory(), newStack);
             }
         }
 
@@ -191,8 +192,8 @@ public class WateringCan extends BaseSTBItem {
     private boolean maybeGrowGrass(Block b) {
         for (BlockFace face : STBUtil.getAllHorizontalFaces()) {
             Block b1 = b.getRelative(face);
-            if (b1.getType() == Material.GRASS_BLOCK) {
-                b.setType(Material.GRASS_BLOCK);
+            if (b1.getType() == MaterialCompat.safe(XMaterial.GRASS_BLOCK)) {
+                b.setType(MaterialCompat.safe(XMaterial.GRASS_BLOCK));
                 return true;
             }
         }
@@ -209,7 +210,7 @@ public class WateringCan extends BaseSTBItem {
             MiscUtil.alertMessage(player, "The fire is out!");
         }
 
-        player.getInventory().setItemInMainHand(toItemStack());
+        player.getInventory().setItemInHand(toItemStack());
         player.updateInventory();
         event.setCancelled(true);
     }
@@ -222,13 +223,9 @@ public class WateringCan extends BaseSTBItem {
                 break;
             }
 
-            if (block.getType() == Material.FARMLAND) {
-                Farmland farmland = (Farmland) block.getBlockData();
-
-                if (farmland.getMoisture() < farmland.getMaximumMoisture()) {
-                    farmland.setMoisture(farmland.getMoisture() + 1);
-                    block.setBlockData(farmland, false);
-                }
+            if (block.getType() == MaterialCompat.safe(XMaterial.FARMLAND)) {
+                // farmland moisture visuals require BlockData (1.13+); no-op on legacy MC
+                BlockDataCompat.increaseMoisture(block);
 
                 checkForFlooding(block);
                 useSomeWater(player, b, 1);
@@ -265,16 +262,8 @@ public class WateringCan extends BaseSTBItem {
         }
 
         if (ThreadLocalRandom.current().nextInt(100) < GROW_CHANCE) {
-            BlockData data = b.getBlockData();
-
-            if (data instanceof Ageable) {
-                Ageable ageable = (Ageable) data;
-
-                if (ageable.getAge() < ageable.getMaximumAge()) {
-                    ageable.setAge(ageable.getAge() + 1);
-                    b.setBlockData(ageable, false);
-                }
-            }
+            // crop-age acceleration requires BlockData (1.13+); no-op on legacy MC
+            BlockDataCompat.growByOne(b);
         }
 
         checkForFlooding(b.getRelative(BlockFace.DOWN));
@@ -289,7 +278,7 @@ public class WateringCan extends BaseSTBItem {
 
         if (saturation > SoilSaturation.MAX_SATURATION && ThreadLocalRandom.current().nextBoolean()) {
             soil.breakNaturally();
-            soil.setType(Material.WATER);
+            soil.setType(MaterialCompat.safe(XMaterial.WATER));
             SoilSaturation.clear(soil);
         } else {
             SoilSaturation.setLastWatered(soil, System.currentTimeMillis());
@@ -305,7 +294,7 @@ public class WateringCan extends BaseSTBItem {
     private void useSomeWater(Player p, Block b, int amount) {
         setWaterLevel(Math.max(0, getWaterLevel() - amount));
         p.playSound(p.getLocation(), Sound.AMBIENT_UNDERWATER_EXIT, 0.1F, 1.3F);
-        p.getWorld().spawnParticle(Particle.SPLASH, b.getX() + 0.5, b.getY() + 1.0, b.getZ() + 0.5, 14, 0.75, 0.15, 0.75);
+        p.getWorld().spawnParticle(Particle.WATER_SPLASH, b.getX() + 0.5, b.getY() + 1.0, b.getZ() + 0.5, 14, 0.75, 0.15, 0.75);
     }
 }
 

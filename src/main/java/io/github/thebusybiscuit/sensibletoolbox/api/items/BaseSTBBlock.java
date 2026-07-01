@@ -16,13 +16,11 @@ import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
-import org.bukkit.Tag;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.PistonMoveReaction;
 import org.bukkit.block.Sign;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.type.WallSign;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.entity.Player;
@@ -49,8 +47,12 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.STBGUIHolder;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.BlockAccess;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.LocationManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.BlockDataCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.blocks.PersistableLocation;
 import me.desht.dhutils.blocks.RelativePosition;
@@ -385,7 +387,7 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
      *            the interaction event
      */
     public void onInteractBlock(@Nonnull PlayerInteractEvent event) {
-        if (event.getAction() == Action.LEFT_CLICK_BLOCK && Tag.SIGNS.isTagged(event.getPlayer().getInventory().getItemInMainHand().getType()) && !Tag.STANDING_SIGNS.isTagged(event.getClickedBlock().getType()) && !Tag.WALL_SIGNS.isTagged(event.getClickedBlock().getType())) {
+        if (event.getAction() == Action.LEFT_CLICK_BLOCK && Tag.SIGNS.isTagged(event.getPlayer().getInventory().getItemInHand().getType()) && !Tag.STANDING_SIGNS.isTagged(event.getClickedBlock().getType()) && !Tag.WALL_SIGNS.isTagged(event.getClickedBlock().getType())) {
             // attach a label sign
             if (attachLabelSign(event)) {
                 labelSigns.set(STBUtil.getFaceRotation(getFacing(), event.getBlockFace()));
@@ -984,7 +986,7 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
                 Material signType = signBlock.getType();
                 // Unsure if signBlock will have the correct type at this stage
                 if (!Tag.WALL_SIGNS.isTagged(signType)) {
-                    signType = Material.OAK_WALL_SIGN;
+                    signType = MaterialCompat.safe(XMaterial.OAK_WALL_SIGN);
                 }
 
                 if (!placeLabelSign(signBlock, face, signType)) {
@@ -1018,23 +1020,23 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
             return false;
         }
 
-        BlockPlaceEvent placeEvent = new BlockPlaceEvent(signBlock, signBlock.getState(), event.getClickedBlock(), event.getItem(), player, true, event.getHand());
+        BlockPlaceEvent placeEvent = HandCompat.newBlockPlaceEvent(signBlock, signBlock.getState(), event.getClickedBlock(), event.getItem(), player, true, event);
         Bukkit.getPluginManager().callEvent(placeEvent);
         if (placeEvent.isCancelled()) {
             STBUtil.complain(player);
             return false;
         }
 
-        Material signType = STBUtil.getWallSign(event.getPlayer().getInventory().getItemInMainHand().getType());
+        Material signType = STBUtil.getWallSign(event.getPlayer().getInventory().getItemInHand().getType());
         if (signType == null) {
-            Debugger.getInstance().debug("Unsupported sign type: " + event.getPlayer().getInventory().getItemInMainHand().getType().toString());
+            Debugger.getInstance().debug("Unsupported sign type: " + event.getPlayer().getInventory().getItemInHand().getType().toString());
             return false;
         }
         // ok, player is allowed to put a sign here
         placeLabelSign(signBlock, event.getBlockFace(), signType);
 
         if (player.getGameMode() != GameMode.CREATIVE) {
-            ItemStack stack = player.getInventory().getItemInMainHand();
+            ItemStack stack = player.getInventory().getItemInHand();
             stack.setAmount(stack.getAmount() - 1);
             player.setItemInHand(stack.getAmount() <= 0 ? null : stack);
         }
@@ -1052,7 +1054,7 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
         if (!signBlock.isEmpty() && !Tag.WALL_SIGNS.isTagged(signBlock.getType())) {
             // something in the way!
             Debugger.getInstance().debug(this + ": can't place label sign @ " + signBlock + ", face = " + face);
-            signBlock.getWorld().dropItemNaturally(signBlock.getLocation(), new ItemStack(Material.OAK_SIGN));
+            signBlock.getWorld().dropItemNaturally(signBlock.getLocation(), new ItemStack(MaterialCompat.safe(XMaterial.OAK_SIGN)));
             return false;
         } else if (!Tag.SIGNS.isTagged(signType)) {
             Debugger.getInstance().debug(this + ": can't place label sign as " + signType.toString() + " is not a valid sign");
@@ -1060,13 +1062,9 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
         } else {
             Debugger.getInstance().debug(this + ": place label sign @ " + signBlock + ", face = " + face);
 
-            BlockData data = signType.createBlockData(bd -> {
-                if (bd instanceof WallSign) {
-                    ((WallSign) bd).setFacing(face);
-                }
-            });
+            // BlockData lets us orient the wall sign (1.13+); falls back to a plain placement on legacy MC
+            BlockDataCompat.placeDirectional(signBlock, signType, face);
 
-            signBlock.setBlockData(data);
             Sign sign = (Sign) signBlock.getState();
 
             String[] text = getSignLabel(face);
@@ -1088,14 +1086,19 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
             return;
         }
 
+        // reading wall-sign facing requires BlockData (1.13+); skip on legacy MC
+        if (!BlockDataCompat.isModern()) {
+            return;
+        }
+
         Block b = loc.getBlock();
         for (BlockFace face : new BlockFace[] { BlockFace.EAST, BlockFace.NORTH, BlockFace.WEST, BlockFace.SOUTH }) {
             Block neighbour = b.getRelative(face);
 
             if (Tag.WALL_SIGNS.isTagged(neighbour.getType())) {
-                WallSign sign = (WallSign) neighbour.getBlockData();
+                BlockFace signFacing = BlockDataCompat.getFacing(neighbour);
 
-                if (sign.getFacing() == face.getOppositeFace()) {
+                if (signFacing == face.getOppositeFace()) {
                     labelSigns.set(STBUtil.getFaceRotation(getFacing(), face));
                 }
             }

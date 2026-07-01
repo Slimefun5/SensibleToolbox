@@ -25,7 +25,6 @@ import org.bukkit.entity.Wolf;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
@@ -40,9 +39,13 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.ButtonGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.PaintCan;
+import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.HoloMessage;
+import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 import me.desht.dhutils.Debugger;
 
@@ -99,7 +102,7 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public Material getMaterial() {
-        return Material.GOLDEN_SHOVEL;
+        return MaterialCompat.safe(XMaterial.GOLDEN_SHOVEL);
     }
 
     @Override
@@ -126,10 +129,10 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public Recipe getMainRecipe() {
-        ShapedRecipe recipe = new ShapedRecipe(getKey(), toItemStack());
+        ShapedRecipe recipe = RecipeCompat.shaped(getKey(), toItemStack());
         recipe.shape("R", "S", "S");
-        recipe.setIngredient('R', Material.STRING);
-        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('R', MaterialCompat.safe(XMaterial.STRING));
+        recipe.setIngredient('S', MaterialCompat.safe(XMaterial.STICK));
         return recipe;
     }
 
@@ -158,7 +161,7 @@ public class PaintBrush extends BaseSTBItem {
             setPaintLevel(0);
         }
 
-        updateHeldItemStack(event.getPlayer(), event.getHand());
+        updateHeldItemStack(event.getPlayer());
         event.setCancelled(true);
     }
 
@@ -185,7 +188,7 @@ public class PaintBrush extends BaseSTBItem {
             return false;
         }
 
-        return STBUtil.isColorable(b.getType()) || b.getType() == Material.GLASS || b.getType() == Material.GLASS_PANE;
+        return STBUtil.isColorable(b.getType()) || b.getType() == MaterialCompat.safe(XMaterial.GLASS) || b.getType() == MaterialCompat.safe(XMaterial.GLASS_PANE);
     }
 
     private void refillFromCan(@Nonnull PaintCan can) {
@@ -211,7 +214,7 @@ public class PaintBrush extends BaseSTBItem {
 
     @Override
     public void onInteractEntity(PlayerInteractEntityEvent event) {
-        if (!event.getHand().equals(EquipmentSlot.HAND)) {
+        if (!HandCompat.isMainHand(event)) {
             return;
         }
         event.setCancelled(true);
@@ -230,7 +233,7 @@ public class PaintBrush extends BaseSTBItem {
             Art art = ((Painting) e).getArt();
 
             if (getPaintLevel() >= art.getBlockHeight() * art.getBlockWidth()) {
-                openArtworkMenu(event.getPlayer(), event.getHand(), (Painting) e);
+                openArtworkMenu(event.getPlayer(), (Painting) e);
             } else {
                 Location loc = e.getLocation().add(0, -art.getBlockHeight() / 2.0, 0);
                 HoloMessage.popup(event.getPlayer(), loc, ChatColor.RED + "Not enough paint!");
@@ -243,7 +246,7 @@ public class PaintBrush extends BaseSTBItem {
 
         if (paintUsed > 0) {
             setPaintLevel(getPaintLevel() - paintUsed);
-            updateHeldItemStack(event.getPlayer(), event.getHand());
+            updateHeldItemStack(event.getPlayer());
             event.getPlayer().playSound(e.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1.0F, 1.5F);
         }
     }
@@ -293,10 +296,10 @@ public class PaintBrush extends BaseSTBItem {
 
             Debugger.getInstance().debug(2, "painting! " + b + " " + getPaintLevel() + " " + getColor());
 
-            if (b.getType() == Material.GLASS) {
-                b.setType(Material.WHITE_STAINED_GLASS);
-            } else if (b.getType() == Material.GLASS_PANE) {
-                b.setType(Material.WHITE_STAINED_GLASS_PANE);
+            if (b.getType() == MaterialCompat.safe(XMaterial.GLASS)) {
+                b.setType(MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS));
+            } else if (b.getType() == MaterialCompat.safe(XMaterial.GLASS_PANE)) {
+                b.setType(MaterialCompat.safe(XMaterial.WHITE_STAINED_GLASS_PANE));
             } else {
                 if (!STBUtil.isColorable(b.getType())) {
                     continue;
@@ -321,7 +324,7 @@ public class PaintBrush extends BaseSTBItem {
         return painted;
     }
 
-    private void openArtworkMenu(@Nonnull Player p, @Nonnull EquipmentSlot hand, @Nonnull Painting painting) {
+    private void openArtworkMenu(@Nonnull Player p, @Nonnull Painting painting) {
         Painting editingPainting = painting;
 
         Art[] other = getOtherArt(painting.getArt());
@@ -329,13 +332,13 @@ public class PaintBrush extends BaseSTBItem {
 
         int i = 0;
         for (Art art : other) {
-            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(Material.PAINTING, art.name(), "", "&7Click to select this artwork"), new Runnable() {
+            menu.addGadget(new ButtonGadget(menu, i, CustomItemStack.create(MaterialCompat.safe(XMaterial.PAINTING), art.name(), "", "&7Click to select this artwork"), new Runnable() {
 
                 @Override
                 public void run() {
                     editingPainting.setArt(art);
                     setPaintLevel(getPaintLevel() - art.getBlockWidth() * art.getBlockHeight());
-                    updateHeldItemStack(p, hand);
+                    updateHeldItemStack(p);
                     p.playSound(editingPainting.getLocation(), Sound.BLOCK_WATER_AMBIENT, 1.0F, 1.5F);
                     p.closeInventory();
                 }
