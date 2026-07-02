@@ -43,7 +43,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
+    githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
     // Shaded so the JDBC driver is present on 1.8 servers (modern Paper provides it via its library loader). 3.42.0.0 is the newest Java-8-compatible release.
     implementation("org.xerial:sqlite-jdbc:3.42.0.0")
     githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.2")
