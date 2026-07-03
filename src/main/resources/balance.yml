@@ -2,101 +2,102 @@
 # Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
 #   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
 #   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+# Scores derived from actual item stats read from src/main/java (energy, throughput,
+# range, capacity, area-of-effect, abilities) - not id guessing. SensibleToolbox is a
+# tech/automation addon: its ceiling is powerful logistics infrastructure, so nothing
+# reaches the game-changing 70+ band reserved for end-crystal/mace-class items.
 scores:
-  # --- Near-endgame automation & networking ---
-  STB_MULTIBUILDER: 58
-  STB_SUBSPACETRANSPONDER: 50
-  STB_ITEMROUTER: 46
-  STB_HYPERSTORAGEUNIT: 46
-  STB_AUTOBUILDER: 46
-  STB_SCURELAY: 44
-  STB_HYPERSENDERMODULE: 42
-  STB_AUTOFARM2: 42
-  STB_INFERNALFARM: 40
-  # --- Generators / energy storage ---
-  STB_MAGMATICENGINE: 38
-  STB_AUTOFORESTER: 38
-  STB_DENSESOLAR: 36
-  STB_DIAMONDCOMBINEHOE: 36
-  STB_AUTOFARM: 34
-  STB_FIFTYKENERGYCELL: 34
-  STB_BIOENGINE: 34
-  STB_BIGSTORAGEUNIT: 34
-  STB_FIFTYKBATTERYBOX: 32
-  STB_ENDERBOX: 32
-  STB_ADVANCEDSENDERMODULE: 32
-  STB_SILKYBREAKERMODULE: 32
-  STB_HEATENGINE: 30
-  STB_ENDERBAG: 30
-  STB_SORTERMODULE: 30
-  # --- Item Router hub / modules ---
-  STB_BASICSOLARCELL: 28
-  STB_BREAKERMODULE: 28
-  STB_DISTRIBUTORMODULE: 28
-  STB_SMELTER: 28
-  STB_VACUUMMODULE: 28
-  STB_FERMENTER: 26
-  STB_MASHER: 26
-  STB_IRONCOMBINEHOE: 26
-  STB_PULLERMODULE: 26
-  STB_RECEIVERMODULE: 26
-  STB_SENDERMODULE: 26
-  STB_STACKMODULE: 26
-  STB_TENKENERGYCELL: 26
-  STB_TOUGHMACHINEFRAME: 26
-  # --- Processing machines / tools ---
-  STB_DROPPERMODULE: 24
-  STB_ELECTRICALENERGIZER: 24
-  STB_ENDERLEASH: 24
-  STB_FISHINGNET: 24
-  STB_INTEGRATEDCIRCUIT: 24
-  STB_SAWMILL: 24
-  STB_SPEEDMODULE: 24
-  STB_TENKBATTERYBOX: 24
-  STB_GOLDCOMBINEHOE: 22
-  STB_CIRCUITBOARD: 22
-  STB_PUMP: 22
-  # --- Utility devices / components ---
-  STB_ELEVATOR: 20
-  STB_ENDERTUNER: 20
-  STB_ENERGIZEDGOLDINGOT: 20
-  STB_ENERGIZEDIRONINGOT: 20
-  STB_HOLOGRAPHICMONITOR: 20
-  STB_INFERNALDUST: 20
-  STB_MACHINEFRAME: 20
-  STB_ADVANCEDMOISTURECHECKER: 18
-  STB_ENERGIZEDGOLDDUST: 18
-  STB_ENERGIZEDIRONDUST: 18
-  STB_ENERGIZEDQUARTZ: 18
-  STB_SIMPLECIRCUIT: 18
-  STB_SPEEDUPGRADE: 18
-  STB_THOROUGHNESSUPGRADE: 18
-  STB_WOODCOMBINEHOE: 18
-  STB_ANGELICBLOCK: 16
-  STB_BLOCKUPDATEDETECTOR: 16
-  STB_EJECTORUPGRADE: 16
-  STB_REGULATORUPGRADE: 16
-  STB_SILICONWAFER: 16
-  STB_UNLINKEDSCURELAY: 16
-  # --- Basic materials / diagnostic tools ---
-  STB_MULTIMETER: 14
-  STB_POWERMONITOR: 14
-  STB_PVCELL: 14
-  STB_REDSTONECLOCK: 14
-  STB_WATERINGCAN: 14
-  STB_ADVANCEDRECIPEBOOK: 12
-  STB_GOLDDUST: 12
-  STB_IRONDUST: 12
-  STB_LANDMARKER: 12
-  STB_MOISTURECHECKER: 12
-  STB_QUARTZDUST: 12
-  # --- Trivial / decorative utility ---
-  STB_FISHBAIT: 10
-  STB_PAINTROLLER: 10
-  STB_SOUNDMUFFLER: 10
-  STB_TRASHCAN: 10
-  STB_BLANKMODULE: 8
-  STB_PAINTBRUSH: 8
-  STB_RECIPEBOOK: 8
-  STB_TAPEMEASURE: 8
-  STB_PAINTCAN: 6
+  # --- Powerful: automation backbone & area building tools ---
+  STB_MULTIBUILDER: 52          # area build+exchange tool, 10k charge, +3 blocks/Sharpness, 0.8^Efficiency cost
+  STB_HYPERSENDERMODULE: 48     # unlimited-range, cross-world item teleport (no LOS, any world)
+  STB_ITEMROUTER: 46            # automation hub: 9 module slots, drives all pull/push/sort/break logic
+  STB_SCURELAY: 46              # wireless cross-world power link, 100k buffer, paired shared pool
+  STB_HYPERSTORAGEUNIT: 44      # 33.5M-stack single-type mass storage, keeps contents on break
+  STB_AUTOBUILDER: 42           # auto-places blocks over a marked region, 5-block reach, 10k charge
+  STB_ADVANCEDSENDERMODULE: 40  # 24-block cross-inventory item transfer, no LOS needed
+  # --- Advanced: farms, processing machines, generators, storage ---
+  STB_AUTOFORESTER: 40          # auto tree farm, whole log-vein (256 cap) per cycle, auto-replant
+  STB_SILKYBREAKERMODULE: 38    # auto-mines block in front with Silk Touch, collects drops
+  STB_AUTOFARM2: 38             # 5x5 auto crop harvest+replant (cocoa/berry/cane/cactus)
+  STB_INFERNALFARM: 38          # 5x5 auto nether wart harvest+replant
+  STB_MAGMATICENGINE: 36        # lava generator, 16 charge/tick, 2500 buffer
+  STB_DENSESOLAR: 36            # 8x basic solar, 4.0 SCU/tick, 800 buffer
+  STB_AUTOFARM: 34              # 3x3 auto crop harvest+replant (wheat/potato/carrot/beetroot)
+  STB_BREAKERMODULE: 34         # auto-mines block in front with virtual diamond pick
+  STB_HEATENGINE: 32            # solid-fuel generator, up to 50 charge/tick, 5000 buffer
+  STB_BIOENGINE: 32             # organic-fuel generator, 2500 buffer, wide fuel table
+  STB_FIFTYKBATTERYBOX: 32      # 50k stationary energy store, 500 rate
+  STB_FIFTYKENERGYCELL: 30      # 50k portable energy cell, 500 rate
+  STB_ENDERBAG: 30              # portable 54-slot shared ender storage, frequency channels
+  STB_SORTERMODULE: 30          # filtered item sorting into matching/empty inventories
+  STB_BIGSTORAGEUNIT: 30        # 128-stack single-type mass storage block
+  STB_MASHER: 30                # ore doubling machine, 40-160t recipes, 2 outputs
+  STB_DISTRIBUTORMODULE: 28     # round-robin item distribution to all router neighbours
+  STB_VACUUMMODULE: 28          # 6-block cubic item vacuum into router buffer
+  STB_ELECTRICALENERGIZER: 28   # produces energized dusts/ingots, 10k buffer, 1200t/op
+  STB_SMELTER: 28               # electric furnace, 40-120t, all vanilla + STB smelts
+  STB_ENDERBOX: 26              # ender storage block, frequency channels, unlimited distance
+  STB_SENDERMODULE: 26          # 10-block LOS item transfer to a receiver
+  STB_RECEIVERMODULE: 26        # passive item receiver endpoint for sender modules
+  STB_PULLERMODULE: 26          # pulls items from adjacent inventory into router
+  STB_STACKMODULE: 26           # doubles router throughput per module (2^n, stack-capped)
+  STB_SPEEDMODULE: 26           # speeds router ops (down to 1 op/5 ticks at 3 modules)
+  STB_SAWMILL: 26               # log->6 planks + sawdust, 40-60t
+  STB_FERMENTER: 26             # ferments organics (fish bait etc.), 1000 buffer, ~200-220t
+  STB_FISHINGNET: 26            # passive auto-fishing, 600t/catch, needs bait + water
+  STB_DIAMONDCOMBINEHOE: 26     # 5x5 till/sow/harvest multitool, diamond durability
+  STB_TENKBATTERYBOX: 24        # 10k stationary energy store, 100 rate
+  STB_TENKENERGYCELL: 24        # 10k portable energy cell, 100 rate
+  STB_PUMP: 24                  # pumps lava, 40t/fill, 64-block vein search
+  STB_ENDERLEASH: 22            # captures/relocates one passive animal with full state
+  STB_DROPPERMODULE: 22         # drops routed items into the world
+  # --- Standard: gadgets, tier tools, upgrades, refined components ---
+  STB_IRONCOMBINEHOE: 20        # 3x3 till/sow/harvest multitool, iron durability
+  STB_GOLDCOMBINEHOE: 20        # 3x3 till/sow/harvest multitool, gold durability
+  STB_ENERGIZEDGOLDINGOT: 20    # smelted refined component for high-tier crafting
+  STB_ENERGIZEDIRONINGOT: 20    # smelted refined component for tough machine frame
+  STB_SUBSPACETRANSPONDER: 20   # component enabling cross-world item/power (hyper sender, relay)
+  STB_HOLOGRAPHICMONITOR: 18    # hologram readout of network power (requires HD plugin)
+  STB_TOUGHMACHINEFRAME: 18     # advanced machine chassis component
+  STB_INTEGRATEDCIRCUIT: 18     # advanced circuit crafting component
+  STB_WOODCOMBINEHOE: 18        # 3x3 till/sow/harvest multitool, wood durability
+  STB_SPEEDUPGRADE: 18          # machine upgrade: 1.4x speed, 1.6x power use
+  STB_THOROUGHNESSUPGRADE: 18   # machine upgrade: +8% bonus output, 0.7x speed, 1.6x power
+  STB_ENERGIZEDGOLDDUST: 16     # smeltable refined component
+  STB_ENERGIZEDIRONDUST: 16     # smeltable refined component
+  STB_ENERGIZEDQUARTZ: 16       # refined crafting component
+  STB_ANGELICBLOCK: 16          # places a floating block 2 blocks ahead, explosion-immune
+  STB_BLOCKUPDATEDETECTOR: 16   # BUD sensor, pulses redstone on adjacent update
+  STB_EJECTORUPGRADE: 16        # machine upgrade: auto-ejects output in a direction
+  STB_REGULATORUPGRADE: 16      # machine upgrade: prevents fuel/charge waste
+  STB_UNLINKEDSCURELAY: 16      # component: craft a pair to make linked SCU relays
+  STB_ADVANCEDMOISTURECHECKER: 16 # 5x5 farmland moisture scan overlay
+  STB_ADVANCEDRECIPEBOOK: 16    # recipe browser+fabricator, pulls from adjacent inventories
+  STB_ELEVATOR: 16              # teleport between vertical elevator blocks (full world height)
+  STB_WATERINGCAN: 16           # 200-unit crop watering, 3x3, growth boost + mossify
+  STB_MACHINEFRAME: 14          # base machine chassis component
+  STB_SIMPLECIRCUIT: 14         # mid-tier circuit crafting component
+  STB_SILICONWAFER: 14          # electronics crafting component
+  STB_INFERNALDUST: 14          # blaze-drop crafting component for energized items
+  STB_POWERMONITOR: 14          # reads network power onto adjacent signs
+  STB_REDSTONECLOCK: 14         # configurable repeating redstone pulse
+  STB_MULTIMETER: 14            # read-only energy-net diagnostic tool
+  STB_PVCELL: 14                # 9-day consumable insert powering basic solar cells
+  STB_BASICSOLARCELL: 14        # low-output solar (0.5 SCU/tick), needs PV cell + daylight
+  STB_CIRCUITBOARD: 12          # base circuit crafting component
+  STB_IRONDUST: 12              # Masher output, smelts back to iron (ore doubling)
+  STB_GOLDDUST: 12              # Masher output, smelts back to gold (ore doubling)
+  STB_QUARTZDUST: 12            # Masher output, smelts into silicon wafer
+  STB_MOISTURECHECKER: 12       # 3x3 farmland moisture scan overlay
+  STB_LANDMARKER: 12            # stores a single GPS waypoint
+  STB_PAINTROLLER: 12           # recolours 25 blocks/use, 100 paint capacity
+  STB_RECIPEBOOK: 12            # recipe browser + on-station fabricator
+  # --- Trivial: cosmetic, diagnostic, single-purpose utility ---
+  STB_PAINTBRUSH: 10            # recolours 9 blocks/use, 25 paint capacity
+  STB_FISHBAIT: 10              # bait component improving fishing net catches
+  STB_SOUNDMUFFLER: 10          # silences blocks within 8-block radius (requires ProtocolLib)
+  STB_TRASHCAN: 10              # voids any inserted items
+  STB_ENDERTUNER: 10            # config tool for ender frequency/global mode
+  STB_PAINTCAN: 8               # paint reservoir (200 level, 25 per dye)
+  STB_TAPEMEASURE: 8            # measures distance between two points
+  STB_BLANKMODULE: 8            # blank base for crafting router modules
