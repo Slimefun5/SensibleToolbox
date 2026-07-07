@@ -7,11 +7,9 @@ plugins {
 group = "com.github.slimefun"
 description = "SensibleToolbox is a Spigot/Paper plugin which adds tons of items and machines inspired by popular mods."
 
-// Shared Slimefun-addon build conventions (Java 8, spigot-api baseline, core dep, publish, shadow, version).
-apply(from = "https://raw.githubusercontent.com/Slimefun5/workflows/stable/slimefun-addon.gradle")
+apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/stable/slimefun-addon.gradle")
 
 repositories {
-    maven("https://jitpack.io")
     maven("https://repo.dmulloy2.net/repository/public/")
     maven("https://maven.enginehub.org/repo/")
 }
@@ -26,25 +24,10 @@ dependencies {
     compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.8") {
         exclude(group = "de.schlichtherle", module = "truezip")
     }
-
-    testImplementation(platform("org.junit:junit-bom:5.11.4"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    testImplementation("org.mockito:mockito-core:5.15.2")
-    testImplementation("org.slf4j:slf4j-simple:2.0.16")
-    testImplementation("org.mockbukkit.mockbukkit:mockbukkit-v1.21:4.107.0") {
-        exclude(group = "org.jetbrains", module = "annotations")
-    }
-}
-
-configurations.testImplementation {
-    extendsFrom(configurations.compileOnly.get())
 }
 
 tasks {
     shadowJar {
         relocate("org.bstats", "sensibletoolbox.libs.bstats")
     }
-    compileTestJava { enabled = false }
-    test { enabled = false }
 }
