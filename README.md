@@ -85,7 +85,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.3.3")
+    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.3.4")
 }
 ```
 
