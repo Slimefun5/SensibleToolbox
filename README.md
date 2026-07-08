@@ -5,7 +5,7 @@
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/SensibleToolbox?style=social)](https://github.com/Slimefun5/SensibleToolbox)
 
-A Slimefun addon that adds realistic machines, pipes, and automation tools.
+SensibleToolbox is a Slimefun addon adding machines and tools inspired by popular mods.
 
 ## Requirements
 - Java 25
