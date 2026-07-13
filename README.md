@@ -33,7 +33,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.3.6")
+    "githubCompileOnly"("Slimefun5:SensibleToolbox:v1.0.3.7")
 }
 ```
 
