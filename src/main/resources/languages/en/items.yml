@@ -60,7 +60,7 @@ STB_BIGSTORAGEUNIT:
     - "&7Big Storage Unit. Stores a vast"
     - "&7quantity of a single item type."
   stats:
-    - "&8⇨ &e📦 &7128 Stacks"
+    - "&8⇨ &7128 Stacks"
 STB_BIOENGINE:
   name: "&fBio Engine"
   type:
@@ -158,7 +158,7 @@ STB_HYPERSTORAGEUNIT:
     - "&7quantity of a single item type."
     - "&7Keeps contents when broken. Needs power to function."
   stats:
-    - "&8⇨ &e📦 &733554431 Stacks"
+    - "&8⇨ &733554431 Stacks"
 STB_INFERNALFARM:
   name: "&fInfernal Farm"
   type:
