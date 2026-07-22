@@ -17,10 +17,23 @@ import org.bukkit.plugin.java.JavaPlugin;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBMachine;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.STBFurnaceRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.api.recipes.SimpleCustomRecipe;
+import io.github.thebusybiscuit.sensibletoolbox.blocks.AngelicBlock;
+import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.BasicSolarCell;
+import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.BatteryBox;
+import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.BigStorageUnit;
 import io.github.thebusybiscuit.sensibletoolbox.blocks.machines.Generator;
+import io.github.thebusybiscuit.sensibletoolbox.blocks.router.ItemRouter;
+import io.github.thebusybiscuit.sensibletoolbox.items.CombineHoe;
+import io.github.thebusybiscuit.sensibletoolbox.items.MoistureChecker;
+import io.github.thebusybiscuit.sensibletoolbox.items.PVCell;
+import io.github.thebusybiscuit.sensibletoolbox.items.PaintBrush;
+import io.github.thebusybiscuit.sensibletoolbox.items.energycells.EnergyCell;
+import io.github.thebusybiscuit.sensibletoolbox.items.itemroutermodules.ItemRouterModule;
 import io.github.thebusybiscuit.sensibletoolbox.items.recipebook.RecipeBook;
+import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.AbstractMachineUpgrade;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
@@ -32,6 +45,15 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.recipes.MinecraftRecip
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 
 public final class SlimefunBridge implements SlimefunAddon {
+
+    // Handheld tools & gadgets that don't share a common STB base class.
+    private static final java.util.Set<String> EXTRA_TOOLS = new java.util.HashSet<>(java.util.Arrays.asList(
+            "EnderLeash", "EnderBag", "EnderTuner", "WateringCan", "TapeMeasure",
+            "LandMarker", "Multimeter", "MultiBuilder", "PaintCan", "Elevator", "PowerMonitor"));
+
+    // Powered / utility blocks that don't extend BaseSTBMachine.
+    private static final java.util.Set<String> EXTRA_MACHINES = new java.util.HashSet<>(java.util.Arrays.asList(
+            "RedstoneClock", "BlockUpdateDetector", "TrashCan", "SoundMuffler", "HolographicMonitor"));
 
     private final SensibleToolboxPlugin plugin;
 
@@ -116,6 +138,11 @@ public final class SlimefunBridge implements SlimefunAddon {
                 sfItem.setRecipeOutput(r.getResult());
             }
 
+            String guideType = guideTypeFor(item);
+            if (guideType != null) {
+                sfItem.setGuideType(guideType);
+            }
+
             sfItem.register(this);
         }
 
@@ -134,6 +161,47 @@ public final class SlimefunBridge implements SlimefunAddon {
 
         Slimefun.getItemTranslationService().registerTranslations(plugin);
         registerWiki(this);
+    }
+
+    /**
+     * Maps an STB item to a guide category id. STB items are wrapped in plain
+     * {@link SlimefunItem}s and use head textures, so the guide heuristic can't
+     * type them - they'd all fall into "Misc" without this. Returns {@code null}
+     * to leave typing to the core heuristic.
+     */
+    @javax.annotation.Nullable
+    private String guideTypeFor(BaseSTBItem item) {
+        String simpleName = item.getClass().getSimpleName();
+
+        // Energy generation & storage.
+        if (item instanceof Generator || item instanceof BasicSolarCell || item instanceof PVCell
+                || item instanceof EnergyCell || item instanceof BatteryBox) {
+            return "energy_tech";
+        }
+        // Item routing, mass storage & ender storage.
+        if (item instanceof ItemRouterModule || item instanceof ItemRouter
+                || item instanceof BigStorageUnit || "EnderBox".equals(simpleName)) {
+            return "logistics";
+        }
+        // Crafted components, dusts, ingots & machine upgrades.
+        if (item instanceof AbstractMachineUpgrade
+                || item.getClass().getName().contains(".items.components.")) {
+            return "resources";
+        }
+        // Handheld tools, gadgets & diagnostics.
+        if (item instanceof CombineHoe || item instanceof PaintBrush || item instanceof MoistureChecker
+                || item instanceof RecipeBook || EXTRA_TOOLS.contains(simpleName)) {
+            return "tools";
+        }
+        // Decorative building blocks.
+        if (item instanceof AngelicBlock) {
+            return "decoration";
+        }
+        // Remaining powered blocks & processing machines.
+        if (item instanceof BaseSTBMachine || EXTRA_MACHINES.contains(simpleName)) {
+            return "machines";
+        }
+        return null;
     }
 
     private void registerWiki(SlimefunAddon addon) {
