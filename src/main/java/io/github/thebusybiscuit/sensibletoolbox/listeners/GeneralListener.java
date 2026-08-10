@@ -368,9 +368,7 @@ public class GeneralListener extends STBBaseListener {
             event.getInventory().setResult(result.toItemStack());
         }
 
-        // and ensure vanilla items can't be used in place of custom STB ingredients
-        // (e.g. paper can't be used to craft item router modules, even though a blank module uses paper for its
-        // material)
+        // block vanilla items standing in for custom STB ingredients (e.g. plain paper for an item router module)
         if (result != null) {
             for (ItemStack ingredient : event.getInventory().getMatrix()) {
                 if (ingredient != null) {

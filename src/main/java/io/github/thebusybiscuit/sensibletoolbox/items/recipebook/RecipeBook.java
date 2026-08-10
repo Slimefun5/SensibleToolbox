@@ -700,9 +700,7 @@ public class RecipeBook extends BaseSTBItem {
             }
         }
 
-        // Furnace recipes need special treatment, since there could be multiple
-        // recipes per material (STB item ingredients), but Bukkit FurnaceRecipe
-        // doesn't support that concept.
+        // Bukkit FurnaceRecipe can't model multiple recipes per material, so STB smelting ingredients are added separately
         for (ItemStack stack : RecipeUtil.getSmeltingIngredientsFor(result)) {
             recipes.add(new STBFurnaceRecipe(result, stack));
         }
