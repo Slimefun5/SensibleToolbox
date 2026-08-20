@@ -173,31 +173,25 @@ public final class SlimefunBridge implements SlimefunAddon {
     private String guideTypeFor(BaseSTBItem item) {
         String simpleName = item.getClass().getSimpleName();
 
-        // Energy generation & storage.
         if (item instanceof Generator || item instanceof BasicSolarCell || item instanceof PVCell
                 || item instanceof EnergyCell || item instanceof BatteryBox) {
             return "energy_tech";
         }
-        // Item routing, mass storage & ender storage.
         if (item instanceof ItemRouterModule || item instanceof ItemRouter
                 || item instanceof BigStorageUnit || "EnderBox".equals(simpleName)) {
             return "logistics";
         }
-        // Crafted components, dusts, ingots & machine upgrades.
         if (item instanceof AbstractMachineUpgrade
                 || item.getClass().getName().contains(".items.components.")) {
             return "resources";
         }
-        // Handheld tools, gadgets & diagnostics.
         if (item instanceof CombineHoe || item instanceof PaintBrush || item instanceof MoistureChecker
                 || item instanceof RecipeBook || EXTRA_TOOLS.contains(simpleName)) {
             return "tools";
         }
-        // Decorative building blocks.
         if (item instanceof AngelicBlock) {
             return "decoration";
         }
-        // Remaining powered blocks & processing machines.
         if (item instanceof BaseSTBMachine || EXTRA_MACHINES.contains(simpleName)) {
             return "machines";
         }
@@ -323,7 +317,6 @@ public final class SlimefunBridge implements SlimefunAddon {
     @SuppressWarnings("PMD.NcssCount")
     private java.util.List<String> itemText(String id) {
         switch (id) {
-            // --- Machines ---
             case "STB_MASHER":
                 return java.util.Arrays.asList(
                     "&7Grinds ingots and ores into dusts,",
@@ -381,7 +374,6 @@ public final class SlimefunBridge implements SlimefunAddon {
                     "&7into it. Handy on sorter and router",
                     "&7networks to discard unwanted output.");
 
-            // --- Storage & power buffers ---
             case "STB_BIGSTORAGEUNIT":
             case "STB_HYPERSTORAGEUNIT":
                 return java.util.Arrays.asList(
@@ -401,7 +393,6 @@ public final class SlimefunBridge implements SlimefunAddon {
                     "&7stored STB power. Charge it up and",
                     "&7use it to power devices on the go.");
 
-            // --- Item routing ---
             case "STB_ITEMROUTER":
                 return java.util.Arrays.asList(
                     "&7The heart of STB automation. Fit it",
@@ -450,7 +441,6 @@ public final class SlimefunBridge implements SlimefunAddon {
                     "&7An empty module blank, the base used to",
                     "&7craft the various router modules.");
 
-            // --- Upgrades ---
             case "STB_SPEEDUPGRADE":
             case "STB_SPEEDMODULE":
                 return java.util.Arrays.asList(
@@ -469,7 +459,6 @@ public final class SlimefunBridge implements SlimefunAddon {
                     "&7Improves a machine's processing quality,",
                     "&7increasing useful yields.");
 
-            // --- Tools & gadgets ---
             case "STB_MULTIBUILDER":
                 return java.util.Arrays.asList(
                     "&7A configurable building tool that places",
@@ -535,7 +524,6 @@ public final class SlimefunBridge implements SlimefunAddon {
                     "&7Emits a configurable repeating redstone",
                     "&7pulse to drive timed contraptions.");
 
-            // --- Crafting components & resources ---
             case "STB_CIRCUITBOARD":
             case "STB_SIMPLECIRCUIT":
             case "STB_INTEGRATEDCIRCUIT":

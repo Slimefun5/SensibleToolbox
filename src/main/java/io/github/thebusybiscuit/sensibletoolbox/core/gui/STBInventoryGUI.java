@@ -215,12 +215,15 @@ public class STBInventoryGUI implements InventoryGUI {
         return inventory.getViewers();
     }
 
+    /**
+     * Dispatches a click within this GUI to its slot handlers.
+     *
+     * @implNote The try/finally cancels the event even when a handler throws, so a handler bug can never leave the
+     *           click uncancelled and let a player pull items out of the GUI.
+     */
     public void receiveEvent(InventoryClickEvent event) {
         boolean shouldCancel = true;
 
-        // try/finally here ensures the event always gets cancelled, even if
-        // a listener's code throws an exception; we don't want bugs in
-        // listeners allowing players to take items out of a GUI
         try {
             if (containsSlot(event.getRawSlot())) {
                 // clicking inside the GUI

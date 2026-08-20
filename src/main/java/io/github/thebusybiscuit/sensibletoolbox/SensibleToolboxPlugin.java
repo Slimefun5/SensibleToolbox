@@ -319,9 +319,7 @@ public class SensibleToolboxPlugin extends JavaPlugin implements ConfigurationLi
         }
 
         for (Player p : getServer().getOnlinePlayers()) {
-            // Any open inventory GUI's must be closed -
-            // if they stay open after server reload, event dispatch will probably not work,
-            // allowing fake items to be removed from them - not a good thing
+            // GUIs left open across a reload lose event dispatch, letting players pull fake items out
             InventoryGUI gui = STBInventoryGUI.getOpenGUI(p);
 
             if (gui != null) {

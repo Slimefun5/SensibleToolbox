@@ -143,12 +143,9 @@ public final class BlockUtil {
             }
         }
 
-        // normal to the block face
         Vector normal = new Vector(face.getModX(), face.getModY(), face.getModZ());
 
-        // get any two points along the line the player is looking
-        // player's eye location is an obvious choice
-        // second point can be anywhere along the line of sight
+        // eye plus a second point along the sight line define the ray intersected with the block face
         Location loc = player.getEyeLocation();
         Vector eye = new Vector(loc.getX(), loc.getY(), loc.getZ());
         Vector p2 = eye.clone().add(player.getLocation().getDirection());
