@@ -1,183 +1,360 @@
-# German item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
-# name = display name, '&' colour codes preserved. Missing items fall back to English.
-
 STB_ADVANCEDMOISTURECHECKER:
-  name: "&fErweiterter Feuchtigkeitsmesser"
+  name: '&fErweiterter Feuchtigkeitsmesser'
+  type:
+  - '&7&oWerkzeug'
 STB_ADVANCEDRECIPEBOOK:
-  name: "&fErweitertes Rezeptbuch"
+  name: '&fErweitertes Rezeptbuch'
+  type:
+  - '&7&oGadget'
 STB_ADVANCEDSENDERMODULE:
-  name: "&fI.R. Mod: Erw. Sender"
+  name: '&fI.R. Mod: Erw. Sender'
+  type:
+  - '&7&oKomponente'
 STB_ANGELICBLOCK:
-  name: "&fEngelsblock"
+  name: '&fEngelsblock'
+  type:
+  - '&7&oGadget'
 STB_AUTOBUILDER:
-  name: "&fAuto-Bauer"
+  name: '&fAuto-Bauer'
+  type:
+  - '&7&oMaschine'
 STB_AUTOFARM:
-  name: "&fAuto-Farm"
+  name: '&fAuto-Farm'
+  type:
+  - '&7&oMaschine'
 STB_AUTOFARM2:
-  name: "&fAuto-Farm MkII"
+  name: '&fAuto-Farm MkII'
+  type:
+  - '&7&oMaschine'
 STB_AUTOFORESTER:
-  name: "&fAuto-Förster"
+  name: '&fAuto-Förster'
+  type:
+  - '&7&oMaschine'
 STB_BASICSOLARCELL:
-  name: "&fEinfaches Solarmodul"
+  name: '&fEinfaches Solarmodul'
+  type:
+  - '&7&oGenerator'
 STB_BIGSTORAGEUNIT:
-  name: "&fBSU"
+  name: '&fBSU'
+  type:
+  - '&7&oMaschine'
 STB_BIOENGINE:
-  name: "&fBio-Motor"
+  name: '&fBio-Motor'
+  type:
+  - '&7&oGenerator'
 STB_BLANKMODULE:
-  name: "&fLeeres Item-Router-Modul"
+  name: '&fLeeres Item-Router-Modul'
+  type:
+  - '&7&oKomponente'
 STB_BLOCKUPDATEDETECTOR:
-  name: "&fBlockänderungsdetektor"
+  name: '&fBlockänderungsdetektor'
+  type:
+  - '&7&oMaschine'
 STB_BREAKERMODULE:
-  name: "&fI.R. Mod: Brecher"
+  name: '&fI.R. Mod: Brecher'
+  type:
+  - '&7&oKomponente'
 STB_CIRCUITBOARD:
-  name: "&fPlatine"
+  name: '&fPlatine'
+  type:
+  - '&7&oKomponente'
 STB_DENSESOLAR:
-  name: "&fDichtes Solarmodul"
+  name: '&fDichtes Solarmodul'
+  type:
+  - '&7&oGenerator'
 STB_DIAMONDCOMBINEHOE:
-  name: "&fDiamant-Kombihacke"
+  name: '&fDiamant-Kombihacke'
+  type:
+  - '&7&oWerkzeug'
 STB_DISTRIBUTORMODULE:
-  name: "&fI.R. Mod: Verteiler"
+  name: '&fI.R. Mod: Verteiler'
+  type:
+  - '&7&oKomponente'
 STB_DROPPERMODULE:
-  name: "&fI.R. Mod: Werfer"
+  name: '&fI.R. Mod: Werfer'
+  type:
+  - '&7&oKomponente'
 STB_EJECTORUPGRADE:
-  name: "&fAuswerfer-Upgrade"
+  name: '&fAuswerfer-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_ELECTRICALENERGIZER:
-  name: "&fElektrischer Energetisierer"
+  name: '&fElektrischer Energetisierer'
+  type:
+  - '&7&oMaschine'
 STB_ELEVATOR:
-  name: "&fAufzug"
+  name: '&fAufzug'
+  type:
+  - '&7&oMaschine'
 STB_ENDERBAG:
-  name: "&fEnder-Tasche"
+  name: '&fEnder-Tasche'
+  type:
+  - '&7&oGadget'
 STB_ENDERBOX:
-  name: "&fEnder-Box"
+  name: '&fEnder-Box'
+  type:
+  - '&7&oMaschine'
 STB_ENDERLEASH:
-  name: "&fEnder-Leine"
+  name: '&fEnder-Leine'
+  type:
+  - '&7&oGadget'
 STB_ENDERTUNER:
-  name: "&fEnder-Abstimmer"
+  name: '&fEnder-Abstimmer'
+  type:
+  - '&7&oWerkzeug'
 STB_ENERGIZEDGOLDDUST:
-  name: "&fEnergetisierter Goldstaub"
+  name: '&fEnergetisierter Goldstaub'
+  type:
+  - '&7&oRohstoff'
 STB_ENERGIZEDGOLDINGOT:
-  name: "&fEnergetisierter Goldbarren"
+  name: '&fEnergetisierter Goldbarren'
+  type:
+  - '&7&oRohstoff'
 STB_ENERGIZEDIRONDUST:
-  name: "&fEnergetisierter Eisenstaub"
+  name: '&fEnergetisierter Eisenstaub'
+  type:
+  - '&7&oRohstoff'
 STB_ENERGIZEDIRONINGOT:
-  name: "&fEnergetisierter Eisenbarren"
+  name: '&fEnergetisierter Eisenbarren'
+  type:
+  - '&7&oRohstoff'
 STB_ENERGIZEDQUARTZ:
-  name: "&fEnergetisierter Quarz"
+  name: '&fEnergetisierter Quarz'
+  type:
+  - '&7&oRohstoff'
 STB_FERMENTER:
-  name: "&fFermenter"
+  name: '&fFermenter'
+  type:
+  - '&7&oMaschine'
 STB_FIFTYKBATTERYBOX:
-  name: "&f50K-Batteriebox"
+  name: '&f50K-Batteriebox'
+  type:
+  - '&7&oMaschine'
 STB_FIFTYKENERGYCELL:
-  name: "&f50K-Energiezelle"
+  name: '&f50K-Energiezelle'
+  type:
+  - '&7&oKomponente'
 STB_FISHBAIT:
-  name: "&fFischköder"
+  name: '&fFischköder'
+  type:
+  - '&7&oKomponente'
 STB_FISHINGNET:
-  name: "&fFischernetz"
+  name: '&fFischernetz'
+  type:
+  - '&7&oMaschine'
 STB_GOLDCOMBINEHOE:
-  name: "&fGold-Kombihacke"
+  name: '&fGold-Kombihacke'
+  type:
+  - '&7&oWerkzeug'
 STB_GOLDDUST:
-  name: "&fGoldstaub"
+  name: '&fGoldstaub'
+  type:
+  - '&7&oRohstoff'
 STB_HEATENGINE:
-  name: "&fWärmemotor"
+  name: '&fWärmemotor'
+  type:
+  - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
-  name: "&fHolografischer Monitor"
+  name: '&fHolografischer Monitor'
+  type:
+  - '&7&oMaschine'
 STB_HYPERSENDERMODULE:
-  name: "&fI.R. Mod: Hypersender"
+  name: '&fI.R. Mod: Hypersender'
+  type:
+  - '&7&oKomponente'
 STB_HYPERSTORAGEUNIT:
-  name: "&fHSU"
+  name: '&fHSU'
+  type:
+  - '&7&oMaschine'
 STB_INFERNALDUST:
-  name: "&fHöllenstaub"
+  name: '&fHöllenstaub'
+  type:
+  - '&7&oRohstoff'
 STB_INFERNALFARM:
-  name: "&fHöllen-Farm"
+  name: '&fHöllen-Farm'
+  type:
+  - '&7&oMaschine'
 STB_INTEGRATEDCIRCUIT:
-  name: "&fIntegrierter Schaltkreis"
+  name: '&fIntegrierter Schaltkreis'
+  type:
+  - '&7&oKomponente'
 STB_IRONCOMBINEHOE:
-  name: "&fEisen-Kombihacke"
+  name: '&fEisen-Kombihacke'
+  type:
+  - '&7&oWerkzeug'
 STB_IRONDUST:
-  name: "&fEisenstaub"
+  name: '&fEisenstaub'
+  type:
+  - '&7&oRohstoff'
 STB_ITEMROUTER:
-  name: "&fItem-Router"
+  name: '&fItem-Router'
+  type:
+  - '&7&oMaschine'
 STB_LANDMARKER:
-  name: "&fLandmarkierung"
+  name: '&fLandmarkierung'
+  type:
+  - '&7&oWerkzeug'
 STB_MACHINEFRAME:
-  name: "&fMaschinenrahmen"
+  name: '&fMaschinenrahmen'
+  type:
+  - '&7&oKomponente'
 STB_MAGMATICENGINE:
-  name: "&fMagmamotor"
+  name: '&fMagmamotor'
+  type:
+  - '&7&oGenerator'
 STB_MASHER:
-  name: "&fZerkleinerer"
+  name: '&fZerkleinerer'
+  type:
+  - '&7&oMaschine'
 STB_MOISTURECHECKER:
-  name: "&fFeuchtigkeitsmesser"
+  name: '&fFeuchtigkeitsmesser'
+  type:
+  - '&7&oWerkzeug'
 STB_MULTIBUILDER:
-  name: "&fMultibauer"
+  name: '&fMultibauer'
+  type:
+  - '&7&oWerkzeug'
 STB_MULTIMETER:
-  name: "&fMultimeter"
+  name: '&fMultimeter'
+  type:
+  - '&7&oWerkzeug'
 STB_PAINTBRUSH:
-  name: "&fPinsel"
+  name: '&fPinsel'
+  type:
+  - '&7&oWerkzeug'
 STB_PAINTCAN:
-  name: "&fFarbdose"
+  name: '&fFarbdose'
+  type:
+  - '&7&oMaschine'
 STB_PAINTROLLER:
-  name: "&fFarbroller"
+  name: '&fFarbroller'
+  type:
+  - '&7&oWerkzeug'
 STB_POWERMONITOR:
-  name: "&fEnergiemonitor"
+  name: '&fEnergiemonitor'
+  type:
+  - '&7&oMaschine'
 STB_PULLERMODULE:
-  name: "&fI.R. Mod: Zieher"
+  name: '&fI.R. Mod: Zieher'
+  type:
+  - '&7&oKomponente'
 STB_PUMP:
-  name: "&fPumpe"
+  name: '&fPumpe'
+  type:
+  - '&7&oMaschine'
 STB_PVCELL:
-  name: "&fPV-Zelle"
+  name: '&fPV-Zelle'
+  type:
+  - '&7&oKomponente'
 STB_QUARTZDUST:
-  name: "&fQuarzstaub"
+  name: '&fQuarzstaub'
+  type:
+  - '&7&oRohstoff'
 STB_RECEIVERMODULE:
-  name: "&fI.R. Mod: Empfänger"
+  name: '&fI.R. Mod: Empfänger'
+  type:
+  - '&7&oKomponente'
 STB_RECIPEBOOK:
-  name: "&fRezeptbuch"
+  name: '&fRezeptbuch'
+  type:
+  - '&7&oGadget'
 STB_REDSTONECLOCK:
-  name: "&fRedstone-Uhr"
+  name: '&fRedstone-Uhr'
+  type:
+  - '&7&oMaschine'
 STB_REGULATORUPGRADE:
-  name: "&fRegler-Upgrade"
+  name: '&fRegler-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_SAWMILL:
-  name: "&fSägewerk"
+  name: '&fSägewerk'
+  type:
+  - '&7&oMaschine'
 STB_SCURELAY:
-  name: "&fSCU-Relais"
+  name: '&fSCU-Relais'
+  type:
+  - '&7&oMaschine'
 STB_SENDERMODULE:
-  name: "&fI.R. Mod: Sender"
+  name: '&fI.R. Mod: Sender'
+  type:
+  - '&7&oKomponente'
 STB_SILICONWAFER:
-  name: "&fSiliziumwafer"
+  name: '&fSiliziumwafer'
+  type:
+  - '&7&oKomponente'
 STB_SILKYBREAKERMODULE:
-  name: "&fI.R. Mod: Behutsamer Brecher"
+  name: '&fI.R. Mod: Behutsamer Brecher'
+  type:
+  - '&7&oKomponente'
 STB_SIMPLECIRCUIT:
-  name: "&fEinfacher elektronischer Schaltkreis"
+  name: '&fEinfacher elektronischer Schaltkreis'
+  type:
+  - '&7&oKomponente'
 STB_SMELTER:
-  name: "&fSchmelzofen"
+  name: '&fSchmelzofen'
+  type:
+  - '&7&oMaschine'
 STB_SORTERMODULE:
-  name: "&fI.R. Mod: Sortierer"
+  name: '&fI.R. Mod: Sortierer'
+  type:
+  - '&7&oKomponente'
 STB_SOUNDMUFFLER:
-  name: "&fSchalldämpfer"
+  name: '&fSchalldämpfer'
+  type:
+  - '&7&oMaschine'
 STB_SPEEDMODULE:
-  name: "&fI.R. Mod: Geschwindigkeits-Upgrade"
+  name: '&fI.R. Mod: Geschwindigkeits-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_SPEEDUPGRADE:
-  name: "&fGeschwindigkeits-Upgrade"
+  name: '&fGeschwindigkeits-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_STACKMODULE:
-  name: "&fI.R. Mod: Stapel-Upgrade"
+  name: '&fI.R. Mod: Stapel-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_SUBSPACETRANSPONDER:
-  name: "&fSubraum-Transponder"
+  name: '&fSubraum-Transponder'
+  type:
+  - '&7&oKomponente'
 STB_TAPEMEASURE:
-  name: "&fMaßband"
+  name: '&fMaßband'
+  type:
+  - '&7&oWerkzeug'
 STB_TENKBATTERYBOX:
-  name: "&f10K-Batteriebox"
+  name: '&f10K-Batteriebox'
+  type:
+  - '&7&oMaschine'
 STB_TENKENERGYCELL:
-  name: "&f10K-Energiezelle"
+  name: '&f10K-Energiezelle'
+  type:
+  - '&7&oKomponente'
 STB_THOROUGHNESSUPGRADE:
-  name: "&fGründlichkeits-Upgrade"
+  name: '&fGründlichkeits-Upgrade'
+  type:
+  - '&7&oKomponente'
 STB_TOUGHMACHINEFRAME:
-  name: "&fRobuster Maschinenrahmen"
+  name: '&fRobuster Maschinenrahmen'
+  type:
+  - '&7&oKomponente'
 STB_TRASHCAN:
-  name: "&fMülleimer"
+  name: '&fMülleimer'
+  type:
+  - '&7&oMaschine'
 STB_UNLINKEDSCURELAY:
-  name: "&fNicht verbundenes SCU-Relais"
+  name: '&fNicht verbundenes SCU-Relais'
+  type:
+  - '&7&oKomponente'
 STB_VACUUMMODULE:
-  name: "&fI.R. Mod: Sauger"
+  name: '&fI.R. Mod: Sauger'
+  type:
+  - '&7&oKomponente'
 STB_WATERINGCAN:
-  name: "&fGießkanne"
+  name: '&fGießkanne'
+  type:
+  - '&7&oWerkzeug'
 STB_WOODCOMBINEHOE:
-  name: "&fHolz-Kombihacke"
+  name: '&fHolz-Kombihacke'
+  type:
+  - '&7&oWerkzeug'

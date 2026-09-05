@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oĮrankis'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oĮtaisas'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oĮtaisas'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oMašina'
+STB_AUTOFARM:
+  type:
+  - '&7&oMašina'
+STB_AUTOFARM2:
+  type:
+  - '&7&oMašina'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oMašina'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oGeneratorius'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oMašina'
+STB_BIOENGINE:
+  type:
+  - '&7&oGeneratorius'
+STB_BLANKMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oMašina'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oKomponentas'
+STB_DENSESOLAR:
+  type:
+  - '&7&oGeneratorius'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oĮrankis'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oKomponentas'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oMašina'
+STB_ELEVATOR:
+  type:
+  - '&7&oMašina'
+STB_ENDERBAG:
+  type:
+  - '&7&oĮtaisas'
+STB_ENDERBOX:
+  type:
+  - '&7&oMašina'
+STB_ENDERLEASH:
+  type:
+  - '&7&oĮtaisas'
+STB_ENDERTUNER:
+  type:
+  - '&7&oĮrankis'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oIšteklius'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oIšteklius'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oIšteklius'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oIšteklius'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oIšteklius'
+STB_FERMENTER:
+  type:
+  - '&7&oMašina'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oMašina'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oKomponentas'
+STB_FISHBAIT:
+  type:
+  - '&7&oKomponentas'
+STB_FISHINGNET:
+  type:
+  - '&7&oMašina'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oĮrankis'
+STB_GOLDDUST:
+  type:
+  - '&7&oIšteklius'
+STB_HEATENGINE:
+  type:
+  - '&7&oGeneratorius'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oMašina'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oMašina'
+STB_INFERNALDUST:
+  type:
+  - '&7&oIšteklius'
+STB_INFERNALFARM:
+  type:
+  - '&7&oMašina'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oKomponentas'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oĮrankis'
+STB_IRONDUST:
+  type:
+  - '&7&oIšteklius'
+STB_ITEMROUTER:
+  type:
+  - '&7&oMašina'
+STB_LANDMARKER:
+  type:
+  - '&7&oĮrankis'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oKomponentas'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oGeneratorius'
+STB_MASHER:
+  type:
+  - '&7&oMašina'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oĮrankis'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oĮrankis'
+STB_MULTIMETER:
+  type:
+  - '&7&oĮrankis'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oĮrankis'
+STB_PAINTCAN:
+  type:
+  - '&7&oMašina'
+STB_PAINTROLLER:
+  type:
+  - '&7&oĮrankis'
+STB_POWERMONITOR:
+  type:
+  - '&7&oMašina'
+STB_PULLERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_PUMP:
+  type:
+  - '&7&oMašina'
+STB_PVCELL:
+  type:
+  - '&7&oKomponentas'
+STB_QUARTZDUST:
+  type:
+  - '&7&oIšteklius'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oĮtaisas'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oMašina'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oKomponentas'
+STB_SAWMILL:
+  type:
+  - '&7&oMašina'
+STB_SCURELAY:
+  type:
+  - '&7&oMašina'
+STB_SENDERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_SILICONWAFER:
+  type:
+  - '&7&oKomponentas'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oKomponentas'
+STB_SMELTER:
+  type:
+  - '&7&oMašina'
+STB_SORTERMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oMašina'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oKomponentas'
+STB_STACKMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oKomponentas'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oĮrankis'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oMašina'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oKomponentas'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oKomponentas'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oKomponentas'
+STB_TRASHCAN:
+  type:
+  - '&7&oMašina'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oKomponentas'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oKomponentas'
+STB_WATERINGCAN:
+  type:
+  - '&7&oĮrankis'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oĮrankis'

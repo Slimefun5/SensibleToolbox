@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oUnealtă'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oGadget'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oGadget'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oMașină'
+STB_AUTOFARM:
+  type:
+  - '&7&oMașină'
+STB_AUTOFARM2:
+  type:
+  - '&7&oMașină'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oMașină'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oGenerator'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oMașină'
+STB_BIOENGINE:
+  type:
+  - '&7&oGenerator'
+STB_BLANKMODULE:
+  type:
+  - '&7&oComponentă'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oMașină'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oComponentă'
+STB_DENSESOLAR:
+  type:
+  - '&7&oGenerator'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oUnealtă'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oComponentă'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oComponentă'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oMașină'
+STB_ELEVATOR:
+  type:
+  - '&7&oMașină'
+STB_ENDERBAG:
+  type:
+  - '&7&oGadget'
+STB_ENDERBOX:
+  type:
+  - '&7&oMașină'
+STB_ENDERLEASH:
+  type:
+  - '&7&oGadget'
+STB_ENDERTUNER:
+  type:
+  - '&7&oUnealtă'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oResursă'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oResursă'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oResursă'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oResursă'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oResursă'
+STB_FERMENTER:
+  type:
+  - '&7&oMașină'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oMașină'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oComponentă'
+STB_FISHBAIT:
+  type:
+  - '&7&oComponentă'
+STB_FISHINGNET:
+  type:
+  - '&7&oMașină'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oUnealtă'
+STB_GOLDDUST:
+  type:
+  - '&7&oResursă'
+STB_HEATENGINE:
+  type:
+  - '&7&oGenerator'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oMașină'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oMașină'
+STB_INFERNALDUST:
+  type:
+  - '&7&oResursă'
+STB_INFERNALFARM:
+  type:
+  - '&7&oMașină'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oComponentă'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oUnealtă'
+STB_IRONDUST:
+  type:
+  - '&7&oResursă'
+STB_ITEMROUTER:
+  type:
+  - '&7&oMașină'
+STB_LANDMARKER:
+  type:
+  - '&7&oUnealtă'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oComponentă'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oGenerator'
+STB_MASHER:
+  type:
+  - '&7&oMașină'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oUnealtă'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oUnealtă'
+STB_MULTIMETER:
+  type:
+  - '&7&oUnealtă'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oUnealtă'
+STB_PAINTCAN:
+  type:
+  - '&7&oMașină'
+STB_PAINTROLLER:
+  type:
+  - '&7&oUnealtă'
+STB_POWERMONITOR:
+  type:
+  - '&7&oMașină'
+STB_PULLERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_PUMP:
+  type:
+  - '&7&oMașină'
+STB_PVCELL:
+  type:
+  - '&7&oComponentă'
+STB_QUARTZDUST:
+  type:
+  - '&7&oResursă'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oGadget'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oMașină'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oComponentă'
+STB_SAWMILL:
+  type:
+  - '&7&oMașină'
+STB_SCURELAY:
+  type:
+  - '&7&oMașină'
+STB_SENDERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_SILICONWAFER:
+  type:
+  - '&7&oComponentă'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oComponentă'
+STB_SMELTER:
+  type:
+  - '&7&oMașină'
+STB_SORTERMODULE:
+  type:
+  - '&7&oComponentă'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oMașină'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oComponentă'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oComponentă'
+STB_STACKMODULE:
+  type:
+  - '&7&oComponentă'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oComponentă'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oUnealtă'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oMașină'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oComponentă'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oComponentă'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oComponentă'
+STB_TRASHCAN:
+  type:
+  - '&7&oMașină'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oComponentă'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oComponentă'
+STB_WATERINGCAN:
+  type:
+  - '&7&oUnealtă'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oUnealtă'

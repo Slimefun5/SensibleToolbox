@@ -1,183 +1,360 @@
-# Brazilian Portuguese item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
-# name = display name, '&' colour codes preserved. Missing items fall back to English.
-
 STB_ADVANCEDMOISTURECHECKER:
-  name: "&fMedidor de Umidade Avançado"
+  name: '&fMedidor de Umidade Avançado'
+  type:
+  - '&7&oFerramenta'
 STB_ADVANCEDRECIPEBOOK:
-  name: "&fLivro de Receitas Avançado"
+  name: '&fLivro de Receitas Avançado'
+  type:
+  - '&7&oUtensílio'
 STB_ADVANCEDSENDERMODULE:
-  name: "&fI.R. Mod: Emissor Avançado"
+  name: '&fI.R. Mod: Emissor Avançado'
+  type:
+  - '&7&oComponente'
 STB_ANGELICBLOCK:
-  name: "&fBloco Angelical"
+  name: '&fBloco Angelical'
+  type:
+  - '&7&oUtensílio'
 STB_AUTOBUILDER:
-  name: "&fConstrutor Automático"
+  name: '&fConstrutor Automático'
+  type:
+  - '&7&oMáquina'
 STB_AUTOFARM:
-  name: "&fFazenda Automática"
+  name: '&fFazenda Automática'
+  type:
+  - '&7&oMáquina'
 STB_AUTOFARM2:
-  name: "&fFazenda Automática MkII"
+  name: '&fFazenda Automática MkII'
+  type:
+  - '&7&oMáquina'
 STB_AUTOFORESTER:
-  name: "&fFlorestador Automático"
+  name: '&fFlorestador Automático'
+  type:
+  - '&7&oMáquina'
 STB_BASICSOLARCELL:
-  name: "&fSolar Básica"
+  name: '&fSolar Básica'
+  type:
+  - '&7&oGerador'
 STB_BIGSTORAGEUNIT:
-  name: "&fBSU"
+  name: '&fBSU'
+  type:
+  - '&7&oMáquina'
 STB_BIOENGINE:
-  name: "&fBiomotor"
+  name: '&fBiomotor'
+  type:
+  - '&7&oGerador'
 STB_BLANKMODULE:
-  name: "&fMódulo de Roteador de Itens em Branco"
+  name: '&fMódulo de Roteador de Itens em Branco'
+  type:
+  - '&7&oComponente'
 STB_BLOCKUPDATEDETECTOR:
-  name: "&fDetector de Atualização de Bloco"
+  name: '&fDetector de Atualização de Bloco'
+  type:
+  - '&7&oMáquina'
 STB_BREAKERMODULE:
-  name: "&fI.R. Mod: Quebrador"
+  name: '&fI.R. Mod: Quebrador'
+  type:
+  - '&7&oComponente'
 STB_CIRCUITBOARD:
-  name: "&fPlaca de Circuito"
+  name: '&fPlaca de Circuito'
+  type:
+  - '&7&oComponente'
 STB_DENSESOLAR:
-  name: "&fSolar Densa"
+  name: '&fSolar Densa'
+  type:
+  - '&7&oGerador'
 STB_DIAMONDCOMBINEHOE:
-  name: "&fEnxada Combinada de Diamante"
+  name: '&fEnxada Combinada de Diamante'
+  type:
+  - '&7&oFerramenta'
 STB_DISTRIBUTORMODULE:
-  name: "&fI.R. Mod: Distribuidor"
+  name: '&fI.R. Mod: Distribuidor'
+  type:
+  - '&7&oComponente'
 STB_DROPPERMODULE:
-  name: "&fI.R. Mod: Soltador"
+  name: '&fI.R. Mod: Soltador'
+  type:
+  - '&7&oComponente'
 STB_EJECTORUPGRADE:
-  name: "&fMelhoria de Ejetor"
+  name: '&fMelhoria de Ejetor'
+  type:
+  - '&7&oComponente'
 STB_ELECTRICALENERGIZER:
-  name: "&fEnergizador Elétrico"
+  name: '&fEnergizador Elétrico'
+  type:
+  - '&7&oMáquina'
 STB_ELEVATOR:
-  name: "&fElevador"
+  name: '&fElevador'
+  type:
+  - '&7&oMáquina'
 STB_ENDERBAG:
-  name: "&fBolsa do Ender"
+  name: '&fBolsa do Ender'
+  type:
+  - '&7&oUtensílio'
 STB_ENDERBOX:
-  name: "&fCaixa do Ender"
+  name: '&fCaixa do Ender'
+  type:
+  - '&7&oMáquina'
 STB_ENDERLEASH:
-  name: "&fColeira do Ender"
+  name: '&fColeira do Ender'
+  type:
+  - '&7&oUtensílio'
 STB_ENDERTUNER:
-  name: "&fSintonizador do Ender"
+  name: '&fSintonizador do Ender'
+  type:
+  - '&7&oFerramenta'
 STB_ENERGIZEDGOLDDUST:
-  name: "&fPó de Ouro Energizado"
+  name: '&fPó de Ouro Energizado'
+  type:
+  - '&7&oRecurso'
 STB_ENERGIZEDGOLDINGOT:
-  name: "&fBarra de Ouro Energizada"
+  name: '&fBarra de Ouro Energizada'
+  type:
+  - '&7&oRecurso'
 STB_ENERGIZEDIRONDUST:
-  name: "&fPó de Ferro Energizado"
+  name: '&fPó de Ferro Energizado'
+  type:
+  - '&7&oRecurso'
 STB_ENERGIZEDIRONINGOT:
-  name: "&fBarra de Ferro Energizada"
+  name: '&fBarra de Ferro Energizada'
+  type:
+  - '&7&oRecurso'
 STB_ENERGIZEDQUARTZ:
-  name: "&fQuartzo Energizado"
+  name: '&fQuartzo Energizado'
+  type:
+  - '&7&oRecurso'
 STB_FERMENTER:
-  name: "&fFermentador"
+  name: '&fFermentador'
+  type:
+  - '&7&oMáquina'
 STB_FIFTYKBATTERYBOX:
-  name: "&fCaixa de Baterias 50K"
+  name: '&fCaixa de Baterias 50K'
+  type:
+  - '&7&oMáquina'
 STB_FIFTYKENERGYCELL:
-  name: "&fCélula de Energia 50K"
+  name: '&fCélula de Energia 50K'
+  type:
+  - '&7&oComponente'
 STB_FISHBAIT:
-  name: "&fIsca de Peixe"
+  name: '&fIsca de Peixe'
+  type:
+  - '&7&oComponente'
 STB_FISHINGNET:
-  name: "&fRede de Pesca"
+  name: '&fRede de Pesca'
+  type:
+  - '&7&oMáquina'
 STB_GOLDCOMBINEHOE:
-  name: "&fEnxada Combinada de Ouro"
+  name: '&fEnxada Combinada de Ouro'
+  type:
+  - '&7&oFerramenta'
 STB_GOLDDUST:
-  name: "&fPó de Ouro"
+  name: '&fPó de Ouro'
+  type:
+  - '&7&oRecurso'
 STB_HEATENGINE:
-  name: "&fMotor Térmico"
+  name: '&fMotor Térmico'
+  type:
+  - '&7&oGerador'
 STB_HOLOGRAPHICMONITOR:
-  name: "&fMonitor Holográfico"
+  name: '&fMonitor Holográfico'
+  type:
+  - '&7&oMáquina'
 STB_HYPERSENDERMODULE:
-  name: "&fI.R. Mod: Hiperemissor"
+  name: '&fI.R. Mod: Hiperemissor'
+  type:
+  - '&7&oComponente'
 STB_HYPERSTORAGEUNIT:
-  name: "&fHSU"
+  name: '&fHSU'
+  type:
+  - '&7&oMáquina'
 STB_INFERNALDUST:
-  name: "&fPó Infernal"
+  name: '&fPó Infernal'
+  type:
+  - '&7&oRecurso'
 STB_INFERNALFARM:
-  name: "&fFazenda Infernal"
+  name: '&fFazenda Infernal'
+  type:
+  - '&7&oMáquina'
 STB_INTEGRATEDCIRCUIT:
-  name: "&fCircuito Integrado"
+  name: '&fCircuito Integrado'
+  type:
+  - '&7&oComponente'
 STB_IRONCOMBINEHOE:
-  name: "&fEnxada Combinada de Ferro"
+  name: '&fEnxada Combinada de Ferro'
+  type:
+  - '&7&oFerramenta'
 STB_IRONDUST:
-  name: "&fPó de Ferro"
+  name: '&fPó de Ferro'
+  type:
+  - '&7&oRecurso'
 STB_ITEMROUTER:
-  name: "&fRoteador de Itens"
+  name: '&fRoteador de Itens'
+  type:
+  - '&7&oMáquina'
 STB_LANDMARKER:
-  name: "&fMarcador de Terreno"
+  name: '&fMarcador de Terreno'
+  type:
+  - '&7&oFerramenta'
 STB_MACHINEFRAME:
-  name: "&fEstrutura de Máquina"
+  name: '&fEstrutura de Máquina'
+  type:
+  - '&7&oComponente'
 STB_MAGMATICENGINE:
-  name: "&fMotor Magmático"
+  name: '&fMotor Magmático'
+  type:
+  - '&7&oGerador'
 STB_MASHER:
-  name: "&fTriturador"
+  name: '&fTriturador'
+  type:
+  - '&7&oMáquina'
 STB_MOISTURECHECKER:
-  name: "&fMedidor de Umidade"
+  name: '&fMedidor de Umidade'
+  type:
+  - '&7&oFerramenta'
 STB_MULTIBUILDER:
-  name: "&fMulticonstrutor"
+  name: '&fMulticonstrutor'
+  type:
+  - '&7&oFerramenta'
 STB_MULTIMETER:
-  name: "&fMultímetro"
+  name: '&fMultímetro'
+  type:
+  - '&7&oFerramenta'
 STB_PAINTBRUSH:
-  name: "&fPincel"
+  name: '&fPincel'
+  type:
+  - '&7&oFerramenta'
 STB_PAINTCAN:
-  name: "&fLata de Tinta"
+  name: '&fLata de Tinta'
+  type:
+  - '&7&oMáquina'
 STB_PAINTROLLER:
-  name: "&fRolo de Tinta"
+  name: '&fRolo de Tinta'
+  type:
+  - '&7&oFerramenta'
 STB_POWERMONITOR:
-  name: "&fMonitor de Energia"
+  name: '&fMonitor de Energia'
+  type:
+  - '&7&oMáquina'
 STB_PULLERMODULE:
-  name: "&fI.R. Mod: Puxador"
+  name: '&fI.R. Mod: Puxador'
+  type:
+  - '&7&oComponente'
 STB_PUMP:
-  name: "&fBomba"
+  name: '&fBomba'
+  type:
+  - '&7&oMáquina'
 STB_PVCELL:
-  name: "&fCélula PV"
+  name: '&fCélula PV'
+  type:
+  - '&7&oComponente'
 STB_QUARTZDUST:
-  name: "&fPó de Quartzo"
+  name: '&fPó de Quartzo'
+  type:
+  - '&7&oRecurso'
 STB_RECEIVERMODULE:
-  name: "&fI.R. Mod: Receptor"
+  name: '&fI.R. Mod: Receptor'
+  type:
+  - '&7&oComponente'
 STB_RECIPEBOOK:
-  name: "&fLivro de Receitas"
+  name: '&fLivro de Receitas'
+  type:
+  - '&7&oUtensílio'
 STB_REDSTONECLOCK:
-  name: "&fRelógio de Redstone"
+  name: '&fRelógio de Redstone'
+  type:
+  - '&7&oMáquina'
 STB_REGULATORUPGRADE:
-  name: "&fMelhoria de Regulador"
+  name: '&fMelhoria de Regulador'
+  type:
+  - '&7&oComponente'
 STB_SAWMILL:
-  name: "&fSerraria"
+  name: '&fSerraria'
+  type:
+  - '&7&oMáquina'
 STB_SCURELAY:
-  name: "&fRelé SCU"
+  name: '&fRelé SCU'
+  type:
+  - '&7&oMáquina'
 STB_SENDERMODULE:
-  name: "&fI.R. Mod: Emissor"
+  name: '&fI.R. Mod: Emissor'
+  type:
+  - '&7&oComponente'
 STB_SILICONWAFER:
-  name: "&fWafer de Silício"
+  name: '&fWafer de Silício'
+  type:
+  - '&7&oComponente'
 STB_SILKYBREAKERMODULE:
-  name: "&fI.R. Mod: Quebrador Sedoso"
+  name: '&fI.R. Mod: Quebrador Sedoso'
+  type:
+  - '&7&oComponente'
 STB_SIMPLECIRCUIT:
-  name: "&fCircuito Eletrônico Simples"
+  name: '&fCircuito Eletrônico Simples'
+  type:
+  - '&7&oComponente'
 STB_SMELTER:
-  name: "&fFundidor"
+  name: '&fFundidor'
+  type:
+  - '&7&oMáquina'
 STB_SORTERMODULE:
-  name: "&fI.R. Mod: Classificador"
+  name: '&fI.R. Mod: Classificador'
+  type:
+  - '&7&oComponente'
 STB_SOUNDMUFFLER:
-  name: "&fAbafador de Som"
+  name: '&fAbafador de Som'
+  type:
+  - '&7&oMáquina'
 STB_SPEEDMODULE:
-  name: "&fI.R. Mod: Melhoria de Velocidade"
+  name: '&fI.R. Mod: Melhoria de Velocidade'
+  type:
+  - '&7&oComponente'
 STB_SPEEDUPGRADE:
-  name: "&fMelhoria de Velocidade"
+  name: '&fMelhoria de Velocidade'
+  type:
+  - '&7&oComponente'
 STB_STACKMODULE:
-  name: "&fI.R. Mod: Melhoria de Pilha"
+  name: '&fI.R. Mod: Melhoria de Pilha'
+  type:
+  - '&7&oComponente'
 STB_SUBSPACETRANSPONDER:
-  name: "&fTransponder de Subespaço"
+  name: '&fTransponder de Subespaço'
+  type:
+  - '&7&oComponente'
 STB_TAPEMEASURE:
-  name: "&fFita Métrica"
+  name: '&fFita Métrica'
+  type:
+  - '&7&oFerramenta'
 STB_TENKBATTERYBOX:
-  name: "&fCaixa de Baterias 10K"
+  name: '&fCaixa de Baterias 10K'
+  type:
+  - '&7&oMáquina'
 STB_TENKENERGYCELL:
-  name: "&fCélula de Energia 10K"
+  name: '&fCélula de Energia 10K'
+  type:
+  - '&7&oComponente'
 STB_THOROUGHNESSUPGRADE:
-  name: "&fMelhoria de Minúcia"
+  name: '&fMelhoria de Minúcia'
+  type:
+  - '&7&oComponente'
 STB_TOUGHMACHINEFRAME:
-  name: "&fEstrutura de Máquina Reforçada"
+  name: '&fEstrutura de Máquina Reforçada'
+  type:
+  - '&7&oComponente'
 STB_TRASHCAN:
-  name: "&fLixeira"
+  name: '&fLixeira'
+  type:
+  - '&7&oMáquina'
 STB_UNLINKEDSCURELAY:
-  name: "&fRelé SCU Não Vinculado"
+  name: '&fRelé SCU Não Vinculado'
+  type:
+  - '&7&oComponente'
 STB_VACUUMMODULE:
-  name: "&fI.R. Mod: Aspirador"
+  name: '&fI.R. Mod: Aspirador'
+  type:
+  - '&7&oComponente'
 STB_WATERINGCAN:
-  name: "&fRegador"
+  name: '&fRegador'
+  type:
+  - '&7&oFerramenta'
 STB_WOODCOMBINEHOE:
-  name: "&fEnxada Combinada de Madeira"
+  name: '&fEnxada Combinada de Madeira'
+  type:
+  - '&7&oFerramenta'

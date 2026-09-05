@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oأداة'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oجهاز'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oمكون'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oجهاز'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oآلة'
+STB_AUTOFARM:
+  type:
+  - '&7&oآلة'
+STB_AUTOFARM2:
+  type:
+  - '&7&oآلة'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oآلة'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oمولد'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oآلة'
+STB_BIOENGINE:
+  type:
+  - '&7&oمولد'
+STB_BLANKMODULE:
+  type:
+  - '&7&oمكون'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oآلة'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oمكون'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oمكون'
+STB_DENSESOLAR:
+  type:
+  - '&7&oمولد'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oأداة'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oمكون'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oمكون'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oمكون'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oآلة'
+STB_ELEVATOR:
+  type:
+  - '&7&oآلة'
+STB_ENDERBAG:
+  type:
+  - '&7&oجهاز'
+STB_ENDERBOX:
+  type:
+  - '&7&oآلة'
+STB_ENDERLEASH:
+  type:
+  - '&7&oجهاز'
+STB_ENDERTUNER:
+  type:
+  - '&7&oأداة'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oمورد'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oمورد'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oمورد'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oمورد'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oمورد'
+STB_FERMENTER:
+  type:
+  - '&7&oآلة'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oآلة'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oمكون'
+STB_FISHBAIT:
+  type:
+  - '&7&oمكون'
+STB_FISHINGNET:
+  type:
+  - '&7&oآلة'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oأداة'
+STB_GOLDDUST:
+  type:
+  - '&7&oمورد'
+STB_HEATENGINE:
+  type:
+  - '&7&oمولد'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oآلة'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oمكون'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oآلة'
+STB_INFERNALDUST:
+  type:
+  - '&7&oمورد'
+STB_INFERNALFARM:
+  type:
+  - '&7&oآلة'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oمكون'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oأداة'
+STB_IRONDUST:
+  type:
+  - '&7&oمورد'
+STB_ITEMROUTER:
+  type:
+  - '&7&oآلة'
+STB_LANDMARKER:
+  type:
+  - '&7&oأداة'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oمكون'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oمولد'
+STB_MASHER:
+  type:
+  - '&7&oآلة'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oأداة'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oأداة'
+STB_MULTIMETER:
+  type:
+  - '&7&oأداة'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oأداة'
+STB_PAINTCAN:
+  type:
+  - '&7&oآلة'
+STB_PAINTROLLER:
+  type:
+  - '&7&oأداة'
+STB_POWERMONITOR:
+  type:
+  - '&7&oآلة'
+STB_PULLERMODULE:
+  type:
+  - '&7&oمكون'
+STB_PUMP:
+  type:
+  - '&7&oآلة'
+STB_PVCELL:
+  type:
+  - '&7&oمكون'
+STB_QUARTZDUST:
+  type:
+  - '&7&oمورد'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oمكون'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oجهاز'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oآلة'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oمكون'
+STB_SAWMILL:
+  type:
+  - '&7&oآلة'
+STB_SCURELAY:
+  type:
+  - '&7&oآلة'
+STB_SENDERMODULE:
+  type:
+  - '&7&oمكون'
+STB_SILICONWAFER:
+  type:
+  - '&7&oمكون'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oمكون'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oمكون'
+STB_SMELTER:
+  type:
+  - '&7&oآلة'
+STB_SORTERMODULE:
+  type:
+  - '&7&oمكون'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oآلة'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oمكون'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oمكون'
+STB_STACKMODULE:
+  type:
+  - '&7&oمكون'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oمكون'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oأداة'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oآلة'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oمكون'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oمكون'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oمكون'
+STB_TRASHCAN:
+  type:
+  - '&7&oآلة'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oمكون'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oمكون'
+STB_WATERINGCAN:
+  type:
+  - '&7&oأداة'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oأداة'

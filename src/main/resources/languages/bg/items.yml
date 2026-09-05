@@ -1,360 +1,270 @@
 STB_ADVANCEDMOISTURECHECKER:
-  name: '&fУлучшенный измеритель влажности'
   type:
   - '&7&oИнструмент'
 STB_ADVANCEDRECIPEBOOK:
-  name: '&fУлучшенная книга рецептов'
   type:
-  - '&7&oГаджет'
+  - '&7&oДжаджа'
 STB_ADVANCEDSENDERMODULE:
-  name: '&fI.R. Mod: Улучш. передатчик'
   type:
   - '&7&oКомпонент'
 STB_ANGELICBLOCK:
-  name: '&fАнгельский блок'
   type:
-  - '&7&oГаджет'
+  - '&7&oДжаджа'
 STB_AUTOBUILDER:
-  name: '&fАвтостроитель'
   type:
   - '&7&oМашина'
 STB_AUTOFARM:
-  name: '&fАвтоферма'
   type:
   - '&7&oМашина'
 STB_AUTOFARM2:
-  name: '&fАвтоферма MkII'
   type:
   - '&7&oМашина'
 STB_AUTOFORESTER:
-  name: '&fАвтолесник'
   type:
   - '&7&oМашина'
 STB_BASICSOLARCELL:
-  name: '&fБазовая солнечная панель'
   type:
   - '&7&oГенератор'
 STB_BIGSTORAGEUNIT:
-  name: '&fBSU'
   type:
   - '&7&oМашина'
 STB_BIOENGINE:
-  name: '&fБиодвигатель'
   type:
   - '&7&oГенератор'
 STB_BLANKMODULE:
-  name: '&fПустой модуль предметного маршрутизатора'
   type:
   - '&7&oКомпонент'
 STB_BLOCKUPDATEDETECTOR:
-  name: '&fДетектор обновления блоков'
   type:
   - '&7&oМашина'
 STB_BREAKERMODULE:
-  name: '&fI.R. Mod: Разрушитель'
   type:
   - '&7&oКомпонент'
 STB_CIRCUITBOARD:
-  name: '&fПечатная плата'
   type:
   - '&7&oКомпонент'
 STB_DENSESOLAR:
-  name: '&fПлотная солнечная панель'
   type:
   - '&7&oГенератор'
 STB_DIAMONDCOMBINEHOE:
-  name: '&fАлмазная комбо-мотыга'
   type:
   - '&7&oИнструмент'
 STB_DISTRIBUTORMODULE:
-  name: '&fI.R. Mod: Распределитель'
   type:
   - '&7&oКомпонент'
 STB_DROPPERMODULE:
-  name: '&fI.R. Mod: Сбрасыватель'
   type:
   - '&7&oКомпонент'
 STB_EJECTORUPGRADE:
-  name: '&fУлучшение выталкивателя'
   type:
   - '&7&oКомпонент'
 STB_ELECTRICALENERGIZER:
-  name: '&fЭлектрический энергайзер'
   type:
   - '&7&oМашина'
 STB_ELEVATOR:
-  name: '&fЛифт'
   type:
   - '&7&oМашина'
 STB_ENDERBAG:
-  name: '&fСумка Ender'
   type:
-  - '&7&oГаджет'
+  - '&7&oДжаджа'
 STB_ENDERBOX:
-  name: '&fКоробка Ender'
   type:
   - '&7&oМашина'
 STB_ENDERLEASH:
-  name: '&fПоводок Ender'
   type:
-  - '&7&oГаджет'
+  - '&7&oДжаджа'
 STB_ENDERTUNER:
-  name: '&fНастройщик Ender'
   type:
   - '&7&oИнструмент'
 STB_ENERGIZEDGOLDDUST:
-  name: '&fЗаряженная золотая пыль'
   type:
   - '&7&oРесурс'
 STB_ENERGIZEDGOLDINGOT:
-  name: '&fЗаряженный золотой слиток'
   type:
   - '&7&oРесурс'
 STB_ENERGIZEDIRONDUST:
-  name: '&fЗаряженная железная пыль'
   type:
   - '&7&oРесурс'
 STB_ENERGIZEDIRONINGOT:
-  name: '&fЗаряженный железный слиток'
   type:
   - '&7&oРесурс'
 STB_ENERGIZEDQUARTZ:
-  name: '&fЗаряженный кварц'
   type:
   - '&7&oРесурс'
 STB_FERMENTER:
-  name: '&fФерментатор'
   type:
   - '&7&oМашина'
 STB_FIFTYKBATTERYBOX:
-  name: '&f50K батарейный блок'
   type:
   - '&7&oМашина'
 STB_FIFTYKENERGYCELL:
-  name: '&f50K энергоячейка'
   type:
   - '&7&oКомпонент'
 STB_FISHBAIT:
-  name: '&fРыбная наживка'
   type:
   - '&7&oКомпонент'
 STB_FISHINGNET:
-  name: '&fРыболовная сеть'
   type:
   - '&7&oМашина'
 STB_GOLDCOMBINEHOE:
-  name: '&fЗолотая комбо-мотыга'
   type:
   - '&7&oИнструмент'
 STB_GOLDDUST:
-  name: '&fЗолотая пыль'
   type:
   - '&7&oРесурс'
 STB_HEATENGINE:
-  name: '&fТепловой двигатель'
   type:
   - '&7&oГенератор'
 STB_HOLOGRAPHICMONITOR:
-  name: '&fГолографический монитор'
   type:
   - '&7&oМашина'
 STB_HYPERSENDERMODULE:
-  name: '&fI.R. Mod: Гиперпередатчик'
   type:
   - '&7&oКомпонент'
 STB_HYPERSTORAGEUNIT:
-  name: '&fHSU'
   type:
   - '&7&oМашина'
 STB_INFERNALDUST:
-  name: '&fАдская пыль'
   type:
   - '&7&oРесурс'
 STB_INFERNALFARM:
-  name: '&fАдская ферма'
   type:
   - '&7&oМашина'
 STB_INTEGRATEDCIRCUIT:
-  name: '&fИнтегральная схема'
   type:
   - '&7&oКомпонент'
 STB_IRONCOMBINEHOE:
-  name: '&fЖелезная комбо-мотыга'
   type:
   - '&7&oИнструмент'
 STB_IRONDUST:
-  name: '&fЖелезная пыль'
   type:
   - '&7&oРесурс'
 STB_ITEMROUTER:
-  name: '&fПредметный маршрутизатор'
   type:
   - '&7&oМашина'
 STB_LANDMARKER:
-  name: '&fМежевой знак'
   type:
   - '&7&oИнструмент'
 STB_MACHINEFRAME:
-  name: '&fКаркас машины'
   type:
   - '&7&oКомпонент'
 STB_MAGMATICENGINE:
-  name: '&fМагматический двигатель'
   type:
   - '&7&oГенератор'
 STB_MASHER:
-  name: '&fДробилка'
   type:
   - '&7&oМашина'
 STB_MOISTURECHECKER:
-  name: '&fИзмеритель влажности'
   type:
   - '&7&oИнструмент'
 STB_MULTIBUILDER:
-  name: '&fМультистроитель'
   type:
   - '&7&oИнструмент'
 STB_MULTIMETER:
-  name: '&fМультиметр'
   type:
   - '&7&oИнструмент'
 STB_PAINTBRUSH:
-  name: '&fКисть'
   type:
   - '&7&oИнструмент'
 STB_PAINTCAN:
-  name: '&fБанка с краской'
   type:
   - '&7&oМашина'
 STB_PAINTROLLER:
-  name: '&fМалярный валик'
   type:
   - '&7&oИнструмент'
 STB_POWERMONITOR:
-  name: '&fМонитор энергии'
   type:
   - '&7&oМашина'
 STB_PULLERMODULE:
-  name: '&fI.R. Mod: Извлекатель'
   type:
   - '&7&oКомпонент'
 STB_PUMP:
-  name: '&fНасос'
   type:
   - '&7&oМашина'
 STB_PVCELL:
-  name: '&fPV-элемент'
   type:
   - '&7&oКомпонент'
 STB_QUARTZDUST:
-  name: '&fКварцевая пыль'
   type:
   - '&7&oРесурс'
 STB_RECEIVERMODULE:
-  name: '&fI.R. Mod: Приёмник'
   type:
   - '&7&oКомпонент'
 STB_RECIPEBOOK:
-  name: '&fКнига рецептов'
   type:
-  - '&7&oГаджет'
+  - '&7&oДжаджа'
 STB_REDSTONECLOCK:
-  name: '&fРедстоун-таймер'
   type:
   - '&7&oМашина'
 STB_REGULATORUPGRADE:
-  name: '&fУлучшение регулятора'
   type:
   - '&7&oКомпонент'
 STB_SAWMILL:
-  name: '&fЛесопилка'
   type:
   - '&7&oМашина'
 STB_SCURELAY:
-  name: '&fSCU-реле'
   type:
   - '&7&oМашина'
 STB_SENDERMODULE:
-  name: '&fI.R. Mod: Передатчик'
   type:
   - '&7&oКомпонент'
 STB_SILICONWAFER:
-  name: '&fКремниевый Wafer'
   type:
   - '&7&oКомпонент'
 STB_SILKYBREAKERMODULE:
-  name: '&fI.R. Mod: Шёлковый разрушитель'
   type:
   - '&7&oКомпонент'
 STB_SIMPLECIRCUIT:
-  name: '&fПростая электронная схема'
   type:
   - '&7&oКомпонент'
 STB_SMELTER:
-  name: '&fПлавильня'
   type:
   - '&7&oМашина'
 STB_SORTERMODULE:
-  name: '&fI.R. Mod: Сортировщик'
   type:
   - '&7&oКомпонент'
 STB_SOUNDMUFFLER:
-  name: '&fГлушитель звука'
   type:
   - '&7&oМашина'
 STB_SPEEDMODULE:
-  name: '&fI.R. Mod: Улучшение скорости'
   type:
   - '&7&oКомпонент'
 STB_SPEEDUPGRADE:
-  name: '&fУлучшение скорости'
   type:
   - '&7&oКомпонент'
 STB_STACKMODULE:
-  name: '&fI.R. Mod: Улучшение стопки'
   type:
   - '&7&oКомпонент'
 STB_SUBSPACETRANSPONDER:
-  name: '&fПодпространственный транспондер'
   type:
   - '&7&oКомпонент'
 STB_TAPEMEASURE:
-  name: '&fРулетка'
   type:
   - '&7&oИнструмент'
 STB_TENKBATTERYBOX:
-  name: '&f10K батарейный блок'
   type:
   - '&7&oМашина'
 STB_TENKENERGYCELL:
-  name: '&f10K энергоячейка'
   type:
   - '&7&oКомпонент'
 STB_THOROUGHNESSUPGRADE:
-  name: '&fУлучшение тщательности'
   type:
   - '&7&oКомпонент'
 STB_TOUGHMACHINEFRAME:
-  name: '&fПрочный каркас машины'
   type:
   - '&7&oКомпонент'
 STB_TRASHCAN:
-  name: '&fМусорный бак'
   type:
   - '&7&oМашина'
 STB_UNLINKEDSCURELAY:
-  name: '&fНесвязанное SCU-реле'
   type:
   - '&7&oКомпонент'
 STB_VACUUMMODULE:
-  name: '&fI.R. Mod: Пылесос'
   type:
   - '&7&oКомпонент'
 STB_WATERINGCAN:
-  name: '&fЛейка'
   type:
   - '&7&oИнструмент'
 STB_WOODCOMBINEHOE:
-  name: '&fДеревянная комбо-мотыга'
   type:
   - '&7&oИнструмент'

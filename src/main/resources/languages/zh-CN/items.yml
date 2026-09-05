@@ -1,183 +1,360 @@
-# Simplified Chinese item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
-# name = display name, '&' colour codes preserved. Missing items fall back to English.
-
 STB_ADVANCEDMOISTURECHECKER:
-  name: "&f高级湿度检测器"
+  name: '&f高级湿度检测器'
+  type:
+  - '&7&o工具'
 STB_ADVANCEDRECIPEBOOK:
-  name: "&f高级配方书"
+  name: '&f高级配方书'
+  type:
+  - '&7&o装置'
 STB_ADVANCEDSENDERMODULE:
-  name: "&fI.R. 模块：高级发送器"
+  name: '&fI.R. 模块：高级发送器'
+  type:
+  - '&7&o组件'
 STB_ANGELICBLOCK:
-  name: "&f天使方块"
+  name: '&f天使方块'
+  type:
+  - '&7&o装置'
 STB_AUTOBUILDER:
-  name: "&f自动建造机"
+  name: '&f自动建造机'
+  type:
+  - '&7&o机器'
 STB_AUTOFARM:
-  name: "&f自动农场"
+  name: '&f自动农场'
+  type:
+  - '&7&o机器'
 STB_AUTOFARM2:
-  name: "&f自动农场 MkII"
+  name: '&f自动农场 MkII'
+  type:
+  - '&7&o机器'
 STB_AUTOFORESTER:
-  name: "&f自动伐木机"
+  name: '&f自动伐木机'
+  type:
+  - '&7&o机器'
 STB_BASICSOLARCELL:
-  name: "&f基础太阳能板"
+  name: '&f基础太阳能板'
+  type:
+  - '&7&o发电机'
 STB_BIGSTORAGEUNIT:
-  name: "&fBSU"
+  name: '&fBSU'
+  type:
+  - '&7&o机器'
 STB_BIOENGINE:
-  name: "&f生物引擎"
+  name: '&f生物引擎'
+  type:
+  - '&7&o发电机'
 STB_BLANKMODULE:
-  name: "&f空白物品 Router 模块"
+  name: '&f空白物品 Router 模块'
+  type:
+  - '&7&o组件'
 STB_BLOCKUPDATEDETECTOR:
-  name: "&f方块更新探测器"
+  name: '&f方块更新探测器'
+  type:
+  - '&7&o机器'
 STB_BREAKERMODULE:
-  name: "&fI.R. 模块：破坏器"
+  name: '&fI.R. 模块：破坏器'
+  type:
+  - '&7&o组件'
 STB_CIRCUITBOARD:
-  name: "&f电路板"
+  name: '&f电路板'
+  type:
+  - '&7&o组件'
 STB_DENSESOLAR:
-  name: "&f密集太阳能板"
+  name: '&f密集太阳能板'
+  type:
+  - '&7&o发电机'
 STB_DIAMONDCOMBINEHOE:
-  name: "&f钻石组合锄"
+  name: '&f钻石组合锄'
+  type:
+  - '&7&o工具'
 STB_DISTRIBUTORMODULE:
-  name: "&fI.R. 模块：分配器"
+  name: '&fI.R. 模块：分配器'
+  type:
+  - '&7&o组件'
 STB_DROPPERMODULE:
-  name: "&fI.R. 模块：投放器"
+  name: '&fI.R. 模块：投放器'
+  type:
+  - '&7&o组件'
 STB_EJECTORUPGRADE:
-  name: "&f弹出升级"
+  name: '&f弹出升级'
+  type:
+  - '&7&o组件'
 STB_ELECTRICALENERGIZER:
-  name: "&f电力充能器"
+  name: '&f电力充能器'
+  type:
+  - '&7&o机器'
 STB_ELEVATOR:
-  name: "&f电梯"
+  name: '&f电梯'
+  type:
+  - '&7&o机器'
 STB_ENDERBAG:
-  name: "&fEnder 背包"
+  name: '&fEnder 背包'
+  type:
+  - '&7&o装置'
 STB_ENDERBOX:
-  name: "&fEnder 箱"
+  name: '&fEnder 箱'
+  type:
+  - '&7&o机器'
 STB_ENDERLEASH:
-  name: "&fEnder 拴绳"
+  name: '&fEnder 拴绳'
+  type:
+  - '&7&o装置'
 STB_ENDERTUNER:
-  name: "&fEnder 调谐器"
+  name: '&fEnder 调谐器'
+  type:
+  - '&7&o工具'
 STB_ENERGIZEDGOLDDUST:
-  name: "&f充能金粉"
+  name: '&f充能金粉'
+  type:
+  - '&7&o资源'
 STB_ENERGIZEDGOLDINGOT:
-  name: "&f充能金锭"
+  name: '&f充能金锭'
+  type:
+  - '&7&o资源'
 STB_ENERGIZEDIRONDUST:
-  name: "&f充能铁粉"
+  name: '&f充能铁粉'
+  type:
+  - '&7&o资源'
 STB_ENERGIZEDIRONINGOT:
-  name: "&f充能铁锭"
+  name: '&f充能铁锭'
+  type:
+  - '&7&o资源'
 STB_ENERGIZEDQUARTZ:
-  name: "&f充能石英"
+  name: '&f充能石英'
+  type:
+  - '&7&o资源'
 STB_FERMENTER:
-  name: "&f发酵机"
+  name: '&f发酵机'
+  type:
+  - '&7&o机器'
 STB_FIFTYKBATTERYBOX:
-  name: "&f50K 电池盒"
+  name: '&f50K 电池盒'
+  type:
+  - '&7&o机器'
 STB_FIFTYKENERGYCELL:
-  name: "&f50K 能量电池"
+  name: '&f50K 能量电池'
+  type:
+  - '&7&o组件'
 STB_FISHBAIT:
-  name: "&f鱼饵"
+  name: '&f鱼饵'
+  type:
+  - '&7&o组件'
 STB_FISHINGNET:
-  name: "&f渔网"
+  name: '&f渔网'
+  type:
+  - '&7&o机器'
 STB_GOLDCOMBINEHOE:
-  name: "&f金组合锄"
+  name: '&f金组合锄'
+  type:
+  - '&7&o工具'
 STB_GOLDDUST:
-  name: "&f金粉"
+  name: '&f金粉'
+  type:
+  - '&7&o资源'
 STB_HEATENGINE:
-  name: "&f热力引擎"
+  name: '&f热力引擎'
+  type:
+  - '&7&o发电机'
 STB_HOLOGRAPHICMONITOR:
-  name: "&f全息监视器"
+  name: '&f全息监视器'
+  type:
+  - '&7&o机器'
 STB_HYPERSENDERMODULE:
-  name: "&fI.R. 模块：超级发送器"
+  name: '&fI.R. 模块：超级发送器'
+  type:
+  - '&7&o组件'
 STB_HYPERSTORAGEUNIT:
-  name: "&fHSU"
+  name: '&fHSU'
+  type:
+  - '&7&o机器'
 STB_INFERNALDUST:
-  name: "&f地狱之尘"
+  name: '&f地狱之尘'
+  type:
+  - '&7&o资源'
 STB_INFERNALFARM:
-  name: "&f地狱农场"
+  name: '&f地狱农场'
+  type:
+  - '&7&o机器'
 STB_INTEGRATEDCIRCUIT:
-  name: "&f集成电路"
+  name: '&f集成电路'
+  type:
+  - '&7&o组件'
 STB_IRONCOMBINEHOE:
-  name: "&f铁组合锄"
+  name: '&f铁组合锄'
+  type:
+  - '&7&o工具'
 STB_IRONDUST:
-  name: "&f铁粉"
+  name: '&f铁粉'
+  type:
+  - '&7&o资源'
 STB_ITEMROUTER:
-  name: "&f物品 Router"
+  name: '&f物品 Router'
+  type:
+  - '&7&o机器'
 STB_LANDMARKER:
-  name: "&f地标"
+  name: '&f地标'
+  type:
+  - '&7&o工具'
 STB_MACHINEFRAME:
-  name: "&f机器框架"
+  name: '&f机器框架'
+  type:
+  - '&7&o组件'
 STB_MAGMATICENGINE:
-  name: "&f岩浆引擎"
+  name: '&f岩浆引擎'
+  type:
+  - '&7&o发电机'
 STB_MASHER:
-  name: "&f粉碎机"
+  name: '&f粉碎机'
+  type:
+  - '&7&o机器'
 STB_MOISTURECHECKER:
-  name: "&f湿度检测器"
+  name: '&f湿度检测器'
+  type:
+  - '&7&o工具'
 STB_MULTIBUILDER:
-  name: "&f多功能建造器"
+  name: '&f多功能建造器'
+  type:
+  - '&7&o工具'
 STB_MULTIMETER:
-  name: "&f万用表"
+  name: '&f万用表'
+  type:
+  - '&7&o工具'
 STB_PAINTBRUSH:
-  name: "&f画笔"
+  name: '&f画笔'
+  type:
+  - '&7&o工具'
 STB_PAINTCAN:
-  name: "&f油漆罐"
+  name: '&f油漆罐'
+  type:
+  - '&7&o机器'
 STB_PAINTROLLER:
-  name: "&f油漆滚筒"
+  name: '&f油漆滚筒'
+  type:
+  - '&7&o工具'
 STB_POWERMONITOR:
-  name: "&f能量监视器"
+  name: '&f能量监视器'
+  type:
+  - '&7&o机器'
 STB_PULLERMODULE:
-  name: "&fI.R. 模块：拉取器"
+  name: '&fI.R. 模块：拉取器'
+  type:
+  - '&7&o组件'
 STB_PUMP:
-  name: "&f泵"
+  name: '&f泵'
+  type:
+  - '&7&o机器'
 STB_PVCELL:
-  name: "&fPV 电池"
+  name: '&fPV 电池'
+  type:
+  - '&7&o组件'
 STB_QUARTZDUST:
-  name: "&f石英粉"
+  name: '&f石英粉'
+  type:
+  - '&7&o资源'
 STB_RECEIVERMODULE:
-  name: "&fI.R. 模块：接收器"
+  name: '&fI.R. 模块：接收器'
+  type:
+  - '&7&o组件'
 STB_RECIPEBOOK:
-  name: "&f配方书"
+  name: '&f配方书'
+  type:
+  - '&7&o装置'
 STB_REDSTONECLOCK:
-  name: "&f红石时钟"
+  name: '&f红石时钟'
+  type:
+  - '&7&o机器'
 STB_REGULATORUPGRADE:
-  name: "&f调节器升级"
+  name: '&f调节器升级'
+  type:
+  - '&7&o组件'
 STB_SAWMILL:
-  name: "&f锯木厂"
+  name: '&f锯木厂'
+  type:
+  - '&7&o机器'
 STB_SCURELAY:
-  name: "&fSCU 中继器"
+  name: '&fSCU 中继器'
+  type:
+  - '&7&o机器'
 STB_SENDERMODULE:
-  name: "&fI.R. 模块：发送器"
+  name: '&fI.R. 模块：发送器'
+  type:
+  - '&7&o组件'
 STB_SILICONWAFER:
-  name: "&f硅 Wafer"
+  name: '&f硅 Wafer'
+  type:
+  - '&7&o组件'
 STB_SILKYBREAKERMODULE:
-  name: "&fI.R. 模块：精准破坏器"
+  name: '&fI.R. 模块：精准破坏器'
+  type:
+  - '&7&o组件'
 STB_SIMPLECIRCUIT:
-  name: "&f简易电子电路"
+  name: '&f简易电子电路'
+  type:
+  - '&7&o组件'
 STB_SMELTER:
-  name: "&f熔炉"
+  name: '&f熔炉'
+  type:
+  - '&7&o机器'
 STB_SORTERMODULE:
-  name: "&fI.R. 模块：分拣器"
+  name: '&fI.R. 模块：分拣器'
+  type:
+  - '&7&o组件'
 STB_SOUNDMUFFLER:
-  name: "&f消音器"
+  name: '&f消音器'
+  type:
+  - '&7&o机器'
 STB_SPEEDMODULE:
-  name: "&fI.R. 模块：速度升级"
+  name: '&fI.R. 模块：速度升级'
+  type:
+  - '&7&o组件'
 STB_SPEEDUPGRADE:
-  name: "&f速度升级"
+  name: '&f速度升级'
+  type:
+  - '&7&o组件'
 STB_STACKMODULE:
-  name: "&fI.R. 模块：堆叠升级"
+  name: '&fI.R. 模块：堆叠升级'
+  type:
+  - '&7&o组件'
 STB_SUBSPACETRANSPONDER:
-  name: "&f子空间应答器"
+  name: '&f子空间应答器'
+  type:
+  - '&7&o组件'
 STB_TAPEMEASURE:
-  name: "&f卷尺"
+  name: '&f卷尺'
+  type:
+  - '&7&o工具'
 STB_TENKBATTERYBOX:
-  name: "&f10K 电池盒"
+  name: '&f10K 电池盒'
+  type:
+  - '&7&o机器'
 STB_TENKENERGYCELL:
-  name: "&f10K 能量电池"
+  name: '&f10K 能量电池'
+  type:
+  - '&7&o组件'
 STB_THOROUGHNESSUPGRADE:
-  name: "&f精细度升级"
+  name: '&f精细度升级'
+  type:
+  - '&7&o组件'
 STB_TOUGHMACHINEFRAME:
-  name: "&f坚固机器框架"
+  name: '&f坚固机器框架'
+  type:
+  - '&7&o组件'
 STB_TRASHCAN:
-  name: "&f垃圾桶"
+  name: '&f垃圾桶'
+  type:
+  - '&7&o机器'
 STB_UNLINKEDSCURELAY:
-  name: "&f未连接的 SCU 中继器"
+  name: '&f未连接的 SCU 中继器'
+  type:
+  - '&7&o组件'
 STB_VACUUMMODULE:
-  name: "&fI.R. 模块：吸取器"
+  name: '&fI.R. 模块：吸取器'
+  type:
+  - '&7&o组件'
 STB_WATERINGCAN:
-  name: "&f洒水壶"
+  name: '&f洒水壶'
+  type:
+  - '&7&o工具'
 STB_WOODCOMBINEHOE:
-  name: "&f木组合锄"
+  name: '&f木组合锄'
+  type:
+  - '&7&o工具'

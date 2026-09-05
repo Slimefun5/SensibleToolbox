@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oAlat'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oGadget'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oGadget'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oMesin'
+STB_AUTOFARM:
+  type:
+  - '&7&oMesin'
+STB_AUTOFARM2:
+  type:
+  - '&7&oMesin'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oMesin'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oGenerator'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oMesin'
+STB_BIOENGINE:
+  type:
+  - '&7&oGenerator'
+STB_BLANKMODULE:
+  type:
+  - '&7&oKomponen'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oMesin'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oKomponen'
+STB_DENSESOLAR:
+  type:
+  - '&7&oGenerator'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oAlat'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oKomponen'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oKomponen'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oMesin'
+STB_ELEVATOR:
+  type:
+  - '&7&oMesin'
+STB_ENDERBAG:
+  type:
+  - '&7&oGadget'
+STB_ENDERBOX:
+  type:
+  - '&7&oMesin'
+STB_ENDERLEASH:
+  type:
+  - '&7&oGadget'
+STB_ENDERTUNER:
+  type:
+  - '&7&oAlat'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oSumber Daya'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oSumber Daya'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oSumber Daya'
+STB_FERMENTER:
+  type:
+  - '&7&oMesin'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oMesin'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oKomponen'
+STB_FISHBAIT:
+  type:
+  - '&7&oKomponen'
+STB_FISHINGNET:
+  type:
+  - '&7&oMesin'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oAlat'
+STB_GOLDDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_HEATENGINE:
+  type:
+  - '&7&oGenerator'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oMesin'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oMesin'
+STB_INFERNALDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_INFERNALFARM:
+  type:
+  - '&7&oMesin'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oKomponen'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oAlat'
+STB_IRONDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_ITEMROUTER:
+  type:
+  - '&7&oMesin'
+STB_LANDMARKER:
+  type:
+  - '&7&oAlat'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oKomponen'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oGenerator'
+STB_MASHER:
+  type:
+  - '&7&oMesin'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oAlat'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oAlat'
+STB_MULTIMETER:
+  type:
+  - '&7&oAlat'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oAlat'
+STB_PAINTCAN:
+  type:
+  - '&7&oMesin'
+STB_PAINTROLLER:
+  type:
+  - '&7&oAlat'
+STB_POWERMONITOR:
+  type:
+  - '&7&oMesin'
+STB_PULLERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_PUMP:
+  type:
+  - '&7&oMesin'
+STB_PVCELL:
+  type:
+  - '&7&oKomponen'
+STB_QUARTZDUST:
+  type:
+  - '&7&oSumber Daya'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oGadget'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oMesin'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oKomponen'
+STB_SAWMILL:
+  type:
+  - '&7&oMesin'
+STB_SCURELAY:
+  type:
+  - '&7&oMesin'
+STB_SENDERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_SILICONWAFER:
+  type:
+  - '&7&oKomponen'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oKomponen'
+STB_SMELTER:
+  type:
+  - '&7&oMesin'
+STB_SORTERMODULE:
+  type:
+  - '&7&oKomponen'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oMesin'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oKomponen'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oKomponen'
+STB_STACKMODULE:
+  type:
+  - '&7&oKomponen'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oKomponen'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oAlat'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oMesin'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oKomponen'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oKomponen'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oKomponen'
+STB_TRASHCAN:
+  type:
+  - '&7&oMesin'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oKomponen'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oKomponen'
+STB_WATERINGCAN:
+  type:
+  - '&7&oAlat'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oAlat'

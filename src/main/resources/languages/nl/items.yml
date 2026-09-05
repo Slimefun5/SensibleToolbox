@@ -1,183 +1,360 @@
-# Dutch item translations for SensibleToolbox. Keyed by Slimefun item id (STB_<ITEM>).
-# name = display name, '&' colour codes preserved. Missing items fall back to English.
-
 STB_ADVANCEDMOISTURECHECKER:
-  name: "&fGeavanceerde vochtmeter"
+  name: '&fGeavanceerde vochtmeter'
+  type:
+  - '&7&oGereedschap'
 STB_ADVANCEDRECIPEBOOK:
-  name: "&fGeavanceerd receptenboek"
+  name: '&fGeavanceerd receptenboek'
+  type:
+  - '&7&oGadget'
 STB_ADVANCEDSENDERMODULE:
-  name: "&fI.R. Mod: Geav. zender"
+  name: '&fI.R. Mod: Geav. zender'
+  type:
+  - '&7&oOnderdeel'
 STB_ANGELICBLOCK:
-  name: "&fEngelachtig blok"
+  name: '&fEngelachtig blok'
+  type:
+  - '&7&oGadget'
 STB_AUTOBUILDER:
-  name: "&fAutobouwer"
+  name: '&fAutobouwer'
+  type:
+  - '&7&oMachine'
 STB_AUTOFARM:
-  name: "&fAutoboerderij"
+  name: '&fAutoboerderij'
+  type:
+  - '&7&oMachine'
 STB_AUTOFARM2:
-  name: "&fAutoboerderij MkII"
+  name: '&fAutoboerderij MkII'
+  type:
+  - '&7&oMachine'
 STB_AUTOFORESTER:
-  name: "&fAutoboswachter"
+  name: '&fAutoboswachter'
+  type:
+  - '&7&oMachine'
 STB_BASICSOLARCELL:
-  name: "&fBasis zonnecel"
+  name: '&fBasis zonnecel'
+  type:
+  - '&7&oGenerator'
 STB_BIGSTORAGEUNIT:
-  name: "&fBSU"
+  name: '&fBSU'
+  type:
+  - '&7&oMachine'
 STB_BIOENGINE:
-  name: "&fBiomotor"
+  name: '&fBiomotor'
+  type:
+  - '&7&oGenerator'
 STB_BLANKMODULE:
-  name: "&fLeeg item-Router-module"
+  name: '&fLeeg item-Router-module'
+  type:
+  - '&7&oOnderdeel'
 STB_BLOCKUPDATEDETECTOR:
-  name: "&fBlokupdate-detector"
+  name: '&fBlokupdate-detector'
+  type:
+  - '&7&oMachine'
 STB_BREAKERMODULE:
-  name: "&fI.R. Mod: Breker"
+  name: '&fI.R. Mod: Breker'
+  type:
+  - '&7&oOnderdeel'
 STB_CIRCUITBOARD:
-  name: "&fPrintplaat"
+  name: '&fPrintplaat'
+  type:
+  - '&7&oOnderdeel'
 STB_DENSESOLAR:
-  name: "&fDichte zonnecel"
+  name: '&fDichte zonnecel'
+  type:
+  - '&7&oGenerator'
 STB_DIAMONDCOMBINEHOE:
-  name: "&fDiamanten combinatieschoffel"
+  name: '&fDiamanten combinatieschoffel'
+  type:
+  - '&7&oGereedschap'
 STB_DISTRIBUTORMODULE:
-  name: "&fI.R. Mod: Distributeur"
+  name: '&fI.R. Mod: Distributeur'
+  type:
+  - '&7&oOnderdeel'
 STB_DROPPERMODULE:
-  name: "&fI.R. Mod: Dropper"
+  name: '&fI.R. Mod: Dropper'
+  type:
+  - '&7&oOnderdeel'
 STB_EJECTORUPGRADE:
-  name: "&fUitwerper-upgrade"
+  name: '&fUitwerper-upgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_ELECTRICALENERGIZER:
-  name: "&fElektrische energizer"
+  name: '&fElektrische energizer'
+  type:
+  - '&7&oMachine'
 STB_ELEVATOR:
-  name: "&fLift"
+  name: '&fLift'
+  type:
+  - '&7&oMachine'
 STB_ENDERBAG:
-  name: "&fEnder-tas"
+  name: '&fEnder-tas'
+  type:
+  - '&7&oGadget'
 STB_ENDERBOX:
-  name: "&fEnder-doos"
+  name: '&fEnder-doos'
+  type:
+  - '&7&oMachine'
 STB_ENDERLEASH:
-  name: "&fEnder-leiband"
+  name: '&fEnder-leiband'
+  type:
+  - '&7&oGadget'
 STB_ENDERTUNER:
-  name: "&fEnder-tuner"
+  name: '&fEnder-tuner'
+  type:
+  - '&7&oGereedschap'
 STB_ENERGIZEDGOLDDUST:
-  name: "&fGeënergiseerd goudstof"
+  name: '&fGeënergiseerd goudstof'
+  type:
+  - '&7&oGrondstof'
 STB_ENERGIZEDGOLDINGOT:
-  name: "&fGeënergiseerde goudstaaf"
+  name: '&fGeënergiseerde goudstaaf'
+  type:
+  - '&7&oGrondstof'
 STB_ENERGIZEDIRONDUST:
-  name: "&fGeënergiseerd ijzerstof"
+  name: '&fGeënergiseerd ijzerstof'
+  type:
+  - '&7&oGrondstof'
 STB_ENERGIZEDIRONINGOT:
-  name: "&fGeënergiseerde ijzerstaaf"
+  name: '&fGeënergiseerde ijzerstaaf'
+  type:
+  - '&7&oGrondstof'
 STB_ENERGIZEDQUARTZ:
-  name: "&fGeënergiseerd kwarts"
+  name: '&fGeënergiseerd kwarts'
+  type:
+  - '&7&oGrondstof'
 STB_FERMENTER:
-  name: "&fFermenter"
+  name: '&fFermenter'
+  type:
+  - '&7&oMachine'
 STB_FIFTYKBATTERYBOX:
-  name: "&f50K batterijbox"
+  name: '&f50K batterijbox'
+  type:
+  - '&7&oMachine'
 STB_FIFTYKENERGYCELL:
-  name: "&f50K energiecel"
+  name: '&f50K energiecel'
+  type:
+  - '&7&oOnderdeel'
 STB_FISHBAIT:
-  name: "&fVisaas"
+  name: '&fVisaas'
+  type:
+  - '&7&oOnderdeel'
 STB_FISHINGNET:
-  name: "&fVisnet"
+  name: '&fVisnet'
+  type:
+  - '&7&oMachine'
 STB_GOLDCOMBINEHOE:
-  name: "&fGouden combinatieschoffel"
+  name: '&fGouden combinatieschoffel'
+  type:
+  - '&7&oGereedschap'
 STB_GOLDDUST:
-  name: "&fGoudstof"
+  name: '&fGoudstof'
+  type:
+  - '&7&oGrondstof'
 STB_HEATENGINE:
-  name: "&fWarmtemotor"
+  name: '&fWarmtemotor'
+  type:
+  - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
-  name: "&fHolografische monitor"
+  name: '&fHolografische monitor'
+  type:
+  - '&7&oMachine'
 STB_HYPERSENDERMODULE:
-  name: "&fI.R. Mod: Hyperzender"
+  name: '&fI.R. Mod: Hyperzender'
+  type:
+  - '&7&oOnderdeel'
 STB_HYPERSTORAGEUNIT:
-  name: "&fHSU"
+  name: '&fHSU'
+  type:
+  - '&7&oMachine'
 STB_INFERNALDUST:
-  name: "&fHels stof"
+  name: '&fHels stof'
+  type:
+  - '&7&oGrondstof'
 STB_INFERNALFARM:
-  name: "&fHelse boerderij"
+  name: '&fHelse boerderij'
+  type:
+  - '&7&oMachine'
 STB_INTEGRATEDCIRCUIT:
-  name: "&fGeïntegreerd circuit"
+  name: '&fGeïntegreerd circuit'
+  type:
+  - '&7&oOnderdeel'
 STB_IRONCOMBINEHOE:
-  name: "&fIJzeren combinatieschoffel"
+  name: '&fIJzeren combinatieschoffel'
+  type:
+  - '&7&oGereedschap'
 STB_IRONDUST:
-  name: "&fIJzerstof"
+  name: '&fIJzerstof'
+  type:
+  - '&7&oGrondstof'
 STB_ITEMROUTER:
-  name: "&fItem-Router"
+  name: '&fItem-Router'
+  type:
+  - '&7&oMachine'
 STB_LANDMARKER:
-  name: "&fLandmarkering"
+  name: '&fLandmarkering'
+  type:
+  - '&7&oGereedschap'
 STB_MACHINEFRAME:
-  name: "&fMachineframe"
+  name: '&fMachineframe'
+  type:
+  - '&7&oOnderdeel'
 STB_MAGMATICENGINE:
-  name: "&fMagmatische motor"
+  name: '&fMagmatische motor'
+  type:
+  - '&7&oGenerator'
 STB_MASHER:
-  name: "&fVergruizer"
+  name: '&fVergruizer'
+  type:
+  - '&7&oMachine'
 STB_MOISTURECHECKER:
-  name: "&fVochtmeter"
+  name: '&fVochtmeter'
+  type:
+  - '&7&oGereedschap'
 STB_MULTIBUILDER:
-  name: "&fMultibouwer"
+  name: '&fMultibouwer'
+  type:
+  - '&7&oGereedschap'
 STB_MULTIMETER:
-  name: "&fMultimeter"
+  name: '&fMultimeter'
+  type:
+  - '&7&oGereedschap'
 STB_PAINTBRUSH:
-  name: "&fPenseel"
+  name: '&fPenseel'
+  type:
+  - '&7&oGereedschap'
 STB_PAINTCAN:
-  name: "&fVerfblik"
+  name: '&fVerfblik'
+  type:
+  - '&7&oMachine'
 STB_PAINTROLLER:
-  name: "&fVerfroller"
+  name: '&fVerfroller'
+  type:
+  - '&7&oGereedschap'
 STB_POWERMONITOR:
-  name: "&fEnergiemonitor"
+  name: '&fEnergiemonitor'
+  type:
+  - '&7&oMachine'
 STB_PULLERMODULE:
-  name: "&fI.R. Mod: Trekker"
+  name: '&fI.R. Mod: Trekker'
+  type:
+  - '&7&oOnderdeel'
 STB_PUMP:
-  name: "&fPomp"
+  name: '&fPomp'
+  type:
+  - '&7&oMachine'
 STB_PVCELL:
-  name: "&fPV-cel"
+  name: '&fPV-cel'
+  type:
+  - '&7&oOnderdeel'
 STB_QUARTZDUST:
-  name: "&fKwartsstof"
+  name: '&fKwartsstof'
+  type:
+  - '&7&oGrondstof'
 STB_RECEIVERMODULE:
-  name: "&fI.R. Mod: Ontvanger"
+  name: '&fI.R. Mod: Ontvanger'
+  type:
+  - '&7&oOnderdeel'
 STB_RECIPEBOOK:
-  name: "&fReceptenboek"
+  name: '&fReceptenboek'
+  type:
+  - '&7&oGadget'
 STB_REDSTONECLOCK:
-  name: "&fRedstone-klok"
+  name: '&fRedstone-klok'
+  type:
+  - '&7&oMachine'
 STB_REGULATORUPGRADE:
-  name: "&fRegelaar-upgrade"
+  name: '&fRegelaar-upgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_SAWMILL:
-  name: "&fZagerij"
+  name: '&fZagerij'
+  type:
+  - '&7&oMachine'
 STB_SCURELAY:
-  name: "&fSCU-relais"
+  name: '&fSCU-relais'
+  type:
+  - '&7&oMachine'
 STB_SENDERMODULE:
-  name: "&fI.R. Mod: Zender"
+  name: '&fI.R. Mod: Zender'
+  type:
+  - '&7&oOnderdeel'
 STB_SILICONWAFER:
-  name: "&fSilicium-Wafer"
+  name: '&fSilicium-Wafer'
+  type:
+  - '&7&oOnderdeel'
 STB_SILKYBREAKERMODULE:
-  name: "&fI.R. Mod: Zijdezachte breker"
+  name: '&fI.R. Mod: Zijdezachte breker'
+  type:
+  - '&7&oOnderdeel'
 STB_SIMPLECIRCUIT:
-  name: "&fEenvoudig elektronisch circuit"
+  name: '&fEenvoudig elektronisch circuit'
+  type:
+  - '&7&oOnderdeel'
 STB_SMELTER:
-  name: "&fSmelter"
+  name: '&fSmelter'
+  type:
+  - '&7&oMachine'
 STB_SORTERMODULE:
-  name: "&fI.R. Mod: Sorteerder"
+  name: '&fI.R. Mod: Sorteerder'
+  type:
+  - '&7&oOnderdeel'
 STB_SOUNDMUFFLER:
-  name: "&fGeluiddemper"
+  name: '&fGeluiddemper'
+  type:
+  - '&7&oMachine'
 STB_SPEEDMODULE:
-  name: "&fI.R. Mod: Snelheidsupgrade"
+  name: '&fI.R. Mod: Snelheidsupgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_SPEEDUPGRADE:
-  name: "&fSnelheidsupgrade"
+  name: '&fSnelheidsupgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_STACKMODULE:
-  name: "&fI.R. Mod: Stapelupgrade"
+  name: '&fI.R. Mod: Stapelupgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_SUBSPACETRANSPONDER:
-  name: "&fSubruimte-transponder"
+  name: '&fSubruimte-transponder'
+  type:
+  - '&7&oOnderdeel'
 STB_TAPEMEASURE:
-  name: "&fMeetlint"
+  name: '&fMeetlint'
+  type:
+  - '&7&oGereedschap'
 STB_TENKBATTERYBOX:
-  name: "&f10K batterijbox"
+  name: '&f10K batterijbox'
+  type:
+  - '&7&oMachine'
 STB_TENKENERGYCELL:
-  name: "&f10K energiecel"
+  name: '&f10K energiecel'
+  type:
+  - '&7&oOnderdeel'
 STB_THOROUGHNESSUPGRADE:
-  name: "&fGrondigheidsupgrade"
+  name: '&fGrondigheidsupgrade'
+  type:
+  - '&7&oOnderdeel'
 STB_TOUGHMACHINEFRAME:
-  name: "&fStevig machineframe"
+  name: '&fStevig machineframe'
+  type:
+  - '&7&oOnderdeel'
 STB_TRASHCAN:
-  name: "&fPrullenbak"
+  name: '&fPrullenbak'
+  type:
+  - '&7&oMachine'
 STB_UNLINKEDSCURELAY:
-  name: "&fNiet-gekoppeld SCU-relais"
+  name: '&fNiet-gekoppeld SCU-relais'
+  type:
+  - '&7&oOnderdeel'
 STB_VACUUMMODULE:
-  name: "&fI.R. Mod: Stofzuiger"
+  name: '&fI.R. Mod: Stofzuiger'
+  type:
+  - '&7&oOnderdeel'
 STB_WATERINGCAN:
-  name: "&fGieter"
+  name: '&fGieter'
+  type:
+  - '&7&oGereedschap'
 STB_WOODCOMBINEHOE:
-  name: "&fHouten combinatieschoffel"
+  name: '&fHouten combinatieschoffel'
+  type:
+  - '&7&oGereedschap'

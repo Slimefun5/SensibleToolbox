@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oІнструмент'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oПрылада'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oПрылада'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oМашына'
+STB_AUTOFARM:
+  type:
+  - '&7&oМашына'
+STB_AUTOFARM2:
+  type:
+  - '&7&oМашына'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oМашына'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oГенератар'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oМашына'
+STB_BIOENGINE:
+  type:
+  - '&7&oГенератар'
+STB_BLANKMODULE:
+  type:
+  - '&7&oКампанент'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oМашына'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oКампанент'
+STB_DENSESOLAR:
+  type:
+  - '&7&oГенератар'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oІнструмент'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oКампанент'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oКампанент'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oМашына'
+STB_ELEVATOR:
+  type:
+  - '&7&oМашына'
+STB_ENDERBAG:
+  type:
+  - '&7&oПрылада'
+STB_ENDERBOX:
+  type:
+  - '&7&oМашына'
+STB_ENDERLEASH:
+  type:
+  - '&7&oПрылада'
+STB_ENDERTUNER:
+  type:
+  - '&7&oІнструмент'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oРэсурс'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oРэсурс'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oРэсурс'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oРэсурс'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oРэсурс'
+STB_FERMENTER:
+  type:
+  - '&7&oМашына'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oМашына'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oКампанент'
+STB_FISHBAIT:
+  type:
+  - '&7&oКампанент'
+STB_FISHINGNET:
+  type:
+  - '&7&oМашына'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oІнструмент'
+STB_GOLDDUST:
+  type:
+  - '&7&oРэсурс'
+STB_HEATENGINE:
+  type:
+  - '&7&oГенератар'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oМашына'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oМашына'
+STB_INFERNALDUST:
+  type:
+  - '&7&oРэсурс'
+STB_INFERNALFARM:
+  type:
+  - '&7&oМашына'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oКампанент'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oІнструмент'
+STB_IRONDUST:
+  type:
+  - '&7&oРэсурс'
+STB_ITEMROUTER:
+  type:
+  - '&7&oМашына'
+STB_LANDMARKER:
+  type:
+  - '&7&oІнструмент'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oКампанент'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oГенератар'
+STB_MASHER:
+  type:
+  - '&7&oМашына'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oІнструмент'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oІнструмент'
+STB_MULTIMETER:
+  type:
+  - '&7&oІнструмент'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oІнструмент'
+STB_PAINTCAN:
+  type:
+  - '&7&oМашына'
+STB_PAINTROLLER:
+  type:
+  - '&7&oІнструмент'
+STB_POWERMONITOR:
+  type:
+  - '&7&oМашына'
+STB_PULLERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_PUMP:
+  type:
+  - '&7&oМашына'
+STB_PVCELL:
+  type:
+  - '&7&oКампанент'
+STB_QUARTZDUST:
+  type:
+  - '&7&oРэсурс'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oПрылада'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oМашына'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oКампанент'
+STB_SAWMILL:
+  type:
+  - '&7&oМашына'
+STB_SCURELAY:
+  type:
+  - '&7&oМашына'
+STB_SENDERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_SILICONWAFER:
+  type:
+  - '&7&oКампанент'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oКампанент'
+STB_SMELTER:
+  type:
+  - '&7&oМашына'
+STB_SORTERMODULE:
+  type:
+  - '&7&oКампанент'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oМашына'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oКампанент'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oКампанент'
+STB_STACKMODULE:
+  type:
+  - '&7&oКампанент'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oКампанент'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oІнструмент'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oМашына'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oКампанент'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oКампанент'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oКампанент'
+STB_TRASHCAN:
+  type:
+  - '&7&oМашына'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oКампанент'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oКампанент'
+STB_WATERINGCAN:
+  type:
+  - '&7&oІнструмент'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oІнструмент'

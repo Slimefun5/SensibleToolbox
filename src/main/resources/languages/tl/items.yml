@@ -1,0 +1,270 @@
+STB_ADVANCEDMOISTURECHECKER:
+  type:
+  - '&7&oKasangkapan'
+STB_ADVANCEDRECIPEBOOK:
+  type:
+  - '&7&oGadyet'
+STB_ADVANCEDSENDERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_ANGELICBLOCK:
+  type:
+  - '&7&oGadyet'
+STB_AUTOBUILDER:
+  type:
+  - '&7&oMakina'
+STB_AUTOFARM:
+  type:
+  - '&7&oMakina'
+STB_AUTOFARM2:
+  type:
+  - '&7&oMakina'
+STB_AUTOFORESTER:
+  type:
+  - '&7&oMakina'
+STB_BASICSOLARCELL:
+  type:
+  - '&7&oGenerator'
+STB_BIGSTORAGEUNIT:
+  type:
+  - '&7&oMakina'
+STB_BIOENGINE:
+  type:
+  - '&7&oGenerator'
+STB_BLANKMODULE:
+  type:
+  - '&7&oBahagi'
+STB_BLOCKUPDATEDETECTOR:
+  type:
+  - '&7&oMakina'
+STB_BREAKERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_CIRCUITBOARD:
+  type:
+  - '&7&oBahagi'
+STB_DENSESOLAR:
+  type:
+  - '&7&oGenerator'
+STB_DIAMONDCOMBINEHOE:
+  type:
+  - '&7&oKasangkapan'
+STB_DISTRIBUTORMODULE:
+  type:
+  - '&7&oBahagi'
+STB_DROPPERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_EJECTORUPGRADE:
+  type:
+  - '&7&oBahagi'
+STB_ELECTRICALENERGIZER:
+  type:
+  - '&7&oMakina'
+STB_ELEVATOR:
+  type:
+  - '&7&oMakina'
+STB_ENDERBAG:
+  type:
+  - '&7&oGadyet'
+STB_ENDERBOX:
+  type:
+  - '&7&oMakina'
+STB_ENDERLEASH:
+  type:
+  - '&7&oGadyet'
+STB_ENDERTUNER:
+  type:
+  - '&7&oKasangkapan'
+STB_ENERGIZEDGOLDDUST:
+  type:
+  - '&7&oRekurso'
+STB_ENERGIZEDGOLDINGOT:
+  type:
+  - '&7&oRekurso'
+STB_ENERGIZEDIRONDUST:
+  type:
+  - '&7&oRekurso'
+STB_ENERGIZEDIRONINGOT:
+  type:
+  - '&7&oRekurso'
+STB_ENERGIZEDQUARTZ:
+  type:
+  - '&7&oRekurso'
+STB_FERMENTER:
+  type:
+  - '&7&oMakina'
+STB_FIFTYKBATTERYBOX:
+  type:
+  - '&7&oMakina'
+STB_FIFTYKENERGYCELL:
+  type:
+  - '&7&oBahagi'
+STB_FISHBAIT:
+  type:
+  - '&7&oBahagi'
+STB_FISHINGNET:
+  type:
+  - '&7&oMakina'
+STB_GOLDCOMBINEHOE:
+  type:
+  - '&7&oKasangkapan'
+STB_GOLDDUST:
+  type:
+  - '&7&oRekurso'
+STB_HEATENGINE:
+  type:
+  - '&7&oGenerator'
+STB_HOLOGRAPHICMONITOR:
+  type:
+  - '&7&oMakina'
+STB_HYPERSENDERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_HYPERSTORAGEUNIT:
+  type:
+  - '&7&oMakina'
+STB_INFERNALDUST:
+  type:
+  - '&7&oRekurso'
+STB_INFERNALFARM:
+  type:
+  - '&7&oMakina'
+STB_INTEGRATEDCIRCUIT:
+  type:
+  - '&7&oBahagi'
+STB_IRONCOMBINEHOE:
+  type:
+  - '&7&oKasangkapan'
+STB_IRONDUST:
+  type:
+  - '&7&oRekurso'
+STB_ITEMROUTER:
+  type:
+  - '&7&oMakina'
+STB_LANDMARKER:
+  type:
+  - '&7&oKasangkapan'
+STB_MACHINEFRAME:
+  type:
+  - '&7&oBahagi'
+STB_MAGMATICENGINE:
+  type:
+  - '&7&oGenerator'
+STB_MASHER:
+  type:
+  - '&7&oMakina'
+STB_MOISTURECHECKER:
+  type:
+  - '&7&oKasangkapan'
+STB_MULTIBUILDER:
+  type:
+  - '&7&oKasangkapan'
+STB_MULTIMETER:
+  type:
+  - '&7&oKasangkapan'
+STB_PAINTBRUSH:
+  type:
+  - '&7&oKasangkapan'
+STB_PAINTCAN:
+  type:
+  - '&7&oMakina'
+STB_PAINTROLLER:
+  type:
+  - '&7&oKasangkapan'
+STB_POWERMONITOR:
+  type:
+  - '&7&oMakina'
+STB_PULLERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_PUMP:
+  type:
+  - '&7&oMakina'
+STB_PVCELL:
+  type:
+  - '&7&oBahagi'
+STB_QUARTZDUST:
+  type:
+  - '&7&oRekurso'
+STB_RECEIVERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_RECIPEBOOK:
+  type:
+  - '&7&oGadyet'
+STB_REDSTONECLOCK:
+  type:
+  - '&7&oMakina'
+STB_REGULATORUPGRADE:
+  type:
+  - '&7&oBahagi'
+STB_SAWMILL:
+  type:
+  - '&7&oMakina'
+STB_SCURELAY:
+  type:
+  - '&7&oMakina'
+STB_SENDERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_SILICONWAFER:
+  type:
+  - '&7&oBahagi'
+STB_SILKYBREAKERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_SIMPLECIRCUIT:
+  type:
+  - '&7&oBahagi'
+STB_SMELTER:
+  type:
+  - '&7&oMakina'
+STB_SORTERMODULE:
+  type:
+  - '&7&oBahagi'
+STB_SOUNDMUFFLER:
+  type:
+  - '&7&oMakina'
+STB_SPEEDMODULE:
+  type:
+  - '&7&oBahagi'
+STB_SPEEDUPGRADE:
+  type:
+  - '&7&oBahagi'
+STB_STACKMODULE:
+  type:
+  - '&7&oBahagi'
+STB_SUBSPACETRANSPONDER:
+  type:
+  - '&7&oBahagi'
+STB_TAPEMEASURE:
+  type:
+  - '&7&oKasangkapan'
+STB_TENKBATTERYBOX:
+  type:
+  - '&7&oMakina'
+STB_TENKENERGYCELL:
+  type:
+  - '&7&oBahagi'
+STB_THOROUGHNESSUPGRADE:
+  type:
+  - '&7&oBahagi'
+STB_TOUGHMACHINEFRAME:
+  type:
+  - '&7&oBahagi'
+STB_TRASHCAN:
+  type:
+  - '&7&oMakina'
+STB_UNLINKEDSCURELAY:
+  type:
+  - '&7&oBahagi'
+STB_VACUUMMODULE:
+  type:
+  - '&7&oBahagi'
+STB_WATERINGCAN:
+  type:
+  - '&7&oKasangkapan'
+STB_WOODCOMBINEHOE:
+  type:
+  - '&7&oKasangkapan'
