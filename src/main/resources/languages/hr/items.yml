@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Ispituje razinu zasićenosti'
+  - '&7područja obradive zemlje 5x5.'
+  name: '&fNapredni mjerač vlage'
+  stats:
+  - '&8⇨ &7Područje: &e5x5'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na obradivu zemlju za provjeru vlage'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Pregledava i izrađuje poznate recepte,'
+  - '&7i može povlačiti predmete iz susjednih'
+  - '&7inventara tijekom izrade.'
+  name: '&fNapredna knjiga recepata'
   type:
   - '&7&oNaprava'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za slanje predmeta'
+  - '&7u povezani modul prijamnika u'
+  - '&7radijusu od 24 bloka, bez izravne vidljivosti.'
+  name: '&fMod U.P.: Napr. pošiljatelj'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na usmjerivač s modulom prijamnika za povezivanje'
+  - '&eČučanj + lijevi klik&7 za prekid veze'
 STB_ANGELICBLOCK:
+  description:
+  - '&7Privremeni lebdeći blok skele,'
+  - '&7idealan za gradnju u otvorenom prostoru.'
+  name: '&fAnđeoski blok'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik&7 za postavljanje bloka u zrak'
+  - '&eLijevi klik&7 na blok za trenutno razbijanje'
 STB_AUTOBUILDER:
+  description:
+  - '&7Može izgraditi ili raščistiti područje.'
+  - '&7Označivačima zemljišta odredi područje.'
+  name: '&fAuto graditelj'
   type:
   - '&7&oStroj'
 STB_AUTOFARM:
+  description:
+  - '&7Automatski žanje i ponovno sadi'
+  - '&7usjeve pšenice, krumpira i mrkve u 3x3'
+  - '&7radijusu, 2 bloka iznad stroja.'
+  name: '&fAuto farma'
   type:
   - '&7&oStroj'
 STB_AUTOFARM2:
+  description:
+  - '&7Automatski žanje i ponovno sadi'
+  - '&7zrna kakaa, šećernu trsku i kaktus'
+  - '&7u radijusu 5x5, 2 bloka iznad stroja.'
+  name: '&fAuto farma MkII'
   type:
   - '&7&oStroj'
 STB_AUTOFORESTER:
+  description:
+  - '&7Automatski ruši i ponovno sadi stabla'
+  - '&7u radijusu 5x5, 2 bloka iznad stroja.'
+  name: '&fAuto šumar'
   type:
   - '&7&oStroj'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Stvara energiju na otvorenom pod jakom'
+  - '&7sunčevom svjetlošću. Za rad treba PV ćeliju.'
+  name: '&fOsnovni solarni panel'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eLijevi klik&7 (prazna ruka) za vađenje PV ćelije'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Velika jedinica za pohranu. Pohranjuje golemu'
+  - '&7količinu jedne vrste predmeta.'
+  name: '&fBSU'
+  stats:
+  - '&8⇨ &7128 hrpa'
   type:
   - '&7&oStroj'
 STB_BIOENGINE:
+  description:
+  - '&7Pretvara organske materijale u energiju.'
+  name: '&fBio motor'
   type:
   - '&7&oGenerator'
 STB_BLANKMODULE:
+  description:
+  - '&7Prazna osnova za izradu'
+  - '&7raznih modula usmjerivača predmeta.'
+  name: '&fPrazan modul usmjerivača predmeta'
   type:
   - '&7&oKomponenta'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Odašilje redstone impuls kada se'
+  - '&7susjedni blok promijeni.'
+  name: '&fDetektor promjene bloka'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 na blok za postavke'
 STB_BREAKERMODULE:
+  description:
+  - '&7Razbija blok u svom postavljenom'
+  - '&7smjeru i povlači ga u usmjerivač.'
+  name: '&fMod U.P.: Razbijač'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Koristi se u izradi elektroničkih'
+  - '&7sklopova.'
+  name: '&fTiskana pločica'
   type:
   - '&7&oKomponenta'
 STB_DENSESOLAR:
+  description:
+  - '&7Stvara energiju na otvorenom pod jakom'
+  - '&7sunčevom svjetlošću. Za rad treba PV ćeliju.'
+  name: '&fGusti solarni panel'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eLijevi klik&7 (prazna ruka) za vađenje PV ćelije'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7Višenamjenska motika koja obrađuje, sije i'
+  - '&7žanje na širem području, s'
+  - '&7ugrađenom torbom za sjeme.'
+  name: '&fDijamantna kombinirana motika'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na zemlju/travu obrađuje područje 3x3'
+  - '&eDesni klik&7 na obradivu zemlju sije područje 3x3'
+  - '&eDesni klik&7 drugdje otvara torbu za sjeme'
+  - '&eLijevi klik&7 na biljke žanje područje 5x5'
+  - '&eLijevi klik&7 na lišće razbija područje 3x3x3'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Povlači predmete iz postavljenog smjera,'
+  - '&7zatim ih naizmjence šalje u sve ostale'
+  - '&7susjedne inventare.'
+  name: '&fMod U.P.: Raspodjeljivač'
   type:
   - '&7&oKomponenta'
 STB_DROPPERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za ispuštanje predmeta'
+  - '&7na tlo u postavljenom smjeru.'
+  name: '&fMod U.P.: Ispuštač'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Stavlja se u stroj za automatsko izbacivanje'
+  - '&7gotovih predmeta u susjedni inventar.'
+  name: '&fNadogradnja izbacivača'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer izbacivanja'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Omogućuje energiziranje određenih predmeta'
+  - '&7u njihove nabijene varijante.'
+  name: '&fElektrični energizator'
   type:
   - '&7&oStroj'
 STB_ELEVATOR:
+  description:
+  - '&7Povezuje se s drugim dizalima postavljenima'
+  - '&7izravno iznad ili ispod njega.'
+  name: '&fDizalo'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePritisni razmaknicu&7 za penjanje'
+  - '&ePritisni Shift&7 za spuštanje'
 STB_ENDERBAG:
+  description:
+  - '&7Daje prijenosni pristup osobnom'
+  - '&7ili globalnom ender inventaru.'
+  name: '&fEnder torba'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik&7 za otvaranje torbe'
+  - '&eČučanj + desni klik&7 na Ender kutiju usklađuje frekvenciju'
 STB_ENDERBOX:
+  description:
+  - '&7Izvandimenzionalna pohrana dostupna'
+  - '&7iz povezanih Ender kutija.'
+  name: '&fEnder kutija'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 s Ender ugađačem za postavljanje frekvencije'
 STB_ENDERLEASH:
+  description:
+  - '&7Hvata i pohranjuje jednu mirnu životinju,'
+  - '&7pa lako preseliš stoku.'
+  name: '&fEnder povodac'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&eDesni klik&7 za hvatanje ili puštanje životinje'
 STB_ENDERTUNER:
+  description:
+  - '&7Vibrira u šest dimenzija kako bi ugodio'
+  - '&7frekvenciju pohrane Ender kutije.'
+  name: '&fEnder ugađač'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na Ender kutiju za ugađanje'
+  - '&eDesni klik&7 drugdje otvara sučelje ugađanja'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Tali da dobiješ energiziranu zlatnu polugu.'
+  name: '&fEnergizirani zlatni prah'
   type:
   - '&7&oResurs'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Čudno svjetluca...'
+  name: '&fEnergizirana zlatna poluga'
   type:
   - '&7&oResurs'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Tali da dobiješ energiziranu željeznu polugu.'
+  name: '&fEnergizirani željezni prah'
   type:
   - '&7&oResurs'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Čudno svjetluca...'
+  name: '&fEnergizirana željezna poluga'
   type:
   - '&7&oResurs'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Čudno svjetluca...'
+  name: '&fEnergizirani kvarc'
   type:
   - '&7&oResurs'
 STB_FERMENTER:
+  description:
+  - '&7Fermentira razne predmete, a koristi se'
+  - '&7i za izradu mamca za ribe.'
+  name: '&fFermentator'
   type:
   - '&7&oStroj'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Pohranjuje energiju kao međuspremnik između'
+  - '&7generatora i strojeva.'
+  name: '&f50K kutija s baterijama'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oStroj'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7Prijenosna energetska ćelija koja nosi pohranjenu'
+  - '&7STB energiju za punjenje uređaja u pokretu.'
+  name: '&f50K energetska ćelija'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKomponenta'
 STB_FISHBAIT:
+  description:
+  - '&7Koristi se u ribarskoj mreži za lov ribe.'
+  name: '&fMamac za ribe'
   type:
   - '&7&oKomponenta'
 STB_FISHINGNET:
+  description:
+  - '&7Automatski lovi ribu kada je postavljena'
+  - '&7nad vodom i punjena mamcem za ribe.'
+  name: '&fRibarska mreža'
   type:
   - '&7&oStroj'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7Višenamjenska motika koja obrađuje, sije i'
+  - '&7žanje, s ugrađenom torbom za sjeme.'
+  name: '&fZlatna kombinirana motika'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na zemlju/travu obrađuje područje 3x3'
+  - '&eDesni klik&7 na obradivu zemlju sije područje 3x3'
+  - '&eDesni klik&7 drugdje otvara torbu za sjeme'
+  - '&eLijevi klik&7 na biljke žanje područje 3x3'
+  - '&eLijevi klik&7 na lišće razbija područje 3x3x3'
 STB_GOLDDUST:
+  description:
+  - '&7Tali u talionici ili peći da dobiješ'
+  - '&7zlatne poluge.'
+  name: '&fZlatni prah'
   type:
   - '&7&oResurs'
 STB_HEATENGINE:
+  description:
+  - '&7Pretvara zapaljive predmete u energiju.'
+  name: '&fToplinski motor'
   type:
   - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Prikazuje neto energiju mreže,'
+  - '&7dobitak ili gubitak, pomoću holograma.'
+  name: '&fHolografski monitor'
   type:
   - '&7&oStroj'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za slanje predmeta'
+  - '&7u povezani modul prijamnika bilo gdje,'
+  - '&7u bilo kojem svijetu.'
+  name: '&fMod U.P.: Hiperpošiljatelj'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na usmjerivač s modulom prijamnika za povezivanje'
+  - '&eČučanj + lijevi klik&7 bilo gdje za prekid veze'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Hiper jedinica za pohranu. Pohranjuje kolosalnu'
+  - '&7količinu jedne vrste predmeta.'
+  - '&7Zadržava sadržaj kad se razbije. Za rad treba energiju.'
+  name: '&fHSU'
+  stats:
+  - '&8⇨ &733554431 hrpa'
   type:
   - '&7&oStroj'
 STB_INFERNALDUST:
+  description:
+  - '&7Ponekad ga ispuste blazeovi; Pljačkanje'
+  - '&7može pomoći. Spoji sa željeznim ili zlatnim prahom.'
+  name: '&fPakleni prah'
   type:
   - '&7&oResurs'
 STB_INFERNALFARM:
+  description:
+  - '&7Automatski žanje i ponovno sadi'
+  - '&7Nether bradavicu u radijusu 5x5, 2 bloka'
+  - '&7iznad stroja.'
+  name: '&fPaklena farma'
   type:
   - '&7&oStroj'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Koristi se kao komponenta u nekim naprednijim'
+  - '&7strojevima.'
+  name: '&fIntegrirani sklop'
   type:
   - '&7&oKomponenta'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7Višenamjenska motika koja obrađuje, sije i'
+  - '&7žanje, s ugrađenom torbom za sjeme.'
+  name: '&fŽeljezna kombinirana motika'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na zemlju/travu obrađuje područje 3x3'
+  - '&eDesni klik&7 na obradivu zemlju sije područje 3x3'
+  - '&eDesni klik&7 drugdje otvara torbu za sjeme'
+  - '&eLijevi klik&7 na biljke žanje područje 3x3'
+  - '&eLijevi klik&7 na lišće razbija područje 3x3x3'
 STB_IRONDUST:
+  description:
+  - '&7Tali u talionici ili peći da dobiješ'
+  - '&7željezne poluge.'
+  name: '&fŽeljezni prah'
   type:
   - '&7&oResurs'
 STB_ITEMROUTER:
+  description:
+  - '&7Usmjerava predmete. Umetni jedan ili više'
+  - '&7modula usmjeravanja za aktivaciju.'
+  name: '&fUsmjerivač predmeta'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 na blok za postavke usmjerivača'
 STB_LANDMARKER:
+  description:
+  - '&7Pohranjuje poziciju putem Sensible GPS-a,'
+  - '&7služi za određivanje radnih područja strojeva.'
+  name: '&fOznačivač zemljišta'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na blok pohranjuje njegovu poziciju'
+  - '&eDesni klik&7 u zrak briše poziciju'
 STB_MACHINEFRAME:
+  description:
+  - '&7Koristi se u izradi raznih strojeva.'
+  name: '&fOkvir stroja'
   type:
   - '&7&oKomponenta'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Pretvara lavu u energiju.'
+  name: '&fMagmatski motor'
   type:
   - '&7&oGenerator'
 STB_MASHER:
+  description:
+  - '&7Melje rude i ostale resurse u prahove.'
+  name: '&fDrobilica'
   type:
   - '&7&oStroj'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Ispituje razinu zasićenosti'
+  - '&7područja obradive zemlje 3x3.'
+  name: '&fMjerač vlage'
+  stats:
+  - '&8⇨ &7Područje: &e3x3'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na obradivu zemlju za provjeru vlage'
 STB_MULTIBUILDER:
+  description:
+  - '&7Napajani građevinski alat koji postavlja ili'
+  - '&7zamjenjuje blokove na području, s'
+  - '&7odabirom načina Gradnja i Zamjena.'
+  name: '&fMultigraditelj'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eLijevi klik&7 na blok za pregled'
+  - '&eDesni klik&7 na blok za gradnju'
+  - '&eČučanj + desni klik&7 za gradnju jednog bloka'
+  - '&eČučanj + kotačić miša&7 za promjenu načina'
 STB_MULTIMETER:
+  description:
+  - '&7Očitava spojeve energetske mreže i'
+  - '&7potrošnju energije kabela i strojeva.'
+  name: '&fMultimetar'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na kabel ili stroj za upotrebu'
 STB_PAINTBRUSH:
+  description:
+  - '&7Boji blokove koji se mogu obojiti, poput vune,'
+  - '&7tepiha i obojene gline ili stakla, koristeći'
+  - '&7boju iz limenke boje.'
+  name: '&fKist'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na blok boji do 25 blokova'
+  - '&eČučanj + desni klik&7 na blok boji jedan blok'
+  - '&eČučanj + desni klik&7 u zrak prazni kist'
+  - '&eDesni klik&7 na slike mijenja motiv'
 STB_PAINTCAN:
+  description:
+  - '&7Sadrži zalihu obojene boje.'
+  name: '&fLimenka boje'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 s kistom za nadopunu'
+  - '&eDesni klik&7 s bilo čim drugim otvara mješalicu;'
+  - '&7stavi kantu mlijeka i bojilo unutra za miješanje boje'
 STB_PAINTROLLER:
+  description:
+  - '&7Boji blokove koji se mogu obojiti na većem'
+  - '&7području od kista, koristeći boju uzetu'
+  - '&7iz limenke boje.'
+  name: '&fValjak za boju'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na blok boji do 100 blokova'
+  - '&eČučanj + desni klik&7 na blok boji jedan blok'
+  - '&eČučanj + desni klik&7 u zrak prazni valjak'
 STB_POWERMONITOR:
+  description:
+  - '&7Prikazuje neto energiju mreže,'
+  - '&7dobitak ili gubitak, na spojenim znakovima.'
+  name: '&fMonitor energije'
   type:
   - '&7&oStroj'
 STB_PULLERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za povlačenje predmeta'
+  - '&7iz susjednog inventara.'
+  name: '&fMod U.P.: Povlačitelj'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_PUMP:
+  description:
+  - '&7Pumpa tekućine odozdo u umetnutu'
+  - '&7kantu ili staklenu bocu.'
+  name: '&fPumpa'
   type:
   - '&7&oStroj'
 STB_PVCELL:
+  description:
+  - '&7Fotonaponska ćelija koja napaja solarni'
+  - '&7generator. S vremenom se troši.'
+  name: '&fPV ćelija'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eDesni klik&7 na solarni generator za umetanje'
 STB_QUARTZDUST:
+  description:
+  - '&7Skuhaj u talionici za dobivanje silicija.'
+  name: '&fKvarcni prah'
   type:
   - '&7&oResurs'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Pasivni modul koji prima predmete'
+  - '&7od okrenutog modula pošiljatelja ili povezanog'
+  - '&7naprednog modula pošiljatelja.'
+  name: '&fMod U.P.: Prijamnik'
   type:
   - '&7&oKomponenta'
 STB_RECIPEBOOK:
+  description:
+  - '&7Omogućuje pregled i izradu svih'
+  - '&7poznatih recepata.'
+  name: '&fKnjiga recepata'
   type:
   - '&7&oNaprava'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Sat u bloku. Odašilje redstone'
+  - '&7signal s podesivim razmakom & trajanjem.'
+  name: '&fRedstone sat'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 na blok za postavke sata'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Dodaje strojevima inteligenciju za učinkovitije'
+  - '&7trošenje resursa. Učinak se razlikuje'
+  - '&7ovisno o stroju.'
+  name: '&fNadogradnja regulatora'
   type:
   - '&7&oKomponenta'
 STB_SAWMILL:
+  description:
+  - '&7Prerađuje drvene predmete u daske'
+  - '&7uz veći prinos nego izradom.'
+  name: '&fPilana'
   type:
   - '&7&oStroj'
 STB_SCURELAY:
+  description:
+  - '&7Povezuje se s drugim SCU relejem radi dijeljenja'
+  - '&7zajedničkog punjenja na bilo kojoj udaljenosti.'
+  name: '&fSCU relej'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oStroj'
 STB_SENDERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za slanje predmeta'
+  - '&7u susjedni inventar ili u usmjerivač'
+  - '&7s modulom prijamnika unutar 10 blokova'
+  - '&7uz izravnu vidljivost.'
+  name: '&fMod U.P.: Pošiljatelj'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_SILICONWAFER:
+  description:
+  - '&7Koristi se u izradi naprednijih'
+  - '&7elektroničkih sklopova.'
+  name: '&fSilicijska pločica'
   type:
   - '&7&oKomponenta'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Vadi svilenim dodirom blok u svom postavljenom'
+  - '&7smjeru i povlači ga u usmjerivač.'
+  - '&7Mora se izraditi s knjigom Svilenog dodira.'
+  name: '&fMod U.P.: Svileni razbijač'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Koristi se kao komponenta u raznim strojevima.'
+  name: '&fJednostavni elektronički sklop'
   type:
   - '&7&oKomponenta'
 STB_SMELTER:
+  description:
+  - '&7Tali predmete kao peć, ali'
+  - '&7brže i učinkovitije.'
+  name: '&fTalionica'
   type:
   - '&7&oStroj'
 STB_SORTERMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za stavljanje predmeta'
+  - '&7u inventar samo ako je prazan ili'
+  - '&7već sadrži taj predmet.'
+  name: '&fMod U.P.: Razvrstavač'
   type:
   - '&7&oKomponenta'
+  usage:
+  - '&eLijevi klik&7 na blok postavlja smjer'
+  - '&eČučanj + lijevi klik&7 u zrak poništava smjer'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Smanjuje glasnoću svih zvukova'
+  - '&7u radijusu od 8 blokova.'
+  name: '&fPrigušivač zvuka'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eDesni klik&7 za otvaranje postavki'
 STB_SPEEDMODULE:
+  description:
+  - '&7Pasivni modul koji povećava brzinu'
+  - '&7usmjerivača. 0 modula = 1 operacija / 20 tikova;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Preko 3 se zanemaruje.'
+  name: '&fMod U.P.: Nadogradnja brzine'
   type:
   - '&7&oKomponenta'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Stavlja se u stroj da radi'
+  - '&7brže, uz veću potrošnju energije.'
+  name: '&fNadogradnja brzine'
+  stats:
+  - '&8⇨ &7Brzina: &ex1.4'
+  - '&8⇨ &7Potrošnja energije: &ex1.6'
   type:
   - '&7&oKomponenta'
 STB_STACKMODULE:
+  description:
+  - '&7Pasivni modul; svaki udvostručuje broj'
+  - '&7predmeta po operaciji, do najveće'
+  - '&7veličine hrpe predmeta. Preko 6 se zanemaruje.'
+  name: '&fMod U.P.: Nadogradnja hrpe'
   type:
   - '&7&oKomponenta'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Neki napredni predmeti koriste ga za'
+  - '&7komunikaciju među svjetovima.'
+  name: '&fPodprostorni transponder'
   type:
   - '&7&oKomponenta'
 STB_TAPEMEASURE:
+  description:
+  - '&7Mjeri udaljenost između dvije'
+  - '&7točke koje odabereš u svijetu.'
+  name: '&fMjerna vrpca'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eČučanj + desni klik&7 na blok postavlja sidro'
+  - '&eDesni klik&7 na blok daje izmjeru'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Pohranjuje energiju kao međuspremnik između'
+  - '&7generatora i strojeva.'
+  name: '&f10K kutija s baterijama'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oStroj'
 STB_TENKENERGYCELL:
+  description:
+  - '&7Prijenosna energetska ćelija koja nosi pohranjenu'
+  - '&7STB energiju za punjenje uređaja u pokretu.'
+  name: '&f10K energetska ćelija'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKomponenta'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Stavlja se u stroj za veći koristan'
+  - '&7izlaz, uz gubitak brzine i energije.'
+  name: '&fNadogradnja temeljitosti'
+  stats:
+  - '&8⇨ &7Brzina: &ex0.7'
+  - '&8⇨ &7Potrošnja energije: &ex1.6'
+  - '&8⇨ &7Dodatni izlaz: &e+8%'
   type:
   - '&7&oKomponenta'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Koristi se u izradi nekih naprednijih'
+  - '&7strojeva.'
+  name: '&fOjačani okvir stroja'
   type:
   - '&7&oKomponenta'
 STB_TRASHCAN:
+  description:
+  - '&7UNIŠTAVA sve predmete stavljene ili dovedene'
+  - '&7u nju. Oprez!'
+  name: '&fKanta za smeće'
   type:
   - '&7&oStroj'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Izradi par ovih zajedno da ih povežeš'
+  - '&7u SCU relej sa zajedničkim punjenjem.'
+  name: '&fNepovezani SCU relej'
   type:
   - '&7&oKomponenta'
 STB_VACUUMMODULE:
+  description:
+  - '&7Umeće se u usmjerivač predmeta za usisavanje'
+  - '&7obližnjih ispuštenih predmeta.'
+  name: '&fMod U.P.: Usisavač'
+  stats:
+  - '&8⇨ &7Radijus: &e6 blokova'
   type:
   - '&7&oKomponenta'
 STB_WATERINGCAN:
+  description:
+  - '&7Navodnjava i uzgaja obližnje usjeve.'
+  - '&7Ne pretjeruj s njom!'
+  name: '&fKanta za zalijevanje'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 za navodnjavanje usjeva'
+  - '&eDesni klik&7 u vodi za nadopunu'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7Višenamjenska motika koja obrađuje, sije i'
+  - '&7žanje, s ugrađenom torbom za sjeme.'
+  name: '&fDrvena kombinirana motika'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eDesni klik&7 na zemlju/travu obrađuje područje 3x3'
+  - '&eDesni klik&7 na obradivu zemlju sije područje 3x3'
+  - '&eDesni klik&7 drugdje otvara torbu za sjeme'
+  - '&eLijevi klik&7 na biljke žanje područje 3x3'
+  - '&eLijevi klik&7 na lišće razbija područje 3x3x3'
