@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Pārbauda mitruma līmeni'
+  - '&75x5 aramzemes apgabalā.'
+  name: '&fProgresīvs mitruma mērītājs'
+  stats:
+  - '&8⇨ &7Apgabals: &e5x5'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz aramzemes, lai pārbaudītu mitrumu'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Pārlūko un izgatavo zināmās receptes,'
+  - '&7un izgatavošanas laikā var ņemt priekšmetus'
+  - '&7no blakus esošajiem inventāriem.'
+  name: '&fProgresīva recepšu grāmata'
   type:
   - '&7&oIerīce'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai sūtītu priekšmetus'
+  - '&7uz saistītu uztvērēja moduli'
+  - '&724 bloku rādiusā, bez tiešas redzamības.'
+  name: '&fP.M. mods: Progr. sūtītājs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz maršrutētāja ar uztvērēja moduli, lai saistītu'
+  - '&ePietupties + kreisais klikšķis&7, lai atsaistītu'
 STB_ANGELICBLOCK:
+  description:
+  - '&7Pagaidu peldošs sastatņu bloks,'
+  - '&7ideāls būvēšanai tukšā telpā.'
+  name: '&fEņģeļa bloks'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis&7, lai novietotu bloku gaisā'
+  - '&eKreisais klikšķis&7 uz bloka, lai to uzreiz salauztu'
 STB_AUTOBUILDER:
+  description:
+  - '&7Var apbūvēt vai attīrīt apgabalu.'
+  - '&7Izmanto zemes marķierus, lai noteiktu apgabalu.'
+  name: '&fAutomātiskais būvnieks'
   type:
   - '&7&oMašīna'
 STB_AUTOFARM:
+  description:
+  - '&7Automātiski novāc un pārstāda'
+  - '&7kviešu, kartupeļu un burkānu kultūras 3x3'
+  - '&7rādiusā, 2 blokus virs mašīnas.'
+  name: '&fAutomātiskā ferma'
   type:
   - '&7&oMašīna'
 STB_AUTOFARM2:
+  description:
+  - '&7Automātiski novāc un pārstāda'
+  - '&7kakao pupiņas, cukurniedres un kaktusus'
+  - '&75x5 rādiusā, 2 blokus virs mašīnas.'
+  name: '&fAutomātiskā ferma MkII'
   type:
   - '&7&oMašīna'
 STB_AUTOFORESTER:
+  description:
+  - '&7Automātiski nocērt un pārstāda kokus'
+  - '&75x5 rādiusā, 2 blokus virs mašīnas.'
+  name: '&fAutomātiskais mežstrādnieks'
   type:
   - '&7&oMašīna'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Ražo enerģiju ārpus telpām spožā'
+  - '&7saules gaismā. Darbībai vajadzīga PV šūna.'
+  name: '&fPamata saules elements'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oĢenerators'
+  usage:
+  - '&eKreisais klikšķis&7 (tukša roka), lai izņemtu PV šūnu'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Lielā krātuves vienība. Uzglabā milzīgu'
+  - '&7viena priekšmeta veida daudzumu.'
+  name: '&fBSU'
+  stats:
+  - '&8⇨ &7128 steki'
   type:
   - '&7&oMašīna'
 STB_BIOENGINE:
+  description:
+  - '&7Pārvērš organiskus materiālus enerģijā.'
+  name: '&fBiodzinējs'
   type:
   - '&7&oĢenerators'
 STB_BLANKMODULE:
+  description:
+  - '&7Tukšs pamats, ko izmanto dažādu'
+  - '&7priekšmetu maršrutētāja moduļu izgatavošanai.'
+  name: '&fTukšs priekšmetu maršrutētāja modulis'
   type:
   - '&7&oSastāvdaļa'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Izstaro sarkanakmens impulsu, kad'
+  - '&7blakus esošs bloks atjauninās.'
+  name: '&fBloku atjaunināšanas detektors'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai to konfigurētu'
 STB_BREAKERMODULE:
+  description:
+  - '&7Salauž bloku tā konfigurētajā'
+  - '&7virzienā un ievelk to maršrutētājā.'
+  name: '&fP.M. mods: Lauzējs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Izmanto elektronisko shēmu'
+  - '&7izgatavošanā.'
+  name: '&fShēmas plate'
   type:
   - '&7&oSastāvdaļa'
 STB_DENSESOLAR:
+  description:
+  - '&7Ražo enerģiju ārpus telpām spožā'
+  - '&7saules gaismā. Darbībai vajadzīga PV šūna.'
+  name: '&fBlīvais saules elements'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oĢenerators'
+  usage:
+  - '&eKreisais klikšķis&7 (tukša roka), lai izņemtu PV šūnu'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7Daudzfunkcionāls kaplis, kas ara, sēj un'
+  - '&7novāc plašākā apgabalā, ar iebūvētu'
+  - '&7sēklu somu.'
+  name: '&fDimanta kombinētais kaplis'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz zemes vai zāles, lai uzartu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 uz aramzemes, lai apsētu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 citur, lai atvērtu sēklu somu'
+  - '&eKreisais klikšķis&7 uz augiem, lai novāktu 5x5 apgabalu'
+  - '&eKreisais klikšķis&7 uz lapām, lai salauztu 3x3x3 apgabalu'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Velk priekšmetus no konfigurētā virziena,'
+  - '&7tad sūta tos pēc kārtas uz visiem citiem'
+  - '&7blakus esošajiem inventāriem.'
+  name: '&fP.M. mods: Sadalītājs'
   type:
   - '&7&oSastāvdaļa'
 STB_DROPPERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai nomestu priekšmetus'
+  - '&7zemē konfigurētajā virzienā.'
+  name: '&fP.M. mods: Nometējs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Ievietojams mašīnā, lai automātiski izmestu tās'
+  - '&7gatavos priekšmetus blakus esošā inventārā.'
+  name: '&fIzmetēja uzlabojums'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu izmešanas virzienu'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Ļauj enerģizēt noteiktus priekšmetus,'
+  - '&7pārvēršot tos uzlādētos variantos.'
+  name: '&fElektriskais enerģizators'
   type:
   - '&7&oMašīna'
 STB_ELEVATOR:
+  description:
+  - '&7Saistās ar citiem liftiem, kas novietoti'
+  - '&7tieši virs vai zem tā.'
+  name: '&fLifts'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eNospied atstarpi&7, lai brauktu augšup'
+  - '&eNospied Shift&7, lai brauktu lejup'
 STB_ENDERBAG:
+  description:
+  - '&7Nodrošina pārnēsājamu piekļuvi personīgajam'
+  - '&7vai globālajam Ender krātuves inventāram.'
+  name: '&fEnder soma'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis&7, lai atvērtu somu'
+  - '&ePietupties + labais klikšķis&7 uz Ender kastes, lai sinhronizētu frekvenci'
 STB_ENDERBOX:
+  description:
+  - '&7Ārpusdimensiju krātuve, pieejama'
+  - '&7no saistītām Ender kastēm.'
+  name: '&fEnder kaste'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7 ar Ender skaņotāju, lai iestatītu tās frekvenci'
 STB_ENDERLEASH:
+  description:
+  - '&7Notver un uzglabā vienu mierīgu dzīvnieku,'
+  - '&7ļaujot viegli pārvietot mājlopus.'
+  name: '&fEnder pavada'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eLabais klikšķis&7, lai notvertu vai atlaistu dzīvnieku'
 STB_ENDERTUNER:
+  description:
+  - '&7Vibrē sešās dimensijās, lai noskaņotu'
+  - '&7Ender kastes krātuves frekvenci.'
+  name: '&fEnder skaņotājs'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz Ender kastes, lai to noskaņotu'
+  - '&eLabais klikšķis&7 citur, lai atvērtu skaņošanas saskarni'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Izkausē, lai iegūtu enerģizētu zelta lietni.'
+  name: '&fEnerģizēti zelta putekļi'
   type:
   - '&7&oResurss'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Savādi kvēlo...'
+  name: '&fEnerģizēts zelta lietnis'
   type:
   - '&7&oResurss'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Izkausē, lai iegūtu enerģizētu dzelzs lietni.'
+  name: '&fEnerģizēti dzelzs putekļi'
   type:
   - '&7&oResurss'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Savādi kvēlo...'
+  name: '&fEnerģizēts dzelzs lietnis'
   type:
   - '&7&oResurss'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Savādi kvēlo...'
+  name: '&fEnerģizēts kvarcs'
   type:
   - '&7&oResurss'
 STB_FERMENTER:
+  description:
+  - '&7Fermentē dažādus priekšmetus, un to arī'
+  - '&7izmanto zivju ēsmas gatavošanai.'
+  name: '&fFermentators'
   type:
   - '&7&oMašīna'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Uzglabā enerģiju, buferējot jaudu starp'
+  - '&7ģeneratoriem un mašīnām.'
+  name: '&f50K bateriju kaste'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oMašīna'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7Pārnēsājama enerģijas šūna, kas nes uzkrāto'
+  - '&7STB enerģiju ierīču uzlādei ceļā.'
+  name: '&f50K enerģijas šūna'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oSastāvdaļa'
 STB_FISHBAIT:
+  description:
+  - '&7Izmanto zvejas tīklā zivju ķeršanai.'
+  name: '&fZivju ēsma'
   type:
   - '&7&oSastāvdaļa'
 STB_FISHINGNET:
+  description:
+  - '&7Automātiski ķer zivis, ja novietots'
+  - '&7virs ūdens un papildināts ar zivju ēsmu.'
+  name: '&fZvejas tīkls'
   type:
   - '&7&oMašīna'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7Daudzfunkcionāls kaplis, kas ara, sēj un'
+  - '&7novāc, ar iebūvētu sēklu somu.'
+  name: '&fZelta kombinētais kaplis'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz zemes vai zāles, lai uzartu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 uz aramzemes, lai apsētu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 citur, lai atvērtu sēklu somu'
+  - '&eKreisais klikšķis&7 uz augiem, lai novāktu 3x3 apgabalu'
+  - '&eKreisais klikšķis&7 uz lapām, lai salauztu 3x3x3 apgabalu'
 STB_GOLDDUST:
+  description:
+  - '&7Kausē kausētavā vai krāsnī, lai iegūtu'
+  - '&7zelta lietņus.'
+  name: '&fZelta putekļi'
   type:
   - '&7&oResurss'
 STB_HEATENGINE:
+  description:
+  - '&7Pārvērš degošus priekšmetus enerģijā.'
+  name: '&fSiltuma dzinējs'
   type:
   - '&7&oĢenerators'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Rāda tīkla enerģijas neto'
+  - '&7pieaugumu vai zudumu ar hologrammām.'
+  name: '&fHologrāfiskais monitors'
   type:
   - '&7&oMašīna'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai sūtītu priekšmetus'
+  - '&7uz saistītu uztvērēja moduli jebkur,'
+  - '&7jebkurā pasaulē.'
+  name: '&fP.M. mods: Hipersūtītājs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz maršrutētāja ar uztvērēja moduli, lai saistītu'
+  - '&ePietupties + kreisais klikšķis&7 jebkur, lai atsaistītu'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Hiperkrātuves vienība. Uzglabā kolosālu'
+  - '&7viena priekšmeta veida daudzumu.'
+  - '&7Salaužot saglabā saturu. Darbībai nepieciešama enerģija.'
+  name: '&fHSU'
+  stats:
+  - '&8⇨ &733554431 steki'
   type:
   - '&7&oMašīna'
 STB_INFERNALDUST:
+  description:
+  - '&7Dažkārt izkrīt no blaziem; Laupīšana'
+  - '&7var palīdzēt. Apvieno ar dzelzs vai zelta putekļiem.'
+  name: '&fInfernālie putekļi'
   type:
   - '&7&oResurss'
 STB_INFERNALFARM:
+  description:
+  - '&7Automātiski novāc un pārstāda'
+  - '&7Nether sēnīti 5x5 rādiusā, 2 blokus'
+  - '&7virs mašīnas.'
+  name: '&fInfernālā ferma'
   type:
   - '&7&oMašīna'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Izmanto kā komponentu dažās progresīvākās'
+  - '&7mašīnās.'
+  name: '&fIntegrālā shēma'
   type:
   - '&7&oSastāvdaļa'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7Daudzfunkcionāls kaplis, kas ara, sēj un'
+  - '&7novāc, ar iebūvētu sēklu somu.'
+  name: '&fDzelzs kombinētais kaplis'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz zemes vai zāles, lai uzartu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 uz aramzemes, lai apsētu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 citur, lai atvērtu sēklu somu'
+  - '&eKreisais klikšķis&7 uz augiem, lai novāktu 3x3 apgabalu'
+  - '&eKreisais klikšķis&7 uz lapām, lai salauztu 3x3x3 apgabalu'
 STB_IRONDUST:
+  description:
+  - '&7Kausē kausētavā vai krāsnī, lai iegūtu'
+  - '&7dzelzs lietņus.'
+  name: '&fDzelzs putekļi'
   type:
   - '&7&oResurss'
 STB_ITEMROUTER:
+  description:
+  - '&7Maršrutē priekšmetus. Ievieto vienu vai vairākus'
+  - '&7maršrutēšanas moduļus, lai to aktivizētu.'
+  name: '&fPriekšmetu maršrutētājs'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai konfigurētu maršrutētāju'
 STB_LANDMARKER:
+  description:
+  - '&7Saglabā pozīciju ar Sensible GPS,'
+  - '&7ko izmanto mašīnu darba apgabalu noteikšanai.'
+  name: '&fZemes marķieris'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai saglabātu tā pozīciju'
+  - '&eLabais klikšķis&7 gaisā, lai notīrītu pozīciju'
 STB_MACHINEFRAME:
+  description:
+  - '&7Izmanto dažādu mašīnu izgatavošanā.'
+  name: '&fMašīnas rāmis'
   type:
   - '&7&oSastāvdaļa'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Pārvērš lavu enerģijā.'
+  name: '&fMagmatiskais dzinējs'
   type:
   - '&7&oĢenerators'
 STB_MASHER:
+  description:
+  - '&7Samaļ rūdas un citus resursus putekļos.'
+  name: '&fSmalcinātājs'
   type:
   - '&7&oMašīna'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Pārbauda mitruma līmeni'
+  - '&73x3 aramzemes apgabalā.'
+  name: '&fMitruma mērītājs'
+  stats:
+  - '&8⇨ &7Apgabals: &e3x3'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz aramzemes, lai pārbaudītu mitrumu'
 STB_MULTIBUILDER:
+  description:
+  - '&7Darbināts būvēšanas rīks, kas novieto vai'
+  - '&7apmaina blokus apgabalā, ar izvēlamiem'
+  - '&7būvēšanas un apmaiņas režīmiem.'
+  name: '&fDaudzbūvētājs'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai priekšskatītu'
+  - '&eLabais klikšķis&7 uz bloka, lai būvētu'
+  - '&ePietupties + labais klikšķis&7, lai uzbūvētu vienu bloku'
+  - '&ePietupties + peles ritenītis&7, lai mainītu režīmu'
 STB_MULTIMETER:
+  description:
+  - '&7Nolasa enerģijas tīkla savienojumus un'
+  - '&7kabeļu un mašīnu enerģijas patēriņu.'
+  name: '&fMultimetrs'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz kabeļa vai mašīnas, lai lietotu'
 STB_PAINTBRUSH:
+  description:
+  - '&7Krāso krāsojamus blokus, piemēram, vilnu,'
+  - '&7paklāju un krāsotu mālu vai stiklu, izmantojot'
+  - '&7krāsu no krāsas bundžas.'
+  name: '&fKrāsas ota'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai nokrāsotu līdz 25 blokiem'
+  - '&ePietupties + labais klikšķis&7 uz bloka, lai nokrāsotu vienu bloku'
+  - '&ePietupties + labais klikšķis&7 gaisā, lai iztukšotu otu'
+  - '&eLabais klikšķis&7 uz gleznām, lai mainītu attēlu'
 STB_PAINTCAN:
+  description:
+  - '&7Satur krāsainas krāsas krājumu.'
+  name: '&fKrāsas bundža'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7 ar otu, lai to uzpildītu'
+  - '&eLabais klikšķis&7 ar jebko citu, lai atvērtu maisītāju;'
+  - '&7ieliec iekšā piena spaini un krāsvielu, lai samaisītu krāsu'
 STB_PAINTROLLER:
+  description:
+  - '&7Krāso krāsojamus blokus plašākā'
+  - '&7apgabalā nekā ota, izmantojot krāsu'
+  - '&7no krāsas bundžas.'
+  name: '&fKrāsas veltnis'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai nokrāsotu līdz 100 blokiem'
+  - '&ePietupties + labais klikšķis&7 uz bloka, lai nokrāsotu vienu bloku'
+  - '&ePietupties + labais klikšķis&7 gaisā, lai iztukšotu veltni'
 STB_POWERMONITOR:
+  description:
+  - '&7Rāda tīkla enerģijas neto'
+  - '&7pieaugumu vai zudumu uz piestiprinātām zīmēm.'
+  name: '&fEnerģijas monitors'
   type:
   - '&7&oMašīna'
 STB_PULLERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai vilktu priekšmetus'
+  - '&7no blakus esoša inventāra.'
+  name: '&fP.M. mods: Vilcējs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_PUMP:
+  description:
+  - '&7Sūknē šķidrumus no apakšas ievietotā'
+  - '&7spainī vai stikla pudelē.'
+  name: '&fSūknis'
   type:
   - '&7&oMašīna'
 STB_PVCELL:
+  description:
+  - '&7Fotoelementu šūna, kas darbina saules'
+  - '&7ģeneratoru. Ar laiku tā nodilst.'
+  name: '&fPV šūna'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eLabais klikšķis&7 uz saules ģeneratora, lai to ievietotu'
 STB_QUARTZDUST:
+  description:
+  - '&7Pagatavo kausētavā, lai iegūtu silīciju.'
+  name: '&fKvarca putekļi'
   type:
   - '&7&oResurss'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Pasīvs modulis, kas saņem priekšmetus'
+  - '&7no pretī vērsta sūtītāja moduļa vai saistīta'
+  - '&7progresīvā sūtītāja moduļa.'
+  name: '&fP.M. mods: Uztvērējs'
   type:
   - '&7&oSastāvdaļa'
 STB_RECIPEBOOK:
+  description:
+  - '&7Ļauj pārlūkot un izgatavot visas'
+  - '&7zināmās receptes.'
+  name: '&fRecepšu grāmata'
   type:
   - '&7&oIerīce'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Pulkstenis blokā. Raida sarkanakmens'
+  - '&7signālu ar regulējamu intervālu & ilgumu.'
+  name: '&fSarkanakmens pulkstenis'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7 uz bloka, lai konfigurētu pulksteni'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Piešķir mašīnām gudrību efektīvākai'
+  - '&7resursu izmantošanai. Ietekme atšķiras'
+  - '&7atkarībā no mašīnas.'
+  name: '&fRegulatora uzlabojums'
   type:
   - '&7&oSastāvdaļa'
 STB_SAWMILL:
+  description:
+  - '&7Pārstrādā koka priekšmetus dēļos'
+  - '&7ar lielāku iznākumu nekā izgatavojot.'
+  name: '&fZāģētava'
   type:
   - '&7&oMašīna'
 STB_SCURELAY:
+  description:
+  - '&7Saistās ar citu SCU releju, lai dalītos'
+  - '&7kopīgā uzlādē jebkurā attālumā.'
+  name: '&fSCU relejs'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oMašīna'
 STB_SENDERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai sūtītu priekšmetus'
+  - '&7uz blakus esošu inventāru vai uz maršrutētāju'
+  - '&7ar uztvērēja moduli 10 bloku attālumā'
+  - '&7tiešā redzamībā.'
+  name: '&fP.M. mods: Sūtītājs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_SILICONWAFER:
+  description:
+  - '&7Izmanto progresīvāku elektronisko'
+  - '&7shēmu izgatavošanā.'
+  name: '&fSilīcija plāksnīte'
   type:
   - '&7&oSastāvdaļa'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Ar zīda pieskārienu lauž bloku tā konfigurētajā'
+  - '&7virzienā un ievelk to maršrutētājā.'
+  - '&7Jāizgatavo ar Zīda pieskāriena grāmatu.'
+  name: '&fP.M. mods: Zīdainais lauzējs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Izmanto kā komponentu dažādās mašīnās.'
+  name: '&fVienkārša elektroniskā shēma'
   type:
   - '&7&oSastāvdaļa'
 STB_SMELTER:
+  description:
+  - '&7Kausē priekšmetus kā krāsns, tikai'
+  - '&7ātrāk un efektīvāk.'
+  name: '&fKausētava'
   type:
   - '&7&oMašīna'
 STB_SORTERMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai liktu priekšmetus'
+  - '&7inventārā tikai tad, ja tas ir tukšs vai'
+  - '&7jau satur šo priekšmetu.'
+  name: '&fP.M. mods: Šķirotājs'
   type:
   - '&7&oSastāvdaļa'
+  usage:
+  - '&eKreisais klikšķis&7 uz bloka, lai iestatītu virzienu'
+  - '&ePietupties + kreisais klikšķis&7 gaisā, lai atceltu virzienu'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Samazina visu skaņu skaļumu'
+  - '&78 bloku rādiusā.'
+  name: '&fSkaņas slāpētājs'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eLabais klikšķis&7, lai atvērtu konfigurāciju'
 STB_SPEEDMODULE:
+  description:
+  - '&7Pasīvs modulis, kas palielina maršrutētāja'
+  - '&7ātrumu. 0 moduļi = 1 darbība / 20 tiki;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Vairāk par 3 tiek ignorēti.'
+  name: '&fP.M. mods: Ātruma uzlabojums'
   type:
   - '&7&oSastāvdaļa'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Ievietojams mašīnā, lai tā darbotos'
+  - '&7ātrāk, taču ar lielāku enerģijas patēriņu.'
+  name: '&fĀtruma uzlabojums'
+  stats:
+  - '&8⇨ &7Ātrums: &ex1.4'
+  - '&8⇨ &7Enerģijas patēriņš: &ex1.6'
   type:
   - '&7&oSastāvdaļa'
 STB_STACKMODULE:
+  description:
+  - '&7Pasīvs modulis; katrs no tiem divkāršo'
+  - '&7vienā darbībā pārvietoto priekšmetu skaitu līdz'
+  - '&7priekšmeta maksimālajam stekam. Vairāk par 6 tiek ignorēti.'
+  name: '&fP.M. mods: Steka uzlabojums'
   type:
   - '&7&oSastāvdaļa'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Daži progresīvi priekšmeti to izmanto'
+  - '&7saziņai starp pasaulēm.'
+  name: '&fApakštelpas retranslators'
   type:
   - '&7&oSastāvdaļa'
 STB_TAPEMEASURE:
+  description:
+  - '&7Mēra attālumu starp diviem'
+  - '&7punktiem, ko izvēlies pasaulē.'
+  name: '&fMērlente'
   type:
   - '&7&oRīks'
+  usage:
+  - '&ePietupties + labais klikšķis&7 uz bloka, lai iestatītu enkuru'
+  - '&eLabais klikšķis&7 uz bloka, lai iegūtu mērījumu'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Uzglabā enerģiju, buferējot jaudu starp'
+  - '&7ģeneratoriem un mašīnām.'
+  name: '&f10K bateriju kaste'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oMašīna'
 STB_TENKENERGYCELL:
+  description:
+  - '&7Pārnēsājama enerģijas šūna, kas nes uzkrāto'
+  - '&7STB enerģiju ierīču uzlādei ceļā.'
+  name: '&f10K enerģijas šūna'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oSastāvdaļa'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Ievietojams mašīnā, lai palielinātu noderīgo'
+  - '&7izvadi uz ātruma un enerģijas rēķina.'
+  name: '&fRūpīguma uzlabojums'
+  stats:
+  - '&8⇨ &7Ātrums: &ex0.7'
+  - '&8⇨ &7Enerģijas patēriņš: &ex1.6'
+  - '&8⇨ &7Papildu izvade: &e+8%'
   type:
   - '&7&oSastāvdaļa'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Izmanto dažu progresīvāku mašīnu'
+  - '&7izgatavošanā.'
+  name: '&fIzturīgs mašīnas rāmis'
   type:
   - '&7&oSastāvdaļa'
 STB_TRASHCAN:
+  description:
+  - '&7IZNĪCINA jebkurus priekšmetus, kas ievietoti vai'
+  - '&7iepūsti tajā. Uzmanies!'
+  name: '&fAtkritumu tvertne'
   type:
   - '&7&oMašīna'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Izgatavo divus kopā, lai tos saistītu'
+  - '&7kopīgas uzlādes SCU relejā.'
+  name: '&fNesaistīts SCU relejs'
   type:
   - '&7&oSastāvdaļa'
 STB_VACUUMMODULE:
+  description:
+  - '&7Ievietojams priekšmetu maršrutētājā, lai uzsūktu'
+  - '&7tuvumā nomestos priekšmetus.'
+  name: '&fP.M. mods: Sūcējs'
+  stats:
+  - '&8⇨ &7Rādiuss: &e6 bloki'
   type:
   - '&7&oSastāvdaļa'
 STB_WATERINGCAN:
+  description:
+  - '&7Laista un audzē tuvumā esošos kultūraugus.'
+  - '&7Nelieto to pārmērīgi!'
+  name: '&fLejkanna'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7, lai laistītu kultūraugus'
+  - '&eLabais klikšķis&7 ūdenī, lai uzpildītu'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7Daudzfunkcionāls kaplis, kas ara, sēj un'
+  - '&7novāc, ar iebūvētu sēklu somu.'
+  name: '&fKoka kombinētais kaplis'
   type:
   - '&7&oRīks'
+  usage:
+  - '&eLabais klikšķis&7 uz zemes vai zāles, lai uzartu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 uz aramzemes, lai apsētu 3x3 apgabalu'
+  - '&eLabais klikšķis&7 citur, lai atvērtu sēklu somu'
+  - '&eKreisais klikšķis&7 uz augiem, lai novāktu 3x3 apgabalu'
+  - '&eKreisais klikšķis&7 uz lapām, lai salauztu 3x3x3 apgabalu'
