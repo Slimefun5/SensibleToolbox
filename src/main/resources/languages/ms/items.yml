@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Menguji tahap ketepuan'
+  - '&7kawasan tanah ladang 5x5.'
+  name: '&fPemeriksa Kelembapan Lanjutan'
+  stats:
+  - '&8⇨ &7Kawasan: &e5x5'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah ladang untuk memeriksa kelembapan'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Melayari dan membuat resipi yang diketahui,'
+  - '&7dan boleh menarik item daripada inventori'
+  - '&7bersebelahan semasa pembuatan.'
+  name: '&fBuku Resipi Lanjutan'
   type:
   - '&7&oGajet'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menghantar item'
+  - '&7ke Modul Penerima yang dipautkan dalam'
+  - '&7jejari 24 blok, tanpa perlu garis penglihatan.'
+  name: '&fMod P.I.: Penghantar Lanjutan'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 penghala yang ada Modul Penerima untuk memautkannya'
+  - '&eTunduk + Klik Kiri&7 untuk meleraikan pautan'
 STB_ANGELICBLOCK:
+  description:
+  - '&7Blok perancah terapung sementara,'
+  - '&7sesuai untuk membina ke ruang terbuka.'
+  name: '&fBlok Malaikat'
   type:
   - '&7&oGajet'
+  usage:
+  - '&eKlik Kanan&7 untuk meletakkan blok di udara'
+  - '&eKlik Kiri&7 blok itu untuk memecahkannya serta-merta'
 STB_AUTOBUILDER:
+  description:
+  - '&7Boleh membina atau melapangkan sesuatu kawasan.'
+  - '&7Guna Penanda Tanah untuk menetapkan kawasan.'
+  name: '&fPembina Auto'
   type:
   - '&7&oMesin'
 STB_AUTOFARM:
+  description:
+  - '&7Menuai dan menanam semula secara automatik'
+  - '&7tanaman Gandum, Kentang dan Lobak Merah dalam jejari 3x3,'
+  - '&72 blok di atas mesin.'
+  name: '&fLadang Auto'
   type:
   - '&7&oMesin'
 STB_AUTOFARM2:
+  description:
+  - '&7Menuai dan menanam semula secara automatik'
+  - '&7Biji Koko, Tebu dan Kaktus'
+  - '&7dalam jejari 5x5, 2 blok di atas mesin.'
+  name: '&fLadang Auto MkII'
   type:
   - '&7&oMesin'
 STB_AUTOFORESTER:
+  description:
+  - '&7Menebang dan menanam semula pokok secara automatik'
+  - '&7dalam jejari 5x5, 2 blok di atas mesin.'
+  name: '&fPembalak Auto'
   type:
   - '&7&oMesin'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Menjana kuasa ketika berada di luar dalam'
+  - '&7cahaya matahari terang. Memerlukan Sel PV untuk berfungsi.'
+  name: '&fSuria Asas'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oPenjana'
+  usage:
+  - '&eKlik Kiri&7 (tangan kosong) untuk mengeluarkan Sel PV'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Unit Penyimpanan Besar. Menyimpan kuantiti amat besar'
+  - '&7bagi satu jenis item tunggal.'
+  name: '&fBSU'
+  stats:
+  - '&8⇨ &7128 Tindanan'
   type:
   - '&7&oMesin'
 STB_BIOENGINE:
+  description:
+  - '&7Menukar bahan organik menjadi kuasa.'
+  name: '&fEnjin Bio'
   type:
   - '&7&oPenjana'
 STB_BLANKMODULE:
+  description:
+  - '&7Tapak kosong yang digunakan untuk membuat'
+  - '&7pelbagai modul Penghala Item.'
+  name: '&fModul Penghala Item Kosong'
   type:
   - '&7&oKomponen'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Mengeluarkan denyutan batu merah apabila'
+  - '&7blok bersebelahan dikemas kini.'
+  name: '&fPengesan Kemas Kini Blok'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 blok itu untuk menetapkannya'
 STB_BREAKERMODULE:
+  description:
+  - '&7Memecahkan blok dalam arah'
+  - '&7yang ditetapkan dan menariknya ke dalam penghala.'
+  name: '&fMod P.I.: Pemecah'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Digunakan dalam pembinaan litar'
+  - '&7elektronik.'
+  name: '&fPapan Litar'
   type:
   - '&7&oKomponen'
 STB_DENSESOLAR:
+  description:
+  - '&7Menjana kuasa ketika berada di luar dalam'
+  - '&7cahaya matahari terang. Memerlukan Sel PV untuk berfungsi.'
+  name: '&fSuria Padat'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oPenjana'
+  usage:
+  - '&eKlik Kiri&7 (tangan kosong) untuk mengeluarkan Sel PV'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7Cangkul serba guna yang menggembur, menyemai dan'
+  - '&7menuai di kawasan lebih luas, dengan'
+  - '&7beg benih terbina dalam.'
+  name: '&fCangkul Gabungan Berlian'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah/rumput untuk menggembur kawasan 3x3'
+  - '&eKlik Kanan&7 tanah ladang untuk menyemai kawasan 3x3'
+  - '&eKlik Kanan&7 di tempat lain untuk membuka beg benih'
+  - '&eKlik Kiri&7 tumbuhan untuk menuai kawasan 5x5'
+  - '&eKlik Kiri&7 daun untuk memecahkan kawasan 3x3x3'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Menarik item daripada arah yang ditetapkan,'
+  - '&7kemudian menghantarnya secara bergilir ke semua'
+  - '&7inventori bersebelahan yang lain.'
+  name: '&fMod P.I.: Pengagih'
   type:
   - '&7&oKomponen'
 STB_DROPPERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menjatuhkan item'
+  - '&7ke atas tanah dalam arah yang ditetapkan.'
+  name: '&fMod P.I.: Penjatuh'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Diletakkan dalam mesin untuk melentingkan item'
+  - '&7siapnya secara automatik ke inventori bersebelahan.'
+  name: '&fNaik Taraf Pelenting'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah lentingan'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Membolehkan anda menenagakan item tertentu'
+  - '&7kepada varian bercasnya.'
+  name: '&fPenenaga Elektrik'
   type:
   - '&7&oMesin'
 STB_ELEVATOR:
+  description:
+  - '&7Berpaut dengan lif lain yang diletakkan'
+  - '&7terus di atas atau di bawahnya.'
+  name: '&fLif'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eTekan Space&7 untuk naik'
+  - '&eTekan Shift&7 untuk turun'
 STB_ENDERBAG:
+  description:
+  - '&7Memberi akses mudah alih kepada inventori'
+  - '&7simpanan ender peribadi atau sejagat.'
+  name: '&fBeg Ender'
   type:
   - '&7&oGajet'
+  usage:
+  - '&eKlik Kanan&7 untuk membuka beg'
+  - '&eTunduk + Klik Kanan&7 Kotak Ender untuk menyelaraskan frekuensi'
 STB_ENDERBOX:
+  description:
+  - '&7Penyimpanan luar dimensi yang boleh dicapai'
+  - '&7daripada Kotak Ender yang dipautkan.'
+  name: '&fKotak Ender'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 dengan Penala Ender untuk menetapkan frekuensinya'
 STB_ENDERLEASH:
+  description:
+  - '&7Menangkap dan menyimpan seekor haiwan jinak,'
+  - '&7membolehkan anda memindahkan ternakan dengan mudah.'
+  name: '&fTali Ender'
   type:
   - '&7&oGajet'
+  usage:
+  - '&eKlik Kanan&7 untuk menangkap atau melepaskan haiwan'
 STB_ENDERTUNER:
+  description:
+  - '&7Bergetar dalam enam dimensi untuk menala'
+  - '&7frekuensi penyimpanan Kotak Ender.'
+  name: '&fPenala Ender'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 Kotak Ender untuk menalanya'
+  - '&eKlik Kanan&7 di tempat lain untuk membuka GUI penalaan'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Lebur untuk mendapat jongkong emas bertenaga.'
+  name: '&fSerbuk Emas Bertenaga'
   type:
   - '&7&oSumber'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Bercahaya dengan pelik...'
+  name: '&fJongkong Emas Bertenaga'
   type:
   - '&7&oSumber'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Lebur untuk mendapat jongkong besi bertenaga.'
+  name: '&fSerbuk Besi Bertenaga'
   type:
   - '&7&oSumber'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Bercahaya dengan pelik...'
+  name: '&fJongkong Besi Bertenaga'
   type:
   - '&7&oSumber'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Bercahaya dengan pelik...'
+  name: '&fKuarza Bertenaga'
   type:
   - '&7&oSumber'
 STB_FERMENTER:
+  description:
+  - '&7Menapai pelbagai item, dan juga'
+  - '&7digunakan untuk membuat Umpan Ikan.'
+  name: '&fPenapai'
   type:
   - '&7&oMesin'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Menyimpan tenaga untuk menimbal kuasa antara'
+  - '&7penjana dan mesin.'
+  name: '&fKotak Bateri 50K'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oMesin'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7Sel tenaga mudah alih yang membawa simpanan'
+  - '&7kuasa STB untuk mengecas peranti di mana-mana.'
+  name: '&fSel Tenaga 50K'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKomponen'
 STB_FISHBAIT:
+  description:
+  - '&7Digunakan dalam Jaring Ikan untuk menangkap ikan.'
+  name: '&fUmpan Ikan'
   type:
   - '&7&oKomponen'
 STB_FISHINGNET:
+  description:
+  - '&7Menangkap ikan secara automatik apabila diletakkan'
+  - '&7di atas air dan diisi dengan Umpan Ikan.'
+  name: '&fJaring Ikan'
   type:
   - '&7&oMesin'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7Cangkul serba guna yang menggembur, menyemai dan'
+  - '&7menuai, dengan beg benih terbina dalam.'
+  name: '&fCangkul Gabungan Emas'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah/rumput untuk menggembur kawasan 3x3'
+  - '&eKlik Kanan&7 tanah ladang untuk menyemai kawasan 3x3'
+  - '&eKlik Kanan&7 di tempat lain untuk membuka beg benih'
+  - '&eKlik Kiri&7 tumbuhan untuk menuai kawasan 3x3'
+  - '&eKlik Kiri&7 daun untuk memecahkan kawasan 3x3x3'
 STB_GOLDDUST:
+  description:
+  - '&7Lebur dalam Pelebur atau Relau untuk mendapat'
+  - '&7jongkong emas.'
+  name: '&fSerbuk Emas'
   type:
   - '&7&oSumber'
 STB_HEATENGINE:
+  description:
+  - '&7Menukar item boleh bakar menjadi kuasa.'
+  name: '&fEnjin Haba'
   type:
   - '&7&oPenjana'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Memaparkan tenaga bersih sesuatu rangkaian,'
+  - '&7sama ada untung atau rugi, menggunakan hologram.'
+  name: '&fPemantau Hologram'
   type:
   - '&7&oMesin'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menghantar item'
+  - '&7ke Modul Penerima yang dipautkan di mana-mana,'
+  - '&7di mana-mana dunia.'
+  name: '&fMod P.I.: Hiperpenghantar'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 penghala yang ada Modul Penerima untuk memautkannya'
+  - '&eTunduk + Klik Kiri&7 di mana-mana untuk meleraikan pautan'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Unit Penyimpanan Hiper. Menyimpan kuantiti gergasi'
+  - '&7bagi satu jenis item tunggal.'
+  - '&7Mengekalkan kandungan apabila dipecahkan. Perlu kuasa untuk berfungsi.'
+  name: '&fHSU'
+  stats:
+  - '&8⇨ &733554431 Tindanan'
   type:
   - '&7&oMesin'
 STB_INFERNALDUST:
+  description:
+  - '&7Kadangkala dijatuhkan oleh Blaze; Rampasan'
+  - '&7mungkin membantu. Gabungkan dengan serbuk besi atau emas.'
+  name: '&fSerbuk Neraka'
   type:
   - '&7&oSumber'
 STB_INFERNALFARM:
+  description:
+  - '&7Menuai dan menanam semula secara automatik'
+  - '&7Ketuat Nether dalam jejari 5x5, 2 blok'
+  - '&7di atas mesin.'
+  name: '&fLadang Neraka'
   type:
   - '&7&oMesin'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Digunakan sebagai komponen dalam jentera'
+  - '&7yang lebih lanjutan.'
+  name: '&fLitar Bersepadu'
   type:
   - '&7&oKomponen'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7Cangkul serba guna yang menggembur, menyemai dan'
+  - '&7menuai, dengan beg benih terbina dalam.'
+  name: '&fCangkul Gabungan Besi'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah/rumput untuk menggembur kawasan 3x3'
+  - '&eKlik Kanan&7 tanah ladang untuk menyemai kawasan 3x3'
+  - '&eKlik Kanan&7 di tempat lain untuk membuka beg benih'
+  - '&eKlik Kiri&7 tumbuhan untuk menuai kawasan 3x3'
+  - '&eKlik Kiri&7 daun untuk memecahkan kawasan 3x3x3'
 STB_IRONDUST:
+  description:
+  - '&7Lebur dalam Pelebur atau Relau untuk mendapat'
+  - '&7jongkong besi.'
+  name: '&fSerbuk Besi'
   type:
   - '&7&oSumber'
 STB_ITEMROUTER:
+  description:
+  - '&7Menghalakan item. Masukkan satu atau lebih'
+  - '&7Modul Penghalaan untuk mengaktifkannya.'
+  name: '&fPenghala Item'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 blok itu untuk menetapkan penghala'
 STB_LANDMARKER:
+  description:
+  - '&7Menyimpan kedudukan melalui Sensible GPS,'
+  - '&7digunakan untuk menetapkan kawasan kerja mesin.'
+  name: '&fPenanda Tanah'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 sesuatu blok untuk menyimpan kedudukannya'
+  - '&eKlik Kanan&7 udara untuk mengosongkan kedudukan'
 STB_MACHINEFRAME:
+  description:
+  - '&7Digunakan dalam pembuatan pelbagai mesin.'
+  name: '&fRangka Mesin'
   type:
   - '&7&oKomponen'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Menukar Lava menjadi kuasa.'
+  name: '&fEnjin Magma'
   type:
   - '&7&oPenjana'
 STB_MASHER:
+  description:
+  - '&7Mengisar bijih dan sumber lain menjadi serbuk.'
+  name: '&fPengisar'
   type:
   - '&7&oMesin'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Menguji tahap ketepuan'
+  - '&7kawasan tanah ladang 3x3.'
+  name: '&fPemeriksa Kelembapan'
+  stats:
+  - '&8⇨ &7Kawasan: &e3x3'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah ladang untuk memeriksa kelembapan'
 STB_MULTIBUILDER:
+  description:
+  - '&7Alat pembinaan berkuasa yang meletak atau'
+  - '&7menukar blok merentasi satu kawasan, dengan'
+  - '&7mod Bina dan Tukar yang boleh dipilih.'
+  name: '&fPembina Serba Guna'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk pratonton'
+  - '&eKlik Kanan&7 sesuatu blok untuk membina'
+  - '&eTunduk + Klik Kanan&7 untuk membina satu blok'
+  - '&eTunduk + Roda Tetikus&7 untuk menukar mod'
 STB_MULTIMETER:
+  description:
+  - '&7Membaca sambungan jaringan tenaga dan'
+  - '&7penggunaan kuasa kabel serta mesin.'
+  name: '&fMultimeter'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 kabel atau mesin untuk menggunakannya'
 STB_PAINTBRUSH:
+  description:
+  - '&7Mengecat blok boleh warna seperti bulu biri-biri,'
+  - '&7permaidani dan tanah liat atau kaca berwarna, menggunakan'
+  - '&7cat yang diambil dari Tin Cat.'
+  name: '&fBerus Cat'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 sesuatu blok untuk mengecat sehingga 25 blok'
+  - '&eTunduk + Klik Kanan&7 sesuatu blok untuk mengecat satu blok'
+  - '&eTunduk + Klik Kanan&7 udara untuk mengosongkan berus'
+  - '&eKlik Kanan&7 lukisan untuk menukar karyanya'
 STB_PAINTCAN:
+  description:
+  - '&7Menyimpan bekalan cat berwarna.'
+  name: '&fTin Cat'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 dengan Berus Cat untuk mengisinya semula'
+  - '&eKlik Kanan&7 dengan benda lain untuk membuka pengadun;'
+  - '&7letak Baldi Susu dan Pewarna di dalamnya untuk mengadun cat'
 STB_PAINTROLLER:
+  description:
+  - '&7Mengecat blok boleh warna di kawasan yang lebih'
+  - '&7luas daripada berus, menggunakan cat yang diambil'
+  - '&7dari Tin Cat.'
+  name: '&fPenggelek Cat'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 sesuatu blok untuk mengecat sehingga 100 blok'
+  - '&eTunduk + Klik Kanan&7 sesuatu blok untuk mengecat satu blok'
+  - '&eTunduk + Klik Kanan&7 udara untuk mengosongkan penggelek'
 STB_POWERMONITOR:
+  description:
+  - '&7Memaparkan tenaga bersih sesuatu rangkaian,'
+  - '&7sama ada untung atau rugi, pada papan tanda yang dilekatkan.'
+  name: '&fPemantau Kuasa'
   type:
   - '&7&oMesin'
 STB_PULLERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menarik item'
+  - '&7daripada inventori bersebelahan.'
+  name: '&fMod P.I.: Penarik'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_PUMP:
+  description:
+  - '&7Mengepam cecair dari bawah ke dalam'
+  - '&7Baldi atau Botol Kaca yang dimasukkan.'
+  name: '&fPam'
   type:
   - '&7&oMesin'
 STB_PVCELL:
+  description:
+  - '&7Sel fotovoltan yang menghidupkan penjana'
+  - '&7suria. Ia haus dengan berlalunya masa.'
+  name: '&fSel PV'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kanan&7 penjana suria untuk memasukkannya'
 STB_QUARTZDUST:
+  description:
+  - '&7Masak dalam Pelebur untuk membuat silikon.'
+  name: '&fSerbuk Kuarza'
   type:
   - '&7&oSumber'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Modul pasif yang menerima item'
+  - '&7daripada modul Penghantar yang menghadapnya atau modul'
+  - '&7Penghantar Lanjutan yang dipautkan.'
+  name: '&fMod P.I.: Penerima'
   type:
   - '&7&oKomponen'
 STB_RECIPEBOOK:
+  description:
+  - '&7Membolehkan anda melayari dan membuat semua'
+  - '&7resipi yang diketahui.'
+  name: '&fBuku Resipi'
   type:
   - '&7&oGajet'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Jam dalam blok. Mengeluarkan isyarat'
+  - '&7batu merah dengan selang & tempoh yang boleh ditetapkan.'
+  name: '&fJam Batu Merah'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 blok itu untuk menetapkan jam'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Menambah kepintaran pada mesin untuk penggunaan'
+  - '&7sumber yang lebih cekap. Kesannya berbeza'
+  - '&7mengikut mesin.'
+  name: '&fNaik Taraf Pengawal Atur'
   type:
   - '&7&oKomponen'
 STB_SAWMILL:
+  description:
+  - '&7Memproses item kayu menjadi papan'
+  - '&7dengan hasil lebih tinggi daripada pembuatan.'
+  name: '&fKilang Papan'
   type:
   - '&7&oMesin'
 STB_SCURELAY:
+  description:
+  - '&7Berpaut dengan Geganti SCU lain untuk berkongsi'
+  - '&7cas terkumpul merentasi sebarang jarak.'
+  name: '&fGeganti SCU'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oMesin'
 STB_SENDERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menghantar item'
+  - '&7ke inventori bersebelahan, atau ke penghala'
+  - '&7yang mempunyai Modul Penerima dalam lingkungan 10 blok'
+  - '&7dengan garis penglihatan.'
+  name: '&fMod P.I.: Penghantar'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_SILICONWAFER:
+  description:
+  - '&7Digunakan dalam pembuatan litar elektronik'
+  - '&7yang lebih lanjutan.'
+  name: '&fWafer Silikon'
   type:
   - '&7&oKomponen'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Memecahkan dengan Sentuhan Sutera blok dalam arah'
+  - '&7yang ditetapkan dan menariknya ke dalam penghala.'
+  - '&7Mesti dibuat dengan buku Sentuhan Sutera.'
+  name: '&fMod P.I.: Pemecah Sutera'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Digunakan sebagai komponen dalam pelbagai jentera.'
+  name: '&fLitar Elektronik Ringkas'
   type:
   - '&7&oKomponen'
 STB_SMELTER:
+  description:
+  - '&7Melebur item seperti Relau, tetapi'
+  - '&7lebih pantas dan lebih cekap.'
+  name: '&fPelebur'
   type:
   - '&7&oMesin'
 STB_SORTERMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk meletakkan item'
+  - '&7ke dalam inventori hanya jika ia kosong atau'
+  - '&7sudah mengandungi item itu.'
+  name: '&fMod P.I.: Pengisih'
   type:
   - '&7&oKomponen'
+  usage:
+  - '&eKlik Kiri&7 sesuatu blok untuk menetapkan arah'
+  - '&eTunduk + Klik Kiri&7 udara untuk membatalkan arah'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Mengurangkan kelantangan semua bunyi'
+  - '&7dalam jejari 8 blok.'
+  name: '&fPeredam Bunyi'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eKlik Kanan&7 untuk membuka tetapan'
 STB_SPEEDMODULE:
+  description:
+  - '&7Modul pasif yang meningkatkan kelajuan'
+  - '&7penghala. 0 modul = 1 operasi / 20 tik;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Lebih 3 diabaikan.'
+  name: '&fMod P.I.: Naik Taraf Kelajuan'
   type:
   - '&7&oKomponen'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Diletakkan dalam mesin untuk menjadikannya berjalan'
+  - '&7lebih pantas, dengan kos penggunaan kuasa lebih tinggi.'
+  name: '&fNaik Taraf Kelajuan'
+  stats:
+  - '&8⇨ &7Kelajuan: &ex1.4'
+  - '&8⇨ &7Penggunaan Kuasa: &ex1.6'
   type:
   - '&7&oKomponen'
 STB_STACKMODULE:
+  description:
+  - '&7Modul pasif; setiap satu menggandakan'
+  - '&7item yang dipindahkan setiap operasi, sehingga'
+  - '&7saiz tindanan maksimum item. Lebih 6 diabaikan.'
+  name: '&fMod P.I.: Naik Taraf Tindanan'
   type:
   - '&7&oKomponen'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Digunakan oleh sesetengah item lanjutan untuk'
+  - '&7komunikasi rentas dunia.'
+  name: '&fTransponder Subruang'
   type:
   - '&7&oKomponen'
 STB_TAPEMEASURE:
+  description:
+  - '&7Mengukur jarak antara dua'
+  - '&7titik yang anda pilih dalam dunia.'
+  name: '&fPita Pengukur'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eTunduk + Klik Kanan&7 sesuatu blok untuk menetapkan sauh'
+  - '&eKlik Kanan&7 sesuatu blok untuk mendapat ukuran'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Menyimpan tenaga untuk menimbal kuasa antara'
+  - '&7penjana dan mesin.'
+  name: '&fKotak Bateri 10K'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oMesin'
 STB_TENKENERGYCELL:
+  description:
+  - '&7Sel tenaga mudah alih yang membawa simpanan'
+  - '&7kuasa STB untuk mengecas peranti di mana-mana.'
+  name: '&fSel Tenaga 10K'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKomponen'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Diletakkan dalam mesin untuk meningkatkan keluaran'
+  - '&7berguna, dengan kos kelajuan dan kuasa.'
+  name: '&fNaik Taraf Ketelitian'
+  stats:
+  - '&8⇨ &7Kelajuan: &ex0.7'
+  - '&8⇨ &7Penggunaan Kuasa: &ex1.6'
+  - '&8⇨ &7Keluaran Bonus: &e+8%'
   type:
   - '&7&oKomponen'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Digunakan dalam pembuatan mesin'
+  - '&7yang lebih lanjutan.'
+  name: '&fRangka Mesin Kukuh'
   type:
   - '&7&oKomponen'
 STB_TRASHCAN:
+  description:
+  - '&7MEMUSNAHKAN sebarang item yang diletak atau dipaipkan'
+  - '&7ke dalamnya. Awas!'
+  name: '&fTong Sampah'
   type:
   - '&7&oMesin'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Buat sepasang benda ini bersama untuk memautkannya'
+  - '&7menjadi Geganti SCU yang berkongsi cas.'
+  name: '&fGeganti SCU Tanpa Pautan'
   type:
   - '&7&oKomponen'
 STB_VACUUMMODULE:
+  description:
+  - '&7Dimasukkan ke dalam Penghala Item untuk menyedut'
+  - '&7item terjatuh yang berdekatan.'
+  name: '&fMod P.I.: Vakum'
+  stats:
+  - '&8⇨ &7Jejari: &e6 blok'
   type:
   - '&7&oKomponen'
 STB_WATERINGCAN:
+  description:
+  - '&7Mengairi dan menumbuhkan tanaman berdekatan.'
+  - '&7Jangan guna berlebihan!'
+  name: '&fTin Penyiram'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 untuk mengairi tanaman'
+  - '&eKlik Kanan&7 dalam air untuk mengisi semula'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7Cangkul serba guna yang menggembur, menyemai dan'
+  - '&7menuai, dengan beg benih terbina dalam.'
+  name: '&fCangkul Gabungan Kayu'
   type:
   - '&7&oAlat'
+  usage:
+  - '&eKlik Kanan&7 tanah/rumput untuk menggembur kawasan 3x3'
+  - '&eKlik Kanan&7 tanah ladang untuk menyemai kawasan 3x3'
+  - '&eKlik Kanan&7 di tempat lain untuk membuka beg benih'
+  - '&eKlik Kiri&7 tumbuhan untuk menuai kawasan 3x3'
+  - '&eKlik Kiri&7 daun untuk memecahkan kawasan 3x3x3'
