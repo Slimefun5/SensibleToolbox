@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7檢測耕地的濕潤程度，範圍為'
+  - '&75x5 區域。'
+  name: '&f進階濕度檢測器'
+  stats:
+  - '&8⇨ &7區域：&e5x5'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7耕地以檢測濕度'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7瀏覽並製作已知的配方，'
+  - '&7且能在製作過程中從相鄰的'
+  - '&7容器中取用物品。'
+  name: '&f進階配方書'
   type:
   - '&7&o裝置'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7裝入物品路由器，將物品送往'
+  - '&7已連結的接收模組，範圍為'
+  - '&724 格半徑，且不需要視線。'
+  name: '&f路由模組：進階傳送器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7具備接收模組的路由器以建立連結'
+  - '&e潛行 + 左鍵點擊&7以解除連結'
 STB_ANGELICBLOCK:
+  description:
+  - '&7臨時的浮空鷹架方塊，'
+  - '&7適合向開闊空間延伸建造。'
+  name: '&f天使方塊'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊&7以在空中放置方塊'
+  - '&e左鍵點擊&7方塊可瞬間破壞它'
 STB_AUTOBUILDER:
+  description:
+  - '&7可以建造或清空一片區域。'
+  - '&7使用地標來劃定區域。'
+  name: '&f自動建造機'
   type:
   - '&7&o機器'
 STB_AUTOFARM:
+  description:
+  - '&7自動收穫並重新種植'
+  - '&7小麥、馬鈴薯與胡蘿蔔作物，範圍 3x3'
+  - '&7半徑，機器上方 2 格。'
+  name: '&f自動農場'
   type:
   - '&7&o機器'
 STB_AUTOFARM2:
+  description:
+  - '&7自動收穫並重新種植'
+  - '&7可可豆、甘蔗與仙人掌'
+  - '&7於 5x5 半徑內，機器上方 2 格。'
+  name: '&f自動農場 MkII'
   type:
   - '&7&o機器'
 STB_AUTOFORESTER:
+  description:
+  - '&7自動砍伐並重新種植樹木'
+  - '&7於 5x5 半徑內，機器上方 2 格。'
+  name: '&f自動伐木機'
   type:
   - '&7&o機器'
 STB_BASICSOLARCELL:
+  description:
+  - '&7在戶外明亮的陽光下產生電力。'
+  - '&7需要裝入光電池才能運作。'
+  name: '&f基礎太陽能'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&o發電機'
+  usage:
+  - '&e左鍵點擊&7（空手）以取出光電池'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7大型儲存單元。可儲存'
+  - '&7單一物品類型的龐大數量。'
+  name: '&f大型儲存單元'
+  stats:
+  - '&8⇨ &7128 組'
   type:
   - '&7&o機器'
 STB_BIOENGINE:
+  description:
+  - '&7將有機材料轉換為電力。'
+  name: '&f生質引擎'
   type:
   - '&7&o發電機'
 STB_BLANKMODULE:
+  description:
+  - '&7用來製作各種物品路由器'
+  - '&7模組的空白基底。'
+  name: '&f空白物品路由器模組'
   type:
   - '&7&o元件'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7當相鄰方塊發生更新時，'
+  - '&7發出一次紅石脈衝。'
+  name: '&f方塊更新偵測器'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7方塊以進行設定'
 STB_BREAKERMODULE:
+  description:
+  - '&7破壞其設定方向上的'
+  - '&7方塊，並將其拉入路由器中。'
+  name: '&f路由模組：破壞器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_CIRCUITBOARD:
+  description:
+  - '&7用於製造電子'
+  - '&7電路。'
+  name: '&f電路板'
   type:
   - '&7&o元件'
 STB_DENSESOLAR:
+  description:
+  - '&7在戶外明亮的陽光下產生電力。'
+  - '&7需要裝入光電池才能運作。'
+  name: '&f密集太陽能'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&o發電機'
+  usage:
+  - '&e左鍵點擊&7（空手）以取出光電池'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7多用途鋤具，可翻土、播種並'
+  - '&7在更廣的範圍內收穫，並'
+  - '&7內建種子袋。'
+  name: '&f鑽石複合鋤'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7泥土或草地以翻整 3x3 區域'
+  - '&e右鍵點擊&7耕地以播種 3x3 區域'
+  - '&e右鍵點擊&7其他地方以開啟種子袋'
+  - '&e左鍵點擊&7植物以收穫 5x5 區域'
+  - '&e左鍵點擊&7樹葉以破壞 3x3x3 區域'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7從設定的方向拉取物品，'
+  - '&7再依序輪流送往其他所有'
+  - '&7相鄰的容器。'
+  name: '&f路由模組：分配器'
   type:
   - '&7&o元件'
 STB_DROPPERMODULE:
+  description:
+  - '&7裝入物品路由器，可將物品'
+  - '&7朝設定的方向丟到地面上。'
+  name: '&f路由模組：投放器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7放入機器中，可將完成的物品'
+  - '&7自動排出到相鄰的容器裡。'
+  name: '&f排出升級'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定排出方向'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7讓你能將特定物品充能為'
+  - '&7它們的充能變體。'
+  name: '&f電力充能機'
   type:
   - '&7&o機器'
 STB_ELEVATOR:
+  description:
+  - '&7連結至放置於其正上方或'
+  - '&7正下方的其他電梯。'
+  name: '&f電梯'
   type:
   - '&7&o機器'
+  usage:
+  - '&e按空白鍵&7向上移動'
+  - '&e按 Shift 鍵&7向下移動'
 STB_ENDERBAG:
+  description:
+  - '&7提供可攜式的存取管道，通往個人'
+  - '&7或全域的終界儲存空間。'
+  name: '&f終界袋'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊&7以開啟袋子'
+  - '&e潛行 + 右鍵點擊&7終界盒以同步頻率'
 STB_ENDERBOX:
+  description:
+  - '&7跨維度的儲存空間，可從'
+  - '&7已連結的終界盒存取。'
+  name: '&f終界盒'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7並使用終界調頻器來設定其頻率'
 STB_ENDERLEASH:
+  description:
+  - '&7捕捉並存放一隻溫馴動物，'
+  - '&7讓你輕鬆遷移牲畜。'
+  name: '&f終界牽繩'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e右鍵點擊&7以捕捉或釋放動物'
 STB_ENDERTUNER:
+  description:
+  - '&7在六個維度中震動，用以調整'
+  - '&7終界盒的儲存頻率。'
+  name: '&f終界調頻器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7終界盒以調整頻率'
+  - '&e右鍵點擊&7其他地方以開啟調頻介面'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7熔煉後可得到一塊充能金錠。'
+  name: '&f充能金粉末'
   type:
   - '&7&o資源'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7散發著奇異的光芒……'
+  name: '&f充能金錠'
   type:
   - '&7&o資源'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7熔煉後可得到一塊充能鐵錠。'
+  name: '&f充能鐵粉末'
   type:
   - '&7&o資源'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7散發著奇異的光芒……'
+  name: '&f充能鐵錠'
   type:
   - '&7&o資源'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7散發著奇異的光芒……'
+  name: '&f充能石英'
   type:
   - '&7&o資源'
 STB_FERMENTER:
+  description:
+  - '&7發酵各種物品，也可用來'
+  - '&7製作魚餌。'
+  name: '&f發酵機'
   type:
   - '&7&o機器'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7儲存能量，用以緩衝發電機與'
+  - '&7機器之間的電力。'
+  name: '&f50K 電池箱'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o機器'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7可攜式能量單元，能帶著儲存的'
+  - '&7STB 電力，隨時為裝置充電。'
+  name: '&f50K 能量單元'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o元件'
 STB_FISHBAIT:
+  description:
+  - '&7放入漁網中用來捕魚。'
+  name: '&f魚餌'
   type:
   - '&7&o元件'
 STB_FISHINGNET:
+  description:
+  - '&7放置於水面上並投入魚餌後，'
+  - '&7便會自動捕魚。'
+  name: '&f漁網'
   type:
   - '&7&o機器'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7多用途鋤具，可翻土、播種並'
+  - '&7收穫，並內建種子袋。'
+  name: '&f金製複合鋤'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7泥土或草地以翻整 3x3 區域'
+  - '&e右鍵點擊&7耕地以播種 3x3 區域'
+  - '&e右鍵點擊&7其他地方以開啟種子袋'
+  - '&e左鍵點擊&7植物以收穫 3x3 區域'
+  - '&e左鍵點擊&7樹葉以破壞 3x3x3 區域'
 STB_GOLDDUST:
+  description:
+  - '&7放入冶煉機或熔爐中熔煉，可得到'
+  - '&7金錠。'
+  name: '&f金粉末'
   type:
   - '&7&o資源'
 STB_HEATENGINE:
+  description:
+  - '&7將可燃物品轉換為電力。'
+  name: '&f熱能引擎'
   type:
   - '&7&o發電機'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7顯示網路的淨能量'
+  - '&7增減，以全像投影呈現。'
+  name: '&f全像監視器'
   type:
   - '&7&o機器'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7裝入物品路由器，將物品送往'
+  - '&7任何地方已連結的接收模組，'
+  - '&7任何世界皆可。'
+  name: '&f路由模組：超級傳送器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7具備接收模組的路由器以建立連結'
+  - '&e潛行 + 左鍵點擊&7任何地方以解除連結'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7超級儲存單元。可儲存'
+  - '&7單一物品類型的龐大數量。'
+  - '&7破壞後仍保留內容物。需要電力才能運作。'
+  name: '&f超級儲存單元'
+  stats:
+  - '&8⇨ &733554431 組'
   type:
   - '&7&o機器'
 STB_INFERNALDUST:
+  description:
+  - '&7有時會由烈焰使掉落；掠奪附魔'
+  - '&7或許有幫助。可與鐵粉末或金粉末混合。'
+  name: '&f熾炎粉末'
   type:
   - '&7&o資源'
 STB_INFERNALFARM:
+  description:
+  - '&7自動收穫並重新種植'
+  - '&7地獄疣，5x5 半徑範圍，高度 2 格，'
+  - '&7位於機器上方。'
+  name: '&f地獄農場'
   type:
   - '&7&o機器'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7用作某些更進階'
+  - '&7機械的元件。'
+  name: '&f積體電路'
   type:
   - '&7&o元件'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7多用途鋤具，可翻土、播種並'
+  - '&7收穫，並內建種子袋。'
+  name: '&f鐵製複合鋤'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7泥土或草地以翻整 3x3 區域'
+  - '&e右鍵點擊&7耕地以播種 3x3 區域'
+  - '&e右鍵點擊&7其他地方以開啟種子袋'
+  - '&e左鍵點擊&7植物以收穫 3x3 區域'
+  - '&e左鍵點擊&7樹葉以破壞 3x3x3 區域'
 STB_IRONDUST:
+  description:
+  - '&7放入冶煉機或熔爐中熔煉，可得到'
+  - '&7鐵錠。'
+  name: '&f鐵粉末'
   type:
   - '&7&o資源'
 STB_ITEMROUTER:
+  description:
+  - '&7傳送物品。插入一個或多個'
+  - '&7路由模組即可啟動它。'
+  name: '&f物品路由器'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7方塊以設定路由器'
 STB_LANDMARKER:
+  description:
+  - '&7透過 Sensible GPS 儲存一個位置，'
+  - '&7用來劃定機器的工作區域。'
+  name: '&f地標'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7方塊以儲存其位置'
+  - '&e右鍵點擊&7空氣以清除位置'
 STB_MACHINEFRAME:
+  description:
+  - '&7用於製造各種機器。'
+  name: '&f機器框架'
   type:
   - '&7&o元件'
 STB_MAGMATICENGINE:
+  description:
+  - '&7將岩漿轉換為電力。'
+  name: '&f岩漿引擎'
   type:
   - '&7&o發電機'
 STB_MASHER:
+  description:
+  - '&7將礦石與其他資源研磨成粉末。'
+  name: '&f研磨機'
   type:
   - '&7&o機器'
 STB_MOISTURECHECKER:
+  description:
+  - '&7檢測耕地的濕潤程度，範圍為'
+  - '&73x3 區域。'
+  name: '&f濕度檢測器'
+  stats:
+  - '&8⇨ &7區域：&e3x3'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7耕地以檢測濕度'
 STB_MULTIBUILDER:
+  description:
+  - '&7通電的建造工具，可在一片區域內'
+  - '&7放置或替換方塊，並具備可選擇的'
+  - '&7建造與替換兩種模式。'
+  name: '&f多功能建造器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e左鍵點擊&7方塊以預覽'
+  - '&e右鍵點擊&7方塊以建造'
+  - '&e潛行 + 右鍵點擊&7以建造單一方塊'
+  - '&e潛行 + 滑鼠滾輪&7以切換模式'
 STB_MULTIMETER:
+  description:
+  - '&7讀取能量網路的連線狀況，以及'
+  - '&7纜線與機器的電力使用量。'
+  name: '&f萬用電表'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7纜線或機器即可使用'
 STB_PAINTBRUSH:
+  description:
+  - '&7可為羊毛、地毯與染色黏土或'
+  - '&7玻璃等可上色方塊上漆，使用'
+  - '&7取自油漆罐的油漆。'
+  name: '&f油漆刷'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7方塊可為最多 25 個方塊上漆'
+  - '&e潛行 + 右鍵點擊&7方塊可為單一方塊上漆'
+  - '&e潛行 + 右鍵點擊&7空氣可清空刷子'
+  - '&e右鍵點擊&7畫作以更換圖案'
 STB_PAINTCAN:
+  description:
+  - '&7裝有一定存量的彩色油漆。'
+  name: '&f油漆罐'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7並使用油漆刷來補充油漆'
+  - '&e右鍵點擊&7其他物品則開啟調色介面；'
+  - '&7將牛奶桶與染料放入其中即可調出油漆'
 STB_PAINTROLLER:
+  description:
+  - '&7可為可上色方塊上漆，範圍'
+  - '&7比刷子更大，同樣使用取自'
+  - '&7油漆罐的油漆。'
+  name: '&f油漆滾筒'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7方塊可為最多 100 個方塊上漆'
+  - '&e潛行 + 右鍵點擊&7方塊可為單一方塊上漆'
+  - '&e潛行 + 右鍵點擊&7空氣可清空滾筒'
 STB_POWERMONITOR:
+  description:
+  - '&7顯示網路的淨能量'
+  - '&7增減，顯示於附掛的告示牌上。'
+  name: '&f電力監視器'
   type:
   - '&7&o機器'
 STB_PULLERMODULE:
+  description:
+  - '&7裝入物品路由器，可從相鄰的'
+  - '&7容器中拉取物品。'
+  name: '&f路由模組：拉取器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_PUMP:
+  description:
+  - '&7將下方的液體抽入放入其中的'
+  - '&7水桶或玻璃瓶中。'
+  name: '&f抽水機'
   type:
   - '&7&o機器'
 STB_PVCELL:
+  description:
+  - '&7一種光伏電池，可為太陽能'
+  - '&7發電機供能。會隨時間損耗。'
+  name: '&f光電池'
   type:
   - '&7&o元件'
+  usage:
+  - '&e右鍵點擊&7太陽能發電機以裝入它'
 STB_QUARTZDUST:
+  description:
+  - '&7放入冶煉機中烹煮即可製成矽。'
+  name: '&f石英粉末'
   type:
   - '&7&o資源'
 STB_RECEIVERMODULE:
+  description:
+  - '&7被動模組，可從正對的傳送模組'
+  - '&7或已連結的進階傳送模組'
+  - '&7接收物品。'
+  name: '&f路由模組：接收器'
   type:
   - '&7&o元件'
 STB_RECIPEBOOK:
+  description:
+  - '&7可瀏覽並製作所有已知的'
+  - '&7配方。'
+  name: '&f配方書'
   type:
   - '&7&o裝置'
 STB_REDSTONECLOCK:
+  description:
+  - '&7方塊型時鐘。發出間隔與'
+  - '&7持續時間皆可調整的紅石訊號。'
+  name: '&f紅石時鐘'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7方塊以設定時鐘'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7為機器增添智慧，使資源運用'
+  - '&7更有效率。效果會依機器'
+  - '&7而有所不同。'
+  name: '&f調節升級'
   type:
   - '&7&o元件'
 STB_SAWMILL:
+  description:
+  - '&7將木製物品加工成木材，'
+  - '&7產量高於直接合成。'
+  name: '&f鋸木廠'
   type:
   - '&7&o機器'
 STB_SCURELAY:
+  description:
+  - '&7連結至另一個 SCU 中繼器，'
+  - '&7可跨越任何距離共享電量。'
+  name: '&fSCU 中繼器'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&o機器'
 STB_SENDERMODULE:
+  description:
+  - '&7裝入物品路由器，將物品送往'
+  - '&7相鄰的容器，或送往具備接收'
+  - '&7模組、距離 10 格以內的路由器，'
+  - '&7且兩者之間需有視線。'
+  name: '&f路由模組：傳送器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_SILICONWAFER:
+  description:
+  - '&7用於製造更進階的'
+  - '&7電子電路。'
+  name: '&f矽晶圓'
   type:
   - '&7&o元件'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7以絲綢之觸採集其設定方向上的'
+  - '&7方塊，並將其拉入路由器中。'
+  - '&7必須使用絲綢之觸魔法書來製作。'
+  name: '&f路由模組：絲綢破壞器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7用作各種機械的元件。'
+  name: '&f簡易電子電路'
   type:
   - '&7&o元件'
 STB_SMELTER:
+  description:
+  - '&7像熔爐一樣熔煉物品，但'
+  - '&7更快速也更有效率。'
+  name: '&f冶煉機'
   type:
   - '&7&o機器'
 STB_SORTERMODULE:
+  description:
+  - '&7裝入物品路由器，僅在容器為空'
+  - '&7或已含有該物品時，才會把物品'
+  - '&7放入其中。'
+  name: '&f路由模組：分類器'
   type:
   - '&7&o元件'
+  usage:
+  - '&e左鍵點擊&7方塊以設定方向'
+  - '&e潛行 + 左鍵點擊&7空氣以取消方向設定'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7降低周圍所有聲音的音量，'
+  - '&7範圍為 8 格半徑之內。'
+  name: '&f消音器'
   type:
   - '&7&o機器'
+  usage:
+  - '&e右鍵點擊&7以開啟設定介面'
 STB_SPEEDMODULE:
+  description:
+  - '&7被動模組，可提升路由器的'
+  - '&7速度。0 個模組 = 每 20 刻 1 次操作；'
+  - '&71 個 = 1/15，2 個 = 1/10，3 個 = 1/5。超過 3 個無效。'
+  name: '&f路由模組：速度升級'
   type:
   - '&7&o元件'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7放入機器中可讓它運轉得'
+  - '&7更快，代價是電力消耗提高。'
+  name: '&f速度升級'
+  stats:
+  - '&8⇨ &7速度：&ex1.4'
+  - '&8⇨ &7電力消耗：&ex1.6'
   type:
   - '&7&o元件'
 STB_STACKMODULE:
+  description:
+  - '&7被動模組；每個可讓單次操作'
+  - '&7搬運的物品數量加倍，上限為'
+  - '&7該物品的最大堆疊量。超過 6 個會被忽略。'
+  name: '&f路由模組：堆疊升級'
   type:
   - '&7&o元件'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7某些進階物品會用它來進行'
+  - '&7跨世界通訊。'
+  name: '&f次空間轉發器'
   type:
   - '&7&o元件'
 STB_TAPEMEASURE:
+  description:
+  - '&7測量你在世界中所選取的'
+  - '&7兩個點之間的距離。'
+  name: '&f捲尺'
   type:
   - '&7&o工具'
+  usage:
+  - '&e潛行 + 右鍵點擊&7方塊以設定起點'
+  - '&e右鍵點擊&7方塊以取得測量結果'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7儲存能量，用以緩衝發電機與'
+  - '&7機器之間的電力。'
+  name: '&f10K 電池箱'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o機器'
 STB_TENKENERGYCELL:
+  description:
+  - '&7可攜式能量單元，能帶著儲存的'
+  - '&7STB 電力，隨時為裝置充電。'
+  name: '&f10K 能量單元'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o元件'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7放入機器中可提升有用的'
+  - '&7產出，代價是速度與電力。'
+  name: '&f精細升級'
+  stats:
+  - '&8⇨ &7速度：&ex0.7'
+  - '&8⇨ &7電力消耗：&ex1.6'
+  - '&8⇨ &7額外產出：&e+8%'
   type:
   - '&7&o元件'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7用於製造某些更'
+  - '&7進階的機器。'
+  name: '&f堅固機器框架'
   type:
   - '&7&o元件'
 STB_TRASHCAN:
+  description:
+  - '&7會摧毀任何放入或以管線'
+  - '&7送入的物品。小心使用！'
+  name: '&f垃圾桶'
   type:
   - '&7&o機器'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7將一對這種物品合成在一起，即可'
+  - '&7讓它們成為共享電量的 SCU 中繼器。'
+  name: '&f未連結的 SCU 中繼器'
   type:
   - '&7&o元件'
 STB_VACUUMMODULE:
+  description:
+  - '&7裝入物品路由器，可吸取'
+  - '&7附近掉落的物品。'
+  name: '&f路由模組：吸取器'
+  stats:
+  - '&8⇨ &7半徑：&e6 格'
   type:
   - '&7&o元件'
 STB_WATERINGCAN:
+  description:
+  - '&7灌溉並促進附近作物生長。'
+  - '&7別過度使用它！'
+  name: '&f澆水壺'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7以灌溉作物'
+  - '&e右鍵點擊&7水面以補充水量'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7多用途鋤具，可翻土、播種並'
+  - '&7收穫，並內建種子袋。'
+  name: '&f木製複合鋤'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右鍵點擊&7泥土或草地以翻整 3x3 區域'
+  - '&e右鍵點擊&7耕地以播種 3x3 區域'
+  - '&e右鍵點擊&7其他地方以開啟種子袋'
+  - '&e左鍵點擊&7植物以收穫 3x3 區域'
+  - '&e左鍵點擊&7樹葉以破壞 3x3x3 區域'
