@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Testa o nível de saturação de uma'
+  - '&7área 5x5 de terra arada.'
+  name: '&fVerificador de Humidade Avançado'
+  stats:
+  - '&8⇨ &7Área: &e5x5'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 na terra arada para verificar a humidade'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Consulta e fabrica receitas conhecidas'
+  - '&7e pode retirar itens de inventários'
+  - '&7adjacentes durante o fabrico.'
+  name: '&fLivro de Receitas Avançado'
   type:
   - '&7&oAcessório'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para enviar itens'
+  - '&7para um Módulo Recetor ligado num raio'
+  - '&7de 24 blocos, sem precisar de linha de visão.'
+  name: '&fMód. E.I.: Emissor Av.'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num encaminhador com Módulo Recetor para ligar'
+  - '&eAgachar + Clique Esquerdo&7 para desligar'
 STB_ANGELICBLOCK:
+  description:
+  - '&7Um bloco de andaime flutuante temporário,'
+  - '&7ideal para construir em pleno espaço aberto.'
+  name: '&fBloco Angelical'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito&7 para colocar o bloco no ar'
+  - '&eClique Esquerdo&7 no bloco para o partir num instante'
 STB_AUTOBUILDER:
+  description:
+  - '&7Pode construir ou limpar uma área.'
+  - '&7Usa Marcadores de Terreno para definir a área.'
+  name: '&fConstrutor Automático'
   type:
   - '&7&oMáquina'
 STB_AUTOFARM:
+  description:
+  - '&7Colhe e replanta automaticamente'
+  - '&7Trigo, Batata e Cenoura num raio de 3x3,'
+  - '&72 blocos acima da máquina.'
+  name: '&fQuinta Automática'
   type:
   - '&7&oMáquina'
 STB_AUTOFARM2:
+  description:
+  - '&7Colhe e replanta automaticamente'
+  - '&7Grãos de Cacau, Cana-de-açúcar e Cato'
+  - '&7num raio de 5x5, 2 blocos acima da máquina.'
+  name: '&fQuinta Automática MkII'
   type:
   - '&7&oMáquina'
 STB_AUTOFORESTER:
+  description:
+  - '&7Abate e replanta árvores automaticamente'
+  - '&7num raio de 5x5, 2 blocos acima da máquina.'
+  name: '&fSilvicultor Automático'
   type:
   - '&7&oMáquina'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Gera energia ao ar livre sob luz solar'
+  - '&7intensa. Precisa de uma Célula FV para funcionar.'
+  name: '&fSolar Básico'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oGerador'
+  usage:
+  - '&eClique Esquerdo&7 (mão vazia) para extrair a Célula FV'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Unidade de Armazenamento Grande. Guarda uma vasta'
+  - '&7quantidade de um único tipo de item.'
+  name: '&fUAG'
+  stats:
+  - '&8⇨ &7128 Pilhas'
   type:
   - '&7&oMáquina'
 STB_BIOENGINE:
+  description:
+  - '&7Converte materiais orgânicos em energia.'
+  name: '&fMotor Biológico'
   type:
   - '&7&oGerador'
 STB_BLANKMODULE:
+  description:
+  - '&7A base em branco usada para fabricar os'
+  - '&7vários módulos do Encaminhador de Itens.'
+  name: '&fMódulo de Encaminhador de Itens em Branco'
   type:
   - '&7&oComponente'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Emite um impulso de redstone quando um'
+  - '&7bloco adjacente é atualizado.'
+  name: '&fDetetor de Atualização de Blocos'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 no bloco para o configurar'
 STB_BREAKERMODULE:
+  description:
+  - '&7Parte o bloco na sua direção'
+  - '&7configurada e puxa-o para o encaminhador.'
+  name: '&fMód. E.I.: Quebrador'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Usada na construção de circuitos'
+  - '&7eletrónicos.'
+  name: '&fPlaca de Circuito'
   type:
   - '&7&oComponente'
 STB_DENSESOLAR:
+  description:
+  - '&7Gera energia ao ar livre sob luz solar'
+  - '&7intensa. Precisa de uma Célula FV para funcionar.'
+  name: '&fSolar Denso'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oGerador'
+  usage:
+  - '&eClique Esquerdo&7 (mão vazia) para extrair a Célula FV'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7Uma enxada multiusos que lavra, semeia e'
+  - '&7colhe numa área mais ampla, com um'
+  - '&7saco de sementes incorporado.'
+  name: '&fEnxada Combinada de Diamante'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 em terra/relva para lavrar uma área 3x3'
+  - '&eClique Direito&7 na terra arada para semear uma área 3x3'
+  - '&eClique Direito&7 noutro sítio para abrir o saco de sementes'
+  - '&eClique Esquerdo&7 nas plantas para colher uma área 5x5'
+  - '&eClique Esquerdo&7 nas folhas para partir uma área 3x3x3'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Retira itens da direção configurada e'
+  - '&7envia-os à vez para todos os outros'
+  - '&7inventários adjacentes.'
+  name: '&fMód. E.I.: Distribuidor'
   type:
   - '&7&oComponente'
 STB_DROPPERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para largar itens'
+  - '&7no chão, na direção configurada.'
+  name: '&fMód. E.I.: Largador'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Colocada numa máquina para ejetar automaticamente'
+  - '&7os itens acabados para um inventário adjacente.'
+  name: '&fMelhoria de Ejetor'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção de ejeção'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Permite energizar certos itens'
+  - '&7nas suas variantes carregadas.'
+  name: '&fEnergizador Elétrico'
   type:
   - '&7&oMáquina'
 STB_ELEVATOR:
+  description:
+  - '&7Liga-se a outros elevadores colocados'
+  - '&7diretamente acima ou abaixo dele.'
+  name: '&fElevador'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&ePrime Espaço&7 para subir'
+  - '&ePrime Shift&7 para descer'
 STB_ENDERBAG:
+  description:
+  - '&7Dá acesso portátil a um inventário de'
+  - '&7armazenamento ender pessoal ou global.'
+  name: '&fSaco do Ender'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito&7 para abrir o saco'
+  - '&eAgachar + Clique Direito&7 numa Caixa do Ender para sincronizar a frequência'
 STB_ENDERBOX:
+  description:
+  - '&7Armazenamento extradimensional acessível'
+  - '&7a partir de Caixas do Ender ligadas.'
+  name: '&fCaixa do Ender'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 com um Sintonizador do Ender para definir a frequência'
 STB_ENDERLEASH:
+  description:
+  - '&7Captura e guarda um animal pacífico,'
+  - '&7permitindo mudar o gado de sítio com facilidade.'
+  name: '&fTrela do Ender'
   type:
   - '&7&oAcessório'
+  usage:
+  - '&eClique Direito&7 para capturar ou libertar um animal'
 STB_ENDERTUNER:
+  description:
+  - '&7Vibra em seis dimensões para sintonizar a'
+  - '&7frequência de armazenamento de uma Caixa do Ender.'
+  name: '&fSintonizador do Ender'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 numa Caixa do Ender para a sintonizar'
+  - '&eClique Direito&7 noutro sítio para abrir a janela de sintonia'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Funde para obter um lingote de ouro energizado.'
+  name: '&fPó de Ouro Energizado'
   type:
   - '&7&oRecurso'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Brilha de forma estranha...'
+  name: '&fLingote de Ouro Energizado'
   type:
   - '&7&oRecurso'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Funde para obter um lingote de ferro energizado.'
+  name: '&fPó de Ferro Energizado'
   type:
   - '&7&oRecurso'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Brilha de forma estranha...'
+  name: '&fLingote de Ferro Energizado'
   type:
   - '&7&oRecurso'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Brilha de forma estranha...'
+  name: '&fQuartzo Energizado'
   type:
   - '&7&oRecurso'
 STB_FERMENTER:
+  description:
+  - '&7Fermenta vários itens e também serve'
+  - '&7para criar Isco de Peixe.'
+  name: '&fFermentador'
   type:
   - '&7&oMáquina'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Armazena energia para servir de reserva entre'
+  - '&7geradores e máquinas.'
+  name: '&fCaixa de Baterias 50K'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oMáquina'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7Uma célula de energia portátil que transporta'
+  - '&7energia STB para carregar aparelhos em viagem.'
+  name: '&fCélula de Energia 50K'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oComponente'
 STB_FISHBAIT:
+  description:
+  - '&7Usado numa Rede de Pesca para apanhar peixe.'
+  name: '&fIsco de Peixe'
   type:
   - '&7&oComponente'
 STB_FISHINGNET:
+  description:
+  - '&7Apanha peixe automaticamente quando colocada'
+  - '&7sobre água e abastecida com Isco de Peixe.'
+  name: '&fRede de Pesca'
   type:
   - '&7&oMáquina'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7Uma enxada multiusos que lavra, semeia e'
+  - '&7colhe, com saco de sementes incorporado.'
+  name: '&fEnxada Combinada de Ouro'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 em terra/relva para lavrar uma área 3x3'
+  - '&eClique Direito&7 na terra arada para semear uma área 3x3'
+  - '&eClique Direito&7 noutro sítio para abrir o saco de sementes'
+  - '&eClique Esquerdo&7 nas plantas para colher uma área 3x3'
+  - '&eClique Esquerdo&7 nas folhas para partir uma área 3x3x3'
 STB_GOLDDUST:
+  description:
+  - '&7Funde num Fundidor ou Fornalha para obter'
+  - '&7lingotes de ouro.'
+  name: '&fPó de Ouro'
   type:
   - '&7&oRecurso'
 STB_HEATENGINE:
+  description:
+  - '&7Converte itens combustíveis em energia.'
+  name: '&fMotor Térmico'
   type:
   - '&7&oGerador'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Mostra o ganho ou a perda líquida de'
+  - '&7energia de uma rede através de hologramas.'
+  name: '&fMonitor Holográfico'
   type:
   - '&7&oMáquina'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para enviar itens'
+  - '&7para um Módulo Recetor ligado em qualquer lugar,'
+  - '&7em qualquer mundo.'
+  name: '&fMód. E.I.: Hiperemissor'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num encaminhador com Módulo Recetor para ligar'
+  - '&eAgachar + Clique Esquerdo&7 em qualquer sítio para desligar'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Unidade de Armazenamento Hiper. Guarda uma colossal'
+  - '&7quantidade de um único tipo de item.'
+  - '&7Mantém o conteúdo ao ser partida. Precisa de energia para funcionar.'
+  name: '&fUAH'
+  stats:
+  - '&8⇨ &733554431 Pilhas'
   type:
   - '&7&oMáquina'
 STB_INFERNALDUST:
+  description:
+  - '&7Por vezes largado por blazes; a Pilhagem'
+  - '&7pode ajudar. Combina-o com pó de ferro ou ouro.'
+  name: '&fPó Infernal'
   type:
   - '&7&oRecurso'
 STB_INFERNALFARM:
+  description:
+  - '&7Colhe e replanta automaticamente'
+  - '&7Fungo do Nether num raio de 5x5, 2 blocos'
+  - '&7acima da máquina.'
+  name: '&fQuinta Infernal'
   type:
   - '&7&oMáquina'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Usado como componente em maquinaria mais'
+  - '&7avançada.'
+  name: '&fCircuito Integrado'
   type:
   - '&7&oComponente'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7Uma enxada multiusos que lavra, semeia e'
+  - '&7colhe, com saco de sementes incorporado.'
+  name: '&fEnxada Combinada de Ferro'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 em terra/relva para lavrar uma área 3x3'
+  - '&eClique Direito&7 na terra arada para semear uma área 3x3'
+  - '&eClique Direito&7 noutro sítio para abrir o saco de sementes'
+  - '&eClique Esquerdo&7 nas plantas para colher uma área 3x3'
+  - '&eClique Esquerdo&7 nas folhas para partir uma área 3x3x3'
 STB_IRONDUST:
+  description:
+  - '&7Funde num Fundidor ou Fornalha para obter'
+  - '&7lingotes de ferro.'
+  name: '&fPó de Ferro'
   type:
   - '&7&oRecurso'
 STB_ITEMROUTER:
+  description:
+  - '&7Encaminha itens. Insere um ou mais'
+  - '&7Módulos de Encaminhamento para o ativar.'
+  name: '&fEncaminhador de Itens'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 no bloco para configurar o encaminhador'
 STB_LANDMARKER:
+  description:
+  - '&7Armazena uma posição via Sensible GPS,'
+  - '&7usada para definir áreas de trabalho de máquinas.'
+  name: '&fMarcador de Terreno'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num bloco para armazenar a sua posição'
+  - '&eClique Direito&7 no ar para limpar a posição'
 STB_MACHINEFRAME:
+  description:
+  - '&7Usada no fabrico de várias máquinas.'
+  name: '&fEstrutura de Máquina'
   type:
   - '&7&oComponente'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Converte Lava em energia.'
+  name: '&fMotor Magmático'
   type:
   - '&7&oGerador'
 STB_MASHER:
+  description:
+  - '&7Mói minérios e outros recursos, reduzindo-os a pós.'
+  name: '&fTriturador'
   type:
   - '&7&oMáquina'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Testa o nível de saturação de uma'
+  - '&7área 3x3 de terra arada.'
+  name: '&fVerificador de Humidade'
+  stats:
+  - '&8⇨ &7Área: &e3x3'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 na terra arada para verificar a humidade'
 STB_MULTIBUILDER:
+  description:
+  - '&7Uma ferramenta de construção alimentada que coloca'
+  - '&7ou troca blocos numa área, com modos de'
+  - '&7Construção e Troca à escolha.'
+  name: '&fMulticonstrutor'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para pré-visualizar'
+  - '&eClique Direito&7 num bloco para construir'
+  - '&eAgachar + Clique Direito&7 para construir um só bloco'
+  - '&eAgachar + Roda do Rato&7 para mudar de modo'
 STB_MULTIMETER:
+  description:
+  - '&7Lê as ligações da rede de energia e o'
+  - '&7consumo de cabos e máquinas.'
+  name: '&fMultímetro'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 em cabos ou numa máquina para usar'
 STB_PAINTBRUSH:
+  description:
+  - '&7Pinta blocos coloríveis como lã,'
+  - '&7tapete e terracota ou vidro coloridos, usando'
+  - '&7tinta retirada de uma Lata de Tinta.'
+  name: '&fPincel'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num bloco para pintar até 25 blocos'
+  - '&eAgachar + Clique Direito&7 num bloco para pintar um só bloco'
+  - '&eAgachar + Clique Direito&7 no ar para esvaziar o pincel'
+  - '&eClique Direito&7 em quadros para mudar a pintura'
 STB_PAINTCAN:
+  description:
+  - '&7Contém uma reserva de tinta colorida.'
+  name: '&fLata de Tinta'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 com um Pincel para a reabastecer'
+  - '&eClique Direito&7 com outra coisa para abrir o misturador;'
+  - '&7coloca um Balde de Leite e um Corante lá dentro para misturar tinta'
 STB_PAINTROLLER:
+  description:
+  - '&7Pinta blocos coloríveis numa área maior'
+  - '&7do que o pincel, usando tinta retirada'
+  - '&7de uma Lata de Tinta.'
+  name: '&fRolo de Pintura'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 num bloco para pintar até 100 blocos'
+  - '&eAgachar + Clique Direito&7 num bloco para pintar um só bloco'
+  - '&eAgachar + Clique Direito&7 no ar para esvaziar o rolo'
 STB_POWERMONITOR:
+  description:
+  - '&7Mostra o ganho ou a perda líquida de'
+  - '&7energia de uma rede em placas anexadas.'
+  name: '&fMonitor de Energia'
   type:
   - '&7&oMáquina'
 STB_PULLERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para retirar itens'
+  - '&7de um inventário adjacente.'
+  name: '&fMód. E.I.: Extrator'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_PUMP:
+  description:
+  - '&7Bombeia líquidos de baixo para um'
+  - '&7Balde ou Garrafa de Vidro inserido.'
+  name: '&fBomba'
   type:
   - '&7&oMáquina'
 STB_PVCELL:
+  description:
+  - '&7Uma célula fotovoltaica que alimenta um gerador'
+  - '&7solar. Desgasta-se com o tempo.'
+  name: '&fCélula FV'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Direito&7 num gerador solar para a inserir'
 STB_QUARTZDUST:
+  description:
+  - '&7Cozinha num Fundidor para fazer silício.'
+  name: '&fPó de Quartzo'
   type:
   - '&7&oRecurso'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Um módulo passivo que recebe itens'
+  - '&7de um módulo Emissor voltado para ele ou de um'
+  - '&7módulo Emissor Avançado ligado.'
+  name: '&fMód. E.I.: Recetor'
   type:
   - '&7&oComponente'
 STB_RECIPEBOOK:
+  description:
+  - '&7Permite consultar e fabricar todas as'
+  - '&7receitas conhecidas.'
+  name: '&fLivro de Receitas'
   type:
   - '&7&oAcessório'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Um relógio num bloco. Emite um sinal de'
+  - '&7redstone com intervalo e duração configuráveis.'
+  name: '&fRelógio de Redstone'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 no bloco para configurar o relógio'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Dá inteligência às máquinas para um uso mais'
+  - '&7eficiente dos recursos. O efeito varia'
+  - '&7de máquina para máquina.'
+  name: '&fMelhoria de Regulador'
   type:
   - '&7&oComponente'
 STB_SAWMILL:
+  description:
+  - '&7Processa itens de madeira em tábuas'
+  - '&7com maior rendimento do que o fabrico.'
+  name: '&fSerração'
   type:
   - '&7&oMáquina'
 STB_SCURELAY:
+  description:
+  - '&7Liga-se a outro Retransmissor SCU para partilhar'
+  - '&7uma carga comum a qualquer distância.'
+  name: '&fRetransmissor SCU'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oMáquina'
 STB_SENDERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para enviar itens'
+  - '&7para um inventário adjacente, ou para um encaminhador'
+  - '&7com Módulo Recetor a até 10 blocos'
+  - '&7com linha de visão.'
+  name: '&fMód. E.I.: Emissor'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_SILICONWAFER:
+  description:
+  - '&7Usada no fabrico de circuitos eletrónicos'
+  - '&7mais avançados.'
+  name: '&fBolacha de Silício'
   type:
   - '&7&oComponente'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Extrai com Toque Suave o bloco na sua direção'
+  - '&7configurada e puxa-o para o encaminhador.'
+  - '&7Deve ser fabricado com um livro de Toque Suave.'
+  name: '&fMód. E.I.: Quebrador Sedoso'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Usado como componente em várias maquinarias.'
+  name: '&fCircuito Eletrónico Simples'
   type:
   - '&7&oComponente'
 STB_SMELTER:
+  description:
+  - '&7Funde itens como uma Fornalha, mas de forma'
+  - '&7mais rápida e mais eficiente.'
+  name: '&fFundidor'
   type:
   - '&7&oMáquina'
 STB_SORTERMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para colocar itens'
+  - '&7num inventário apenas se este estiver vazio ou'
+  - '&7já contiver esse item.'
+  name: '&fMód. E.I.: Separador'
   type:
   - '&7&oComponente'
+  usage:
+  - '&eClique Esquerdo&7 num bloco para definir a direção'
+  - '&eAgachar + Clique Esquerdo&7 no ar para anular a direção'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Reduz o volume de todos os sons'
+  - '&7num raio de 8 blocos.'
+  name: '&fAbafador de Som'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eClique Direito&7 para abrir a configuração'
 STB_SPEEDMODULE:
+  description:
+  - '&7Um módulo passivo que aumenta a velocidade'
+  - '&7do encaminhador. 0 módulos = 1 operação / 20 ticks;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Acima de 3 é ignorado.'
+  name: '&fMód. E.I.: Melhoria de Velocidade'
   type:
   - '&7&oComponente'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Colocada numa máquina para a fazer funcionar'
+  - '&7mais depressa, à custa de mais energia.'
+  name: '&fMelhoria de Velocidade'
+  stats:
+  - '&8⇨ &7Velocidade: &ex1.4'
+  - '&8⇨ &7Consumo de Energia: &ex1.6'
   type:
   - '&7&oComponente'
 STB_STACKMODULE:
+  description:
+  - '&7Um módulo passivo; cada um duplica os'
+  - '&7itens movidos por operação, até ao tamanho'
+  - '&7máximo de pilha do item. Acima de 6 são ignorados.'
+  name: '&fMód. E.I.: Melhoria de Pilha'
   type:
   - '&7&oComponente'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Usado por alguns itens avançados para'
+  - '&7comunicação entre mundos.'
+  name: '&fTransponder de Subespaço'
   type:
   - '&7&oComponente'
 STB_TAPEMEASURE:
+  description:
+  - '&7Mede a distância entre dois'
+  - '&7pontos que selecionares no mundo.'
+  name: '&fFita Métrica'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eAgachar + Clique Direito&7 num bloco para definir a âncora'
+  - '&eClique Direito&7 num bloco para obter a medição'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Armazena energia para servir de reserva entre'
+  - '&7geradores e máquinas.'
+  name: '&fCaixa de Baterias 10K'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oMáquina'
 STB_TENKENERGYCELL:
+  description:
+  - '&7Uma célula de energia portátil que transporta'
+  - '&7energia STB para carregar aparelhos em viagem.'
+  name: '&fCélula de Energia 10K'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oComponente'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Colocada numa máquina para aumentar a produção'
+  - '&7útil, à custa de velocidade e energia.'
+  name: '&fMelhoria de Minúcia'
+  stats:
+  - '&8⇨ &7Velocidade: &ex0.7'
+  - '&8⇨ &7Consumo de Energia: &ex1.6'
+  - '&8⇨ &7Produção Extra: &e+8%'
   type:
   - '&7&oComponente'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Usada no fabrico de máquinas mais'
+  - '&7avançadas.'
+  name: '&fEstrutura de Máquina Resistente'
   type:
   - '&7&oComponente'
 STB_TRASHCAN:
+  description:
+  - '&7DESTRÓI quaisquer itens colocados ou canalizados'
+  - '&7lá para dentro. Cuidado!'
+  name: '&fCaixote do Lixo'
   type:
   - '&7&oMáquina'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Fabrica um par destes em conjunto para os'
+  - '&7unir num Retransmissor SCU de carga partilhada.'
+  name: '&fRetransmissor SCU Não Ligado'
   type:
   - '&7&oComponente'
 STB_VACUUMMODULE:
+  description:
+  - '&7Encaixa num Encaminhador de Itens para aspirar'
+  - '&7itens largados nas proximidades.'
+  name: '&fMód. E.I.: Aspirador'
+  stats:
+  - '&8⇨ &7Raio: &e6 blocos'
   type:
   - '&7&oComponente'
 STB_WATERINGCAN:
+  description:
+  - '&7Irriga e faz crescer as culturas próximas.'
+  - '&7Não abuses dele!'
+  name: '&fRegador'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 para irrigar culturas'
+  - '&eClique Direito&7 na água para reabastecer'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7Uma enxada multiusos que lavra, semeia e'
+  - '&7colhe, com saco de sementes incorporado.'
+  name: '&fEnxada Combinada de Madeira'
   type:
   - '&7&oFerramenta'
+  usage:
+  - '&eClique Direito&7 em terra/relva para lavrar uma área 3x3'
+  - '&eClique Direito&7 na terra arada para semear uma área 3x3'
+  - '&eClique Direito&7 noutro sítio para abrir o saco de sementes'
+  - '&eClique Esquerdo&7 nas plantas para colher uma área 3x3'
+  - '&eClique Esquerdo&7 nas folhas para partir uma área 3x3x3'
