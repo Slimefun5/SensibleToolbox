@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Måler fugtighedsniveauet i et'
+  - '&75x5-område af landbrugsjord.'
+  name: '&fAvanceret fugtmåler'
+  stats:
+  - '&8⇨ &7Område: &e5x5'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på landbrugsjord for at måle fugten'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Gennemser og fremstiller kendte opskrifter,'
+  - '&7og kan hente genstande fra tilstødende'
+  - '&7inventarer under fremstillingen.'
+  name: '&fAvanceret opskriftsbog'
   type:
   - '&7&oGadget'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at sende genstande'
+  - '&7til et forbundet modtagermodul inden for en'
+  - '&724-blokkes radius, frit udsyn er ikke nødvendigt.'
+  name: '&fG.R.-modul: Avanc. afsender'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en router med et modtagermodul for at forbinde'
+  - '&eSnig + venstreklik&7 for at afbryde forbindelsen'
 STB_ANGELICBLOCK:
+  description:
+  - '&7En midlertidig svævende stilladsblok,'
+  - '&7ideel til at bygge ud i det åbne rum.'
+  name: '&fEngleblok'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik&7 for at placere blokken i luften'
+  - '&eVenstreklik&7 på blokken for at bryde den øjeblikkeligt'
 STB_AUTOBUILDER:
+  description:
+  - '&7Kan bygge eller rydde et område.'
+  - '&7Brug landmarkører til at afgrænse området.'
+  name: '&fAutobygger'
   type:
   - '&7&oMaskine'
 STB_AUTOFARM:
+  description:
+  - '&7Høster og genplanter automatisk'
+  - '&7hvede-, kartoffel- og gulerodsafgrøder i en 3x3'
+  - '&7radius, 2 blokke over maskinen.'
+  name: '&fAutofarm'
   type:
   - '&7&oMaskine'
 STB_AUTOFARM2:
+  description:
+  - '&7Høster og genplanter automatisk'
+  - '&7kakaobønner, sukkerrør og kaktus'
+  - '&7i en 5x5 radius, 2 blokke over maskinen.'
+  name: '&fAutofarm MkII'
   type:
   - '&7&oMaskine'
 STB_AUTOFORESTER:
+  description:
+  - '&7Fælder og genplanter træer automatisk'
+  - '&7i en 5x5 radius, 2 blokke over maskinen.'
+  name: '&fAutoskovfoged'
   type:
   - '&7&oMaskine'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Genererer strøm udendørs i klart'
+  - '&7sollys. Kræver en PV-celle for at virke.'
+  name: '&fBasissolpanel'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eVenstreklik&7 (tom hånd) for at udtage PV-cellen'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Stor opbevaringsenhed. Opbevarer en enorm'
+  - '&7mængde af en enkelt genstandstype.'
+  name: '&fBSU'
+  stats:
+  - '&8⇨ &7128 stakke'
   type:
   - '&7&oMaskine'
 STB_BIOENGINE:
+  description:
+  - '&7Omdanner organiske materialer til strøm.'
+  name: '&fBiomotor'
   type:
   - '&7&oGenerator'
 STB_BLANKMODULE:
+  description:
+  - '&7Den tomme base der bruges til at fremstille de'
+  - '&7forskellige genstandsroutermoduler.'
+  name: '&fTomt genstandsroutermodul'
   type:
   - '&7&oKomponent'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Udsender en redstone-puls når en'
+  - '&7tilstødende blok opdateres.'
+  name: '&fBlokopdateringsdetektor'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 på blokken for at konfigurere den'
 STB_BREAKERMODULE:
+  description:
+  - '&7Bryder blokken i sin indstillede'
+  - '&7retning og trækker den ind i routeren.'
+  name: '&fG.R.-modul: Bryder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Bruges til at bygge elektroniske'
+  - '&7kredsløb.'
+  name: '&fPrintplade'
   type:
   - '&7&oKomponent'
 STB_DENSESOLAR:
+  description:
+  - '&7Genererer strøm udendørs i klart'
+  - '&7sollys. Kræver en PV-celle for at virke.'
+  name: '&fTæt solpanel'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oGenerator'
+  usage:
+  - '&eVenstreklik&7 (tom hånd) for at udtage PV-cellen'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7En multiværktøjshakke der pløjer, sår og'
+  - '&7høster over et større område, med en'
+  - '&7indbygget frøpose.'
+  name: '&fKombihakke af diamant'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på jord/græs for at pløje et 3x3-område'
+  - '&eHøjreklik&7 på landbrugsjord for at så et 3x3-område'
+  - '&eHøjreklik&7 andre steder for at åbne frøposen'
+  - '&eVenstreklik&7 på planter for at høste et 5x5-område'
+  - '&eVenstreklik&7 på blade for at bryde et 3x3x3-område'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Henter genstande fra den indstillede retning'
+  - '&7og sender dem skiftevis til alle andre'
+  - '&7tilstødende inventarer.'
+  name: '&fG.R.-modul: Fordeler'
   type:
   - '&7&oKomponent'
 STB_DROPPERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at smide genstande'
+  - '&7på jorden i den indstillede retning.'
+  name: '&fG.R.-modul: Kaster'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Lægges i en maskine for automatisk at udkaste dens'
+  - '&7færdige genstande til et tilstødende inventar.'
+  name: '&fUdkasteropgradering'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte udkastretningen'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Lader dig energilade visse genstande'
+  - '&7til deres opladede varianter.'
+  name: '&fElektrisk energilader'
   type:
   - '&7&oMaskine'
 STB_ELEVATOR:
+  description:
+  - '&7Forbinder til andre elevatorer placeret'
+  - '&7direkte over eller under den.'
+  name: '&fElevator'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eTryk på mellemrum&7 for at køre op'
+  - '&eTryk på Shift&7 for at køre ned'
 STB_ENDERBAG:
+  description:
+  - '&7Giver bærbar adgang til et personligt'
+  - '&7eller globalt ender-lagerinventar.'
+  name: '&fEnderpose'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik&7 for at åbne posen'
+  - '&eSnig + højreklik&7 på en enderboks for at synkronisere frekvensen'
 STB_ENDERBOX:
+  description:
+  - '&7Ekstradimensionel opbevaring tilgængelig'
+  - '&7fra forbundne enderbokse.'
+  name: '&fEnderboks'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 med en endertuner for at sætte dens frekvens'
 STB_ENDERLEASH:
+  description:
+  - '&7Indfanger og opbevarer ét fredeligt dyr,'
+  - '&7så du nemt kan flytte husdyr.'
+  name: '&fEndersnor'
   type:
   - '&7&oGadget'
+  usage:
+  - '&eHøjreklik&7 for at indfange eller frigive et dyr'
 STB_ENDERTUNER:
+  description:
+  - '&7Vibrerer i seks dimensioner for at indstille en'
+  - '&7enderboks'' lagerfrekvens.'
+  name: '&fEndertuner'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en enderboks for at indstille den'
+  - '&eHøjreklik&7 andre steder for at åbne indstillingsvinduet'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Smelt for at få en energiladet guldbarre.'
+  name: '&fEnergiladet guldstøv'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Gløder mærkeligt...'
+  name: '&fEnergiladet guldbarre'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Smelt for at få en energiladet jernbarre.'
+  name: '&fEnergiladet jernstøv'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Gløder mærkeligt...'
+  name: '&fEnergiladet jernbarre'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Gløder mærkeligt...'
+  name: '&fEnergiladet kvarts'
   type:
   - '&7&oRessource'
 STB_FERMENTER:
+  description:
+  - '&7Fermenterer forskellige genstande og bruges'
+  - '&7også til at lave fiskemadding.'
+  name: '&fFermentator'
   type:
   - '&7&oMaskine'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Opbevarer energi for at buffere strøm mellem'
+  - '&7generatorer og maskiner.'
+  name: '&f50K-batteriboks'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oMaskine'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7En bærbar energicelle der bærer lagret'
+  - '&7STB-strøm til at oplade apparater undervejs.'
+  name: '&f50K-energicelle'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKomponent'
 STB_FISHBAIT:
+  description:
+  - '&7Bruges i et fiskenet til at fange fisk.'
+  name: '&fFiskemadding'
   type:
   - '&7&oKomponent'
 STB_FISHINGNET:
+  description:
+  - '&7Fanger fisk automatisk når den placeres'
+  - '&7over vand og fodres med fiskemadding.'
+  name: '&fFiskenet'
   type:
   - '&7&oMaskine'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7En multiværktøjshakke der pløjer, sår og'
+  - '&7høster, med en indbygget frøpose.'
+  name: '&fKombihakke af guld'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på jord/græs for at pløje et 3x3-område'
+  - '&eHøjreklik&7 på landbrugsjord for at så et 3x3-område'
+  - '&eHøjreklik&7 andre steder for at åbne frøposen'
+  - '&eVenstreklik&7 på planter for at høste et 3x3-område'
+  - '&eVenstreklik&7 på blade for at bryde et 3x3x3-område'
 STB_GOLDDUST:
+  description:
+  - '&7Smelt i en smelteovn eller ovn for at få'
+  - '&7guldbarrer.'
+  name: '&fGuldstøv'
   type:
   - '&7&oRessource'
 STB_HEATENGINE:
+  description:
+  - '&7Omdanner brændbare genstande til strøm.'
+  name: '&fVarmemotor'
   type:
   - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Viser et netværks samlede energi-'
+  - '&7gevinst eller tab med hologrammer.'
+  name: '&fHolografisk skærm'
   type:
   - '&7&oMaskine'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at sende genstande'
+  - '&7til et forbundet modtagermodul hvor som helst,'
+  - '&7i enhver verden.'
+  name: '&fG.R.-modul: Hyperafsender'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en router med et modtagermodul for at forbinde'
+  - '&eSnig + venstreklik&7 hvor som helst for at afbryde forbindelsen'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Hyperopbevaringsenhed. Opbevarer en kolossal'
+  - '&7mængde af en enkelt genstandstype.'
+  - '&7Beholder indholdet når den brydes. Kræver strøm for at virke.'
+  name: '&fHSU'
+  stats:
+  - '&8⇨ &733554431 stakke'
   type:
   - '&7&oMaskine'
 STB_INFERNALDUST:
+  description:
+  - '&7Tabes nogle gange af blazes; Plyndring'
+  - '&7kan hjælpe. Kombiner med jern- eller guldstøv.'
+  name: '&fInfernalsk støv'
   type:
   - '&7&oRessource'
 STB_INFERNALFARM:
+  description:
+  - '&7Høster og genplanter automatisk'
+  - '&7nethervorter i en 5x5 radius, 2 blokke'
+  - '&7over maskinen.'
+  name: '&fInfernalsk farm'
   type:
   - '&7&oMaskine'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Bruges som komponent i visse mere'
+  - '&7avancerede maskiner.'
+  name: '&fIntegreret kredsløb'
   type:
   - '&7&oKomponent'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7En multiværktøjshakke der pløjer, sår og'
+  - '&7høster, med en indbygget frøpose.'
+  name: '&fKombihakke af jern'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på jord/græs for at pløje et 3x3-område'
+  - '&eHøjreklik&7 på landbrugsjord for at så et 3x3-område'
+  - '&eHøjreklik&7 andre steder for at åbne frøposen'
+  - '&eVenstreklik&7 på planter for at høste et 3x3-område'
+  - '&eVenstreklik&7 på blade for at bryde et 3x3x3-område'
 STB_IRONDUST:
+  description:
+  - '&7Smelt i en smelteovn eller ovn for at få'
+  - '&7jernbarrer.'
+  name: '&fJernstøv'
   type:
   - '&7&oRessource'
 STB_ITEMROUTER:
+  description:
+  - '&7Dirigerer genstande. Indsæt et eller flere'
+  - '&7dirigeringsmoduler for at aktivere den.'
+  name: '&fGenstandsrouter'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 på blokken for at konfigurere routeren'
 STB_LANDMARKER:
+  description:
+  - '&7Gemmer en position via Sensible GPS,'
+  - '&7bruges til at afgrænse maskiners arbejdsområder.'
+  name: '&fLandmarkør'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en blok for at gemme dens position'
+  - '&eHøjreklik&7 i luften for at rydde positionen'
 STB_MACHINEFRAME:
+  description:
+  - '&7Bruges til fremstilling af forskellige maskiner.'
+  name: '&fMaskinramme'
   type:
   - '&7&oKomponent'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Omdanner lava til strøm.'
+  name: '&fMagmatisk motor'
   type:
   - '&7&oGenerator'
 STB_MASHER:
+  description:
+  - '&7Maler malme og andre ressourcer til støv.'
+  name: '&fKnuser'
   type:
   - '&7&oMaskine'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Måler fugtighedsniveauet i et'
+  - '&73x3-område af landbrugsjord.'
+  name: '&fFugtmåler'
+  stats:
+  - '&8⇨ &7Område: &e3x3'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på landbrugsjord for at måle fugten'
 STB_MULTIBUILDER:
+  description:
+  - '&7Et strømdrevet byggeværktøj der placerer eller'
+  - '&7udskifter blokke over et område, med'
+  - '&7valgbare tilstande til bygning og udskiftning.'
+  name: '&fMultibygger'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eVenstreklik&7 på en blok for at se et eksempel'
+  - '&eHøjreklik&7 på en blok for at bygge'
+  - '&eSnig + højreklik&7 for at bygge én blok'
+  - '&eSnig + musehjul&7 for at skifte tilstand'
 STB_MULTIMETER:
+  description:
+  - '&7Aflæser energinettets forbindelser og'
+  - '&7strømforbrug for kabler og maskiner.'
+  name: '&fMultimeter'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på kabler eller en maskine for at bruge det'
 STB_PAINTBRUSH:
+  description:
+  - '&7Maler farvbare blokke såsom uld,'
+  - '&7tæppe og farvet ler eller glas, med'
+  - '&7maling hentet fra en malingsdåse.'
+  name: '&fMalerpensel'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en blok for at male op til 25 blokke'
+  - '&eSnig + højreklik&7 på en blok for at male én blok'
+  - '&eSnig + højreklik&7 i luften for at tømme penslen'
+  - '&eHøjreklik&7 på malerier for at skifte motiv'
 STB_PAINTCAN:
+  description:
+  - '&7Rummer en forsyning af farvet maling.'
+  name: '&fMalingsdåse'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 med en malerpensel for at fylde den op'
+  - '&eHøjreklik&7 med hvad som helst andet for at åbne blanderen;'
+  - '&7læg en mælkespand og et farvestof indeni for at blande maling'
 STB_PAINTROLLER:
+  description:
+  - '&7Maler farvbare blokke over et større'
+  - '&7område end penslen, med maling hentet'
+  - '&7fra en malingsdåse.'
+  name: '&fMalerulle'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på en blok for at male op til 100 blokke'
+  - '&eSnig + højreklik&7 på en blok for at male én blok'
+  - '&eSnig + højreklik&7 i luften for at tømme rullen'
 STB_POWERMONITOR:
+  description:
+  - '&7Viser et netværks samlede energi-'
+  - '&7gevinst eller tab på tilsluttede skilte.'
+  name: '&fStrømmåler'
   type:
   - '&7&oMaskine'
 STB_PULLERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at hente genstande'
+  - '&7fra et tilstødende inventar.'
+  name: '&fG.R.-modul: Udtrækker'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_PUMP:
+  description:
+  - '&7Pumper væsker nedefra op i en'
+  - '&7indsat spand eller glasflaske.'
+  name: '&fPumpe'
   type:
   - '&7&oMaskine'
 STB_PVCELL:
+  description:
+  - '&7En fotovoltaisk celle der driver en sol-'
+  - '&7generator. Den slides op med tiden.'
+  name: '&fPV-celle'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eHøjreklik&7 på en solgenerator for at sætte den i'
 STB_QUARTZDUST:
+  description:
+  - '&7Tilbered i en smelteovn for at lave silicium.'
+  name: '&fKvartsstøv'
   type:
   - '&7&oRessource'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Et passivt modul der modtager genstande'
+  - '&7fra et afsendermodul der peger mod det, eller et forbundet'
+  - '&7avanceret afsendermodul.'
+  name: '&fG.R.-modul: Modtager'
   type:
   - '&7&oKomponent'
 STB_RECIPEBOOK:
+  description:
+  - '&7Giver mulighed for at gennemse og fremstille alle'
+  - '&7kendte opskrifter.'
+  name: '&fOpskriftsbog'
   type:
   - '&7&oGadget'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Et ur i en blok. Udsender et redstone-'
+  - '&7signal med indstilleligt interval og varighed.'
+  name: '&fRedstone-ur'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 på blokken for at konfigurere uret'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Giver maskiner intelligens til mere'
+  - '&7effektivt ressourceforbrug. Virkningen varierer'
+  - '&7fra maskine til maskine.'
+  name: '&fRegulatoropgradering'
   type:
   - '&7&oKomponent'
 STB_SAWMILL:
+  description:
+  - '&7Forarbejder trægenstande til planker'
+  - '&7med et højere udbytte end fremstilling.'
+  name: '&fSavværk'
   type:
   - '&7&oMaskine'
 STB_SCURELAY:
+  description:
+  - '&7Forbinder til et andet SCU-relæ for at dele'
+  - '&7en fælles ladning over enhver afstand.'
+  name: '&fSCU-relæ'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oMaskine'
 STB_SENDERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at sende genstande'
+  - '&7til et tilstødende inventar eller til en router'
+  - '&7med et modtagermodul inden for 10 blokke'
+  - '&7med frit udsyn.'
+  name: '&fG.R.-modul: Afsender'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_SILICONWAFER:
+  description:
+  - '&7Bruges til fremstilling af mere avancerede'
+  - '&7elektroniske kredsløb.'
+  name: '&fSiliciumskive'
   type:
   - '&7&oKomponent'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Bryder blokken med silkeberøring i sin indstillede'
+  - '&7retning og trækker den ind i routeren.'
+  - '&7Skal fremstilles med en silkeberøringsbog.'
+  name: '&fG.R.-modul: Silkebryder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Bruges som komponent i forskellige maskiner.'
+  name: '&fSimpelt elektronisk kredsløb'
   type:
   - '&7&oKomponent'
 STB_SMELTER:
+  description:
+  - '&7Smelter genstande som en ovn, men'
+  - '&7hurtigere og mere effektivt.'
+  name: '&fSmelteovn'
   type:
   - '&7&oMaskine'
 STB_SORTERMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at lægge genstande'
+  - '&7i et inventar kun hvis det er tomt eller'
+  - '&7allerede indeholder den genstand.'
+  name: '&fG.R.-modul: Sortering'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eVenstreklik&7 på en blok for at sætte retningen'
+  - '&eSnig + venstreklik&7 i luften for at fjerne retningen'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Sænker lydstyrken for alle lyde'
+  - '&7inden for en 8-bloks radius.'
+  name: '&fLyddæmper'
   type:
   - '&7&oMaskine'
+  usage:
+  - '&eHøjreklik&7 for at åbne indstillingerne'
 STB_SPEEDMODULE:
+  description:
+  - '&7Et passivt modul der øger routerens'
+  - '&7hastighed. 0 moduler = 1 handling / 20 ticks;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Over 3 ignoreres.'
+  name: '&fG.R.-modul: Hastighedsopgradering'
   type:
   - '&7&oKomponent'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Lægges i en maskine for at få den til at køre'
+  - '&7hurtigere, på bekostning af højere strømforbrug.'
+  name: '&fHastighedsopgradering'
+  stats:
+  - '&8⇨ &7Hastighed: &ex1.4'
+  - '&8⇨ &7Strømforbrug: &ex1.6'
   type:
   - '&7&oKomponent'
 STB_STACKMODULE:
+  description:
+  - '&7Et passivt modul; hvert ét fordobler antallet af'
+  - '&7genstande der flyttes pr. handling, op til'
+  - '&7genstandens maksimale stakstørrelse. Over 6 ignoreres.'
+  name: '&fG.R.-modul: Stakopgradering'
   type:
   - '&7&oKomponent'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Bruges af visse avancerede genstande til'
+  - '&7kommunikation på tværs af verdener.'
+  name: '&fSubrumstransponder'
   type:
   - '&7&oKomponent'
 STB_TAPEMEASURE:
+  description:
+  - '&7Måler afstanden mellem to'
+  - '&7punkter du vælger i verden.'
+  name: '&fMålebånd'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eSnig + højreklik&7 på en blok for at sætte ankeret'
+  - '&eHøjreklik&7 på en blok for at få målingen'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Opbevarer energi for at buffere strøm mellem'
+  - '&7generatorer og maskiner.'
+  name: '&f10K-batteriboks'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oMaskine'
 STB_TENKENERGYCELL:
+  description:
+  - '&7En bærbar energicelle der bærer lagret'
+  - '&7STB-strøm til at oplade apparater undervejs.'
+  name: '&f10K-energicelle'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKomponent'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Lægges i en maskine for at øge det nyttige'
+  - '&7udbytte, på bekostning af hastighed og strøm.'
+  name: '&fGrundighedsopgradering'
+  stats:
+  - '&8⇨ &7Hastighed: &ex0.7'
+  - '&8⇨ &7Strømforbrug: &ex1.6'
+  - '&8⇨ &7Bonusudbytte: &e+8%'
   type:
   - '&7&oKomponent'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Bruges til fremstilling af visse mere'
+  - '&7avancerede maskiner.'
+  name: '&fRobust maskinramme'
   type:
   - '&7&oKomponent'
 STB_TRASHCAN:
+  description:
+  - '&7ØDELÆGGER alle genstande der lægges eller ledes'
+  - '&7ind i den. Pas på!'
+  name: '&fSkraldespand'
   type:
   - '&7&oMaskine'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Fremstil to af disse sammen for at forbinde'
+  - '&7dem til et SCU-relæ med fælles ladning.'
+  name: '&fUforbundet SCU-relæ'
   type:
   - '&7&oKomponent'
 STB_VACUUMMODULE:
+  description:
+  - '&7Sættes i en genstandsrouter for at opsuge'
+  - '&7nærliggende tabte genstande.'
+  name: '&fG.R.-modul: Støvsuger'
+  stats:
+  - '&8⇨ &7Radius: &e6 blokke'
   type:
   - '&7&oKomponent'
 STB_WATERINGCAN:
+  description:
+  - '&7Vander og får nærliggende afgrøder til at vokse.'
+  - '&7Brug den ikke for meget!'
+  name: '&fVandkande'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 for at vande afgrøder'
+  - '&eHøjreklik&7 i vand for at fylde den op'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7En multiværktøjshakke der pløjer, sår og'
+  - '&7høster, med en indbygget frøpose.'
+  name: '&fKombihakke af træ'
   type:
   - '&7&oVærktøj'
+  usage:
+  - '&eHøjreklik&7 på jord/græs for at pløje et 3x3-område'
+  - '&eHøjreklik&7 på landbrugsjord for at så et 3x3-område'
+  - '&eHøjreklik&7 andre steder for at åbne frøposen'
+  - '&eVenstreklik&7 på planter for at høste et 3x3-område'
+  - '&eVenstreklik&7 på blade for at bryde et 3x3x3-område'
