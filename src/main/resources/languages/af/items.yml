@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Toets die versadigingsvlak van ''n'
+  - '&75x5 gebied landbougrond.'
+  name: '&fGevorderde Vogmeter'
+  stats:
+  - '&8⇨ &7Gebied: &e5x5'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 landbougrond om die vog te toets'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Blaai deur en vervaardig bekende resepte,'
+  - '&7en kan tydens vervaardiging items uit'
+  - '&7aangrensende inventarisse trek.'
+  name: '&fGevorderde Reseptboek'
   type:
   - '&7&oToestel'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items te stuur'
+  - '&7na ''n gekoppelde Ontvangermodule binne ''n'
+  - '&724-blok-radius, geen siglyn nodig nie.'
+  name: '&fI.R.-mod: Gev. Stuurder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n roeteerder met ''n Ontvangermodule om te koppel'
+  - '&eHurk + Linksklik&7 om te ontkoppel'
 STB_ANGELICBLOCK:
+  description:
+  - '&7''n Tydelike swewende steierblok,'
+  - '&7ideaal om in oop ruimte uit te bou.'
+  name: '&fEngelagtige Blok'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik&7 om die blok in die lug te plaas'
+  - '&eLinksklik&7 die blok om dit onmiddellik te breek'
 STB_AUTOBUILDER:
+  description:
+  - '&7Kan ''n gebied bou of skoonmaak.'
+  - '&7Gebruik Grondmerkers om die gebied af te baken.'
+  name: '&fOutobouer'
   type:
   - '&7&oMasjien'
 STB_AUTOFARM:
+  description:
+  - '&7Oes en herplant outomaties'
+  - '&7Koring-, Aartappel- en Wortelgewasse in ''n 3x3'
+  - '&7radius, 2 blokke bo die masjien.'
+  name: '&fOutoplaas'
   type:
   - '&7&oMasjien'
 STB_AUTOFARM2:
+  description:
+  - '&7Oes en herplant outomaties'
+  - '&7Kakaobone, Suikerriet en Kaktus'
+  - '&7in ''n 5x5 radius, 2 blokke bo die masjien.'
+  name: '&fOutoplaas MkII'
   type:
   - '&7&oMasjien'
 STB_AUTOFORESTER:
+  description:
+  - '&7Kap en herplant bome outomaties'
+  - '&7in ''n 5x5 radius, 2 blokke bo die masjien.'
+  name: '&fOutobosbouer'
   type:
   - '&7&oMasjien'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Genereer krag buite in helder'
+  - '&7sonlig. Benodig ''n PV-sel om te werk.'
+  name: '&fBasiese Sonsel'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oKragopwekker'
+  usage:
+  - '&eLinksklik&7 (leë hand) om die PV-sel te onttrek'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Groot Bergingseenheid. Stoor ''n reusagtige'
+  - '&7hoeveelheid van ''n enkele itemtipe.'
+  name: '&fGBE'
+  stats:
+  - '&8⇨ &7128 Stapels'
   type:
   - '&7&oMasjien'
 STB_BIOENGINE:
+  description:
+  - '&7Omskep organiese materiale in krag.'
+  name: '&fBio-enjin'
   type:
   - '&7&oKragopwekker'
 STB_BLANKMODULE:
+  description:
+  - '&7Die blanko basis waarmee die verskeie'
+  - '&7Itemroeteerdermodules vervaardig word.'
+  name: '&fBlanko Itemroeteerdermodule'
   type:
   - '&7&oKomponent'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Stuur ''n rooiklippols uit wanneer ''n'
+  - '&7aangrensende blok opdateer.'
+  name: '&fBlokopdateringsbespeurder'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 die blok om dit op te stel'
 STB_BREAKERMODULE:
+  description:
+  - '&7Breek die blok in sy ingestelde'
+  - '&7rigting en trek dit in die roeteerder in.'
+  name: '&fI.R.-mod: Breker'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Word gebruik om elektroniese'
+  - '&7stroombane te bou.'
+  name: '&fStroombaanbord'
   type:
   - '&7&oKomponent'
 STB_DENSESOLAR:
+  description:
+  - '&7Genereer krag buite in helder'
+  - '&7sonlig. Benodig ''n PV-sel om te werk.'
+  name: '&fDigte Sonsel'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oKragopwekker'
+  usage:
+  - '&eLinksklik&7 (leë hand) om die PV-sel te onttrek'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7''n Veeldoelige skoffel wat omploeg, saai en'
+  - '&7oes oor ''n wyer gebied, met ''n'
+  - '&7ingeboude saadsak.'
+  name: '&fDiamantkombinasieskoffel'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 grond/gras om ''n 3x3 gebied om te ploeg'
+  - '&eRegsklik&7 landbougrond om ''n 3x3 gebied te saai'
+  - '&eRegsklik&7 elders om die saadsak oop te maak'
+  - '&eLinksklik&7 plante om ''n 5x5 gebied te oes'
+  - '&eLinksklik&7 blare om ''n 3x3x3 gebied te breek'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Trek items uit die ingestelde rigting,'
+  - '&7en stuur hulle dan om die beurt na alle ander'
+  - '&7aangrensende inventarisse.'
+  name: '&fI.R.-mod: Verdeler'
   type:
   - '&7&oKomponent'
 STB_DROPPERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items'
+  - '&7in die ingestelde rigting op die grond te laat val.'
+  name: '&fI.R.-mod: Uitgooier'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Word in ''n masjien gesit om sy klaar items'
+  - '&7outomaties na ''n aangrensende inventaris uit te werp.'
+  name: '&fUitwerperopgradering'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die uitwerprigting te stel'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Laat jou toe om sekere items te energiseer'
+  - '&7tot hul gelaaide variante.'
+  name: '&fElektriese Energiseerder'
   type:
   - '&7&oMasjien'
 STB_ELEVATOR:
+  description:
+  - '&7Koppel aan ander hysbakke wat direk'
+  - '&7bo of onder dit geplaas is.'
+  name: '&fHysbak'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eDruk Spasie&7 om op te gaan'
+  - '&eDruk Shift&7 om af te gaan'
 STB_ENDERBAG:
+  description:
+  - '&7Gee draagbare toegang tot ''n persoonlike'
+  - '&7of globale enderbergingsinventaris.'
+  name: '&fEndersak'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik&7 om die sak oop te maak'
+  - '&eHurk + Regsklik&7 ''n Enderkas om die frekwensie te sinchroniseer'
 STB_ENDERBOX:
+  description:
+  - '&7Buitedimensionele berging wat vanaf'
+  - '&7gekoppelde Enderkaste toeganklik is.'
+  name: '&fEnderkas'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 met ''n Enderinsteller om sy frekwensie te stel'
 STB_ENDERLEASH:
+  description:
+  - '&7Vang en stoor een vreedsame dier,'
+  - '&7sodat jy vee maklik kan verskuif.'
+  name: '&fEnderleiband'
   type:
   - '&7&oToestel'
+  usage:
+  - '&eRegsklik&7 om ''n dier te vang of vry te laat'
 STB_ENDERTUNER:
+  description:
+  - '&7Vibreer in ses dimensies om ''n Enderkas'
+  - '&7se bergingsfrekwensie in te stel.'
+  name: '&fEnderinsteller'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 ''n Enderkas om dit in te stel'
+  - '&eRegsklik&7 elders om die instelkoppelvlak oop te maak'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Smelt om ''n geënergiseerde goudstaaf te kry.'
+  name: '&fGeënergiseerde Goudstof'
   type:
   - '&7&oHulpbron'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Vreemd gloeiend...'
+  name: '&fGeënergiseerde Goudstaaf'
   type:
   - '&7&oHulpbron'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Smelt om ''n geënergiseerde ysterstaaf te kry.'
+  name: '&fGeënergiseerde Ysterstof'
   type:
   - '&7&oHulpbron'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Vreemd gloeiend...'
+  name: '&fGeënergiseerde Ysterstaaf'
   type:
   - '&7&oHulpbron'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Vreemd gloeiend...'
+  name: '&fGeënergiseerde Kwarts'
   type:
   - '&7&oHulpbron'
 STB_FERMENTER:
+  description:
+  - '&7Fermenteer verskeie items, en word ook'
+  - '&7gebruik om Visaas te maak.'
+  name: '&fFermenteerder'
   type:
   - '&7&oMasjien'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Stoor energie om krag te buffer tussen'
+  - '&7generators en masjiene.'
+  name: '&f50K Batterykas'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oMasjien'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7''n Draagbare energiesel wat gestoorde'
+  - '&7STB-krag dra om toestelle oral te laai.'
+  name: '&f50K Energiesel'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKomponent'
 STB_FISHBAIT:
+  description:
+  - '&7Word in ''n Visnet gebruik om vis te vang.'
+  name: '&fVisaas'
   type:
   - '&7&oKomponent'
 STB_FISHINGNET:
+  description:
+  - '&7Vang vis outomaties wanneer dit bo'
+  - '&7water geplaas en met Visaas gevoer word.'
+  name: '&fVisnet'
   type:
   - '&7&oMasjien'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7''n Veeldoelige skoffel wat omploeg, saai en'
+  - '&7oes, met ''n ingeboude saadsak.'
+  name: '&fGoudkombinasieskoffel'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 grond/gras om ''n 3x3 gebied om te ploeg'
+  - '&eRegsklik&7 landbougrond om ''n 3x3 gebied te saai'
+  - '&eRegsklik&7 elders om die saadsak oop te maak'
+  - '&eLinksklik&7 plante om ''n 3x3 gebied te oes'
+  - '&eLinksklik&7 blare om ''n 3x3x3 gebied te breek'
 STB_GOLDDUST:
+  description:
+  - '&7Smelt in ''n Smelter of Oond om'
+  - '&7goudstawe te kry.'
+  name: '&fGoudstof'
   type:
   - '&7&oHulpbron'
 STB_HEATENGINE:
+  description:
+  - '&7Omskep brandbare items in krag.'
+  name: '&fHitte-enjin'
   type:
   - '&7&oKragopwekker'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Wys ''n netwerk se netto energie-'
+  - '&7wins of verlies met holograms.'
+  name: '&fHolografiese Monitor'
   type:
   - '&7&oMasjien'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items te stuur'
+  - '&7na ''n gekoppelde Ontvangermodule enige plek,'
+  - '&7in enige wêreld.'
+  name: '&fI.R.-mod: Hiperstuurder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n roeteerder met ''n Ontvangermodule om te koppel'
+  - '&eHurk + Linksklik&7 enige plek om te ontkoppel'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Hiperbergingseenheid. Stoor ''n kolossale'
+  - '&7hoeveelheid van ''n enkele itemtipe.'
+  - '&7Behou die inhoud wanneer dit gebreek word. Benodig krag om te werk.'
+  name: '&fHBE'
+  stats:
+  - '&8⇨ &733554431 Stapels'
   type:
   - '&7&oMasjien'
 STB_INFERNALDUST:
+  description:
+  - '&7Word soms deur blazes laat val; Buit'
+  - '&7kan help. Kombineer met yster- of goudstof.'
+  name: '&fHelse Stof'
   type:
   - '&7&oHulpbron'
 STB_INFERNALFARM:
+  description:
+  - '&7Oes en herplant outomaties'
+  - '&7Netherwrat in ''n 5x5 radius, 2 blokke'
+  - '&7bo die masjien.'
+  name: '&fHelse Plaas'
   type:
   - '&7&oMasjien'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Word as komponent in party meer'
+  - '&7gevorderde masjinerie gebruik.'
+  name: '&fGeïntegreerde Stroombaan'
   type:
   - '&7&oKomponent'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7''n Veeldoelige skoffel wat omploeg, saai en'
+  - '&7oes, met ''n ingeboude saadsak.'
+  name: '&fYsterkombinasieskoffel'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 grond/gras om ''n 3x3 gebied om te ploeg'
+  - '&eRegsklik&7 landbougrond om ''n 3x3 gebied te saai'
+  - '&eRegsklik&7 elders om die saadsak oop te maak'
+  - '&eLinksklik&7 plante om ''n 3x3 gebied te oes'
+  - '&eLinksklik&7 blare om ''n 3x3x3 gebied te breek'
 STB_IRONDUST:
+  description:
+  - '&7Smelt in ''n Smelter of Oond om'
+  - '&7ysterstawe te kry.'
+  name: '&fYsterstof'
   type:
   - '&7&oHulpbron'
 STB_ITEMROUTER:
+  description:
+  - '&7Stuur items aan. Voeg een of meer'
+  - '&7Roeteringsmodules in om dit te aktiveer.'
+  name: '&fItemroeteerder'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 die blok om die roeteerder op te stel'
 STB_LANDMARKER:
+  description:
+  - '&7Stoor ''n posisie via Sensible GPS,'
+  - '&7gebruik om masjienwerkgebiede af te baken.'
+  name: '&fGrondmerker'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 ''n blok om sy posisie te stoor'
+  - '&eRegsklik&7 lug om die posisie uit te vee'
 STB_MACHINEFRAME:
+  description:
+  - '&7Word gebruik om verskeie masjiene te vervaardig.'
+  name: '&fMasjienraam'
   type:
   - '&7&oKomponent'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Omskep Lawa in krag.'
+  name: '&fMagmatiese Enjin'
   type:
   - '&7&oKragopwekker'
 STB_MASHER:
+  description:
+  - '&7Maal ertse en ander hulpbronne tot stowwe.'
+  name: '&fFynmaker'
   type:
   - '&7&oMasjien'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Toets die versadigingsvlak van ''n'
+  - '&73x3 gebied landbougrond.'
+  name: '&fVogmeter'
+  stats:
+  - '&8⇨ &7Gebied: &e3x3'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 landbougrond om die vog te toets'
 STB_MULTIBUILDER:
+  description:
+  - '&7''n Aangedrewe bouwerktuig wat blokke oor ''n'
+  - '&7gebied plaas of omruil, met'
+  - '&7kiesbare Bou- en Omruilmodusse.'
+  name: '&fMultibouer'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eLinksklik&7 ''n blok vir ''n voorskou'
+  - '&eRegsklik&7 ''n blok om te bou'
+  - '&eHurk + Regsklik&7 om een blok te bou'
+  - '&eHurk + Muiswiel&7 om die modus te wissel'
 STB_MULTIMETER:
+  description:
+  - '&7Lees energienetverbindings en die'
+  - '&7kragverbruik van bedrading en masjiene af.'
+  name: '&fMultimeter'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 bedrading of ''n masjien om te gebruik'
 STB_PAINTBRUSH:
+  description:
+  - '&7Verf kleurbare blokke soos wol,'
+  - '&7tapyt en gekleurde klei of glas, met'
+  - '&7verf uit ''n Verfblik.'
+  name: '&fVerfkwas'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 ''n blok om tot 25 blokke te verf'
+  - '&eHurk + Regsklik&7 ''n blok om een blok te verf'
+  - '&eHurk + Regsklik&7 lug om die kwas leeg te maak'
+  - '&eRegsklik&7 skilderye om die kunswerk te verander'
 STB_PAINTCAN:
+  description:
+  - '&7Hou ''n voorraad gekleurde verf.'
+  name: '&fVerfblik'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 met ''n Verfkwas om dit te hervul'
+  - '&eRegsklik&7 met enigiets anders om die menger oop te maak;'
+  - '&7sit ''n Melkemmer en ''n Kleurstof binne-in om verf te meng'
 STB_PAINTROLLER:
+  description:
+  - '&7Verf kleurbare blokke oor ''n groter'
+  - '&7gebied as die kwas, met verf uit'
+  - '&7''n Verfblik.'
+  name: '&fVerfroller'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 ''n blok om tot 100 blokke te verf'
+  - '&eHurk + Regsklik&7 ''n blok om een blok te verf'
+  - '&eHurk + Regsklik&7 lug om die roller leeg te maak'
 STB_POWERMONITOR:
+  description:
+  - '&7Wys ''n netwerk se netto energie-'
+  - '&7wins of verlies op aangehegte bordjies.'
+  name: '&fKragmonitor'
   type:
   - '&7&oMasjien'
 STB_PULLERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items te trek'
+  - '&7uit ''n aangrensende inventaris.'
+  name: '&fI.R.-mod: Trekker'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_PUMP:
+  description:
+  - '&7Pomp vloeistowwe van onder af in ''n'
+  - '&7ingesette Emmer of Glasbottel.'
+  name: '&fPomp'
   type:
   - '&7&oMasjien'
 STB_PVCELL:
+  description:
+  - '&7''n Fotovoltaïese sel wat ''n songenerator'
+  - '&7aandryf. Dit verslyt mettertyd.'
+  name: '&fPV-sel'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eRegsklik&7 ''n songenerator om dit in te sit'
 STB_QUARTZDUST:
+  description:
+  - '&7Kook in ''n Smelter om silikon te maak.'
+  name: '&fKwartsstof'
   type:
   - '&7&oHulpbron'
 STB_RECEIVERMODULE:
+  description:
+  - '&7''n Passiewe module wat items ontvang'
+  - '&7vanaf ''n gerigte Stuurdermodule of ''n gekoppelde'
+  - '&7Gevorderde Stuurdermodule.'
+  name: '&fI.R.-mod: Ontvanger'
   type:
   - '&7&oKomponent'
 STB_RECIPEBOOK:
+  description:
+  - '&7Laat jou toe om alle bekende resepte'
+  - '&7deur te blaai en te vervaardig.'
+  name: '&fReseptboek'
   type:
   - '&7&oToestel'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Klok-in-''n-blok. Stuur ''n rooiklipsein'
+  - '&7met verstelbare interval & duur uit.'
+  name: '&fRooiklipklok'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 die blok om die klok op te stel'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Gee masjiene intelligensie vir meer'
+  - '&7doeltreffende hulpbrongebruik. Die effek wissel'
+  - '&7van masjien tot masjien.'
+  name: '&fReguleerderopgradering'
   type:
   - '&7&oKomponent'
 STB_SAWMILL:
+  description:
+  - '&7Verwerk houtitems tot planke'
+  - '&7teen ''n hoër opbrengs as vervaardiging.'
+  name: '&fSaagmeul'
   type:
   - '&7&oMasjien'
 STB_SCURELAY:
+  description:
+  - '&7Koppel aan ''n ander SCU-aanstuurder om ''n'
+  - '&7gesamentlike lading oor enige afstand te deel.'
+  name: '&fSCU-aanstuurder'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oMasjien'
 STB_SENDERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items te stuur'
+  - '&7na ''n aangrensende inventaris, of na ''n roeteerder'
+  - '&7met ''n Ontvangermodule binne 10 blokke'
+  - '&7met ''n vrye siglyn.'
+  name: '&fI.R.-mod: Stuurder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_SILICONWAFER:
+  description:
+  - '&7Word gebruik om meer gevorderde'
+  - '&7elektroniese stroombane te vervaardig.'
+  name: '&fSilikonwafer'
   type:
   - '&7&oKomponent'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Breek die blok met Sagte Aanslag in sy ingestelde'
+  - '&7rigting en trek dit in die roeteerder in.'
+  - '&7Moet met ''n Sagte Aanslag-boek vervaardig word.'
+  name: '&fI.R.-mod: Sagte Breker'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Word as komponent in verskeie masjinerie gebruik.'
+  name: '&fEenvoudige Elektroniese Stroombaan'
   type:
   - '&7&oKomponent'
 STB_SMELTER:
+  description:
+  - '&7Smelt items soos ''n Oond, maar'
+  - '&7vinniger en doeltreffender.'
+  name: '&fSmelter'
   type:
   - '&7&oMasjien'
 STB_SORTERMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om items in ''n'
+  - '&7inventaris te plaas net as dit leeg is of'
+  - '&7reeds daardie item bevat.'
+  name: '&fI.R.-mod: Sorteerder'
   type:
   - '&7&oKomponent'
+  usage:
+  - '&eLinksklik&7 ''n blok om die rigting te stel'
+  - '&eHurk + Linksklik&7 lug om die rigting op te hef'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Verminder die volume van alle klanke'
+  - '&7binne ''n 8-blok-radius.'
+  name: '&fKlankdemper'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eRegsklik&7 om die opstelling oop te maak'
 STB_SPEEDMODULE:
+  description:
+  - '&7''n Passiewe module wat roeteerderspoed'
+  - '&7verhoog. 0 modules = 1 bewerking / 20 tikke;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Meer as 3 word geïgnoreer.'
+  name: '&fI.R.-mod: Spoedopgradering'
   type:
   - '&7&oKomponent'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Word in ''n masjien gesit om dit vinniger'
+  - '&7te laat loop, teen hoër kragverbruik.'
+  name: '&fSpoedopgradering'
+  stats:
+  - '&8⇨ &7Spoed: &ex1.4'
+  - '&8⇨ &7Kragverbruik: &ex1.6'
   type:
   - '&7&oKomponent'
 STB_STACKMODULE:
+  description:
+  - '&7''n Passiewe module; elkeen verdubbel die'
+  - '&7items wat per bewerking geskuif word, tot by die'
+  - '&7item se maks stapelgrootte. Meer as 6 word geïgnoreer.'
+  name: '&fI.R.-mod: Stapelopgradering'
   type:
   - '&7&oKomponent'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Word deur party gevorderde items vir'
+  - '&7kommunikasie tussen wêrelde gebruik.'
+  name: '&fSubruimtetransponder'
   type:
   - '&7&oKomponent'
 STB_TAPEMEASURE:
+  description:
+  - '&7Meet die afstand tussen twee'
+  - '&7punte wat jy in die wêreld kies.'
+  name: '&fMeetband'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eHurk + Regsklik&7 ''n blok om die ankerpunt te stel'
+  - '&eRegsklik&7 ''n blok om die meting te kry'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Stoor energie om krag te buffer tussen'
+  - '&7generators en masjiene.'
+  name: '&f10K Batterykas'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oMasjien'
 STB_TENKENERGYCELL:
+  description:
+  - '&7''n Draagbare energiesel wat gestoorde'
+  - '&7STB-krag dra om toestelle oral te laai.'
+  name: '&f10K Energiesel'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKomponent'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Word in ''n masjien gesit om nuttige uitset'
+  - '&7te verhoog, ten koste van spoed en krag.'
+  name: '&fGrondigheidsopgradering'
+  stats:
+  - '&8⇨ &7Spoed: &ex0.7'
+  - '&8⇨ &7Kragverbruik: &ex1.6'
+  - '&8⇨ &7Bonusuitset: &e+8%'
   type:
   - '&7&oKomponent'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Word gebruik om party meer'
+  - '&7gevorderde masjiene te vervaardig.'
+  name: '&fTaai Masjienraam'
   type:
   - '&7&oKomponent'
 STB_TRASHCAN:
+  description:
+  - '&7VERNIETIG enige items wat daarin geplaas'
+  - '&7of gepyp word. Pasop!'
+  name: '&fAsblik'
   type:
   - '&7&oMasjien'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Vervaardig ''n paar hiervan saam om hulle'
+  - '&7tot ''n SCU-aanstuurder met gedeelde lading te koppel.'
+  name: '&fOngekoppelde SCU-aanstuurder'
   type:
   - '&7&oKomponent'
 STB_VACUUMMODULE:
+  description:
+  - '&7Pas in ''n Itemroeteerder om nabygeleë'
+  - '&7gevalle items op te suig.'
+  name: '&fI.R.-mod: Opsuier'
+  stats:
+  - '&8⇨ &7Radius: &e6 blokke'
   type:
   - '&7&oKomponent'
 STB_WATERINGCAN:
+  description:
+  - '&7Besproei nabygeleë gewasse en laat hulle groei.'
+  - '&7Moenie dit oorgebruik nie!'
+  name: '&fGieter'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 om gewasse te besproei'
+  - '&eRegsklik&7 in water om te hervul'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7''n Veeldoelige skoffel wat omploeg, saai en'
+  - '&7oes, met ''n ingeboude saadsak.'
+  name: '&fHoutkombinasieskoffel'
   type:
   - '&7&oGereedskap'
+  usage:
+  - '&eRegsklik&7 grond/gras om ''n 3x3 gebied om te ploeg'
+  - '&eRegsklik&7 landbougrond om ''n 3x3 gebied te saai'
+  - '&eRegsklik&7 elders om die saadsak oop te maak'
+  - '&eLinksklik&7 plante om ''n 3x3 gebied te oes'
+  - '&eLinksklik&7 blare om ''n 3x3x3 gebied te breek'
