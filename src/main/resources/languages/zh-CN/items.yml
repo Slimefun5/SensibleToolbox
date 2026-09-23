@@ -1,360 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7检测耕地的湿润程度，范围为'
+  - '&75x5 的耕地区域。'
   name: '&f高级湿度检测器'
+  stats:
+  - '&8⇨ &7区域：&e5x5'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 耕地以检查湿度'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7浏览并制造已知配方，'
+  - '&7并可在制造时从相邻的'
+  - '&7物品栏中拉取物品。'
   name: '&f高级配方书'
   type:
   - '&7&o装置'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7插入物品路由器以发送物品'
+  - '&7发送到已链接的接收器模块，范围'
+  - '&724 格半径内，无需视线通畅。'
   name: '&fI.R. 模块：高级发送器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 带接收器模块的路由器以链接'
+  - '&e潜行 + 左键点击&7 解除链接'
 STB_ANGELICBLOCK:
+  description:
+  - '&7一种临时的悬浮脚手架方块，'
+  - '&7非常适合向空旷处搭建。'
   name: '&f天使方块'
   type:
   - '&7&o装置'
+  usage:
+  - '&e右键点击&7 在空中放置该方块'
+  - '&e左键点击&7 该方块即可瞬间破坏'
 STB_AUTOBUILDER:
+  description:
+  - '&7可以建造或清空一片区域。'
+  - '&7使用地标器来划定区域。'
   name: '&f自动建造机'
   type:
   - '&7&o机器'
 STB_AUTOFARM:
+  description:
+  - '&7自动收获并重新种植'
+  - '&7小麦、马铃薯和胡萝卜作物，范围 3x3'
+  - '&7半径，位于机器上方 2 格。'
   name: '&f自动农场'
   type:
   - '&7&o机器'
 STB_AUTOFARM2:
+  description:
+  - '&7自动收获并重新种植'
+  - '&7可可豆、甘蔗和仙人掌'
+  - '&7范围 5x5 半径，位于机器上方 2 格。'
   name: '&f自动农场 MkII'
   type:
   - '&7&o机器'
 STB_AUTOFORESTER:
+  description:
+  - '&7自动砍伐并重新种植树木'
+  - '&7范围 5x5 半径，位于机器上方 2 格。'
   name: '&f自动伐木机'
   type:
   - '&7&o机器'
 STB_BASICSOLARCELL:
+  description:
+  - '&7在户外明亮的阳光下'
+  - '&7产生电力。需要光伏电池才能运作。'
   name: '&f基础太阳能板'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&o发电机'
+  usage:
+  - '&e左键点击&7（空手）取出光伏电池'
 STB_BIGSTORAGEUNIT:
-  name: '&fBSU'
+  description:
+  - '&7大型存储单元。可存储海量的'
+  - '&7单个物品类型。'
+  name: '&f大型存储单元'
+  stats:
+  - '&8⇨ &7128 组'
   type:
   - '&7&o机器'
 STB_BIOENGINE:
+  description:
+  - '&7将有机材料转换为电力。'
   name: '&f生物引擎'
   type:
   - '&7&o发电机'
 STB_BLANKMODULE:
+  description:
+  - '&7用于合成各种物品路由器'
+  - '&7模块的空白基座。'
   name: '&f空白物品 Router 模块'
   type:
   - '&7&o组件'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7当相邻方块更新时'
+  - '&7发出一次红石脉冲。'
   name: '&f方块更新探测器'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 该方块进行配置'
 STB_BREAKERMODULE:
+  description:
+  - '&7破坏其所配置方向上的'
+  - '&7方块并将其拉入路由器。'
   name: '&fI.R. 模块：破坏器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_CIRCUITBOARD:
+  description:
+  - '&7用于制造电子'
+  - '&7电路。'
   name: '&f电路板'
   type:
   - '&7&o组件'
 STB_DENSESOLAR:
+  description:
+  - '&7在户外明亮的阳光下'
+  - '&7产生电力。需要光伏电池才能运作。'
   name: '&f密集太阳能板'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&o发电机'
+  usage:
+  - '&e左键点击&7（空手）取出光伏电池'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7一把多功能锄，可翻地、播种并'
+  - '&7收获，覆盖更大的区域，并'
+  - '&7内置种子袋。'
   name: '&f钻石组合锄'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 泥土/草方块翻耕 3x3 区域'
+  - '&e右键点击&7 耕地播种 3x3 区域'
+  - '&e右键点击&7 其他位置打开种子袋'
+  - '&e左键点击&7 植物收获 5x5 区域'
+  - '&e左键点击&7 树叶破坏 3x3x3 区域'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7从所配置的方向拉取物品，'
+  - '&7然后轮流发送到所有其他'
+  - '&7相邻的物品栏。'
   name: '&fI.R. 模块：分配器'
   type:
   - '&7&o组件'
 STB_DROPPERMODULE:
+  description:
+  - '&7插入物品路由器以将物品掉落'
+  - '&7到所配置方向的地面上。'
   name: '&fI.R. 模块：投放器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7放入机器中，自动将其完成的'
+  - '&7物品弹出到相邻的物品栏。'
   name: '&f弹出升级'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置弹出方向'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7允许你将某些物品充能'
+  - '&7转变为其充能变种。'
   name: '&f电力充能器'
   type:
   - '&7&o机器'
 STB_ELEVATOR:
+  description:
+  - '&7链接到正上方或正下方'
+  - '&7放置的其他电梯。'
   name: '&f电梯'
   type:
   - '&7&o机器'
+  usage:
+  - '&e按空格键&7 上升'
+  - '&e按潜行键&7 下降'
 STB_ENDERBAG:
+  description:
+  - '&7提供便携方式，访问个人或'
+  - '&7全局的末影存储物品栏。'
   name: '&fEnder 背包'
   type:
   - '&7&o装置'
+  usage:
+  - '&e右键点击&7 打开背包'
+  - '&e潜行 + 右键点击&7 末影盒以同步频率'
 STB_ENDERBOX:
+  description:
+  - '&7超维度存储空间，可从'
+  - '&7已链接的末影盒访问。'
   name: '&fEnder 箱'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 使用末影调谐器设置其频率'
 STB_ENDERLEASH:
+  description:
+  - '&7捕获并存储一只温和的动物，'
+  - '&7让你轻松搬迁牲畜。'
   name: '&fEnder 拴绳'
   type:
   - '&7&o装置'
+  usage:
+  - '&e右键点击&7 以捕获或释放动物'
 STB_ENDERTUNER:
+  description:
+  - '&7在六个维度中震动，用以调谐'
+  - '&7末影盒的存储频率。'
   name: '&fEnder 调谐器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 末影盒进行调谐'
+  - '&e右键点击&7 其他位置打开调谐界面'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7熔炼可得到充能金锭。'
   name: '&f充能金粉'
   type:
   - '&7&o资源'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7它在奇异地发光……'
   name: '&f充能金锭'
   type:
   - '&7&o资源'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7熔炼可得到充能铁锭。'
   name: '&f充能铁粉'
   type:
   - '&7&o资源'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7它在奇异地发光……'
   name: '&f充能铁锭'
   type:
   - '&7&o资源'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7它在奇异地发光……'
   name: '&f充能石英'
   type:
   - '&7&o资源'
 STB_FERMENTER:
+  description:
+  - '&7发酵各种物品，也可'
+  - '&7用于制作鱼饵。'
   name: '&f发酵机'
   type:
   - '&7&o机器'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7存储能量，在发电机与机器之间'
+  - '&7缓冲电力。'
   name: '&f50K 电池盒'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o机器'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7一种便携能量单元，携带存储的'
+  - '&7STB 电力，可随时为设备充电。'
   name: '&f50K 能量电池'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o组件'
 STB_FISHBAIT:
+  description:
+  - '&7在渔网中使用以捕鱼。'
   name: '&f鱼饵'
   type:
   - '&7&o组件'
 STB_FISHINGNET:
+  description:
+  - '&7放置在水面上并投喂鱼饵后，'
+  - '&7会自动捕鱼。'
   name: '&f渔网'
   type:
   - '&7&o机器'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7一把多功能锄，可翻地、播种并'
+  - '&7收获，并内置种子袋。'
   name: '&f金组合锄'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 泥土/草方块翻耕 3x3 区域'
+  - '&e右键点击&7 耕地播种 3x3 区域'
+  - '&e右键点击&7 其他位置打开种子袋'
+  - '&e左键点击&7 植物收获 3x3 区域'
+  - '&e左键点击&7 树叶破坏 3x3x3 区域'
 STB_GOLDDUST:
+  description:
+  - '&7在熔炼机或熔炉中熔炼可得到'
+  - '&7金锭。'
   name: '&f金粉'
   type:
   - '&7&o资源'
 STB_HEATENGINE:
+  description:
+  - '&7将可燃物品转换为电力。'
   name: '&f热力引擎'
   type:
   - '&7&o发电机'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7显示一个网络的净能量'
+  - '&7盈亏，以全息影像呈现。'
   name: '&f全息监视器'
   type:
   - '&7&o机器'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7插入物品路由器以发送物品'
+  - '&7发送到任何位置已链接的接收器模块，'
+  - '&7可跨任意世界。'
   name: '&fI.R. 模块：超级发送器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 带接收器模块的路由器以链接'
+  - '&e潜行 + 左键点击&7 在任何位置解除链接'
 STB_HYPERSTORAGEUNIT:
-  name: '&fHSU'
+  description:
+  - '&7超级存储单元。可存储巨量的'
+  - '&7单个物品类型。'
+  - '&7被破坏时保留内容物。需要电力才能运作。'
+  name: '&f超级存储单元'
+  stats:
+  - '&8⇨ &733554431 组'
   type:
   - '&7&o机器'
 STB_INFERNALDUST:
+  description:
+  - '&7有时由烈焰人掉落；抢夺附魔'
+  - '&7可能有帮助。可与铁粉或金粉组合。'
   name: '&f地狱之尘'
   type:
   - '&7&o资源'
 STB_INFERNALFARM:
+  description:
+  - '&7自动收获并重新种植'
+  - '&7下界疣，范围 5x5 半径，高出 2 格'
+  - '&7位于机器上方。'
   name: '&f地狱农场'
   type:
   - '&7&o机器'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7用作某些更高级'
+  - '&7机械的组件。'
   name: '&f集成电路'
   type:
   - '&7&o组件'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7一把多功能锄，可翻地、播种并'
+  - '&7收获，并内置种子袋。'
   name: '&f铁组合锄'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 泥土/草方块翻耕 3x3 区域'
+  - '&e右键点击&7 耕地播种 3x3 区域'
+  - '&e右键点击&7 其他位置打开种子袋'
+  - '&e左键点击&7 植物收获 3x3 区域'
+  - '&e左键点击&7 树叶破坏 3x3x3 区域'
 STB_IRONDUST:
+  description:
+  - '&7在熔炼机或熔炉中熔炼可得到'
+  - '&7铁锭。'
   name: '&f铁粉'
   type:
   - '&7&o资源'
 STB_ITEMROUTER:
+  description:
+  - '&7路由物品。插入一个或多个'
+  - '&7路由模块即可激活它。'
   name: '&f物品 Router'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 该方块配置路由器'
 STB_LANDMARKER:
+  description:
+  - '&7通过智能 GPS 存储一个位置，'
+  - '&7用于划定机器的工作区域。'
   name: '&f地标'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 方块存储其位置'
+  - '&e右键点击&7 空气清除该位置'
 STB_MACHINEFRAME:
+  description:
+  - '&7用于制造各种机器。'
   name: '&f机器框架'
   type:
   - '&7&o组件'
 STB_MAGMATICENGINE:
+  description:
+  - '&7将岩浆转换为电力。'
   name: '&f岩浆引擎'
   type:
   - '&7&o发电机'
 STB_MASHER:
+  description:
+  - '&7将矿石和其他资源研磨成粉末。'
   name: '&f粉碎机'
   type:
   - '&7&o机器'
 STB_MOISTURECHECKER:
+  description:
+  - '&7检测耕地的湿润程度，范围为'
+  - '&73x3 的耕地区域。'
   name: '&f湿度检测器'
+  stats:
+  - '&8⇨ &7区域：&e3x3'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 耕地以检查湿度'
 STB_MULTIBUILDER:
+  description:
+  - '&7一种需要电力的建造工具，可在一片区域内'
+  - '&7放置或替换方块，并带有'
+  - '&7可选的建造与替换模式。'
   name: '&f多功能建造器'
   type:
   - '&7&o工具'
+  usage:
+  - '&e左键点击&7 方块进行预览'
+  - '&e右键点击&7 方块进行建造'
+  - '&e潜行 + 右键点击&7 建造单个方块'
+  - '&e潜行 + 鼠标滚轮&7 切换模式'
 STB_MULTIMETER:
+  description:
+  - '&7读出能量网的连接情况以及'
+  - '&7线缆与机器的电力消耗。'
   name: '&f万用表'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 线缆或机器即可使用'
 STB_PAINTBRUSH:
+  description:
+  - '&7为可染色方块上漆，例如羊毛、'
+  - '&7地毯、染色陶瓦或玻璃，使用'
+  - '&7从油漆罐中取用的油漆。'
   name: '&f画笔'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 方块，最多可上漆 25 个方块'
+  - '&e潜行 + 右键点击&7 方块只上漆一个方块'
+  - '&e潜行 + 右键点击&7 空气清空刷子'
+  - '&e右键点击&7 画以更换画作'
 STB_PAINTCAN:
+  description:
+  - '&7储存一定量的彩色油漆。'
   name: '&f油漆罐'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 用油漆刷来补充它'
+  - '&e右键点击&7 用其他任何物品打开调色器；'
+  - '&7在其中放入牛奶桶和染料即可调配油漆'
 STB_PAINTROLLER:
+  description:
+  - '&7为可染色方块上漆，覆盖比刷子'
+  - '&7更大的区域，使用从油漆罐中'
+  - '&7取用的油漆。'
   name: '&f油漆滚筒'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 方块，最多可上漆 100 个方块'
+  - '&e潜行 + 右键点击&7 方块只上漆一个方块'
+  - '&e潜行 + 右键点击&7 空气清空滚筒'
 STB_POWERMONITOR:
+  description:
+  - '&7显示一个网络的净能量'
+  - '&7盈亏，显示在附着的告示牌上。'
   name: '&f能量监视器'
   type:
   - '&7&o机器'
 STB_PULLERMODULE:
+  description:
+  - '&7插入物品路由器以拉取物品'
+  - '&7来自相邻的物品栏。'
   name: '&fI.R. 模块：拉取器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_PUMP:
+  description:
+  - '&7将下方的液体泵入'
+  - '&7放入的桶或玻璃瓶中。'
   name: '&f泵'
   type:
   - '&7&o机器'
 STB_PVCELL:
+  description:
+  - '&7一块光伏电池，为太阳能'
+  - '&7发电机供能。它会随时间磨损。'
   name: '&fPV 电池'
   type:
   - '&7&o组件'
+  usage:
+  - '&e右键点击&7 太阳能发电机将其插入'
 STB_QUARTZDUST:
+  description:
+  - '&7在熔炼机中烧炼即可制成硅。'
   name: '&f石英粉'
   type:
   - '&7&o资源'
 STB_RECEIVERMODULE:
+  description:
+  - '&7一种被动模块，接收来自正对的'
+  - '&7发送器模块或已链接的'
+  - '&7高级发送器模块的物品。'
   name: '&fI.R. 模块：接收器'
   type:
   - '&7&o组件'
 STB_RECIPEBOOK:
+  description:
+  - '&7允许浏览并制造所有'
+  - '&7已知的配方。'
   name: '&f配方书'
   type:
   - '&7&o装置'
 STB_REDSTONECLOCK:
+  description:
+  - '&7方块中的时钟。发出红石'
+  - '&7信号，间隔与持续时间均可配置。'
   name: '&f红石时钟'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 该方块配置时钟'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7为机器增添智能，使资源'
+  - '&7使用更高效。效果因机器'
+  - '&7而异。'
   name: '&f调节器升级'
   type:
   - '&7&o组件'
 STB_SAWMILL:
+  description:
+  - '&7将木质物品加工成木板，'
+  - '&7产量高于合成。'
   name: '&f锯木厂'
   type:
   - '&7&o机器'
 STB_SCURELAY:
+  description:
+  - '&7链接到另一个 SCU 中继器，以'
+  - '&7跨任意距离共享同一份电量。'
   name: '&fSCU 中继器'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&o机器'
 STB_SENDERMODULE:
+  description:
+  - '&7插入物品路由器以发送物品'
+  - '&7到相邻物品栏，或发送到'
+  - '&710 格内带接收器模块的路由器，'
+  - '&7需要视线通畅。'
   name: '&fI.R. 模块：发送器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_SILICONWAFER:
+  description:
+  - '&7用于制造更高级的'
+  - '&7电子电路。'
   name: '&f硅 Wafer'
   type:
   - '&7&o组件'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7以精准采集挖取其所配置方向上的'
+  - '&7方块并将其拉入路由器。'
+  - '&7必须使用精准采集附魔书合成。'
   name: '&fI.R. 模块：精准破坏器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7用作各种机械的组件。'
   name: '&f简易电子电路'
   type:
   - '&7&o组件'
 STB_SMELTER:
+  description:
+  - '&7像熔炉一样熔炼物品，但'
+  - '&7更快也更高效。'
   name: '&f熔炉'
   type:
   - '&7&o机器'
 STB_SORTERMODULE:
+  description:
+  - '&7插入物品路由器以放入物品'
+  - '&7到物品栏，仅当其为空或'
+  - '&7已含有该物品时才放入。'
   name: '&fI.R. 模块：分拣器'
   type:
   - '&7&o组件'
+  usage:
+  - '&e左键点击&7 方块设置方向'
+  - '&e潜行 + 左键点击&7 空气取消方向设置'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7降低所有声音的音量，'
+  - '&7范围为 8 格半径内。'
   name: '&f消音器'
   type:
   - '&7&o机器'
+  usage:
+  - '&e右键点击&7 打开配置'
 STB_SPEEDMODULE:
+  description:
+  - '&7一种被动模块，提升路由器'
+  - '&7速度。0 个模块 = 1 次操作 / 20 刻；'
+  - '&71 = 1/15，2 = 1/10，3 = 1/5。超过 3 个将被忽略。'
   name: '&fI.R. 模块：速度升级'
   type:
   - '&7&o组件'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7放入机器中使其运行得'
+  - '&7更快，代价是更高的电力消耗。'
   name: '&f速度升级'
+  stats:
+  - '&8⇨ &7速度：&ex1.4'
+  - '&8⇨ &7电力消耗：&ex1.6'
   type:
   - '&7&o组件'
 STB_STACKMODULE:
+  description:
+  - '&7一种被动模块；每个都会使每次操作'
+  - '&7搬运的物品数量翻倍，上限为'
+  - '&7物品的最大堆叠数。超过 6 个将被忽略。'
   name: '&fI.R. 模块：堆叠升级'
   type:
   - '&7&o组件'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7被某些高级物品用于'
+  - '&7跨世界通信。'
   name: '&f子空间应答器'
   type:
   - '&7&o组件'
 STB_TAPEMEASURE:
+  description:
+  - '&7测量你在世界中选择的'
+  - '&7两个点之间的距离。'
   name: '&f卷尺'
   type:
   - '&7&o工具'
+  usage:
+  - '&e潜行 + 右键点击&7 方块设置锚点'
+  - '&e右键点击&7 方块获取测量结果'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7存储能量，在发电机与机器之间'
+  - '&7缓冲电力。'
   name: '&f10K 电池盒'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o机器'
 STB_TENKENERGYCELL:
+  description:
+  - '&7一种便携能量单元，携带存储的'
+  - '&7STB 电力，可随时为设备充电。'
   name: '&f10K 能量电池'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o组件'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7放入机器中以提升有用的'
+  - '&7输出，代价是速度与电力。'
   name: '&f精细度升级'
+  stats:
+  - '&8⇨ &7速度：&ex0.7'
+  - '&8⇨ &7电力消耗：&ex1.6'
+  - '&8⇨ &7额外输出：&e+8%'
   type:
   - '&7&o组件'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7用于制造某些更高级的'
+  - '&7机器。'
   name: '&f坚固机器框架'
   type:
   - '&7&o组件'
 STB_TRASHCAN:
+  description:
+  - '&7销毁任何被放入或管道输送'
+  - '&7进去的物品。当心！'
   name: '&f垃圾桶'
   type:
   - '&7&o机器'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7将一对这种物品合成在一起，即可'
+  - '&7把它们链接成共享电量的 SCU 中继器。'
   name: '&f未连接的 SCU 中继器'
   type:
   - '&7&o组件'
 STB_VACUUMMODULE:
+  description:
+  - '&7插入物品路由器以吸取'
+  - '&7附近掉落的物品。'
   name: '&fI.R. 模块：吸取器'
+  stats:
+  - '&8⇨ &7半径：&e6 方块'
   type:
   - '&7&o组件'
 STB_WATERINGCAN:
+  description:
+  - '&7灌溉并催长附近的作物。'
+  - '&7不要过度使用它！'
   name: '&f洒水壶'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 灌溉作物'
+  - '&e右键点击&7 水中即可补充'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7一把多功能锄，可翻地、播种并'
+  - '&7收获，并内置种子袋。'
   name: '&f木组合锄'
   type:
   - '&7&o工具'
+  usage:
+  - '&e右键点击&7 泥土/草方块翻耕 3x3 区域'
+  - '&e右键点击&7 耕地播种 3x3 区域'
+  - '&e右键点击&7 其他位置打开种子袋'
+  - '&e左键点击&7 植物收获 3x3 区域'
+  - '&e左键点击&7 树叶破坏 3x3x3 区域'
