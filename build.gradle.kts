@@ -7,7 +7,7 @@ plugins {
 group = "com.github.slimefun"
 description = "SensibleToolbox is a Spigot/Paper plugin which adds tons of items and machines inspired by popular mods."
 
-apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/stable/slimefun-addon.gradle")
+apply(from = "https://raw.githubusercontent.com/Slimefun5/gradle/main/slimefun-addon.gradle")
 
 repositories {
     maven("https://repo.dmulloy2.net/repository/public/")
