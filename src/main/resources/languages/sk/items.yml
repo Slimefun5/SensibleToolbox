@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Veľká úložná jednotka. Uloží obrovské'
   - '&7množstvo jedného typu predmetu.'
-  name: '&fBSU'
+  name: '&fVÚJ'
   stats:
   - '&8⇨ &7128 hŕb'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hyperúložná jednotka. Uloží kolosálne'
   - '&7množstvo jedného typu predmetu.'
   - '&7Po rozbití si zachová obsah. Na chod potrebuje energiu.'
-  name: '&fHSU'
+  name: '&fHÚJ'
   stats:
   - '&8⇨ &733554431 hŕb'
   type:

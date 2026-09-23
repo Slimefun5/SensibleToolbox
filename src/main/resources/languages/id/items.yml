@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Unit Penyimpanan Besar. Menyimpan kuantitas sangat banyak'
   - '&7dari satu jenis item.'
-  name: '&fBSU'
+  name: '&fUPB'
   stats:
   - '&8⇨ &7128 Tumpukan'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Unit Penyimpanan Hiper. Menyimpan kuantitas kolosal'
   - '&7dari satu jenis item.'
   - '&7Isinya tetap saat dihancurkan. Membutuhkan daya agar berfungsi.'
-  name: '&fHSU'
+  name: '&fUPH'
   stats:
   - '&8⇨ &733554431 Tumpukan'
   type:

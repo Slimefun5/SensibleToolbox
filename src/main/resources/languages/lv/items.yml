@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Lielā krātuves vienība. Uzglabā milzīgu'
   - '&7viena priekšmeta veida daudzumu.'
-  name: '&fBSU'
+  name: '&fLKV'
   stats:
   - '&8⇨ &7128 steki'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hiperkrātuves vienība. Uzglabā kolosālu'
   - '&7viena priekšmeta veida daudzumu.'
   - '&7Salaužot saglabā saturu. Darbībai nepieciešama enerģija.'
-  name: '&fHSU'
+  name: '&fHKV'
   stats:
   - '&8⇨ &733554431 steki'
   type:

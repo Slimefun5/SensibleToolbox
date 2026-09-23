@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Stor lagringsenhet. Lagrar en enorm'
   - '&7mängd av en enda föremålstyp.'
-  name: '&fBSU'
+  name: '&fSLE'
   stats:
   - '&8⇨ &7128 stackar'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hyperlagringsenhet. Lagrar en kolossal'
   - '&7mängd av en enda föremålstyp.'
   - '&7Behåller innehållet när den bryts. Behöver kraft för att fungera.'
-  name: '&fHSU'
+  name: '&fHLE'
   stats:
   - '&8⇨ &733554431 stackar'
   type:

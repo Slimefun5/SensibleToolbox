@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Didelis saugojimo įrenginys. Saugo milžinišką'
   - '&7vieno daiktų tipo kiekį.'
-  name: '&fBSU'
+  name: '&fDSĮ'
   stats:
   - '&8⇨ &7128 krūvos'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hipersaugojimo įrenginys. Saugo kolosalų'
   - '&7vieno daiktų tipo kiekį.'
   - '&7Išsaugo turinį sulaužytas. Veikimui reikia galios.'
-  name: '&fHSU'
+  name: '&fHSĮ'
   stats:
   - '&8⇨ &733554431 krūvos'
   type:

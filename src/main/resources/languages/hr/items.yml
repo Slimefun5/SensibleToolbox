@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Velika jedinica za pohranu. Pohranjuje golemu'
   - '&7količinu jedne vrste predmeta.'
-  name: '&fBSU'
+  name: '&fVJP'
   stats:
   - '&8⇨ &7128 hrpa'
   type:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hiper jedinica za pohranu. Pohranjuje kolosalnu'
   - '&7količinu jedne vrste predmeta.'
   - '&7Zadržava sadržaj kad se razbije. Za rad treba energiju.'
-  name: '&fHSU'
+  name: '&fHJP'
   stats:
   - '&8⇨ &733554431 hrpa'
   type:
