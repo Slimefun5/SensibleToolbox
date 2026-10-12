@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7경작지의 수분 수준을 측정합니다,'
+  - '&75x5 영역에서.'
+  name: '&f고급 수분 측정기'
+  stats:
+  - '&8⇨ &7영역: &e5x5'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 경작지 수분 확인'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7알려진 조합법을 둘러보고 제작하며,'
+  - '&7제작 중에 인접한 인벤토리에서'
+  - '&7아이템을 가져올 수 있습니다.'
+  name: '&f고급 조합법 책'
   type:
   - '&7&o장치'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 아이템을 보냅니다,'
+  - '&7연결된 수신기 모듈로 보냅니다,'
+  - '&724블록 반경 안이면 시야는 필요 없습니다.'
+  name: '&f아이템 라우터 모듈: 고급 발신기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 수신기 모듈이 있는 라우터와 연결'
+  - '&e웅크리고 좌클릭&7 하여 연결 해제'
 STB_ANGELICBLOCK:
+  description:
+  - '&7공중에 띄우는 임시 발판 블록으로,'
+  - '&7허공으로 건축해 나갈 때 유용합니다.'
+  name: '&f천사의 블록'
   type:
   - '&7&o장치'
+  usage:
+  - '&e우클릭&7 하여 허공에 블록 설치'
+  - '&e좌클릭&7 하여 블록을 즉시 파괴'
 STB_AUTOBUILDER:
+  description:
+  - '&7영역을 건축하거나 비울 수 있습니다.'
+  - '&7토지 표시기로 영역을 지정합니다.'
+  name: '&f자동 건축기'
   type:
   - '&7&o기계'
 STB_AUTOFARM:
+  description:
+  - '&7자동으로 수확하고 다시 심습니다:'
+  - '&7밀, 감자, 당근 작물을 3x3'
+  - '&7반경 내, 기계보다 2블록 위에서.'
+  name: '&f자동 농장'
   type:
   - '&7&o기계'
 STB_AUTOFARM2:
+  description:
+  - '&7자동으로 수확하고 다시 심습니다:'
+  - '&7코코아 콩, 사탕수수, 선인장을'
+  - '&75x5 반경 내, 기계보다 2블록 위에서.'
+  name: '&f자동 농장 II형'
   type:
   - '&7&o기계'
 STB_AUTOFORESTER:
+  description:
+  - '&7자동으로 나무를 베고 다시 심습니다'
+  - '&75x5 반경 내, 기계보다 2블록 위에서.'
+  name: '&f자동 벌목기'
   type:
   - '&7&o기계'
 STB_BASICSOLARCELL:
+  description:
+  - '&7밝은 햇빛이 드는 야외에서 전력을'
+  - '&7생산합니다. 작동에는 광전지가 필요합니다.'
+  name: '&f기본 태양광'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&o발전기'
+  usage:
+  - '&e좌클릭&7 (빈손)으로 광전지 꺼내기'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7대형 저장 유닛. 단일 아이템 종류를'
+  - '&7방대한 수량으로 저장합니다.'
+  name: '&f대저장고'
+  stats:
+  - '&8⇨ &7128 스택'
   type:
   - '&7&o기계'
 STB_BIOENGINE:
+  description:
+  - '&7유기물 재료를 전력으로 변환합니다.'
+  name: '&f바이오 엔진'
   type:
   - '&7&o발전기'
 STB_BLANKMODULE:
+  description:
+  - '&7여러 아이템 라우터 모듈을 제작할 때'
+  - '&7쓰이는 빈 기본 부품입니다.'
+  name: '&f빈 아이템 라우터 모듈'
   type:
   - '&7&o부품'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7인접한 블록이 변경되면 레드스톤'
+  - '&7펄스를 내보냅니다.'
+  name: '&f블록 변경 감지기'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 블록 설정'
 STB_BREAKERMODULE:
+  description:
+  - '&7설정된 방향의 블록을 파괴하고'
+  - '&7라우터 안으로 끌어들입니다.'
+  name: '&f아이템 라우터 모듈: 파괴기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_CIRCUITBOARD:
+  description:
+  - '&7전자 회로를 만드는 데'
+  - '&7쓰입니다.'
+  name: '&f회로 기판'
   type:
   - '&7&o부품'
 STB_DENSESOLAR:
+  description:
+  - '&7밝은 햇빛이 드는 야외에서 전력을'
+  - '&7생산합니다. 작동에는 광전지가 필요합니다.'
+  name: '&f고밀도 태양광'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&o발전기'
+  usage:
+  - '&e좌클릭&7 (빈손)으로 광전지 꺼내기'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7밭을 갈고 씨를 뿌리고 수확하는'
+  - '&7더 넓은 영역에서 작동하며,'
+  - '&7씨앗 주머니를 내장했습니다.'
+  name: '&f다이아몬드 복합 괭이'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 흙/풀 3x3 영역 갈기'
+  - '&e우클릭&7 하여 경작지 3x3 영역에 파종'
+  - '&e우클릭&7 하여 다른 곳에서 씨앗 주머니 열기'
+  - '&e좌클릭&7 하여 식물 5x5 영역 수확'
+  - '&e좌클릭&7 하여 잎 3x3x3 영역 파괴'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7설정된 방향에서 아이템을 가져와,'
+  - '&7인접한 다른 모든 인벤토리로'
+  - '&7돌아가며 보냅니다.'
+  name: '&f아이템 라우터 모듈: 분배기'
   type:
   - '&7&o부품'
 STB_DROPPERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 아이템을 떨어뜨립니다,'
+  - '&7설정된 방향의 바닥으로.'
+  name: '&f아이템 라우터 모듈: 투하기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7기계에 넣으면 완성된 아이템을'
+  - '&7인접한 인벤토리로 자동 배출합니다.'
+  name: '&f배출 업그레이드'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 배출 방향 설정'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7특정 아이템을 고에너지화하여'
+  - '&7충전된 변형으로 만듭니다.'
+  name: '&f전기 고에너지 장치'
   type:
   - '&7&o기계'
 STB_ELEVATOR:
+  description:
+  - '&7바로 위나 아래에 설치된 다른'
+  - '&7엘리베이터와 연결됩니다.'
+  name: '&f엘리베이터'
   type:
   - '&7&o기계'
+  usage:
+  - '&e스페이스 키&7 를 눌러 올라가기'
+  - '&e시프트 키&7 를 눌러 내려가기'
 STB_ENDERBAG:
+  description:
+  - '&7개인 또는 전역 엔더 저장소 인벤토리에'
+  - '&7휴대용으로 접속할 수 있게 합니다.'
+  name: '&f엔더 주머니'
   type:
   - '&7&o장치'
+  usage:
+  - '&e우클릭&7 하여 주머니 열기'
+  - '&e웅크리고 우클릭&7 하여 엔더 보관함과 주파수 맞추기'
 STB_ENDERBOX:
+  description:
+  - '&7연결된 엔더 보관함에서 접근할 수'
+  - '&7있는 차원 바깥의 저장소입니다.'
+  name: '&f엔더 보관함'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 엔더 조정기로 주파수 설정'
 STB_ENDERLEASH:
+  description:
+  - '&7온순한 동물 한 마리를 잡아 보관하여,'
+  - '&7가축을 손쉽게 옮길 수 있습니다.'
+  name: '&f엔더 목줄'
   type:
   - '&7&o장치'
+  usage:
+  - '&e우클릭&7 하여 동물 포획 또는 방출'
 STB_ENDERTUNER:
+  description:
+  - '&7여섯 차원에서 진동하여 엔더 보관함의'
+  - '&7저장 주파수를 맞춥니다.'
+  name: '&f엔더 조정기'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 엔더 보관함 조정'
+  - '&e우클릭&7 하여 다른 곳에서 조정 화면 열기'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7제련하면 고에너지 금 주괴를 얻습니다.'
+  name: '&f고에너지 금 가루'
   type:
   - '&7&o자원'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7묘하게 빛나고 있습니다...'
+  name: '&f고에너지 금 주괴'
   type:
   - '&7&o자원'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7제련하면 고에너지 철 주괴를 얻습니다.'
+  name: '&f고에너지 철 가루'
   type:
   - '&7&o자원'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7묘하게 빛나고 있습니다...'
+  name: '&f고에너지 철 주괴'
   type:
   - '&7&o자원'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7묘하게 빛나고 있습니다...'
+  name: '&f고에너지 석영'
   type:
   - '&7&o자원'
 STB_FERMENTER:
+  description:
+  - '&7여러 아이템을 발효시키며, 또한'
+  - '&7낚시 미끼를 만드는 데 쓰입니다.'
+  name: '&f발효기'
   type:
   - '&7&o기계'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7발전기와 기계 사이의 전력을'
+  - '&7완충하기 위해 에너지를 저장합니다.'
+  name: '&f50K 배터리 상자'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o기계'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7이동 중에도 장치를 충전할 수 있도록'
+  - '&7STB 전력을 담은 휴대용 에너지 셀입니다.'
+  name: '&f50K 에너지 셀'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&o부품'
 STB_FISHBAIT:
+  description:
+  - '&7어망에서 물고기를 잡는 데 쓰입니다.'
+  name: '&f낚시 미끼'
   type:
   - '&7&o부품'
 STB_FISHINGNET:
+  description:
+  - '&7물 위에 설치하고 낚시 미끼를 넣으면'
+  - '&7자동으로 물고기를 잡습니다.'
+  name: '&f어망'
   type:
   - '&7&o기계'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7밭을 갈고 씨를 뿌리고 수확하는'
+  - '&7다용도 괭이, 씨앗 주머니 내장.'
+  name: '&f금 복합 괭이'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 흙/풀 3x3 영역 갈기'
+  - '&e우클릭&7 하여 경작지 3x3 영역에 파종'
+  - '&e우클릭&7 하여 다른 곳에서 씨앗 주머니 열기'
+  - '&e좌클릭&7 하여 식물 3x3 영역 수확'
+  - '&e좌클릭&7 하여 잎 3x3x3 영역 파괴'
 STB_GOLDDUST:
+  description:
+  - '&7제련기나 화로에서 제련하면'
+  - '&7금 주괴를 얻습니다.'
+  name: '&f금 가루'
   type:
   - '&7&o자원'
 STB_HEATENGINE:
+  description:
+  - '&7태울 수 있는 아이템을 전력으로 변환합니다.'
+  name: '&f열 엔진'
   type:
   - '&7&o발전기'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7네트워크의 순 에너지 증감을'
+  - '&7홀로그램으로 표시합니다.'
+  name: '&f홀로그램 감시기'
   type:
   - '&7&o기계'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 아이템을 보냅니다,'
+  - '&7어느 곳이든 연결된 수신기 모듈로,'
+  - '&7어떤 월드에서든.'
+  name: '&f아이템 라우터 모듈: 초발신기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 수신기 모듈이 있는 라우터와 연결'
+  - '&e웅크리고 좌클릭&7 하여 어디서든 연결 해제'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7초대형 저장 유닛. 단일 아이템 종류를'
+  - '&7방대한 수량으로 저장합니다.'
+  - '&7파괴해도 내용물이 남습니다. 작동에 전력이 필요합니다.'
+  name: '&f초저장고'
+  stats:
+  - '&8⇨ &733554431 스택'
   type:
   - '&7&o기계'
 STB_INFERNALDUST:
+  description:
+  - '&7블레이즈가 간혹 떨어뜨리며, 약탈이'
+  - '&7도움이 됩니다. 철이나 금 가루와 섞으세요.'
+  name: '&f지옥불 가루'
   type:
   - '&7&o자원'
 STB_INFERNALFARM:
+  description:
+  - '&7자동으로 수확하고 다시 심습니다:'
+  - '&7네더 와트를 5x5 반경 내, 2블록'
+  - '&7만큼 기계 위에서.'
+  name: '&f지옥 농장'
   type:
   - '&7&o기계'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7좀 더 고급인 기계의'
+  - '&7부품으로 쓰입니다.'
+  name: '&f집적 회로'
   type:
   - '&7&o부품'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7밭을 갈고 씨를 뿌리고 수확하는'
+  - '&7다용도 괭이, 씨앗 주머니 내장.'
+  name: '&f철 복합 괭이'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 흙/풀 3x3 영역 갈기'
+  - '&e우클릭&7 하여 경작지 3x3 영역에 파종'
+  - '&e우클릭&7 하여 다른 곳에서 씨앗 주머니 열기'
+  - '&e좌클릭&7 하여 식물 3x3 영역 수확'
+  - '&e좌클릭&7 하여 잎 3x3x3 영역 파괴'
 STB_IRONDUST:
+  description:
+  - '&7제련기나 화로에서 제련하면'
+  - '&7철 주괴를 얻습니다.'
+  name: '&f철 가루'
   type:
   - '&7&o자원'
 STB_ITEMROUTER:
+  description:
+  - '&7아이템을 전달합니다. 활성화하려면'
+  - '&7전달 모듈을 하나 이상 넣으세요.'
+  name: '&f아이템 라우터'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 라우터 설정'
 STB_LANDMARKER:
+  description:
+  - '&7센서블 측위 장치로 위치를 저장하며,'
+  - '&7기계의 작업 영역을 정하는 데 씁니다.'
+  name: '&f토지 표시기'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 블록의 위치 저장'
+  - '&e우클릭&7 하여 허공에서 위치 지우기'
 STB_MACHINEFRAME:
+  description:
+  - '&7여러 기계를 제작할 때 쓰입니다.'
+  name: '&f기계 골조'
   type:
   - '&7&o부품'
 STB_MAGMATICENGINE:
+  description:
+  - '&7용암을 전력으로 변환합니다.'
+  name: '&f마그마 엔진'
   type:
   - '&7&o발전기'
 STB_MASHER:
+  description:
+  - '&7광석과 다른 자원을 갈아 가루로 만듭니다.'
+  name: '&f분쇄기'
   type:
   - '&7&o기계'
 STB_MOISTURECHECKER:
+  description:
+  - '&7경작지의 수분 수준을 측정합니다,'
+  - '&73x3 영역에서.'
+  name: '&f수분 측정기'
+  stats:
+  - '&8⇨ &7영역: &e3x3'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 경작지 수분 확인'
 STB_MULTIBUILDER:
+  description:
+  - '&7영역에 블록을 설치하거나 교체하는'
+  - '&7전력 구동 건축 도구로, 건축 모드와'
+  - '&7교체 모드를 고를 수 있습니다.'
+  name: '&f다중 건축기'
   type:
   - '&7&o도구'
+  usage:
+  - '&e좌클릭&7 하여 블록 미리 보기'
+  - '&e우클릭&7 하여 블록 건축'
+  - '&e웅크리고 우클릭&7 하여 블록 하나만 건축'
+  - '&e웅크리고 마우스 휠&7 로 모드 전환'
 STB_MULTIMETER:
+  description:
+  - '&7에너지 연결망과 배선 및 기계의'
+  - '&7전력 사용량을 읽어 냅니다.'
+  name: '&f멀티미터'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 배선이나 기계에 사용'
 STB_PAINTBRUSH:
+  description:
+  - '&7양털, 카펫, 색을 입힌 점토나 유리처럼'
+  - '&7색을 칠할 수 있는 블록에, 페인트 통에서'
+  - '&7뽑아낸 페인트를 칠합니다.'
+  name: '&f페인트 붓'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 블록을 최대 25개까지 칠하기'
+  - '&e웅크리고 우클릭&7 하여 블록 하나만 칠하기'
+  - '&e웅크리고 우클릭&7 하여 허공에서 붓 비우기'
+  - '&e우클릭&7 하여 그림의 도안 바꾸기'
 STB_PAINTCAN:
+  description:
+  - '&7색이 들어간 페인트를 담아 둡니다.'
+  name: '&f페인트 통'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 페인트 붓으로 다시 채우기'
+  - '&e우클릭&7 다른 아이템을 들고 혼합기 열기;'
+  - '&7우유 양동이와 염료를 안에 넣어 페인트 섞기'
 STB_PAINTROLLER:
+  description:
+  - '&7붓보다 넓은 영역에 걸쳐, 색을 칠할'
+  - '&7수 있는 블록에 페인트 통에서 뽑아낸'
+  - '&7페인트를 칠합니다.'
+  name: '&f페인트 롤러'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 블록을 최대 100개까지 칠하기'
+  - '&e웅크리고 우클릭&7 하여 블록 하나만 칠하기'
+  - '&e웅크리고 우클릭&7 하여 허공에서 롤러 비우기'
 STB_POWERMONITOR:
+  description:
+  - '&7네트워크의 순 에너지 증감을'
+  - '&7붙어 있는 표지판에 표시합니다.'
+  name: '&f전력 감시기'
   type:
   - '&7&o기계'
 STB_PULLERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 아이템을 당겨 옵니다,'
+  - '&7인접한 인벤토리에서.'
+  name: '&f아이템 라우터 모듈: 인출기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_PUMP:
+  description:
+  - '&7아래쪽의 액체를 빨아올려 넣어 둔'
+  - '&7양동이나 유리병에 담습니다.'
+  name: '&f펌프'
   type:
   - '&7&o기계'
 STB_PVCELL:
+  description:
+  - '&7태양광 발전기에 전력을 공급하는'
+  - '&7광전지입니다. 시간이 지나면 닳습니다.'
+  name: '&f광전지'
   type:
   - '&7&o부품'
+  usage:
+  - '&e우클릭&7 하여 태양광 발전기에 넣기'
 STB_QUARTZDUST:
+  description:
+  - '&7제련기에서 가열하면 규소가 됩니다.'
+  name: '&f석영 가루'
   type:
   - '&7&o자원'
 STB_RECEIVERMODULE:
+  description:
+  - '&7아이템을 받는 수동형 모듈로,'
+  - '&7마주 보는 발신기 모듈이나 연결된'
+  - '&7고급 발신기 모듈에서 받습니다.'
+  name: '&f아이템 라우터 모듈: 수신기'
   type:
   - '&7&o부품'
 STB_RECIPEBOOK:
+  description:
+  - '&7알려진 모든 조합법을 둘러보고'
+  - '&7제작할 수 있게 합니다.'
+  name: '&f조합법 책'
   type:
   - '&7&o장치'
 STB_REDSTONECLOCK:
+  description:
+  - '&7블록 속의 시계. 간격과 지속 시간을'
+  - '&7설정해 레드스톤 신호를 내보냅니다.'
+  name: '&f레드스톤 시계'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 시계 설정'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7기계에 지능을 더해 자원을 더'
+  - '&7효율적으로 쓰게 합니다. 효과는'
+  - '&7기계마다 다릅니다.'
+  name: '&f조절기 업그레이드'
   type:
   - '&7&o부품'
 STB_SAWMILL:
+  description:
+  - '&7나무 아이템을 제작보다 높은 수율로'
+  - '&7판자로 가공합니다.'
+  name: '&f제재소'
   type:
   - '&7&o기계'
 STB_SCURELAY:
+  description:
+  - '&7다른 SCU 중계기와 연결하여 거리에'
+  - '&7상관없이 충전량을 공유합니다.'
+  name: '&fSCU 중계기'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&o기계'
 STB_SENDERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 아이템을 보냅니다,'
+  - '&7인접한 인벤토리로, 또는 라우터로,'
+  - '&710블록 이내에 수신기 모듈이 있고'
+  - '&7시야가 통하는 경우에.'
+  name: '&f아이템 라우터 모듈: 발신기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_SILICONWAFER:
+  description:
+  - '&7좀 더 고급인 전자 회로를 만들 때'
+  - '&7쓰입니다.'
+  name: '&f실리콘 웨이퍼'
   type:
   - '&7&o부품'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7설정된 방향의 블록을 섬세한 손길로 캐고'
+  - '&7라우터 안으로 끌어들입니다.'
+  - '&7섬세한 손길 책으로 제작해야 합니다.'
+  name: '&f아이템 라우터 모듈: 섬세한 파괴기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7여러 기계의 부품으로 쓰입니다.'
+  name: '&f단순 전자 회로'
   type:
   - '&7&o부품'
 STB_SMELTER:
+  description:
+  - '&7화로처럼 아이템을 제련하지만'
+  - '&7더 빠르고 효율적입니다.'
+  name: '&f제련기'
   type:
   - '&7&o기계'
 STB_SORTERMODULE:
+  description:
+  - '&7아이템 라우터에 끼워, 인벤토리가'
+  - '&7비어 있거나 이미 그 아이템을 가진'
+  - '&7경우에만 아이템을 넣습니다.'
+  name: '&f아이템 라우터 모듈: 분류기'
   type:
   - '&7&o부품'
+  usage:
+  - '&e좌클릭&7 하여 블록에 방향 설정'
+  - '&e웅크리고 좌클릭&7 하여 허공에서 방향 해제'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7모든 소리의 음량을 줄입니다,'
+  - '&78블록 반경 이내에서.'
+  name: '&f소음 차단기'
   type:
   - '&7&o기계'
+  usage:
+  - '&e우클릭&7 하여 설정 열기'
 STB_SPEEDMODULE:
+  description:
+  - '&7라우터 속도를 높여 주는'
+  - '&7수동형 모듈. 0개 = 20틱당 1회 작업;'
+  - '&71개 = 1/15, 2개 = 1/10, 3개 = 1/5. 3개 초과는 무시.'
+  name: '&f아이템 라우터 모듈: 속도 업그레이드'
   type:
   - '&7&o부품'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7기계에 넣으면 더 빠르게 작동하지만,'
+  - '&7전력 소모가 늘어납니다.'
+  name: '&f속도 업그레이드'
+  stats:
+  - '&8⇨ &7속도: &ex1.4'
+  - '&8⇨ &7전력 소모: &ex1.6'
   type:
   - '&7&o부품'
 STB_STACKMODULE:
+  description:
+  - '&7수동형 모듈로, 하나마다 작업당'
+  - '&7옮기는 아이템 수가 두 배가 되며,'
+  - '&7아이템 최대 스택까지 늘어납니다. 6개 초과는 무시됩니다.'
+  name: '&f아이템 라우터 모듈: 스택 업그레이드'
   type:
   - '&7&o부품'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7일부 고급 아이템이 월드 사이'
+  - '&7통신에 사용합니다.'
+  name: '&f아공간 송수신기'
   type:
   - '&7&o부품'
 STB_TAPEMEASURE:
+  description:
+  - '&7월드에서 고른 두 지점 사이의'
+  - '&7거리를 측정합니다.'
+  name: '&f줄자'
   type:
   - '&7&o도구'
+  usage:
+  - '&e웅크리고 우클릭&7 하여 블록에 기준점 설정'
+  - '&e우클릭&7 하여 블록에서 측정값 확인'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7발전기와 기계 사이의 전력을'
+  - '&7완충하기 위해 에너지를 저장합니다.'
+  name: '&f10K 배터리 상자'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o기계'
 STB_TENKENERGYCELL:
+  description:
+  - '&7이동 중에도 장치를 충전할 수 있도록'
+  - '&7STB 전력을 담은 휴대용 에너지 셀입니다.'
+  name: '&f10K 에너지 셀'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&o부품'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7기계에 넣으면 유용한 산출물이'
+  - '&7늘지만, 속도와 전력을 희생합니다.'
+  name: '&f정밀도 업그레이드'
+  stats:
+  - '&8⇨ &7속도: &ex0.7'
+  - '&8⇨ &7전력 소모: &ex1.6'
+  - '&8⇨ &7추가 산출: &e+8%'
   type:
   - '&7&o부품'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7좀 더 고급인 기계를 제작할 때'
+  - '&7쓰입니다.'
+  name: '&f견고한 기계 골조'
   type:
   - '&7&o부품'
 STB_TRASHCAN:
+  description:
+  - '&7안에 넣거나 보내진 아이템을 모두'
+  - '&7파괴합니다. 주의하세요!'
+  name: '&f쓰레기통'
   type:
   - '&7&o기계'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7두 개를 함께 제작하면 충전량을'
+  - '&7공유하는 SCU 중계기가 됩니다.'
+  name: '&f연결되지 않은 SCU 중계기'
   type:
   - '&7&o부품'
 STB_VACUUMMODULE:
+  description:
+  - '&7아이템 라우터에 끼워 근처에 떨어진'
+  - '&7아이템을 빨아들입니다.'
+  name: '&f아이템 라우터 모듈: 진공'
+  stats:
+  - '&8⇨ &7반경: &e6블록'
   type:
   - '&7&o부품'
 STB_WATERINGCAN:
+  description:
+  - '&7근처 작물에 물을 주어 자라게 합니다.'
+  - '&7너무 많이 쓰지 마세요!'
+  name: '&f물뿌리개'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 작물에 물 주기'
+  - '&e우클릭&7 하여 물속에서 다시 채우기'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7밭을 갈고 씨를 뿌리고 수확하는'
+  - '&7다용도 괭이, 씨앗 주머니 내장.'
+  name: '&f나무 복합 괭이'
   type:
   - '&7&o도구'
+  usage:
+  - '&e우클릭&7 하여 흙/풀 3x3 영역 갈기'
+  - '&e우클릭&7 하여 경작지 3x3 영역에 파종'
+  - '&e우클릭&7 하여 다른 곳에서 씨앗 주머니 열기'
+  - '&e좌클릭&7 하여 식물 3x3 영역 수확'
+  - '&e좌클릭&7 하여 잎 3x3x3 영역 파괴'
