@@ -1,270 +1,780 @@
 STB_ADVANCEDMOISTURECHECKER:
+  description:
+  - '&7Mittaa kosteustason'
+  - '&75x5 peltomaa-alueelta.'
+  name: '&fKehittynyt kosteusmittari'
+  stats:
+  - '&8⇨ &7Alue: &e5x5'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 peltomaata tarkistaaksesi kosteuden'
 STB_ADVANCEDRECIPEBOOK:
+  description:
+  - '&7Selaa ja valmistaa tunnettuja reseptejä,'
+  - '&7ja voi vetää esineitä viereisistä'
+  - '&7inventaarioista valmistuksen aikana.'
+  name: '&fKehittynyt reseptikirja'
   type:
   - '&7&oGadgetti'
 STB_ADVANCEDSENDERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen lähettämään esineitä'
+  - '&7linkitettyyn vastaanotinmoduuliin'
+  - '&724 palikan säteellä, näköyhteyttä ei tarvita.'
+  name: '&fE.R. Moduuli: Keh. lähetin'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 reititintä, jossa on vastaanotinmoduuli, linkittääksesi'
+  - '&eKyyristy + napsauta vasemmalla&7 poistaaksesi linkityksen'
 STB_ANGELICBLOCK:
+  description:
+  - '&7Väliaikainen leijuva telinepalikka,'
+  - '&7ihanteellinen tyhjään tilaan rakentamiseen.'
+  name: '&fEnkelipalikka'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla&7 asettaaksesi palikan ilmaan'
+  - '&eNapsauta vasemmalla&7 palikkaa rikkoaksesi sen heti'
 STB_AUTOBUILDER:
+  description:
+  - '&7Voi rakentaa tai tyhjentää alueen.'
+  - '&7Määritä alue maamerkkien avulla.'
+  name: '&fAutomaattinen rakentaja'
   type:
   - '&7&oKone'
 STB_AUTOFARM:
+  description:
+  - '&7Korjaa ja istuttaa uudelleen automaattisesti'
+  - '&7vehnä-, peruna- ja porkkanaviljelmät 3x3'
+  - '&7säteellä, 2 palikkaa koneen yläpuolella.'
+  name: '&fAutomaattinen viljelmä'
   type:
   - '&7&oKone'
 STB_AUTOFARM2:
+  description:
+  - '&7Korjaa ja istuttaa uudelleen automaattisesti'
+  - '&7kakaopavut, sokeriruoko ja kaktus'
+  - '&75x5 säteellä, 2 palikkaa koneen yläpuolella.'
+  name: '&fAutomaattinen viljelmä MkII'
   type:
   - '&7&oKone'
 STB_AUTOFORESTER:
+  description:
+  - '&7Kaataa ja istuttaa puita automaattisesti'
+  - '&75x5 säteellä, 2 palikkaa koneen yläpuolella.'
+  name: '&fAutomaattinen metsuri'
   type:
   - '&7&oKone'
 STB_BASICSOLARCELL:
+  description:
+  - '&7Tuottaa virtaa ulkona kirkkaassa'
+  - '&7auringonvalossa. Vaatii PV-kennon toimiakseen.'
+  name: '&fPerusaurinkokenno'
+  stats:
+  - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
   - '&7&oGeneraattori'
+  usage:
+  - '&eNapsauta vasemmalla&7 (tyhjä käsi) irrottaaksesi PV-kennon'
 STB_BIGSTORAGEUNIT:
+  description:
+  - '&7Suuri varastoyksikkö. Varastoi valtavan'
+  - '&7määrän yhtä esinetyyppiä.'
+  name: '&fSVY'
+  stats:
+  - '&8⇨ &7128 pinoa'
   type:
   - '&7&oKone'
 STB_BIOENGINE:
+  description:
+  - '&7Muuntaa orgaaniset materiaalit virraksi.'
+  name: '&fBiomoottori'
   type:
   - '&7&oGeneraattori'
 STB_BLANKMODULE:
+  description:
+  - '&7Tyhjä perusta, josta valmistetaan'
+  - '&7erilaiset esinereitittimen moduulit.'
+  name: '&fTyhjä esinereitittimen moduuli'
   type:
   - '&7&oKomponentti'
 STB_BLOCKUPDATEDETECTOR:
+  description:
+  - '&7Lähettää punakivisykäyksen, kun'
+  - '&7viereinen palikka päivittyy.'
+  name: '&fPalikkapäivitysilmaisin'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa määrittääksesi sen'
 STB_BREAKERMODULE:
+  description:
+  - '&7Rikkoo palikan määritetyssä'
+  - '&7suunnassa ja vetää sen reitittimeen.'
+  name: '&fE.R. Moduuli: Rikkoja'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_CIRCUITBOARD:
+  description:
+  - '&7Käytetään elektronisten piirien'
+  - '&7rakentamiseen.'
+  name: '&fPiirilevy'
   type:
   - '&7&oKomponentti'
 STB_DENSESOLAR:
+  description:
+  - '&7Tuottaa virtaa ulkona kirkkaassa'
+  - '&7auringonvalossa. Vaatii PV-kennon toimiakseen.'
+  name: '&fTiheä aurinkokenno'
+  stats:
+  - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
   - '&7&oGeneraattori'
+  usage:
+  - '&eNapsauta vasemmalla&7 (tyhjä käsi) irrottaaksesi PV-kennon'
 STB_DIAMONDCOMBINEHOE:
+  description:
+  - '&7Monitoimikuokka, joka muokkaa, kylvää ja'
+  - '&7korjaa laajemmalta alueelta, ja siinä on'
+  - '&7sisäänrakennettu siemenpussi.'
+  name: '&fTimanttinen yhdistelmäkuokka'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 multaa/ruohoa muokataksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 peltomaata kylvääksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 muualla avataksesi siemenpussin'
+  - '&eNapsauta vasemmalla&7 kasveja korjataksesi 5x5-alueen'
+  - '&eNapsauta vasemmalla&7 lehtiä rikkoaksesi 3x3x3-alueen'
 STB_DISTRIBUTORMODULE:
+  description:
+  - '&7Vetää esineitä määritetystä suunnasta,'
+  - '&7ja lähettää ne vuorotellen kaikkiin muihin'
+  - '&7viereisiin inventaarioihin.'
+  name: '&fE.R. Moduuli: Jakaja'
   type:
   - '&7&oKomponentti'
 STB_DROPPERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen pudottamaan esineitä'
+  - '&7maahan määritettyyn suuntaan.'
+  name: '&fE.R. Moduuli: Pudottaja'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_EJECTORUPGRADE:
+  description:
+  - '&7Asetetaan koneeseen, joka heittää valmiit'
+  - '&7esineet automaattisesti viereiseen inventaarioon.'
+  name: '&fUlosheittopäivitys'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi ulosheittosuunnan'
 STB_ELECTRICALENERGIZER:
+  description:
+  - '&7Mahdollistaa tiettyjen esineiden energisoinnin'
+  - '&7ladatuiksi varianteiksi.'
+  name: '&fSähköinen energisoija'
   type:
   - '&7&oKone'
 STB_ELEVATOR:
+  description:
+  - '&7Linkittyy muihin hisseihin, jotka ovat'
+  - '&7suoraan sen ylä- tai alapuolella.'
+  name: '&fHissi'
   type:
   - '&7&oKone'
+  usage:
+  - '&ePaina välilyöntiä&7 noustaksesi ylös'
+  - '&ePaina Shift&7 laskeutuaksesi alas'
 STB_ENDERBAG:
+  description:
+  - '&7Tarjoaa kannettavan pääsyn henkilökohtaiseen'
+  - '&7tai yleiseen endervarastoinventaarioon.'
+  name: '&fEnderpussi'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla&7 avataksesi pussin'
+  - '&eKyyristy + napsauta oikealla&7 enderlaatikkoa synkronoidaksesi taajuuden'
 STB_ENDERBOX:
+  description:
+  - '&7Ulottuvuuksien ulkopuolinen varasto, johon'
+  - '&7pääsee linkitetyistä enderlaatikoista.'
+  name: '&fEnderlaatikko'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 endervirittimellä asettaaksesi taajuuden'
 STB_ENDERLEASH:
+  description:
+  - '&7Vangitsee ja varastoi yhden rauhallisen eläimen,'
+  - '&7jolloin voit siirtää karjaa vaivatta.'
+  name: '&fEndertalutusnuora'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eNapsauta oikealla&7 vangitaksesi tai vapauttaaksesi eläimen'
 STB_ENDERTUNER:
+  description:
+  - '&7Värähtelee kuudessa ulottuvuudessa virittäen'
+  - '&7enderlaatikon varastointitaajuuden.'
+  name: '&fEnderviritin'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 enderlaatikkoa virittääksesi sen'
+  - '&eNapsauta oikealla&7 muualla avataksesi viritysnäkymän'
 STB_ENERGIZEDGOLDDUST:
+  description:
+  - '&7Sulata saadaksesi energisoidun kultaharkon.'
+  name: '&fEnergisoitu kultapöly'
   type:
   - '&7&oResurssi'
 STB_ENERGIZEDGOLDINGOT:
+  description:
+  - '&7Hehkuu kummallisesti...'
+  name: '&fEnergisoitu kultaharkko'
   type:
   - '&7&oResurssi'
 STB_ENERGIZEDIRONDUST:
+  description:
+  - '&7Sulata saadaksesi energisoidun rautaharkon.'
+  name: '&fEnergisoitu rautapöly'
   type:
   - '&7&oResurssi'
 STB_ENERGIZEDIRONINGOT:
+  description:
+  - '&7Hehkuu kummallisesti...'
+  name: '&fEnergisoitu rautaharkko'
   type:
   - '&7&oResurssi'
 STB_ENERGIZEDQUARTZ:
+  description:
+  - '&7Hehkuu kummallisesti...'
+  name: '&fEnergisoitu kvartsi'
   type:
   - '&7&oResurssi'
 STB_FERMENTER:
+  description:
+  - '&7Fermentoi erilaisia esineitä, ja sitä'
+  - '&7käytetään myös kalansyötin tekoon.'
+  name: '&fKäymisastia'
   type:
   - '&7&oKone'
 STB_FIFTYKBATTERYBOX:
+  description:
+  - '&7Varastoi energiaa puskuroiden virtaa'
+  - '&7generaattorien ja koneiden välillä.'
+  name: '&f50K akkulaatikko'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKone'
 STB_FIFTYKENERGYCELL:
+  description:
+  - '&7Kannettava energiakenno, joka kantaa varastoitua'
+  - '&7STB-virtaa laitteiden lataamiseen liikkeellä.'
+  name: '&f50K energiakenno'
+  stats:
+  - '&8⇨ &e⚡ &750000 SCU'
   type:
   - '&7&oKomponentti'
 STB_FISHBAIT:
+  description:
+  - '&7Käytetään kalaverkossa kalojen pyytämiseen.'
+  name: '&fKalansyötti'
   type:
   - '&7&oKomponentti'
 STB_FISHINGNET:
+  description:
+  - '&7Pyytää kaloja automaattisesti, kun se on'
+  - '&7veden päällä ja siinä on kalansyöttiä.'
+  name: '&fKalaverkko'
   type:
   - '&7&oKone'
 STB_GOLDCOMBINEHOE:
+  description:
+  - '&7Monitoimikuokka, joka muokkaa, kylvää ja'
+  - '&7korjaa, sisäänrakennetulla siemenpussilla.'
+  name: '&fKultainen yhdistelmäkuokka'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 multaa/ruohoa muokataksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 peltomaata kylvääksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 muualla avataksesi siemenpussin'
+  - '&eNapsauta vasemmalla&7 kasveja korjataksesi 3x3-alueen'
+  - '&eNapsauta vasemmalla&7 lehtiä rikkoaksesi 3x3x3-alueen'
 STB_GOLDDUST:
+  description:
+  - '&7Sulata sulattimessa tai uunissa saadaksesi'
+  - '&7kultaharkkoja.'
+  name: '&fKultapöly'
   type:
   - '&7&oResurssi'
 STB_HEATENGINE:
+  description:
+  - '&7Muuntaa polttokelpoiset esineet virraksi.'
+  name: '&fLämpömoottori'
   type:
   - '&7&oGeneraattori'
 STB_HOLOGRAPHICMONITOR:
+  description:
+  - '&7Näyttää verkon energian'
+  - '&7nettomuutoksen holografisesti.'
+  name: '&fHolografinen näyttö'
   type:
   - '&7&oKone'
 STB_HYPERSENDERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen lähettämään esineitä'
+  - '&7linkitettyyn vastaanotinmoduuliin missä tahansa,'
+  - '&7missä tahansa maailmassa.'
+  name: '&fE.R. Moduuli: Hyperlähetin'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 reititintä, jossa on vastaanotinmoduuli, linkittääksesi'
+  - '&eKyyristy + napsauta vasemmalla&7 missä tahansa poistaaksesi linkityksen'
 STB_HYPERSTORAGEUNIT:
+  description:
+  - '&7Hypervarastoyksikkö. Varastoi kolossaalisen'
+  - '&7määrän yhtä esinetyyppiä.'
+  - '&7Säilyttää sisällön rikottaessa. Tarvitsee virtaa toimiakseen.'
+  name: '&fHVY'
+  stats:
+  - '&8⇨ &733554431 pinoa'
   type:
   - '&7&oKone'
 STB_INFERNALDUST:
+  description:
+  - '&7Blazet pudottavat sitä toisinaan; Ryöstely'
+  - '&7voi auttaa. Yhdistä rauta- tai kultapölyyn.'
+  name: '&fHelvetinpöly'
   type:
   - '&7&oResurssi'
 STB_INFERNALFARM:
+  description:
+  - '&7Korjaa ja istuttaa uudelleen automaattisesti'
+  - '&7Nether-vartta 5x5 säteellä, 2 palikkaa'
+  - '&7koneen yläpuolella.'
+  name: '&fHelvetillinen viljelmä'
   type:
   - '&7&oKone'
 STB_INTEGRATEDCIRCUIT:
+  description:
+  - '&7Käytetään komponenttina joissakin'
+  - '&7kehittyneemmissä koneissa.'
+  name: '&fIntegroitu piiri'
   type:
   - '&7&oKomponentti'
 STB_IRONCOMBINEHOE:
+  description:
+  - '&7Monitoimikuokka, joka muokkaa, kylvää ja'
+  - '&7korjaa, sisäänrakennetulla siemenpussilla.'
+  name: '&fRautainen yhdistelmäkuokka'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 multaa/ruohoa muokataksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 peltomaata kylvääksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 muualla avataksesi siemenpussin'
+  - '&eNapsauta vasemmalla&7 kasveja korjataksesi 3x3-alueen'
+  - '&eNapsauta vasemmalla&7 lehtiä rikkoaksesi 3x3x3-alueen'
 STB_IRONDUST:
+  description:
+  - '&7Sulata sulattimessa tai uunissa saadaksesi'
+  - '&7rautaharkkoja.'
+  name: '&fRautapöly'
   type:
   - '&7&oResurssi'
 STB_ITEMROUTER:
+  description:
+  - '&7Reitittää esineitä. Aseta yksi tai useampi'
+  - '&7reititysmoduuli aktivoidaksesi sen.'
+  name: '&fEsinereititin'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa määrittääksesi reitittimen'
 STB_LANDMARKER:
+  description:
+  - '&7Varastoi sijainnin Sensible GPS:n avulla,'
+  - '&7käytetään koneiden työalueiden määrittämiseen.'
+  name: '&fMaamerkki'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa varastoidaksesi sen sijainnin'
+  - '&eNapsauta oikealla&7 ilmaa tyhjentääksesi sijainnin'
 STB_MACHINEFRAME:
+  description:
+  - '&7Käytetään erilaisten koneiden valmistukseen.'
+  name: '&fKoneen runko'
   type:
   - '&7&oKomponentti'
 STB_MAGMATICENGINE:
+  description:
+  - '&7Muuntaa laavan virraksi.'
+  name: '&fMagmamoottori'
   type:
   - '&7&oGeneraattori'
 STB_MASHER:
+  description:
+  - '&7Jauhaa malmit ja muut resurssit pölyiksi.'
+  name: '&fMurskain'
   type:
   - '&7&oKone'
 STB_MOISTURECHECKER:
+  description:
+  - '&7Mittaa kosteustason'
+  - '&73x3 peltomaa-alueelta.'
+  name: '&fKosteusmittari'
+  stats:
+  - '&8⇨ &7Alue: &e3x3'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 peltomaata tarkistaaksesi kosteuden'
 STB_MULTIBUILDER:
+  description:
+  - '&7Virroitettu rakennustyökalu, joka asettaa tai'
+  - '&7vaihtaa palikoita alueella, ja siinä on'
+  - '&7valittavat rakennus- ja vaihtotilat.'
+  name: '&fMonirakentaja'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa esikatseluun'
+  - '&eNapsauta oikealla&7 palikkaa rakentaaksesi'
+  - '&eKyyristy + napsauta oikealla&7 rakentaaksesi yhden palikan'
+  - '&eKyyristy + hiiren rulla&7 vaihtaaksesi tilaa'
 STB_MULTIMETER:
+  description:
+  - '&7Lukee energiaverkon liitännät ja'
+  - '&7kaapeloinnin ja koneiden virrankulutuksen.'
+  name: '&fYleismittari'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 kaapelointia tai konetta käyttääksesi'
 STB_PAINTBRUSH:
+  description:
+  - '&7Maalaa väritettäviä palikoita, kuten villaa,'
+  - '&7mattoa ja värjättyä savea tai lasia,'
+  - '&7maalipurkista otetulla maalilla.'
+  name: '&fMaalipensseli'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa maalataksesi jopa 25 palikkaa'
+  - '&eKyyristy + napsauta oikealla&7 palikkaa maalataksesi yhden palikan'
+  - '&eKyyristy + napsauta oikealla&7 ilmaa tyhjentääksesi pensselin'
+  - '&eNapsauta oikealla&7 maalauksia vaihtaaksesi taideteoksen'
 STB_PAINTCAN:
+  description:
+  - '&7Sisältää varaston värillistä maalia.'
+  name: '&fMaalipurkki'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 maalipensselillä täyttääksesi sen'
+  - '&eNapsauta oikealla&7 millä tahansa muulla avataksesi sekoittimen;'
+  - '&7aseta maitosanko ja väriaine sisään sekoittaaksesi maalia'
 STB_PAINTROLLER:
+  description:
+  - '&7Maalaa väritettäviä palikoita laajemmalta'
+  - '&7alueelta kuin pensseli, käyttäen maalia'
+  - '&7maalipurkista.'
+  name: '&fMaalitela'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa maalataksesi jopa 100 palikkaa'
+  - '&eKyyristy + napsauta oikealla&7 palikkaa maalataksesi yhden palikan'
+  - '&eKyyristy + napsauta oikealla&7 ilmaa tyhjentääksesi telan'
 STB_POWERMONITOR:
+  description:
+  - '&7Näyttää verkon energian'
+  - '&7nettomuutoksen kiinnitettyihin kyltteihin.'
+  name: '&fVirtanäyttö'
   type:
   - '&7&oKone'
 STB_PULLERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen vetämään esineitä'
+  - '&7viereisestä inventaariosta.'
+  name: '&fE.R. Moduuli: Vetäjä'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_PUMP:
+  description:
+  - '&7Pumppaa nesteitä alhaalta sisään'
+  - '&7asetettuun sankoon tai lasipulloon.'
+  name: '&fPumppu'
   type:
   - '&7&oKone'
 STB_PVCELL:
+  description:
+  - '&7Valosähköinen kenno, joka virroittaa aurinko-'
+  - '&7generaattorin. Se kuluu ajan myötä.'
+  name: '&fPV-kenno'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta oikealla&7 aurinkogeneraattoria asettaaksesi sen'
 STB_QUARTZDUST:
+  description:
+  - '&7Kypsennä sulattimessa tehdäksesi piitä.'
+  name: '&fKvartsipöly'
   type:
   - '&7&oResurssi'
 STB_RECEIVERMODULE:
+  description:
+  - '&7Passiivinen moduuli, joka vastaanottaa esineitä'
+  - '&7kohdistetulta lähetinmoduulilta tai linkitetyltä'
+  - '&7kehittyneeltä lähetinmoduulilta.'
+  name: '&fE.R. Moduuli: Vastaanotin'
   type:
   - '&7&oKomponentti'
 STB_RECIPEBOOK:
+  description:
+  - '&7Mahdollistaa kaikkien tunnettujen reseptien'
+  - '&7selaamisen ja valmistamisen.'
+  name: '&fReseptikirja'
   type:
   - '&7&oGadgetti'
 STB_REDSTONECLOCK:
+  description:
+  - '&7Kello palikassa. Lähettää punakivi-'
+  - '&7signaalin säädettävällä välillä & kestolla.'
+  name: '&fPunakivikello'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 palikkaa määrittääksesi kellon'
 STB_REGULATORUPGRADE:
+  description:
+  - '&7Lisää koneisiin älyä tehokkaampaan'
+  - '&7resurssien käyttöön. Vaikutus vaihtelee'
+  - '&7koneen mukaan.'
+  name: '&fSäädinpäivitys'
   type:
   - '&7&oKomponentti'
 STB_SAWMILL:
+  description:
+  - '&7Käsittelee puiset esineet laudoiksi'
+  - '&7paremmalla saannolla kuin valmistaminen.'
+  name: '&fSaha'
   type:
   - '&7&oKone'
 STB_SCURELAY:
+  description:
+  - '&7Linkittyy toiseen SCU-välittimeen jakaen'
+  - '&7yhteisen latauksen minkä tahansa matkan yli.'
+  name: '&fSCU-välitin'
+  stats:
+  - '&8⇨ &e⚡ &7100000 SCU'
   type:
   - '&7&oKone'
 STB_SENDERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen lähettämään esineitä'
+  - '&7viereiseen inventaarioon tai reitittimeen,'
+  - '&7jossa on vastaanotinmoduuli 10 palikan'
+  - '&7säteellä näköyhteydellä.'
+  name: '&fE.R. Moduuli: Lähetin'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_SILICONWAFER:
+  description:
+  - '&7Käytetään kehittyneempien elektronisten'
+  - '&7piirien valmistukseen.'
+  name: '&fPiikiekko'
   type:
   - '&7&oKomponentti'
 STB_SILKYBREAKERMODULE:
+  description:
+  - '&7Rikkoo silkkikosketuksella palikan määritetyssä'
+  - '&7suunnassa ja vetää sen reitittimeen.'
+  - '&7Täytyy valmistaa silkkikosketuskirjalla.'
+  name: '&fE.R. Moduuli: Silkkirikkoja'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_SIMPLECIRCUIT:
+  description:
+  - '&7Käytetään komponenttina erilaisissa koneissa.'
+  name: '&fYksinkertainen elektroninen piiri'
   type:
   - '&7&oKomponentti'
 STB_SMELTER:
+  description:
+  - '&7Sulattaa esineitä kuin uuni, mutta'
+  - '&7nopeammin ja tehokkaammin.'
+  name: '&fSulatin'
   type:
   - '&7&oKone'
 STB_SORTERMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen asettamaan esineitä'
+  - '&7inventaarioon vain jos se on tyhjä tai'
+  - '&7sisältää jo kyseisen esineen.'
+  name: '&fE.R. Moduuli: Lajittelija'
   type:
   - '&7&oKomponentti'
+  usage:
+  - '&eNapsauta vasemmalla&7 palikkaa asettaaksesi suunnan'
+  - '&eKyyristy + napsauta vasemmalla&7 ilmaa poistaaksesi suunnan'
 STB_SOUNDMUFFLER:
+  description:
+  - '&7Vähentää kaikkien äänien voimakkuutta'
+  - '&78 palikan säteellä.'
+  name: '&fÄänenvaimennin'
   type:
   - '&7&oKone'
+  usage:
+  - '&eNapsauta oikealla&7 avataksesi asetukset'
 STB_SPEEDMODULE:
+  description:
+  - '&7Passiivinen moduuli, joka lisää reitittimen'
+  - '&7nopeutta. 0 moduulia = 1 toiminto / 20 tikkiä;'
+  - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Yli 3 huomiotta.'
+  name: '&fE.R. Moduuli: Nopeuspäivitys'
   type:
   - '&7&oKomponentti'
 STB_SPEEDUPGRADE:
+  description:
+  - '&7Asetetaan koneeseen, jotta se toimii'
+  - '&7nopeammin suuremman virrankulutuksen hinnalla.'
+  name: '&fNopeuspäivitys'
+  stats:
+  - '&8⇨ &7Nopeus: &ex1.4'
+  - '&8⇨ &7Virrankulutus: &ex1.6'
   type:
   - '&7&oKomponentti'
 STB_STACKMODULE:
+  description:
+  - '&7Passiivinen moduuli; jokainen kaksinkertaistaa'
+  - '&7siirrettyjen esineiden määrän, enintään'
+  - '&7esineen pinokokoon. Yli 6 jätetään huomiotta.'
+  name: '&fE.R. Moduuli: Pinopäivitys'
   type:
   - '&7&oKomponentti'
 STB_SUBSPACETRANSPONDER:
+  description:
+  - '&7Joidenkin kehittyneiden esineiden käyttämä'
+  - '&7maailmojen väliseen viestintään.'
+  name: '&fAliavaruustransponderi'
   type:
   - '&7&oKomponentti'
 STB_TAPEMEASURE:
+  description:
+  - '&7Mittaa etäisyyden kahden'
+  - '&7maailmasta valitsemasi pisteen välillä.'
+  name: '&fMittanauha'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eKyyristy + napsauta oikealla&7 palikkaa asettaaksesi ankkurin'
+  - '&eNapsauta oikealla&7 palikkaa saadaksesi mittaustuloksen'
 STB_TENKBATTERYBOX:
+  description:
+  - '&7Varastoi energiaa puskuroiden virtaa'
+  - '&7generaattorien ja koneiden välillä.'
+  name: '&f10K akkulaatikko'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKone'
 STB_TENKENERGYCELL:
+  description:
+  - '&7Kannettava energiakenno, joka kantaa varastoitua'
+  - '&7STB-virtaa laitteiden lataamiseen liikkeellä.'
+  name: '&f10K energiakenno'
+  stats:
+  - '&8⇨ &e⚡ &710000 SCU'
   type:
   - '&7&oKomponentti'
 STB_THOROUGHNESSUPGRADE:
+  description:
+  - '&7Asetetaan koneeseen lisäämään hyödyllistä'
+  - '&7ulostuloa nopeuden ja virran hinnalla.'
+  name: '&fPerusteellisuuspäivitys'
+  stats:
+  - '&8⇨ &7Nopeus: &ex0.7'
+  - '&8⇨ &7Virrankulutus: &ex1.6'
+  - '&8⇨ &7Bonusulostulo: &e+8%'
   type:
   - '&7&oKomponentti'
 STB_TOUGHMACHINEFRAME:
+  description:
+  - '&7Käytetään joidenkin kehittyneempien'
+  - '&7koneiden valmistukseen.'
+  name: '&fVahva koneen runko'
   type:
   - '&7&oKomponentti'
 STB_TRASHCAN:
+  description:
+  - '&7TUHOAA kaikki esineet, jotka asetetaan tai'
+  - '&7putkitetaan siihen. Varo!'
+  name: '&fRoskakori'
   type:
   - '&7&oKone'
 STB_UNLINKEDSCURELAY:
+  description:
+  - '&7Valmista pari näitä yhdessä linkittääksesi'
+  - '&7ne yhteislataavaksi SCU-välittimeksi.'
+  name: '&fLinkittämätön SCU-välitin'
   type:
   - '&7&oKomponentti'
 STB_VACUUMMODULE:
+  description:
+  - '&7Asetetaan esinereitittimeen imemään'
+  - '&7lähellä olevia pudonneita esineitä.'
+  name: '&fE.R. Moduuli: Imuri'
+  stats:
+  - '&8⇨ &7Säde: &e6 palikkaa'
   type:
   - '&7&oKomponentti'
 STB_WATERINGCAN:
+  description:
+  - '&7Kastelee ja kasvattaa lähellä olevia viljelykasveja.'
+  - '&7Älä käytä sitä liikaa!'
+  name: '&fKastelukannu'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 kastellaksesi viljelykasveja'
+  - '&eNapsauta oikealla&7 vedessä täyttääksesi sen'
 STB_WOODCOMBINEHOE:
+  description:
+  - '&7Monitoimikuokka, joka muokkaa, kylvää ja'
+  - '&7korjaa, sisäänrakennetulla siemenpussilla.'
+  name: '&fPuinen yhdistelmäkuokka'
   type:
   - '&7&oTyökalu'
+  usage:
+  - '&eNapsauta oikealla&7 multaa/ruohoa muokataksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 peltomaata kylvääksesi 3x3-alueen'
+  - '&eNapsauta oikealla&7 muualla avataksesi siemenpussin'
+  - '&eNapsauta vasemmalla&7 kasveja korjataksesi 3x3-alueen'
+  - '&eNapsauta vasemmalla&7 lehtiä rikkoaksesi 3x3x3-alueen'
