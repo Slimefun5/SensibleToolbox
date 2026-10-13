@@ -22,6 +22,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.PotionMeta;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
@@ -184,7 +185,7 @@ public class WateringCan extends BaseSTBItem {
         }
 
         if (floodWarning) {
-            MiscUtil.alertMessage(player, "This soil is getting very wet!");
+            MiscUtil.alertMessage(player, Messages.get(player, "watering-can.soil-wet", "This soil is getting very wet!"));
             floodWarning = false;
         }
     }
@@ -207,7 +208,7 @@ public class WateringCan extends BaseSTBItem {
         if (player.getFireTicks() > 0 && getWaterLevel() >= FIRE_EXTINGUISH_AMOUNT) {
             player.setFireTicks(0);
             setWaterLevel(getWaterLevel() - FIRE_EXTINGUISH_AMOUNT);
-            MiscUtil.alertMessage(player, "The fire is out!");
+            MiscUtil.alertMessage(player, Messages.get(player, "watering-can.fire-out", "The fire is out!"));
         }
 
         player.getInventory().setItemInHand(toItemStack());

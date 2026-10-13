@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox items don't fit in a vanilla anvil."
+
+auto-builder:
+  land-marker-unset: "%item% doesn't have a location set!"
+
+block:
+  no-room-for-sign: "There is no room to place a label sign there!"
+
+command:
+  player-only: "This command can't be run from the console."
+  charge-nothing-suitable: "Nothing suitable to charge."
+  charge-range: "Must be in range 0-%max%"
+  charged: "%item% charged to %charge%"
+  debug-level-positive: "Debug level must be >= 0"
+  debug-enabled: "Debugger enabled (level %level%)"
+  debug-disabled: "Debugger disabled"
+  friend-added: "%player% is now friends with %friend%"
+  friend-removed: "%player% is no longer friends with %friend%"
+  give-invalid-player: "%name% is not a valid Player or not online!"
+  give-invalid-amount: "%amount% is not a valid amount!"
+  give-received: "You received %amount% x %item%."
+  possible-matches-one: "%count% possible matching command in %desc%:"
+  possible-matches-many: "%count% possible matching commands in %desc%:"
+  recipe-book-needed: "You must have a %item% in your inventory to search for recipes!"
+  redrawn-one: "%count% STB block redrawn."
+  redrawn-many: "%count% STB blocks redrawn."
+  data-saved: "STB persisted data saved"
+  setcfg-set: "%key% is now set to %value%"
+  setcfg-reload: "Changes will take effect when server is reloaded/restarted"
+  setcfg-list-keys: "Use /stb getcfg to list all valid keys"
+  show-dumped: "STB item data dumped to %file%"
+  validated-one: "Fixed up %count% block in world %world%"
+  validated-many: "Fixed up %count% blocks in world %world%"
+
+ender-leash:
+  leashed-animal: "Can't capture a leashed animal!"
+  not-your-animal: "This animal is owned by someone else!"
+  already-captured: "%item% already has a captured animal"
+
+gui:
+  private: "That %item% is private!"
+
+hoe:
+  mixed-items: "Mixed items in the seed bag?"
+  non-seed-items: "Non-seed items in the seed bag?"
+
+machine:
+  storage-full: "%item% is full."
+  storage-no-charge: "%item% has insufficient charge to accept items."
+  upgrade-not-accepted: "%upgrade% is not accepted by a %machine%"
+  ejector-needs-direction: "Ejector upgrade must have a direction configured."
+
+recipe-book:
+  missing: "Missing: %item%"
+  fabricated-free: "Fabricated (free): %item%"
+  fabricated: "Fabricated: %item%"
+
+tape-measure:
+  anchor-set: "Tape measure anchor point set."
+  anchor-cleared: "Tape measure anchor point cleared."
+  measurement: "Measurement: X=%x% Y=%y% Z=%z% total=%total%"
+
+watering-can:
+  soil-wet: "This soil is getting very wet!"
+  fire-out: "The fire is out!"

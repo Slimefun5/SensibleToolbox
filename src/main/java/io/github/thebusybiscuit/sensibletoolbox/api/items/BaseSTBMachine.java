@@ -49,6 +49,7 @@ import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.AbstractMachineUp
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.RegulatorUpgrade;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.SpeedUpgrade;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.ThoroughnessUpgrade;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
 import me.desht.dhutils.Debugger;
@@ -949,7 +950,8 @@ public abstract class BaseSTBMachine extends BaseSTBBlock implements ChargeableB
         }
 
         if (item instanceof EjectorUpgrade && ((EjectorUpgrade) item).getFacing() == BlockFace.SELF) {
-            STBUtil.complain(player, "Ejector upgrade must have a direction configured.");
+            STBUtil.complain(player, Messages.get(player, "machine.ejector-needs-direction",
+                    "Ejector upgrade must have a direction configured."));
             return false;
         } else {
             return true;

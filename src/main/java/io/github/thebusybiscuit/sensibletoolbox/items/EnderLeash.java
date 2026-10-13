@@ -42,6 +42,7 @@ import org.bukkit.inventory.ShapedRecipe;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
 import io.github.thebusybiscuit.sensibletoolbox.utils.HandCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
@@ -118,9 +119,9 @@ public class EnderLeash extends BaseSTBItem {
             if (capturedConf == null || !capturedConf.contains("type")) {
                 Animals animal = (Animals) target;
                 if (!checkLeash(animal)) {
-                    STBUtil.complain(player, "Can't capture a leashed animal!");
+                    STBUtil.complain(player, Messages.get(player, "ender-leash.leashed-animal", "Can't capture a leashed animal!"));
                 } else if (!verifyOwner(player, animal)) {
-                    STBUtil.complain(player, "This animal is owned by someone else!");
+                    STBUtil.complain(player, Messages.get(player, "ender-leash.not-your-animal", "This animal is owned by someone else!"));
                 } else {
                     capturedConf = freezeEntity(animal);
                     target.getWorld().playEffect(target.getLocation(), Effect.ENDER_SIGNAL, 0);
@@ -129,7 +130,9 @@ public class EnderLeash extends BaseSTBItem {
                 }
             } else {
                 // workaround CB bug to ensure client is updated properly
-                STBUtil.complain(event.getPlayer(), "Ender Leash already has a captured animal");
+                STBUtil.complain(event.getPlayer(), Messages.get(event.getPlayer(), "ender-leash.already-captured",
+                        "%item% already has a captured animal",
+                        line -> line.replace("%item%", Messages.plainItemName(event.getPlayer(), toItemStack()))));
                 player.updateInventory();
             }
         }

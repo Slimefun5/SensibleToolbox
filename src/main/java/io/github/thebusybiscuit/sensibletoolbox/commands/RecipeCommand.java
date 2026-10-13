@@ -11,6 +11,7 @@ import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.items.recipebook.RecipeBook;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.commands.AbstractCommand;
@@ -26,7 +27,8 @@ public class RecipeCommand extends AbstractCommand {
     @Override
     public boolean execute(Plugin plugin, CommandSender sender, String[] args) {
         if (!(sender instanceof Player)) {
-            MiscUtil.errorMessage(sender, "This command can't be run from the console.");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.player-only",
+                    "This command can't be run from the console."));
             return true;
         }
 
@@ -43,7 +45,9 @@ public class RecipeCommand extends AbstractCommand {
         }
 
         if (book == null) {
-            MiscUtil.errorMessage(sender, "You must have a Recipe Book in your inventory to search for recipes!");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.recipe-book-needed",
+                    "You must have a %item% in your inventory to search for recipes!",
+                    line -> line.replace("%item%", Messages.plainItemName(sender, new RecipeBook().toItemStack()))));
             return true;
         }
 

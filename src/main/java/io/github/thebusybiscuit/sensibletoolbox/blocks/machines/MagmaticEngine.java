@@ -19,6 +19,7 @@ import io.github.thebusybiscuit.sensibletoolbox.items.components.SimpleCircuit;
 import io.github.thebusybiscuit.sensibletoolbox.items.energycells.TenKEnergyCell;
 import io.github.thebusybiscuit.sensibletoolbox.items.upgrades.RegulatorUpgrade;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
@@ -116,7 +117,10 @@ public class MagmaticEngine extends Generator {
             return false;
         }
         if (!(upgrade instanceof RegulatorUpgrade)) {
-            STBUtil.complain(player, upgrade.getItemName() + " is not accepted by a " + getItemName());
+            STBUtil.complain(player, Messages.get(player, "machine.upgrade-not-accepted",
+                    "%upgrade% is not accepted by a %machine%",
+                    line -> line.replace("%upgrade%", Messages.plainItemName(player, upgrade.toItemStack()))
+                            .replace("%machine%", Messages.plainItemName(player, toItemStack()))));
             return false;
         }
         return true;

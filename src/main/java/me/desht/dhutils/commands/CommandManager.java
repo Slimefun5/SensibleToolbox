@@ -17,6 +17,8 @@ import org.bukkit.plugin.Plugin;
 
 import com.google.common.base.Joiner;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
+
 import me.desht.dhutils.DHUtilsException;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
@@ -58,15 +60,21 @@ public class CommandManager {
             }
         } else if (possibleMatches.isEmpty()) {
             // no match
-            String s = cmdList.size() == 1 ? "" : "s";
-            MiscUtil.errorMessage(sender, cmdList.size() + " possible matching command" + s + " in " + desc + ":");
+            String matches = cmdList.size() == 1
+                    ? Messages.get(sender, "command.possible-matches-one", "%count% possible matching command in %desc%:")
+                    : Messages.get(sender, "command.possible-matches-many", "%count% possible matching commands in %desc%:");
+            MiscUtil.errorMessage(sender, matches.replace("%count%", String.valueOf(cmdList.size()))
+                    .replace("%desc%", desc));
 
             for (AbstractCommand cmd : MiscUtil.asSortedList(cmdList)) {
                 cmd.showUsage(sender, label, "\u2022 ");
             }
         } else {
             // multiple possible matches
-            MiscUtil.errorMessage(sender, possibleMatches.size() + " possible matching commands in " + desc + ":");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.possible-matches-many",
+                    "%count% possible matching commands in %desc%:",
+                    line -> line.replace("%count%", String.valueOf(possibleMatches.size()))
+                            .replace("%desc%", desc)));
             for (AbstractCommand cmd : MiscUtil.asSortedList(possibleMatches)) {
                 cmd.showUsage(sender, label, "\u2022 ");
             }

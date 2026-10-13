@@ -18,6 +18,7 @@ import com.google.common.base.Objects;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.LocationManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.MiscUtil;
@@ -36,8 +37,11 @@ public class ValidateCommand extends STBAbstractCommand {
     public boolean execute(Plugin plugin, CommandSender sender, String[] args) {
         for (World world : Bukkit.getWorlds()) {
             int fixed = validate(plugin, world);
-            String s = fixed == 1 ? "" : "s";
-            MiscUtil.statusMessage(sender, "Fixed up &e" + fixed + "&- block" + s + " in world &6" + world.getName());
+            String fixedLine = fixed == 1
+                    ? Messages.get(sender, "command.validated-one", "Fixed up %count% block in world %world%")
+                    : Messages.get(sender, "command.validated-many", "Fixed up %count% blocks in world %world%");
+            MiscUtil.statusMessage(sender, fixedLine.replace("%count%", "&e" + fixed + "&-")
+                    .replace("%world%", "&6" + world.getName() + "&-"));
         }
 
         return true;

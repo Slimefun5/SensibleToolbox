@@ -3,6 +3,7 @@ package io.github.thebusybiscuit.sensibletoolbox.commands;
 import java.util.Set;
 
 import org.bukkit.Material;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.Sign;
@@ -32,7 +33,8 @@ public class ChargeCommand extends AbstractCommand {
     @Override
     public boolean execute(Plugin plugin, CommandSender sender, String[] args) {
         if (!(sender instanceof Player)) {
-            MiscUtil.errorMessage(sender, "This command can't be run from the console.");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.player-only",
+                    "This command can't be run from the console."));
             return true;
         }
 
@@ -60,7 +62,7 @@ public class ChargeCommand extends AbstractCommand {
         }
 
         if (chargeable == null) {
-            MiscUtil.errorMessage(sender, "Nothing suitable to charge.");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.charge-nothing-suitable", "Nothing suitable to charge."));
             return true;
         }
 
@@ -71,7 +73,8 @@ public class ChargeCommand extends AbstractCommand {
             amount = Integer.parseInt(args[0]);
 
             if (amount >= 0 && amount <= max) {
-                MiscUtil.errorMessage(sender, "Must be in range 0-" + max);
+                MiscUtil.errorMessage(sender, Messages.get(sender, "command.charge-range", "Must be in range 0-%max%",
+                        line -> line.replace("%max%", String.valueOf(max))));
                 return true;
             }
         } else {
@@ -84,7 +87,10 @@ public class ChargeCommand extends AbstractCommand {
             player.getInventory().setItemInHand(item.toItemStack());
         } else if (block != null) {
             block.update(true);
-            MiscUtil.statusMessage(player, "&6" + block.getItemName() + "&- charged to " + STBUtil.getChargeString(chargeable));
+            String name = Messages.itemName(player, block.toItemStack());
+            String charge = STBUtil.getChargeString(chargeable);
+            MiscUtil.statusMessage(player, Messages.get(player, "command.charged", "%item% charged to %charge%",
+                    line -> line.replace("%item%", name).replace("%charge%", charge)));
         }
 
         return true;

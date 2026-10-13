@@ -9,6 +9,7 @@ import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.FriendManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import me.desht.dhutils.MiscUtil;
 
 public class UnfriendCommand extends STBAbstractCommand {
@@ -28,7 +29,8 @@ public class UnfriendCommand extends STBAbstractCommand {
         UUID id = getID(args[0]);
         Validate.notNull(id, "Unknown player: " + args[0]);
         fm.removeFriend(target.getUniqueId(), id);
-        MiscUtil.statusMessage(sender, target.getName() + " is no longer friends with " + args[0]);
+        MiscUtil.statusMessage(sender, Messages.get(sender, "command.friend-removed", "%player% is no longer friends with %friend%",
+                line -> line.replace("%player%", target.getName()).replace("%friend%", args[0])));
 
         return true;
     }

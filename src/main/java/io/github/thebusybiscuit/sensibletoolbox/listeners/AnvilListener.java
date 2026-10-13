@@ -9,6 +9,7 @@ import org.bukkit.inventory.ItemStack;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import me.desht.dhutils.MiscUtil;
 
 public class AnvilListener extends STBBaseListener {
@@ -27,14 +28,16 @@ public class AnvilListener extends STBBaseListener {
 
                 if (SensibleToolbox.getItemRegistry().isSTBItem(cursor)) {
                     event.setCancelled(true);
-                    MiscUtil.errorMessage((Player) event.getWhoClicked(), "Sensible Toolbox items don't fit in a vanilla anvil.");
+                    MiscUtil.errorMessage((Player) event.getWhoClicked(), Messages.get((Player) event.getWhoClicked(),
+                            "anvil.no-fit", "Sensible Toolbox items don't fit in a vanilla anvil."));
                 }
             } else if (event.getRawSlot() > 2 && event.getAction() == InventoryAction.MOVE_TO_OTHER_INVENTORY) {
                 ItemStack item = event.getCurrentItem();
 
                 if (SensibleToolbox.getItemRegistry().isSTBItem(item)) {
                     event.setCancelled(true);
-                    MiscUtil.errorMessage((Player) event.getWhoClicked(), "Sensible Toolbox items don't fit in a vanilla anvil.");
+                    MiscUtil.errorMessage((Player) event.getWhoClicked(), Messages.get((Player) event.getWhoClicked(),
+                            "anvil.no-fit", "Sensible Toolbox items don't fit in a vanilla anvil."));
                 }
             }
         }

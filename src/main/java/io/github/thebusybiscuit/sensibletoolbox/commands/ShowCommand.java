@@ -26,6 +26,7 @@ import org.bukkit.plugin.Plugin;
 
 import com.google.common.base.Joiner;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
@@ -99,7 +100,8 @@ public class ShowCommand extends AbstractCommand {
                 writer.println("|" + item.getItemName() + "|" + item.getItemTypeID() + "|" + appearance + "|" + lore);
             }
 
-            MiscUtil.statusMessage(sender, "STB item data dumped to " + out);
+            MiscUtil.statusMessage(sender, Messages.get(sender, "command.show-dumped", "STB item data dumped to %file%",
+                    line -> line.replace("%file%", String.valueOf(out))));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -111,7 +113,8 @@ public class ShowCommand extends AbstractCommand {
 
         if (locStr.equals(".")) {
             if (!(sender instanceof Player)) {
-                MiscUtil.errorMessage(sender, "This command can't be run from the console.");
+                MiscUtil.errorMessage(sender, Messages.get(sender, "command.player-only",
+                    "This command can't be run from the console."));
                 return;
             }
 

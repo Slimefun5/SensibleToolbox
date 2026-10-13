@@ -9,6 +9,7 @@ import org.bukkit.ChatColor;
 import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -226,10 +227,10 @@ public abstract class CombineHoe extends BaseSTBItem {
             if (stack != null) {
                 if (seeds != null && seeds != stack.getType()) {
                     player.getWorld().dropItemNaturally(player.getLocation(), stack);
-                    err = "Mixed items in the seed bag?";
+                    err = Messages.get(player, "hoe.mixed-items", "Mixed items in the seed bag?");
                 } else if (STBUtil.getCropType(stack.getType()) == null) {
                     player.getWorld().dropItemNaturally(player.getLocation(), stack);
-                    err = "Non-seed items in the seed bag?";
+                    err = Messages.get(player, "hoe.non-seed-items", "Non-seed items in the seed bag?");
                 } else {
                     seeds = stack.getType();
                     count += stack.getAmount();

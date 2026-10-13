@@ -16,6 +16,7 @@ import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.Tag;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
@@ -1015,7 +1016,8 @@ public abstract class BaseSTBBlock extends BaseSTBItem {
 
         if (!signBlock.isEmpty()) {
             // looks like some non-solid block is in the way
-            STBUtil.complain(player, "There is no room to place a label sign there!");
+            STBUtil.complain(player, Messages.get(player, "block.no-room-for-sign",
+                        "There is no room to place a label sign there!"));
             event.setCancelled(true);
             return false;
         }

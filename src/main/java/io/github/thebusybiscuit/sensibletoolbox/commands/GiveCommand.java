@@ -12,6 +12,7 @@ import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.commands.AbstractCommand;
@@ -34,7 +35,8 @@ public class GiveCommand extends AbstractCommand {
             target = Bukkit.getPlayer(args[2]);
 
             if (target == null) {
-                MiscUtil.errorMessage(sender, args[2] + " is not a valid Player or not online!");
+                MiscUtil.errorMessage(sender, Messages.get(sender, "command.give-invalid-player", "%name% is not a valid Player or not online!",
+                        line -> line.replace("%name%", args[2])));
                 return true;
             }
         } else {
@@ -42,13 +44,15 @@ public class GiveCommand extends AbstractCommand {
                 if (STBUtil.isNumeric(args[1])) {
                     amount = Integer.parseInt(args[1]);
                 } else {
-                    MiscUtil.errorMessage(sender, args[1] + " is not a valid amount!");
+                    MiscUtil.errorMessage(sender, Messages.get(sender, "command.give-invalid-amount", "%amount% is not a valid amount!",
+                            line -> line.replace("%amount%", args[1])));
                     return true;
                 }
             }
 
             if (!(sender instanceof Player)) {
-                MiscUtil.errorMessage(sender, "This command can't be run from the console.");
+                MiscUtil.errorMessage(sender, Messages.get(sender, "command.player-only",
+                    "This command can't be run from the console."));
                 return true;
             }
 
@@ -59,7 +63,9 @@ public class GiveCommand extends AbstractCommand {
         BaseSTBItem item = SensibleToolbox.getItemRegistry().getItemById(id);
         Validate.notNull(item, "Unknown SensibleToolbox item: " + args[0]);
         target.getInventory().addItem(item.toItemStack(amount));
-        MiscUtil.statusMessage(target, "You received " + amount + " x &6" + item.getItemName() + "&-.");
+        String given = Messages.get(target, "command.give-received", "You received %amount% x %item%.");
+        MiscUtil.statusMessage(target, given.replace("%amount%", String.valueOf(amount))
+                .replace("%item%", Messages.itemName(target, item.toItemStack())));
         return true;
     }
 

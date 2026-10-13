@@ -13,6 +13,7 @@ import org.bukkit.plugin.Plugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.core.storage.LocationManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.commands.AbstractCommand;
 
@@ -40,8 +41,10 @@ public class RedrawCommand extends AbstractCommand {
             }
         }
 
-        String s = redrawn == 1 ? "" : "s";
-        MiscUtil.statusMessage(sender, redrawn + " STB block" + s + " redrawn.");
+        String redrawnLine = redrawn == 1
+                ? Messages.get(sender, "command.redrawn-one", "%count% STB block redrawn.")
+                : Messages.get(sender, "command.redrawn-many", "%count% STB blocks redrawn.");
+        MiscUtil.statusMessage(sender, redrawnLine.replace("%count%", String.valueOf(redrawn)));
         return true;
     }
 

@@ -20,6 +20,7 @@ import io.github.thebusybiscuit.sensibletoolbox.api.STBInventoryHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderStorage;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderStorageHolder;
 import io.github.thebusybiscuit.sensibletoolbox.api.enderstorage.EnderTunable;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
@@ -124,7 +125,8 @@ public class EnderBox extends BaseSTBBlock implements EnderTunable, STBInventory
             Player player = event.getPlayer();
 
             if (!hasAccessRights(player)) {
-                STBUtil.complain(player, "That " + getItemName() + " is private!");
+                STBUtil.complain(player, Messages.get(player, "gui.private", "That %item% is private!",
+                    line -> line.replace("%item%", Messages.plainItemName(player, toItemStack()))));
             } else {
                 Inventory inv = isGlobal() ? EnderStorage.getEnderInventory(getEnderFrequency()) : EnderStorage.getEnderInventory(player, getEnderFrequency());
                 player.openInventory(inv);

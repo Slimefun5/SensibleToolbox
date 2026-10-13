@@ -21,6 +21,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.api.SensibleToolbox;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.InventoryGUI;
@@ -513,7 +514,10 @@ public class AutoBuilder extends BaseSTBMachine {
             if (((LandMarker) item).getMarkedLocation() != null) {
                 insertLandMarker(toInsert);
             } else {
-                STBUtil.complain((Player) player, "Land Marker doesn't have a location set!");
+                STBUtil.complain((Player) player, Messages.get((Player) player, "auto-builder.land-marker-unset",
+                        "%item% doesn't have a location set!",
+                        line -> line.replace("%item%", Messages.plainItemName((Player) player,
+                                new LandMarker().toItemStack()))));
             }
             // we just put a copy of the land marker into the builder
             return 0;

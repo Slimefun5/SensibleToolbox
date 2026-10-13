@@ -23,6 +23,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.metadata.FixedMetadataValue;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import io.github.thebusybiscuit.sensibletoolbox.api.gui.GUIUtil;
@@ -448,7 +449,8 @@ public class BigStorageUnit extends AbstractProcessingMachine {
         int toInsert = Math.min(stack.getAmount(), maxCapacity - getStorageAmount());
 
         if (toInsert == 0) {
-            STBUtil.complain(player, getItemName() + " is full.");
+            STBUtil.complain(player, Messages.get(player, "machine.storage-full", "%item% is full.",
+                    line -> line.replace("%item%", Messages.plainItemName(player, toItemStack()))));
             return 0;
         }
 
@@ -467,7 +469,9 @@ public class BigStorageUnit extends AbstractProcessingMachine {
             player.setMetadata(STB_LAST_BSU_INSERT, new FixedMetadataValue(getProviderPlugin(), System.currentTimeMillis()));
             return toInsert;
         } else {
-            STBUtil.complain(player, getItemName() + " has insufficient charge to accept items.");
+            STBUtil.complain(player, Messages.get(player, "machine.storage-no-charge",
+                    "%item% has insufficient charge to accept items.",
+                    line -> line.replace("%item%", Messages.plainItemName(player, toItemStack()))));
             return 0;
         }
     }

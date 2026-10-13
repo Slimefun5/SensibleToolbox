@@ -42,6 +42,7 @@ import org.bukkit.inventory.ShapelessRecipe;
 import org.bukkit.inventory.meta.Damageable;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.protection.Interaction;
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
@@ -592,7 +593,8 @@ public class RecipeBook extends BaseSTBItem {
             ItemCost cost = new ItemCost(ingredient);
 
             if (!cost.isAffordable(player, false, inventories)) {
-                MiscUtil.errorMessage(player, "Missing: &f" + ItemUtils.getItemName(ingredient));
+                MiscUtil.errorMessage(player, Messages.get(player, "recipe-book.missing", "Missing: %item%",
+                        line -> line.replace("%item%", "&f" + Messages.plainItemName(player, ingredient) + "&-")));
                 ok = false;
             }
 
@@ -631,7 +633,8 @@ public class RecipeBook extends BaseSTBItem {
 
         player.getInventory().addItem(result);
         player.playSound(player.getLocation(), Sound.ENTITY_ITEM_PICKUP, 1.0F, 1.0F);
-        MiscUtil.statusMessage(player, "Fabricated (free): &f" + ItemUtils.getItemName(result));
+        String freeLine = Messages.get(player, "recipe-book.fabricated-free", "Fabricated (free): %item%");
+        MiscUtil.statusMessage(player, freeLine.replace("%item%", "&f" + Messages.plainItemName(player, result) + "&-"));
     }
 
     private void fabricateNormal(List<ItemStack> taken, ItemStack result) {
@@ -657,7 +660,8 @@ public class RecipeBook extends BaseSTBItem {
 
         player.getInventory().addItem(result);
         player.playSound(player.getLocation(), Sound.ENTITY_ITEM_PICKUP, 1.0F, 1.0F);
-        MiscUtil.statusMessage(player, "Fabricated: &f" + ItemUtils.getItemName(result));
+        String madeLine = Messages.get(player, "recipe-book.fabricated", "Fabricated: %item%");
+        MiscUtil.statusMessage(player, madeLine.replace("%item%", "&f" + Messages.plainItemName(player, result) + "&-"));
     }
 
     private List<ItemStack> mergeIngredients() {

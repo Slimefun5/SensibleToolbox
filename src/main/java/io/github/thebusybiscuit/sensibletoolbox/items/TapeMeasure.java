@@ -16,6 +16,7 @@ import org.bukkit.inventory.Recipe;
 import org.bukkit.inventory.ShapedRecipe;
 
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.UnicodeSymbol;
@@ -93,14 +94,16 @@ public class TapeMeasure extends BaseSTBItem {
             if (event.getPlayer().isSneaking()) {
                 setAnchor(event.getClickedBlock());
                 updateHeldItemStack(event.getPlayer());
-                MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point set.");
+                MiscUtil.statusMessage(event.getPlayer(), Messages.get(event.getPlayer(), "tape-measure.anchor-set",
+                        "Tape measure anchor point set."));
             } else {
                 makeMeasurement(event.getPlayer(), event.getClickedBlock());
             }
         } else if (event.getAction() == Action.RIGHT_CLICK_AIR) {
             setAnchor(null);
             updateHeldItemStack(event.getPlayer());
-            MiscUtil.statusMessage(event.getPlayer(), "Tape measure anchor point cleared.");
+            MiscUtil.statusMessage(event.getPlayer(), Messages.get(event.getPlayer(), "tape-measure.anchor-cleared",
+                    "Tape measure anchor point cleared."));
         }
 
         event.setCancelled(true);
@@ -116,7 +119,12 @@ public class TapeMeasure extends BaseSTBItem {
             int zOff = b.getZ() - z;
             Location anchorLoc = new Location(b.getWorld(), x, y, z);
             double dist = b.getLocation().distance(anchorLoc);
-            MiscUtil.statusMessage(p, String.format("Measurement: " + ChatColor.WHITE + "X=%d Y=%d Z=%d total=%.2f", xOff, yOff, zOff, dist));
+            MiscUtil.statusMessage(p, Messages.get(p, "tape-measure.measurement",
+                    "Measurement: X=%x% Y=%y% Z=%z% total=%total%",
+                    line -> line.replace("%x%", ChatColor.WHITE + String.valueOf(xOff))
+                            .replace("%y%", String.valueOf(yOff))
+                            .replace("%z%", String.valueOf(zOff))
+                            .replace("%total%", String.format("%.2f", dist))));
         }
     }
 

@@ -9,6 +9,7 @@ import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.plugin.Plugin;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import me.desht.dhutils.DHUtilsException;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.commands.AbstractCommand;
@@ -39,14 +40,16 @@ public class SetcfgCommand extends AbstractCommand {
             }
 
             Object res = configManager.get(key);
-            MiscUtil.statusMessage(sender, key + " is now set to '&e" + res + "&-'");
+            MiscUtil.statusMessage(sender, Messages.get(sender, "command.setcfg-set", "%key% is now set to %value%",
+                    line -> line.replace("%key%", key).replace("%value%", "'&e" + res + "&-'")));
 
             if (key.startsWith("items_enabled.")) {
-                MiscUtil.statusMessage(sender, "Changes will take effect when server is reloaded/restarted");
+                MiscUtil.statusMessage(sender, Messages.get(sender, "command.setcfg-reload",
+                        "Changes will take effect when server is reloaded/restarted"));
             }
         } catch (DHUtilsException e) {
             MiscUtil.errorMessage(sender, e.getMessage());
-            MiscUtil.errorMessage(sender, "Use /stb getcfg to list all valid keys");
+            MiscUtil.errorMessage(sender, Messages.get(sender, "command.setcfg-list-keys", "Use /stb getcfg to list all valid keys"));
         } catch (IllegalArgumentException e) {
             MiscUtil.errorMessage(sender, e.getMessage());
         }

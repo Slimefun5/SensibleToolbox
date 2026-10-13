@@ -33,6 +33,7 @@ import io.github.thebusybiscuit.sensibletoolbox.api.gui.gadgets.MonitorGadget;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBBlock;
 import io.github.thebusybiscuit.sensibletoolbox.api.items.BaseSTBItem;
 import io.github.thebusybiscuit.sensibletoolbox.utils.BukkitSerialization;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import me.desht.dhutils.Debugger;
 import me.desht.dhutils.text.LogUtils;
@@ -187,7 +188,8 @@ public class STBInventoryGUI implements InventoryGUI {
     @Override
     public void show(Player player) {
         if (getOwningItem() instanceof BaseSTBBlock && !getOwningBlock().hasAccessRights(player)) {
-            STBUtil.complain(player, "That " + getOwningItem().getItemName() + " is private!");
+            STBUtil.complain(player, Messages.get(player, "gui.private", "That %item% is private!",
+                    line -> line.replace("%item%", Messages.plainItemName(player, getOwningItem().toItemStack()))));
             return;
         }
         if (inventory.getViewers().isEmpty()) {

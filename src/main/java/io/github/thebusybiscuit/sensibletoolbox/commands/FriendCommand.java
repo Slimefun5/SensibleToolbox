@@ -15,6 +15,7 @@ import com.google.common.collect.Lists;
 
 import io.github.thebusybiscuit.sensibletoolbox.SensibleToolboxPlugin;
 import io.github.thebusybiscuit.sensibletoolbox.api.FriendManager;
+import io.github.thebusybiscuit.sensibletoolbox.utils.Messages;
 import me.desht.dhutils.MiscUtil;
 import me.desht.dhutils.text.MessagePager;
 
@@ -37,7 +38,8 @@ public class FriendCommand extends STBAbstractCommand {
             UUID id = getID(args[0]);
             Validate.notNull(id, "Unknown player: " + args[0]);
             fm.addFriend(target.getUniqueId(), id);
-            MiscUtil.statusMessage(sender, target.getName() + " is now friends with " + args[0]);
+            MiscUtil.statusMessage(sender, Messages.get(sender, "command.friend-added", "%player% is now friends with %friend%",
+                    line -> line.replace("%player%", target.getName()).replace("%friend%", args[0])));
         } else if (args.length == 0) {
             // listing friends
             listFriends(sender, fm, target);
