@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "פריטים של Sensible Toolbox לא נכנסים לסדן רגיל."
+
+auto-builder:
+  land-marker-unset: "ל%item% לא הוגדר מקום!"
+
+block:
+  no-room-for-sign: "אין שם מקום לשלט תיוג!"
+
+command:
+  player-only: "אי אפשר להריץ את הפקודה הזאת מהמסוף."
+  charge-nothing-suitable: "אין מה להטעין."
+  charge-range: "חייב להיות בטווח 0-%max%"
+  charged: "%item% הוטען ל%charge%"
+  debug-level-positive: "רמת ניפוי הבאגים חייבת להיות >= 0"
+  debug-enabled: "מנפה הבאגים הופעל (רמה %level%)"
+  debug-disabled: "מנפה הבאגים כובה"
+  friend-added: "%player% הוא עכשיו חבר של %friend%"
+  friend-removed: "%player% אינו עוד חבר של %friend%"
+  give-invalid-player: "%name% אינו שחקן חוקי או אינו מחובר!"
+  give-invalid-amount: "%amount% אינה כמות חוקית!"
+  give-received: "קיבלת %amount% x %item%."
+  possible-matches-one: "%count% פקודה מתאימה אפשרית ב%desc%:"
+  possible-matches-many: "%count% פקודות מתאימות אפשריות ב%desc%:"
+  recipe-book-needed: "חייב להיות לך %item% במלאי כדי לחפש מתכונים!"
+  redrawn-one: "%count% בלוק STB שורטט מחדש."
+  redrawn-many: "%count% בלוקים של STB שורטטו מחדש."
+  data-saved: "נתוני STB השמורים נכתבו"
+  setcfg-set: "%key% מוגדר עכשיו ל%value%"
+  setcfg-reload: "השינויים ייכנסו לתוקף כשהשרת ייטען מחדש או יופעל מחדש"
+  setcfg-list-keys: "השתמש ב-/stb getcfg כדי להציג את כל המפתחות החוקיים"
+  show-dumped: "נתוני הפריט של STB נכתבו ל%file%"
+  validated-one: "תוקן %count% בלוק בעולם %world%"
+  validated-many: "תוקנו %count% בלוקים בעולם %world%"
+
+ender-leash:
+  leashed-animal: "אי אפשר ללכוד חיה קשורה ברצועה!"
+  not-your-animal: "החיה הזאת שייכת למישהו אחר!"
+  already-captured: "ב%item% יש כבר חיה לכודה"
+
+gui:
+  private: "%item% הוא פרטי!"
+
+hoe:
+  mixed-items: "פריטים מעורבים בשק הזרעים?"
+  non-seed-items: "פריטים שאינם זרעים בשק?"
+
+machine:
+  storage-full: "%item% מלא."
+  storage-no-charge: "ל%item% אין מספיק מצברים כדי לקבל פריטים."
+  upgrade-not-accepted: "%machine% אינו מקבל %upgrade%"
+  ejector-needs-direction: "לשדרוג ההטלה חייב להיות כיוון מוגדר."
+
+recipe-book:
+  missing: "חסר: %item%"
+  fabricated-free: "יוצר (בחינם): %item%"
+  fabricated: "יוצר: %item%"
+
+tape-measure:
+  anchor-set: "נקודת העיגון של סרט המדידה הוגדרה."
+  anchor-cleared: "נקודת העיגון של סרט המדידה נמחקה."
+  measurement: "מדידה: X=%x% Y=%y% Z=%z% סך הכל=%total%"
+
+watering-can:
+  soil-wet: "האדמה הזאת נעשית רטובה מאוד!"
+  fire-out: "האש כבתה!"

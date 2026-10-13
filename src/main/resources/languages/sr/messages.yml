@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Предмети из Sensible Toolbox не стају у обичан наковањ."
+
+auto-builder:
+  land-marker-unset: "%item% нема постављену локацију!"
+
+block:
+  no-room-for-sign: "Тамо нема места за натписну таблу!"
+
+command:
+  player-only: "Ова команда не може да се покрене из конзоле."
+  charge-nothing-suitable: "Нема ништа прикладно за пуњење."
+  charge-range: "Мора да буде у опсегу 0-%max%"
+  charged: "%item% напуњен на %charge%"
+  debug-level-positive: "Ниво отклањања грешака мора да буде >= 0"
+  debug-enabled: "Отклањање грешака укључено (ниво %level%)"
+  debug-disabled: "Отклањање грешака искључено"
+  friend-added: "%player% је сада пријатељ са %friend%"
+  friend-removed: "%player% више није пријатељ са %friend%"
+  give-invalid-player: "%name% није важећи играч или није на мрежи!"
+  give-invalid-amount: "%amount% није важећа количина!"
+  give-received: "Примио си %amount% x %item%."
+  possible-matches-one: "%count% могућа одговарајућа команда у %desc%:"
+  possible-matches-many: "%count% могућих одговарајућих команди у %desc%:"
+  recipe-book-needed: "Да би тражио рецепте, мораш да имаш %item% у инвентару!"
+  redrawn-one: "Поново нацртан %count% STB блок."
+  redrawn-many: "Поново нацртано %count% STB блокова."
+  data-saved: "Трајни подаци STB су записани"
+  setcfg-set: "%key% је сада постављен на %value%"
+  setcfg-reload: "Промене ће деловати након поновног учитавања или покретања сервера"
+  setcfg-list-keys: "Користи /stb getcfg за списак свих важећих кључева"
+  show-dumped: "Подаци предмета STB записани су у %file%"
+  validated-one: "Исправљен %count% блок у свету %world%"
+  validated-many: "Исправљено %count% блокова у свету %world%"
+
+ender-leash:
+  leashed-animal: "Не можеш да ухватиш животињу на поводцу!"
+  not-your-animal: "Ова животиња припада неком другом!"
+  already-captured: "%item% већ има ухваћену животињу"
+
+gui:
+  private: "%item% је приватан!"
+
+hoe:
+  mixed-items: "Помешани предмети у врећи са семеном?"
+  non-seed-items: "Предмети који нису семе у врећи?"
+
+machine:
+  storage-full: "%item% је пун."
+  storage-no-charge: "%item% нема довољно набоја да прима предмете."
+  upgrade-not-accepted: "%machine% не прихвата %upgrade%"
+  ejector-needs-direction: "Надоградња избацивача мора да има постављен смер."
+
+recipe-book:
+  missing: "Недостаје: %item%"
+  fabricated-free: "Израђено (бесплатно): %item%"
+  fabricated: "Израђено: %item%"
+
+tape-measure:
+  anchor-set: "Почетна тачка мерне траке постављена."
+  anchor-cleared: "Почетна тачка мерне траке избрисана."
+  measurement: "Мерење: X=%x% Y=%y% Z=%z% укупно=%total%"
+
+watering-can:
+  soil-wet: "Ова земља постаје врло мокра!"
+  fire-out: "Ватра је угашена!"

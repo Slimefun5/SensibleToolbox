@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Les objets de Sensible Toolbox ne rentrent pas dans une enclume classique."
+
+auto-builder:
+  land-marker-unset: "Aucun emplacement n'est défini pour %item% !"
+
+block:
+  no-room-for-sign: "Il n'y a pas de place pour poser un panneau d'étiquette là !"
+
+command:
+  player-only: "Cette commande ne peut pas être lancée depuis la console."
+  charge-nothing-suitable: "Rien d'adapté à recharger."
+  charge-range: "Doit être comprise entre 0 et %max%"
+  charged: "%item% rechargé à %charge%"
+  debug-level-positive: "Le niveau de débogage doit être >= 0"
+  debug-enabled: "Débogueur activé (niveau %level%)"
+  debug-disabled: "Débogueur désactivé"
+  friend-added: "%player% est maintenant ami avec %friend%"
+  friend-removed: "%player% n'est plus ami avec %friend%"
+  give-invalid-player: "%name% n'est pas un joueur valide ou n'est pas connecté !"
+  give-invalid-amount: "%amount% n'est pas une quantité valide !"
+  give-received: "Vous avez reçu %amount% x %item%."
+  possible-matches-one: "%count% commande correspondante possible dans %desc% :"
+  possible-matches-many: "%count% commandes correspondantes possibles dans %desc% :"
+  recipe-book-needed: "Vous devez avoir %item% dans votre inventaire pour chercher des recettes !"
+  redrawn-one: "%count% bloc STB redessiné."
+  redrawn-many: "%count% blocs STB redessinés."
+  data-saved: "Les données STB persistantes ont été sauvegardées"
+  setcfg-set: "%key% vaut maintenant %value%"
+  setcfg-reload: "Les changements prendront effet au rechargement ou au redémarrage du serveur"
+  setcfg-list-keys: "Utilisez /stb getcfg pour lister toutes les clés valides"
+  show-dumped: "Les données d'objet STB ont été écrites dans %file%"
+  validated-one: "%count% bloc corrigé dans le monde %world%"
+  validated-many: "%count% blocs corrigés dans le monde %world%"
+
+ender-leash:
+  leashed-animal: "Impossible de capturer un animal attaché !"
+  not-your-animal: "Cet animal appartient à quelqu'un d'autre !"
+  already-captured: "%item% contient déjà un animal capturé"
+
+gui:
+  private: "%item% est privé !"
+
+hoe:
+  mixed-items: "Des objets mélangés dans le sac de graines ?"
+  non-seed-items: "Des objets qui ne sont pas des graines dans le sac ?"
+
+machine:
+  storage-full: "%item% est plein."
+  storage-no-charge: "%item% n'a pas assez de charge pour accepter des objets."
+  upgrade-not-accepted: "%upgrade% n'est pas accepté par %machine%"
+  ejector-needs-direction: "L'amélioration d'éjection doit avoir une direction configurée."
+
+recipe-book:
+  missing: "Manquant : %item%"
+  fabricated-free: "Fabriqué (gratuit) : %item%"
+  fabricated: "Fabriqué : %item%"
+
+tape-measure:
+  anchor-set: "Point d'ancrage du mètre ruban défini."
+  anchor-cleared: "Point d'ancrage du mètre ruban effacé."
+  measurement: "Mesure : X=%x% Y=%y% Z=%z% total=%total%"
+
+watering-can:
+  soil-wet: "Cette terre devient très humide !"
+  fire-out: "Le feu est éteint !"

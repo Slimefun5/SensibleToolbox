@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Прадметы з Sensible Toolbox не ўлазяць у звычайную кавадла."
+
+auto-builder:
+  land-marker-unset: "Для %item% не зададзена месца!"
+
+block:
+  no-room-for-sign: "Там няма месца для таблічкі з надпісам!"
+
+command:
+  player-only: "Гэту каманду нельга выканаць з кансолі."
+  charge-nothing-suitable: "Няма чаго зараджаць."
+  charge-range: "Мусіць быць у межах 0-%max%"
+  charged: "%item% зараджаны да %charge%"
+  debug-level-positive: "Узровень адладкі мусіць быць >= 0"
+  debug-enabled: "Адладчык уключаны (узровень %level%)"
+  debug-disabled: "Адладчык выключаны"
+  friend-added: "%player% цяпер прыяцель з %friend%"
+  friend-removed: "%player% больш не прыяцель з %friend%"
+  give-invalid-player: "%name% не з'яўляецца гульцом або не ў сетцы!"
+  give-invalid-amount: "%amount% не з'яўляецца дапушчальнай колькасцю!"
+  give-received: "Вы атрымалі %amount% x %item%."
+  possible-matches-one: "%count% магчымая адпаведная каманда ў %desc%:"
+  possible-matches-many: "%count% магчымых адпаведных камандаў у %desc%:"
+  recipe-book-needed: "Каб шукаць рэцэпты, у вашым інвентары мусіць быць %item%!"
+  redrawn-one: "Перамаляваны %count% блок STB."
+  redrawn-many: "Перамалявана %count% блокаў STB."
+  data-saved: "Зберажоныя дадзеныя STB запісаны"
+  setcfg-set: "%key% цяпер роўны %value%"
+  setcfg-reload: "Змены падзейнічаюць пасля перазагрузкі або перазапуску сервера"
+  setcfg-list-keys: "Скарыстайцеся /stb getcfg, каб вывесці ўсе дапушчальныя ключы"
+  show-dumped: "Дадзеныя прадмета STB запісаны ў %file%"
+  validated-one: "Выпраўлены %count% блок у свеце %world%"
+  validated-many: "Выпраўлена %count% блокаў у свеце %world%"
+
+ender-leash:
+  leashed-animal: "Нельга злавіць жывёлу на поводзе!"
+  not-your-animal: "Гэта жывёла належыць камусьці іншаму!"
+  already-captured: "У %item% ужо ёсць злоўленая жывёла"
+
+gui:
+  private: "%item% закрыты для іншых!"
+
+hoe:
+  mixed-items: "У мяшку з насеннем розныя прадметы?"
+  non-seed-items: "У мяшку прадметы, якія не з'яўляюцца насеннем?"
+
+machine:
+  storage-full: "%item% поўны."
+  storage-no-charge: "У %item% замала зараду, каб прымаць прадметы."
+  upgrade-not-accepted: "%machine% не прымае %upgrade%"
+  ejector-needs-direction: "Для палепшання выкідання трэба задаць напрамак."
+
+recipe-book:
+  missing: "Не хапае: %item%"
+  fabricated-free: "Выраблена (бясплатна): %item%"
+  fabricated: "Выраблена: %item%"
+
+tape-measure:
+  anchor-set: "Пачатковая кропка рулеткі зададзена."
+  anchor-cleared: "Пачатковая кропка рулеткі скінута."
+  measurement: "Вымярэнне: X=%x% Y=%y% Z=%z% разам=%total%"
+
+watering-can:
+  soil-wet: "Гэта зямля робіцца вельмі мокрай!"
+  fire-out: "Агонь патушаны!"

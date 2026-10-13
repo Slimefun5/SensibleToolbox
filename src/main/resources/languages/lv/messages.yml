@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox priekšmeti neiederas parastā laktā."
+
+auto-builder:
+  land-marker-unset: "%item% nav iestatīta atrašanās vieta!"
+
+block:
+  no-room-for-sign: "Tur nav vietas uzrakstu plāksnei!"
+
+command:
+  player-only: "Šo komandu nevar izpildīt no konsoles."
+  charge-nothing-suitable: "Nav ko uzlādēt."
+  charge-range: "Jābūt diapazonā 0-%max%"
+  charged: "%item% uzlādēts līdz %charge%"
+  debug-level-positive: "Atkļūdošanas līmenim jābūt >= 0"
+  debug-enabled: "Atkļūdošana ieslēgta (līmenis %level%)"
+  debug-disabled: "Atkļūdošana izslēgta"
+  friend-added: "%player% tagad ir draugs ar %friend%"
+  friend-removed: "%player% vairs nav draugs ar %friend%"
+  give-invalid-player: "%name% nav derīgs spēlētājs vai nav tiešsaistē!"
+  give-invalid-amount: "%amount% nav derīgs skaits!"
+  give-received: "Tu saņēmi %amount% x %item%."
+  possible-matches-one: "%count% iespējama atbilstoša komanda %desc%:"
+  possible-matches-many: "%count% iespējamas atbilstošas komandas %desc%:"
+  recipe-book-needed: "Lai meklētu receptes, tev inventārā jābūt %item%!"
+  redrawn-one: "Pārzīmēts %count% STB bloks."
+  redrawn-many: "Pārzīmēti %count% STB bloki."
+  data-saved: "Saglabātie STB dati ir ierakstīti"
+  setcfg-set: "%key% tagad ir %value%"
+  setcfg-reload: "Izmaiņas iedarbosies pēc servera pārlādēšanas vai restartēšanas"
+  setcfg-list-keys: "Lieto /stb getcfg, lai uzskaitītu visas derīgās atslēgas"
+  show-dumped: "STB priekšmeta dati ierakstīti failā %file%"
+  validated-one: "Izlabots %count% bloks pasaulē %world%"
+  validated-many: "Izlaboti %count% bloki pasaulē %world%"
+
+ender-leash:
+  leashed-animal: "Dzīvnieku pavadā nevar notvert!"
+  not-your-animal: "Šis dzīvnieks pieder kādam citam!"
+  already-captured: "%item% jau ir notverts dzīvnieks"
+
+gui:
+  private: "%item% ir privāts!"
+
+hoe:
+  mixed-items: "Sajaukti priekšmeti sēklu maisā?"
+  non-seed-items: "Priekšmeti, kas nav sēklas, maisā?"
+
+machine:
+  storage-full: "%item% ir pilns."
+  storage-no-charge: "%item% lādiņš ir pārāk mazs, lai pieņemtu priekšmetus."
+  upgrade-not-accepted: "%machine% nepieņem %upgrade%"
+  ejector-needs-direction: "Izmetēja uzlabojumam jābūt iestatītam virzienam."
+
+recipe-book:
+  missing: "Trūkst: %item%"
+  fabricated-free: "Izgatavots (bez maksas): %item%"
+  fabricated: "Izgatavots: %item%"
+
+tape-measure:
+  anchor-set: "Mērlentes sākumpunkts iestatīts."
+  anchor-cleared: "Mērlentes sākumpunkts notīrīts."
+  measurement: "Mērījums: X=%x% Y=%y% Z=%z% kopā=%total%"
+
+watering-can:
+  soil-wet: "Šī zeme kļūst ļoti slapja!"
+  fire-out: "Uguns ir nodzēsta!"

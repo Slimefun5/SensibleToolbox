@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "ไอเทมของ Sensible Toolbox ใส่ในทั่งธรรมดาไม่ได้"
+
+auto-builder:
+  land-marker-unset: "%item% ยังไม่ได้ตั้งตำแหน่ง!"
+
+block:
+  no-room-for-sign: "ที่นั่นไม่มีที่ว่างสำหรับป้ายชื่อ!"
+
+command:
+  player-only: "คำสั่งนี้ใช้จากคอนโซลไม่ได้"
+  charge-nothing-suitable: "ไม่มีสิ่งที่เหมาะจะชาร์จ"
+  charge-range: "ต้องอยู่ในช่วง 0-%max%"
+  charged: "ชาร์จ %item% ถึง %charge% แล้ว"
+  debug-level-positive: "ระดับการแก้จุดบกพร่องต้อง >= 0"
+  debug-enabled: "เปิดตัวแก้จุดบกพร่องแล้ว (ระดับ %level%)"
+  debug-disabled: "ปิดตัวแก้จุดบกพร่องแล้ว"
+  friend-added: "%player% เป็นเพื่อนกับ %friend% แล้ว"
+  friend-removed: "%player% ไม่ได้เป็นเพื่อนกับ %friend% อีกแล้ว"
+  give-invalid-player: "%name% ไม่ใช่ผู้เล่นที่ถูกต้องหรือไม่ได้ออนไลน์!"
+  give-invalid-amount: "%amount% ไม่ใช่จำนวนที่ถูกต้อง!"
+  give-received: "คุณได้รับ %amount% x %item%"
+  possible-matches-one: "มีคำสั่งที่อาจตรงกัน %count% คำสั่งใน %desc%:"
+  possible-matches-many: "มีคำสั่งที่อาจตรงกัน %count% คำสั่งใน %desc%:"
+  recipe-book-needed: "คุณต้องมี %item% อยู่ในกระเป๋าเพื่อค้นหาสูตร!"
+  redrawn-one: "วาดบล็อก STB ใหม่ %count% บล็อก"
+  redrawn-many: "วาดบล็อก STB ใหม่ %count% บล็อก"
+  data-saved: "บันทึกข้อมูล STB ที่เก็บไว้แล้ว"
+  setcfg-set: "%key% ถูกตั้งเป็น %value% แล้ว"
+  setcfg-reload: "การเปลี่ยนแปลงจะมีผลเมื่อโหลดเซิร์ฟเวอร์ใหม่หรือเริ่มเซิร์ฟเวอร์ใหม่"
+  setcfg-list-keys: "ใช้ /stb getcfg เพื่อแสดงคีย์ที่ถูกต้องทั้งหมด"
+  show-dumped: "เขียนข้อมูลไอเทม STB ไปที่ %file% แล้ว"
+  validated-one: "แก้บล็อก %count% บล็อกในโลก %world% แล้ว"
+  validated-many: "แก้บล็อก %count% บล็อกในโลก %world% แล้ว"
+
+ender-leash:
+  leashed-animal: "จับสัตว์ที่ถูกล่ามไว้ไม่ได้!"
+  not-your-animal: "สัตว์ตัวนี้เป็นของคนอื่น!"
+  already-captured: "%item% มีสัตว์ที่จับไว้แล้ว"
+
+gui:
+  private: "%item% เป็นของส่วนตัว!"
+
+hoe:
+  mixed-items: "มีไอเทมปนกันในถุงเมล็ดหรือไม่"
+  non-seed-items: "มีไอเทมที่ไม่ใช่เมล็ดในถุงหรือไม่"
+
+machine:
+  storage-full: "%item% เต็มแล้ว"
+  storage-no-charge: "%item% มีพลังไม่พอที่จะรับไอเทม"
+  upgrade-not-accepted: "%machine% ไม่รับ %upgrade%"
+  ejector-needs-direction: "การอัปเกรดตัวดีดต้องตั้งทิศทางไว้"
+
+recipe-book:
+  missing: "ขาด: %item%"
+  fabricated-free: "ผลิตแล้ว (ฟรี): %item%"
+  fabricated: "ผลิตแล้ว: %item%"
+
+tape-measure:
+  anchor-set: "ตั้งจุดเริ่มของตลับเมตรแล้ว"
+  anchor-cleared: "ล้างจุดเริ่มของตลับเมตรแล้ว"
+  measurement: "การวัด: X=%x% Y=%y% Z=%z% รวม=%total%"
+
+watering-can:
+  soil-wet: "ดินนี้กำลังเปียกมาก!"
+  fire-out: "ไฟดับแล้ว!"

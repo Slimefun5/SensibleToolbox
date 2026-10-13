@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox eşyaları sıradan bir örse sığmaz."
+
+auto-builder:
+  land-marker-unset: "%item% için bir konum ayarlanmamış!"
+
+block:
+  no-room-for-sign: "Orada etiket tabelası için yer yok!"
+
+command:
+  player-only: "Bu komut konsoldan çalıştırılamaz."
+  charge-nothing-suitable: "Şarj edilecek uygun bir şey yok."
+  charge-range: "0-%max% aralığında olmalı"
+  charged: "%item% %charge% düzeyine şarj edildi"
+  debug-level-positive: "Hata ayıklama düzeyi >= 0 olmalı"
+  debug-enabled: "Hata ayıklama açık (düzey %level%)"
+  debug-disabled: "Hata ayıklama kapalı"
+  friend-added: "%player% artık %friend% ile arkadaş"
+  friend-removed: "%player% artık %friend% ile arkadaş değil"
+  give-invalid-player: "%name% geçerli bir oyuncu değil veya çevrimiçi değil!"
+  give-invalid-amount: "%amount% geçerli bir miktar değil!"
+  give-received: "%amount% x %item% aldın."
+  possible-matches-one: "%desc% içinde %count% olası eşleşen komut:"
+  possible-matches-many: "%desc% içinde %count% olası eşleşen komut:"
+  recipe-book-needed: "Tarif aramak için envanterinde %item% bulunmalı!"
+  redrawn-one: "%count% STB bloğu yeniden çizildi."
+  redrawn-many: "%count% STB bloğu yeniden çizildi."
+  data-saved: "Saklanan STB verileri yazıldı"
+  setcfg-set: "%key% artık %value%"
+  setcfg-reload: "Değişiklikler sunucu yeniden yüklendiğinde veya yeniden başlatıldığında etkili olur"
+  setcfg-list-keys: "Tüm geçerli anahtarları listelemek için /stb getcfg kullan"
+  show-dumped: "STB eşya verileri %file% dosyasına yazıldı"
+  validated-one: "%world% dünyasında %count% blok onarıldı"
+  validated-many: "%world% dünyasında %count% blok onarıldı"
+
+ender-leash:
+  leashed-animal: "Tasmalı bir hayvan yakalanamaz!"
+  not-your-animal: "Bu hayvan başkasına ait!"
+  already-captured: "%item% içinde zaten yakalanmış bir hayvan var"
+
+gui:
+  private: "%item% özel!"
+
+hoe:
+  mixed-items: "Tohum torbasında karışık eşyalar mı var?"
+  non-seed-items: "Torbada tohum olmayan eşyalar mı var?"
+
+machine:
+  storage-full: "%item% dolu."
+  storage-no-charge: "%item% eşya kabul etmek için yeterli şarja sahip değil."
+  upgrade-not-accepted: "%machine%, %upgrade% öğesini kabul etmiyor"
+  ejector-needs-direction: "Fırlatıcı yükseltmesinin ayarlanmış bir yönü olmalı."
+
+recipe-book:
+  missing: "Eksik: %item%"
+  fabricated-free: "Üretildi (ücretsiz): %item%"
+  fabricated: "Üretildi: %item%"
+
+tape-measure:
+  anchor-set: "Şerit metrenin başlangıç noktası ayarlandı."
+  anchor-cleared: "Şerit metrenin başlangıç noktası temizlendi."
+  measurement: "Ölçüm: X=%x% Y=%y% Z=%z% toplam=%total%"
+
+watering-can:
+  soil-wet: "Bu toprak çok ıslanıyor!"
+  fire-out: "Ateş söndü!"

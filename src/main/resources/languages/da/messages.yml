@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Genstande fra Sensible Toolbox passer ikke i en almindelig ambolt."
+
+auto-builder:
+  land-marker-unset: "%item% har ingen placering angivet!"
+
+block:
+  no-room-for-sign: "Der er ikke plads til et navneskilt der!"
+
+command:
+  player-only: "Denne kommando kan ikke køres fra konsollen."
+  charge-nothing-suitable: "Intet egnet at oplade."
+  charge-range: "Skal være i intervallet 0-%max%"
+  charged: "%item% opladet til %charge%"
+  debug-level-positive: "Fejlsøgningsniveauet skal være >= 0"
+  debug-enabled: "Fejlsøgning slået til (niveau %level%)"
+  debug-disabled: "Fejlsøgning slået fra"
+  friend-added: "%player% er nu venner med %friend%"
+  friend-removed: "%player% er ikke længere venner med %friend%"
+  give-invalid-player: "%name% er ikke en gyldig spiller eller er ikke online!"
+  give-invalid-amount: "%amount% er ikke et gyldigt antal!"
+  give-received: "Du har modtaget %amount% x %item%."
+  possible-matches-one: "%count% mulig matchende kommando i %desc%:"
+  possible-matches-many: "%count% mulige matchende kommandoer i %desc%:"
+  recipe-book-needed: "Du skal have %item% i din oppakning for at søge efter opskrifter!"
+  redrawn-one: "%count% STB-blok gentegnet."
+  redrawn-many: "%count% STB-blokke gentegnet."
+  data-saved: "De gemte STB-data er skrevet"
+  setcfg-set: "%key% er nu sat til %value%"
+  setcfg-reload: "Ændringerne får virkning, når serveren genindlæses eller genstartes"
+  setcfg-list-keys: "Brug /stb getcfg for at liste alle gyldige nøgler"
+  show-dumped: "STB-genstandsdata er skrevet til %file%"
+  validated-one: "%count% blok rettet i verdenen %world%"
+  validated-many: "%count% blokke rettet i verdenen %world%"
+
+ender-leash:
+  leashed-animal: "Et dyr i snor kan ikke indfanges!"
+  not-your-animal: "Dette dyr tilhører en anden!"
+  already-captured: "%item% har allerede et indfanget dyr"
+
+gui:
+  private: "%item% er privat!"
+
+hoe:
+  mixed-items: "Blandede genstande i frøposen?"
+  non-seed-items: "Genstande der ikke er frø i posen?"
+
+machine:
+  storage-full: "%item% er fuld."
+  storage-no-charge: "%item% har for lidt ladning til at tage imod genstande."
+  upgrade-not-accepted: "%machine% tager ikke imod %upgrade%"
+  ejector-needs-direction: "Udkasterforbedringen skal have en retning angivet."
+
+recipe-book:
+  missing: "Mangler: %item%"
+  fabricated-free: "Fremstillet (gratis): %item%"
+  fabricated: "Fremstillet: %item%"
+
+tape-measure:
+  anchor-set: "Målebåndets udgangspunkt er sat."
+  anchor-cleared: "Målebåndets udgangspunkt er ryddet."
+  measurement: "Måling: X=%x% Y=%y% Z=%z% i alt=%total%"
+
+watering-can:
+  soil-wet: "Denne jord bliver meget våd!"
+  fire-out: "Ilden er slukket!"

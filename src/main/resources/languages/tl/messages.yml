@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Ang mga bagay ng Sensible Toolbox ay hindi kasya sa karaniwang palihan."
+
+auto-builder:
+  land-marker-unset: "Wala pang nakatakdang lugar ang %item%!"
+
+block:
+  no-room-for-sign: "Walang espasyo doon para sa karatulang pantatak!"
+
+command:
+  player-only: "Hindi maipapatakbo ang utos na ito mula sa konsol."
+  charge-nothing-suitable: "Walang angkop na macha-charge."
+  charge-range: "Kailangang nasa saklaw na 0-%max%"
+  charged: "Na-charge ang %item% hanggang %charge%"
+  debug-level-positive: "Ang antas ng debug ay kailangang >= 0"
+  debug-enabled: "Nakabukas ang debugger (antas %level%)"
+  debug-disabled: "Nakasara ang debugger"
+  friend-added: "Magkaibigan na si %player% at %friend%"
+  friend-removed: "Hindi na magkaibigan si %player% at %friend%"
+  give-invalid-player: "Hindi wastong manlalaro si %name% o wala siya sa linya!"
+  give-invalid-amount: "Hindi wastong bilang ang %amount%!"
+  give-received: "Tumanggap ka ng %amount% x %item%."
+  possible-matches-one: "%count% posibleng tugmang utos sa %desc%:"
+  possible-matches-many: "%count% posibleng tugmang utos sa %desc%:"
+  recipe-book-needed: "Kailangan mong may %item% sa imbentaryo para maghanap ng resipe!"
+  redrawn-one: "%count% blokeng STB ang muling iginuhit."
+  redrawn-many: "%count% blokeng STB ang muling iginuhit."
+  data-saved: "Naisulat ang nakaimbak na datos ng STB"
+  setcfg-set: "Ang %key% ay nakatakda na sa %value%"
+  setcfg-reload: "Mabibisa ang mga pagbabago kapag muling kinarga o sinimulan ang serbidor"
+  setcfg-list-keys: "Gamitin ang /stb getcfg para italaga ang lahat ng wastong susi"
+  show-dumped: "Naisulat sa %file% ang datos ng bagay na STB"
+  validated-one: "%count% bloke ang naitama sa daigdig na %world%"
+  validated-many: "%count% bloke ang naitama sa daigdig na %world%"
+
+ender-leash:
+  leashed-animal: "Hindi mahuhuli ang hayop na nakatali!"
+  not-your-animal: "Pag-aari ng iba ang hayop na ito!"
+  already-captured: "May nahuling hayop na ang %item%"
+
+gui:
+  private: "Pribado ang %item%!"
+
+hoe:
+  mixed-items: "May halo-halong bagay ba sa sakong ng binhi?"
+  non-seed-items: "May mga bagay ba sa sako na hindi binhi?"
+
+machine:
+  storage-full: "Puno na ang %item%."
+  storage-no-charge: "Kulang ang singil ng %item% para tumanggap ng mga bagay."
+  upgrade-not-accepted: "Hindi tinatanggap ng %machine% ang %upgrade%"
+  ejector-needs-direction: "Kailangang may nakatakdang direksyon ang pagpapabuti ng pampalabas."
+
+recipe-book:
+  missing: "Kulang: %item%"
+  fabricated-free: "Nagawa (walang bayad): %item%"
+  fabricated: "Nagawa: %item%"
+
+tape-measure:
+  anchor-set: "Nakatakda na ang panimulang punto ng panukat."
+  anchor-cleared: "Nalinis na ang panimulang punto ng panukat."
+  measurement: "Pagsukat: X=%x% Y=%y% Z=%z% kabuuan=%total%"
+
+watering-can:
+  soil-wet: "Sobrang nababasa na ang lupang ito!"
+  fire-out: "Patay na ang apoy!"

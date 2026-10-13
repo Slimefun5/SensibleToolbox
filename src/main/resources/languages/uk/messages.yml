@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Предмети з Sensible Toolbox не підходять до звичайного коваделя."
+
+auto-builder:
+  land-marker-unset: "Для %item% не задано розташування!"
+
+block:
+  no-room-for-sign: "Там немає місця для таблички з підписом!"
+
+command:
+  player-only: "Цю команду не можна виконати з консолі."
+  charge-nothing-suitable: "Немає чого заряджати."
+  charge-range: "Має бути в межах 0-%max%"
+  charged: "%item% заряджено до %charge%"
+  debug-level-positive: "Рівень зневадження має бути >= 0"
+  debug-enabled: "Зневаджувач увімкнено (рівень %level%)"
+  debug-disabled: "Зневаджувач вимкнено"
+  friend-added: "%player% тепер приятелює з %friend%"
+  friend-removed: "%player% більше не приятелює з %friend%"
+  give-invalid-player: "%name% не є гравцем або не в мережі!"
+  give-invalid-amount: "%amount% не є припустимою кількістю!"
+  give-received: "Ви отримали %amount% x %item%."
+  possible-matches-one: "%count% можлива відповідна команда в %desc%:"
+  possible-matches-many: "%count% можливих відповідних команд у %desc%:"
+  recipe-book-needed: "Щоб шукати рецепти, у вашому інвентарі має бути %item%!"
+  redrawn-one: "Перемальовано %count% блок STB."
+  redrawn-many: "Перемальовано %count% блоків STB."
+  data-saved: "Збережені дані STB записано"
+  setcfg-set: "%key% тепер дорівнює %value%"
+  setcfg-reload: "Зміни набудуть чинності після перезавантаження або перезапуску сервера"
+  setcfg-list-keys: "Скористайтеся /stb getcfg, щоб вивести всі припустимі ключі"
+  show-dumped: "Дані предмета STB записано до %file%"
+  validated-one: "Виправлено %count% блок у світі %world%"
+  validated-many: "Виправлено %count% блоків у світі %world%"
+
+ender-leash:
+  leashed-animal: "Не можна зловити тварину на повідку!"
+  not-your-animal: "Ця тварина належить комусь іншому!"
+  already-captured: "У %item% вже є зловлена тварина"
+
+gui:
+  private: "%item% закритий для інших!"
+
+hoe:
+  mixed-items: "У торбі з насінням різні предмети?"
+  non-seed-items: "У торбі предмети, які не є насінням?"
+
+machine:
+  storage-full: "%item% повний."
+  storage-no-charge: "У %item% надто мало заряду, щоб приймати предмети."
+  upgrade-not-accepted: "%machine% не приймає %upgrade%"
+  ejector-needs-direction: "Для покращення викидання потрібно задати напрямок."
+
+recipe-book:
+  missing: "Бракує: %item%"
+  fabricated-free: "Виготовлено (безкоштовно): %item%"
+  fabricated: "Виготовлено: %item%"
+
+tape-measure:
+  anchor-set: "Точку відліку рулетки задано."
+  anchor-cleared: "Точку відліку рулетки скинуто."
+  measurement: "Вимір: X=%x% Y=%y% Z=%z% разом=%total%"
+
+watering-can:
+  soil-wet: "Ця земля стає дуже мокрою!"
+  fire-out: "Вогонь згас!"

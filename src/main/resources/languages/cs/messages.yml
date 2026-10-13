@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Předměty ze Sensible Toolbox se do obyčejné kovadliny nevejdou."
+
+auto-builder:
+  land-marker-unset: "%item% nemá nastavené místo!"
+
+block:
+  no-room-for-sign: "Tam není místo na popisnou tabulku!"
+
+command:
+  player-only: "Tento příkaz nelze spustit z konzole."
+  charge-nothing-suitable: "Není co nabít."
+  charge-range: "Musí být v rozsahu 0-%max%"
+  charged: "%item% nabit na %charge%"
+  debug-level-positive: "Úroveň ladění musí být >= 0"
+  debug-enabled: "Ladění zapnuto (úroveň %level%)"
+  debug-disabled: "Ladění vypnuto"
+  friend-added: "%player% je teď přítel hráče %friend%"
+  friend-removed: "%player% už není přítel hráče %friend%"
+  give-invalid-player: "%name% není platný hráč nebo není online!"
+  give-invalid-amount: "%amount% není platné množství!"
+  give-received: "Dostal jsi %amount% x %item%."
+  possible-matches-one: "%count% možný odpovídající příkaz v %desc%:"
+  possible-matches-many: "%count% možných odpovídajících příkazů v %desc%:"
+  recipe-book-needed: "Abys mohl hledat recepty, musíš mít v inventáři %item%!"
+  redrawn-one: "Překreslen %count% STB blok."
+  redrawn-many: "Překresleno %count% STB bloků."
+  data-saved: "Uložená data STB byla zapsána"
+  setcfg-set: "%key% je teď nastaven na %value%"
+  setcfg-reload: "Změny se projeví po znovunačtení nebo restartu serveru"
+  setcfg-list-keys: "Použij /stb getcfg pro výpis všech platných klíčů"
+  show-dumped: "Data předmětu STB byla zapsána do %file%"
+  validated-one: "Opraven %count% blok ve světě %world%"
+  validated-many: "Opraveno %count% bloků ve světě %world%"
+
+ender-leash:
+  leashed-animal: "Zvíře na vodítku nelze zachytit!"
+  not-your-animal: "Toto zvíře patří někomu jinému!"
+  already-captured: "%item% už má zachycené zvíře"
+
+gui:
+  private: "%item% je soukromý!"
+
+hoe:
+  mixed-items: "Smíchané předměty v pytli se semeny?"
+  non-seed-items: "Předměty, které nejsou semena, v pytli?"
+
+machine:
+  storage-full: "%item% je plný."
+  storage-no-charge: "%item% má příliš malý náboj, aby přijímal předměty."
+  upgrade-not-accepted: "%machine% nepřijímá %upgrade%"
+  ejector-needs-direction: "Vylepšení vyhazovače musí mít nastavený směr."
+
+recipe-book:
+  missing: "Chybí: %item%"
+  fabricated-free: "Vyrobeno (zdarma): %item%"
+  fabricated: "Vyrobeno: %item%"
+
+tape-measure:
+  anchor-set: "Výchozí bod metru nastaven."
+  anchor-cleared: "Výchozí bod metru zrušen."
+  measurement: "Měření: X=%x% Y=%y% Z=%z% celkem=%total%"
+
+watering-can:
+  soil-wet: "Tato zemina je už hodně mokrá!"
+  fire-out: "Oheň je uhašen!"

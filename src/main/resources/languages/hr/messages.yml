@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Predmeti iz Sensible Toolbox ne staju u obični nakovanj."
+
+auto-builder:
+  land-marker-unset: "%item% nema postavljenu lokaciju!"
+
+block:
+  no-room-for-sign: "Tamo nema mjesta za natpisnu ploču!"
+
+command:
+  player-only: "Ova se naredba ne može pokrenuti iz konzole."
+  charge-nothing-suitable: "Nema ništa prikladno za punjenje."
+  charge-range: "Mora biti u rasponu 0-%max%"
+  charged: "%item% napunjen na %charge%"
+  debug-level-positive: "Razina otkrivanja pogrešaka mora biti >= 0"
+  debug-enabled: "Otkrivanje pogrešaka uključeno (razina %level%)"
+  debug-disabled: "Otkrivanje pogrešaka isključeno"
+  friend-added: "%player% je sada prijatelj s %friend%"
+  friend-removed: "%player% više nije prijatelj s %friend%"
+  give-invalid-player: "%name% nije važeći igrač ili nije na mreži!"
+  give-invalid-amount: "%amount% nije važeća količina!"
+  give-received: "Primio si %amount% x %item%."
+  possible-matches-one: "%count% moguća odgovarajuća naredba u %desc%:"
+  possible-matches-many: "%count% mogućih odgovarajućih naredbi u %desc%:"
+  recipe-book-needed: "Da bi tražio recepte, moraš imati %item% u inventaru!"
+  redrawn-one: "Ponovno nacrtan %count% STB blok."
+  redrawn-many: "Ponovno nacrtano %count% STB blokova."
+  data-saved: "Trajni podaci STB su zapisani"
+  setcfg-set: "%key% je sada postavljen na %value%"
+  setcfg-reload: "Promjene će djelovati nakon ponovnog učitavanja ili pokretanja servera"
+  setcfg-list-keys: "Koristi /stb getcfg za popis svih važećih kljuceva"
+  show-dumped: "Podaci predmeta STB zapisani su u %file%"
+  validated-one: "Ispravljen %count% blok u svijetu %world%"
+  validated-many: "Ispravljeno %count% blokova u svijetu %world%"
+
+ender-leash:
+  leashed-animal: "Ne možeš uhvatiti životinju na povodcu!"
+  not-your-animal: "Ova životinja pripada nekom drugom!"
+  already-captured: "%item% već ima uhvaćenu životinju"
+
+gui:
+  private: "%item% je privatan!"
+
+hoe:
+  mixed-items: "Pomiješani predmeti u vreći sa sjemenom?"
+  non-seed-items: "Predmeti koji nisu sjeme u vreći?"
+
+machine:
+  storage-full: "%item% je pun."
+  storage-no-charge: "%item% nema dovoljno naboja da prima predmete."
+  upgrade-not-accepted: "%machine% ne prihvaća %upgrade%"
+  ejector-needs-direction: "Nadogradnja izbacivača mora imati postavljen smjer."
+
+recipe-book:
+  missing: "Nedostaje: %item%"
+  fabricated-free: "Izrađeno (besplatno): %item%"
+  fabricated: "Izrađeno: %item%"
+
+tape-measure:
+  anchor-set: "Početna točka mjerne vrpce postavljena."
+  anchor-cleared: "Početna točka mjerne vrpce izbrisana."
+  measurement: "Mjerenje: X=%x% Y=%y% Z=%z% ukupno=%total%"
+
+watering-can:
+  soil-wet: "Ova zemlja postaje vrlo mokra!"
+  fire-out: "Vatra je ugašena!"

@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "أشياء Sensible Toolbox لا تُستخدم في سندان عادي."
+
+auto-builder:
+  land-marker-unset: "لم يُحدَّد موقع لـ %item%!"
+
+block:
+  no-room-for-sign: "لا يوجد مكان هناك للوحة تسمية!"
+
+command:
+  player-only: "لا يمكن تنفيذ هذا الأمر من وحدة التحكم."
+  charge-nothing-suitable: "لا يوجد شيء مناسب للشحن."
+  charge-range: "يجب أن يكون في المدى 0-%max%"
+  charged: "تم شحن %item% إلى %charge%"
+  debug-level-positive: "يجب أن يكون مستوى التنقيح >= 0"
+  debug-enabled: "تم تشغيل المنقِّح (المستوى %level%)"
+  debug-disabled: "تم إيقاف المنقِّح"
+  friend-added: "%player% صار صديقًا لـ %friend%"
+  friend-removed: "%player% لم يعد صديقًا لـ %friend%"
+  give-invalid-player: "%name% ليس لاعبًا صحيحًا أو ليس متصلًا!"
+  give-invalid-amount: "%amount% ليست كمية صحيحة!"
+  give-received: "استلمت %amount% x %item%."
+  possible-matches-one: "أمر واحد محتمل مطابق في %desc% من أصل %count%:"
+  possible-matches-many: "%count% أوامر محتملة مطابقة في %desc%:"
+  recipe-book-needed: "يجب أن يكون %item% في حقيبتك للبحث عن الوصفات!"
+  redrawn-one: "تم إعادة رسم %count% كتلة STB."
+  redrawn-many: "تم إعادة رسم %count% كتلة STB."
+  data-saved: "تم كتابة بيانات STB المحفوظة"
+  setcfg-set: "%key% صار الآن %value%"
+  setcfg-reload: "ستسري التغييرات عند إعادة تحميل الخادم أو إعادة تشغيله"
+  setcfg-list-keys: "استخدم /stb getcfg لعرض كل المفاتيح الصحيحة"
+  show-dumped: "تمت كتابة بيانات شيء STB إلى %file%"
+  validated-one: "تم إصلاح %count% كتلة في عالم %world%"
+  validated-many: "تم إصلاح %count% كتلة في عالم %world%"
+
+ender-leash:
+  leashed-animal: "لا يمكن أسر حيوان مربوط!"
+  not-your-animal: "هذا الحيوان يملكه شخص آخر!"
+  already-captured: "%item% يحتوي بالفعل على حيوان مأسور"
+
+gui:
+  private: "%item% خاص!"
+
+hoe:
+  mixed-items: "أشياء مختلطة في كيس البذور؟"
+  non-seed-items: "أشياء ليست بذورًا في الكيس؟"
+
+machine:
+  storage-full: "%item% ممتلئ."
+  storage-no-charge: "طاقة %item% غير كافية لاستلام الأشياء."
+  upgrade-not-accepted: "%machine% لا يقبل %upgrade%"
+  ejector-needs-direction: "يجب تحديد اتجاه لترقية القاذف."
+
+recipe-book:
+  missing: "ناقص: %item%"
+  fabricated-free: "تم التصنيع (بالمجان): %item%"
+  fabricated: "تم التصنيع: %item%"
+
+tape-measure:
+  anchor-set: "تم تحديد نقطة بداية شريط القياس."
+  anchor-cleared: "تم محو نقطة بداية شريط القياس."
+  measurement: "القياس: X=%x% Y=%y% Z=%z% الإجمالي=%total%"
+
+watering-can:
+  soil-wet: "هذه التربة تصبح مبللة جدًا!"
+  fire-out: "انطفأت النار!"

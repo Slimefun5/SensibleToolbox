@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Τα αντικείμενα του Sensible Toolbox δεν χωρούν σε ένα κανονικό αμόνι."
+
+auto-builder:
+  land-marker-unset: "Για το %item% δεν έχει οριστεί τοποθεσία!"
+
+block:
+  no-room-for-sign: "Δεν υπάρχει χώρος εκεί για πινακίδα ετικέτας!"
+
+command:
+  player-only: "Αυτή η εντολή δεν μπορεί να εκτελεστεί από την κονσόλα."
+  charge-nothing-suitable: "Δεν υπάρχει κάτι κατάλληλο για φόρτιση."
+  charge-range: "Πρέπει να είναι στο εύρος 0-%max%"
+  charged: "%item% φορτίστηκε στο %charge%"
+  debug-level-positive: "Το επίπεδο αποσφαλμάτωσης πρέπει να είναι >= 0"
+  debug-enabled: "Η αποσφαλμάτωση ενεργοποιήθηκε (επίπεδο %level%)"
+  debug-disabled: "Η αποσφαλμάτωση απενεργοποιήθηκε"
+  friend-added: "Ο %player% είναι τώρα φίλος με τον %friend%"
+  friend-removed: "Ο %player% δεν είναι πια φίλος με τον %friend%"
+  give-invalid-player: "Ο %name% δεν είναι έγκυρος παίκτης ή δεν είναι συνδεδεμένος!"
+  give-invalid-amount: "Το %amount% δεν είναι έγκυρη ποσότητα!"
+  give-received: "Έλαβες %amount% x %item%."
+  possible-matches-one: "%count% πιθανή αντίστοιχη εντολή στο %desc%:"
+  possible-matches-many: "%count% πιθανές αντίστοιχες εντολές στο %desc%:"
+  recipe-book-needed: "Για να ψάξεις συνταγές πρέπει να έχεις %item% στις αποσκευές σου!"
+  redrawn-one: "Ξανασχεδιάστηκε %count% μπλοκ STB."
+  redrawn-many: "Ξανασχεδιάστηκαν %count% μπλοκ STB."
+  data-saved: "Τα αποθηκευμένα δεδομένα STB γράφτηκαν"
+  setcfg-set: "Το %key% είναι τώρα %value%"
+  setcfg-reload: "Οι αλλαγές θα ισχύσουν μόλις ο διακομιστής ξαναφορτώσει ή επανεκκινήσει"
+  setcfg-list-keys: "Χρησιμοποίησε /stb getcfg για να δεις όλα τα έγκυρα κλειδιά"
+  show-dumped: "Τα δεδομένα αντικειμένου STB γράφτηκαν στο %file%"
+  validated-one: "Διορθώθηκε %count% μπλοκ στον κόσμο %world%"
+  validated-many: "Διορθώθηκαν %count% μπλοκ στον κόσμο %world%"
+
+ender-leash:
+  leashed-animal: "Δεν μπορείς να αιχμαλωτίσεις δεμένο ζώο!"
+  not-your-animal: "Αυτό το ζώο ανήκει σε κάποιον άλλο!"
+  already-captured: "Το %item% έχει ήδη ένα αιχμαλωτισμένο ζώο"
+
+gui:
+  private: "Το %item% είναι ιδιωτικό!"
+
+hoe:
+  mixed-items: "Ανάμεικτα αντικείμενα στο σακί με τους σπόρους"
+  non-seed-items: "Αντικείμενα που δεν είναι σπόροι στο σακί"
+
+machine:
+  storage-full: "Το %item% είναι γεμάτο."
+  storage-no-charge: "Το %item% δεν έχει αρκετό φορτίο για να δεχτεί αντικείμενα."
+  upgrade-not-accepted: "Το %machine% δεν δέχεται το %upgrade%"
+  ejector-needs-direction: "Η βελτίωση εξαγωγής πρέπει να έχει ορισμένη κατεύθυνση."
+
+recipe-book:
+  missing: "Λείπει: %item%"
+  fabricated-free: "Κατασκευάστηκε (δωρεάν): %item%"
+  fabricated: "Κατασκευάστηκε: %item%"
+
+tape-measure:
+  anchor-set: "Το σημείο αφετηρίας της μεζούρας ορίστηκε."
+  anchor-cleared: "Το σημείο αφετηρίας της μεζούρας καθαρίστηκε."
+  measurement: "Μέτρηση: X=%x% Y=%y% Z=%z% σύνολο=%total%"
+
+watering-can:
+  soil-wet: "Αυτό το χώμα γίνεται πολύ υγρό!"
+  fire-out: "Η φωτιά έσβησε!"

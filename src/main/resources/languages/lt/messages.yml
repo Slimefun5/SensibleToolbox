@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox daiktai netelpa į paprastą priekalą."
+
+auto-builder:
+  land-marker-unset: "%item% nenustatyta vieta!"
+
+block:
+  no-room-for-sign: "Tenai nėra vietos užrašų lentelei!"
+
+command:
+  player-only: "Šios komandos negalima vykdyti iš konsolės."
+  charge-nothing-suitable: "Nėra ko įkrauti."
+  charge-range: "Turi būti intervale 0-%max%"
+  charged: "%item% įkrautas iki %charge%"
+  debug-level-positive: "Derinimo lygis turi būti >= 0"
+  debug-enabled: "Derinimas įjungtas (lygis %level%)"
+  debug-disabled: "Derinimas išjungtas"
+  friend-added: "%player% dabar draugauja su %friend%"
+  friend-removed: "%player% nebedraugauja su %friend%"
+  give-invalid-player: "%name% nėra tinkamas žaidėjas arba nėra prisijungęs!"
+  give-invalid-amount: "%amount% nėra tinkamas kiekis!"
+  give-received: "Gavai %amount% x %item%."
+  possible-matches-one: "%count% galima atitinkanti komanda %desc%:"
+  possible-matches-many: "%count% galimų atitinkančių komandų %desc%:"
+  recipe-book-needed: "Kad galėtum ieškoti receptų, turi turėti %item% savo daiktuose!"
+  redrawn-one: "Perbrėžtas %count% STB blokas."
+  redrawn-many: "Perbrėžta %count% STB blokų."
+  data-saved: "Išsaugoti STB duomenys įrašyti"
+  setcfg-set: "%key% dabar yra %value%"
+  setcfg-reload: "Pakeitimai įsigalios perkrovus arba iš naujo paleidus serverį"
+  setcfg-list-keys: "Naudok /stb getcfg visiems tinkamiems raktams išvardyti"
+  show-dumped: "STB daikto duomenys įrašyti į %file%"
+  validated-one: "Pataisytas %count% blokas pasaulyje %world%"
+  validated-many: "Pataisyta %count% blokų pasaulyje %world%"
+
+ender-leash:
+  leashed-animal: "Pavadėliu pririšto gyvūno sugauti negalima!"
+  not-your-animal: "Šis gyvūnas priklauso kitam!"
+  already-captured: "%item% jau turi sugautą gyvūną"
+
+gui:
+  private: "%item% yra privatus!"
+
+hoe:
+  mixed-items: "Sumišę daiktai sėklų maiše?"
+  non-seed-items: "Daiktai, kurie nėra sėklos, maiše?"
+
+machine:
+  storage-full: "%item% pilnas."
+  storage-no-charge: "%item% turi per mažai įkrovos, kad priimtų daiktus."
+  upgrade-not-accepted: "%machine% nepriima %upgrade%"
+  ejector-needs-direction: "Išmetimo patobulinimui reikia nustatyti kryptį."
+
+recipe-book:
+  missing: "Trūksta: %item%"
+  fabricated-free: "Pagaminta (nemokamai): %item%"
+  fabricated: "Pagaminta: %item%"
+
+tape-measure:
+  anchor-set: "Ruletės atskaitos taškas nustatytas."
+  anchor-cleared: "Ruletės atskaitos taškas išvalytas."
+  measurement: "Matavimas: X=%x% Y=%y% Z=%z% iš viso=%total%"
+
+watering-can:
+  soil-wet: "Ši žemė tampa labai šlapia!"
+  fire-out: "Ugnis užgesinta!"

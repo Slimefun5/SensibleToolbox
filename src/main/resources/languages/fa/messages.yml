@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "چیزهای Sensible Toolbox در سندان معمولی جا نمی‌شوند."
+
+auto-builder:
+  land-marker-unset: "برای %item% مکانی تعیین نشده است!"
+
+block:
+  no-room-for-sign: "آنجا جایی برای تختهٔ برچسب نیست!"
+
+command:
+  player-only: "این فرمان را نمی‌توان از کنسول اجرا کرد."
+  charge-nothing-suitable: "چیز مناسبی برای شارژ نیست."
+  charge-range: "باید در بازهٔ 0-%max% باشد"
+  charged: "%item% تا %charge% شارژ شد"
+  debug-level-positive: "سطح اشکال‌زدایی باید >= 0 باشد"
+  debug-enabled: "اشکال‌زدا روشن شد (سطح %level%)"
+  debug-disabled: "اشکال‌زدا خاموش شد"
+  friend-added: "%player% اکنون با %friend% دوست است"
+  friend-removed: "%player% دیگر با %friend% دوست نیست"
+  give-invalid-player: "%name% بازیکن معتبری نیست یا آنلاین نیست!"
+  give-invalid-amount: "%amount% مقدار معتبری نیست!"
+  give-received: "تو %amount% x %item% دریافت کردی."
+  possible-matches-one: "%count% فرمان همخوان ممکن در %desc%:"
+  possible-matches-many: "%count% فرمان همخوان ممکن در %desc%:"
+  recipe-book-needed: "برای جست‌وجوی دستورهای ساخت باید %item% در کوله‌ات باشد!"
+  redrawn-one: "%count% بلوک STB دوباره کشیده شد."
+  redrawn-many: "%count% بلوک STB دوباره کشیده شدند."
+  data-saved: "دادهٔ ماندگار STB نوشته شد"
+  setcfg-set: "%key% اکنون %value% است"
+  setcfg-reload: "تغییرات پس از بارگذاری دوباره یا راه‌اندازی دوبارهٔ سرور اعمال می‌شوند"
+  setcfg-list-keys: "برای فهرست همهٔ کلیدهای معتبر از /stb getcfg استفاده کن"
+  show-dumped: "دادهٔ چیز STB در %file% نوشته شد"
+  validated-one: "%count% بلوک در جهان %world% درست شد"
+  validated-many: "%count% بلوک در جهان %world% درست شدند"
+
+ender-leash:
+  leashed-animal: "جانوری که با بند بسته شده را نمی‌توان گرفت!"
+  not-your-animal: "این جانور از آن کسی دیگر است!"
+  already-captured: "%item% از قبل یک جانور گرفته‌شده دارد"
+
+gui:
+  private: "%item% خصوصی است!"
+
+hoe:
+  mixed-items: "چیزهای مخلوط در کیسهٔ بذر؟"
+  non-seed-items: "چیزهایی که بذر نیستند در کیسه؟"
+
+machine:
+  storage-full: "%item% پر است."
+  storage-no-charge: "شارژ %item% برای پذیرش چیزها کافی نیست."
+  upgrade-not-accepted: "%machine% چیز %upgrade% را نمی‌پذیرد"
+  ejector-needs-direction: "برای ارتقای پرتاب‌کننده باید جهتی تعیین شود."
+
+recipe-book:
+  missing: "کم است: %item%"
+  fabricated-free: "ساخته شد (رایگان): %item%"
+  fabricated: "ساخته شد: %item%"
+
+tape-measure:
+  anchor-set: "نقطهٔ آغاز متر نواری تعیین شد."
+  anchor-cleared: "نقطهٔ آغاز متر نواری پاک شد."
+  measurement: "اندازه: X=%x% Y=%y% Z=%z% مجموع=%total%"
+
+watering-can:
+  soil-wet: "این خاک دارد خیلی خیس می‌شود!"
+  fire-out: "آتش خاموش شد!"

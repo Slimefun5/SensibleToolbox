@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "A Sensible Toolbox tárgyai nem férnek bele egy közönséges üllőbe."
+
+auto-builder:
+  land-marker-unset: "A %item% nevű tárgyhoz nincs hely beállítva!"
+
+block:
+  no-room-for-sign: "Ott nincs hely egy címketáblának!"
+
+command:
+  player-only: "Ez a parancs nem futtatható a konzolból."
+  charge-nothing-suitable: "Nincs mit feltölteni."
+  charge-range: "0 és %max% között kell lennie"
+  charged: "%item% feltöltve: %charge%"
+  debug-level-positive: "A hibakeresési szintnek >= 0 kell lennie"
+  debug-enabled: "Hibakereső bekapcsolva (szint: %level%)"
+  debug-disabled: "Hibakereső kikapcsolva"
+  friend-added: "%player% mostantól %friend% barátja"
+  friend-removed: "%player% többé nem %friend% barátja"
+  give-invalid-player: "%name% nem érvényes játékos vagy nincs fent!"
+  give-invalid-amount: "%amount% nem érvényes mennyiség!"
+  give-received: "Kaptál %amount% x %item%."
+  possible-matches-one: "%count% lehetséges találat a %desc% parancsai közül:"
+  possible-matches-many: "%count% lehetséges találat a %desc% parancsai közül:"
+  recipe-book-needed: "A receptek kereséséhez %item% kell legyen a tárgylistádban!"
+  redrawn-one: "%count% STB blokk újrarajzolva."
+  redrawn-many: "%count% STB blokk újrarajzolva."
+  data-saved: "A megőrzött STB adatok elmentve"
+  setcfg-set: "%key% mostantól %value%"
+  setcfg-reload: "A változások a szerver újratöltésekor vagy újraindításakor lépnek életbe"
+  setcfg-list-keys: "A /stb getcfg kiírja az összes érvényes kulcsot"
+  show-dumped: "Az STB tárgyadatok ide íródtak: %file%"
+  validated-one: "%count% blokk kijavítva a %world% világban"
+  validated-many: "%count% blokk kijavítva a %world% világban"
+
+ender-leash:
+  leashed-animal: "Megkötött állatot nem lehet befogni!"
+  not-your-animal: "Ez az állat valaki máshoz tartozik!"
+  already-captured: "%item% már tartalmaz egy befogott állatot"
+
+gui:
+  private: "%item% magánhasználatú!"
+
+hoe:
+  mixed-items: "Vegyes tárgyak a magtartóban?"
+  non-seed-items: "Nem maghoz tartozó tárgyak a magtartóban?"
+
+machine:
+  storage-full: "%item% megtelt."
+  storage-no-charge: "%item% töltése túl kevés ahhoz, hogy tárgyakat fogadjon."
+  upgrade-not-accepted: "%machine% nem fogadja el a %upgrade% nevű tárgyat"
+  ejector-needs-direction: "A kilökő fejlesztéshez irányt kell beállítani."
+
+recipe-book:
+  missing: "Hiányzik: %item%"
+  fabricated-free: "Elkészítve (ingyen): %item%"
+  fabricated: "Elkészítve: %item%"
+
+tape-measure:
+  anchor-set: "A mérőszalag kezdőpontja beállítva."
+  anchor-cleared: "A mérőszalag kezdőpontja törölve."
+  measurement: "Mérés: X=%x% Y=%y% Z=%z% összesen=%total%"
+
+watering-can:
+  soil-wet: "Ez a föld nagyon átnedvesedik!"
+  fire-out: "A tűz kialudt!"

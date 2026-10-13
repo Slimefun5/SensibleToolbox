@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Gegenstände aus Sensible Toolbox passen nicht in einen normalen Amboss."
+
+auto-builder:
+  land-marker-unset: "Für %item% ist kein Ort festgelegt!"
+
+block:
+  no-room-for-sign: "Dort ist kein Platz für ein Beschriftungsschild!"
+
+command:
+  player-only: "Dieser Befehl kann nicht von der Konsole ausgeführt werden."
+  charge-nothing-suitable: "Nichts Passendes zum Aufladen."
+  charge-range: "Muss im Bereich 0-%max% liegen"
+  charged: "%item% auf %charge% aufgeladen"
+  debug-level-positive: "Die Debug-Stufe muss >= 0 sein"
+  debug-enabled: "Debugger aktiviert (Stufe %level%)"
+  debug-disabled: "Debugger deaktiviert"
+  friend-added: "%player% ist jetzt mit %friend% befreundet"
+  friend-removed: "%player% ist nicht mehr mit %friend% befreundet"
+  give-invalid-player: "%name% ist kein gültiger Spieler oder nicht online!"
+  give-invalid-amount: "%amount% ist keine gültige Menge!"
+  give-received: "Du hast %amount% x %item% erhalten."
+  possible-matches-one: "%count% möglicher passender Befehl in %desc%:"
+  possible-matches-many: "%count% mögliche passende Befehle in %desc%:"
+  recipe-book-needed: "Du musst %item% im Inventar haben, um nach Rezepten zu suchen!"
+  redrawn-one: "%count% STB-Block neu gezeichnet."
+  redrawn-many: "%count% STB-Blöcke neu gezeichnet."
+  data-saved: "Die gespeicherten STB-Daten wurden gesichert"
+  setcfg-set: "%key% ist jetzt auf %value% gesetzt"
+  setcfg-reload: "Die Änderungen werden wirksam, wenn der Server neu geladen oder neu gestartet wird"
+  setcfg-list-keys: "Nutze /stb getcfg, um alle gültigen Schlüssel aufzulisten"
+  show-dumped: "Die STB-Gegenstandsdaten wurden nach %file% geschrieben"
+  validated-one: "%count% Block in der Welt %world% berichtigt"
+  validated-many: "%count% Blöcke in der Welt %world% berichtigt"
+
+ender-leash:
+  leashed-animal: "Ein angeleintes Tier kann nicht eingefangen werden!"
+  not-your-animal: "Dieses Tier gehört jemand anderem!"
+  already-captured: "%item% hat schon ein eingefangenes Tier"
+
+gui:
+  private: "%item% ist privat!"
+
+hoe:
+  mixed-items: "Gemischte Gegenstände im Saatbeutel?"
+  non-seed-items: "Gegenstände ohne Saatgut im Saatbeutel?"
+
+machine:
+  storage-full: "%item% ist voll."
+  storage-no-charge: "%item% hat zu wenig Ladung, um Gegenstände anzunehmen."
+  upgrade-not-accepted: "%upgrade% wird von %machine% nicht angenommen"
+  ejector-needs-direction: "Für die Auswurf-Verbesserung muss eine Richtung festgelegt sein."
+
+recipe-book:
+  missing: "Fehlt: %item%"
+  fabricated-free: "Hergestellt (kostenlos): %item%"
+  fabricated: "Hergestellt: %item%"
+
+tape-measure:
+  anchor-set: "Ankerpunkt des Maßbands gesetzt."
+  anchor-cleared: "Ankerpunkt des Maßbands gelöscht."
+  measurement: "Messung: X=%x% Y=%y% Z=%z% gesamt=%total%"
+
+watering-can:
+  soil-wet: "Dieser Boden wird sehr nass!"
+  fire-out: "Das Feuer ist aus!"

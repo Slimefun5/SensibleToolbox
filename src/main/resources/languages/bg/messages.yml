@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Предметите от Sensible Toolbox не се побират в обикновена наковалня."
+
+auto-builder:
+  land-marker-unset: "За %item% не е зададено местоположение!"
+
+block:
+  no-room-for-sign: "Там няма място за надписна табела!"
+
+command:
+  player-only: "Тази команда не може да се изпълни от конзолата."
+  charge-nothing-suitable: "Няма нищо подходящо за зареждане."
+  charge-range: "Трябва да е в диапазона 0-%max%"
+  charged: "%item% е зареден до %charge%"
+  debug-level-positive: "Нивото на дебъгване трябва да е >= 0"
+  debug-enabled: "Дебъгерът е включен (ниво %level%)"
+  debug-disabled: "Дебъгерът е изключен"
+  friend-added: "%player% вече е приятел с %friend%"
+  friend-removed: "%player% вече не е приятел с %friend%"
+  give-invalid-player: "%name% не е валиден играч или не е онлайн!"
+  give-invalid-amount: "%amount% не е валидно количество!"
+  give-received: "Получихте %amount% x %item%."
+  possible-matches-one: "%count% възможна съвпадаща команда в %desc%:"
+  possible-matches-many: "%count% възможни съвпадащи команди в %desc%:"
+  recipe-book-needed: "За да търсите рецепти, трябва да имате %item% в инвентара си!"
+  redrawn-one: "Преначертан е %count% блок STB."
+  redrawn-many: "Преначертани са %count% блока STB."
+  data-saved: "Запазените данни на STB бяха записани"
+  setcfg-set: "%key% вече е зададен на %value%"
+  setcfg-reload: "Промените ще влязат в сила след презареждане или рестартиране на сървъра"
+  setcfg-list-keys: "Използвайте /stb getcfg, за да изведете всички валидни ключове"
+  show-dumped: "Данните за предмета STB бяха записани в %file%"
+  validated-one: "Поправен е %count% блок в света %world%"
+  validated-many: "Поправени са %count% блока в света %world%"
+
+ender-leash:
+  leashed-animal: "Не можете да заловите животно с каишка!"
+  not-your-animal: "Това животно принадлежи на друг!"
+  already-captured: "%item% вече има заловено животно"
+
+gui:
+  private: "%item% е частен!"
+
+hoe:
+  mixed-items: "Смесени предмети в чувала със семена?"
+  non-seed-items: "Предмети, които не са семена, в чувала?"
+
+machine:
+  storage-full: "%item% е пълен."
+  storage-no-charge: "%item% няма достатъчно заряд, за да приема предмети."
+  upgrade-not-accepted: "%machine% не приема %upgrade%"
+  ejector-needs-direction: "Подобрението за изхвърляне трябва да има зададена посока."
+
+recipe-book:
+  missing: "Липсва: %item%"
+  fabricated-free: "Изработено (безплатно): %item%"
+  fabricated: "Изработено: %item%"
+
+tape-measure:
+  anchor-set: "Началната точка на рулетката е зададена."
+  anchor-cleared: "Началната точка на рулетката е изчистена."
+  measurement: "Измерване: X=%x% Y=%y% Z=%z% общо=%total%"
+
+watering-can:
+  soil-wet: "Тази пръст става много мокра!"
+  fire-out: "Огънят е изгасен!"

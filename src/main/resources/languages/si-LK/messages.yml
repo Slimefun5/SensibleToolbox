@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox භාණ්ඩ සාමාන්‍ය කඩතුරාවකට නොගැළපේ."
+
+auto-builder:
+  land-marker-unset: "%item% සඳහා ස්ථානයක් සකසා නැත!"
+
+block:
+  no-room-for-sign: "එහි නාම පුවරුවක් තැබීමට ඉඩ නැත!"
+
+command:
+  player-only: "මෙම විධානය කොන්සෝලයෙන් ක්‍රියාත්මක කළ නොහැක."
+  charge-nothing-suitable: "ආරෝපණය කිරීමට සුදුසු කිසිවක් නැත."
+  charge-range: "0-%max% පරාසයේ විය යුතුය"
+  charged: "%item% %charge% දක්වා ආරෝපණය විය"
+  debug-level-positive: "දෝෂ නිවාරණ මට්ටම >= 0 විය යුතුය"
+  debug-enabled: "දෝෂ නිවාරකය සක්‍රීය විය (මට්ටම %level%)"
+  debug-disabled: "දෝෂ නිවාරකය අක්‍රීය විය"
+  friend-added: "%player% දැන් %friend% සමඟ මිතුරු වේ"
+  friend-removed: "%player% තවදුරටත් %friend% සමඟ මිතුරු නොවේ"
+  give-invalid-player: "%name% වලංගු ක්‍රීඩකයෙක් නොවේ හෝ සම්බන්ධ වී නැත!"
+  give-invalid-amount: "%amount% වලංගු ගණනක් නොවේ!"
+  give-received: "ඔබට %amount% x %item% ලැබුණා."
+  possible-matches-one: "%desc% තුළ ගැළපෙන හැකි විධාන %count%:"
+  possible-matches-many: "%desc% තුළ ගැළපෙන හැකි විධාන %count%:"
+  recipe-book-needed: "වට්ටෝරු සොයන්නට ඔබේ බෑගයේ %item% තිබිය යුතුය!"
+  redrawn-one: "STB කැට %count% නැවත ඇඳින."
+  redrawn-many: "STB කැට %count% නැවත ඇඳින."
+  data-saved: "ගබඩා කළ STB දත්ත ලියන ලදි"
+  setcfg-set: "%key% දැන් %value% වේ"
+  setcfg-reload: "සේවාදායකය නැවත පූරණය කළ විට හෝ නැවත ආරම්භ කළ විට වෙනස්කම් බලපැවැත්වේ"
+  setcfg-list-keys: "වලංගු යතුරු සියල්ල ලැයිස්තුගත කිරීමට /stb getcfg භාවිත කරන්න"
+  show-dumped: "STB භාණ්ඩ දත්ත %file% වෙත ලියන ලදි"
+  validated-one: "%world% ලෝකයේ කැට %count% නිවැරදි කරන ලදි"
+  validated-many: "%world% ලෝකයේ කැට %count% නිවැරදි කරන ලදි"
+
+ender-leash:
+  leashed-animal: "ලනුවෙන් බැඳි සතෙකු අල්ලා ගත නොහැක!"
+  not-your-animal: "මෙම සතා වෙනත් කෙනෙකුට අයත්!"
+  already-captured: "%item% තුළ දැනටමත් අල්ලාගත් සතෙකු ඇත"
+
+gui:
+  private: "%item% පුද්ගලිකයි!"
+
+hoe:
+  mixed-items: "බීජ මල්ලේ මිශ්‍ර භාණ්ඩ තිබේද?"
+  non-seed-items: "මල්ලේ බීජ නොවන භාණ්ඩ තිබේද?"
+
+machine:
+  storage-full: "%item% පිරී ඇත."
+  storage-no-charge: "භාණ්ඩ පිළිගැනීමට %item% හි ආරෝපණය ප්‍රමාණවත් නැත."
+  upgrade-not-accepted: "%machine% %upgrade% පිළිගන්නේ නැත"
+  ejector-needs-direction: "විසි කරන උසස් කිරීමට දිශාවක් සැකසිය යුතුය."
+
+recipe-book:
+  missing: "නැත: %item%"
+  fabricated-free: "නිපදවන ලදි (නොමිලේ): %item%"
+  fabricated: "නිපදවන ලදි: %item%"
+
+tape-measure:
+  anchor-set: "මනින පටියේ ආරම්භක ලක්ෂ්‍යය සකසන ලදි."
+  anchor-cleared: "මනින පටියේ ආරම්භක ලක්ෂ්‍යය මකන ලදි."
+  measurement: "මැනීම: X=%x% Y=%y% Z=%z% එකතුව=%total%"
+
+watering-can:
+  soil-wet: "මෙම පස ඉතා තෙත් වෙමින් සිටී!"
+  fire-out: "ගින්න නිවී ගියා!"

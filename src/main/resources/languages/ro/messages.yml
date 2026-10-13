@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Obiectele din Sensible Toolbox nu încap într-o nicovală obișnuită."
+
+auto-builder:
+  land-marker-unset: "%item% nu are o locație setată!"
+
+block:
+  no-room-for-sign: "Nu e loc acolo pentru o plăcuță de etichetă!"
+
+command:
+  player-only: "Această comandă nu poate fi rulată din consolă."
+  charge-nothing-suitable: "Nimic potrivit de încărcat."
+  charge-range: "Trebuie să fie în intervalul 0-%max%"
+  charged: "%item% încărcat la %charge%"
+  debug-level-positive: "Nivelul de depanare trebuie să fie >= 0"
+  debug-enabled: "Depanator activat (nivelul %level%)"
+  debug-disabled: "Depanator dezactivat"
+  friend-added: "%player% este acum prieten cu %friend%"
+  friend-removed: "%player% nu mai este prieten cu %friend%"
+  give-invalid-player: "%name% nu este un jucător valid sau nu este conectat!"
+  give-invalid-amount: "%amount% nu este o cantitate validă!"
+  give-received: "Ai primit %amount% x %item%."
+  possible-matches-one: "%count% comandă potrivită posibilă în %desc%:"
+  possible-matches-many: "%count% comenzi potrivite posibile în %desc%:"
+  recipe-book-needed: "Trebuie să ai %item% în inventar pentru a căuta rețete!"
+  redrawn-one: "A fost redesenat %count% bloc STB."
+  redrawn-many: "Au fost redesenate %count% blocuri STB."
+  data-saved: "Datele persistente STB au fost salvate"
+  setcfg-set: "%key% este acum setat la %value%"
+  setcfg-reload: "Modificările vor avea efect la reîncărcarea sau repornirea serverului"
+  setcfg-list-keys: "Folosește /stb getcfg pentru a lista toate cheile valide"
+  show-dumped: "Datele obiectului STB au fost scrise în %file%"
+  validated-one: "A fost reparat %count% bloc în lumea %world%"
+  validated-many: "Au fost reparate %count% blocuri în lumea %world%"
+
+ender-leash:
+  leashed-animal: "Nu poți captura un animal legat!"
+  not-your-animal: "Acest animal îi aparține altcuiva!"
+  already-captured: "%item% are deja un animal capturat"
+
+gui:
+  private: "%item% este privat!"
+
+hoe:
+  mixed-items: "Obiecte amestecate în sacul de semințe?"
+  non-seed-items: "Obiecte care nu sunt semințe în sac?"
+
+machine:
+  storage-full: "%item% este plin."
+  storage-no-charge: "%item% nu are destulă încărcare pentru a accepta obiecte."
+  upgrade-not-accepted: "%machine% nu acceptă %upgrade%"
+  ejector-needs-direction: "Îmbunătățirea de ejectare trebuie să aibă o direcție configurată."
+
+recipe-book:
+  missing: "Lipsește: %item%"
+  fabricated-free: "Fabricat (gratuit): %item%"
+  fabricated: "Fabricat: %item%"
+
+tape-measure:
+  anchor-set: "Punctul de ancorare al ruletei a fost setat."
+  anchor-cleared: "Punctul de ancorare al ruletei a fost șters."
+  measurement: "Măsurătoare: X=%x% Y=%y% Z=%z% total=%total%"
+
+watering-can:
+  soil-wet: "Pământul acesta devine foarte ud!"
+  fire-out: "Focul s-a stins!"

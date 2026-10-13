@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Barang dari Sensible Toolbox tidak cocok di landasan biasa."
+
+auto-builder:
+  land-marker-unset: "%item% belum punya lokasi yang diatur!"
+
+block:
+  no-room-for-sign: "Tidak ada ruang untuk papan label di sana!"
+
+command:
+  player-only: "Perintah ini tidak bisa dijalankan dari konsol."
+  charge-nothing-suitable: "Tidak ada yang cocok untuk diisi daya."
+  charge-range: "Harus dalam rentang 0-%max%"
+  charged: "%item% diisi daya hingga %charge%"
+  debug-level-positive: "Tingkat awakutu harus >= 0"
+  debug-enabled: "Pengawakutu aktif (tingkat %level%)"
+  debug-disabled: "Pengawakutu nonaktif"
+  friend-added: "%player% sekarang berteman dengan %friend%"
+  friend-removed: "%player% sudah tidak berteman dengan %friend%"
+  give-invalid-player: "%name% bukan pemain yang valid atau tidak sedang daring!"
+  give-invalid-amount: "%amount% bukan jumlah yang valid!"
+  give-received: "Kamu menerima %amount% x %item%."
+  possible-matches-one: "%count% kemungkinan perintah yang cocok di %desc%:"
+  possible-matches-many: "%count% kemungkinan perintah yang cocok di %desc%:"
+  recipe-book-needed: "Kamu harus punya %item% di inventarismu untuk mencari resep!"
+  redrawn-one: "%count% blok STB digambar ulang."
+  redrawn-many: "%count% blok STB digambar ulang."
+  data-saved: "Data STB yang disimpan telah ditulis"
+  setcfg-set: "%key% sekarang diatur ke %value%"
+  setcfg-reload: "Perubahan akan berlaku saat server dimuat ulang atau dinyalakan ulang"
+  setcfg-list-keys: "Gunakan /stb getcfg untuk mendaftar semua kunci yang valid"
+  show-dumped: "Data barang STB ditulis ke %file%"
+  validated-one: "%count% blok diperbaiki di dunia %world%"
+  validated-many: "%count% blok diperbaiki di dunia %world%"
+
+ender-leash:
+  leashed-animal: "Hewan yang ditali tidak bisa ditangkap!"
+  not-your-animal: "Hewan ini milik orang lain!"
+  already-captured: "%item% sudah berisi hewan tangkapan"
+
+gui:
+  private: "%item% bersifat pribadi!"
+
+hoe:
+  mixed-items: "Barang campuran di kantong benih?"
+  non-seed-items: "Barang yang bukan benih di kantong?"
+
+machine:
+  storage-full: "%item% penuh."
+  storage-no-charge: "%item% tidak punya cukup daya untuk menerima barang."
+  upgrade-not-accepted: "%machine% tidak menerima %upgrade%"
+  ejector-needs-direction: "Peningkatan pelontar harus punya arah yang diatur."
+
+recipe-book:
+  missing: "Kurang: %item%"
+  fabricated-free: "Dibuat (gratis): %item%"
+  fabricated: "Dibuat: %item%"
+
+tape-measure:
+  anchor-set: "Titik acuan meteran telah diatur."
+  anchor-cleared: "Titik acuan meteran telah dihapus."
+  measurement: "Pengukuran: X=%x% Y=%y% Z=%z% total=%total%"
+
+watering-can:
+  soil-wet: "Tanah ini jadi sangat basah!"
+  fire-out: "Apinya sudah padam!"

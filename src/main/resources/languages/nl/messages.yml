@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Items van Sensible Toolbox passen niet in een gewoon aambeeld."
+
+auto-builder:
+  land-marker-unset: "Voor %item% is geen locatie ingesteld!"
+
+block:
+  no-room-for-sign: "Daar is geen ruimte voor een labelbord!"
+
+command:
+  player-only: "Dit commando kan niet vanaf de console worden uitgevoerd."
+  charge-nothing-suitable: "Niets geschikts om op te laden."
+  charge-range: "Moet tussen 0 en %max% liggen"
+  charged: "%item% opgeladen tot %charge%"
+  debug-level-positive: "Het debugniveau moet >= 0 zijn"
+  debug-enabled: "Debugger aan (niveau %level%)"
+  debug-disabled: "Debugger uit"
+  friend-added: "%player% is nu bevriend met %friend%"
+  friend-removed: "%player% is niet meer bevriend met %friend%"
+  give-invalid-player: "%name% is geen geldige speler of is niet online!"
+  give-invalid-amount: "%amount% is geen geldig aantal!"
+  give-received: "Je hebt %amount% x %item% ontvangen."
+  possible-matches-one: "%count% mogelijk passend commando in %desc%:"
+  possible-matches-many: "%count% mogelijke passende commando's in %desc%:"
+  recipe-book-needed: "Je moet %item% in je inventaris hebben om naar recepten te zoeken!"
+  redrawn-one: "%count% STB-blok opnieuw getekend."
+  redrawn-many: "%count% STB-blokken opnieuw getekend."
+  data-saved: "De opgeslagen STB-gegevens zijn bewaard"
+  setcfg-set: "%key% staat nu op %value%"
+  setcfg-reload: "De wijzigingen worden actief als de server herladen of herstart wordt"
+  setcfg-list-keys: "Gebruik /stb getcfg om alle geldige sleutels op te sommen"
+  show-dumped: "De STB-itemgegevens zijn naar %file% geschreven"
+  validated-one: "%count% blok in wereld %world% hersteld"
+  validated-many: "%count% blokken in wereld %world% hersteld"
+
+ender-leash:
+  leashed-animal: "Een aangelijnd dier kan niet gevangen worden!"
+  not-your-animal: "Dit dier is van iemand anders!"
+  already-captured: "%item% heeft al een gevangen dier"
+
+gui:
+  private: "%item% is privé!"
+
+hoe:
+  mixed-items: "Gemengde items in de zaadzak?"
+  non-seed-items: "Items die geen zaad zijn in de zak?"
+
+machine:
+  storage-full: "%item% is vol."
+  storage-no-charge: "%item% heeft te weinig lading om items aan te nemen."
+  upgrade-not-accepted: "%upgrade% wordt niet door %machine% aangenomen"
+  ejector-needs-direction: "Voor de uitwerpverbetering moet een richting ingesteld zijn."
+
+recipe-book:
+  missing: "Ontbreekt: %item%"
+  fabricated-free: "Gemaakt (gratis): %item%"
+  fabricated: "Gemaakt: %item%"
+
+tape-measure:
+  anchor-set: "Ankerpunt van het meetlint ingesteld."
+  anchor-cleared: "Ankerpunt van het meetlint gewist."
+  measurement: "Meting: X=%x% Y=%y% Z=%z% totaal=%total%"
+
+watering-can:
+  soil-wet: "Deze grond wordt heel nat!"
+  fire-out: "Het vuur is uit!"

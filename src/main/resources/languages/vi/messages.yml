@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Vật phẩm của Sensible Toolbox không vừa với đe thường."
+
+auto-builder:
+  land-marker-unset: "%item% chưa được đặt vị trí!"
+
+block:
+  no-room-for-sign: "Ở đó không có chỗ cho biển nhãn!"
+
+command:
+  player-only: "Lệnh này không thể chạy từ bảng điều khiển."
+  charge-nothing-suitable: "Không có gì phù hợp để sạc."
+  charge-range: "Phải nằm trong khoảng 0-%max%"
+  charged: "%item% đã được sạc đến %charge%"
+  debug-level-positive: "Mức gỡ lỗi phải >= 0"
+  debug-enabled: "Đã bật trình gỡ lỗi (mức %level%)"
+  debug-disabled: "Đã tắt trình gỡ lỗi"
+  friend-added: "%player% giờ là bạn với %friend%"
+  friend-removed: "%player% không còn là bạn với %friend%"
+  give-invalid-player: "%name% không phải người chơi hợp lệ hoặc không trực tuyến!"
+  give-invalid-amount: "%amount% không phải số lượng hợp lệ!"
+  give-received: "Bạn đã nhận %amount% x %item%."
+  possible-matches-one: "%count% lệnh có thể khớp trong %desc%:"
+  possible-matches-many: "%count% lệnh có thể khớp trong %desc%:"
+  recipe-book-needed: "Bạn phải có %item% trong túi để tìm công thức!"
+  redrawn-one: "Đã vẽ lại %count% khối STB."
+  redrawn-many: "Đã vẽ lại %count% khối STB."
+  data-saved: "Đã ghi dữ liệu STB được lưu"
+  setcfg-set: "%key% giờ được đặt thành %value%"
+  setcfg-reload: "Các thay đổi sẽ có hiệu lực khi máy chủ được tải lại hoặc khởi động lại"
+  setcfg-list-keys: "Dùng /stb getcfg để liệt kê mọi khóa hợp lệ"
+  show-dumped: "Đã ghi dữ liệu vật phẩm STB vào %file%"
+  validated-one: "Đã sửa %count% khối trong thế giới %world%"
+  validated-many: "Đã sửa %count% khối trong thế giới %world%"
+
+ender-leash:
+  leashed-animal: "Không thể bắt con vật đang bị buộc dây!"
+  not-your-animal: "Con vật này thuộc về người khác!"
+  already-captured: "%item% đã có một con vật bị bắt"
+
+gui:
+  private: "%item% là riêng tư!"
+
+hoe:
+  mixed-items: "Có vật phẩm lẫn lộn trong túi hạt giống không"
+  non-seed-items: "Có vật phẩm không phải hạt giống trong túi không"
+
+machine:
+  storage-full: "%item% đã đầy."
+  storage-no-charge: "%item% không đủ điện để nhận vật phẩm."
+  upgrade-not-accepted: "%machine% không nhận %upgrade%"
+  ejector-needs-direction: "Nâng cấp bộ đẩy ra phải được đặt một hướng."
+
+recipe-book:
+  missing: "Thiếu: %item%"
+  fabricated-free: "Đã chế tạo (miễn phí): %item%"
+  fabricated: "Đã chế tạo: %item%"
+
+tape-measure:
+  anchor-set: "Đã đặt điểm mốc của thước dây."
+  anchor-cleared: "Đã xóa điểm mốc của thước dây."
+  measurement: "Đo: X=%x% Y=%y% Z=%z% tổng=%total%"
+
+watering-can:
+  soil-wet: "Đất này đang trở nên rất ướt!"
+  fire-out: "Lửa đã tắt!"

@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Предметы из Sensible Toolbox не подходят для обычной наковальни."
+
+auto-builder:
+  land-marker-unset: "У %item% не задано местоположение!"
+
+block:
+  no-room-for-sign: "Там нет места для таблички с подписью!"
+
+command:
+  player-only: "Эту команду нельзя выполнить из консоли."
+  charge-nothing-suitable: "Нечего заряжать."
+  charge-range: "Должно быть в диапазоне 0-%max%"
+  charged: "%item% заряжен до %charge%"
+  debug-level-positive: "Уровень отладки должен быть >= 0"
+  debug-enabled: "Отладчик включён (уровень %level%)"
+  debug-disabled: "Отладчик выключен"
+  friend-added: "%player% теперь дружит с %friend%"
+  friend-removed: "%player% больше не дружит с %friend%"
+  give-invalid-player: "%name% не является игроком или не в сети!"
+  give-invalid-amount: "%amount% не является допустимым количеством!"
+  give-received: "Вы получили %amount% x %item%."
+  possible-matches-one: "%count% возможная подходящая команда в %desc%:"
+  possible-matches-many: "%count% возможных подходящих команд в %desc%:"
+  recipe-book-needed: "Чтобы искать рецепты, у вас в инвентаре должен быть %item%!"
+  redrawn-one: "Перерисован %count% блок STB."
+  redrawn-many: "Перерисовано %count% блоков STB."
+  data-saved: "Сохранённые данные STB записаны"
+  setcfg-set: "%key% теперь равен %value%"
+  setcfg-reload: "Изменения вступят в силу после перезагрузки или перезапуска сервера"
+  setcfg-list-keys: "Используйте /stb getcfg, чтобы вывести все допустимые ключи"
+  show-dumped: "Данные предмета STB записаны в %file%"
+  validated-one: "Исправлен %count% блок в мире %world%"
+  validated-many: "Исправлено %count% блоков в мире %world%"
+
+ender-leash:
+  leashed-animal: "Нельзя поймать животное на поводке!"
+  not-your-animal: "Это животное принадлежит кому-то другому!"
+  already-captured: "В %item% уже есть пойманное животное"
+
+gui:
+  private: "%item% закрыт для других!"
+
+hoe:
+  mixed-items: "В мешке с семенами разные предметы?"
+  non-seed-items: "В мешке предметы, которые не являются семенами?"
+
+machine:
+  storage-full: "%item% полон."
+  storage-no-charge: "У %item% слишком мало заряда, чтобы принимать предметы."
+  upgrade-not-accepted: "%machine% не принимает %upgrade%"
+  ejector-needs-direction: "Для улучшения выброса нужно задать направление."
+
+recipe-book:
+  missing: "Не хватает: %item%"
+  fabricated-free: "Изготовлено (бесплатно): %item%"
+  fabricated: "Изготовлено: %item%"
+
+tape-measure:
+  anchor-set: "Точка отсчёта рулетки задана."
+  anchor-cleared: "Точка отсчёта рулетки сброшена."
+  measurement: "Измерение: X=%x% Y=%y% Z=%z% всего=%total%"
+
+watering-can:
+  soil-wet: "Эта земля становится очень мокрой!"
+  fire-out: "Огонь потушен!"

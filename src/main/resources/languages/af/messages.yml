@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Items van Sensible Toolbox pas nie in 'n gewone aambeeld nie."
+
+auto-builder:
+  land-marker-unset: "%item% het geen ligging gestel nie!"
+
+block:
+  no-room-for-sign: "Daar is nie plek vir 'n etiketbord nie!"
+
+command:
+  player-only: "Hierdie bevel kan nie van die konsole geloop word nie."
+  charge-nothing-suitable: "Niks geskiks om te laai nie."
+  charge-range: "Moet in die reeks 0-%max% wees"
+  charged: "%item% gelaai tot %charge%"
+  debug-level-positive: "Die ontfoutvlak moet >= 0 wees"
+  debug-enabled: "Ontfouter aan (vlak %level%)"
+  debug-disabled: "Ontfouter af"
+  friend-added: "%player% is nou vriende met %friend%"
+  friend-removed: "%player% is nie meer vriende met %friend% nie"
+  give-invalid-player: "%name% is nie 'n geldige speler nie of is nie aanlyn nie!"
+  give-invalid-amount: "%amount% is nie 'n geldige hoeveelheid nie!"
+  give-received: "Jy het %amount% x %item% ontvang."
+  possible-matches-one: "%count% moontlike passende bevel in %desc%:"
+  possible-matches-many: "%count% moontlike passende bevele in %desc%:"
+  recipe-book-needed: "Jy moet %item% in jou voorraad hê om na resepte te soek!"
+  redrawn-one: "%count% STB-blok hergeteken."
+  redrawn-many: "%count% STB-blokke hergeteken."
+  data-saved: "Die gestoorde STB-data is geskryf"
+  setcfg-set: "%key% is nou op %value% gestel"
+  setcfg-reload: "Die veranderinge sal in werking tree as die bediener herlaai of herbegin word"
+  setcfg-list-keys: "Gebruik /stb getcfg om alle geldige sleutels te lys"
+  show-dumped: "Die STB-itemdata is na %file% geskryf"
+  validated-one: "%count% blok in die wêreld %world% reggemaak"
+  validated-many: "%count% blokke in die wêreld %world% reggemaak"
+
+ender-leash:
+  leashed-animal: "'n Dier aan 'n leiband kan nie gevang word nie!"
+  not-your-animal: "Hierdie dier behoort aan iemand anders!"
+  already-captured: "%item% het al 'n gevange dier"
+
+gui:
+  private: "%item% is privaat!"
+
+hoe:
+  mixed-items: "Gemengde items in die saadsak?"
+  non-seed-items: "Items wat nie saad is nie in die sak?"
+
+machine:
+  storage-full: "%item% is vol."
+  storage-no-charge: "%item% het te min lading om items te aanvaar."
+  upgrade-not-accepted: "%machine% aanvaar nie %upgrade% nie"
+  ejector-needs-direction: "Die uitwerpopgradering moet 'n rigting gestel hê."
+
+recipe-book:
+  missing: "Kort: %item%"
+  fabricated-free: "Vervaardig (gratis): %item%"
+  fabricated: "Vervaardig: %item%"
+
+tape-measure:
+  anchor-set: "Die maatband se ankerpunt is gestel."
+  anchor-cleared: "Die maatband se ankerpunt is uitgevee."
+  measurement: "Meting: X=%x% Y=%y% Z=%z% totaal=%total%"
+
+watering-can:
+  soil-wet: "Hierdie grond word baie nat!"
+  fire-out: "Die vuur is uit!"

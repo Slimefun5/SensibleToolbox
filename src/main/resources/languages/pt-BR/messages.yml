@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Os itens do Sensible Toolbox não cabem numa bigorna comum."
+
+auto-builder:
+  land-marker-unset: "%item% não tem uma localização definida!"
+
+block:
+  no-room-for-sign: "Não há espaço para colocar uma placa de etiqueta aí!"
+
+command:
+  player-only: "Este comando não pode ser executado pelo console."
+  charge-nothing-suitable: "Nada adequado para carregar."
+  charge-range: "Precisa estar entre 0 e %max%"
+  charged: "%item% carregado a %charge%"
+  debug-level-positive: "O nível de depuração precisa ser >= 0"
+  debug-enabled: "Depurador ativado (nível %level%)"
+  debug-disabled: "Depurador desativado"
+  friend-added: "%player% agora é amigo de %friend%"
+  friend-removed: "%player% não é mais amigo de %friend%"
+  give-invalid-player: "%name% não é um jogador válido ou não está online!"
+  give-invalid-amount: "%amount% não é uma quantidade válida!"
+  give-received: "Você recebeu %amount% x %item%."
+  possible-matches-one: "%count% comando correspondente possível em %desc%:"
+  possible-matches-many: "%count% comandos correspondentes possíveis em %desc%:"
+  recipe-book-needed: "Você precisa ter %item% no inventário para procurar receitas!"
+  redrawn-one: "%count% bloco STB redesenhado."
+  redrawn-many: "%count% blocos STB redesenhados."
+  data-saved: "Os dados persistentes do STB foram salvos"
+  setcfg-set: "%key% agora está definido como %value%"
+  setcfg-reload: "As mudanças farão efeito quando o servidor for recarregado ou reiniciado"
+  setcfg-list-keys: "Use /stb getcfg para listar todas as chaves válidas"
+  show-dumped: "Os dados do item STB foram escritos em %file%"
+  validated-one: "Foi corrigido %count% bloco no mundo %world%"
+  validated-many: "Foram corrigidos %count% blocos no mundo %world%"
+
+ender-leash:
+  leashed-animal: "Não é possível capturar um animal na coleira!"
+  not-your-animal: "Este animal pertence a outra pessoa!"
+  already-captured: "%item% já tem um animal capturado"
+
+gui:
+  private: "%item% é privado!"
+
+hoe:
+  mixed-items: "Itens misturados no saco de sementes?"
+  non-seed-items: "Itens que não são sementes no saco?"
+
+machine:
+  storage-full: "%item% está cheio."
+  storage-no-charge: "%item% não tem carga suficiente para aceitar itens."
+  upgrade-not-accepted: "%upgrade% não é aceito por %machine%"
+  ejector-needs-direction: "A melhoria de ejeção precisa ter uma direção configurada."
+
+recipe-book:
+  missing: "Falta: %item%"
+  fabricated-free: "Fabricado (grátis): %item%"
+  fabricated: "Fabricado: %item%"
+
+tape-measure:
+  anchor-set: "Ponto de ancoragem da trena definido."
+  anchor-cleared: "Ponto de ancoragem da trena apagado."
+  measurement: "Medição: X=%x% Y=%y% Z=%z% total=%total%"
+
+watering-can:
+  soil-wet: "Este solo está ficando muito molhado!"
+  fire-out: "O fogo apagou!"

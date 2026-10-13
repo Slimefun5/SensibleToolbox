@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolbox 的物品放不进普通铁砧。"
+
+auto-builder:
+  land-marker-unset: "%item%还没有设置位置！"
+
+block:
+  no-room-for-sign: "那里没有放置标签牌的空间！"
+
+command:
+  player-only: "这条指令无法从控制台执行。"
+  charge-nothing-suitable: "没有可以充能的东西。"
+  charge-range: "必须在 0-%max% 范围内"
+  charged: "%item%已充能至 %charge%"
+  debug-level-positive: "调试等级必须 >= 0"
+  debug-enabled: "已开启调试器（等级 %level%）"
+  debug-disabled: "已关闭调试器"
+  friend-added: "%player% 现在和 %friend% 是好友"
+  friend-removed: "%player% 已不再和 %friend% 是好友"
+  give-invalid-player: "%name% 不是有效的玩家或不在线！"
+  give-invalid-amount: "%amount% 不是有效的数量！"
+  give-received: "你收到了 %amount% x %item%。"
+  possible-matches-one: "%desc% 中有 %count% 条可能匹配的指令："
+  possible-matches-many: "%desc% 中有 %count% 条可能匹配的指令："
+  recipe-book-needed: "你的物品栏里必须有%item%才能搜索配方！"
+  redrawn-one: "已重绘 %count% 个 STB 方块。"
+  redrawn-many: "已重绘 %count% 个 STB 方块。"
+  data-saved: "已写入保存的 STB 数据"
+  setcfg-set: "%key% 现在为 %value%"
+  setcfg-reload: "改动将在服务器重新载入或重启后生效"
+  setcfg-list-keys: "使用 /stb getcfg 列出所有有效的键"
+  show-dumped: "STB 物品数据已写入 %file%"
+  validated-one: "已在世界 %world% 中修正 %count% 个方块"
+  validated-many: "已在世界 %world% 中修正 %count% 个方块"
+
+ender-leash:
+  leashed-animal: "无法捕捉被拴住的动物！"
+  not-your-animal: "这只动物属于别人！"
+  already-captured: "%item%里已经有一只捕捉到的动物"
+
+gui:
+  private: "%item%是私有的！"
+
+hoe:
+  mixed-items: "种子袋里混了别的物品？"
+  non-seed-items: "袋子里有不是种子的物品？"
+
+machine:
+  storage-full: "%item%已满。"
+  storage-no-charge: "%item%的电量不足，无法接收物品。"
+  upgrade-not-accepted: "%machine%不接受%upgrade%"
+  ejector-needs-direction: "弹出升级必须设置一个方向。"
+
+recipe-book:
+  missing: "缺少：%item%"
+  fabricated-free: "已制造（免费）：%item%"
+  fabricated: "已制造：%item%"
+
+tape-measure:
+  anchor-set: "已设置卷尺的起点。"
+  anchor-cleared: "已清除卷尺的起点。"
+  measurement: "测量：X=%x% Y=%y% Z=%z% 合计=%total%"
+
+watering-can:
+  soil-wet: "这块土壤变得很湿了！"
+  fire-out: "火已经灭了！"

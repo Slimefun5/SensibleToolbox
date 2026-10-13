@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Przedmioty z Sensible Toolbox nie pasują do zwykłego kowadła."
+
+auto-builder:
+  land-marker-unset: "%item% nie ma ustawionego miejsca!"
+
+block:
+  no-room-for-sign: "Nie ma tam miejsca na tabliczkę z etykietą!"
+
+command:
+  player-only: "Tego polecenia nie można wykonać z konsoli."
+  charge-nothing-suitable: "Nie ma czego naładować."
+  charge-range: "Musi być w zakresie 0-%max%"
+  charged: "%item% naładowany do %charge%"
+  debug-level-positive: "Poziom debugowania musi być >= 0"
+  debug-enabled: "Debuger włączony (poziom %level%)"
+  debug-disabled: "Debuger wyłączony"
+  friend-added: "%player% jest teraz znajomym %friend%"
+  friend-removed: "%player% nie jest już znajomym %friend%"
+  give-invalid-player: "%name% nie jest prawidłowym graczem albo jest offline!"
+  give-invalid-amount: "%amount% nie jest prawidłową ilością!"
+  give-received: "Otrzymałeś %amount% x %item%."
+  possible-matches-one: "%count% możliwe pasujące polecenie w %desc%:"
+  possible-matches-many: "%count% możliwych pasujących poleceń w %desc%:"
+  recipe-book-needed: "Musisz mieć %item% w ekwipunku, aby szukać przepisów!"
+  redrawn-one: "Przerysowano %count% blok STB."
+  redrawn-many: "Przerysowano %count% bloków STB."
+  data-saved: "Zapisane dane STB zostały utrwalone"
+  setcfg-set: "%key% jest teraz ustawiony na %value%"
+  setcfg-reload: "Zmiany zadziałają po przeładowaniu lub restarcie serwera"
+  setcfg-list-keys: "Użyj /stb getcfg, aby wypisać wszystkie prawidłowe klucze"
+  show-dumped: "Dane przedmiotu STB zapisano do %file%"
+  validated-one: "Naprawiono %count% blok w świecie %world%"
+  validated-many: "Naprawiono %count% bloków w świecie %world%"
+
+ender-leash:
+  leashed-animal: "Nie można schwytać zwierzęcia na smyczy!"
+  not-your-animal: "To zwierzę należy do kogoś innego!"
+  already-captured: "%item% ma już schwytane zwierzę"
+
+gui:
+  private: "%item% jest prywatny!"
+
+hoe:
+  mixed-items: "Pomieszane przedmioty w worku z nasionami?"
+  non-seed-items: "Przedmioty, które nie są nasionami, w worku?"
+
+machine:
+  storage-full: "%item% jest pełny."
+  storage-no-charge: "%item% ma zbyt mały ładunek, by przyjmować przedmioty."
+  upgrade-not-accepted: "%machine% nie przyjmuje %upgrade%"
+  ejector-needs-direction: "Ulepszenie wyrzutnika musi mieć ustawiony kierunek."
+
+recipe-book:
+  missing: "Brakuje: %item%"
+  fabricated-free: "Wytworzono (darmowo): %item%"
+  fabricated: "Wytworzono: %item%"
+
+tape-measure:
+  anchor-set: "Punkt zakotwiczenia miarki ustawiony."
+  anchor-cleared: "Punkt zakotwiczenia miarki wyczyszczony."
+  measurement: "Pomiar: X=%x% Y=%y% Z=%z% razem=%total%"
+
+watering-can:
+  soil-wet: "Ta ziemia staje się bardzo mokra!"
+  fire-out: "Ogień zgasł!"

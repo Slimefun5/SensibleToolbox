@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Saker från Sensible Toolbox passar inte i ett vanligt städ."
+
+auto-builder:
+  land-marker-unset: "%item% har ingen plats angiven!"
+
+block:
+  no-room-for-sign: "Det finns inte plats för en etikettskylt där!"
+
+command:
+  player-only: "Det här kommandot kan inte köras från konsolen."
+  charge-nothing-suitable: "Inget lämpligt att ladda."
+  charge-range: "Måste vara i intervallet 0-%max%"
+  charged: "%item% laddad till %charge%"
+  debug-level-positive: "Felsökningsnivån måste vara >= 0"
+  debug-enabled: "Felsökning påslagen (nivå %level%)"
+  debug-disabled: "Felsökning avstängd"
+  friend-added: "%player% är nu vän med %friend%"
+  friend-removed: "%player% är inte längre vän med %friend%"
+  give-invalid-player: "%name% är inte en giltig spelare eller är inte uppkopplad!"
+  give-invalid-amount: "%amount% är inte ett giltigt antal!"
+  give-received: "Du har fått %amount% x %item%."
+  possible-matches-one: "%count% möjligt matchande kommando i %desc%:"
+  possible-matches-many: "%count% möjliga matchande kommandon i %desc%:"
+  recipe-book-needed: "Du måste ha %item% i packningen för att söka efter recept!"
+  redrawn-one: "%count% STB-block omritat."
+  redrawn-many: "%count% STB-block omritade."
+  data-saved: "De sparade STB-uppgifterna har skrivits"
+  setcfg-set: "%key% är nu satt till %value%"
+  setcfg-reload: "Ändringarna får verkan när servern läses in igen eller startas om"
+  setcfg-list-keys: "Använd /stb getcfg för att lista alla giltiga nycklar"
+  show-dumped: "STB-sakuppgifterna har skrivits till %file%"
+  validated-one: "%count% block rättat i världen %world%"
+  validated-many: "%count% block rättade i världen %world%"
+
+ender-leash:
+  leashed-animal: "Ett djur i koppel kan inte fångas!"
+  not-your-animal: "Det här djuret tillhör någon annan!"
+  already-captured: "%item% har redan ett fångat djur"
+
+gui:
+  private: "%item% är privat!"
+
+hoe:
+  mixed-items: "Blandade saker i fröpåsen?"
+  non-seed-items: "Saker som inte är frön i påsen?"
+
+machine:
+  storage-full: "%item% är full."
+  storage-no-charge: "%item% har för lite laddning för att ta emot saker."
+  upgrade-not-accepted: "%machine% tar inte emot %upgrade%"
+  ejector-needs-direction: "Utmatarförbättringen måste ha en riktning angiven."
+
+recipe-book:
+  missing: "Saknas: %item%"
+  fabricated-free: "Tillverkad (gratis): %item%"
+  fabricated: "Tillverkad: %item%"
+
+tape-measure:
+  anchor-set: "Måttbandets utgångspunkt är satt."
+  anchor-cleared: "Måttbandets utgångspunkt är rensad."
+  measurement: "Mätning: X=%x% Y=%y% Z=%z% totalt=%total%"
+
+watering-can:
+  soil-wet: "Den här jorden blir mycket blöt!"
+  fire-out: "Elden är släckt!"

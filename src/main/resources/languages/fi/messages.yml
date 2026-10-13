@@ -1,0 +1,66 @@
+anvil:
+  no-fit: "Sensible Toolboxin tavarat eivät mahdu tavalliseen alasimeen."
+
+auto-builder:
+  land-marker-unset: "%item% ei ole asetettu sijaintia!"
+
+block:
+  no-room-for-sign: "Siellä ei ole tilaa nimikilvelle!"
+
+command:
+  player-only: "Tätä komentoa ei voi ajaa konsolista."
+  charge-nothing-suitable: "Ei mitään ladattavaa."
+  charge-range: "Täytyy olla välillä 0-%max%"
+  charged: "%item% ladattu tasolle %charge%"
+  debug-level-positive: "Vianetsintätason täytyy olla >= 0"
+  debug-enabled: "Vianetsintä päällä (taso %level%)"
+  debug-disabled: "Vianetsintä pois"
+  friend-added: "%player% on nyt pelaajan %friend% kaveri"
+  friend-removed: "%player% ei ole enää pelaajan %friend% kaveri"
+  give-invalid-player: "%name% ei ole kelvollinen pelaaja tai ei ole paikalla!"
+  give-invalid-amount: "%amount% ei ole kelvollinen määrä!"
+  give-received: "Sait %amount% x %item%."
+  possible-matches-one: "%count% mahdollinen osuva komento kohteessa %desc%:"
+  possible-matches-many: "%count% mahdollista osuvaa komentoa kohteessa %desc%:"
+  recipe-book-needed: "Sinulla täytyy olla %item% tavaroissasi, jotta voit etsiä ohjeita!"
+  redrawn-one: "%count% STB-lohko piirretty uudelleen."
+  redrawn-many: "%count% STB-lohkoa piirretty uudelleen."
+  data-saved: "Säilötyt STB-tiedot kirjoitettu"
+  setcfg-set: "%key% on nyt %value%"
+  setcfg-reload: "Muutokset tulevat voimaan, kun palvelin ladataan uudelleen tai käynnistetään uudelleen"
+  setcfg-list-keys: "Käytä /stb getcfg listaamaan kaikki kelvolliset avaimet"
+  show-dumped: "STB-tavaratiedot kirjoitettu tiedostoon %file%"
+  validated-one: "Korjattu %count% lohko maailmassa %world%"
+  validated-many: "Korjattu %count% lohkoa maailmassa %world%"
+
+ender-leash:
+  leashed-animal: "Talutushihnassa olevaa eläintä ei voi napata!"
+  not-your-animal: "Tämä eläin kuuluu jollekin toiselle!"
+  already-captured: "%item% sisältää jo napatun eläimen"
+
+gui:
+  private: "%item% on yksityinen!"
+
+hoe:
+  mixed-items: "Sekalaisia tavaroita siemenpussissa?"
+  non-seed-items: "Tavaroita, jotka eivät ole siemeniä, pussissa?"
+
+machine:
+  storage-full: "%item% on täynnä."
+  storage-no-charge: "%item% varaus ei riitä tavaroiden ottamiseen."
+  upgrade-not-accepted: "%machine% ei hyväksy %upgrade%"
+  ejector-needs-direction: "Ulosheittoparannukselle täytyy asettaa suunta."
+
+recipe-book:
+  missing: "Puuttuu: %item%"
+  fabricated-free: "Valmistettu (ilmaiseksi): %item%"
+  fabricated: "Valmistettu: %item%"
+
+tape-measure:
+  anchor-set: "Mittanauhan lähtöpiste asetettu."
+  anchor-cleared: "Mittanauhan lähtöpiste tyhjennetty."
+  measurement: "Mittaus: X=%x% Y=%y% Z=%z% yhteensä=%total%"
+
+watering-can:
+  soil-wet: "Tämä maa alkaa olla hyvin märkää!"
+  fire-out: "Tuli on sammunut!"
