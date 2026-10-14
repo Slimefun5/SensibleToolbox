@@ -160,6 +160,7 @@ public final class SlimefunBridge implements SlimefunAddon {
         patch("STB_FISHBAIT", fermenter, new ItemStack(MaterialCompat.safe(XMaterial.ROTTEN_FLESH)));
 
         Slimefun.getItemTranslationService().registerTranslations(plugin);
+        Slimefun.getLocalization().registerItemGroupTranslations(plugin);
         Slimefun.getAddonMessageService().registerTranslations(plugin);
         registerWiki(this);
     }
