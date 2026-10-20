@@ -26,6 +26,7 @@ import io.github.thebusybiscuit.sensibletoolbox.utils.RecipeCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.MaterialCompat;
 import io.github.thebusybiscuit.sensibletoolbox.utils.STBUtil;
 import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import io.github.thebusybiscuit.slimefun5.utils.compatibility.EntityCompat;
 
 public class VacuumModule extends DirectionalItemRouterModule {
 
@@ -90,7 +91,7 @@ public class VacuumModule extends DirectionalItemRouterModule {
     public boolean execute(Location loc) {
         loc.add(0.5, 0.5, 0.5);
 
-        for (Entity entity : loc.getWorld().getNearbyEntities(loc, RADIUS, RADIUS, RADIUS, n -> n instanceof Item && n.isValid())) {
+        for (Entity entity : EntityCompat.getNearbyEntities(loc.getWorld(), loc, RADIUS, RADIUS, RADIUS, n -> n instanceof Item && n.isValid())) {
             Item item = (Item) entity;
 
             ItemStack onGround = item.getItemStack();
