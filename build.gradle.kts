@@ -29,5 +29,6 @@ dependencies {
 tasks {
     shadowJar {
         relocate("org.bstats", "sensibletoolbox.libs.bstats")
+        relocate("dev.walshy.sfmetrics", "sensibletoolbox.libs.sfmetrics")
     }
 }
