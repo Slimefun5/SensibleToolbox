@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Tester metningsnivået i et'
   - '&75x5 område med åkerjord.'
-  name: '&fAvansert fuktighetsmåler'
+  name: 'Avansert fuktighetsmåler'
   stats:
   - '&8⇨ &7Område: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Blar gjennom og fremstiller kjente oppskrifter,'
   - '&7og kan hente gjenstander fra tilstøtende'
   - '&7inventarer under fremstillingen.'
-  name: '&fAvansert oppskriftsbok'
+  name: 'Avansert oppskriftsbok'
   type:
   - '&7&oDings'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Settes i en gjenstandsruter for å sende gjenstander'
   - '&7til en koblet mottakermodul innenfor en'
   - '&724-blokkers radius, uten behov for fri sikt.'
-  name: '&fG.R. Mod: Av. sender'
+  name: 'G.R. Mod: Av. sender'
   type:
   - '&7&oKomponent'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7En midlertidig svevende stillasblokk,'
   - '&7ideell for å bygge ut i åpent rom.'
-  name: '&fEngleblokk'
+  name: 'Engleblokk'
   type:
   - '&7&oDings'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Kan bygge eller rydde et område.'
   - '&7Bruk landmarkører for å definere området.'
-  name: '&fAutobygger'
+  name: 'Autobygger'
   type:
   - '&7&oMaskin'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Høster og replanter automatisk'
   - '&7hvete-, potet- og gulrotavlinger i en 3x3'
   - '&7radius, 2 blokker over maskinen.'
-  name: '&fAutogård'
+  name: 'Autogård'
   type:
   - '&7&oMaskin'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Høster og replanter automatisk'
   - '&7kakaobønner, sukkerrør og kaktus'
   - '&7i en 5x5 radius, 2 blokker over maskinen.'
-  name: '&fAutogård MkII'
+  name: 'Autogård MkII'
   type:
   - '&7&oMaskin'
 STB_AUTOFORESTER:
   description:
   - '&7Feller og replanter trær automatisk'
   - '&7i en 5x5 radius, 2 blokker over maskinen.'
-  name: '&fAutoskogbruker'
+  name: 'Autoskogbruker'
   type:
   - '&7&oMaskin'
 STB_BASICSOLARCELL:
   description:
   - '&7Genererer kraft utendørs i sterkt'
   - '&7sollys. Krever en PV-celle for å fungere.'
-  name: '&fGrunnleggende solcelle'
+  name: 'Grunnleggende solcelle'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Stor lagringsenhet. Lagrer en enorm'
   - '&7mengde av én enkelt gjenstandstype.'
-  name: '&fSLE'
+  name: 'SLE'
   stats:
   - '&8⇨ &7128 stabler'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Konverterer organiske materialer til kraft.'
-  name: '&fBiomotor'
+  name: 'Biomotor'
   type:
   - '&7&oGenerator'
 STB_BLANKMODULE:
   description:
   - '&7Den tomme basen som brukes til å lage de'
   - '&7ulike gjenstandsrutermodulene.'
-  name: '&fTom gjenstandsrutermodul'
+  name: 'Tom gjenstandsrutermodul'
   type:
   - '&7&oKomponent'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Sender ut en redstone-puls når en'
   - '&7tilstøtende blokk oppdateres.'
-  name: '&fBlokkoppdateringsdetektor'
+  name: 'Blokkoppdateringsdetektor'
   type:
   - '&7&oMaskin'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Bryter blokken i sin innstilte'
   - '&7retning og trekker den inn i ruteren.'
-  name: '&fG.R. Mod: Bryter'
+  name: 'G.R. Mod: Bryter'
   type:
   - '&7&oKomponent'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Brukes i konstruksjonen av elektroniske'
   - '&7kretser.'
-  name: '&fKretskort'
+  name: 'Kretskort'
   type:
   - '&7&oKomponent'
 STB_DENSESOLAR:
   description:
   - '&7Genererer kraft utendørs i sterkt'
   - '&7sollys. Krever en PV-celle for å fungere.'
-  name: '&fTett solcelle'
+  name: 'Tett solcelle'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7En multiverktøy-åkerhakke som pløyer, sår og'
   - '&7høster over et større område, med en'
   - '&7innebygd frøpose.'
-  name: '&fKombiåkerhakke av diamant'
+  name: 'Kombiåkerhakke av diamant'
   type:
   - '&7&oVerktøy'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Henter gjenstander fra den innstilte retningen,'
   - '&7og sender dem så etter tur til alle andre'
   - '&7tilstøtende inventarer.'
-  name: '&fG.R. Mod: Fordeler'
+  name: 'G.R. Mod: Fordeler'
   type:
   - '&7&oKomponent'
 STB_DROPPERMODULE:
   description:
   - '&7Settes i en gjenstandsruter for å slippe gjenstander'
   - '&7på bakken i den innstilte retningen.'
-  name: '&fG.R. Mod: Slipper'
+  name: 'G.R. Mod: Slipper'
   type:
   - '&7&oKomponent'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Plasseres i en maskin for å kaste ut ferdige'
   - '&7gjenstander automatisk til et tilstøtende inventar.'
-  name: '&fUtkasteroppgradering'
+  name: 'Utkasteroppgradering'
   type:
   - '&7&oKomponent'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Lar deg energisere visse gjenstander'
   - '&7til deres ladede varianter.'
-  name: '&fElektrisk energisator'
+  name: 'Elektrisk energisator'
   type:
   - '&7&oMaskin'
 STB_ELEVATOR:
   description:
   - '&7Kobles til andre heiser plassert'
   - '&7rett over eller under den.'
-  name: '&fHeis'
+  name: 'Heis'
   type:
   - '&7&oMaskin'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Gir bærbar tilgang til et personlig'
   - '&7eller globalt enderlagringsinventar.'
-  name: '&fEnderpose'
+  name: 'Enderpose'
   type:
   - '&7&oDings'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Ekstradimensjonal lagring tilgjengelig'
   - '&7fra koblede enderbokser.'
-  name: '&fEnderboks'
+  name: 'Enderboks'
   type:
   - '&7&oMaskin'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Fanger og lagrer ett fredelig dyr,'
   - '&7slik at du enkelt kan flytte husdyr.'
-  name: '&fEnderbånd'
+  name: 'Enderbånd'
   type:
   - '&7&oDings'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Vibrerer i seks dimensjoner for å stille inn'
   - '&7enderboksens lagringsfrekvens.'
-  name: '&fEnderstemmer'
+  name: 'Enderstemmer'
   type:
   - '&7&oVerktøy'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Smelt for å få en energisert gullbarre.'
-  name: '&fEnergisert gullstøv'
+  name: 'Energisert gullstøv'
   type:
   - '&7&oRessurs'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Merkelig glødende...'
-  name: '&fEnergisert gullbarre'
+  name: 'Energisert gullbarre'
   type:
   - '&7&oRessurs'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Smelt for å få en energisert jernbarre.'
-  name: '&fEnergisert jernstøv'
+  name: 'Energisert jernstøv'
   type:
   - '&7&oRessurs'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Merkelig glødende...'
-  name: '&fEnergisert jernbarre'
+  name: 'Energisert jernbarre'
   type:
   - '&7&oRessurs'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Merkelig glødende...'
-  name: '&fEnergisert kvarts'
+  name: 'Energisert kvarts'
   type:
   - '&7&oRessurs'
 STB_FERMENTER:
   description:
   - '&7Fermenterer ulike gjenstander, og brukes'
   - '&7også til å lage fiskeagn.'
-  name: '&fFermentator'
+  name: 'Fermentator'
   type:
   - '&7&oMaskin'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Lagrer energi for å buffre kraft mellom'
   - '&7generatorer og maskiner.'
-  name: '&f50K batteriboks'
+  name: '50K batteriboks'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7En bærbar energicelle som bærer lagret'
   - '&7STB-kraft for å lade enheter underveis.'
-  name: '&f50K energicelle'
+  name: '50K energicelle'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Brukes i et fiskegarn for å fange fisk.'
-  name: '&fFiskeagn'
+  name: 'Fiskeagn'
   type:
   - '&7&oKomponent'
 STB_FISHINGNET:
   description:
   - '&7Fanger fisk automatisk når det plasseres'
   - '&7over vann og mates med fiskeagn.'
-  name: '&fFiskegarn'
+  name: 'Fiskegarn'
   type:
   - '&7&oMaskin'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7En multiverktøy-åkerhakke som pløyer, sår og'
   - '&7høster, med en innebygd frøpose.'
-  name: '&fKombiåkerhakke av gull'
+  name: 'Kombiåkerhakke av gull'
   type:
   - '&7&oVerktøy'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Smelt i en smelteovn eller ovn for å få'
   - '&7gullbarrer.'
-  name: '&fGullstøv'
+  name: 'Gullstøv'
   type:
   - '&7&oRessurs'
 STB_HEATENGINE:
   description:
   - '&7Konverterer brennbare gjenstander til kraft.'
-  name: '&fVarmemotor'
+  name: 'Varmemotor'
   type:
   - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Viser et nettverks netto energi-'
   - '&7gevinst eller tap ved hjelp av hologrammer.'
-  name: '&fHolografisk skjerm'
+  name: 'Holografisk skjerm'
   type:
   - '&7&oMaskin'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Settes i en gjenstandsruter for å sende gjenstander'
   - '&7til en koblet mottakermodul hvor som helst,'
   - '&7i hvilken som helst verden.'
-  name: '&fG.R. Mod: Hypersender'
+  name: 'G.R. Mod: Hypersender'
   type:
   - '&7&oKomponent'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hyperlagringsenhet. Lagrer en kolossal'
   - '&7mengde av én enkelt gjenstandstype.'
   - '&7Beholder innholdet når den brytes. Trenger kraft for å fungere.'
-  name: '&fHLE'
+  name: 'HLE'
   stats:
   - '&8⇨ &733554431 stabler'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Slippes av og til av blazer; Plyndring'
   - '&7kan hjelpe. Kombiner med jern- eller gullstøv.'
-  name: '&fInfernalsk støv'
+  name: 'Infernalsk støv'
   type:
   - '&7&oRessurs'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Høster og replanter automatisk'
   - '&7nethervorter i en 5x5 radius, 2 blokker'
   - '&7over maskinen.'
-  name: '&fInfernalsk gård'
+  name: 'Infernalsk gård'
   type:
   - '&7&oMaskin'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Brukes som komponent i noe mer'
   - '&7avansert maskineri.'
-  name: '&fIntegrert krets'
+  name: 'Integrert krets'
   type:
   - '&7&oKomponent'
 STB_IRONCOMBINEHOE:
   description:
   - '&7En multiverktøy-åkerhakke som pløyer, sår og'
   - '&7høster, med en innebygd frøpose.'
-  name: '&fKombiåkerhakke av jern'
+  name: 'Kombiåkerhakke av jern'
   type:
   - '&7&oVerktøy'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Smelt i en smelteovn eller ovn for å få'
   - '&7jernbarrer.'
-  name: '&fJernstøv'
+  name: 'Jernstøv'
   type:
   - '&7&oRessurs'
 STB_ITEMROUTER:
   description:
   - '&7Ruter gjenstander. Sett inn en eller flere'
   - '&7rutingmoduler for å aktivere den.'
-  name: '&fGjenstandsruter'
+  name: 'Gjenstandsruter'
   type:
   - '&7&oMaskin'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Lagrer en posisjon via Sensible GPS,'
   - '&7brukes til å definere maskinenes arbeidsområder.'
-  name: '&fLandmarkør'
+  name: 'Landmarkør'
   type:
   - '&7&oVerktøy'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Brukes i fremstillingen av ulike maskiner.'
-  name: '&fMaskinramme'
+  name: 'Maskinramme'
   type:
   - '&7&oKomponent'
 STB_MAGMATICENGINE:
   description:
   - '&7Konverterer lava til kraft.'
-  name: '&fMagmatisk motor'
+  name: 'Magmatisk motor'
   type:
   - '&7&oGenerator'
 STB_MASHER:
   description:
   - '&7Maler malmer og andre ressurser til støv.'
-  name: '&fKnuser'
+  name: 'Knuser'
   type:
   - '&7&oMaskin'
 STB_MOISTURECHECKER:
   description:
   - '&7Tester metningsnivået i et'
   - '&73x3 område med åkerjord.'
-  name: '&fFuktighetsmåler'
+  name: 'Fuktighetsmåler'
   stats:
   - '&8⇨ &7Område: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Et drevet byggeverktøy som plasserer eller'
   - '&7bytter ut blokker over et område, med'
   - '&7valgbare bygge- og byttemoduser.'
-  name: '&fMultibygger'
+  name: 'Multibygger'
   type:
   - '&7&oVerktøy'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Leser av energinettforbindelser og'
   - '&7kraftforbruket til kabler og maskiner.'
-  name: '&fMultimeter'
+  name: 'Multimeter'
   type:
   - '&7&oVerktøy'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Maler fargbare blokker som ull,'
   - '&7teppe og farget leire eller glass, med'
   - '&7maling hentet fra en malingsboks.'
-  name: '&fMalerkost'
+  name: 'Malerkost'
   type:
   - '&7&oVerktøy'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Rommer en forsyning av farget maling.'
-  name: '&fMalingsboks'
+  name: 'Malingsboks'
   type:
   - '&7&oMaskin'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Maler fargbare blokker over et større'
   - '&7område enn kosten, med maling hentet'
   - '&7fra en malingsboks.'
-  name: '&fMalerrulle'
+  name: 'Malerrulle'
   type:
   - '&7&oVerktøy'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Viser et nettverks netto energi-'
   - '&7gevinst eller tap på festede skilt.'
-  name: '&fKraftmåler'
+  name: 'Kraftmåler'
   type:
   - '&7&oMaskin'
 STB_PULLERMODULE:
   description:
   - '&7Settes i en gjenstandsruter for å hente gjenstander'
   - '&7fra et tilstøtende inventar.'
-  name: '&fG.R. Mod: Trekker'
+  name: 'G.R. Mod: Trekker'
   type:
   - '&7&oKomponent'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Pumper væsker nedenfra inn i en'
   - '&7innsatt bøtte eller glassflaske.'
-  name: '&fPumpe'
+  name: 'Pumpe'
   type:
   - '&7&oMaskin'
 STB_PVCELL:
   description:
   - '&7En fotovoltaisk celle som driver en sol-'
   - '&7generator. Den slites ut over tid.'
-  name: '&fPV-celle'
+  name: 'PV-celle'
   type:
   - '&7&oKomponent'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Kok i en smelteovn for å lage silisium.'
-  name: '&fKvartsstøv'
+  name: 'Kvartsstøv'
   type:
   - '&7&oRessurs'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7En passiv modul som mottar gjenstander'
   - '&7fra en sendermodul som peker mot den, eller en koblet'
   - '&7avansert sendermodul.'
-  name: '&fG.R. Mod: Mottaker'
+  name: 'G.R. Mod: Mottaker'
   type:
   - '&7&oKomponent'
 STB_RECIPEBOOK:
   description:
   - '&7Lar deg bla gjennom og fremstille alle'
   - '&7kjente oppskrifter.'
-  name: '&fOppskriftsbok'
+  name: 'Oppskriftsbok'
   type:
   - '&7&oDings'
 STB_REDSTONECLOCK:
   description:
   - '&7Klokke i en blokk. Sender ut et redstone-'
   - '&7signal med justerbart intervall og varighet.'
-  name: '&fRedstone-klokke'
+  name: 'Redstone-klokke'
   type:
   - '&7&oMaskin'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Gir maskiner intelligens for mer'
   - '&7effektiv ressursbruk. Effekten varierer'
   - '&7fra maskin til maskin.'
-  name: '&fRegulatoroppgradering'
+  name: 'Regulatoroppgradering'
   type:
   - '&7&oKomponent'
 STB_SAWMILL:
   description:
   - '&7Bearbeider tregjenstander til planker'
   - '&7med høyere utbytte enn håndverk.'
-  name: '&fSagbruk'
+  name: 'Sagbruk'
   type:
   - '&7&oMaskin'
 STB_SCURELAY:
   description:
   - '&7Kobles til et annet SCU-rele for å dele'
   - '&7en felles ladning over enhver avstand.'
-  name: '&fSCU-rele'
+  name: 'SCU-rele'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7til et tilstøtende inventar, eller til en ruter'
   - '&7med en mottakermodul innenfor 10 blokker'
   - '&7med fri sikt.'
-  name: '&fG.R. Mod: Sender'
+  name: 'G.R. Mod: Sender'
   type:
   - '&7&oKomponent'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Brukes i fremstillingen av mer avanserte'
   - '&7elektroniske kretser.'
-  name: '&fSilisiumskive'
+  name: 'Silisiumskive'
   type:
   - '&7&oKomponent'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Silkeberører blokken i sin innstilte'
   - '&7retning og trekker den inn i ruteren.'
   - '&7Må lages med en bok med silkeberøring.'
-  name: '&fG.R. Mod: Silkebryter'
+  name: 'G.R. Mod: Silkebryter'
   type:
   - '&7&oKomponent'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Brukes som komponent i ulike maskiner.'
-  name: '&fEnkel elektronisk krets'
+  name: 'Enkel elektronisk krets'
   type:
   - '&7&oKomponent'
 STB_SMELTER:
   description:
   - '&7Smelter gjenstander som en ovn, men'
   - '&7raskere og mer effektivt.'
-  name: '&fSmelteovn'
+  name: 'Smelteovn'
   type:
   - '&7&oMaskin'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Settes i en gjenstandsruter for å plassere gjenstander'
   - '&7i et inventar bare hvis det er tomt eller'
   - '&7allerede inneholder den gjenstanden.'
-  name: '&fG.R. Mod: Sorterer'
+  name: 'G.R. Mod: Sorterer'
   type:
   - '&7&oKomponent'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Reduserer lydstyrken på alle lyder'
   - '&7innenfor en 8-blokkers radius.'
-  name: '&fLyddemper'
+  name: 'Lyddemper'
   type:
   - '&7&oMaskin'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7En passiv modul som øker ruterens'
   - '&7hastighet. 0 moduler = 1 operasjon / 20 tikk;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Over 3 ignoreres.'
-  name: '&fG.R. Mod: Hastighetsoppgradering'
+  name: 'G.R. Mod: Hastighetsoppgradering'
   type:
   - '&7&oKomponent'
 STB_SPEEDUPGRADE:
   description:
   - '&7Plasseres i en maskin for at den skal gå'
   - '&7raskere, på bekostning av høyere kraftforbruk.'
-  name: '&fHastighetsoppgradering'
+  name: 'Hastighetsoppgradering'
   stats:
   - '&8⇨ &7Hastighet: &ex1.4'
   - '&8⇨ &7Kraftforbruk: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7En passiv modul; hver av dem dobler antallet'
   - '&7gjenstander som flyttes per operasjon, opp til'
   - '&7gjenstandens maks stabelstørrelse. Over 6 ignoreres.'
-  name: '&fG.R. Mod: Stabeloppgradering'
+  name: 'G.R. Mod: Stabeloppgradering'
   type:
   - '&7&oKomponent'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Brukes av enkelte avanserte gjenstander til'
   - '&7kommunikasjon på tvers av verdener.'
-  name: '&fSubromtransponder'
+  name: 'Subromtransponder'
   type:
   - '&7&oKomponent'
 STB_TAPEMEASURE:
   description:
   - '&7Måler avstanden mellom to'
   - '&7punkter du velger i verden.'
-  name: '&fMålebånd'
+  name: 'Målebånd'
   type:
   - '&7&oVerktøy'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Lagrer energi for å buffre kraft mellom'
   - '&7generatorer og maskiner.'
-  name: '&f10K batteriboks'
+  name: '10K batteriboks'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7En bærbar energicelle som bærer lagret'
   - '&7STB-kraft for å lade enheter underveis.'
-  name: '&f10K energicelle'
+  name: '10K energicelle'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Plasseres i en maskin for å øke nyttig'
   - '&7utgang, på bekostning av hastighet og kraft.'
-  name: '&fGrundighetsoppgradering'
+  name: 'Grundighetsoppgradering'
   stats:
   - '&8⇨ &7Hastighet: &ex0.7'
   - '&8⇨ &7Kraftforbruk: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Brukes i fremstillingen av noe mer'
   - '&7avanserte maskiner.'
-  name: '&fRobust maskinramme'
+  name: 'Robust maskinramme'
   type:
   - '&7&oKomponent'
 STB_TRASHCAN:
   description:
   - '&7ØDELEGGER alle gjenstander som legges eller føres'
   - '&7inn i den. Pass deg!'
-  name: '&fSøppelbøtte'
+  name: 'Søppelbøtte'
   type:
   - '&7&oMaskin'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Lag et par av disse sammen for å koble'
   - '&7dem til et SCU-rele med delt ladning.'
-  name: '&fUkoblet SCU-rele'
+  name: 'Ukoblet SCU-rele'
   type:
   - '&7&oKomponent'
 STB_VACUUMMODULE:
   description:
   - '&7Settes i en gjenstandsruter for å suge opp'
   - '&7mistede gjenstander i nærheten.'
-  name: '&fG.R. Mod: Støvsuger'
+  name: 'G.R. Mod: Støvsuger'
   stats:
   - '&8⇨ &7Radius: &e6 blokker'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Vanner og dyrker avlinger i nærheten.'
   - '&7Ikke overbruk den!'
-  name: '&fVannkanne'
+  name: 'Vannkanne'
   type:
   - '&7&oVerktøy'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7En multiverktøy-åkerhakke som pløyer, sår og'
   - '&7høster, med en innebygd frøpose.'
-  name: '&fKombiåkerhakke av tre'
+  name: 'Kombiåkerhakke av tre'
   type:
   - '&7&oVerktøy'
   usage:

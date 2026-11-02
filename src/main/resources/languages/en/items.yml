@@ -2,7 +2,7 @@
 # Block-lore format: name + type/description/stats/usage blocks, composed by LoreComposer.
 
 STB_ANGELICBLOCK:
-  name: "&fAngelic Block"
+  name: 'Angelic Block'
   type:
     - "&7&oGadget"
   description:
@@ -12,14 +12,14 @@ STB_ANGELICBLOCK:
     - "&eRight Click&7 to place the block in the air"
     - "&eLeft Click&7 the block to insta-break it"
 STB_AUTOBUILDER:
-  name: "&fAuto Builder"
+  name: 'Auto Builder'
   type:
     - "&7&oMachine"
   description:
     - "&7Can build or clear an area."
     - "&7Use Land Markers to define the area."
 STB_AUTOFARM:
-  name: "&fAuto Farm"
+  name: 'Auto Farm'
   type:
     - "&7&oMachine"
   description:
@@ -27,7 +27,7 @@ STB_AUTOFARM:
     - "&7Wheat, Potato and Carrot crops in a 3x3"
     - "&7radius, 2 blocks above the machine."
 STB_AUTOFARM2:
-  name: "&fAuto Farm MkII"
+  name: 'Auto Farm MkII'
   type:
     - "&7&oMachine"
   description:
@@ -35,14 +35,14 @@ STB_AUTOFARM2:
     - "&7Cocoa Beans, Sugar Cane and Cactus"
     - "&7in a 5x5 radius, 2 blocks above the machine."
 STB_AUTOFORESTER:
-  name: "&fAuto Forester"
+  name: 'Auto Forester'
   type:
     - "&7&oMachine"
   description:
     - "&7Automatically fells and replants trees"
     - "&7in a 5x5 radius, 2 blocks above the machine."
 STB_BASICSOLARCELL:
-  name: "&fBasic Solar"
+  name: 'Basic Solar'
   type:
     - "&7&oGenerator"
   description:
@@ -53,7 +53,7 @@ STB_BASICSOLARCELL:
   usage:
     - "&eLeft Click&7 (empty hand) to extract the PV Cell"
 STB_BIGSTORAGEUNIT:
-  name: "&fBSU"
+  name: 'BSU'
   type:
     - "&7&oMachine"
   description:
@@ -62,13 +62,13 @@ STB_BIGSTORAGEUNIT:
   stats:
     - "&8⇨ &7128 Stacks"
 STB_BIOENGINE:
-  name: "&fBio Engine"
+  name: 'Bio Engine'
   type:
     - "&7&oGenerator"
   description:
     - "&7Converts organic materials into power."
 STB_BLOCKUPDATEDETECTOR:
-  name: "&fBlock Update Detector"
+  name: 'Block Update Detector'
   type:
     - "&7&oMachine"
   description:
@@ -77,7 +77,7 @@ STB_BLOCKUPDATEDETECTOR:
   usage:
     - "&eRight Click&7 the block to configure it"
 STB_DENSESOLAR:
-  name: "&fDense Solar"
+  name: 'Dense Solar'
   type:
     - "&7&oGenerator"
   description:
@@ -88,14 +88,14 @@ STB_DENSESOLAR:
   usage:
     - "&eLeft Click&7 (empty hand) to extract the PV Cell"
 STB_ELECTRICALENERGIZER:
-  name: "&fElectrical Energizer"
+  name: 'Electrical Energizer'
   type:
     - "&7&oMachine"
   description:
     - "&7Allows you to energize certain items"
     - "&7into their charged variants."
 STB_ELEVATOR:
-  name: "&fElevator"
+  name: 'Elevator'
   type:
     - "&7&oMachine"
   description:
@@ -105,7 +105,7 @@ STB_ELEVATOR:
     - "&ePress Space&7 to go up"
     - "&ePress Shift&7 to go down"
 STB_ENDERBOX:
-  name: "&fEnder Box"
+  name: 'Ender Box'
   type:
     - "&7&oMachine"
   description:
@@ -114,14 +114,14 @@ STB_ENDERBOX:
   usage:
     - "&eRight Click&7 with an Ender Tuner to set its frequency"
 STB_FERMENTER:
-  name: "&fFermenter"
+  name: 'Fermenter'
   type:
     - "&7&oMachine"
   description:
     - "&7Ferments various items, and is also"
     - "&7used to create Fish Bait."
 STB_FIFTYKBATTERYBOX:
-  name: "&f50K Battery Box"
+  name: '50K Battery Box'
   type:
     - "&7&oMachine"
   description:
@@ -130,27 +130,27 @@ STB_FIFTYKBATTERYBOX:
   stats:
     - "&8⇨ &e⚡ &750000 SCU"
 STB_FISHINGNET:
-  name: "&fFishing Net"
+  name: 'Fishing Net'
   type:
     - "&7&oMachine"
   description:
     - "&7Catches fish automatically when placed"
     - "&7over water and fed with Fish Bait."
 STB_HEATENGINE:
-  name: "&fHeat Engine"
+  name: 'Heat Engine'
   type:
     - "&7&oGenerator"
   description:
     - "&7Converts burnable items to power."
 STB_HOLOGRAPHICMONITOR:
-  name: "&fHolographic Monitor"
+  name: 'Holographic Monitor'
   type:
     - "&7&oMachine"
   description:
     - "&7Displays a network's net energy"
     - "&7gain or loss using holograms."
 STB_HYPERSTORAGEUNIT:
-  name: "&fHSU"
+  name: 'HSU'
   type:
     - "&7&oMachine"
   description:
@@ -160,7 +160,7 @@ STB_HYPERSTORAGEUNIT:
   stats:
     - "&8⇨ &733554431 Stacks"
 STB_INFERNALFARM:
-  name: "&fInfernal Farm"
+  name: 'Infernal Farm'
   type:
     - "&7&oMachine"
   description:
@@ -168,7 +168,7 @@ STB_INFERNALFARM:
     - "&7Nether Wart in a 5x5 radius, 2 blocks"
     - "&7above the machine."
 STB_ITEMROUTER:
-  name: "&fItem Router"
+  name: 'Item Router'
   type:
     - "&7&oMachine"
   description:
@@ -177,19 +177,19 @@ STB_ITEMROUTER:
   usage:
     - "&eRight Click&7 the block to configure the router"
 STB_MAGMATICENGINE:
-  name: "&fMagmatic Engine"
+  name: 'Magmatic Engine'
   type:
     - "&7&oGenerator"
   description:
     - "&7Converts Lava into power."
 STB_MASHER:
-  name: "&fMasher"
+  name: 'Masher'
   type:
     - "&7&oMachine"
   description:
     - "&7Grinds ores and other resources into dusts."
 STB_PAINTCAN:
-  name: "&fPaint Can"
+  name: 'Paint Can'
   type:
     - "&7&oMachine"
   description:
@@ -199,21 +199,21 @@ STB_PAINTCAN:
     - "&eRight Click&7 with anything else to open the mixer;"
     - "&7place a Milk Bucket and a Dye inside to mix paint"
 STB_POWERMONITOR:
-  name: "&fPower Monitor"
+  name: 'Power Monitor'
   type:
     - "&7&oMachine"
   description:
     - "&7Displays a network's net energy"
     - "&7gain or loss on attached signs."
 STB_PUMP:
-  name: "&fPump"
+  name: 'Pump'
   type:
     - "&7&oMachine"
   description:
     - "&7Pumps liquids from below into an"
     - "&7inserted Bucket or Glass Bottle."
 STB_REDSTONECLOCK:
-  name: "&fRedstone Clock"
+  name: 'Redstone Clock'
   type:
     - "&7&oMachine"
   description:
@@ -222,14 +222,14 @@ STB_REDSTONECLOCK:
   usage:
     - "&eRight Click&7 the block to configure the clock"
 STB_SAWMILL:
-  name: "&fSawmill"
+  name: 'Sawmill'
   type:
     - "&7&oMachine"
   description:
     - "&7Processes wooden items into planks"
     - "&7at a higher yield than crafting."
 STB_SCURELAY:
-  name: "&fSCU Relay"
+  name: 'SCU Relay'
   type:
     - "&7&oMachine"
   description:
@@ -238,14 +238,14 @@ STB_SCURELAY:
   stats:
     - "&8⇨ &e⚡ &7100000 SCU"
 STB_SMELTER:
-  name: "&fSmelter"
+  name: 'Smelter'
   type:
     - "&7&oMachine"
   description:
     - "&7Smelts items like a Furnace, but"
     - "&7faster and more efficient."
 STB_SOUNDMUFFLER:
-  name: "&fSound Muffler"
+  name: 'Sound Muffler'
   type:
     - "&7&oMachine"
   description:
@@ -254,7 +254,7 @@ STB_SOUNDMUFFLER:
   usage:
     - "&eRight Click&7 to open configuration"
 STB_TENKBATTERYBOX:
-  name: "&f10K Battery Box"
+  name: '10K Battery Box'
   type:
     - "&7&oMachine"
   description:
@@ -263,14 +263,14 @@ STB_TENKBATTERYBOX:
   stats:
     - "&8⇨ &e⚡ &710000 SCU"
 STB_TRASHCAN:
-  name: "&fTrash Can"
+  name: 'Trash Can'
   type:
     - "&7&oMachine"
   description:
     - "&7DESTROYS any items placed or piped"
     - "&7into it. Beware!"
 STB_MOISTURECHECKER:
-  name: "&fMoisture Checker"
+  name: 'Moisture Checker'
   type:
     - "&7&oTool"
   description:
@@ -281,7 +281,7 @@ STB_MOISTURECHECKER:
   usage:
     - "&eRight Click&7 farmland to check moisture"
 STB_ADVANCEDMOISTURECHECKER:
-  name: "&fAdvanced Moisture Checker"
+  name: 'Advanced Moisture Checker'
   type:
     - "&7&oTool"
   description:
@@ -292,7 +292,7 @@ STB_ADVANCEDMOISTURECHECKER:
   usage:
     - "&eRight Click&7 farmland to check moisture"
 STB_WATERINGCAN:
-  name: "&fWatering Can"
+  name: 'Watering Can'
   type:
     - "&7&oTool"
   description:
@@ -302,7 +302,7 @@ STB_WATERINGCAN:
     - "&eRight Click&7 to irrigate crops"
     - "&eRight Click&7 in water to refill"
 STB_WOODCOMBINEHOE:
-  name: "&fWooden Combine Hoe"
+  name: 'Wooden Combine Hoe'
   type:
     - "&7&oTool"
   description:
@@ -315,7 +315,7 @@ STB_WOODCOMBINEHOE:
     - "&eLeft Click&7 plants to harvest a 3x3 area"
     - "&eLeft Click&7 leaves to break a 3x3x3 area"
 STB_IRONCOMBINEHOE:
-  name: "&fIron Combine Hoe"
+  name: 'Iron Combine Hoe'
   type:
     - "&7&oTool"
   description:
@@ -328,7 +328,7 @@ STB_IRONCOMBINEHOE:
     - "&eLeft Click&7 plants to harvest a 3x3 area"
     - "&eLeft Click&7 leaves to break a 3x3x3 area"
 STB_GOLDCOMBINEHOE:
-  name: "&fGold Combine Hoe"
+  name: 'Gold Combine Hoe'
   type:
     - "&7&oTool"
   description:
@@ -341,7 +341,7 @@ STB_GOLDCOMBINEHOE:
     - "&eLeft Click&7 plants to harvest a 3x3 area"
     - "&eLeft Click&7 leaves to break a 3x3x3 area"
 STB_DIAMONDCOMBINEHOE:
-  name: "&fDiamond Combine Hoe"
+  name: 'Diamond Combine Hoe'
   type:
     - "&7&oTool"
   description:
@@ -355,7 +355,7 @@ STB_DIAMONDCOMBINEHOE:
     - "&eLeft Click&7 plants to harvest a 5x5 area"
     - "&eLeft Click&7 leaves to break a 3x3x3 area"
 STB_MULTIBUILDER:
-  name: "&fMultibuilder"
+  name: 'Multibuilder'
   type:
     - "&7&oTool"
   description:
@@ -368,7 +368,7 @@ STB_MULTIBUILDER:
     - "&eCrouch + Right Click&7 to build one block"
     - "&eCrouch + Mouse Wheel&7 to switch mode"
 STB_MULTIMETER:
-  name: "&fMultimeter"
+  name: 'Multimeter'
   type:
     - "&7&oTool"
   description:
@@ -377,7 +377,7 @@ STB_MULTIMETER:
   usage:
     - "&eRight Click&7 cabling or a machine to use"
 STB_PAINTBRUSH:
-  name: "&fPaintbrush"
+  name: 'Paintbrush'
   type:
     - "&7&oTool"
   description:
@@ -390,7 +390,7 @@ STB_PAINTBRUSH:
     - "&eCrouch + Right Click&7 air to empty the brush"
     - "&eRight Click&7 paintings to change the artwork"
 STB_PAINTROLLER:
-  name: "&fPaint Roller"
+  name: 'Paint Roller'
   type:
     - "&7&oTool"
   description:
@@ -402,7 +402,7 @@ STB_PAINTROLLER:
     - "&eCrouch + Right Click&7 a block to paint one block"
     - "&eCrouch + Right Click&7 air to empty the roller"
 STB_TAPEMEASURE:
-  name: "&fTape Measure"
+  name: 'Tape Measure'
   type:
     - "&7&oTool"
   description:
@@ -412,7 +412,7 @@ STB_TAPEMEASURE:
     - "&eCrouch + Right Click&7 a block to set the anchor"
     - "&eRight Click&7 a block to get the measurement"
 STB_LANDMARKER:
-  name: "&fLand Marker"
+  name: 'Land Marker'
   type:
     - "&7&oTool"
   description:
@@ -422,7 +422,7 @@ STB_LANDMARKER:
     - "&eRight Click&7 a block to store its position"
     - "&eRight Click&7 air to clear the position"
 STB_ENDERBAG:
-  name: "&fEnder Bag"
+  name: 'Ender Bag'
   type:
     - "&7&oGadget"
   description:
@@ -432,7 +432,7 @@ STB_ENDERBAG:
     - "&eRight Click&7 to open the bag"
     - "&eCrouch + Right Click&7 an Ender Box to sync frequency"
 STB_ENDERLEASH:
-  name: "&fEnder Leash"
+  name: 'Ender Leash'
   type:
     - "&7&oGadget"
   description:
@@ -441,7 +441,7 @@ STB_ENDERLEASH:
   usage:
     - "&eRight Click&7 to capture or release an animal"
 STB_ENDERTUNER:
-  name: "&fEnder Tuner"
+  name: 'Ender Tuner'
   type:
     - "&7&oTool"
   description:
@@ -451,14 +451,14 @@ STB_ENDERTUNER:
     - "&eRight Click&7 an Ender Box to tune it"
     - "&eRight Click&7 elsewhere to open the tuning GUI"
 STB_RECIPEBOOK:
-  name: "&fRecipe Book"
+  name: 'Recipe Book'
   type:
     - "&7&oGadget"
   description:
     - "&7Allows browsing and fabrication of all"
     - "&7known recipes."
 STB_ADVANCEDRECIPEBOOK:
-  name: "&fAdvanced Recipe Book"
+  name: 'Advanced Recipe Book'
   type:
     - "&7&oGadget"
   description:
@@ -466,7 +466,7 @@ STB_ADVANCEDRECIPEBOOK:
     - "&7and can pull items from adjacent"
     - "&7inventories during fabrication."
 STB_PVCELL:
-  name: "&fPV Cell"
+  name: 'PV Cell'
   type:
     - "&7&oComponent"
   description:
@@ -475,14 +475,14 @@ STB_PVCELL:
   usage:
     - "&eRight Click&7 a solar generator to insert it"
 STB_BLANKMODULE:
-  name: "&fBlank Item Router Module"
+  name: 'Blank Item Router Module'
   type:
     - "&7&oComponent"
   description:
     - "&7The blank base used to craft the"
     - "&7various Item Router modules."
 STB_SENDERMODULE:
-  name: "&fI.R. Mod: Sender"
+  name: 'I.R. Mod: Sender'
   type:
     - "&7&oComponent"
   description:
@@ -494,7 +494,7 @@ STB_SENDERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_ADVANCEDSENDERMODULE:
-  name: "&fI.R. Mod: Adv. Sender"
+  name: 'I.R. Mod: Adv. Sender'
   type:
     - "&7&oComponent"
   description:
@@ -505,7 +505,7 @@ STB_ADVANCEDSENDERMODULE:
     - "&eLeft Click&7 a router with a Receiver Module to link"
     - "&eCrouch + Left Click&7 to unlink"
 STB_HYPERSENDERMODULE:
-  name: "&fI.R. Mod: Hypersender"
+  name: 'I.R. Mod: Hypersender'
   type:
     - "&7&oComponent"
   description:
@@ -516,7 +516,7 @@ STB_HYPERSENDERMODULE:
     - "&eLeft Click&7 a router with a Receiver Module to link"
     - "&eCrouch + Left Click&7 anywhere to unlink"
 STB_RECEIVERMODULE:
-  name: "&fI.R. Mod: Receiver"
+  name: 'I.R. Mod: Receiver'
   type:
     - "&7&oComponent"
   description:
@@ -524,7 +524,7 @@ STB_RECEIVERMODULE:
     - "&7from a facing Sender module or a linked"
     - "&7Advanced Sender module."
 STB_PULLERMODULE:
-  name: "&fI.R. Mod: Puller"
+  name: 'I.R. Mod: Puller'
   type:
     - "&7&oComponent"
   description:
@@ -534,7 +534,7 @@ STB_PULLERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_DROPPERMODULE:
-  name: "&fI.R. Mod: Dropper"
+  name: 'I.R. Mod: Dropper'
   type:
     - "&7&oComponent"
   description:
@@ -544,7 +544,7 @@ STB_DROPPERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_DISTRIBUTORMODULE:
-  name: "&fI.R. Mod: Distributor"
+  name: 'I.R. Mod: Distributor'
   type:
     - "&7&oComponent"
   description:
@@ -552,7 +552,7 @@ STB_DISTRIBUTORMODULE:
     - "&7then sends them round-robin to all other"
     - "&7adjacent inventories."
 STB_SORTERMODULE:
-  name: "&fI.R. Mod: Sorter"
+  name: 'I.R. Mod: Sorter'
   type:
     - "&7&oComponent"
   description:
@@ -563,7 +563,7 @@ STB_SORTERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_VACUUMMODULE:
-  name: "&fI.R. Mod: Vacuum"
+  name: 'I.R. Mod: Vacuum'
   type:
     - "&7&oComponent"
   description:
@@ -572,7 +572,7 @@ STB_VACUUMMODULE:
   stats:
     - "&8⇨ &7Radius: &e6 blocks"
 STB_BREAKERMODULE:
-  name: "&fI.R. Mod: Breaker"
+  name: 'I.R. Mod: Breaker'
   type:
     - "&7&oComponent"
   description:
@@ -582,7 +582,7 @@ STB_BREAKERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_SILKYBREAKERMODULE:
-  name: "&fI.R. Mod: Silky Breaker"
+  name: 'I.R. Mod: Silky Breaker'
   type:
     - "&7&oComponent"
   description:
@@ -593,7 +593,7 @@ STB_SILKYBREAKERMODULE:
     - "&eLeft Click&7 a block to set the direction"
     - "&eCrouch + Left Click&7 air to unset the direction"
 STB_STACKMODULE:
-  name: "&fI.R. Mod: Stack Upgrade"
+  name: 'I.R. Mod: Stack Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -601,7 +601,7 @@ STB_STACKMODULE:
     - "&7items moved per operation, up to the"
     - "&7item's max stack size. Over 6 are ignored."
 STB_SPEEDMODULE:
-  name: "&fI.R. Mod: Speed Upgrade"
+  name: 'I.R. Mod: Speed Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -609,7 +609,7 @@ STB_SPEEDMODULE:
     - "&7speed. 0 modules = 1 operation / 20 ticks;"
     - "&71 = 1/15, 2 = 1/10, 3 = 1/5. Over 3 ignored."
 STB_SPEEDUPGRADE:
-  name: "&fSpeed Upgrade"
+  name: 'Speed Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -619,7 +619,7 @@ STB_SPEEDUPGRADE:
     - "&8⇨ &7Speed: &ex1.4"
     - "&8⇨ &7Power Usage: &ex1.6"
 STB_EJECTORUPGRADE:
-  name: "&fEjector Upgrade"
+  name: 'Ejector Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -628,7 +628,7 @@ STB_EJECTORUPGRADE:
   usage:
     - "&eLeft Click&7 a block to set the ejection direction"
 STB_REGULATORUPGRADE:
-  name: "&fRegulator Upgrade"
+  name: 'Regulator Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -636,7 +636,7 @@ STB_REGULATORUPGRADE:
     - "&7efficient resource usage. Effect varies"
     - "&7by machine."
 STB_THOROUGHNESSUPGRADE:
-  name: "&fThoroughness Upgrade"
+  name: 'Thoroughness Upgrade'
   type:
     - "&7&oComponent"
   description:
@@ -647,7 +647,7 @@ STB_THOROUGHNESSUPGRADE:
     - "&8⇨ &7Power Usage: &ex1.6"
     - "&8⇨ &7Bonus Output: &e+8%"
 STB_TENKENERGYCELL:
-  name: "&f10K Energy Cell"
+  name: '10K Energy Cell'
   type:
     - "&7&oComponent"
   description:
@@ -656,7 +656,7 @@ STB_TENKENERGYCELL:
   stats:
     - "&8⇨ &e⚡ &710000 SCU"
 STB_FIFTYKENERGYCELL:
-  name: "&f50K Energy Cell"
+  name: '50K Energy Cell'
   type:
     - "&7&oComponent"
   description:
@@ -665,118 +665,118 @@ STB_FIFTYKENERGYCELL:
   stats:
     - "&8⇨ &e⚡ &750000 SCU"
 STB_CIRCUITBOARD:
-  name: "&fCircuit Board"
+  name: 'Circuit Board'
   type:
     - "&7&oComponent"
   description:
     - "&7Used in the construction of electronic"
     - "&7circuits."
 STB_SIMPLECIRCUIT:
-  name: "&fSimple Electronic Circuit"
+  name: 'Simple Electronic Circuit'
   type:
     - "&7&oComponent"
   description:
     - "&7Used as a component in various machinery."
 STB_INTEGRATEDCIRCUIT:
-  name: "&fIntegrated Circuit"
+  name: 'Integrated Circuit'
   type:
     - "&7&oComponent"
   description:
     - "&7Used as a component in some more"
     - "&7advanced machinery."
 STB_MACHINEFRAME:
-  name: "&fMachine Frame"
+  name: 'Machine Frame'
   type:
     - "&7&oComponent"
   description:
     - "&7Used in fabrication of various machines."
 STB_TOUGHMACHINEFRAME:
-  name: "&fTough Machine Frame"
+  name: 'Tough Machine Frame'
   type:
     - "&7&oComponent"
   description:
     - "&7Used in fabrication of some more"
     - "&7advanced machines."
 STB_SILICONWAFER:
-  name: "&fSilicon Wafer"
+  name: 'Silicon Wafer'
   type:
     - "&7&oComponent"
   description:
     - "&7Used in the fabrication of more advanced"
     - "&7electronic circuits."
 STB_SUBSPACETRANSPONDER:
-  name: "&fSubspace Transponder"
+  name: 'Subspace Transponder'
   type:
     - "&7&oComponent"
   description:
     - "&7Used by some advanced items for"
     - "&7cross-world communication."
 STB_UNLINKEDSCURELAY:
-  name: "&fUnlinked SCU Relay"
+  name: 'Unlinked SCU Relay'
   type:
     - "&7&oComponent"
   description:
     - "&7Craft a pair of these together to link"
     - "&7them into a shared-charge SCU Relay."
 STB_IRONDUST:
-  name: "&fIron Dust"
+  name: 'Iron Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Smelt in a Smelter or Furnace to get"
     - "&7iron ingots."
 STB_GOLDDUST:
-  name: "&fGold Dust"
+  name: 'Gold Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Smelt in a Smelter or Furnace to get"
     - "&7gold ingots."
 STB_QUARTZDUST:
-  name: "&fQuartz Dust"
+  name: 'Quartz Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Cook in a Smelter to make silicon."
 STB_ENERGIZEDIRONDUST:
-  name: "&fEnergized Iron Dust"
+  name: 'Energized Iron Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Smelt to get an energized iron ingot."
 STB_ENERGIZEDGOLDDUST:
-  name: "&fEnergized Gold Dust"
+  name: 'Energized Gold Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Smelt to get an energized gold ingot."
 STB_ENERGIZEDIRONINGOT:
-  name: "&fEnergized Iron Ingot"
+  name: 'Energized Iron Ingot'
   type:
     - "&7&oResource"
   description:
     - "&7Strangely glowing..."
 STB_ENERGIZEDGOLDINGOT:
-  name: "&fEnergized Gold Ingot"
+  name: 'Energized Gold Ingot'
   type:
     - "&7&oResource"
   description:
     - "&7Strangely glowing..."
 STB_ENERGIZEDQUARTZ:
-  name: "&fEnergized Quartz"
+  name: 'Energized Quartz'
   type:
     - "&7&oResource"
   description:
     - "&7Strangely glowing..."
 STB_INFERNALDUST:
-  name: "&fInfernal Dust"
+  name: 'Infernal Dust'
   type:
     - "&7&oResource"
   description:
     - "&7Sometimes dropped from blazes; Looting"
     - "&7may help. Combine with iron or gold dust."
 STB_FISHBAIT:
-  name: "&fFish Bait"
+  name: 'Fish Bait'
   type:
     - "&7&oComponent"
   description:

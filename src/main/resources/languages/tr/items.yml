@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Bir tarla alanının nem seviyesini ölçer:'
   - '&75x5 büyüklüğünde bir alan.'
-  name: '&fGelişmiş Nem Ölçer'
+  name: 'Gelişmiş Nem Ölçer'
   stats:
   - '&8⇨ &7Alan: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Bilinen tarifleri gösterir ve üretir,'
   - '&7üretim sırasında bitişik envanterlerden'
   - '&7eşya çekebilir.'
-  name: '&fGelişmiş Tarif Kitabı'
+  name: 'Gelişmiş Tarif Kitabı'
   type:
   - '&7&oCihaz'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Bir Eşya Yönlendiricisine takılır ve eşyaları'
   - '&7bağlı bir Alıcı Modülüne gönderir,'
   - '&724 blok yarıçapta, görüş hattı gerekmez.'
-  name: '&fE.Y. Mod: Gel. Gönderici'
+  name: 'E.Y. Mod: Gel. Gönderici'
   type:
   - '&7&oBileşen'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Geçici, havada duran bir iskele bloğu,'
   - '&7boşluğa doğru inşa etmek için ideal.'
-  name: '&fMeleksi Blok'
+  name: 'Meleksi Blok'
   type:
   - '&7&oCihaz'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Bir alanı inşa edebilir veya temizleyebilir.'
   - '&7Alanı belirlemek için Arazi İşaretçisi kullan.'
-  name: '&fOtomatik İnşacı'
+  name: 'Otomatik İnşacı'
   type:
   - '&7&oMakine'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Otomatik olarak hasat eder ve yeniden eker:'
   - '&7Buğday, Patates ve Havuç ekinlerini 3x3'
   - '&7yarıçapta, makinenin 2 blok üstünde.'
-  name: '&fOtomatik Çiftlik'
+  name: 'Otomatik Çiftlik'
   type:
   - '&7&oMakine'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Otomatik olarak hasat eder ve yeniden eker:'
   - '&7Kakao Çekirdeği, Şeker Kamışı ve Kaktüs'
   - '&75x5 yarıçapta, makinenin 2 blok üstünde.'
-  name: '&fOtomatik Çiftlik MkII'
+  name: 'Otomatik Çiftlik MkII'
   type:
   - '&7&oMakine'
 STB_AUTOFORESTER:
   description:
   - '&7Otomatik olarak ağaçları keser ve yeniden diker'
   - '&75x5 yarıçapta, makinenin 2 blok üstünde.'
-  name: '&fOtomatik Ormancı'
+  name: 'Otomatik Ormancı'
   type:
   - '&7&oMakine'
 STB_BASICSOLARCELL:
   description:
   - '&7Açık havada parlak güneş ışığı altında'
   - '&7güç üretir. Çalışmak için PV Hücresi gerekir.'
-  name: '&fTemel Güneş Hücresi'
+  name: 'Temel Güneş Hücresi'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Büyük Depolama Ünitesi. Tek bir eşya'
   - '&7türünden muazzam miktarda depolar.'
-  name: '&fBDÜ'
+  name: 'BDÜ'
   stats:
   - '&8⇨ &7128 Yığın'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Organik malzemeleri güce dönüştürür.'
-  name: '&fBiyo Motor'
+  name: 'Biyo Motor'
   type:
   - '&7&oJeneratör'
 STB_BLANKMODULE:
   description:
   - '&7Çeşitli Eşya Yönlendirici modüllerini'
   - '&7üretmek için kullanılan boş taban.'
-  name: '&fBoş Eşya Yönlendirici Modülü'
+  name: 'Boş Eşya Yönlendirici Modülü'
   type:
   - '&7&oBileşen'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Bitişik bir blok güncellendiğinde'
   - '&7kızıltaş sinyali gönderir.'
-  name: '&fBlok Güncelleme Dedektörü'
+  name: 'Blok Güncelleme Dedektörü'
   type:
   - '&7&oMakine'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Ayarlanan yöndeki bloğu kırar'
   - '&7ve yönlendiriciye çeker.'
-  name: '&fE.Y. Mod: Kırıcı'
+  name: 'E.Y. Mod: Kırıcı'
   type:
   - '&7&oBileşen'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Elektronik devrelerin yapımında'
   - '&7kullanılır.'
-  name: '&fDevre Kartı'
+  name: 'Devre Kartı'
   type:
   - '&7&oBileşen'
 STB_DENSESOLAR:
   description:
   - '&7Açık havada parlak güneş ışığı altında'
   - '&7güç üretir. Çalışmak için PV Hücresi gerekir.'
-  name: '&fYoğun Güneş Hücresi'
+  name: 'Yoğun Güneş Hücresi'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Toprağı süren, tohum eken ve hasat eden,'
   - '&7daha geniş bir alanda çalışan, dahili'
   - '&7tohum çantalı bir alet.'
-  name: '&fElmas Kombine Çapa'
+  name: 'Elmas Kombine Çapa'
   type:
   - '&7&oAlet'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Ayarlanan yönden eşya çeker,'
   - '&7sonra bunları sırayla diğer tüm'
   - '&7bitişik envanterlere gönderir.'
-  name: '&fE.Y. Mod: Dağıtıcı'
+  name: 'E.Y. Mod: Dağıtıcı'
   type:
   - '&7&oBileşen'
 STB_DROPPERMODULE:
   description:
   - '&7Bir Eşya Yönlendiricisine takılır ve eşyaları'
   - '&7ayarlanan yönde yere bırakır.'
-  name: '&fE.Y. Mod: Bırakıcı'
+  name: 'E.Y. Mod: Bırakıcı'
   type:
   - '&7&oBileşen'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Bir makineye konur ve biten eşyalarını'
   - '&7bitişik bir envantere otomatik atar.'
-  name: '&fÇıkarıcı Yükseltmesi'
+  name: 'Çıkarıcı Yükseltmesi'
   type:
   - '&7&oBileşen'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Belirli eşyaları enerji yüklü hallerine'
   - '&7dönüştürmeni sağlar.'
-  name: '&fElektrikli Enerjilendirici'
+  name: 'Elektrikli Enerjilendirici'
   type:
   - '&7&oMakine'
 STB_ELEVATOR:
   description:
   - '&7Doğrudan üstüne veya altına yerleştirilen'
   - '&7diğer asansörlere bağlanır.'
-  name: '&fAsansör'
+  name: 'Asansör'
   type:
   - '&7&oMakine'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Kişisel veya küresel bir ender depo'
   - '&7envanterine taşınabilir erişim sağlar.'
-  name: '&fEnder Çantası'
+  name: 'Ender Çantası'
   type:
   - '&7&oCihaz'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Bağlı Ender Kutularından erişilebilen'
   - '&7boyut ötesi depolama.'
-  name: '&fEnder Kutusu'
+  name: 'Ender Kutusu'
   type:
   - '&7&oMakine'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Barışçıl tek bir hayvanı yakalar ve depolar,'
   - '&7hayvanlarını kolayca taşımanı sağlar.'
-  name: '&fEnder Tasması'
+  name: 'Ender Tasması'
   type:
   - '&7&oCihaz'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Bir Ender Kutusunun depolama frekansını'
   - '&7ayarlamak için altı boyutta titreşir.'
-  name: '&fEnder Ayarlayıcı'
+  name: 'Ender Ayarlayıcı'
   type:
   - '&7&oAlet'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Eriterek enerjili altın külçe elde et.'
-  name: '&fEnerjili Altın Tozu'
+  name: 'Enerjili Altın Tozu'
   type:
   - '&7&oKaynak'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Tuhaf biçimde parlıyor...'
-  name: '&fEnerjili Altın Külçe'
+  name: 'Enerjili Altın Külçe'
   type:
   - '&7&oKaynak'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Eriterek enerjili demir külçe elde et.'
-  name: '&fEnerjili Demir Tozu'
+  name: 'Enerjili Demir Tozu'
   type:
   - '&7&oKaynak'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Tuhaf biçimde parlıyor...'
-  name: '&fEnerjili Demir Külçe'
+  name: 'Enerjili Demir Külçe'
   type:
   - '&7&oKaynak'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Tuhaf biçimde parlıyor...'
-  name: '&fEnerjili Kuvars'
+  name: 'Enerjili Kuvars'
   type:
   - '&7&oKaynak'
 STB_FERMENTER:
   description:
   - '&7Çeşitli eşyaları mayalar, ayrıca Balık'
   - '&7Yemi yapımında kullanılır.'
-  name: '&fMayalandırıcı'
+  name: 'Mayalandırıcı'
   type:
   - '&7&oMakine'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Jeneratörler ve makineler arasında gücü'
   - '&7tamponlamak için enerji depolar.'
-  name: '&f50K Pil Kutusu'
+  name: '50K Pil Kutusu'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Taşınabilir bir enerji hücresi; depoladığı'
   - '&7STB gücüyle cihazları yolda şarj eder.'
-  name: '&f50K Enerji Hücresi'
+  name: '50K Enerji Hücresi'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Balık tutmak için Balık Ağında kullanılır.'
-  name: '&fBalık Yemi'
+  name: 'Balık Yemi'
   type:
   - '&7&oBileşen'
 STB_FISHINGNET:
   description:
   - '&7Suyun üzerine yerleştirilip Balık Yemi ile'
   - '&7beslendiğinde kendiliğinden balık tutar.'
-  name: '&fBalık Ağı'
+  name: 'Balık Ağı'
   type:
   - '&7&oMakine'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Toprağı süren, tohum eken ve hasat eden,'
   - '&7dahili tohum çantalı çok amaçlı bir çapa.'
-  name: '&fAltın Kombine Çapa'
+  name: 'Altın Kombine Çapa'
   type:
   - '&7&oAlet'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Bir Eriticide veya Fırında eriterek'
   - '&7altın külçe elde et.'
-  name: '&fAltın Tozu'
+  name: 'Altın Tozu'
   type:
   - '&7&oKaynak'
 STB_HEATENGINE:
   description:
   - '&7Yanabilen eşyaları güce dönüştürür.'
-  name: '&fIsı Motoru'
+  name: 'Isı Motoru'
   type:
   - '&7&oJeneratör'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Bir ağın net enerji kazancını veya'
   - '&7kaybını hologramlarla gösterir.'
-  name: '&fHolografik Ekran'
+  name: 'Holografik Ekran'
   type:
   - '&7&oMakine'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Bir Eşya Yönlendiricisine takılır ve eşyaları'
   - '&7her yerdeki bağlı bir Alıcı Modülüne,'
   - '&7herhangi bir dünyada gönderir.'
-  name: '&fE.Y. Mod: Hipergönderici'
+  name: 'E.Y. Mod: Hipergönderici'
   type:
   - '&7&oBileşen'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hiper Depolama Ünitesi. Tek bir eşya'
   - '&7türünden muazzam miktarda depolar.'
   - '&7Kırıldığında içeriğini korur. Çalışmak için güç gerektirir.'
-  name: '&fHDÜ'
+  name: 'HDÜ'
   stats:
   - '&8⇨ &733554431 Yığın'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Bazen blazelerden düşer; Yağma'
   - '&7yardımcı olabilir. Demir veya altın tozuyla birleştir.'
-  name: '&fCehennem Tozu'
+  name: 'Cehennem Tozu'
   type:
   - '&7&oKaynak'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Otomatik olarak hasat eder ve yeniden eker:'
   - '&7Nether Mantarını 5x5 yarıçapta, 2 blok'
   - '&7makinenin üstünde.'
-  name: '&fCehennemi Çiftlik'
+  name: 'Cehennemi Çiftlik'
   type:
   - '&7&oMakine'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Daha gelişmiş bazı makinelerde bileşen'
   - '&7olarak kullanılır.'
-  name: '&fEntegre Devre'
+  name: 'Entegre Devre'
   type:
   - '&7&oBileşen'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Toprağı süren, tohum eken ve hasat eden,'
   - '&7dahili tohum çantalı çok amaçlı bir çapa.'
-  name: '&fDemir Kombine Çapa'
+  name: 'Demir Kombine Çapa'
   type:
   - '&7&oAlet'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Bir Eriticide veya Fırında eriterek'
   - '&7demir külçe elde et.'
-  name: '&fDemir Tozu'
+  name: 'Demir Tozu'
   type:
   - '&7&oKaynak'
 STB_ITEMROUTER:
   description:
   - '&7Eşyaları yönlendirir. Etkinleştirmek için'
   - '&7bir veya daha fazla Yönlendirme Modülü tak.'
-  name: '&fEşya Yönlendiricisi'
+  name: 'Eşya Yönlendiricisi'
   type:
   - '&7&oMakine'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Sensible GPS ile bir konum depolar,'
   - '&7makine çalışma alanlarını belirlemekte kullanılır.'
-  name: '&fArazi İşaretleyici'
+  name: 'Arazi İşaretleyici'
   type:
   - '&7&oAlet'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Çeşitli makinelerin üretiminde kullanılır.'
-  name: '&fMakine Çerçevesi'
+  name: 'Makine Çerçevesi'
   type:
   - '&7&oBileşen'
 STB_MAGMATICENGINE:
   description:
   - '&7Lavı güce dönüştürür.'
-  name: '&fMagmatik Motor'
+  name: 'Magmatik Motor'
   type:
   - '&7&oJeneratör'
 STB_MASHER:
   description:
   - '&7Cevherleri ve diğer kaynakları toza öğütür.'
-  name: '&fEzici'
+  name: 'Ezici'
   type:
   - '&7&oMakine'
 STB_MOISTURECHECKER:
   description:
   - '&7Bir tarla alanının nem seviyesini ölçer:'
   - '&73x3 büyüklüğünde bir alan.'
-  name: '&fNem Ölçer'
+  name: 'Nem Ölçer'
   stats:
   - '&8⇨ &7Alan: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Seçilebilir İnşa ve Değiştirme moduyla'
   - '&7bir alandaki blokları yerleştiren veya'
   - '&7değiştiren, güç ile çalışan bir inşa aleti.'
-  name: '&fÇoklu İnşacı'
+  name: 'Çoklu İnşacı'
   type:
   - '&7&oAlet'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Kabloların ve makinelerin enerji ağı'
   - '&7bağlantılarını ve güç tüketimini okur.'
-  name: '&fMultimetre'
+  name: 'Multimetre'
   type:
   - '&7&oAlet'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Yün, halı ve boyalı kil ya da cam gibi'
   - '&7boyanabilir blokları, Boya Kutusundan'
   - '&7Boya Kutusundan alınan boya ile.'
-  name: '&fBoya Fırçası'
+  name: 'Boya Fırçası'
   type:
   - '&7&oAlet'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7İçinde renkli boya barındırır.'
-  name: '&fBoya Kutusu'
+  name: 'Boya Kutusu'
   type:
   - '&7&oMakine'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Boyanabilir blokları fırçaya göre daha'
   - '&7geniş bir alanda boyar, Boya Kutusundan'
   - '&7alınan boyayı kullanarak.'
-  name: '&fBoya Rulosu'
+  name: 'Boya Rulosu'
   type:
   - '&7&oAlet'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Bir ağın net enerji kazancını veya'
   - '&7kaybını bağlı tabelalarda gösterir.'
-  name: '&fGüç Ekranı'
+  name: 'Güç Ekranı'
   type:
   - '&7&oMakine'
 STB_PULLERMODULE:
   description:
   - '&7Bir Eşya Yönlendiricisine takılır ve bitişik'
   - '&7bir envanterden eşya çeker.'
-  name: '&fE.Y. Mod: Çekici'
+  name: 'E.Y. Mod: Çekici'
   type:
   - '&7&oBileşen'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Aşağıdaki sıvıları takılan bir Kovaya'
   - '&7veya Cam Şişeye pompalar.'
-  name: '&fPompa'
+  name: 'Pompa'
   type:
   - '&7&oMakine'
 STB_PVCELL:
   description:
   - '&7Bir güneş jeneratörünü çalıştıran'
   - '&7fotovoltaik hücre. Zamanla yıpranır.'
-  name: '&fFotovoltaik Hücre'
+  name: 'Fotovoltaik Hücre'
   type:
   - '&7&oBileşen'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Silikon yapmak için bir Eriticide pişir.'
-  name: '&fKuvars Tozu'
+  name: 'Kuvars Tozu'
   type:
   - '&7&oKaynak'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Karşısındaki Gönderici modülden ya da bağlı'
   - '&7bir Gelişmiş Gönderici modülden eşya alan'
   - '&7pasif bir modül.'
-  name: '&fE.Y. Mod: Alıcı'
+  name: 'E.Y. Mod: Alıcı'
   type:
   - '&7&oBileşen'
 STB_RECIPEBOOK:
   description:
   - '&7Bilinen tüm tariflere göz atmayı ve'
   - '&7üretmeyi sağlar.'
-  name: '&fTarif Kitabı'
+  name: 'Tarif Kitabı'
   type:
   - '&7&oCihaz'
 STB_REDSTONECLOCK:
   description:
   - '&7Blok içinde saat. Ayarlanabilir aralık ve'
   - '&7süreyle kızıltaş sinyali gönderir.'
-  name: '&fKızıltaş Saati'
+  name: 'Kızıltaş Saati'
   type:
   - '&7&oMakine'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Makinelere daha verimli kaynak kullanımı'
   - '&7için zeka katar. Etkisi makineye'
   - '&7göre değişir.'
-  name: '&fDüzenleyici Yükseltmesi'
+  name: 'Düzenleyici Yükseltmesi'
   type:
   - '&7&oBileşen'
 STB_SAWMILL:
   description:
   - '&7Ahşap eşyaları, elde üretimden daha yüksek'
   - '&7verimle tahtaya işler.'
-  name: '&fHızar Değirmeni'
+  name: 'Hızar Değirmeni'
   type:
   - '&7&oMakine'
 STB_SCURELAY:
   description:
   - '&7Herhangi bir mesafede ortak şarj paylaşmak'
   - '&7için başka bir SCU Rölesine bağlanır.'
-  name: '&fSCU Rölesi'
+  name: 'SCU Rölesi'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7bitişik bir envantere ya da görüş hattındaki,'
   - '&710 blok içinde Alıcı Modülü olan bir'
   - '&7yönlendiriciye gönderir.'
-  name: '&fE.Y. Mod: Gönderici'
+  name: 'E.Y. Mod: Gönderici'
   type:
   - '&7&oBileşen'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Daha gelişmiş elektronik devrelerin'
   - '&7üretiminde kullanılır.'
-  name: '&fSilikon Levha'
+  name: 'Silikon Levha'
   type:
   - '&7&oBileşen'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Ayarlanan yöndeki bloğu ipeksi dokunuşla kırar'
   - '&7ve yönlendiriciye çeker.'
   - '&7İpeksi Dokunuş kitabıyla üretilmelidir.'
-  name: '&fE.Y. Mod: İpeksi Kırıcı'
+  name: 'E.Y. Mod: İpeksi Kırıcı'
   type:
   - '&7&oBileşen'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Çeşitli makinelerde bileşen olarak kullanılır.'
-  name: '&fBasit Elektronik Devre'
+  name: 'Basit Elektronik Devre'
   type:
   - '&7&oBileşen'
 STB_SMELTER:
   description:
   - '&7Eşyaları Fırın gibi eritir, ama daha'
   - '&7hızlı ve daha verimli.'
-  name: '&fEritici'
+  name: 'Eritici'
   type:
   - '&7&oMakine'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Bir Eşya Yönlendiricisine takılır ve eşyaları'
   - '&7yalnızca boşsa ya da o eşyayı zaten'
   - '&7içeriyorsa bir envantere koyar.'
-  name: '&fE.Y. Mod: Ayırıcı'
+  name: 'E.Y. Mod: Ayırıcı'
   type:
   - '&7&oBileşen'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Tüm seslerin şiddetini'
   - '&78 bloklu yarıçap içinde azaltır.'
-  name: '&fSes Kısıcı'
+  name: 'Ses Kısıcı'
   type:
   - '&7&oMakine'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Yönlendiricinin hızını artıran pasif bir'
   - '&7modül. 0 modül = 1 işlem / 20 tik;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. 3 üstü yok sayılır.'
-  name: '&fE.Y. Mod: Hız Yükseltmesi'
+  name: 'E.Y. Mod: Hız Yükseltmesi'
   type:
   - '&7&oBileşen'
 STB_SPEEDUPGRADE:
   description:
   - '&7Bir makineye konur ve daha yüksek güç'
   - '&7tüketimi pahasına onu hızlandırır.'
-  name: '&fHız Yükseltmesi'
+  name: 'Hız Yükseltmesi'
   stats:
   - '&8⇨ &7Hız: &ex1.4'
   - '&8⇨ &7Güç Tüketimi: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Pasif bir modül; her biri işlem başına'
   - '&7taşınan eşyayı ikiye katlar, eşyanın'
   - '&7azami yığın boyutuna kadar. 6 üstü yok sayılır.'
-  name: '&fE.Y. Mod: Yığın Yükseltmesi'
+  name: 'E.Y. Mod: Yığın Yükseltmesi'
   type:
   - '&7&oBileşen'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Bazı gelişmiş eşyalar tarafından dünyalar'
   - '&7arası iletişim için kullanılır.'
-  name: '&fAltuzay Vericisi'
+  name: 'Altuzay Vericisi'
   type:
   - '&7&oBileşen'
 STB_TAPEMEASURE:
   description:
   - '&7Dünyada seçtiğin iki nokta'
   - '&7arasındaki mesafeyi ölçer.'
-  name: '&fŞerit Metre'
+  name: 'Şerit Metre'
   type:
   - '&7&oAlet'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Jeneratörler ve makineler arasında gücü'
   - '&7tamponlamak için enerji depolar.'
-  name: '&f10K Pil Kutusu'
+  name: '10K Pil Kutusu'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Taşınabilir bir enerji hücresi; depoladığı'
   - '&7STB gücüyle cihazları yolda şarj eder.'
-  name: '&f10K Enerji Hücresi'
+  name: '10K Enerji Hücresi'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Bir makineye konur ve hız ile güç pahasına'
   - '&7kullanışlı çıktıyı artırır.'
-  name: '&fTitizlik Yükseltmesi'
+  name: 'Titizlik Yükseltmesi'
   stats:
   - '&8⇨ &7Hız: &ex0.7'
   - '&8⇨ &7Güç Tüketimi: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Daha gelişmiş bazı makinelerin üretiminde'
   - '&7kullanılır.'
-  name: '&fSağlam Makine Çerçevesi'
+  name: 'Sağlam Makine Çerçevesi'
   type:
   - '&7&oBileşen'
 STB_TRASHCAN:
   description:
   - '&7İçine konulan veya borularla gönderilen her'
   - '&7eşyayı YOK EDER. Dikkatli ol!'
-  name: '&fÇöp Kutusu'
+  name: 'Çöp Kutusu'
   type:
   - '&7&oMakine'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Bunlardan bir çifti birlikte üretilerek'
   - '&7ortak şarjlı bir SCU Rölesine bağlanır.'
-  name: '&fBağlantısız SCU Rölesi'
+  name: 'Bağlantısız SCU Rölesi'
   type:
   - '&7&oBileşen'
 STB_VACUUMMODULE:
   description:
   - '&7Bir Eşya Yönlendiricisine takılır ve yakındaki'
   - '&7yere düşmüş eşyaları emer.'
-  name: '&fE.Y. Mod: Emici'
+  name: 'E.Y. Mod: Emici'
   stats:
   - '&8⇨ &7Yarıçap: &e6 blok'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Yakındaki ekinleri sular ve büyütür.'
   - '&7Aşırı kullanma!'
-  name: '&fSulama Kabı'
+  name: 'Sulama Kabı'
   type:
   - '&7&oAlet'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Toprağı süren, tohum eken ve hasat eden,'
   - '&7dahili tohum çantalı çok amaçlı bir çapa.'
-  name: '&fAhşap Kombine Çapa'
+  name: 'Ahşap Kombine Çapa'
   type:
   - '&7&oAlet'
   usage:

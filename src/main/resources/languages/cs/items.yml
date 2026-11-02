@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Změří úroveň vlhkosti'
   - '&7oblasti 5x5 zemědělské půdy.'
-  name: '&fPokročilý měřič vlhkosti'
+  name: 'Pokročilý měřič vlhkosti'
   stats:
   - '&8⇨ &7Oblast: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Prochází a vyrábí známé recepty'
   - '&7a umí při výrobě brát předměty'
   - '&7ze sousedních inventářů.'
-  name: '&fPokročilá kniha receptů'
+  name: 'Pokročilá kniha receptů'
   type:
   - '&7&oPomůcka'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Zasune se do směrovače předmětů a posílá předměty'
   - '&7do propojeného modulu přijímače v okruhu'
   - '&724 bloků, bez nutnosti přímé viditelnosti.'
-  name: '&fMod S.P.: Pokr. odesílač'
+  name: 'Mod S.P.: Pokr. odesílač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Dočasný plovoucí lešenový blok,'
   - '&7ideální pro stavbu do volného prostoru.'
-  name: '&fAndělský blok'
+  name: 'Andělský blok'
   type:
   - '&7&oPomůcka'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Dokáže zastavět nebo vyčistit oblast.'
   - '&7Oblast vymezíš pomocí značkovačů území.'
-  name: '&fAutomatický stavitel'
+  name: 'Automatický stavitel'
   type:
   - '&7&oStroj'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Automaticky sklízí a znovu sází'
   - '&7pšenici, brambory a mrkev v okruhu 3x3'
   - '&7bloků, 2 bloky nad strojem.'
-  name: '&fAutomatická farma'
+  name: 'Automatická farma'
   type:
   - '&7&oStroj'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Automaticky sklízí a znovu sází'
   - '&7kakaové boby, cukrovou třtinu a kaktus'
   - '&7v okruhu 5x5, 2 bloky nad strojem.'
-  name: '&fAutomatická farma MkII'
+  name: 'Automatická farma MkII'
   type:
   - '&7&oStroj'
 STB_AUTOFORESTER:
   description:
   - '&7Automaticky kácí a znovu sází stromy'
   - '&7v okruhu 5x5, 2 bloky nad strojem.'
-  name: '&fAutomatický lesník'
+  name: 'Automatický lesník'
   type:
   - '&7&oStroj'
 STB_BASICSOLARCELL:
   description:
   - '&7Vytváří energii venku na jasném'
   - '&7slunci. K funkci potřebuje fotovoltaický článek.'
-  name: '&fZákladní solární generátor'
+  name: 'Základní solární generátor'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Velká úložná jednotka. Ukládá obrovské'
   - '&7množství jednoho typu předmětu.'
-  name: '&fVÚJ'
+  name: 'VÚJ'
   stats:
   - '&8⇨ &7128 stacků'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Převádí organické materiály na energii.'
-  name: '&fBiomotor'
+  name: 'Biomotor'
   type:
   - '&7&oGenerátor'
 STB_BLANKMODULE:
   description:
   - '&7Prázdný základ pro výrobu'
   - '&7různých modulů směrovače předmětů.'
-  name: '&fPrázdný modul směrovače předmětů'
+  name: 'Prázdný modul směrovače předmětů'
   type:
   - '&7&oKomponenta'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Vyšle redstone impuls, když se'
   - '&7změní sousední blok.'
-  name: '&fDetektor změn bloků'
+  name: 'Detektor změn bloků'
   type:
   - '&7&oStroj'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Rozbije blok v nastaveném'
   - '&7směru a vtáhne ho do směrovače.'
-  name: '&fMod S.P.: Bourač'
+  name: 'Mod S.P.: Bourač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Používá se při stavbě elektronických'
   - '&7obvodů.'
-  name: '&fDeska obvodu'
+  name: 'Deska obvodu'
   type:
   - '&7&oKomponenta'
 STB_DENSESOLAR:
   description:
   - '&7Vytváří energii venku na jasném'
   - '&7slunci. K funkci potřebuje fotovoltaický článek.'
-  name: '&fHustý solární generátor'
+  name: 'Hustý solární generátor'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Víceúčelová motyka, která orá, seje a'
   - '&7sklízí na větší oblasti, s'
   - '&7vestavěným pytlíkem na semena.'
-  name: '&fDiamantová kombinovaná motyka'
+  name: 'Diamantová kombinovaná motyka'
   type:
   - '&7&oNástroj'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Vytahuje předměty z nastaveného směru'
   - '&7a rozesílá je po řadě do všech ostatních'
   - '&7sousedních inventářů.'
-  name: '&fMod S.P.: Rozdělovač'
+  name: 'Mod S.P.: Rozdělovač'
   type:
   - '&7&oKomponenta'
 STB_DROPPERMODULE:
   description:
   - '&7Zasune se do směrovače předmětů a vyhazuje předměty'
   - '&7na zem v nastaveném směru.'
-  name: '&fMod S.P.: Vyhazovač'
+  name: 'Mod S.P.: Vyhazovač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Vloží se do stroje, aby automaticky vyhazoval'
   - '&7hotové předměty do sousedního inventáře.'
-  name: '&fVylepšení vyhazovače'
+  name: 'Vylepšení vyhazovače'
   type:
   - '&7&oKomponenta'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Umožňuje energizovat některé předměty'
   - '&7na jejich nabité varianty.'
-  name: '&fElektrický energizér'
+  name: 'Elektrický energizér'
   type:
   - '&7&oStroj'
 STB_ELEVATOR:
   description:
   - '&7Propojuje se s dalšími výtahy umístěnými'
   - '&7přímo nad ním nebo pod ním.'
-  name: '&fVýtah'
+  name: 'Výtah'
   type:
   - '&7&oStroj'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Poskytuje přenosný přístup k osobnímu'
   - '&7nebo globálnímu ender úložišti.'
-  name: '&fEnder pytel'
+  name: 'Ender pytel'
   type:
   - '&7&oPomůcka'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Mimodimenzionální úložiště přístupné'
   - '&7z propojených Ender krabic.'
-  name: '&fEnder krabice'
+  name: 'Ender krabice'
   type:
   - '&7&oStroj'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Chytí a uloží jedno mírumilovné zvíře,'
   - '&7takže snadno přestěhuješ hospodářská zvířata.'
-  name: '&fEnder vodítko'
+  name: 'Ender vodítko'
   type:
   - '&7&oPomůcka'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Vibruje v šesti dimenzích a ladí'
   - '&7úložnou frekvenci Ender krabice.'
-  name: '&fEnder ladička'
+  name: 'Ender ladička'
   type:
   - '&7&oNástroj'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Přetav a získáš energizovaný zlatý ingot.'
-  name: '&fEnergizovaný zlatý prach'
+  name: 'Energizovaný zlatý prach'
   type:
   - '&7&oSurovina'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Podivně září...'
-  name: '&fEnergizovaný zlatý ingot'
+  name: 'Energizovaný zlatý ingot'
   type:
   - '&7&oSurovina'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Přetav a získáš energizovaný železný ingot.'
-  name: '&fEnergizovaný železný prach'
+  name: 'Energizovaný železný prach'
   type:
   - '&7&oSurovina'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Podivně září...'
-  name: '&fEnergizovaný železný ingot'
+  name: 'Energizovaný železný ingot'
   type:
   - '&7&oSurovina'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Podivně září...'
-  name: '&fEnergizovaný křemen'
+  name: 'Energizovaný křemen'
   type:
   - '&7&oSurovina'
 STB_FERMENTER:
   description:
   - '&7Fermentuje různé předměty a také se'
   - '&7používá k výrobě rybí návnady.'
-  name: '&fFermentor'
+  name: 'Fermentor'
   type:
   - '&7&oStroj'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Ukládá energii jako zásobník mezi'
   - '&7generátory a stroji.'
-  name: '&f50K bateriová skříň'
+  name: '50K bateriová skříň'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Přenosný energetický článek, který nese uloženou'
   - '&7energii STB pro nabíjení zařízení na cestách.'
-  name: '&f50K energetický článek'
+  name: '50K energetický článek'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Používá se v rybářské síti k chytání ryb.'
-  name: '&fRybí návnada'
+  name: 'Rybí návnada'
   type:
   - '&7&oKomponenta'
 STB_FISHINGNET:
   description:
   - '&7Automaticky chytá ryby, když je umístěna'
   - '&7nad vodou a krmena rybí návnadou.'
-  name: '&fRybářská síť'
+  name: 'Rybářská síť'
   type:
   - '&7&oStroj'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Víceúčelová motyka, která orá, seje a'
   - '&7sklízí, s vestavěným pytlíkem na semena.'
-  name: '&fZlatá kombinovaná motyka'
+  name: 'Zlatá kombinovaná motyka'
   type:
   - '&7&oNástroj'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Přetav v tavírně nebo peci a získáš'
   - '&7zlaté ingoty.'
-  name: '&fZlatý prach'
+  name: 'Zlatý prach'
   type:
   - '&7&oSurovina'
 STB_HEATENGINE:
   description:
   - '&7Převádí hořlavé předměty na energii.'
-  name: '&fTepelný motor'
+  name: 'Tepelný motor'
   type:
   - '&7&oGenerátor'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Zobrazuje čistý energetický'
   - '&7zisk či ztrátu sítě pomocí hologramů.'
-  name: '&fHolografický monitor'
+  name: 'Holografický monitor'
   type:
   - '&7&oStroj'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Zasune se do směrovače předmětů a posílá předměty'
   - '&7do propojeného modulu přijímače kdekoli,'
   - '&7v libovolném světě.'
-  name: '&fMod S.P.: Hyperodesílač'
+  name: 'Mod S.P.: Hyperodesílač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hyper úložná jednotka. Ukládá kolosální'
   - '&7množství jednoho typu předmětu.'
   - '&7Při rozbití si zachová obsah. K funkci potřebuje energii.'
-  name: '&fHÚJ'
+  name: 'HÚJ'
   stats:
   - '&8⇨ &733554431 stacků'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Občas padá z blazeů; Drancování'
   - '&7může pomoci. Zkombinuj se železným nebo zlatým prachem.'
-  name: '&fPekelný prach'
+  name: 'Pekelný prach'
   type:
   - '&7&oSurovina'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Automaticky sklízí a znovu sází'
   - '&7netherové bradavice v okruhu 5x5, 2 bloky'
   - '&7nad strojem.'
-  name: '&fPekelná farma'
+  name: 'Pekelná farma'
   type:
   - '&7&oStroj'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Používá se jako komponenta v některých'
   - '&7pokročilejších strojích.'
-  name: '&fIntegrovaný obvod'
+  name: 'Integrovaný obvod'
   type:
   - '&7&oKomponenta'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Víceúčelová motyka, která orá, seje a'
   - '&7sklízí, s vestavěným pytlíkem na semena.'
-  name: '&fŽelezná kombinovaná motyka'
+  name: 'Železná kombinovaná motyka'
   type:
   - '&7&oNástroj'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Přetav v tavírně nebo peci a získáš'
   - '&7železné ingoty.'
-  name: '&fŽelezný prach'
+  name: 'Železný prach'
   type:
   - '&7&oSurovina'
 STB_ITEMROUTER:
   description:
   - '&7Směruje předměty. Vlož jeden či více'
   - '&7směrovacích modulů, aby fungoval.'
-  name: '&fSměrovač předmětů'
+  name: 'Směrovač předmětů'
   type:
   - '&7&oStroj'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Ukládá pozici pomocí Sensible GPS,'
   - '&7používá se k vymezení pracovních oblastí strojů.'
-  name: '&fZnačkovač území'
+  name: 'Značkovač území'
   type:
   - '&7&oNástroj'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Používá se při výrobě různých strojů.'
-  name: '&fRám stroje'
+  name: 'Rám stroje'
   type:
   - '&7&oKomponenta'
 STB_MAGMATICENGINE:
   description:
   - '&7Převádí lávu na energii.'
-  name: '&fMagmatický motor'
+  name: 'Magmatický motor'
   type:
   - '&7&oGenerátor'
 STB_MASHER:
   description:
   - '&7Drtí rudy a další suroviny na prachy.'
-  name: '&fDrtič'
+  name: 'Drtič'
   type:
   - '&7&oStroj'
 STB_MOISTURECHECKER:
   description:
   - '&7Změří úroveň vlhkosti'
   - '&7oblasti 3x3 zemědělské půdy.'
-  name: '&fMěřič vlhkosti'
+  name: 'Měřič vlhkosti'
   stats:
   - '&8⇨ &7Oblast: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Napájený stavební nástroj, který umísťuje'
   - '&7nebo vyměňuje bloky v oblasti, s'
   - '&7volitelnými režimy Stavba a Výměna.'
-  name: '&fMultistavitel'
+  name: 'Multistavitel'
   type:
   - '&7&oNástroj'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Načítá připojení energetické sítě a'
   - '&7spotřebu energie kabelů a strojů.'
-  name: '&fMultimetr'
+  name: 'Multimetr'
   type:
   - '&7&oNástroj'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Natírá obarvitelné bloky jako vlnu,'
   - '&7koberec a barvenou hlínu či sklo, pomocí'
   - '&7barvy načerpané z plechovky barvy.'
-  name: '&fŠtětec'
+  name: 'Štětec'
   type:
   - '&7&oNástroj'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Uchovává zásobu barvy.'
-  name: '&fPlechovka barvy'
+  name: 'Plechovka barvy'
   type:
   - '&7&oStroj'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Natírá obarvitelné bloky na větší'
   - '&7oblasti než štětec, pomocí barvy načerpané'
   - '&7z plechovky barvy.'
-  name: '&fMalířský váleček'
+  name: 'Malířský váleček'
   type:
   - '&7&oNástroj'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Zobrazuje čistý energetický'
   - '&7zisk či ztrátu sítě na připojených cedulích.'
-  name: '&fMonitor energie'
+  name: 'Monitor energie'
   type:
   - '&7&oStroj'
 STB_PULLERMODULE:
   description:
   - '&7Zasune se do směrovače předmětů a vytahuje předměty'
   - '&7ze sousedního inventáře.'
-  name: '&fMod S.P.: Vytahovač'
+  name: 'Mod S.P.: Vytahovač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Čerpá kapaliny zespodu do vloženého'
   - '&7kbelíku nebo skleněné lahve.'
-  name: '&fČerpadlo'
+  name: 'Čerpadlo'
   type:
   - '&7&oStroj'
 STB_PVCELL:
   description:
   - '&7Fotovoltaický článek, který napájí solární'
   - '&7generátor. Časem se opotřebuje.'
-  name: '&fFotovoltaický článek'
+  name: 'Fotovoltaický článek'
   type:
   - '&7&oKomponenta'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Uvař v tavírně a vznikne křemík.'
-  name: '&fKřemenný prach'
+  name: 'Křemenný prach'
   type:
   - '&7&oSurovina'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Pasivní modul, který přijímá předměty'
   - '&7od namířeného modulu odesílače nebo propojeného'
   - '&7modulu pokročilého odesílače.'
-  name: '&fMod S.P.: Přijímač'
+  name: 'Mod S.P.: Přijímač'
   type:
   - '&7&oKomponenta'
 STB_RECIPEBOOK:
   description:
   - '&7Umožňuje procházet a vyrábět všechny'
   - '&7známé recepty.'
-  name: '&fKniha receptů'
+  name: 'Kniha receptů'
   type:
   - '&7&oPomůcka'
 STB_REDSTONECLOCK:
   description:
   - '&7Hodiny v bloku. Vysílají redstone'
   - '&7signál s nastavitelným intervalem a délkou.'
-  name: '&fRedstone hodiny'
+  name: 'Redstone hodiny'
   type:
   - '&7&oStroj'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Dodá strojům inteligenci pro účinnější'
   - '&7využití surovin. Účinek se liší'
   - '&7podle stroje.'
-  name: '&fVylepšení regulátoru'
+  name: 'Vylepšení regulátoru'
   type:
   - '&7&oKomponenta'
 STB_SAWMILL:
   description:
   - '&7Zpracovává dřevěné předměty na prkna'
   - '&7s vyšším výtěžkem než výroba.'
-  name: '&fPila'
+  name: 'Pila'
   type:
   - '&7&oStroj'
 STB_SCURELAY:
   description:
   - '&7Propojuje se s dalším SCU relé a sdílí'
   - '&7společný náboj na libovolnou vzdálenost.'
-  name: '&fSCU relé'
+  name: 'SCU relé'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7do sousedního inventáře nebo do směrovače'
   - '&7s modulem přijímače v okruhu 10 bloků'
   - '&7v přímé viditelnosti.'
-  name: '&fMod S.P.: Odesílač'
+  name: 'Mod S.P.: Odesílač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Používá se při výrobě pokročilejších'
   - '&7elektronických obvodů.'
-  name: '&fKřemíková destička'
+  name: 'Křemíková destička'
   type:
   - '&7&oKomponenta'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Vytěží hedvábným dotykem blok v nastaveném'
   - '&7směru a vtáhne ho do směrovače.'
   - '&7Musí být vyroben s knihou Hedvábný dotyk.'
-  name: '&fMod S.P.: Hedvábný bourač'
+  name: 'Mod S.P.: Hedvábný bourač'
   type:
   - '&7&oKomponenta'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Používá se jako komponenta v různých strojích.'
-  name: '&fJednoduchý elektronický obvod'
+  name: 'Jednoduchý elektronický obvod'
   type:
   - '&7&oKomponenta'
 STB_SMELTER:
   description:
   - '&7Taví předměty jako pec, ale'
   - '&7rychleji a účinněji.'
-  name: '&fTavírna'
+  name: 'Tavírna'
   type:
   - '&7&oStroj'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Zasune se do směrovače předmětů a umísťuje předměty'
   - '&7do inventáře jen tehdy, je-li prázdný nebo'
   - '&7už ten předmět obsahuje.'
-  name: '&fMod S.P.: Třídič'
+  name: 'Mod S.P.: Třídič'
   type:
   - '&7&oKomponenta'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Snižuje hlasitost všech zvuků'
   - '&7v okruhu 8 bloků.'
-  name: '&fTlumič zvuku'
+  name: 'Tlumič zvuku'
   type:
   - '&7&oStroj'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Pasivní modul, který zvyšuje rychlost'
   - '&7směrovače. 0 modulů = 1 operace / 20 ticků;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Nad 3 se ignorují.'
-  name: '&fMod S.P.: Vylepšení rychlosti'
+  name: 'Mod S.P.: Vylepšení rychlosti'
   type:
   - '&7&oKomponenta'
 STB_SPEEDUPGRADE:
   description:
   - '&7Vloží se do stroje, aby běžel'
   - '&7rychleji za cenu vyšší spotřeby energie.'
-  name: '&fVylepšení rychlosti'
+  name: 'Vylepšení rychlosti'
   stats:
   - '&8⇨ &7Rychlost: &ex1.4'
   - '&8⇨ &7Spotřeba energie: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Pasivní modul; každý zdvojnásobí počet'
   - '&7předmětů přesunutých za operaci, až po'
   - '&7maximální velikost stacku. Nad 6 se ignorují.'
-  name: '&fMod S.P.: Vylepšení stacku'
+  name: 'Mod S.P.: Vylepšení stacku'
   type:
   - '&7&oKomponenta'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Některé pokročilé předměty ho používají'
   - '&7ke komunikaci mezi světy.'
-  name: '&fPodprostorový transpondér'
+  name: 'Podprostorový transpondér'
   type:
   - '&7&oKomponenta'
 STB_TAPEMEASURE:
   description:
   - '&7Měří vzdálenost mezi dvěma'
   - '&7body, které vybereš ve světě.'
-  name: '&fSvinovací metr'
+  name: 'Svinovací metr'
   type:
   - '&7&oNástroj'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Ukládá energii jako zásobník mezi'
   - '&7generátory a stroji.'
-  name: '&f10K bateriová skříň'
+  name: '10K bateriová skříň'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Přenosný energetický článek, který nese uloženou'
   - '&7energii STB pro nabíjení zařízení na cestách.'
-  name: '&f10K energetický článek'
+  name: '10K energetický článek'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Vloží se do stroje, aby zvýšil užitečný'
   - '&7výstup za cenu rychlosti a energie.'
-  name: '&fVylepšení důkladnosti'
+  name: 'Vylepšení důkladnosti'
   stats:
   - '&8⇨ &7Rychlost: &ex0.7'
   - '&8⇨ &7Spotřeba energie: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Používá se při výrobě některých'
   - '&7pokročilejších strojů.'
-  name: '&fOdolný rám stroje'
+  name: 'Odolný rám stroje'
   type:
   - '&7&oKomponenta'
 STB_TRASHCAN:
   description:
   - '&7NIČÍ všechny předměty, které do něj vložíš'
   - '&7nebo dopravíš potrubím. Pozor!'
-  name: '&fOdpadkový koš'
+  name: 'Odpadkový koš'
   type:
   - '&7&oStroj'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Vyrob dvojici těchto dohromady a propojíš je'
   - '&7do SCU relé se sdíleným nábojem.'
-  name: '&fNepropojené SCU relé'
+  name: 'Nepropojené SCU relé'
   type:
   - '&7&oKomponenta'
 STB_VACUUMMODULE:
   description:
   - '&7Zasune se do směrovače předmětů a vysává'
   - '&7odhozené předměty poblíž.'
-  name: '&fMod S.P.: Vysavač'
+  name: 'Mod S.P.: Vysavač'
   stats:
   - '&8⇨ &7Okruh: &e6 bloků'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Zalévá a pěstuje plodiny poblíž.'
   - '&7Nepoužívej ji příliš často!'
-  name: '&fKonev'
+  name: 'Konev'
   type:
   - '&7&oNástroj'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Víceúčelová motyka, která orá, seje a'
   - '&7sklízí, s vestavěným pytlíkem na semena.'
-  name: '&fDřevěná kombinovaná motyka'
+  name: 'Dřevěná kombinovaná motyka'
   type:
   - '&7&oNástroj'
   usage:

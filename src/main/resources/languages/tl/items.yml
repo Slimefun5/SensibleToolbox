@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Sinusuri ang antas ng basa ng'
   - '&75x5 na lugar ng sakahan.'
-  name: '&fAbanseng Tagasuri ng Halumigmig'
+  name: 'Abanseng Tagasuri ng Halumigmig'
   stats:
   - '&8⇨ &7Lugar: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Sinisilip at ginagawa ang nalalamang mga resipi,'
   - '&7at kayang humila ng mga bagay mula sa katabing'
   - '&7imbentaryo habang gumagawa.'
-  name: '&fAbanseng Libro ng Resipi'
+  name: 'Abanseng Libro ng Resipi'
   type:
   - '&7&oGadyet'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Isinusuksok sa Ruter ng Bagay para magpadala ng mga bagay'
   - '&7sa naka-ugnay na Modyul ng Tagatanggap sa loob ng'
   - '&724-blokeng radyus, hindi kailangang matanaw.'
-  name: '&fI.R. Modyul: Abanseng Tagapadala'
+  name: 'I.R. Modyul: Abanseng Tagapadala'
   type:
   - '&7&oBahagi'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Pansamantalang lumulutang na blokeng andamyo,'
   - '&7mainam sa pagtatayo papasok sa bakanteng espasyo.'
-  name: '&fAnghelikong Bloke'
+  name: 'Anghelikong Bloke'
   type:
   - '&7&oGadyet'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Kayang magtayo o maglinis ng isang lugar.'
   - '&7Gumamit ng mga Panandang Lupa para itakda ang lugar.'
-  name: '&fAwtomatikong Tagatayo'
+  name: 'Awtomatikong Tagatayo'
   type:
   - '&7&oMakina'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Awtomatikong umaani at muling itinatanim'
   - '&7ang Trigo, Patatas at Karot sa 3x3 na'
   - '&7radyus, 2 bloke sa itaas ng makina.'
-  name: '&fAwtomatikong Sakahan'
+  name: 'Awtomatikong Sakahan'
   type:
   - '&7&oMakina'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Awtomatikong umaani at muling itinatanim'
   - '&7ang Kakaw, Tubo at Kaktus'
   - '&7sa 5x5 na radyus, 2 bloke sa itaas ng makina.'
-  name: '&fAwtomatikong Sakahan MkII'
+  name: 'Awtomatikong Sakahan MkII'
   type:
   - '&7&oMakina'
 STB_AUTOFORESTER:
   description:
   - '&7Awtomatikong nagpupuputol at muling nagtatanim ng mga puno'
   - '&7sa 5x5 na radyus, 2 bloke sa itaas ng makina.'
-  name: '&fAwtomatikong Tagagubat'
+  name: 'Awtomatikong Tagagubat'
   type:
   - '&7&oMakina'
 STB_BASICSOLARCELL:
   description:
   - '&7Nagbubuo ng lakas kapag nasa labas sa maliwanag'
   - '&7na sikat ng araw. Kailangan ng Selda ng PV para gumana.'
-  name: '&fBasikong Solar'
+  name: 'Basikong Solar'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Malaking Yunit ng Imbakan. Nag-iimbak ng napakalaking'
   - '&7dami ng isahang uri ng bagay.'
-  name: '&fMYI'
+  name: 'MYI'
   stats:
   - '&8⇨ &7128 Salansan'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Ginagawang lakas ang mga organikong materyal.'
-  name: '&fBiyo Motor'
+  name: 'Biyo Motor'
   type:
   - '&7&oGenerator'
 STB_BLANKMODULE:
   description:
   - '&7Ang blangkong base na ginagamit upang likhain ang'
   - '&7iba''t ibang modyul ng Ruter ng Bagay.'
-  name: '&fBlangkong Modyul ng Ruter ng Bagay'
+  name: 'Blangkong Modyul ng Ruter ng Bagay'
   type:
   - '&7&oBahagi'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Nagpapalabas ng pulso ng redstone kapag'
   - '&7nagbabago ang katabing bloke.'
-  name: '&fDetektor ng Pagbabago ng Bloke'
+  name: 'Detektor ng Pagbabago ng Bloke'
   type:
   - '&7&oMakina'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Binabasag ang bloke sa itinakdang'
   - '&7direksyon at hinihila ito papasok sa ruter.'
-  name: '&fI.R. Modyul: Tagabasag'
+  name: 'I.R. Modyul: Tagabasag'
   type:
   - '&7&oBahagi'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Ginagamit sa paggawa ng mga elektronikong'
   - '&7sirkito.'
-  name: '&fTabla ng Sirkito'
+  name: 'Tabla ng Sirkito'
   type:
   - '&7&oBahagi'
 STB_DENSESOLAR:
   description:
   - '&7Nagbubuo ng lakas kapag nasa labas sa maliwanag'
   - '&7na sikat ng araw. Kailangan ng Selda ng PV para gumana.'
-  name: '&fMasinsing Solar'
+  name: 'Masinsing Solar'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Asarol na maraming gamit na nagbubungkal, naghahasik at'
   - '&7umaani sa mas malawak na lugar, na may'
   - '&7nakapaloob na supot ng binhi.'
-  name: '&fDiyamanteng Asarol Kombinado'
+  name: 'Diyamanteng Asarol Kombinado'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Humihila ng mga bagay mula sa itinakdang direksyon,'
   - '&7pagkatapos ay ipinapadala ito nang paikot sa lahat ng ibang'
   - '&7katabing imbentaryo.'
-  name: '&fI.R. Modyul: Tagapamahagi'
+  name: 'I.R. Modyul: Tagapamahagi'
   type:
   - '&7&oBahagi'
 STB_DROPPERMODULE:
   description:
   - '&7Isinusuksok sa Ruter ng Bagay para ihulog ang mga bagay'
   - '&7sa lupa sa itinakdang direksyon.'
-  name: '&fI.R. Modyul: Tagahulog'
+  name: 'I.R. Modyul: Tagahulog'
   type:
   - '&7&oBahagi'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Inilalagay sa makina para awtomatikong ilabas ang'
   - '&7mga tapos nang bagay sa katabing imbentaryo.'
-  name: '&fPampahusay ng Tagapaglabas'
+  name: 'Pampahusay ng Tagapaglabas'
   type:
   - '&7&oBahagi'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Nagbibigay-daan sa iyo na enerhisahin ang ilang bagay'
   - '&7tungo sa kanilang nakargang baryante.'
-  name: '&fElektrikong Enerhisador'
+  name: 'Elektrikong Enerhisador'
   type:
   - '&7&oMakina'
 STB_ELEVATOR:
   description:
   - '&7Nakaugnay sa ibang asensor na nakalagay'
   - '&7direkta sa itaas o ibaba nito.'
-  name: '&fAsensor'
+  name: 'Asensor'
   type:
   - '&7&oMakina'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Nagbibigay ng portableng akses sa personal'
   - '&7o pandaigdigang imbentaryo ng imbakang ender.'
-  name: '&fSupot ng Ender'
+  name: 'Supot ng Ender'
   type:
   - '&7&oGadyet'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Imbakang labas-dimensyon na maaabot'
   - '&7mula sa mga naka-ugnay na Kahon ng Ender.'
-  name: '&fKahon ng Ender'
+  name: 'Kahon ng Ender'
   type:
   - '&7&oMakina'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Hinuhuli at iniimbak ang isang mapayapang hayop,'
   - '&7para madali mong mailipat ang mga alagang hayop.'
-  name: '&fTali ng Ender'
+  name: 'Tali ng Ender'
   type:
   - '&7&oGadyet'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Nanginginig sa anim na dimensyon para itono ang'
   - '&7prekwensiya ng imbakan ng Kahon ng Ender.'
-  name: '&fPantono ng Ender'
+  name: 'Pantono ng Ender'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Tunawin para makuha ang enerhisadong bareta ng ginto.'
-  name: '&fEnerhisadong Alikabok ng Ginto'
+  name: 'Enerhisadong Alikabok ng Ginto'
   type:
   - '&7&oRekurso'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Kakaibang nagniningning...'
-  name: '&fEnerhisadong Bareta ng Ginto'
+  name: 'Enerhisadong Bareta ng Ginto'
   type:
   - '&7&oRekurso'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Tunawin para makuha ang enerhisadong bareta ng bakal.'
-  name: '&fEnerhisadong Alikabok ng Bakal'
+  name: 'Enerhisadong Alikabok ng Bakal'
   type:
   - '&7&oRekurso'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Kakaibang nagniningning...'
-  name: '&fEnerhisadong Bareta ng Bakal'
+  name: 'Enerhisadong Bareta ng Bakal'
   type:
   - '&7&oRekurso'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Kakaibang nagniningning...'
-  name: '&fEnerhisadong Kuwarts'
+  name: 'Enerhisadong Kuwarts'
   type:
   - '&7&oRekurso'
 STB_FERMENTER:
   description:
   - '&7Binuburo ang iba''t ibang bagay, at ginagamit din'
   - '&7upang gumawa ng Pain sa Isda.'
-  name: '&fBuruan'
+  name: 'Buruan'
   type:
   - '&7&oMakina'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Nag-iimbak ng enerhiya para imbakin ang lakas sa pagitan'
   - '&7ng mga generador at makina.'
-  name: '&f50K Kahon ng Baterya'
+  name: '50K Kahon ng Baterya'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Portableng selda ng enerhiya na taglay ang naimbak na'
   - '&7lakas ng STB para kargahan ang mga kasangkapan habang naglalakbay.'
-  name: '&f50K Selda ng Enerhiya'
+  name: '50K Selda ng Enerhiya'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Ginagamit sa Lambat para manghuli ng isda.'
-  name: '&fPain sa Isda'
+  name: 'Pain sa Isda'
   type:
   - '&7&oBahagi'
 STB_FISHINGNET:
   description:
   - '&7Awtomatikong nanghuhuli ng isda kapag nakalagay'
   - '&7sa ibabaw ng tubig at pinakain ng Pain sa Isda.'
-  name: '&fLambat'
+  name: 'Lambat'
   type:
   - '&7&oMakina'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Asarol na maraming gamit na nagbubungkal, naghahasik at'
   - '&7umaani, na may nakapaloob na supot ng binhi.'
-  name: '&fGintong Asarol Kombinado'
+  name: 'Gintong Asarol Kombinado'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Tunawin sa Tunawan o Pugon para makuha ang'
   - '&7mga bareta ng ginto.'
-  name: '&fAlikabok ng Ginto'
+  name: 'Alikabok ng Ginto'
   type:
   - '&7&oRekurso'
 STB_HEATENGINE:
   description:
   - '&7Ginagawang lakas ang mga bagay na nasusunog.'
-  name: '&fMotor ng Init'
+  name: 'Motor ng Init'
   type:
   - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Ipinapakita ang netong enerhiya ng network na'
   - '&7nadagdag o nabawas gamit ang mga holograma.'
-  name: '&fHolograpikong Pantanaw'
+  name: 'Holograpikong Pantanaw'
   type:
   - '&7&oMakina'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Isinusuksok sa Ruter ng Bagay para magpadala ng mga bagay'
   - '&7sa naka-ugnay na Modyul ng Tagatanggap saanman,'
   - '&7sa anumang mundo.'
-  name: '&fI.R. Modyul: Hipertagapadala'
+  name: 'I.R. Modyul: Hipertagapadala'
   type:
   - '&7&oBahagi'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hiper na Yunit ng Imbakan. Nag-iimbak ng napakalaking'
   - '&7dami ng isahang uri ng bagay.'
   - '&7Pinapanatili ang laman kapag nabasag. Nangangailangan ng lakas para gumana.'
-  name: '&fHYI'
+  name: 'HYI'
   stats:
   - '&8⇨ &733554431 Salansan'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Minsan ibinabagsak ng mga blaze; maaaring'
   - '&7makatulong ang Pandarambong. Isama sa alikabok ng bakal o ginto.'
-  name: '&fImpernal na Alikabok'
+  name: 'Impernal na Alikabok'
   type:
   - '&7&oRekurso'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Awtomatikong umaani at muling itinatanim'
   - '&7ang Kulugo ng Nether sa 5x5 na radyus, 2 bloke'
   - '&7sa itaas ng makina.'
-  name: '&fImpernal na Sakahan'
+  name: 'Impernal na Sakahan'
   type:
   - '&7&oMakina'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Ginagamit na sangkap sa ilang mas'
   - '&7abanseng makinarya.'
-  name: '&fIntegradong Sirkito'
+  name: 'Integradong Sirkito'
   type:
   - '&7&oBahagi'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Asarol na maraming gamit na nagbubungkal, naghahasik at'
   - '&7umaani, na may nakapaloob na supot ng binhi.'
-  name: '&fBakal na Asarol Kombinado'
+  name: 'Bakal na Asarol Kombinado'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Tunawin sa Tunawan o Pugon para makuha ang'
   - '&7mga bareta ng bakal.'
-  name: '&fAlikabok ng Bakal'
+  name: 'Alikabok ng Bakal'
   type:
   - '&7&oRekurso'
 STB_ITEMROUTER:
   description:
   - '&7Nagruruta ng mga bagay. Magpasok ng isa o higit pang'
   - '&7Modyul ng Pagruruta para aktibahin ito.'
-  name: '&fRuter ng Bagay'
+  name: 'Ruter ng Bagay'
   type:
   - '&7&oMakina'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Nag-iimbak ng posisyon sa Sensible GPS,'
   - '&7ginagamit upang itakda ang lugar ng trabaho ng makina.'
-  name: '&fPanandang Lupa'
+  name: 'Panandang Lupa'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Ginagamit sa paggawa ng iba''t ibang makina.'
-  name: '&fBalangkas ng Makina'
+  name: 'Balangkas ng Makina'
   type:
   - '&7&oBahagi'
 STB_MAGMATICENGINE:
   description:
   - '&7Ginagawang lakas ang Lava.'
-  name: '&fMagmatikong Motor'
+  name: 'Magmatikong Motor'
   type:
   - '&7&oGenerator'
 STB_MASHER:
   description:
   - '&7Ginigiling ang mga mineral at iba pang yaman tungo sa mga alikabok.'
-  name: '&fPanggiling'
+  name: 'Panggiling'
   type:
   - '&7&oMakina'
 STB_MOISTURECHECKER:
   description:
   - '&7Sinusuri ang antas ng basa ng'
   - '&73x3 na lugar ng sakahan.'
-  name: '&fTagasuri ng Halumigmig'
+  name: 'Tagasuri ng Halumigmig'
   stats:
   - '&8⇨ &7Lugar: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Pinapaganang kasangkapan sa pagtatayo na naglalagay o'
   - '&7nagpapalit ng mga bloke sa isang lugar, na may'
   - '&7mapipiling modong Pagtayo at Pagpalit.'
-  name: '&fMultitagatayo'
+  name: 'Multitagatayo'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Binabasa ang mga koneksyon ng net ng enerhiya at'
   - '&7paggamit ng lakas ng mga kable at makina.'
-  name: '&fMultimetro'
+  name: 'Multimetro'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Pinipintahan ang mga blokeng makokoloran gaya ng lana,'
   - '&7karpet at tinang luwad o salamin, gamit ang'
   - '&7pinturang hinango sa Lata ng Pintura.'
-  name: '&fPinsel'
+  name: 'Pinsel'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Naglalaman ng suplay ng may kulay na pintura.'
-  name: '&fLata ng Pintura'
+  name: 'Lata ng Pintura'
   type:
   - '&7&oMakina'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Pinipintahan ang mga blokeng makokoloran sa mas malaking'
   - '&7lugar kaysa sa pinsel, gamit ang pinturang hinango'
   - '&7sa Lata ng Pintura.'
-  name: '&fRolyo ng Pintura'
+  name: 'Rolyo ng Pintura'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Ipinapakita ang netong enerhiya ng network na'
   - '&7nadagdag o nabawas sa mga nakakabit na karatula.'
-  name: '&fPantanaw ng Lakas'
+  name: 'Pantanaw ng Lakas'
   type:
   - '&7&oMakina'
 STB_PULLERMODULE:
   description:
   - '&7Isinusuksok sa Ruter ng Bagay para humila ng mga bagay'
   - '&7mula sa katabing imbentaryo.'
-  name: '&fI.R. Modyul: Tagahila'
+  name: 'I.R. Modyul: Tagahila'
   type:
   - '&7&oBahagi'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Bumobomba ng likido mula sa ibaba papasok sa'
   - '&7ipinasok na Timba o Boteng Salamin.'
-  name: '&fBomba'
+  name: 'Bomba'
   type:
   - '&7&oMakina'
 STB_PVCELL:
   description:
   - '&7Potobolteykong selda na nagpapagana sa solar na'
   - '&7generador. Nauubos ito sa paglipas ng oras.'
-  name: '&fSelda ng PV'
+  name: 'Selda ng PV'
   type:
   - '&7&oBahagi'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Lutuin sa Tunawan para gumawa ng silikon.'
-  name: '&fAlikabok ng Kuwarts'
+  name: 'Alikabok ng Kuwarts'
   type:
   - '&7&oRekurso'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Pasibong modyul na tumatanggap ng mga bagay'
   - '&7mula sa nakaharap na modyul na Tagapadala o naka-ugnay na'
   - '&7modyul na Abanseng Tagapadala.'
-  name: '&fI.R. Modyul: Tagatanggap'
+  name: 'I.R. Modyul: Tagatanggap'
   type:
   - '&7&oBahagi'
 STB_RECIPEBOOK:
   description:
   - '&7Nagbibigay-daan sa pagsilip at paggawa ng lahat ng'
   - '&7nalalamang mga resipi.'
-  name: '&fLibro ng Resipi'
+  name: 'Libro ng Resipi'
   type:
   - '&7&oGadyet'
 STB_REDSTONECLOCK:
   description:
   - '&7Orasan-sa-bloke. Nagpapalabas ng senyas ng'
   - '&7redstone na may maisasaayos na agwat at tagal.'
-  name: '&fOrasan ng Redstone'
+  name: 'Orasan ng Redstone'
   type:
   - '&7&oMakina'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Nagdadagdag ng talino sa mga makina para sa mas'
   - '&7mahusay na paggamit ng yaman. Nagkakaiba ang epekto'
   - '&7ayon sa makina.'
-  name: '&fPampahusay ng Regulador'
+  name: 'Pampahusay ng Regulador'
   type:
   - '&7&oBahagi'
 STB_SAWMILL:
   description:
   - '&7Pinoproseso ang mga bagay na kahoy tungo sa mga tabla'
   - '&7na may mas mataas na bunga kaysa sa paglikha.'
-  name: '&fLagarian'
+  name: 'Lagarian'
   type:
   - '&7&oMakina'
 STB_SCURELAY:
   description:
   - '&7Nakaugnay sa ibang Rele ng SCU para ibahagi'
   - '&7ang pinagsamang karga sa anumang distansya.'
-  name: '&fRele ng SCU'
+  name: 'Rele ng SCU'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7sa katabing imbentaryo, o sa ruter'
   - '&7na may Modyul ng Tagatanggap sa loob ng 10 bloke'
   - '&7na natatanaw.'
-  name: '&fI.R. Modyul: Tagapadala'
+  name: 'I.R. Modyul: Tagapadala'
   type:
   - '&7&oBahagi'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Ginagamit sa paggawa ng mas abanseng'
   - '&7elektronikong sirkito.'
-  name: '&fLamina ng Silikon'
+  name: 'Lamina ng Silikon'
   type:
   - '&7&oBahagi'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Hinahaplos-sutla ang bloke sa itinakdang'
   - '&7direksyon at hinihila ito papasok sa ruter.'
   - '&7Dapat likhain gamit ang libro ng Haplos ng Sutla.'
-  name: '&fI.R. Modyul: Masutlang Tagabasag'
+  name: 'I.R. Modyul: Masutlang Tagabasag'
   type:
   - '&7&oBahagi'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Ginagamit na sangkap sa iba''t ibang makinarya.'
-  name: '&fPayak na Elektronikong Sirkito'
+  name: 'Payak na Elektronikong Sirkito'
   type:
   - '&7&oBahagi'
 STB_SMELTER:
   description:
   - '&7Tinutunaw ang mga bagay tulad ng Pugon, ngunit'
   - '&7mas mabilis at mas mahusay.'
-  name: '&fTunawan'
+  name: 'Tunawan'
   type:
   - '&7&oMakina'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Isinusuksok sa Ruter ng Bagay para ilagay ang mga bagay'
   - '&7sa imbentaryo lamang kung walang laman ito o'
   - '&7naglalaman na ng bagay na iyon.'
-  name: '&fI.R. Modyul: Tagauri'
+  name: 'I.R. Modyul: Tagauri'
   type:
   - '&7&oBahagi'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Binabawasan ang lakas ng lahat ng tunog'
   - '&7sa loob ng 8-blokeng radyus.'
-  name: '&fPampahupa ng Tunog'
+  name: 'Pampahupa ng Tunog'
   type:
   - '&7&oMakina'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Pasibong modyul na nagdadagdag ng bilis'
   - '&7ng ruter. 0 modyul = 1 operasyon / 20 tik;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Hindi pinapansin ang higit sa 3.'
-  name: '&fI.R. Modyul: Pampahusay ng Bilis'
+  name: 'I.R. Modyul: Pampahusay ng Bilis'
   type:
   - '&7&oBahagi'
 STB_SPEEDUPGRADE:
   description:
   - '&7Inilalagay sa makina para patakbuhin ito nang'
   - '&7mas mabilis, kapalit ng mas mataas na paggamit ng lakas.'
-  name: '&fPampahusay ng Bilis'
+  name: 'Pampahusay ng Bilis'
   stats:
   - '&8⇨ &7Bilis: &ex1.4'
   - '&8⇨ &7Paggamit ng Lakas: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Pasibong modyul; dinodoble ng bawat isa ang'
   - '&7bagay na inililipat kada operasyon, hanggang sa'
   - '&7pinakamalaking salansan ng bagay. Hindi pinapansin ang higit sa 6.'
-  name: '&fI.R. Modyul: Pampahusay ng Salansan'
+  name: 'I.R. Modyul: Pampahusay ng Salansan'
   type:
   - '&7&oBahagi'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Ginagamit ng ilang abanseng bagay para sa'
   - '&7komunikasyong tawid-mundo.'
-  name: '&fTagatugon ng Subespasyo'
+  name: 'Tagatugon ng Subespasyo'
   type:
   - '&7&oBahagi'
 STB_TAPEMEASURE:
   description:
   - '&7Sinusukat ang distansya sa pagitan ng dalawang'
   - '&7puntong pipiliin mo sa mundo.'
-  name: '&fMetro Panukat'
+  name: 'Metro Panukat'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Nag-iimbak ng enerhiya para imbakin ang lakas sa pagitan'
   - '&7ng mga generador at makina.'
-  name: '&f10K Kahon ng Baterya'
+  name: '10K Kahon ng Baterya'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Portableng selda ng enerhiya na taglay ang naimbak na'
   - '&7lakas ng STB para kargahan ang mga kasangkapan habang naglalakbay.'
-  name: '&f10K Selda ng Enerhiya'
+  name: '10K Selda ng Enerhiya'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Inilalagay sa makina para itaas ang kapaki-pakinabang na'
   - '&7paglabas, kapalit ng bilis at lakas.'
-  name: '&fPampahusay ng Kalubusan'
+  name: 'Pampahusay ng Kalubusan'
   stats:
   - '&8⇨ &7Bilis: &ex0.7'
   - '&8⇨ &7Paggamit ng Lakas: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Ginagamit sa paggawa ng ilang mas'
   - '&7abanseng makina.'
-  name: '&fMatibay na Balangkas ng Makina'
+  name: 'Matibay na Balangkas ng Makina'
   type:
   - '&7&oBahagi'
 STB_TRASHCAN:
   description:
   - '&7SINISIRA ang anumang bagay na inilagay o ipinadaloy'
   - '&7papasok nito. Mag-ingat!'
-  name: '&fBasurahan'
+  name: 'Basurahan'
   type:
   - '&7&oMakina'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Likhain ang dalawa nito nang sabay para ugnayin'
   - '&7tungo sa Rele ng SCU na may hatiang karga.'
-  name: '&fHindi Naka-ugnay na Rele ng SCU'
+  name: 'Hindi Naka-ugnay na Rele ng SCU'
   type:
   - '&7&oBahagi'
 STB_VACUUMMODULE:
   description:
   - '&7Isinusuksok sa Ruter ng Bagay para sipsipin ang'
   - '&7malapit na mga bagay na nahulog.'
-  name: '&fI.R. Modyul: Tagasipsip'
+  name: 'I.R. Modyul: Tagasipsip'
   stats:
   - '&8⇨ &7Radyus: &e6 bloke'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Dinidiligan at pinapatubo ang malapit na mga pananim.'
   - '&7Huwag itong gamitin nang labis!'
-  name: '&fRegadera'
+  name: 'Regadera'
   type:
   - '&7&oKasangkapan'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Asarol na maraming gamit na nagbubungkal, naghahasik at'
   - '&7umaani, na may nakapaloob na supot ng binhi.'
-  name: '&fKahoy na Asarol Kombinado'
+  name: 'Kahoy na Asarol Kombinado'
   type:
   - '&7&oKasangkapan'
   usage:

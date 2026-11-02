@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Kiểm tra mức độ ẩm của một'
   - '&7khu vực đất trồng 5x5.'
-  name: '&fBộ Kiểm tra Độ ẩm Nâng cao'
+  name: 'Bộ Kiểm tra Độ ẩm Nâng cao'
   stats:
   - '&8⇨ &7Khu vực: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Xem và chế tạo công thức đã biết,'
   - '&7và có thể lấy vật phẩm từ các túi đồ'
   - '&7liền kề trong lúc chế tạo.'
-  name: '&fSách Công thức Nâng cao'
+  name: 'Sách Công thức Nâng cao'
   type:
   - '&7&oThiết Bị'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Lắp vào Bộ định tuyến vật phẩm để gửi vật phẩm'
   - '&7tới Mô-đun Bộ thu đã liên kết trong'
   - '&7bán kính 24 khối, không cần tầm nhìn thẳng.'
-  name: '&fMô-đun BĐT: Bộ gửi N.cao'
+  name: 'Mô-đun BĐT: Bộ gửi N.cao'
   type:
   - '&7&oThành Phần'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Khối giàn giáo bay tạm thời,'
   - '&7lý tưởng để xây ra khoảng không.'
-  name: '&fKhối Thiên thần'
+  name: 'Khối Thiên thần'
   type:
   - '&7&oThiết Bị'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Có thể xây hoặc dọn một khu vực.'
   - '&7Dùng Cọc Mốc Đất để xác định khu vực.'
-  name: '&fMáy Xây Tự động'
+  name: 'Máy Xây Tự động'
   type:
   - '&7&oMáy Móc'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Tự động thu hoạch và trồng lại'
   - '&7hoa màu Lúa mì, Khoai tây và Cà rốt bán kính 3x3'
   - '&7xung quanh, 2 khối phía trên máy.'
-  name: '&fNông trại Tự động'
+  name: 'Nông trại Tự động'
   type:
   - '&7&oMáy Móc'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Tự động thu hoạch và trồng lại'
   - '&7Hạt Cacao, Mía và Xương rồng'
   - '&7trong bán kính 5x5, 2 khối phía trên máy.'
-  name: '&fNông trại Tự động MkII'
+  name: 'Nông trại Tự động MkII'
   type:
   - '&7&oMáy Móc'
 STB_AUTOFORESTER:
   description:
   - '&7Tự động đốn và trồng lại cây'
   - '&7trong bán kính 5x5, 2 khối phía trên máy.'
-  name: '&fMáy Đốn gỗ Tự động'
+  name: 'Máy Đốn gỗ Tự động'
   type:
   - '&7&oMáy Móc'
 STB_BASICSOLARCELL:
   description:
   - '&7Tạo điện năng khi ở ngoài trời dưới ánh'
   - '&7nắng gắt. Cần một Ngăn Quang điện để hoạt động.'
-  name: '&fPin Mặt trời Cơ bản'
+  name: 'Pin Mặt trời Cơ bản'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Thiết bị Lưu trữ Lớn. Lưu trữ một lượng rất lớn'
   - '&7của một loại vật phẩm duy nhất.'
-  name: '&fTLL'
+  name: 'TLL'
   stats:
   - '&8⇨ &7128 Chồng'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Chuyển đổi nguyên liệu hữu cơ thành điện năng.'
-  name: '&fĐộng cơ Sinh học'
+  name: 'Động cơ Sinh học'
   type:
   - '&7&oMáy Phát Điện'
 STB_BLANKMODULE:
   description:
   - '&7Phần nền trống dùng để chế tạo các'
   - '&7mô-đun Bộ định tuyến vật phẩm khác nhau.'
-  name: '&fMô-đun Bộ định tuyến vật phẩm Trống'
+  name: 'Mô-đun Bộ định tuyến vật phẩm Trống'
   type:
   - '&7&oThành Phần'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Phát ra tín hiệu đá đỏ khi một'
   - '&7khối liền kề thay đổi.'
-  name: '&fBộ Phát hiện Cập nhật Khối'
+  name: 'Bộ Phát hiện Cập nhật Khối'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Phá khối theo hướng đã'
   - '&7cấu hình và kéo nó vào bộ định tuyến.'
-  name: '&fMô-đun BĐT: Bộ phá khối'
+  name: 'Mô-đun BĐT: Bộ phá khối'
   type:
   - '&7&oThành Phần'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Dùng trong việc chế tạo các mạch'
   - '&7điện tử.'
-  name: '&fBảng Mạch'
+  name: 'Bảng Mạch'
   type:
   - '&7&oThành Phần'
 STB_DENSESOLAR:
   description:
   - '&7Tạo điện năng khi ở ngoài trời dưới ánh'
   - '&7nắng gắt. Cần một Ngăn Quang điện để hoạt động.'
-  name: '&fPin Mặt trời Đặc'
+  name: 'Pin Mặt trời Đặc'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Cày đa dụng giúp xới, gieo và'
   - '&7thu hoạch trên khu vực rộng hơn, có'
   - '&7túi hạt giống tích hợp.'
-  name: '&fCày Liên hợp Kim cương'
+  name: 'Cày Liên hợp Kim cương'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Kéo vật phẩm từ hướng đã cấu hình,'
   - '&7rồi gửi lần lượt tới mọi túi đồ'
   - '&7liền kề khác.'
-  name: '&fMô-đun BĐT: Bộ phân phối'
+  name: 'Mô-đun BĐT: Bộ phân phối'
   type:
   - '&7&oThành Phần'
 STB_DROPPERMODULE:
   description:
   - '&7Lắp vào Bộ định tuyến vật phẩm để thả vật phẩm'
   - '&7xuống đất theo hướng đã cấu hình.'
-  name: '&fMô-đun BĐT: Bộ thả'
+  name: 'Mô-đun BĐT: Bộ thả'
   type:
   - '&7&oThành Phần'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Đặt vào máy để tự động đẩy vật phẩm'
   - '&7thành phẩm sang túi đồ liền kề.'
-  name: '&fNâng cấp Đẩy ra'
+  name: 'Nâng cấp Đẩy ra'
   type:
   - '&7&oThành Phần'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Cho phép bạn tích điện một số vật phẩm'
   - '&7thành biến thể đã sạc của chúng.'
-  name: '&fMáy Tích điện'
+  name: 'Máy Tích điện'
   type:
   - '&7&oMáy Móc'
 STB_ELEVATOR:
   description:
   - '&7Liên kết với các thang máy khác được đặt'
   - '&7trực tiếp phía trên hoặc phía dưới nó.'
-  name: '&fThang máy'
+  name: 'Thang máy'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Cho phép truy cập di động vào kho'
   - '&7ender cá nhân hoặc dùng chung.'
-  name: '&fTúi Ender'
+  name: 'Túi Ender'
   type:
   - '&7&oThiết Bị'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Kho lưu trữ ngoài chiều không gian, truy cập'
   - '&7được từ các Hộp Ender đã liên kết.'
-  name: '&fHộp Ender'
+  name: 'Hộp Ender'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Bắt và chứa một con vật thuần tính,'
   - '&7giúp bạn di chuyển vật nuôi dễ dàng.'
-  name: '&fDây Dắt Ender'
+  name: 'Dây Dắt Ender'
   type:
   - '&7&oThiết Bị'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Rung trong sáu chiều không gian để dò'
   - '&7tần số lưu trữ của Hộp Ender.'
-  name: '&fBộ Dò Ender'
+  name: 'Bộ Dò Ender'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Nấu chảy để có thỏi vàng tích điện.'
-  name: '&fBột Vàng Tích điện'
+  name: 'Bột Vàng Tích điện'
   type:
   - '&7&oTài Nguyên'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Phát sáng một cách kỳ lạ...'
-  name: '&fThỏi Vàng Tích điện'
+  name: 'Thỏi Vàng Tích điện'
   type:
   - '&7&oTài Nguyên'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Nấu chảy để có thỏi sắt tích điện.'
-  name: '&fBột Sắt Tích điện'
+  name: 'Bột Sắt Tích điện'
   type:
   - '&7&oTài Nguyên'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Phát sáng một cách kỳ lạ...'
-  name: '&fThỏi Sắt Tích điện'
+  name: 'Thỏi Sắt Tích điện'
   type:
   - '&7&oTài Nguyên'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Phát sáng một cách kỳ lạ...'
-  name: '&fThạch anh Tích điện'
+  name: 'Thạch anh Tích điện'
   type:
   - '&7&oTài Nguyên'
 STB_FERMENTER:
   description:
   - '&7Lên men nhiều vật phẩm, và cũng được'
   - '&7dùng để tạo Mồi Cá.'
-  name: '&fMáy Lên men'
+  name: 'Máy Lên men'
   type:
   - '&7&oMáy Móc'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Lưu trữ năng lượng để đệm điện năng giữa'
   - '&7máy phát điện và máy móc.'
-  name: '&fHộp Pin 50K'
+  name: 'Hộp Pin 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Ngăn năng lượng di động mang điện năng'
   - '&7STB tích trữ để sạc thiết bị khi di chuyển.'
-  name: '&fNgăn Năng lượng 50K'
+  name: 'Ngăn Năng lượng 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Dùng trong Lưới Đánh cá để bắt cá.'
-  name: '&fMồi Cá'
+  name: 'Mồi Cá'
   type:
   - '&7&oThành Phần'
 STB_FISHINGNET:
   description:
   - '&7Tự động bắt cá khi được đặt'
   - '&7trên mặt nước và cho Mồi Cá vào.'
-  name: '&fLưới Đánh cá'
+  name: 'Lưới Đánh cá'
   type:
   - '&7&oMáy Móc'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Cày đa dụng giúp xới, gieo và'
   - '&7thu hoạch, có túi hạt giống tích hợp.'
-  name: '&fCày Liên hợp Vàng'
+  name: 'Cày Liên hợp Vàng'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Nấu trong Lò Nấu chảy hoặc Lò nung để có'
   - '&7thỏi vàng.'
-  name: '&fBột Vàng'
+  name: 'Bột Vàng'
   type:
   - '&7&oTài Nguyên'
 STB_HEATENGINE:
   description:
   - '&7Chuyển đổi vật phẩm cháy được thành điện năng.'
-  name: '&fĐộng cơ Nhiệt'
+  name: 'Động cơ Nhiệt'
   type:
   - '&7&oMáy Phát Điện'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Hiển thị mức tăng hay giảm năng lượng'
   - '&7ròng của mạng bằng ảnh toàn ký.'
-  name: '&fMàn hình Toàn ảnh'
+  name: 'Màn hình Toàn ảnh'
   type:
   - '&7&oMáy Móc'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Lắp vào Bộ định tuyến vật phẩm để gửi vật phẩm'
   - '&7tới Mô-đun Bộ thu đã liên kết ở bất cứ đâu,'
   - '&7trên mọi thế giới.'
-  name: '&fMô-đun BĐT: Bộ gửi Siêu cấp'
+  name: 'Mô-đun BĐT: Bộ gửi Siêu cấp'
   type:
   - '&7&oThành Phần'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Thiết bị Lưu trữ Siêu cấp. Lưu lượng khổng lồ'
   - '&7của một loại vật phẩm duy nhất.'
   - '&7Giữ lại vật phẩm khi bị phá. Cần điện năng để hoạt động.'
-  name: '&fTLS'
+  name: 'TLS'
   stats:
   - '&8⇨ &733554431 Chồng'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Đôi khi rơi ra từ Blaze; Cướp Bóc'
   - '&7có thể giúp ích. Kết hợp với bột sắt hoặc vàng.'
-  name: '&fBột Địa ngục'
+  name: 'Bột Địa ngục'
   type:
   - '&7&oTài Nguyên'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Tự động thu hoạch và trồng lại'
   - '&7Nấm Nether trong bán kính 5x5, 2 khối'
   - '&7phía trên máy.'
-  name: '&fNông trại Địa ngục'
+  name: 'Nông trại Địa ngục'
   type:
   - '&7&oMáy Móc'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Dùng làm thành phần trong một số máy'
   - '&7nâng cao hơn.'
-  name: '&fMạch Tích hợp'
+  name: 'Mạch Tích hợp'
   type:
   - '&7&oThành Phần'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Cày đa dụng giúp xới, gieo và'
   - '&7thu hoạch, có túi hạt giống tích hợp.'
-  name: '&fCày Liên hợp Sắt'
+  name: 'Cày Liên hợp Sắt'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Nấu trong Lò Nấu chảy hoặc Lò nung để có'
   - '&7thỏi sắt.'
-  name: '&fBột Sắt'
+  name: 'Bột Sắt'
   type:
   - '&7&oTài Nguyên'
 STB_ITEMROUTER:
   description:
   - '&7Định tuyến vật phẩm. Lắp một hoặc nhiều'
   - '&7Mô-đun Định tuyến để kích hoạt nó.'
-  name: '&fBộ định tuyến vật phẩm'
+  name: 'Bộ định tuyến vật phẩm'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Lưu một vị trí qua Sensible GPS,'
   - '&7dùng để xác định khu vực làm việc của máy.'
-  name: '&fCọc Mốc Đất'
+  name: 'Cọc Mốc Đất'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Dùng để chế tạo nhiều loại máy.'
-  name: '&fKhung Máy'
+  name: 'Khung Máy'
   type:
   - '&7&oThành Phần'
 STB_MAGMATICENGINE:
   description:
   - '&7Chuyển đổi Dung nham thành điện năng.'
-  name: '&fĐộng cơ Dung nham'
+  name: 'Động cơ Dung nham'
   type:
   - '&7&oMáy Phát Điện'
 STB_MASHER:
   description:
   - '&7Nghiền quặng và tài nguyên khác thành bột.'
-  name: '&fMáy Nghiền'
+  name: 'Máy Nghiền'
   type:
   - '&7&oMáy Móc'
 STB_MOISTURECHECKER:
   description:
   - '&7Kiểm tra mức độ ẩm của một'
   - '&7khu vực đất trồng 3x3.'
-  name: '&fBộ Kiểm tra Độ ẩm'
+  name: 'Bộ Kiểm tra Độ ẩm'
   stats:
   - '&8⇨ &7Khu vực: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Công cụ xây dựng dùng điện, đặt hoặc'
   - '&7thay thế khối trên một khu vực, có'
   - '&7chế độ Xây và Thay thế để chọn.'
-  name: '&fMáy Xây Đa năng'
+  name: 'Máy Xây Đa năng'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Đọc các kết nối mạng năng lượng và'
   - '&7mức dùng điện của dây dẫn và máy móc.'
-  name: '&fĐồng hồ Đo đa năng'
+  name: 'Đồng hồ Đo đa năng'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Sơn các khối có thể nhuộm như len,'
   - '&7thảm và đất sét hay kính nhuộm, bằng'
   - '&7sơn lấy từ Hộp Sơn.'
-  name: '&fCọ Sơn'
+  name: 'Cọ Sơn'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Chứa một lượng sơn màu.'
-  name: '&fHộp Sơn'
+  name: 'Hộp Sơn'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Sơn các khối có thể nhuộm trên khu vực'
   - '&7rộng hơn cọ, bằng sơn lấy'
   - '&7từ Hộp Sơn.'
-  name: '&fCon Lăn Sơn'
+  name: 'Con Lăn Sơn'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Hiển thị mức tăng hay giảm năng lượng'
   - '&7ròng của mạng trên các biển gắn kèm.'
-  name: '&fMàn hình Điện năng'
+  name: 'Màn hình Điện năng'
   type:
   - '&7&oMáy Móc'
 STB_PULLERMODULE:
   description:
   - '&7Lắp vào Bộ định tuyến vật phẩm để kéo vật phẩm'
   - '&7từ một túi đồ liền kề.'
-  name: '&fMô-đun BĐT: Bộ kéo'
+  name: 'Mô-đun BĐT: Bộ kéo'
   type:
   - '&7&oThành Phần'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Bơm chất lỏng từ phía dưới vào'
   - '&7Xô hoặc Bình Thủy tinh đã lắp.'
-  name: '&fMáy Bơm'
+  name: 'Máy Bơm'
   type:
   - '&7&oMáy Móc'
 STB_PVCELL:
   description:
   - '&7Ngăn quang điện cấp điện cho máy phát'
   - '&7điện mặt trời. Nó mòn dần theo thời gian.'
-  name: '&fNgăn Quang điện'
+  name: 'Ngăn Quang điện'
   type:
   - '&7&oThành Phần'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Nấu trong Lò Nấu chảy để tạo silic.'
-  name: '&fBột Thạch anh'
+  name: 'Bột Thạch anh'
   type:
   - '&7&oTài Nguyên'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Mô-đun thụ động nhận vật phẩm'
   - '&7từ mô-đun Bộ gửi hướng vào nó hoặc mô-đun'
   - '&7Bộ gửi Nâng cao đã liên kết.'
-  name: '&fMô-đun BĐT: Bộ thu'
+  name: 'Mô-đun BĐT: Bộ thu'
   type:
   - '&7&oThành Phần'
 STB_RECIPEBOOK:
   description:
   - '&7Cho phép xem và chế tạo mọi'
   - '&7công thức đã biết.'
-  name: '&fSách Công thức'
+  name: 'Sách Công thức'
   type:
   - '&7&oThiết Bị'
 STB_REDSTONECLOCK:
   description:
   - '&7Đồng hồ trong một khối. Phát ra tín hiệu'
   - '&7đá đỏ với khoảng cách & thời lượng tùy chỉnh.'
-  name: '&fĐồng hồ Đá đỏ'
+  name: 'Đồng hồ Đá đỏ'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Thêm trí thông minh cho máy để dùng'
   - '&7tài nguyên hiệu quả hơn. Hiệu ứng khác nhau'
   - '&7tùy theo máy.'
-  name: '&fNâng cấp Điều tiết'
+  name: 'Nâng cấp Điều tiết'
   type:
   - '&7&oThành Phần'
 STB_SAWMILL:
   description:
   - '&7Chế biến vật phẩm gỗ thành ván'
   - '&7với sản lượng cao hơn chế tạo.'
-  name: '&fXưởng Cưa'
+  name: 'Xưởng Cưa'
   type:
   - '&7&oMáy Móc'
 STB_SCURELAY:
   description:
   - '&7Liên kết với một Trạm Tiếp SCU khác để chia sẻ'
   - '&7nguồn điện chung ở mọi khoảng cách.'
-  name: '&fTrạm Tiếp SCU'
+  name: 'Trạm Tiếp SCU'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7tới túi đồ liền kề, hoặc tới bộ định tuyến'
   - '&7có Mô-đun Bộ thu trong vòng 10 khối'
   - '&7và trong tầm nhìn thẳng.'
-  name: '&fMô-đun BĐT: Bộ gửi'
+  name: 'Mô-đun BĐT: Bộ gửi'
   type:
   - '&7&oThành Phần'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Dùng để chế tạo các mạch điện tử'
   - '&7nâng cao hơn.'
-  name: '&fTấm Silic'
+  name: 'Tấm Silic'
   type:
   - '&7&oThành Phần'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Phá bằng Tơ Mượt khối theo hướng đã'
   - '&7cấu hình và kéo nó vào bộ định tuyến.'
   - '&7Phải được chế tạo cùng sách Tơ Mượt.'
-  name: '&fMô-đun BĐT: Bộ phá Tơ Mượt'
+  name: 'Mô-đun BĐT: Bộ phá Tơ Mượt'
   type:
   - '&7&oThành Phần'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Dùng làm thành phần trong nhiều loại máy.'
-  name: '&fMạch Điện tử Đơn giản'
+  name: 'Mạch Điện tử Đơn giản'
   type:
   - '&7&oThành Phần'
 STB_SMELTER:
   description:
   - '&7Nấu chảy vật phẩm như Lò nung, nhưng'
   - '&7nhanh và hiệu quả hơn.'
-  name: '&fLò Nấu chảy'
+  name: 'Lò Nấu chảy'
   type:
   - '&7&oMáy Móc'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Lắp vào Bộ định tuyến vật phẩm để đặt vật phẩm'
   - '&7vào túi đồ chỉ khi nó rỗng hoặc'
   - '&7đã chứa vật phẩm đó.'
-  name: '&fMô-đun BĐT: Bộ phân loại'
+  name: 'Mô-đun BĐT: Bộ phân loại'
   type:
   - '&7&oThành Phần'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Giảm âm lượng của mọi âm thanh'
   - '&7trong bán kính 8 khối.'
-  name: '&fBộ Giảm Âm'
+  name: 'Bộ Giảm Âm'
   type:
   - '&7&oMáy Móc'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Mô-đun thụ động làm tăng tốc độ'
   - '&7bộ định tuyến. 0 mô-đun = 1 lượt / 20 tick;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Quá 3 bị bỏ qua.'
-  name: '&fMô-đun BĐT: Nâng cấp Tốc độ'
+  name: 'Mô-đun BĐT: Nâng cấp Tốc độ'
   type:
   - '&7&oThành Phần'
 STB_SPEEDUPGRADE:
   description:
   - '&7Đặt vào máy để nó chạy'
   - '&7nhanh hơn, đổi lại tốn nhiều điện năng hơn.'
-  name: '&fNâng cấp Tốc độ'
+  name: 'Nâng cấp Tốc độ'
   stats:
   - '&8⇨ &7Tốc độ: &ex1.4'
   - '&8⇨ &7Mức dùng điện: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Mô-đun thụ động; mỗi cái nhân đôi số'
   - '&7vật phẩm chuyển mỗi lượt, tối đa bằng'
   - '&7cỡ chồng tối đa của vật phẩm. Quá 6 bị bỏ qua.'
-  name: '&fMô-đun BĐT: Nâng cấp Chồng'
+  name: 'Mô-đun BĐT: Nâng cấp Chồng'
   type:
   - '&7&oThành Phần'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Được một số vật phẩm nâng cao dùng để'
   - '&7liên lạc xuyên thế giới.'
-  name: '&fBộ Phát đáp Hạ không gian'
+  name: 'Bộ Phát đáp Hạ không gian'
   type:
   - '&7&oThành Phần'
 STB_TAPEMEASURE:
   description:
   - '&7Đo khoảng cách giữa hai'
   - '&7điểm bạn chọn trong thế giới.'
-  name: '&fThước Dây'
+  name: 'Thước Dây'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Lưu trữ năng lượng để đệm điện năng giữa'
   - '&7máy phát điện và máy móc.'
-  name: '&fHộp Pin 10K'
+  name: 'Hộp Pin 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Ngăn năng lượng di động mang điện năng'
   - '&7STB tích trữ để sạc thiết bị khi di chuyển.'
-  name: '&fNgăn Năng lượng 10K'
+  name: 'Ngăn Năng lượng 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Đặt vào máy để tăng đầu ra'
   - '&7hữu ích, đổi lại mất tốc độ và điện năng.'
-  name: '&fNâng cấp Kỹ lưỡng'
+  name: 'Nâng cấp Kỹ lưỡng'
   stats:
   - '&8⇨ &7Tốc độ: &ex0.7'
   - '&8⇨ &7Mức dùng điện: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Dùng để chế tạo một số máy'
   - '&7nâng cao hơn.'
-  name: '&fKhung Máy Bền'
+  name: 'Khung Máy Bền'
   type:
   - '&7&oThành Phần'
 STB_TRASHCAN:
   description:
   - '&7PHÁ HỦY mọi vật phẩm được đặt hoặc dẫn'
   - '&7vào nó. Cẩn thận!'
-  name: '&fThùng Rác'
+  name: 'Thùng Rác'
   type:
   - '&7&oMáy Móc'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Chế tạo một cặp cùng nhau để liên kết'
   - '&7chúng thành Trạm Tiếp SCU dùng chung điện.'
-  name: '&fTrạm Tiếp SCU Chưa liên kết'
+  name: 'Trạm Tiếp SCU Chưa liên kết'
   type:
   - '&7&oThành Phần'
 STB_VACUUMMODULE:
   description:
   - '&7Lắp vào Bộ định tuyến vật phẩm để hút'
   - '&7vật phẩm rơi gần đó.'
-  name: '&fMô-đun BĐT: Bộ hút'
+  name: 'Mô-đun BĐT: Bộ hút'
   stats:
   - '&8⇨ &7Bán kính: &e6 khối'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Tưới nước và làm hoa màu gần đó mọc.'
   - '&7Đừng dùng quá nhiều!'
-  name: '&fBình Tưới'
+  name: 'Bình Tưới'
   type:
   - '&7&oDụng Cụ'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Cày đa dụng giúp xới, gieo và'
   - '&7thu hoạch, có túi hạt giống tích hợp.'
-  name: '&fCày Liên hợp Gỗ'
+  name: 'Cày Liên hợp Gỗ'
   type:
   - '&7&oDụng Cụ'
   usage:

@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Megvizsgálja a termőföld telítettségi'
   - '&7fokát egy 5x5-ös területen.'
-  name: '&fFejlett Talajnedvesség-mérő'
+  name: 'Fejlett Talajnedvesség-mérő'
   stats:
   - '&8⇨ &7Terület: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Böngészi és elkészíti az ismert recepteket,'
   - '&7és az elkészítés során tárgyakat tud'
   - '&7húzni a szomszédos leltárakból.'
-  name: '&fFejlett Receptkönyv'
+  name: 'Fejlett Receptkönyv'
   type:
   - '&7&oKütyü'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Tárgy Útválasztóba illeszthető, hogy tárgyakat küldjön'
   - '&7egy összekapcsolt Vevő Modulba'
   - '&724 blokkos sugarú körben, látótér nélkül is.'
-  name: '&fT.Ú. Modul: Fejl. Küldő'
+  name: 'T.Ú. Modul: Fejl. Küldő'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Ideiglenes lebegő állványblokk,'
   - '&7ideális az üres térbe való építéshez.'
-  name: '&fAngyali Blokk'
+  name: 'Angyali Blokk'
   type:
   - '&7&oKütyü'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Területet tud építeni vagy kiüríteni.'
   - '&7A terület kijelöléséhez Területjelölőt használj.'
-  name: '&fAutomata Építő'
+  name: 'Automata Építő'
   type:
   - '&7&oGép'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Automatikusan betakarítja és újraülteti a'
   - '&7búza-, krumpli- és répaterményeket 3x3-as'
   - '&7sugarú körben, 2 blokkal a gép felett.'
-  name: '&fAutomata Farm'
+  name: 'Automata Farm'
   type:
   - '&7&oGép'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Automatikusan betakarítja és újraülteti a'
   - '&7kakaóbab-, cukornád- és kaktuszterményeket'
   - '&75x5-ös sugarú körben, 2 blokkal a gép felett.'
-  name: '&fAutomata Farm MkII'
+  name: 'Automata Farm MkII'
   type:
   - '&7&oGép'
 STB_AUTOFORESTER:
   description:
   - '&7Automatikusan kivágja és újraülteti a fákat'
   - '&75x5-ös sugarú körben, 2 blokkal a gép felett.'
-  name: '&fAutomata Erdész'
+  name: 'Automata Erdész'
   type:
   - '&7&oGép'
 STB_BASICSOLARCELL:
   description:
   - '&7Áramot generál a szabadban, erős'
   - '&7napfényben. Működéséhez PV Cella kell.'
-  name: '&fAlap Napelem'
+  name: 'Alap Napelem'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Nagy Tárolóegység. Hatalmas'
   - '&7mennyiséget tárol egyetlen tárgytípusból.'
-  name: '&fNTE'
+  name: 'NTE'
   stats:
   - '&8⇨ &7128 Halom'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Szerves anyagokat árammá alakít.'
-  name: '&fBio Motor'
+  name: 'Bio Motor'
   type:
   - '&7&oGenerátor'
 STB_BLANKMODULE:
   description:
   - '&7Az üres alap, amelyből a különféle'
   - '&7Tárgy Útválasztó modulok készülnek.'
-  name: '&fÜres Tárgy Útválasztó Modul'
+  name: 'Üres Tárgy Útválasztó Modul'
   type:
   - '&7&oAlkatrész'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Redstone-jelet ad ki, amikor egy'
   - '&7szomszédos blokk frissül.'
-  name: '&fBlokkfrissülés-érzékelő'
+  name: 'Blokkfrissülés-érzékelő'
   type:
   - '&7&oGép'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Letöri a blokkot a beállított'
   - '&7irányban, és behúzza az útválasztóba.'
-  name: '&fT.Ú. Modul: Törő'
+  name: 'T.Ú. Modul: Törő'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Elektronikus áramkörök építéséhez'
   - '&7használatos.'
-  name: '&fÁramköri Lap'
+  name: 'Áramköri Lap'
   type:
   - '&7&oAlkatrész'
 STB_DENSESOLAR:
   description:
   - '&7Áramot generál a szabadban, erős'
   - '&7napfényben. Működéséhez PV Cella kell.'
-  name: '&fSűrű Napelem'
+  name: 'Sűrű Napelem'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Többfunkciós kapa, amely szánt, vet és'
   - '&7betakarít nagyobb területen, beépített'
   - '&7vetőmagzsákkal.'
-  name: '&fGyémánt Kombájnkapa'
+  name: 'Gyémánt Kombájnkapa'
   type:
   - '&7&oEszköz'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Tárgyakat húz a beállított irányból,'
   - '&7majd körforgásban elküldi őket az összes'
   - '&7szomszédos leltárba.'
-  name: '&fT.Ú. Modul: Osztó'
+  name: 'T.Ú. Modul: Osztó'
   type:
   - '&7&oAlkatrész'
 STB_DROPPERMODULE:
   description:
   - '&7Tárgy Útválasztóba illeszthető, hogy tárgyakat dobjon'
   - '&7a földre a beállított irányban.'
-  name: '&fT.Ú. Modul: Dobó'
+  name: 'T.Ú. Modul: Dobó'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Gépbe helyezve automatikusan kiveti a'
   - '&7kész tárgyakat egy szomszédos leltárba.'
-  name: '&fKivető Fejlesztés'
+  name: 'Kivető Fejlesztés'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Lehetővé teszi bizonyos tárgyak energizálását'
   - '&7feltöltött változatukká.'
-  name: '&fElektromos Energizáló'
+  name: 'Elektromos Energizáló'
   type:
   - '&7&oGép'
 STB_ELEVATOR:
   description:
   - '&7Összekapcsolódik a közvetlenül fölé vagy'
   - '&7alá helyezett más felvonókkal.'
-  name: '&fFelvonó'
+  name: 'Felvonó'
   type:
   - '&7&oGép'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Hordozható hozzáférést ad egy személyes'
   - '&7vagy közös ender-tároló leltárhoz.'
-  name: '&fEnder Zsák'
+  name: 'Ender Zsák'
   type:
   - '&7&oKütyü'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Dimenziókon túli tároló, amely az'
   - '&7összekapcsolt Ender Dobozokból érhető el.'
-  name: '&fEnder Doboz'
+  name: 'Ender Doboz'
   type:
   - '&7&oGép'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Elkap és eltárol egy békés állatot,'
   - '&7így könnyen áthelyezheted a jószágokat.'
-  name: '&fEnder Póráz'
+  name: 'Ender Póráz'
   type:
   - '&7&oKütyü'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Hat dimenzióban rezeg, hogy behangolja egy'
   - '&7Ender Doboz tárolási frekvenciáját.'
-  name: '&fEnder Hangoló'
+  name: 'Ender Hangoló'
   type:
   - '&7&oEszköz'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Olvasztd meg, hogy energizált aranyrudat kapj.'
-  name: '&fEnergizált Aranypor'
+  name: 'Energizált Aranypor'
   type:
   - '&7&oNyersanyag'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Furcsán világít...'
-  name: '&fEnergizált Aranyrúd'
+  name: 'Energizált Aranyrúd'
   type:
   - '&7&oNyersanyag'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Olvasztd meg, hogy energizált vasrudat kapj.'
-  name: '&fEnergizált Vaspor'
+  name: 'Energizált Vaspor'
   type:
   - '&7&oNyersanyag'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Furcsán világít...'
-  name: '&fEnergizált Vasrúd'
+  name: 'Energizált Vasrúd'
   type:
   - '&7&oNyersanyag'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Furcsán világít...'
-  name: '&fEnergizált Kvarc'
+  name: 'Energizált Kvarc'
   type:
   - '&7&oNyersanyag'
 STB_FERMENTER:
   description:
   - '&7Különféle tárgyakat fermentál, és'
   - '&7Halcsali készítésére is használatos.'
-  name: '&fFermentáló'
+  name: 'Fermentáló'
   type:
   - '&7&oGép'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Energiát tárol, hogy pufferelje az áramot a'
   - '&7generátorok és gépek között.'
-  name: '&f50K Akkumulátorláda'
+  name: '50K Akkumulátorláda'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Hordozható energiacella, amely tárolt'
   - '&7STB-áramot szállít eszközök útközbeni töltéséhez.'
-  name: '&f50K Energiacella'
+  name: '50K Energiacella'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Halászhálóban használatos halfogáshoz.'
-  name: '&fHalcsali'
+  name: 'Halcsali'
   type:
   - '&7&oAlkatrész'
 STB_FISHINGNET:
   description:
   - '&7Automatikusan halat fog, ha víz fölé'
   - '&7helyezik és Halcsalival töltik fel.'
-  name: '&fHalászháló'
+  name: 'Halászháló'
   type:
   - '&7&oGép'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Többfunkciós kapa, amely szánt, vet és'
   - '&7betakarít, beépített vetőmagzsákkal.'
-  name: '&fArany Kombájnkapa'
+  name: 'Arany Kombájnkapa'
   type:
   - '&7&oEszköz'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Olvasztd Olvasztóban vagy Kemencében, hogy'
   - '&7aranyrudakat kapj.'
-  name: '&fAranypor'
+  name: 'Aranypor'
   type:
   - '&7&oNyersanyag'
 STB_HEATENGINE:
   description:
   - '&7Éghető tárgyakat árammá alakít.'
-  name: '&fHőmotor'
+  name: 'Hőmotor'
   type:
   - '&7&oGenerátor'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Megjeleníti egy hálózat nettó energia-'
   - '&7nyereségét vagy veszteségét hologramokkal.'
-  name: '&fHolografikus Monitor'
+  name: 'Holografikus Monitor'
   type:
   - '&7&oGép'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Tárgy Útválasztóba illeszthető, hogy tárgyakat küldjön'
   - '&7egy összekapcsolt Vevő Modulba bárhová,'
   - '&7bármelyik világban.'
-  name: '&fT.Ú. Modul: Hiperküldő'
+  name: 'T.Ú. Modul: Hiperküldő'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hiper Tárolóegység. Kolosszális'
   - '&7mennyiséget tárol egyetlen tárgytípusból.'
   - '&7Töréskor megőrzi a tartalmát. Működéséhez áram kell.'
-  name: '&fHTE'
+  name: 'HTE'
   stats:
   - '&8⇨ &733554431 Halom'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Néha blaze-ekből esik ki; a Zsákmányszerzés'
   - '&7segíthet. Vas- vagy aranyporral kombinálható.'
-  name: '&fInfernális Por'
+  name: 'Infernális Por'
   type:
   - '&7&oNyersanyag'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Automatikusan betakarítja és újraülteti a'
   - '&7Nether-gombát 5x5-ös sugarú körben, 2 blokkal'
   - '&7a gép felett.'
-  name: '&fInfernális Farm'
+  name: 'Infernális Farm'
   type:
   - '&7&oGép'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Alkatrészként használatos néhány fejlettebb'
   - '&7gépezetben.'
-  name: '&fIntegrált Áramkör'
+  name: 'Integrált Áramkör'
   type:
   - '&7&oAlkatrész'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Többfunkciós kapa, amely szánt, vet és'
   - '&7betakarít, beépített vetőmagzsákkal.'
-  name: '&fVas Kombájnkapa'
+  name: 'Vas Kombájnkapa'
   type:
   - '&7&oEszköz'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Olvasztd Olvasztóban vagy Kemencében, hogy'
   - '&7vasrudakat kapj.'
-  name: '&fVaspor'
+  name: 'Vaspor'
   type:
   - '&7&oNyersanyag'
 STB_ITEMROUTER:
   description:
   - '&7Tárgyakat irányít. Helyezz be egy vagy több'
   - '&7Irányító Modult az aktiválásához.'
-  name: '&fTárgy Útválasztó'
+  name: 'Tárgy Útválasztó'
   type:
   - '&7&oGép'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Pozíciót tárol a Sensible GPS segítségével,'
   - '&7a gépek munkaterületének kijelölésére.'
-  name: '&fTerületjelölő'
+  name: 'Területjelölő'
   type:
   - '&7&oEszköz'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Különféle gépek gyártásához használatos.'
-  name: '&fGépváz'
+  name: 'Gépváz'
   type:
   - '&7&oAlkatrész'
 STB_MAGMATICENGINE:
   description:
   - '&7Lávát árammá alakít.'
-  name: '&fMagmás Motor'
+  name: 'Magmás Motor'
   type:
   - '&7&oGenerátor'
 STB_MASHER:
   description:
   - '&7Érceket és más nyersanyagokat porokká zúz.'
-  name: '&fZúzó'
+  name: 'Zúzó'
   type:
   - '&7&oGép'
 STB_MOISTURECHECKER:
   description:
   - '&7Megvizsgálja a termőföld telítettségi'
   - '&7fokát egy 3x3-as területen.'
-  name: '&fTalajnedvesség-mérő'
+  name: 'Talajnedvesség-mérő'
   stats:
   - '&8⇨ &7Terület: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Áramot használó építőszerszám, amely'
   - '&7blokkokat helyez vagy cserél egy területen,'
   - '&7választható Építés és Csere módokkal.'
-  name: '&fMultiépítő'
+  name: 'Multiépítő'
   type:
   - '&7&oEszköz'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Kiolvassa az energiahálózat kapcsolatait és'
   - '&7a kábelek és gépek áramfogyasztását.'
-  name: '&fMultiméter'
+  name: 'Multiméter'
   type:
   - '&7&oEszköz'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Színezhető blokkokat fest, például gyapjút,'
   - '&7szőnyeget és színezett kerámiát vagy üveget,'
   - '&7Festékdobozból vett festékkel.'
-  name: '&fFestőecset'
+  name: 'Festőecset'
   type:
   - '&7&oEszköz'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Színes festéket tárol készletben.'
-  name: '&fFestékdoboz'
+  name: 'Festékdoboz'
   type:
   - '&7&oGép'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Színezhető blokkokat fest nagyobb területen,'
   - '&7mint az ecset, Festékdobozból vett'
   - '&7festékkel.'
-  name: '&fFestőhenger'
+  name: 'Festőhenger'
   type:
   - '&7&oEszköz'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Megjeleníti egy hálózat nettó energia-'
   - '&7nyereségét vagy veszteségét a csatolt táblákon.'
-  name: '&fÁram Monitor'
+  name: 'Áram Monitor'
   type:
   - '&7&oGép'
 STB_PULLERMODULE:
   description:
   - '&7Tárgy Útválasztóba illeszthető, hogy tárgyakat húzzon'
   - '&7egy szomszédos leltárból.'
-  name: '&fT.Ú. Modul: Húzó'
+  name: 'T.Ú. Modul: Húzó'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Folyadékot pumpál alulról a behelyezett'
   - '&7Vödörbe vagy Üvegpalackba.'
-  name: '&fPumpa'
+  name: 'Pumpa'
   type:
   - '&7&oGép'
 STB_PVCELL:
   description:
   - '&7Fotovoltaikus cella, amely egy napelemes'
   - '&7generátort táplál. Idővel elhasználódik.'
-  name: '&fPV Cella'
+  name: 'PV Cella'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Főzd Olvasztóban szilícium készítéséhez.'
-  name: '&fKvarcpor'
+  name: 'Kvarcpor'
   type:
   - '&7&oNyersanyag'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Passzív modul, amely tárgyakat fogad'
   - '&7egy felé fordított Küldő modulból vagy egy'
   - '&7összekapcsolt Fejlett Küldő modulból.'
-  name: '&fT.Ú. Modul: Vevő'
+  name: 'T.Ú. Modul: Vevő'
   type:
   - '&7&oAlkatrész'
 STB_RECIPEBOOK:
   description:
   - '&7Lehetővé teszi az összes ismert recept'
   - '&7böngészését és elkészítését.'
-  name: '&fReceptkönyv'
+  name: 'Receptkönyv'
   type:
   - '&7&oKütyü'
 STB_REDSTONECLOCK:
   description:
   - '&7Óra egy blokkban. Redstone-'
   - '&7jelet ad ki állítható időközzel & hosszal.'
-  name: '&fRedstone Óra'
+  name: 'Redstone Óra'
   type:
   - '&7&oGép'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Intelligenciát ad a gépeknek a hatékonyabb'
   - '&7nyersanyag-felhasználásért. A hatás gépenként'
   - '&7változó.'
-  name: '&fSzabályozó Fejlesztés'
+  name: 'Szabályozó Fejlesztés'
   type:
   - '&7&oAlkatrész'
 STB_SAWMILL:
   description:
   - '&7Fa tárgyakat deszkákká dolgoz fel'
   - '&7nagyobb hozammal, mint a barkácsolás.'
-  name: '&fFűrészüzem'
+  name: 'Fűrészüzem'
   type:
   - '&7&oGép'
 STB_SCURELAY:
   description:
   - '&7Egy másik SCU Átjátszóval kapcsolódik össze,'
   - '&7hogy bármilyen távolságon megosszák a töltést.'
-  name: '&fSCU Átjátszó'
+  name: 'SCU Átjátszó'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7egy szomszédos leltárba, vagy egy útválasztóba,'
   - '&7amelyen Vevő Modul van 10 blokkon belül,'
   - '&7közvetlen látótérben.'
-  name: '&fT.Ú. Modul: Küldő'
+  name: 'T.Ú. Modul: Küldő'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Fejlettebb elektronikus áramkörök'
   - '&7gyártásához használatos.'
-  name: '&fSzilícium Ostya'
+  name: 'Szilícium Ostya'
   type:
   - '&7&oAlkatrész'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Selyemérintéssel bontja a blokkot a beállított'
   - '&7irányban, és behúzza az útválasztóba.'
   - '&7Selyemérintés könyvvel kell barkácsolni.'
-  name: '&fT.Ú. Modul: Selymes Törő'
+  name: 'T.Ú. Modul: Selymes Törő'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Alkatrészként használatos különféle gépekben.'
-  name: '&fEgyszerű Elektronikus Áramkör'
+  name: 'Egyszerű Elektronikus Áramkör'
   type:
   - '&7&oAlkatrész'
 STB_SMELTER:
   description:
   - '&7Tárgyakat olvaszt, mint egy Kemence, de'
   - '&7gyorsabban és hatékonyabban.'
-  name: '&fOlvasztó'
+  name: 'Olvasztó'
   type:
   - '&7&oGép'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Tárgy Útválasztóba illeszthető, hogy tárgyakat helyezzen'
   - '&7egy leltárba, de csak ha az üres vagy'
   - '&7már tartalmazza azt a tárgyat.'
-  name: '&fT.Ú. Modul: Rendező'
+  name: 'T.Ú. Modul: Rendező'
   type:
   - '&7&oAlkatrész'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Csökkenti minden hang erősségét'
   - '&78 blokkos sugarú körön belül.'
-  name: '&fHangtompító'
+  name: 'Hangtompító'
   type:
   - '&7&oGép'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Passzív modul, amely növeli az útválasztó'
   - '&7sebességét. 0 modul = 1 művelet / 20 tick;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. 3 felett nem számít.'
-  name: '&fT.Ú. Modul: Sebesség Fejlesztés'
+  name: 'T.Ú. Modul: Sebesség Fejlesztés'
   type:
   - '&7&oAlkatrész'
 STB_SPEEDUPGRADE:
   description:
   - '&7Gépbe helyezve gyorsabban járatja azt,'
   - '&7nagyobb áramfogyasztás árán.'
-  name: '&fSebesség Fejlesztés'
+  name: 'Sebesség Fejlesztés'
   stats:
   - '&8⇨ &7Sebesség: &ex1.4'
   - '&8⇨ &7Áramfogyasztás: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Passzív modul; mindegyik megduplázza a'
   - '&7műveletenként mozgatott tárgyak számát, a'
   - '&7tárgy max. halomméretéig. 6 felett figyelmen kívül marad.'
-  name: '&fT.Ú. Modul: Halom Fejlesztés'
+  name: 'T.Ú. Modul: Halom Fejlesztés'
   type:
   - '&7&oAlkatrész'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Néhány fejlett tárgy használja világok'
   - '&7közötti kommunikációra.'
-  name: '&fAltéri Jeladó'
+  name: 'Altéri Jeladó'
   type:
   - '&7&oAlkatrész'
 STB_TAPEMEASURE:
   description:
   - '&7Megméri a világban kijelölt két'
   - '&7pont közötti távolságot.'
-  name: '&fMérőszalag'
+  name: 'Mérőszalag'
   type:
   - '&7&oEszköz'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Energiát tárol, hogy pufferelje az áramot a'
   - '&7generátorok és gépek között.'
-  name: '&f10K Akkumulátorláda'
+  name: '10K Akkumulátorláda'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Hordozható energiacella, amely tárolt'
   - '&7STB-áramot szállít eszközök útközbeni töltéséhez.'
-  name: '&f10K Energiacella'
+  name: '10K Energiacella'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Gépbe helyezve növeli a hasznos'
   - '&7kimenetet, sebesség és áram árán.'
-  name: '&fAlaposság Fejlesztés'
+  name: 'Alaposság Fejlesztés'
   stats:
   - '&8⇨ &7Sebesség: &ex0.7'
   - '&8⇨ &7Áramfogyasztás: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Néhány fejlettebb gép gyártásához'
   - '&7használatos.'
-  name: '&fSzívós Gépváz'
+  name: 'Szívós Gépváz'
   type:
   - '&7&oAlkatrész'
 STB_TRASHCAN:
   description:
   - '&7MEGSEMMISÍT minden tárgyat, amit beletesznek'
   - '&7vagy belevezetnek. Vigyázz!'
-  name: '&fKuka'
+  name: 'Kuka'
   type:
   - '&7&oGép'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Barkácsolj össze egy párat, hogy'
   - '&7közös töltésű SCU Átjátszóvá kapcsold őket.'
-  name: '&fÖsszekapcsolatlan SCU Átjátszó'
+  name: 'Összekapcsolatlan SCU Átjátszó'
   type:
   - '&7&oAlkatrész'
 STB_VACUUMMODULE:
   description:
   - '&7Tárgy Útválasztóba illeszthető, hogy felszívja'
   - '&7a közeli eldobott tárgyakat.'
-  name: '&fT.Ú. Modul: Porszívó'
+  name: 'T.Ú. Modul: Porszívó'
   stats:
   - '&8⇨ &7Sugár: &e6 blokk'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Megöntözi és növeszti a közeli terményeket.'
   - '&7Ne használd túl sokszor!'
-  name: '&fÖntözőkanna'
+  name: 'Öntözőkanna'
   type:
   - '&7&oEszköz'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Többfunkciós kapa, amely szánt, vet és'
   - '&7betakarít, beépített vetőmagzsákkal.'
-  name: '&fFa Kombájnkapa'
+  name: 'Fa Kombájnkapa'
   type:
   - '&7&oEszköz'
   usage:

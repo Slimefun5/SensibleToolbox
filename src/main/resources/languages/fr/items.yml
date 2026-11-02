@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Teste le niveau d''humidité d''une'
   - '&7zone 5x5 de terre labourée.'
-  name: '&fHygromètre avancé'
+  name: 'Hygromètre avancé'
   stats:
   - '&8⇨ &7Zone : &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Parcourt et fabrique les recettes connues,'
   - '&7et peut tirer des objets des inventaires'
   - '&7adjacents pendant la fabrication.'
-  name: '&fLivre de recettes avancé'
+  name: 'Livre de recettes avancé'
   type:
   - '&7&oGadget'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7S''insère dans un Routeur d''objets pour envoyer des objets'
   - '&7vers un Module récepteur lié dans un rayon'
   - '&7de 24 blocs, sans ligne de vue nécessaire.'
-  name: '&fI.R. Mod: Émetteur avancé'
+  name: 'I.R. Mod: Émetteur avancé'
   type:
   - '&7&oComposant'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Un bloc d''échafaudage flottant temporaire,'
   - '&7idéal pour bâtir dans le vide.'
-  name: '&fBloc angélique'
+  name: 'Bloc angélique'
   type:
   - '&7&oGadget'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Peut construire ou dégager une zone.'
   - '&7Utilisez des Marqueurs de terrain pour définir la zone.'
-  name: '&fConstructeur automatique'
+  name: 'Constructeur automatique'
   type:
   - '&7&oMachine'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Récolte et replante automatiquement'
   - '&7les cultures de blé, pomme de terre et carotte dans un 3x3'
   - '&7de rayon, 2 blocs au-dessus de la machine.'
-  name: '&fFerme automatique'
+  name: 'Ferme automatique'
   type:
   - '&7&oMachine'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Récolte et replante automatiquement'
   - '&7les fèves de cacao, la canne à sucre et le cactus'
   - '&7dans un rayon de 5x5, 2 blocs au-dessus de la machine.'
-  name: '&fFerme automatique MkII'
+  name: 'Ferme automatique MkII'
   type:
   - '&7&oMachine'
 STB_AUTOFORESTER:
   description:
   - '&7Abat et replante automatiquement les arbres'
   - '&7dans un rayon de 5x5, 2 blocs au-dessus de la machine.'
-  name: '&fForestier automatique'
+  name: 'Forestier automatique'
   type:
   - '&7&oMachine'
 STB_BASICSOLARCELL:
   description:
   - '&7Génère de l''énergie à l''extérieur sous une'
   - '&7lumière vive. Nécessite une Cellule PV pour fonctionner.'
-  name: '&fPanneau solaire basique'
+  name: 'Panneau solaire basique'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Grande unité de stockage. Stocke une vaste'
   - '&7quantité d''un seul type d''objet.'
-  name: '&fGUS'
+  name: 'GUS'
   stats:
   - '&8⇨ &7128 piles'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Convertit les matériaux organiques en énergie.'
-  name: '&fBio-moteur'
+  name: 'Bio-moteur'
   type:
   - '&7&oGénérateur'
 STB_BLANKMODULE:
   description:
   - '&7La base vierge utilisée pour fabriquer les'
   - '&7différents modules du Routeur d''objets.'
-  name: '&fModule de routeur d''objets vierge'
+  name: 'Module de routeur d''objets vierge'
   type:
   - '&7&oComposant'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Émet une impulsion de redstone quand un'
   - '&7bloc adjacent est mis à jour.'
-  name: '&fDétecteur de mise à jour de bloc'
+  name: 'Détecteur de mise à jour de bloc'
   type:
   - '&7&oMachine'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Casse le bloc dans sa direction'
   - '&7configurée et le tire dans le routeur.'
-  name: '&fI.R. Mod: Briseur'
+  name: 'I.R. Mod: Briseur'
   type:
   - '&7&oComposant'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Utilisé dans la construction de circuits'
   - '&7électroniques.'
-  name: '&fCarte de circuit'
+  name: 'Carte de circuit'
   type:
   - '&7&oComposant'
 STB_DENSESOLAR:
   description:
   - '&7Génère de l''énergie à l''extérieur sous une'
   - '&7lumière vive. Nécessite une Cellule PV pour fonctionner.'
-  name: '&fPanneau solaire dense'
+  name: 'Panneau solaire dense'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Une houe multifonction qui laboure, sème et'
   - '&7récolte sur une plus grande zone, avec un'
   - '&7sac à graines intégré.'
-  name: '&fHoue combinée en diamant'
+  name: 'Houe combinée en diamant'
   type:
   - '&7&oOutil'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Tire les objets depuis la direction configurée,'
   - '&7puis les répartit à tour de rôle dans tous les'
   - '&7autres inventaires adjacents.'
-  name: '&fI.R. Mod: Distributeur'
+  name: 'I.R. Mod: Distributeur'
   type:
   - '&7&oComposant'
 STB_DROPPERMODULE:
   description:
   - '&7S''insère dans un Routeur d''objets pour lâcher des objets'
   - '&7au sol dans la direction configurée.'
-  name: '&fI.R. Mod: Largueur'
+  name: 'I.R. Mod: Largueur'
   type:
   - '&7&oComposant'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Placé dans une machine pour éjecter automatiquement'
   - '&7ses objets finis dans un inventaire adjacent.'
-  name: '&fAmélioration d''éjecteur'
+  name: 'Amélioration d''éjecteur'
   type:
   - '&7&oComposant'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Vous permet d''énergiser certains objets'
   - '&7en leurs variantes chargées.'
-  name: '&fÉnergiseur électrique'
+  name: 'Énergiseur électrique'
   type:
   - '&7&oMachine'
 STB_ELEVATOR:
   description:
   - '&7Se lie aux autres ascenseurs placés'
   - '&7directement au-dessus ou en dessous.'
-  name: '&fAscenseur'
+  name: 'Ascenseur'
   type:
   - '&7&oMachine'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Offre un accès portable à un inventaire'
   - '&7de stockage ender personnel ou global.'
-  name: '&fSac de l''Ender'
+  name: 'Sac de l''Ender'
   type:
   - '&7&oGadget'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Stockage extra-dimensionnel accessible'
   - '&7depuis les Boîtes de l''Ender liées.'
-  name: '&fBoîte de l''Ender'
+  name: 'Boîte de l''Ender'
   type:
   - '&7&oMachine'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Capture et garde un animal pacifique,'
   - '&7ce qui permet de déplacer le bétail sans effort.'
-  name: '&fLaisse de l''Ender'
+  name: 'Laisse de l''Ender'
   type:
   - '&7&oGadget'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Vibre en six dimensions pour régler la'
   - '&7fréquence de stockage d''une Boîte de l''Ender.'
-  name: '&fSyntoniseur de l''Ender'
+  name: 'Syntoniseur de l''Ender'
   type:
   - '&7&oOutil'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Faites fondre pour obtenir un lingot d''or énergisé.'
-  name: '&fPoudre d''or énergisée'
+  name: 'Poudre d''or énergisée'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Étrangement luminescent...'
-  name: '&fLingot d''or énergisé'
+  name: 'Lingot d''or énergisé'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Faites fondre pour obtenir un lingot de fer énergisé.'
-  name: '&fPoudre de fer énergisée'
+  name: 'Poudre de fer énergisée'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Étrangement luminescent...'
-  name: '&fLingot de fer énergisé'
+  name: 'Lingot de fer énergisé'
   type:
   - '&7&oRessource'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Étrangement luminescent...'
-  name: '&fQuartz énergisé'
+  name: 'Quartz énergisé'
   type:
   - '&7&oRessource'
 STB_FERMENTER:
   description:
   - '&7Fermente divers objets, et sert aussi'
   - '&7à créer de l''Appât à poisson.'
-  name: '&fFermenteur'
+  name: 'Fermenteur'
   type:
   - '&7&oMachine'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Stocke l''énergie pour tamponner la puissance entre'
   - '&7les générateurs et les machines.'
-  name: '&fBoîte à batteries 50K'
+  name: 'Boîte à batteries 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Une cellule d''énergie portable qui transporte de'
   - '&7l''énergie STB pour recharger les appareils en déplacement.'
-  name: '&fCellule d''énergie 50K'
+  name: 'Cellule d''énergie 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Utilisé dans un Filet de pêche pour attraper des poissons.'
-  name: '&fAppât à poisson'
+  name: 'Appât à poisson'
   type:
   - '&7&oComposant'
 STB_FISHINGNET:
   description:
   - '&7Attrape les poissons automatiquement lorsqu''il est placé'
   - '&7au-dessus de l''eau et alimenté en Appât à poisson.'
-  name: '&fFilet de pêche'
+  name: 'Filet de pêche'
   type:
   - '&7&oMachine'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Une houe multifonction qui laboure, sème et'
   - '&7récolte, avec un sac à graines intégré.'
-  name: '&fHoue combinée en or'
+  name: 'Houe combinée en or'
   type:
   - '&7&oOutil'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Faites fondre dans une Fonderie ou un four pour obtenir'
   - '&7des lingots d''or.'
-  name: '&fPoudre d''or'
+  name: 'Poudre d''or'
   type:
   - '&7&oRessource'
 STB_HEATENGINE:
   description:
   - '&7Convertit les objets combustibles en énergie.'
-  name: '&fMoteur thermique'
+  name: 'Moteur thermique'
   type:
   - '&7&oGénérateur'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Affiche le gain ou la perte nette'
   - '&7d''énergie d''un réseau à l''aide d''hologrammes.'
-  name: '&fMoniteur holographique'
+  name: 'Moniteur holographique'
   type:
   - '&7&oMachine'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7S''insère dans un Routeur d''objets pour envoyer des objets'
   - '&7vers un Module récepteur lié n''importe où,'
   - '&7sur n''importe quel monde.'
-  name: '&fI.R. Mod: Hyperémetteur'
+  name: 'I.R. Mod: Hyperémetteur'
   type:
   - '&7&oComposant'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hyper unité de stockage. Stocke une colossale'
   - '&7quantité d''un seul type d''objet.'
   - '&7Conserve son contenu une fois cassée. Nécessite de l''énergie pour fonctionner.'
-  name: '&fHUS'
+  name: 'HUS'
   stats:
   - '&8⇨ &733554431 piles'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Parfois lâché par les blazes ; Butin'
   - '&7peut aider. Combinez avec de la poudre de fer ou d''or.'
-  name: '&fPoudre infernale'
+  name: 'Poudre infernale'
   type:
   - '&7&oRessource'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Récolte et replante automatiquement'
   - '&7les verrues du Nether dans un rayon de 5x5, 2 blocs'
   - '&7au-dessus de la machine.'
-  name: '&fFerme infernale'
+  name: 'Ferme infernale'
   type:
   - '&7&oMachine'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Utilisé comme composant dans des machines'
   - '&7plus avancées.'
-  name: '&fCircuit intégré'
+  name: 'Circuit intégré'
   type:
   - '&7&oComposant'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Une houe multifonction qui laboure, sème et'
   - '&7récolte, avec un sac à graines intégré.'
-  name: '&fHoue combinée en fer'
+  name: 'Houe combinée en fer'
   type:
   - '&7&oOutil'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Faites fondre dans une Fonderie ou un four pour obtenir'
   - '&7des lingots de fer.'
-  name: '&fPoudre de fer'
+  name: 'Poudre de fer'
   type:
   - '&7&oRessource'
 STB_ITEMROUTER:
   description:
   - '&7Achemine les objets. Insérez un ou plusieurs'
   - '&7Modules de routage pour l''activer.'
-  name: '&fRouteur d''objets'
+  name: 'Routeur d''objets'
   type:
   - '&7&oMachine'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Enregistre une position via le GPS Sensible,'
   - '&7sert à définir les zones de travail des machines.'
-  name: '&fBorne de terrain'
+  name: 'Borne de terrain'
   type:
   - '&7&oOutil'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Utilisé dans la fabrication de diverses machines.'
-  name: '&fChâssis de machine'
+  name: 'Châssis de machine'
   type:
   - '&7&oComposant'
 STB_MAGMATICENGINE:
   description:
   - '&7Convertit la Lave en énergie.'
-  name: '&fMoteur magmatique'
+  name: 'Moteur magmatique'
   type:
   - '&7&oGénérateur'
 STB_MASHER:
   description:
   - '&7Broie les minerais et autres ressources en poudres.'
-  name: '&fBroyeur'
+  name: 'Broyeur'
   type:
   - '&7&oMachine'
 STB_MOISTURECHECKER:
   description:
   - '&7Teste le niveau d''humidité d''une'
   - '&7zone 3x3 de terre labourée.'
-  name: '&fHygromètre'
+  name: 'Hygromètre'
   stats:
   - '&8⇨ &7Zone : &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Un outil de construction alimenté qui place ou'
   - '&7échange des blocs sur une zone, avec des'
   - '&7modes Construire et Échanger sélectionnables.'
-  name: '&fMulticonstructeur'
+  name: 'Multiconstructeur'
   type:
   - '&7&oOutil'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Indique les connexions du réseau d''énergie et la'
   - '&7consommation des câbles et des machines.'
-  name: '&fMultimètre'
+  name: 'Multimètre'
   type:
   - '&7&oOutil'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Peint les blocs colorables comme la laine,'
   - '&7le tapis et l''argile ou le verre teinté, avec'
   - '&7la peinture puisée dans un Pot de peinture.'
-  name: '&fPinceau'
+  name: 'Pinceau'
   type:
   - '&7&oOutil'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Contient une réserve de peinture colorée.'
-  name: '&fPot de peinture'
+  name: 'Pot de peinture'
   type:
   - '&7&oMachine'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Peint les blocs colorables sur une zone plus'
   - '&7grande que le pinceau, avec la peinture puisée'
   - '&7dans un Pot de peinture.'
-  name: '&fRouleau à peinture'
+  name: 'Rouleau à peinture'
   type:
   - '&7&oOutil'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Affiche le gain ou la perte nette'
   - '&7d''énergie d''un réseau sur les panneaux attachés.'
-  name: '&fMoniteur d''énergie'
+  name: 'Moniteur d''énergie'
   type:
   - '&7&oMachine'
 STB_PULLERMODULE:
   description:
   - '&7S''insère dans un Routeur d''objets pour tirer des objets'
   - '&7d''un inventaire adjacent.'
-  name: '&fI.R. Mod: Aspirateur'
+  name: 'I.R. Mod: Extracteur'
   type:
   - '&7&oComposant'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Pompe les liquides d''en dessous dans un'
   - '&7Seau ou une Fiole en verre inséré.'
-  name: '&fPompe'
+  name: 'Pompe'
   type:
   - '&7&oMachine'
 STB_PVCELL:
   description:
   - '&7Une cellule photovoltaïque qui alimente un'
   - '&7générateur solaire. Elle s''use avec le temps.'
-  name: '&fCellule PV'
+  name: 'Cellule PV'
   type:
   - '&7&oComposant'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Cuisez dans une Fonderie pour fabriquer du silicium.'
-  name: '&fPoudre de quartz'
+  name: 'Poudre de quartz'
   type:
   - '&7&oRessource'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Un module passif qui reçoit les objets'
   - '&7d''un module Émetteur en face ou d''un module'
   - '&7Émetteur avancé lié.'
-  name: '&fI.R. Mod: Récepteur'
+  name: 'I.R. Mod: Récepteur'
   type:
   - '&7&oComposant'
 STB_RECIPEBOOK:
   description:
   - '&7Permet de parcourir et de fabriquer toutes les'
   - '&7recettes connues.'
-  name: '&fLivre de recettes'
+  name: 'Livre de recettes'
   type:
   - '&7&oGadget'
 STB_REDSTONECLOCK:
   description:
   - '&7Horloge en bloc. Émet un signal de'
   - '&7redstone à intervalle et durée configurables.'
-  name: '&fHorloge de redstone'
+  name: 'Horloge de redstone'
   type:
   - '&7&oMachine'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Ajoute de l''intelligence aux machines pour une'
   - '&7utilisation plus efficace des ressources. L''effet varie'
   - '&7selon la machine.'
-  name: '&fAmélioration de régulateur'
+  name: 'Amélioration de régulateur'
   type:
   - '&7&oComposant'
 STB_SAWMILL:
   description:
   - '&7Transforme les objets en bois en planches'
   - '&7avec un meilleur rendement que la fabrication.'
-  name: '&fScierie'
+  name: 'Scierie'
   type:
   - '&7&oMachine'
 STB_SCURELAY:
   description:
   - '&7Se lie à un autre Relais SCU pour partager'
   - '&7une charge commune sur n''importe quelle distance.'
-  name: '&fRelais SCU'
+  name: 'Relais SCU'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7vers un inventaire adjacent, ou vers un routeur'
   - '&7doté d''un Module récepteur dans un rayon de 10 blocs'
   - '&7en ligne de vue.'
-  name: '&fI.R. Mod: Émetteur'
+  name: 'I.R. Mod: Émetteur'
   type:
   - '&7&oComposant'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Utilisé dans la fabrication de circuits'
   - '&7électroniques plus avancés.'
-  name: '&fWafer de silicium'
+  name: 'Wafer de silicium'
   type:
   - '&7&oComposant'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Récolte avec Toucher de soie le bloc dans sa direction'
   - '&7configurée et le tire dans le routeur.'
   - '&7Doit être fabriqué avec un livre de Toucher de soie.'
-  name: '&fI.R. Mod: Briseur soyeux'
+  name: 'I.R. Mod: Briseur soyeux'
   type:
   - '&7&oComposant'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Utilisé comme composant dans diverses machines.'
-  name: '&fCircuit électronique simple'
+  name: 'Circuit électronique simple'
   type:
   - '&7&oComposant'
 STB_SMELTER:
   description:
   - '&7Fond les objets comme un four, mais'
   - '&7plus vite et plus efficacement.'
-  name: '&fFondoir'
+  name: 'Fondoir'
   type:
   - '&7&oMachine'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7S''insère dans un Routeur d''objets pour placer des objets'
   - '&7dans un inventaire seulement s''il est vide ou'
   - '&7s''il contient déjà cet objet.'
-  name: '&fI.R. Mod: Trieur'
+  name: 'I.R. Mod: Trieur'
   type:
   - '&7&oComposant'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Réduit le volume de tous les sons'
   - '&7dans un rayon de 8 blocs.'
-  name: '&fSilencieux'
+  name: 'Silencieux'
   type:
   - '&7&oMachine'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Un module passif qui augmente la vitesse'
   - '&7du routeur. 0 module = 1 opération / 20 ticks ;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Au-delà de 3, ignorés.'
-  name: '&fI.R. Mod: Amélioration de vitesse'
+  name: 'I.R. Mod: Amélioration de vitesse'
   type:
   - '&7&oComposant'
 STB_SPEEDUPGRADE:
   description:
   - '&7Placé dans une machine pour la faire tourner'
   - '&7plus vite, au prix d''une consommation accrue.'
-  name: '&fAmélioration de vitesse'
+  name: 'Amélioration de vitesse'
   stats:
   - '&8⇨ &7Vitesse : &ex1.4'
   - '&8⇨ &7Consommation : &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Un module passif ; chacun double le nombre'
   - '&7d''objets déplacés par opération, jusqu''à la'
   - '&7taille de pile max de l''objet. Au-delà de 6, ignorés.'
-  name: '&fI.R. Mod: Amélioration de pile'
+  name: 'I.R. Mod: Amélioration de pile'
   type:
   - '&7&oComposant'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Utilisé par certains objets avancés pour la'
   - '&7communication entre les mondes.'
-  name: '&fTranspondeur subspatial'
+  name: 'Transpondeur subspatial'
   type:
   - '&7&oComposant'
 STB_TAPEMEASURE:
   description:
   - '&7Mesure la distance entre deux'
   - '&7points que vous choisissez dans le monde.'
-  name: '&fMètre ruban'
+  name: 'Mètre ruban'
   type:
   - '&7&oOutil'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Stocke l''énergie pour tamponner la puissance entre'
   - '&7les générateurs et les machines.'
-  name: '&fBoîte à batteries 10K'
+  name: 'Boîte à batteries 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Une cellule d''énergie portable qui transporte de'
   - '&7l''énergie STB pour recharger les appareils en déplacement.'
-  name: '&fCellule d''énergie 10K'
+  name: 'Cellule d''énergie 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Placé dans une machine pour augmenter la production'
   - '&7utile, au prix de la vitesse et de l''énergie.'
-  name: '&fAmélioration de minutie'
+  name: 'Amélioration de minutie'
   stats:
   - '&8⇨ &7Vitesse : &ex0.7'
   - '&8⇨ &7Consommation : &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Utilisé dans la fabrication de machines un peu'
   - '&7plus avancées.'
-  name: '&fChâssis de machine renforcé'
+  name: 'Châssis de machine renforcé'
   type:
   - '&7&oComposant'
 STB_TRASHCAN:
   description:
   - '&7DÉTRUIT tout objet placé ou acheminé'
   - '&7à l''intérieur. Attention !'
-  name: '&fPoubelle'
+  name: 'Poubelle'
   type:
   - '&7&oMachine'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Fabriquez-en une paire ensemble pour les lier'
   - '&7en un Relais SCU à charge partagée.'
-  name: '&fRelais SCU non lié'
+  name: 'Relais SCU non lié'
   type:
   - '&7&oComposant'
 STB_VACUUMMODULE:
   description:
   - '&7S''insère dans un Routeur d''objets pour aspirer'
   - '&7les objets au sol à proximité.'
-  name: '&fI.R. Mod: Aspirateur'
+  name: 'I.R. Mod: Aspirateur'
   stats:
   - '&8⇨ &7Rayon : &e6 blocs'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Irrigue et fait pousser les cultures à proximité.'
   - '&7N''en abusez pas !'
-  name: '&fArrosoir'
+  name: 'Arrosoir'
   type:
   - '&7&oOutil'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Une houe multifonction qui laboure, sème et'
   - '&7récolte, avec un sac à graines intégré.'
-  name: '&fHoue combinée en bois'
+  name: 'Houe combinée en bois'
   type:
   - '&7&oOutil'
   usage:

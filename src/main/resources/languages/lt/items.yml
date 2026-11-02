@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Tikrina prisotinimo lygį'
   - '&75x5 dirvos plote.'
-  name: '&fPažangus drėgmės matuoklis'
+  name: 'Pažangus drėgmės matuoklis'
   stats:
   - '&8⇨ &7Plotas: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Naršo ir gamina žinomus receptus,'
   - '&7ir gali traukti daiktus iš gretimų'
   - '&7inventorių gaminimo metu.'
-  name: '&fPažangi receptų knyga'
+  name: 'Pažangi receptų knyga'
   type:
   - '&7&oĮtaisas'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Įstatomas į daiktų maršrutizatorių, kad siųstų daiktus'
   - '&7į susietą imtuvo modulį'
   - '&724 blokų spinduliu, matomumo nereikia.'
-  name: '&fD.M. modulis: paž. siuntėjas'
+  name: 'D.M. modulis: paž. siuntėjas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Laikinas skraidantis pastolių blokas,'
   - '&7puikiai tinkantis statyti į atvirą erdvę.'
-  name: '&fAngeliškas blokas'
+  name: 'Angeliškas blokas'
   type:
   - '&7&oĮtaisas'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Gali užstatyti arba išvalyti zoną.'
   - '&7Zonai apibrėžti naudokite žemės žymeklius.'
-  name: '&fAutomatinis statytojas'
+  name: 'Automatinis statytojas'
   type:
   - '&7&oMašina'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Automatiškai nuima derlių ir atsodina'
   - '&7kviečius, bulves ir morkas 3x3'
   - '&7spinduliu, 2 blokais virš mašinos.'
-  name: '&fAutomatinė ferma'
+  name: 'Automatinė ferma'
   type:
   - '&7&oMašina'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Automatiškai nuima derlių ir atsodina'
   - '&7kakavos pupeles, cukranendres ir kaktusus'
   - '&75x5 spinduliu, 2 blokais virš mašinos.'
-  name: '&fAutomatinė ferma MkII'
+  name: 'Automatinė ferma MkII'
   type:
   - '&7&oMašina'
 STB_AUTOFORESTER:
   description:
   - '&7Automatiškai kerta ir atsodina medžius'
   - '&75x5 spinduliu, 2 blokais virš mašinos.'
-  name: '&fAutomatinis miškininkas'
+  name: 'Automatinis miškininkas'
   type:
   - '&7&oMašina'
 STB_BASICSOLARCELL:
   description:
   - '&7Generuoja galią būdamas lauke ryškioje'
   - '&7saulės šviesoje. Veikimui reikia fotovoltinės celės.'
-  name: '&fBazinis saulės generatorius'
+  name: 'Bazinis saulės generatorius'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Didelis saugojimo įrenginys. Saugo milžinišką'
   - '&7vieno daiktų tipo kiekį.'
-  name: '&fDSĮ'
+  name: 'DSĮ'
   stats:
   - '&8⇨ &7128 krūvos'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Paverčia organines medžiagas galia.'
-  name: '&fBiologinis variklis'
+  name: 'Biologinis variklis'
   type:
   - '&7&oGeneratorius'
 STB_BLANKMODULE:
   description:
   - '&7Tuščias pagrindas, naudojamas gaminti'
   - '&7įvairius daiktų maršrutizatoriaus modulius.'
-  name: '&fTuščias daiktų maršrutizatoriaus modulis'
+  name: 'Tuščias daiktų maršrutizatoriaus modulis'
   type:
   - '&7&oKomponentas'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Siunčia raudonakmenio impulsą, kai'
   - '&7atsinaujina gretimas blokas.'
-  name: '&fBloko atnaujinimo detektorius'
+  name: 'Bloko atnaujinimo detektorius'
   type:
   - '&7&oMašina'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Sulaužo bloką nustatyta'
   - '&7kryptimi ir įtraukia jį į maršrutizatorių.'
-  name: '&fD.M. modulis: laužtuvas'
+  name: 'D.M. modulis: laužtuvas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Naudojama gaminant elektronines'
   - '&7grandines.'
-  name: '&fGrandinės plokštė'
+  name: 'Grandinės plokštė'
   type:
   - '&7&oKomponentas'
 STB_DENSESOLAR:
   description:
   - '&7Generuoja galią būdamas lauke ryškioje'
   - '&7saulės šviesoje. Veikimui reikia fotovoltinės celės.'
-  name: '&fTankus saulės generatorius'
+  name: 'Tankus saulės generatorius'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7Daugiafunkcis kaplys, kuris purena, sėja ir'
   - '&7nuima derlių didesniame plote, su'
   - '&7integruotu sėklų krepšiu.'
-  name: '&fDeimantinis kombinuotasis kaplys'
+  name: 'Deimantinis kombinuotasis kaplys'
   type:
   - '&7&oĮrankis'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Traukia daiktus iš nustatytos krypties,'
   - '&7tada paeiliui siunčia juos į visus kitus'
   - '&7gretimus inventorius.'
-  name: '&fD.M. modulis: skirstytuvas'
+  name: 'D.M. modulis: skirstytuvas'
   type:
   - '&7&oKomponentas'
 STB_DROPPERMODULE:
   description:
   - '&7Įstatomas į daiktų maršrutizatorių, kad mestų daiktus'
   - '&7ant žemės nustatyta kryptimi.'
-  name: '&fD.M. modulis: mėtiklis'
+  name: 'D.M. modulis: mėtiklis'
   type:
   - '&7&oKomponentas'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Įdedamas į mašiną, kad ji automatiškai išmestų'
   - '&7pagamintus daiktus į gretimą inventorių.'
-  name: '&fIšmetiklio patobulinimas'
+  name: 'Išmetiklio patobulinimas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Leidžia energizuoti tam tikrus daiktus'
   - '&7paverčiant juos įkrautais variantais.'
-  name: '&fElektrinis energizatorius'
+  name: 'Elektrinis energizatorius'
   type:
   - '&7&oMašina'
 STB_ELEVATOR:
   description:
   - '&7Susisieja su kitais liftais, padėtais'
   - '&7tiesiai virš jo arba po juo.'
-  name: '&fLiftas'
+  name: 'Liftas'
   type:
   - '&7&oMašina'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Suteikia nešiojamą prieigą prie asmeninės'
   - '&7arba bendros ender saugyklos inventoriaus.'
-  name: '&fEnder krepšys'
+  name: 'Ender krepšys'
   type:
   - '&7&oĮtaisas'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Kitamatė saugykla, pasiekiama'
   - '&7iš susietų Ender dėžių.'
-  name: '&fEnder dėžė'
+  name: 'Ender dėžė'
   type:
   - '&7&oMašina'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Pagauna ir saugo vieną taikų gyvūną,'
   - '&7leisdamas lengvai perkelti gyvulius.'
-  name: '&fEnder pavadėlis'
+  name: 'Ender pavadėlis'
   type:
   - '&7&oĮtaisas'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Virpa šešiuose matmenyse, kad suderintų'
   - '&7Ender dėžės saugyklos dažnį.'
-  name: '&fEnder derintuvas'
+  name: 'Ender derintuvas'
   type:
   - '&7&oĮrankis'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Išlydykite ir gausite energizuoto aukso luitą.'
-  name: '&fEnergizuoto aukso dulkės'
+  name: 'Energizuoto aukso dulkės'
   type:
   - '&7&oIšteklius'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Keistai švyti...'
-  name: '&fEnergizuoto aukso luitas'
+  name: 'Energizuoto aukso luitas'
   type:
   - '&7&oIšteklius'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Išlydykite ir gausite energizuotos geležies luitą.'
-  name: '&fEnergizuotos geležies dulkės'
+  name: 'Energizuotos geležies dulkės'
   type:
   - '&7&oIšteklius'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Keistai švyti...'
-  name: '&fEnergizuotos geležies luitas'
+  name: 'Energizuotos geležies luitas'
   type:
   - '&7&oIšteklius'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Keistai švyti...'
-  name: '&fEnergizuotas kvarcas'
+  name: 'Energizuotas kvarcas'
   type:
   - '&7&oIšteklius'
 STB_FERMENTER:
   description:
   - '&7Fermentuoja įvairius daiktus, taip pat'
   - '&7naudojamas žuvų jaukui gaminti.'
-  name: '&fFermentatorius'
+  name: 'Fermentatorius'
   type:
   - '&7&oMašina'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Kaupia energiją, buferiuodamas galią tarp'
   - '&7generatorių ir mašinų.'
-  name: '&f50K baterijų dėžė'
+  name: '50K baterijų dėžė'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7Nešiojama energijos celė, nešanti sukauptą'
   - '&7STB galią įrenginiams įkrauti kelyje.'
-  name: '&f50K energijos celė'
+  name: '50K energijos celė'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Naudojamas žvejybos tinkle žuvims gaudyti.'
-  name: '&fŽuvų jaukas'
+  name: 'Žuvų jaukas'
   type:
   - '&7&oKomponentas'
 STB_FISHINGNET:
   description:
   - '&7Automatiškai gaudo žuvis, kai padėtas'
   - '&7virš vandens ir papildomas žuvų jauku.'
-  name: '&fŽvejybos tinklas'
+  name: 'Žvejybos tinklas'
   type:
   - '&7&oMašina'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7Daugiafunkcis kaplys, kuris purena, sėja ir'
   - '&7nuima derlių, su integruotu sėklų krepšiu.'
-  name: '&fAuksinis kombinuotasis kaplys'
+  name: 'Auksinis kombinuotasis kaplys'
   type:
   - '&7&oĮrankis'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Išlydykite lydytuve ar krosnyje, kad gautumėte'
   - '&7aukso luitų.'
-  name: '&fAukso dulkės'
+  name: 'Aukso dulkės'
   type:
   - '&7&oIšteklius'
 STB_HEATENGINE:
   description:
   - '&7Paverčia degius daiktus galia.'
-  name: '&fŠiluminis variklis'
+  name: 'Šiluminis variklis'
   type:
   - '&7&oGeneratorius'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Rodo tinklo grynąjį energijos'
   - '&7prieaugį arba nuostolį hologramomis.'
-  name: '&fHolografinis monitorius'
+  name: 'Holografinis monitorius'
   type:
   - '&7&oMašina'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Įstatomas į daiktų maršrutizatorių, kad siųstų daiktus'
   - '&7į susietą imtuvo modulį bet kur,'
   - '&7bet kuriame pasaulyje.'
-  name: '&fD.M. modulis: hipersiuntėjas'
+  name: 'D.M. modulis: hipersiuntėjas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Hipersaugojimo įrenginys. Saugo kolosalų'
   - '&7vieno daiktų tipo kiekį.'
   - '&7Išsaugo turinį sulaužytas. Veikimui reikia galios.'
-  name: '&fHSĮ'
+  name: 'HSĮ'
   stats:
   - '&8⇨ &733554431 krūvos'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Kartais iškrenta iš blazių; Grobimas'
   - '&7gali padėti. Sumaišykite su geležies ar aukso dulkėmis.'
-  name: '&fPragaro dulkės'
+  name: 'Pragaro dulkės'
   type:
   - '&7&oIšteklius'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Automatiškai nuima derlių ir atsodina'
   - '&7Nether karpažolę 5x5 spinduliu, 2 blokais'
   - '&7virš mašinos.'
-  name: '&fPragariška ferma'
+  name: 'Pragariška ferma'
   type:
   - '&7&oMašina'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Naudojama kaip komponentas kai kuriose'
   - '&7pažangesnėse mašinose.'
-  name: '&fIntegrinė grandinė'
+  name: 'Integrinė grandinė'
   type:
   - '&7&oKomponentas'
 STB_IRONCOMBINEHOE:
   description:
   - '&7Daugiafunkcis kaplys, kuris purena, sėja ir'
   - '&7nuima derlių, su integruotu sėklų krepšiu.'
-  name: '&fGeležinis kombinuotasis kaplys'
+  name: 'Geležinis kombinuotasis kaplys'
   type:
   - '&7&oĮrankis'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Išlydykite lydytuve ar krosnyje, kad gautumėte'
   - '&7geležies luitų.'
-  name: '&fGeležies dulkės'
+  name: 'Geležies dulkės'
   type:
   - '&7&oIšteklius'
 STB_ITEMROUTER:
   description:
   - '&7Nukreipia daiktus. Įdėkite vieną ar daugiau'
   - '&7nukreipimo modulių jam aktyvuoti.'
-  name: '&fDaiktų maršrutizatorius'
+  name: 'Daiktų maršrutizatorius'
   type:
   - '&7&oMašina'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Išsaugo poziciją per Sensible GPS,'
   - '&7naudojamas mašinų darbo zonoms apibrėžti.'
-  name: '&fŽemės žymeklis'
+  name: 'Žemės žymeklis'
   type:
   - '&7&oĮrankis'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Naudojamas gaminant įvairias mašinas.'
-  name: '&fMašinos rėmas'
+  name: 'Mašinos rėmas'
   type:
   - '&7&oKomponentas'
 STB_MAGMATICENGINE:
   description:
   - '&7Paverčia lavą galia.'
-  name: '&fMagminis variklis'
+  name: 'Magminis variklis'
   type:
   - '&7&oGeneratorius'
 STB_MASHER:
   description:
   - '&7Sumala rūdas ir kitus išteklius į dulkes.'
-  name: '&fTrintuvas'
+  name: 'Trintuvas'
   type:
   - '&7&oMašina'
 STB_MOISTURECHECKER:
   description:
   - '&7Tikrina prisotinimo lygį'
   - '&73x3 dirvos plote.'
-  name: '&fDrėgmės matuoklis'
+  name: 'Drėgmės matuoklis'
   stats:
   - '&8⇨ &7Plotas: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7Maitinamas statybos įrankis, kuris padeda arba'
   - '&7pakeičia blokus visame plote, su'
   - '&7pasirenkamais statymo ir keitimo režimais.'
-  name: '&fUniversalus statytojas'
+  name: 'Universalus statytojas'
   type:
   - '&7&oĮrankis'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Nuskaito energijos tinklo jungtis ir'
   - '&7kabelių bei mašinų galios sąnaudas.'
-  name: '&fMultimetras'
+  name: 'Multimetras'
   type:
   - '&7&oĮrankis'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Dažo dažomus blokus, tokius kaip vilna,'
   - '&7kilimas ir dažytas molis ar stiklas, naudodamas'
   - '&7dažus iš dažų skardinės.'
-  name: '&fDažų teptukas'
+  name: 'Dažų teptukas'
   type:
   - '&7&oĮrankis'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Laiko spalvotų dažų atsargą.'
-  name: '&fDažų skardinė'
+  name: 'Dažų skardinė'
   type:
   - '&7&oMašina'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Dažo dažomus blokus didesniame'
   - '&7plote nei teptukas, naudodamas dažus'
   - '&7iš dažų skardinės.'
-  name: '&fDažų volelis'
+  name: 'Dažų volelis'
   type:
   - '&7&oĮrankis'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Rodo tinklo grynąjį energijos'
   - '&7prieaugį arba nuostolį ant pritvirtintų lentelių.'
-  name: '&fGalios monitorius'
+  name: 'Galios monitorius'
   type:
   - '&7&oMašina'
 STB_PULLERMODULE:
   description:
   - '&7Įstatomas į daiktų maršrutizatorių, kad trauktų daiktus'
   - '&7iš gretimo inventoriaus.'
-  name: '&fD.M. modulis: traukiklis'
+  name: 'D.M. modulis: traukiklis'
   type:
   - '&7&oKomponentas'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Pumpuoja skysčius iš apačios į'
   - '&7įdėtą kibirą arba stiklinį butelį.'
-  name: '&fSiurblys'
+  name: 'Siurblys'
   type:
   - '&7&oMašina'
 STB_PVCELL:
   description:
   - '&7Fotovoltinė celė, maitinanti saulės'
   - '&7generatorių. Ilgainiui ji susidėvi.'
-  name: '&fFotovoltinė celė'
+  name: 'Fotovoltinė celė'
   type:
   - '&7&oKomponentas'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Išlydykite lydytuve, kad gautumėte silicio.'
-  name: '&fKvarco dulkės'
+  name: 'Kvarco dulkės'
   type:
   - '&7&oIšteklius'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Pasyvus modulis, priimantis daiktus'
   - '&7iš į jį nukreipto siuntėjo modulio arba susieto'
   - '&7pažangaus siuntėjo modulio.'
-  name: '&fD.M. modulis: imtuvas'
+  name: 'D.M. modulis: imtuvas'
   type:
   - '&7&oKomponentas'
 STB_RECIPEBOOK:
   description:
   - '&7Leidžia naršyti ir gaminti visus'
   - '&7žinomus receptus.'
-  name: '&fReceptų knyga'
+  name: 'Receptų knyga'
   type:
   - '&7&oĮtaisas'
 STB_REDSTONECLOCK:
   description:
   - '&7Laikrodis bloke. Siunčia raudonakmenio'
   - '&7signalą su nustatomu intervalu ir trukme.'
-  name: '&fRaudonakmenio laikrodis'
+  name: 'Raudonakmenio laikrodis'
   type:
   - '&7&oMašina'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Suteikia mašinoms išmanumo, kad jos'
   - '&7efektyviau naudotų išteklius. Poveikis priklauso'
   - '&7nuo mašinos.'
-  name: '&fReguliatoriaus patobulinimas'
+  name: 'Reguliatoriaus patobulinimas'
   type:
   - '&7&oKomponentas'
 STB_SAWMILL:
   description:
   - '&7Perdirba medinius daiktus į lentas'
   - '&7didesne išeiga nei gaminant.'
-  name: '&fLentpjūvė'
+  name: 'Lentpjūvė'
   type:
   - '&7&oMašina'
 STB_SCURELAY:
   description:
   - '&7Susisieja su kitu SCU retransliatoriumi, kad dalytųsi'
   - '&7bendru krūviu bet kokiu atstumu.'
-  name: '&fSCU retransliatorius'
+  name: 'SCU retransliatorius'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7į gretimą inventorių arba į maršrutizatorių'
   - '&7su imtuvo moduliu 10 blokų atstumu'
   - '&7matomumo ribose.'
-  name: '&fD.M. modulis: siuntėjas'
+  name: 'D.M. modulis: siuntėjas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Naudojama gaminant pažangesnes'
   - '&7elektronines grandines.'
-  name: '&fSilicio plokštelė'
+  name: 'Silicio plokštelė'
   type:
   - '&7&oKomponentas'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Šilko prisilietimu išgauna bloką nustatyta'
   - '&7kryptimi ir įtraukia jį į maršrutizatorių.'
   - '&7Turi būti pagamintas su šilko prisilietimo knyga.'
-  name: '&fD.M. modulis: šilkinis laužtuvas'
+  name: 'D.M. modulis: šilkinis laužtuvas'
   type:
   - '&7&oKomponentas'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Naudojama kaip komponentas įvairiose mašinose.'
-  name: '&fPaprasta elektroninė grandinė'
+  name: 'Paprasta elektroninė grandinė'
   type:
   - '&7&oKomponentas'
 STB_SMELTER:
   description:
   - '&7Lydo daiktus kaip krosnis, tik'
   - '&7greičiau ir efektyviau.'
-  name: '&fLydytuvas'
+  name: 'Lydytuvas'
   type:
   - '&7&oMašina'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Įstatomas į daiktų maršrutizatorių, kad dėtų daiktus'
   - '&7į inventorių tik jei jis tuščias arba'
   - '&7jau turi tą daiktą.'
-  name: '&fD.M. modulis: rūšiuoklis'
+  name: 'D.M. modulis: rūšiuoklis'
   type:
   - '&7&oKomponentas'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Sumažina visų garsų garsumą'
   - '&78-blokų spinduliu.'
-  name: '&fGarso slopintuvas'
+  name: 'Garso slopintuvas'
   type:
   - '&7&oMašina'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Pasyvus modulis, didinantis maršrutizatoriaus'
   - '&7greitį. 0 modulių = 1 operacija / 20 tiktelėjimų;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Daugiau nei 3 ignoruojami.'
-  name: '&fD.M. modulis: greičio patobulinimas'
+  name: 'D.M. modulis: greičio patobulinimas'
   type:
   - '&7&oKomponentas'
 STB_SPEEDUPGRADE:
   description:
   - '&7Įdedamas į mašiną, kad ji veiktų'
   - '&7greičiau, bet naudotų daugiau galios.'
-  name: '&fGreičio patobulinimas'
+  name: 'Greičio patobulinimas'
   stats:
   - '&8⇨ &7Greitis: &ex1.4'
   - '&8⇨ &7Galios sąnaudos: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Pasyvus modulis; kiekvienas padvigubina'
   - '&7per operaciją perkeliamų daiktų kiekį, iki'
   - '&7didžiausios daikto krūvos. Daugiau nei 6 ignoruojami.'
-  name: '&fD.M. modulis: krūvos patobulinimas'
+  name: 'D.M. modulis: krūvos patobulinimas'
   type:
   - '&7&oKomponentas'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Naudojamas kai kurių pažangių daiktų'
   - '&7ryšiui tarp pasaulių.'
-  name: '&fPoerdvinis atsakiklis'
+  name: 'Poerdvinis atsakiklis'
   type:
   - '&7&oKomponentas'
 STB_TAPEMEASURE:
   description:
   - '&7Išmatuoja atstumą tarp dviejų'
   - '&7jūsų pasirinktų taškų pasaulyje.'
-  name: '&fMatavimo juosta'
+  name: 'Matavimo juosta'
   type:
   - '&7&oĮrankis'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Kaupia energiją, buferiuodamas galią tarp'
   - '&7generatorių ir mašinų.'
-  name: '&f10K baterijų dėžė'
+  name: '10K baterijų dėžė'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7Nešiojama energijos celė, nešanti sukauptą'
   - '&7STB galią įrenginiams įkrauti kelyje.'
-  name: '&f10K energijos celė'
+  name: '10K energijos celė'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Įdedamas į mašiną, kad padidintų naudingą'
   - '&7išvestį greičio ir galios sąskaita.'
-  name: '&fKruopštumo patobulinimas'
+  name: 'Kruopštumo patobulinimas'
   stats:
   - '&8⇨ &7Greitis: &ex0.7'
   - '&8⇨ &7Galios sąnaudos: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Naudojamas gaminant kai kurias'
   - '&7pažangesnes mašinas.'
-  name: '&fTvirtas mašinos rėmas'
+  name: 'Tvirtas mašinos rėmas'
   type:
   - '&7&oKomponentas'
 STB_TRASHCAN:
   description:
   - '&7SUNAIKINA visus daiktus, įdėtus ar atsiųstus'
   - '&7į ją. Saugokitės!'
-  name: '&fŠiukšliadėžė'
+  name: 'Šiukšliadėžė'
   type:
   - '&7&oMašina'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Pagaminkite jų porą kartu, kad susietumėte'
   - '&7juos į bendro krūvio SCU retransliatorių.'
-  name: '&fNesusietas SCU retransliatorius'
+  name: 'Nesusietas SCU retransliatorius'
   type:
   - '&7&oKomponentas'
 STB_VACUUMMODULE:
   description:
   - '&7Įstatomas į daiktų maršrutizatorių, kad susiurbtų'
   - '&7netoliese numestus daiktus.'
-  name: '&fD.M. modulis: siurbtuvas'
+  name: 'D.M. modulis: siurbtuvas'
   stats:
   - '&8⇨ &7Spindulys: &e6 blokai'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Drėkina ir augina netoliese esančius pasėlius.'
   - '&7Nepiktnaudžiaukite juo!'
-  name: '&fLaistytuvas'
+  name: 'Laistytuvas'
   type:
   - '&7&oĮrankis'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7Daugiafunkcis kaplys, kuris purena, sėja ir'
   - '&7nuima derlių, su integruotu sėklų krepšiu.'
-  name: '&fMedinis kombinuotasis kaplys'
+  name: 'Medinis kombinuotasis kaplys'
   type:
   - '&7&oĮrankis'
   usage:

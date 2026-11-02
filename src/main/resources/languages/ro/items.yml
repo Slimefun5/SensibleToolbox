@@ -2,7 +2,7 @@ STB_ADVANCEDMOISTURECHECKER:
   description:
   - '&7Testează nivelul de saturație al unei'
   - '&7zone 5x5 de teren agricol.'
-  name: '&fVerificator Avansat de Umiditate'
+  name: 'Verificator Avansat de Umiditate'
   stats:
   - '&8⇨ &7Zonă: &e5x5'
   type:
@@ -14,7 +14,7 @@ STB_ADVANCEDRECIPEBOOK:
   - '&7Răsfoiește și fabrică rețete cunoscute'
   - '&7și poate trage obiecte din inventarele'
   - '&7adiacente în timpul fabricării.'
-  name: '&fCarte de Rețete Avansată'
+  name: 'Carte de Rețete Avansată'
   type:
   - '&7&oGadget'
 STB_ADVANCEDSENDERMODULE:
@@ -22,7 +22,7 @@ STB_ADVANCEDSENDERMODULE:
   - '&7Se montează într-un Router de Obiecte pentru a trimite obiecte'
   - '&7către un Modul Receptor conectat, pe o'
   - '&7rază de 24 de blocuri, fără linie de vedere.'
-  name: '&fR.O. Mod: Expeditor Av.'
+  name: 'R.O. Mod: Expeditor Av.'
   type:
   - '&7&oComponentă'
   usage:
@@ -32,7 +32,7 @@ STB_ANGELICBLOCK:
   description:
   - '&7Un bloc de schelă plutitor temporar,'
   - '&7ideal pentru construit în spațiu liber.'
-  name: '&fBloc Angelic'
+  name: 'Bloc Angelic'
   type:
   - '&7&oGadget'
   usage:
@@ -42,7 +42,7 @@ STB_AUTOBUILDER:
   description:
   - '&7Poate construi sau curăța o zonă.'
   - '&7Folosește Marcatoare de Teren pentru a defini zona.'
-  name: '&fConstructor Auto'
+  name: 'Constructor Auto'
   type:
   - '&7&oMașină'
 STB_AUTOFARM:
@@ -50,7 +50,7 @@ STB_AUTOFARM:
   - '&7Recoltează și replantează automat'
   - '&7culturi de Grâu, Cartof și Morcov pe o rază 3x3,'
   - '&7la 2 blocuri deasupra mașinii.'
-  name: '&fFermă Auto'
+  name: 'Fermă Auto'
   type:
   - '&7&oMașină'
 STB_AUTOFARM2:
@@ -58,21 +58,21 @@ STB_AUTOFARM2:
   - '&7Recoltează și replantează automat'
   - '&7Boabe de Cacao, Trestie de Zahăr și Cactus'
   - '&7pe o rază 5x5, la 2 blocuri deasupra mașinii.'
-  name: '&fFermă Auto MkII'
+  name: 'Fermă Auto MkII'
   type:
   - '&7&oMașină'
 STB_AUTOFORESTER:
   description:
   - '&7Taie și replantează automat copacii'
   - '&7pe o rază 5x5, la 2 blocuri deasupra mașinii.'
-  name: '&fPădurar Auto'
+  name: 'Pădurar Auto'
   type:
   - '&7&oMașină'
 STB_BASICSOLARCELL:
   description:
   - '&7Generează energie când este afară în lumină'
   - '&7solară puternică. Necesită o Celulă PV pentru a funcționa.'
-  name: '&fSolar de bază'
+  name: 'Solar de bază'
   stats:
   - '&8⇨ &e⚡ &70.5 SCU/t'
   type:
@@ -83,7 +83,7 @@ STB_BIGSTORAGEUNIT:
   description:
   - '&7Unitate de Stocare Mare. Stochează o vastă'
   - '&7cantitate dintr-un singur tip de obiect.'
-  name: '&fUSM'
+  name: 'USM'
   stats:
   - '&8⇨ &7128 Stive'
   type:
@@ -91,21 +91,21 @@ STB_BIGSTORAGEUNIT:
 STB_BIOENGINE:
   description:
   - '&7Convertește materialele organice în energie.'
-  name: '&fMotor Bio'
+  name: 'Motor Bio'
   type:
   - '&7&oGenerator'
 STB_BLANKMODULE:
   description:
   - '&7Baza goală folosită pentru a fabrica'
   - '&7diversele module de Router de Obiecte.'
-  name: '&fModul Gol de Router de Obiecte'
+  name: 'Modul Gol de Router de Obiecte'
   type:
   - '&7&oComponentă'
 STB_BLOCKUPDATEDETECTOR:
   description:
   - '&7Emite un impuls de redstone când un'
   - '&7bloc adiacent se actualizează.'
-  name: '&fDetector de Actualizare Bloc'
+  name: 'Detector de Actualizare Bloc'
   type:
   - '&7&oMașină'
   usage:
@@ -114,7 +114,7 @@ STB_BREAKERMODULE:
   description:
   - '&7Sparge blocul din direcția'
   - '&7configurată și îl trage în router.'
-  name: '&fR.O. Mod: Spărgător'
+  name: 'R.O. Mod: Spărgător'
   type:
   - '&7&oComponentă'
   usage:
@@ -124,14 +124,14 @@ STB_CIRCUITBOARD:
   description:
   - '&7Folosită la construcția circuitelor'
   - '&7electronice.'
-  name: '&fPlacă de Circuit'
+  name: 'Placă de Circuit'
   type:
   - '&7&oComponentă'
 STB_DENSESOLAR:
   description:
   - '&7Generează energie când este afară în lumină'
   - '&7solară puternică. Necesită o Celulă PV pentru a funcționa.'
-  name: '&fSolar Dens'
+  name: 'Solar Dens'
   stats:
   - '&8⇨ &e⚡ &74.0 SCU/t'
   type:
@@ -143,7 +143,7 @@ STB_DIAMONDCOMBINEHOE:
   - '&7O săpăligă multifuncțională care ară, seamănă și'
   - '&7recoltează pe o zonă mai largă, cu un'
   - '&7sac de semințe încorporat.'
-  name: '&fSăpăligă Combinată de Diamant'
+  name: 'Săpăligă Combinată de Diamant'
   type:
   - '&7&oUnealtă'
   usage:
@@ -157,14 +157,14 @@ STB_DISTRIBUTORMODULE:
   - '&7Trage obiecte din direcția configurată,'
   - '&7apoi le trimite pe rând către toate celelalte'
   - '&7inventare adiacente.'
-  name: '&fR.O. Mod: Distribuitor'
+  name: 'R.O. Mod: Distribuitor'
   type:
   - '&7&oComponentă'
 STB_DROPPERMODULE:
   description:
   - '&7Se montează într-un Router de Obiecte pentru a arunca obiecte'
   - '&7pe sol în direcția configurată.'
-  name: '&fR.O. Mod: Aruncător'
+  name: 'R.O. Mod: Aruncător'
   type:
   - '&7&oComponentă'
   usage:
@@ -174,7 +174,7 @@ STB_EJECTORUPGRADE:
   description:
   - '&7Plasată într-o mașină pentru a-i ejecta automat'
   - '&7obiectele finite într-un inventar adiacent.'
-  name: '&fÎmbunătățire de Ejectare'
+  name: 'Îmbunătățire de Ejectare'
   type:
   - '&7&oComponentă'
   usage:
@@ -183,14 +183,14 @@ STB_ELECTRICALENERGIZER:
   description:
   - '&7Permite energizarea anumitor obiecte'
   - '&7în variantele lor încărcate.'
-  name: '&fEnergizator Electric'
+  name: 'Energizator Electric'
   type:
   - '&7&oMașină'
 STB_ELEVATOR:
   description:
   - '&7Se conectează la alte lifturi plasate'
   - '&7direct deasupra sau dedesubtul lui.'
-  name: '&fLift'
+  name: 'Lift'
   type:
   - '&7&oMașină'
   usage:
@@ -200,7 +200,7 @@ STB_ENDERBAG:
   description:
   - '&7Oferă acces portabil la un inventar'
   - '&7personal sau global de stocare ender.'
-  name: '&fSac Ender'
+  name: 'Sac Ender'
   type:
   - '&7&oGadget'
   usage:
@@ -210,7 +210,7 @@ STB_ENDERBOX:
   description:
   - '&7Stocare extra-dimensională accesibilă'
   - '&7din Cutii Ender conectate.'
-  name: '&fCutie Ender'
+  name: 'Cutie Ender'
   type:
   - '&7&oMașină'
   usage:
@@ -219,7 +219,7 @@ STB_ENDERLEASH:
   description:
   - '&7Captează și stochează un animal pașnic,'
   - '&7permițându-ți să muți animalele cu ușurință.'
-  name: '&fLesă Ender'
+  name: 'Lesă Ender'
   type:
   - '&7&oGadget'
   usage:
@@ -228,7 +228,7 @@ STB_ENDERTUNER:
   description:
   - '&7Vibrează în șase dimensiuni pentru a acorda'
   - '&7frecvența de stocare a unei Cutii Ender.'
-  name: '&fAcordor Ender'
+  name: 'Acordor Ender'
   type:
   - '&7&oUnealtă'
   usage:
@@ -237,45 +237,45 @@ STB_ENDERTUNER:
 STB_ENERGIZEDGOLDDUST:
   description:
   - '&7Topește pentru a obține un lingou de aur energizat.'
-  name: '&fPraf de Aur Energizat'
+  name: 'Praf de Aur Energizat'
   type:
   - '&7&oResursă'
 STB_ENERGIZEDGOLDINGOT:
   description:
   - '&7Strălucește straniu...'
-  name: '&fLingou de Aur Energizat'
+  name: 'Lingou de Aur Energizat'
   type:
   - '&7&oResursă'
 STB_ENERGIZEDIRONDUST:
   description:
   - '&7Topește pentru a obține un lingou de fier energizat.'
-  name: '&fPraf de Fier Energizat'
+  name: 'Praf de Fier Energizat'
   type:
   - '&7&oResursă'
 STB_ENERGIZEDIRONINGOT:
   description:
   - '&7Strălucește straniu...'
-  name: '&fLingou de Fier Energizat'
+  name: 'Lingou de Fier Energizat'
   type:
   - '&7&oResursă'
 STB_ENERGIZEDQUARTZ:
   description:
   - '&7Strălucește straniu...'
-  name: '&fCuarț Energizat'
+  name: 'Cuarț Energizat'
   type:
   - '&7&oResursă'
 STB_FERMENTER:
   description:
   - '&7Fermentează diverse obiecte și este și'
   - '&7folosit pentru a crea Momeală de Pește.'
-  name: '&fFermentator'
+  name: 'Fermentator'
   type:
   - '&7&oMașină'
 STB_FIFTYKBATTERYBOX:
   description:
   - '&7Stochează energie ca tampon între'
   - '&7generatoare și mașini.'
-  name: '&fCutie de Baterii 50K'
+  name: 'Cutie de Baterii 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -284,7 +284,7 @@ STB_FIFTYKENERGYCELL:
   description:
   - '&7O celulă de energie portabilă care poartă energie'
   - '&7STB stocată pentru a încărca dispozitive din mers.'
-  name: '&fCelulă de Energie 50K'
+  name: 'Celulă de Energie 50K'
   stats:
   - '&8⇨ &e⚡ &750000 SCU'
   type:
@@ -292,21 +292,21 @@ STB_FIFTYKENERGYCELL:
 STB_FISHBAIT:
   description:
   - '&7Folosită într-o Plasă de Pescuit pentru a prinde pește.'
-  name: '&fMomeală de Pește'
+  name: 'Momeală de Pește'
   type:
   - '&7&oComponentă'
 STB_FISHINGNET:
   description:
   - '&7Prinde pește automat când este plasată'
   - '&7peste apă și alimentată cu Momeală de Pește.'
-  name: '&fPlasă de Pescuit'
+  name: 'Plasă de Pescuit'
   type:
   - '&7&oMașină'
 STB_GOLDCOMBINEHOE:
   description:
   - '&7O săpăligă multifuncțională care ară, seamănă și'
   - '&7recoltează, cu sac de semințe încorporat.'
-  name: '&fSăpăligă Combinată de Aur'
+  name: 'Săpăligă Combinată de Aur'
   type:
   - '&7&oUnealtă'
   usage:
@@ -319,20 +319,20 @@ STB_GOLDDUST:
   description:
   - '&7Topește în Topitor sau Furnal pentru a obține'
   - '&7lingouri de aur.'
-  name: '&fPraf de Aur'
+  name: 'Praf de Aur'
   type:
   - '&7&oResursă'
 STB_HEATENGINE:
   description:
   - '&7Convertește obiectele combustibile în energie.'
-  name: '&fMotor Termic'
+  name: 'Motor Termic'
   type:
   - '&7&oGenerator'
 STB_HOLOGRAPHICMONITOR:
   description:
   - '&7Afișează energia netă a unei rețele,'
   - '&7câștig sau pierdere, folosind holograme.'
-  name: '&fMonitor Holografic'
+  name: 'Monitor Holografic'
   type:
   - '&7&oMașină'
 STB_HYPERSENDERMODULE:
@@ -340,7 +340,7 @@ STB_HYPERSENDERMODULE:
   - '&7Se montează într-un Router de Obiecte pentru a trimite obiecte'
   - '&7către un Modul Receptor conectat de oriunde,'
   - '&7din orice lume.'
-  name: '&fR.O. Mod: Hiperexpeditor'
+  name: 'R.O. Mod: Hiperexpeditor'
   type:
   - '&7&oComponentă'
   usage:
@@ -351,7 +351,7 @@ STB_HYPERSTORAGEUNIT:
   - '&7Unitate de Stocare Hiper. Stochează o colosală'
   - '&7cantitate dintr-un singur tip de obiect.'
   - '&7Păstrează conținutul la spargere. Necesită energie pentru a funcționa.'
-  name: '&fUSH'
+  name: 'USH'
   stats:
   - '&8⇨ &733554431 Stive'
   type:
@@ -360,7 +360,7 @@ STB_INFERNALDUST:
   description:
   - '&7Uneori lăsat de blaze; Jefuirea'
   - '&7poate ajuta. Combină cu praf de fier sau aur.'
-  name: '&fPraf Infernal'
+  name: 'Praf Infernal'
   type:
   - '&7&oResursă'
 STB_INFERNALFARM:
@@ -368,21 +368,21 @@ STB_INFERNALFARM:
   - '&7Recoltează și replantează automat'
   - '&7Negi de Nether pe o rază 5x5, la 2 blocuri'
   - '&7deasupra mașinii.'
-  name: '&fFermă Infernală'
+  name: 'Fermă Infernală'
   type:
   - '&7&oMașină'
 STB_INTEGRATEDCIRCUIT:
   description:
   - '&7Folosit ca componentă în mașinării mai'
   - '&7avansate.'
-  name: '&fCircuit Integrat'
+  name: 'Circuit Integrat'
   type:
   - '&7&oComponentă'
 STB_IRONCOMBINEHOE:
   description:
   - '&7O săpăligă multifuncțională care ară, seamănă și'
   - '&7recoltează, cu sac de semințe încorporat.'
-  name: '&fSăpăligă Combinată de Fier'
+  name: 'Săpăligă Combinată de Fier'
   type:
   - '&7&oUnealtă'
   usage:
@@ -395,14 +395,14 @@ STB_IRONDUST:
   description:
   - '&7Topește în Topitor sau Furnal pentru a obține'
   - '&7lingouri de fier.'
-  name: '&fPraf de Fier'
+  name: 'Praf de Fier'
   type:
   - '&7&oResursă'
 STB_ITEMROUTER:
   description:
   - '&7Direcționează obiecte. Introdu unul sau mai multe'
   - '&7Module de Direcționare pentru a-l activa.'
-  name: '&fRouter de Obiecte'
+  name: 'Router de Obiecte'
   type:
   - '&7&oMașină'
   usage:
@@ -411,7 +411,7 @@ STB_LANDMARKER:
   description:
   - '&7Stochează o poziție prin Sensible GPS,'
   - '&7folosită pentru a defini zonele de lucru ale mașinilor.'
-  name: '&fMarcator de Teren'
+  name: 'Marcator de Teren'
   type:
   - '&7&oUnealtă'
   usage:
@@ -420,26 +420,26 @@ STB_LANDMARKER:
 STB_MACHINEFRAME:
   description:
   - '&7Folosit la fabricarea diverselor mașini.'
-  name: '&fCadru de Mașină'
+  name: 'Cadru de Mașină'
   type:
   - '&7&oComponentă'
 STB_MAGMATICENGINE:
   description:
   - '&7Convertește Lava în energie.'
-  name: '&fMotor Magmatic'
+  name: 'Motor Magmatic'
   type:
   - '&7&oGenerator'
 STB_MASHER:
   description:
   - '&7Macină minereuri și alte resurse în prafuri.'
-  name: '&fZdrobitor'
+  name: 'Zdrobitor'
   type:
   - '&7&oMașină'
 STB_MOISTURECHECKER:
   description:
   - '&7Testează nivelul de saturație al unei'
   - '&7zone 3x3 de teren agricol.'
-  name: '&fVerificator de Umiditate'
+  name: 'Verificator de Umiditate'
   stats:
   - '&8⇨ &7Zonă: &e3x3'
   type:
@@ -451,7 +451,7 @@ STB_MULTIBUILDER:
   - '&7O unealtă de construcție alimentată care plasează sau'
   - '&7schimbă blocuri pe o zonă, cu'
   - '&7moduri selectabile Construire și Schimbare.'
-  name: '&fMulticonstructor'
+  name: 'Multiconstructor'
   type:
   - '&7&oUnealtă'
   usage:
@@ -463,7 +463,7 @@ STB_MULTIMETER:
   description:
   - '&7Citește conexiunile rețelei de energie și'
   - '&7consumul de energie al cablurilor și mașinilor.'
-  name: '&fMultimetru'
+  name: 'Multimetru'
   type:
   - '&7&oUnealtă'
   usage:
@@ -473,7 +473,7 @@ STB_PAINTBRUSH:
   - '&7Vopsește blocuri colorabile precum lână,'
   - '&7covor și lut sau sticlă colorată, folosind'
   - '&7vopsea luată dintr-o Cutie de Vopsea.'
-  name: '&fPensulă'
+  name: 'Pensulă'
   type:
   - '&7&oUnealtă'
   usage:
@@ -484,7 +484,7 @@ STB_PAINTBRUSH:
 STB_PAINTCAN:
   description:
   - '&7Conține o rezervă de vopsea colorată.'
-  name: '&fCutie de Vopsea'
+  name: 'Cutie de Vopsea'
   type:
   - '&7&oMașină'
   usage:
@@ -496,7 +496,7 @@ STB_PAINTROLLER:
   - '&7Vopsește blocuri colorabile pe o zonă mai'
   - '&7mare decât pensula, folosind vopsea luată'
   - '&7dintr-o Cutie de Vopsea.'
-  name: '&fTrafalet'
+  name: 'Trafalet'
   type:
   - '&7&oUnealtă'
   usage:
@@ -507,14 +507,14 @@ STB_POWERMONITOR:
   description:
   - '&7Afișează energia netă a unei rețele,'
   - '&7câștig sau pierdere, pe plăcuțele atașate.'
-  name: '&fMonitor de Energie'
+  name: 'Monitor de Energie'
   type:
   - '&7&oMașină'
 STB_PULLERMODULE:
   description:
   - '&7Se montează într-un Router de Obiecte pentru a trage obiecte'
   - '&7dintr-un inventar adiacent.'
-  name: '&fR.O. Mod: Extractor'
+  name: 'R.O. Mod: Extractor'
   type:
   - '&7&oComponentă'
   usage:
@@ -524,14 +524,14 @@ STB_PUMP:
   description:
   - '&7Pompează lichide de dedesubt într-o'
   - '&7Găleată sau Sticlă introdusă.'
-  name: '&fPompă'
+  name: 'Pompă'
   type:
   - '&7&oMașină'
 STB_PVCELL:
   description:
   - '&7O celulă fotovoltaică ce alimentează un generator'
   - '&7solar. Se uzează cu timpul.'
-  name: '&fCelulă PV'
+  name: 'Celulă PV'
   type:
   - '&7&oComponentă'
   usage:
@@ -539,7 +539,7 @@ STB_PVCELL:
 STB_QUARTZDUST:
   description:
   - '&7Gătește într-un Topitor pentru a face siliciu.'
-  name: '&fPraf de Cuarț'
+  name: 'Praf de Cuarț'
   type:
   - '&7&oResursă'
 STB_RECEIVERMODULE:
@@ -547,21 +547,21 @@ STB_RECEIVERMODULE:
   - '&7Un modul pasiv care primește obiecte'
   - '&7de la un modul Expeditor orientat spre el sau de la un'
   - '&7modul Expeditor Avansat conectat.'
-  name: '&fR.O. Mod: Receptor'
+  name: 'R.O. Mod: Receptor'
   type:
   - '&7&oComponentă'
 STB_RECIPEBOOK:
   description:
   - '&7Permite răsfoirea și fabricarea tuturor'
   - '&7rețetelor cunoscute.'
-  name: '&fCarte de Rețete'
+  name: 'Carte de Rețete'
   type:
   - '&7&oGadget'
 STB_REDSTONECLOCK:
   description:
   - '&7Ceas într-un bloc. Emite un semnal'
   - '&7de redstone cu interval și durată configurabile.'
-  name: '&fCeas de Redstone'
+  name: 'Ceas de Redstone'
   type:
   - '&7&oMașină'
   usage:
@@ -571,21 +571,21 @@ STB_REGULATORUPGRADE:
   - '&7Adaugă inteligență mașinilor pentru un consum'
   - '&7mai eficient de resurse. Efectul variază'
   - '&7după mașină.'
-  name: '&fÎmbunătățire de Regulator'
+  name: 'Îmbunătățire de Regulator'
   type:
   - '&7&oComponentă'
 STB_SAWMILL:
   description:
   - '&7Procesează obiectele din lemn în scânduri'
   - '&7cu randament mai mare decât fabricarea.'
-  name: '&fJoagăr'
+  name: 'Joagăr'
   type:
   - '&7&oMașină'
 STB_SCURELAY:
   description:
   - '&7Se conectează la alt Releu SCU pentru a împărți'
   - '&7o încărcare comună la orice distanță.'
-  name: '&fReleu SCU'
+  name: 'Releu SCU'
   stats:
   - '&8⇨ &e⚡ &7100000 SCU'
   type:
@@ -596,7 +596,7 @@ STB_SENDERMODULE:
   - '&7într-un inventar adiacent sau către un router'
   - '&7cu un Modul Receptor în 10 blocuri'
   - '&7cu linie de vedere.'
-  name: '&fR.O. Mod: Expeditor'
+  name: 'R.O. Mod: Expeditor'
   type:
   - '&7&oComponentă'
   usage:
@@ -606,7 +606,7 @@ STB_SILICONWAFER:
   description:
   - '&7Folosită la fabricarea circuitelor electronice'
   - '&7mai avansate.'
-  name: '&fPlachetă de Siliciu'
+  name: 'Plachetă de Siliciu'
   type:
   - '&7&oComponentă'
 STB_SILKYBREAKERMODULE:
@@ -614,7 +614,7 @@ STB_SILKYBREAKERMODULE:
   - '&7Extrage intact blocul din direcția'
   - '&7configurată și îl trage în router.'
   - '&7Trebuie fabricat cu o carte Atingere de Mătase.'
-  name: '&fR.O. Mod: Spărgător Delicat'
+  name: 'R.O. Mod: Spărgător Delicat'
   type:
   - '&7&oComponentă'
   usage:
@@ -623,14 +623,14 @@ STB_SILKYBREAKERMODULE:
 STB_SIMPLECIRCUIT:
   description:
   - '&7Folosit ca componentă în diverse mașinării.'
-  name: '&fCircuit Electronic Simplu'
+  name: 'Circuit Electronic Simplu'
   type:
   - '&7&oComponentă'
 STB_SMELTER:
   description:
   - '&7Topește obiecte ca un Furnal, dar'
   - '&7mai rapid și mai eficient.'
-  name: '&fTopitor'
+  name: 'Topitor'
   type:
   - '&7&oMașină'
 STB_SORTERMODULE:
@@ -638,7 +638,7 @@ STB_SORTERMODULE:
   - '&7Se montează într-un Router de Obiecte pentru a plasa obiecte'
   - '&7într-un inventar doar dacă este gol sau'
   - '&7conține deja acel obiect.'
-  name: '&fR.O. Mod: Sortator'
+  name: 'R.O. Mod: Sortator'
   type:
   - '&7&oComponentă'
   usage:
@@ -648,7 +648,7 @@ STB_SOUNDMUFFLER:
   description:
   - '&7Reduce volumul tuturor sunetelor'
   - '&7pe o rază de 8 blocuri.'
-  name: '&fAmortizor de Sunet'
+  name: 'Amortizor de Sunet'
   type:
   - '&7&oMașină'
   usage:
@@ -658,14 +658,14 @@ STB_SPEEDMODULE:
   - '&7Un modul pasiv care crește viteza'
   - '&7routerului. 0 module = 1 operațiune / 20 tick-uri;'
   - '&71 = 1/15, 2 = 1/10, 3 = 1/5. Peste 3 sunt ignorate.'
-  name: '&fR.O. Mod: Îmbunătățire de Viteză'
+  name: 'R.O. Mod: Îmbunătățire de Viteză'
   type:
   - '&7&oComponentă'
 STB_SPEEDUPGRADE:
   description:
   - '&7Plasată într-o mașină pentru a o face să'
   - '&7meargă mai repede, cu un consum mai mare de energie.'
-  name: '&fÎmbunătățire de Viteză'
+  name: 'Îmbunătățire de Viteză'
   stats:
   - '&8⇨ &7Viteză: &ex1.4'
   - '&8⇨ &7Consum de energie: &ex1.6'
@@ -676,21 +676,21 @@ STB_STACKMODULE:
   - '&7Un modul pasiv; fiecare dublează'
   - '&7obiectele mutate pe operațiune, până la'
   - '&7stiva maximă a obiectului. Peste 6 sunt ignorate.'
-  name: '&fR.O. Mod: Îmbunătățire de Stivă'
+  name: 'R.O. Mod: Îmbunătățire de Stivă'
   type:
   - '&7&oComponentă'
 STB_SUBSPACETRANSPONDER:
   description:
   - '&7Folosit de unele obiecte avansate pentru'
   - '&7comunicare între lumi.'
-  name: '&fTranspondor Subspațial'
+  name: 'Transpondor Subspațial'
   type:
   - '&7&oComponentă'
 STB_TAPEMEASURE:
   description:
   - '&7Măsoară distanța dintre două'
   - '&7puncte alese de tine în lume.'
-  name: '&fRuletă'
+  name: 'Ruletă'
   type:
   - '&7&oUnealtă'
   usage:
@@ -700,7 +700,7 @@ STB_TENKBATTERYBOX:
   description:
   - '&7Stochează energie ca tampon între'
   - '&7generatoare și mașini.'
-  name: '&fCutie de Baterii 10K'
+  name: 'Cutie de Baterii 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -709,7 +709,7 @@ STB_TENKENERGYCELL:
   description:
   - '&7O celulă de energie portabilă care poartă energie'
   - '&7STB stocată pentru a încărca dispozitive din mers.'
-  name: '&fCelulă de Energie 10K'
+  name: 'Celulă de Energie 10K'
   stats:
   - '&8⇨ &e⚡ &710000 SCU'
   type:
@@ -718,7 +718,7 @@ STB_THOROUGHNESSUPGRADE:
   description:
   - '&7Plasată într-o mașină pentru a spori randamentul'
   - '&7util, în detrimentul vitezei și energiei.'
-  name: '&fÎmbunătățire de Minuțiozitate'
+  name: 'Îmbunătățire de Minuțiozitate'
   stats:
   - '&8⇨ &7Viteză: &ex0.7'
   - '&8⇨ &7Consum de energie: &ex1.6'
@@ -729,28 +729,28 @@ STB_TOUGHMACHINEFRAME:
   description:
   - '&7Folosit la fabricarea unor mașini mai'
   - '&7avansate.'
-  name: '&fCadru de Mașină Rezistent'
+  name: 'Cadru de Mașină Rezistent'
   type:
   - '&7&oComponentă'
 STB_TRASHCAN:
   description:
   - '&7DISTRUGE orice obiect plasat sau trimis'
   - '&7în el. Ai grijă!'
-  name: '&fCoș de Gunoi'
+  name: 'Coș de Gunoi'
   type:
   - '&7&oMașină'
 STB_UNLINKEDSCURELAY:
   description:
   - '&7Fabrică o pereche din acestea împreună pentru a le'
   - '&7lega într-un Releu SCU cu încărcare comună.'
-  name: '&fReleu SCU Neconectat'
+  name: 'Releu SCU Neconectat'
   type:
   - '&7&oComponentă'
 STB_VACUUMMODULE:
   description:
   - '&7Se montează într-un Router de Obiecte pentru a aspira'
   - '&7obiectele căzute din apropiere.'
-  name: '&fR.O. Mod: Aspirator'
+  name: 'R.O. Mod: Aspirator'
   stats:
   - '&8⇨ &7Rază: &e6 blocuri'
   type:
@@ -759,7 +759,7 @@ STB_WATERINGCAN:
   description:
   - '&7Irigă și crește culturile din apropiere.'
   - '&7Nu o folosi excesiv!'
-  name: '&fStropitoare'
+  name: 'Stropitoare'
   type:
   - '&7&oUnealtă'
   usage:
@@ -769,7 +769,7 @@ STB_WOODCOMBINEHOE:
   description:
   - '&7O săpăligă multifuncțională care ară, seamănă și'
   - '&7recoltează, cu sac de semințe încorporat.'
-  name: '&fSăpăligă Combinată de Lemn'
+  name: 'Săpăligă Combinată de Lemn'
   type:
   - '&7&oUnealtă'
   usage:
